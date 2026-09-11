@@ -58,16 +58,12 @@
     window.location.href = 'index.html';
   } else {
     async function loadTest() {
-      // Làm sạch tên file
       const raw = testId.replace(/\.json$/i, '');
       const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
-
-      // Tự động đoán tên Folder từ tên file (ví dụ: cam21-test3-p1 -> folder: cam21-test3)
       const folderName = fileName.replace(/-p\d+.*$/i, '');
 
-      // Danh sách các đường dẫn quét tự động theo cấu trúc của bạn
       const urlsToTry = [
-        `data/${folderName}/${fileName}.json`,   // data/cam21-test3/cam21-test3-p1.json (ĐÚNG CỦA BẠN)
+        `data/${folderName}/${fileName}.json`,
         `data/${raw}.json`,
         `${raw}.json`,
         `data/${fileName}.json`,
@@ -75,17 +71,31 @@
       ];
 
       let data = null;
-      let successUrl = '';
       const logs = [];
 
       for (const url of urlsToTry) {
         try {
           const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
-          logs.push({ url, status: res.status });
           if (res.ok) {
-            data = await res.json();
-            successUrl = url;
-            break;
+            try {
+              data = await res.json();
+              break;
+            } catch (jsonErr) {
+              document.getElementById('mainContainer').innerHTML = `
+                <div style="padding: 30px; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                  <h3 style="color: #dc2626;">⚠️ File có tồn tại nhưng bị LỖI CÚ PHÁP JSON!</h3>
+                  <p>Trình duyệt đã tìm thấy file tại: <code>${url}</code> nhưng không thể đọc được nội dung.</p>
+                  <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 13px; color: #991b1b;">
+                    Chi tiết lỗi: ${jsonErr.message}
+                  </div>
+                  <p>👉 <b>Cách sửa:</b> Hãy mở file <b>${fileName}.json</b> trên GitHub, kiểm tra xem ở dòng đầu tiên có bị dính chữ <code>\`\`\`json</code> hoặc cuối file có dính <code>\`\`\`</code> không và xóa đi nhé.</p>
+                  <a href="index.html" class="nav-link" style="display:inline-block; margin-top: 10px;">Quay về trang chủ</a>
+                </div>
+              `;
+              return;
+            }
+          } else {
+            logs.push({ url, status: res.status });
           }
         } catch (e) {
           logs.push({ url, status: 'Error' });
@@ -96,17 +106,13 @@
         document.getElementById('mainContainer').innerHTML = `
           <div style="padding: 30px; max-width: 700px; margin: 0 auto;">
             <h3 style="color: #dc2626;">❌ Không tìm thấy file bài thi!</h3>
-            <p>Trình duyệt đã thử tìm ở các địa chỉ này nhưng không thấy:</p>
-            <ul>
-              ${logs.map(l => `<li><a href="${l.url}" target="_blank">${l.url}</a> (Mã lỗi: ${l.status})</li>`).join('')}
-            </ul>
-            <a href="index.html" class="nav-link" style="display:inline-block; margin-top:10px;">Quay về trang chủ</a>
+            <ul>${logs.map(l => `<li>${l.url} (Mã lỗi: ${l.status})</li>`).join('')}</ul>
+            <a href="index.html" class="nav-link">Quay về trang chủ</a>
           </div>
         `;
         return;
       }
 
-      // Đổ dữ liệu vào trang
       document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.passageHtml || data.transcriptHtml || "";
