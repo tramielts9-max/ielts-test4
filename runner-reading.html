@@ -38,12 +38,10 @@
 </div>
 
 <div class="container" id="mainContainer">
-  <!-- Nội dung bài đọc sẽ tự động nạp vào đây -->
   <div class="passage-box" id="passageBox">
     <div style="text-align:center; padding: 40px; color: var(--text-muted);">⏳ Đang tải nội dung bài đọc...</div>
   </div>
   <div class="resizer" id="dragResizer"></div>
-  <!-- Nội dung câu hỏi sẽ tự động nạp vào đây -->
   <div class="question-box" id="questionBox">
     <div style="text-align:center; padding: 40px; color: var(--text-muted);">⏳ Đang tải câu hỏi...</div>
   </div>
@@ -53,30 +51,32 @@
   import { stateManager } from './js/state.js';
 
   const params = new URLSearchParams(window.location.search);
-  const testId = params.get('test');
+  let testId = params.get('test');
 
   if (!testId) {
     alert("⚠️ Không tìm thấy mã đề thi!");
     window.location.href = 'index.html';
   } else {
     async function loadTest() {
-      // Tự động thử các đường dẫn khác nhau để không bao giờ bị 404
+      // Chuẩn hóa tên file: bỏ .json thừa nếu có và tạo dạng gạch nối
+      const cleanId = testId.replace(/\.json$/i, '');
+      const hyphenatedId = cleanId.replace(/\//g, '-'); // chuyển ví dụ cam21-test3/p2 -> cam21-test3-p2
+
       const possiblePaths = [
-        testId,                                      // 1. Đúng nguyên văn: cam21-test1/p1.json
-        `${testId}.json`,                            // 2. Tự thêm .json
-        `data/tests/${testId}.json`,                 // 3. Nằm trong data/tests/
-        `data/${testId}`                             // 4. Nằm trong data/
+        `${hyphenatedId}.json`,           // cam21-test3-p2.json
+        `data/${hyphenatedId}.json`,      // data/cam21-test3-p2.json
+        `data/tests/${hyphenatedId}.json`,
+        `${cleanId}.json`,                // cam21-test3/p2.json (nếu có folder)
+        `data/${cleanId}.json`
       ];
 
       let data = null;
-      let loadedPath = "";
 
       for (const path of possiblePaths) {
         try {
           const res = await fetch(path);
           if (res.ok) {
             data = await res.json();
-            loadedPath = path;
             break;
           }
         } catch (e) {}
@@ -85,8 +85,8 @@
       if (!data) {
         document.getElementById('mainContainer').innerHTML = `
           <div style="padding: 30px; text-align: center; width: 100%;">
-            <h3 style="color: #dc2626;">❌ Không tìm thấy dữ liệu đề thi: <code>${testId}</code></h3>
-            <p>Vui lòng kiểm tra lại xem file <b>${testId}</b> đã được lưu đúng vị trí trên GitHub chưa nhé!</p>
+            <h3 style="color: #dc2626;">❌ Không tìm thấy file: <code>${hyphenatedId}.json</code></h3>
+            <p>Vui lòng đảm bảo file <b>${hyphenatedId}.json</b> đã có trên thư mục GitHub của bạn!</p>
             <a href="index.html" class="nav-link" style="display:inline-block; margin-top:10px;">Quay về trang chủ</a>
           </div>
         `;
@@ -100,7 +100,6 @@
       document.getElementById('questionBox').innerHTML = data.questionHtml || "";
       window.TEST_DATA = { title: data.title, answers: data.answers };
 
-      // Kích hoạt toàn bộ bộ máy chấm điểm, timer, highlight
       await import('./js/app.js');
     }
 
