@@ -58,72 +58,55 @@
     window.location.href = 'index.html';
   } else {
     async function loadTest() {
-      const cleanId = testId.replace(/\.json$/i, '');
-      const hyphenatedId = cleanId.replace(/\//g, '-');
+      // Làm sạch tên file
+      const raw = testId.replace(/\.json$/i, '');
+      const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
 
-      // Danh sách các khả năng đường dẫn
-      const testNames = [hyphenatedId, cleanId];
-      const prefixes = ['', 'data/', 'data/tests/', 'tests/'];
+      // Tự động đoán tên Folder từ tên file (ví dụ: cam21-test3-p1 -> folder: cam21-test3)
+      const folderName = fileName.replace(/-p\d+.*$/i, '');
 
-      const urlsToTry = [];
-      for (const prefix of prefixes) {
-        for (const name of testNames) {
-          const path = `${prefix}${name}.json`;
-          if (!urlsToTry.includes(path)) urlsToTry.push(path);
-        }
-      }
+      // Danh sách các đường dẫn quét tự động theo cấu trúc của bạn
+      const urlsToTry = [
+        `data/${folderName}/${fileName}.json`,   // data/cam21-test3/cam21-test3-p1.json (ĐÚNG CỦA BẠN)
+        `data/${raw}.json`,
+        `${raw}.json`,
+        `data/${fileName}.json`,
+        `${fileName}.json`
+      ];
 
       let data = null;
       let successUrl = '';
-      const attemptedLogs = [];
+      const logs = [];
 
       for (const url of urlsToTry) {
         try {
-          // Thêm timestamp để ép trình duyệt KHÔNG ĐƯỢC LẤY CACHE CŨ
-          const fetchUrl = `${url}?t=${Date.now()}`;
-          const res = await fetch(fetchUrl, { cache: 'no-store' });
-          attemptedLogs.push({ url, status: res.status });
-          
+          const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
+          logs.push({ url, status: res.status });
           if (res.ok) {
             data = await res.json();
             successUrl = url;
             break;
           }
         } catch (e) {
-          attemptedLogs.push({ url, status: 'Lỗi mạng/CORS' });
+          logs.push({ url, status: 'Error' });
         }
       }
 
       if (!data) {
-        let logHtml = attemptedLogs.map(l => 
-          `<li style="margin-bottom:6px;">
-            <a href="${l.url}" target="_blank" style="color:#0284c7; font-weight:600;">${l.url}</a> 
-            👉 Trạng thái: <b style="color:${l.status === 404 ? '#ef4444' : '#eab308'};">${l.status}</b>
-          </li>`
-        ).join('');
-
         document.getElementById('mainContainer').innerHTML = `
-          <div style="padding: 30px; max-width: 750px; margin: 0 auto; line-height: 1.6;">
-            <h3 style="color: #dc2626; margin-top:0;">❌ Không tìm thấy file: <code>${hyphenatedId}.json</code></h3>
-            <p>Trình duyệt đã tìm ở các vị trí sau nhưng đều nhận kết quả không tìm thấy:</p>
-            <ul style="background: var(--bg-subcard); padding: 15px 25px; border-radius: 8px; font-family: monospace;">
-              ${logHtml}
+          <div style="padding: 30px; max-width: 700px; margin: 0 auto;">
+            <h3 style="color: #dc2626;">❌ Không tìm thấy file bài thi!</h3>
+            <p>Trình duyệt đã thử tìm ở các địa chỉ này nhưng không thấy:</p>
+            <ul>
+              ${logs.map(l => `<li><a href="${l.url}" target="_blank">${l.url}</a> (Mã lỗi: ${l.status})</li>`).join('')}
             </ul>
-            <div style="background: #fef2f2; border: 1px solid #fecaca; padding: 12px 16px; border-radius: 6px; font-size: 14px; margin-top: 15px;">
-              💡 <b>Mẹo kiểm tra nhanh:</b><br>
-              1. Bấm thử vào từng đường link màu xanh ở trên.<br>
-              2. Nếu link nào mở ra trang <i>404 Not Found</i> của GitHub, nghĩa là trên GitHub file đó chưa được lưu đúng tên hoặc chưa deploy xong.<br>
-              3. Hãy kiểm tra lại thư mục chứa file trong tab GitHub của bạn (trong ảnh trước là bạn đang mở thư mục <code>data/</code>, hãy xem file nằm ngay trong <code>data/</code> hay có nằm trong thư mục con nào nữa không).
-            </div>
-            <p style="text-align: center; margin-top: 20px;">
-              <a href="index.html" class="nav-link" style="display:inline-block;">Quay về trang chủ</a>
-            </p>
+            <a href="index.html" class="nav-link" style="display:inline-block; margin-top:10px;">Quay về trang chủ</a>
           </div>
         `;
         return;
       }
 
-      // Đổ dữ liệu vào trang khi tìm thấy
+      // Đổ dữ liệu vào trang
       document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.passageHtml || data.transcriptHtml || "";
