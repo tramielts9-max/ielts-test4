@@ -3,38 +3,38 @@
     "category": "Cambridge IELTS 21 - Listening Test 1",
     "type": "listening",
     "tests": [
-      { "title": "Part 1: Oyster Bay Sailing Club", "desc": "Table Completion (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1/p1.json" },
-      { "title": "Part 2: Becoming a Makeup Artist", "desc": "Multiple Choice (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1/p2.json" },
-      { "title": "Part 3: Marine Biodiversity", "desc": "Multiple Choice, Matching (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1/p3.json" },
-      { "title": "Part 4: Sources of Rubber", "desc": "Notes Completion", "url": "runner-listening.html?test=cam21-lis-test1/p4.json" }
+      { "title": "Part 1: Oyster Bay Sailing Club", "desc": "Table Completion (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1-p1.json" },
+      { "title": "Part 2: Becoming a Makeup Artist", "desc": "Multiple Choice (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1-p2.json" },
+      { "title": "Part 3: Marine Biodiversity", "desc": "Multiple Choice, Matching (~7 phút)", "url": "runner-listening.html?test=cam21-lis-test1-p3.json" },
+      { "title": "Part 4: Sources of Rubber", "desc": "Notes Completion", "url": "runner-listening.html?test=cam21-lis-test1-p4.json" }
     ]
   },
   {
     "category": "IELTS Vol 7 - Reading Test 1",
     "type": "reading",
     "tests": [
-      { "title": "Passage 1: Carnivorous plant", "desc": "Notes Completion, True/False/Not Given", "url": "runner-reading.html?test=vol7-test1/p1.json" },
-      { "title": "Passage 2: Drawing Lessons from History", "desc": "Multiple Choice, Yes/No/Not Given", "url": "runner-reading.html?test=vol7-test1/p2.json" },
-      { "title": "Passage 3: Neanderthal Technology", "desc": "Matching Headings, Summary", "url": "runner-reading.html?test=vol7-test1/p3.json" }
+      { "title": "Passage 1: Carnivorous plant", "desc": "Notes Completion, True/False/Not Given", "url": "runner-reading.html?test=vol7-test1-p1.json" },
+      { "title": "Passage 2: Drawing Lessons from History", "desc": "Multiple Choice, Yes/No/Not Given", "url": "runner-reading.html?test=vol7-test1-p2.json" },
+      { "title": "Passage 3: Neanderthal Technology", "desc": "Matching Headings, Summary", "url": "runner-reading.html?test=vol7-test1-p3.json" }
     ]
   },
   {
     "category": "Cambridge IELTS 21 - Academic Test 1 & 3",
     "type": "reading",
     "tests": [
-      { "title": "Test 1 Passage 1: The Davies Sisters", "desc": "Notes Completion, True/False/Not Given", "url": "runner-reading.html?test=cam21-test1/p1.json" },
-      { "title": "Test 3 Passage 1: Saving the saiga", "desc": "Note Completion, True/False/Not Given", "url": "runner-reading.html?test=cam21-test3/p1.json" },
-      { "title": "Test 3 Passage 2: Getting around Dar es Salaam", "desc": "True/False/Not Given, Note Completion", "url": "runner-reading.html?test=cam21-test3/p2.json" },
-      { "title": "Test 3 Passage 3: Rethinking the Past", "desc": "Multiple Choice, Sentence Completion", "url": "runner-reading.html?test=cam21-test3/p3.json" }
+      { "title": "Test 1 Passage 1: The Davies Sisters", "desc": "Notes Completion, True/False/Not Given", "url": "runner-reading.html?test=cam21-test1-p1.json" },
+      { "title": "Test 3 Passage 1: Saving the saiga", "desc": "Note Completion, True/False/Not Given", "url": "runner-reading.html?test=cam21-test3-p1.json" },
+      { "title": "Test 3 Passage 2: Getting around Dar es Salaam", "desc": "True/False/Not Given, Note Completion", "url": "runner-reading.html?test=cam21-test3-p2.json" },
+      { "title": "Test 3 Passage 3: Rethinking the Past", "desc": "Multiple Choice, Sentence Completion", "url": "runner-reading.html?test=cam21-test3-p3.json" }
     ]
   },
   {
     "category": "Cambridge IELTS 21 - Academic Test 4",
     "type": "reading",
     "tests": [
-      { "title": "Passage 1: Water hyacinth in Kenya", "desc": "True/False/Not Given, Notes Completion", "url": "runner-reading.html?test=cam21-test4/p1.json" },
-      { "title": "Passage 2: Multilingualism in India", "desc": "Summary Completion, Yes/No/Not Given", "url": "runner-reading.html?test=cam21-test4/p2.json" },
-      { "title": "Passage 3: The Globemakers", "desc": "Summary Completion, Yes/No/Not Given", "url": "runner-reading.html?test=cam21-test4/p3.json" }
+      { "title": "Passage 1: Water hyacinth in Kenya", "desc": "True/False/Not Given, Notes Completion", "url": "runner-reading.html?test=cam21-test4-p1.json" },
+      { "title": "Passage 2: Multilingualism in India", "desc": "Summary Completion, Yes/No/Not Given", "url": "runner-reading.html?test=cam21-test4-p2.json" },
+      { "title": "Passage 3: The Globemakers", "desc": "Summary Completion, Yes/No/Not Given", "url": "runner-reading.html?test=cam21-test4-p3.json" }
     ]
   }
 ]
