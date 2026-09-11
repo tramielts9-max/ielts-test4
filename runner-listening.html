@@ -54,22 +54,22 @@
     window.location.href = 'index.html';
   } else {
     async function loadTest() {
-      const cleanId = testId.replace(/\.json$/i, '');
-      const hyphenatedId = cleanId.replace(/\//g, '-');
+      const raw = testId.replace(/\.json$/i, '');
+      const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
+      const folderName = fileName.replace(/-p\d+.*$/i, '');
 
-      const possiblePaths = [
-        `${hyphenatedId}.json`,
-        `data/${hyphenatedId}.json`,
-        `data/tests/${hyphenatedId}.json`,
-        `${cleanId}.json`,
-        `data/${cleanId}.json`
+      const urlsToTry = [
+        `data/${folderName}/${fileName}.json`,   // data/cam21-lis-test1/cam21-lis-test1-p2.json
+        `data/${raw}.json`,
+        `${raw}.json`,
+        `data/${fileName}.json`,
+        `${fileName}.json`
       ];
 
       let data = null;
-
-      for (const path of possiblePaths) {
+      for (const url of urlsToTry) {
         try {
-          const res = await fetch(path);
+          const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
           if (res.ok) {
             data = await res.json();
             break;
@@ -80,8 +80,7 @@
       if (!data) {
         document.getElementById('mainContainer').innerHTML = `
           <div style="padding: 30px; text-align: center; width: 100%;">
-            <h3 style="color: #dc2626;">❌ Không tìm thấy file: <code>${hyphenatedId}.json</code></h3>
-            <p>Vui lòng đảm bảo file <b>${hyphenatedId}.json</b> đã có trên thư mục GitHub của bạn!</p>
+            <h3 style="color: #dc2626;">❌ Không tìm thấy file: <code>${fileName}.json</code></h3>
             <a href="index.html" class="nav-link" style="display:inline-block; margin-top:10px;">Quay về trang chủ</a>
           </div>
         `;
