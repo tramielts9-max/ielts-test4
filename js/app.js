@@ -9,7 +9,45 @@ import { initAudioTranscriptSync } from './audio-sync.js';
 import { askGemini } from './ai-assistant.js';
 import { TestEvaluator } from './evaluator.js';
 
-// Đưa các hàm cần tương tác từ giao diện ra window namespace
+// ==========================================================================
+// 1. TÍNH NĂNG TĂNG GIẢM CỠ CHỮ (A- / A+) VÀ ĐỔI GIAO DIỆN (TỐI / SÁNG)
+// ==========================================================================
+let currentFontSize = parseInt(localStorage.getItem('ielts_font_size')) || 15;
+applyFontSize(currentFontSize);
+
+function applyFontSize(size) {
+  document.documentElement.style.setProperty('--font-size-base', `${size}px`);
+  // Đồng thời áp dụng trực tiếp cho passage và question để chữ to/nhỏ ngay lập tức
+  document.querySelectorAll('.passage-box, .question-box').forEach(el => {
+    el.style.fontSize = `${size}px`;
+  });
+}
+
+window.changeFontSize = (delta) => {
+  currentFontSize = Math.min(Math.max(currentFontSize + delta, 12), 24); // Giới hạn từ 12px đến 24px
+  applyFontSize(currentFontSize);
+  localStorage.setItem('ielts_font_size', currentFontSize);
+};
+
+// Khôi phục theme đã lưu
+const savedTheme = localStorage.getItem('ielts_theme') || 'light';
+if (savedTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+}
+
+window.toggleTheme = () => {
+  const isDark = document.body.classList.toggle('dark-theme');
+  localStorage.setItem('ielts_theme', isDark ? 'dark' : 'light');
+  
+  const btn = document.getElementById('btnThemeToggle');
+  if (btn) {
+    btn.innerText = isDark ? '☀️ Sáng' : '🌙 Tối';
+  }
+};
+
+// ==========================================================================
+// 2. CÁC HÀM TIỆN ÍCH RA GLOBAL WINDOW
+// ==========================================================================
 window.askGeminiAI = (qId) => askGemini(qId);
 window.highlightText = (id) => {
   document.querySelectorAll('.hl-active').forEach(el => el.classList.remove('hl-active'));
@@ -29,6 +67,12 @@ function initApp() {
   });
   window.startTimer = () => timer.start();
   window.pauseTimer = () => timer.pause();
+
+  // Cập nhật text nút theme lúc tải trang
+  const btn = document.getElementById('btnThemeToggle');
+  if (btn) {
+    btn.innerText = document.body.classList.contains('dark-theme') ? '☀️ Sáng' : '🌙 Tối';
+  }
 
   // Khởi tạo các tiện ích Core
   initHighlighting();
