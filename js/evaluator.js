@@ -50,7 +50,7 @@ export class TestEvaluator {
 
       if (isCorrect) score++;
 
-      // Cập nhật DOM hiển thị đúng / sai
+      // Cập nhật giao diện câu hỏi (đúng viền xanh, sai viền đỏ)
       if (qDiv) {
         const resDiv = qDiv.querySelector('.result');
         const expDiv = qDiv.querySelector('.explanation');
@@ -67,6 +67,7 @@ export class TestEvaluator {
         if (expDiv) expDiv.style.display = 'block';
       }
 
+      // Cập nhật nút số câu bên dưới (nếu là bài nghe)
       const badge = document.getElementById(`badge_${qKey}`);
       if (badge) {
         badge.classList.toggle('status-correct', isCorrect);
@@ -82,7 +83,7 @@ export class TestEvaluator {
   async submitToCloud(resultData, studentName, studentEmail, timeSpent) {
     const scoreStr = `${resultData.score}/${resultData.total}`;
     
-    // Lưu chính xác URL kèm tham số ?test=... để xem lại đúng đề
+    // Lưu chính xác đường dẫn bài thi để sau này bấm vào xem lại mở đúng đề
     const fullPageUrl = (window.location.pathname.split('/').pop() || '') + window.location.search;
 
     const payload = {
@@ -94,7 +95,30 @@ export class TestEvaluator {
       details: resultData.details
     };
 
-    // 1. Gửi điểm lên Google Sheets
+    const now = new Date();
+    const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')} - ${String(now.getDate()).padStart(2,'0')}/${String(now.getMonth()+1).padStart(2,'0')}/${now.getFullYear()}`;
+
+    const attemptSnapshot = {
+      id: "attempt_" + Date.now(),
+      timestamp: timeStr,
+      ...payload,
+      pageUrl: fullPageUrl,
+      ...resultData.snapshot
+    };
+
+    // =========================================================================
+    // 1. LƯU NGAY LẬP TỨC VÀO BỘ NHỚ MÁY (LOCALSTORAGE)
+    // Giúp trang chủ index.html hiện ngay bài làm trong 0.01s, không lo mạng lỗi
+    // =========================================================================
+    try {
+      const localHist = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
+      localHist.unshift(attemptSnapshot); // Đưa bài mới nhất lên đầu danh sách
+      localStorage.setItem('ielts_local_history', JSON.stringify(localHist));
+    } catch (e) {
+      console.warn("Không thể lưu cache lịch sử tại máy:", e);
+    }
+
+    // 2. Gửi điểm lên Google Sheets
     if (CONFIG.AI_AND_SHEET_URL) {
       fetch(CONFIG.AI_AND_SHEET_URL, {
         method: "POST",
@@ -103,19 +127,8 @@ export class TestEvaluator {
       }).catch(() => {});
     }
 
-    // 2. Gửi Snapshot toàn diện lên Google Drive
+    // 3. Gửi Snapshot toàn diện lên Google Drive
     if (CONFIG.DRIVE_STORAGE_URL) {
-      const now = new Date();
-      const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')} - ${String(now.getDate()).padStart(2,'0')}/${String(now.getMonth()+1).padStart(2,'0')}/${now.getFullYear()}`;
-      
-      const attemptSnapshot = {
-        id: "attempt_" + Date.now(),
-        timestamp: timeStr,
-        ...payload,
-        pageUrl: fullPageUrl,
-        ...resultData.snapshot
-      };
-
       fetch(CONFIG.DRIVE_STORAGE_URL, {
         method: "POST",
         mode: "no-cors",
@@ -123,7 +136,7 @@ export class TestEvaluator {
       }).catch(() => {});
     }
 
-    // Hiện các nút hậu nộp bài (Lưu bản sau sửa, làm lại)
+    // Hiện các nút chức năng sau khi nộp (Lưu bản sau sửa, Làm lại bài)
     this.renderPostSubmissionControls();
   }
 
@@ -192,6 +205,14 @@ export class TestEvaluator {
     document.querySelectorAll('input.fill-input').forEach(i => attemptSnapshot.inputs[i.id] = i.value);
     document.querySelectorAll('input[type="radio"]:checked').forEach(r => attemptSnapshot.radios[r.name] = r.value);
 
+    // Cập nhật ngay bản "Sau sửa" này vào máy
+    try {
+      const localHist = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
+      localHist.unshift(attemptSnapshot);
+      localStorage.setItem('ielts_local_history', JSON.stringify(localHist));
+    } catch(e) {}
+
+    // Gửi lên Google Drive
     if (CONFIG.DRIVE_STORAGE_URL) {
       fetch(CONFIG.DRIVE_STORAGE_URL, {
         method: "POST",
@@ -200,6 +221,6 @@ export class TestEvaluator {
       });
     }
 
-    alert("✅ Đã cập nhật thành công Mạch suy nghĩ và Chat AI mới nhất lên Google Drive!");
+    alert("✅ Đã cập nhật thành công Mạch suy nghĩ và Chat AI mới nhất lên Lịch sử!");
   }
 }
