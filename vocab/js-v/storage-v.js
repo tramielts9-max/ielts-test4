@@ -66,7 +66,7 @@ export const StorageManager = {
   },
 
   async sendSessionToCloud(payload) {
-    if (!this.GOOGLE_SCRIPT_URL || this.GOOGLE_SCRIPT_URL.includes("dien_link_cua_ban")) {
+    if (!this.GOOGLE_SCRIPT_URL || this.GOOGLE_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbyNErQQFdciAQM0k9KUrACtpX7rxKkopjChYAC2Ubwj5MGzFOeekDEGs8C1n7P9cNR6vg/exec")) {
       console.warn("Chưa cấu hình Google Script URL, dữ liệu chỉ lưu tại máy.");
       return;
     }
