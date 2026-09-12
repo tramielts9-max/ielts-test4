@@ -5,8 +5,20 @@ import { CONFIG } from './config.js';
 
 export class StateManager {
   constructor() {
-    this.testKey = 'ielts_state_' + (window.location.pathname.split('/').pop() || 'default_test');
+    this.initTestKey();
     this.isReviewMode = false;
+  }
+
+  // Tự động nhận diện chính xác mã đề từ URL param "?test="
+  initTestKey() {
+    const params = new URLSearchParams(window.location.search);
+    const testId = params.get('test');
+    if (testId) {
+      this.testKey = 'ielts_state_' + testId.replace(/\.json$/i, '');
+    } else {
+      const pageName = window.location.pathname.split('/').pop() || 'default_test';
+      this.testKey = 'ielts_state_' + pageName;
+    }
   }
 
   getUser() {
