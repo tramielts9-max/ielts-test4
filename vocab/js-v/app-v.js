@@ -14,7 +14,6 @@ class App {
 
   async init() {
     try {
-      // Gọi đúng thư mục data-v và file words-v.json
       const res = await fetch('data-v/words-v.json');
       this.words = await res.json();
     } catch (e) {
@@ -32,6 +31,7 @@ class App {
 
     document.getElementById('btnStartReview').onclick = () => this.startReviewSession();
 
+    // Giả lập bot cày điểm nhẹ mỗi 15 giây
     setInterval(() => {
       this.leaderboard = BotsSimulation.simulateBotProgress(this.leaderboard, this.user.xp);
       StorageManager.saveLeaderboard(this.leaderboard);
@@ -47,55 +47,89 @@ class App {
   }
 
   refreshDashboard() {
-    UIController.renderMemoryTower(this.words, this.progress);
+    // Kích hoạt tính năng bấm vào 5 tầng tháp để xem danh sách từ
+    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
+      const wordsInTier = this.words.filter(w => {
+        const p = this.progress[w.id];
+        return (p ? p.level : 1) === tierLevel;
+      });
+      UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
+    });
+
     UIController.renderLeaderboard(this.leaderboard, 'me');
 
+    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
     const nextTime = SRSEngine.getNextReviewCountdown(this.words, this.progress);
-    UIController.startGoldenTimer(nextTime, () => {
-      if (Notification.permission === "granted") {
-        new Notification("⚡ ĐÃ ĐẾN THỜI ĐIỂM VÀNG!", {
-          body: "Có từ vựng chuẩn bị rơi khỏi não bạn, vào giải cứu ngay!"
-        });
-      }
-    });
+
+    UIController.startGoldenTimer(nextTime, queueData.isGoldenTime);
   }
 
   startReviewSession() {
-    const queue = SRSEngine.getReviewQueue(this.words, this.progress);
-    if (queue.length === 0) {
-      alert("Bạn đã ôn sạch các từ trong đợt này rồi!");
+    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
+    if (queueData.words.length === 0) {
+      alert("Chưa có từ vựng nào trong hệ thống!");
       return;
     }
 
     const quiz = new QuizController(
-      queue,
-      (wordId, isCorrect, timeSpentSec) => this.onAnswerWord(wordId, isCorrect, timeSpentSec),
-      () => this.onFinishSession()
+      queueData.words,
+      queueData.isGoldenTime,
+      (results, isGoldenTime) => this.onFinishSession(results, isGoldenTime)
     );
 
     quiz.start();
   }
 
-  onAnswerWord(wordId, isCorrect, timeSpentSec) {
-    const currentProg = this.progress[wordId];
-    const newProg = SRSEngine.calculateNextReview(currentProg, isCorrect);
-    this.progress[wordId] = newProg;
+  async onFinishSession(sessionResults, isGoldenTime) {
+    let correctCount = 0;
+    let totalThinkTime = 0;
+    const wordsSummaryArr = [];
+
+    // 1. Cập nhật 5 Hũ Trí Nhớ & tính điểm
+    sessionResults.forEach(res => {
+      if (res.isCorrect) correctCount++;
+      totalThinkTime += res.thinkTimeSec;
+      wordsSummaryArr.push(`${res.word} (${res.isCorrect ? 'ĐÚNG' : 'SAI'})`);
+
+      const currentProg = this.progress[res.wordId];
+      const newProg = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
+      this.progress[res.wordId] = newProg;
+    });
+
     StorageManager.saveWordProgress(this.progress);
 
-    const earnedXP = isCorrect ? 15 : 2;
+    // 2. Tính XP và cập nhật Gamification
+    const earnedXP = correctCount * (isGoldenTime ? 15 : 10);
     this.user.xp += earnedXP;
     StorageManager.saveUser(this.user);
 
-    this.leaderboard = BotsSimulation.simulateBotProgress(this.leaderboard, this.user.xp);
-    StorageManager.saveLeaderboard(this.leaderboard);
+    const sessionCount = StorageManager.incrementSessionCount();
+    const avgResponseTime = Math.round((totalThinkTime / sessionResults.length) * 10) / 10;
 
+    // 3. ĐỒNG BỘ ĐẦY ĐỦ DỮ LIỆU LÊN GOOGLE DRIVE/SHEETS
+    const payload = {
+      studentName: this.user.name,
+      studentEmail: this.user.email,
+      sessionData: {
+        sessionNumber: sessionCount,
+        sessionType: isGoldenTime ? "Thời Điểm Vàng" : "Luyện tập tự do",
+        score: correctCount,
+        totalWords: sessionResults.length,
+        avgResponseTime: avgResponseTime,
+        wordsSummary: wordsSummaryArr.join(', '),
+        details: sessionResults
+      }
+    };
+
+    StorageManager.sendSessionToCloud(payload);
+
+    // 4. Cập nhật giao diện
     this.updateUserStatsUI();
-  }
-
-  onFinishSession() {
     document.getElementById('quizContainer').classList.add('hidden');
     document.getElementById('dashboardView').classList.remove('hidden');
-    alert("🎉 Xuất sắc! Bạn đã giải cứu thành công các từ vựng trong Thời Điểm Vàng!");
+
+    alert(`🎉 Hoàn thành lượt học #${sessionCount}!\n- Kết quả: ${correctCount}/${sessionResults.length} từ đúng\n- Phản xạ TB: ${avgResponseTime}s/từ\n- Nhận được: +${earnedXP} XP\nDữ liệu đã được lưu an toàn lên Google Drive!`);
+
     this.refreshDashboard();
   }
 }
