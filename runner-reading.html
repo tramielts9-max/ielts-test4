@@ -20,14 +20,49 @@
   </div>
 </div>
 
-<div class="header-bar">
-  <h1 id="testTitleHeader">IELTS Reading Test</h1>
-  <div class="header-nav"><a href="index.html" class="nav-link">🏠 Trang chủ</a></div>
-  <div class="header-controls">
-    <button class="btn-header" onclick="changeFontSize(-1)">A-</button>
-    <button class="btn-header" onclick="changeFontSize(1)">A+</button>
-    <button class="btn-header" id="btnThemeToggle" onclick="toggleTheme()">🌙 Tối/Sáng</button>
-  </div>
+<!-- BỘ ĐIỀU KHIỂN CỠ CHỮ & THEME TỐI/SÁNG TRỰC TIẾP -->
+<script>
+  (function() {
+    var curSize = 15;
+    try {
+      var saved = localStorage.getItem('ielts_font_size');
+      if (saved) curSize = parseInt(saved);
+    } catch(e) {}
+
+    function setFont(sz) {
+      document.documentElement.style.setProperty('--font-size-base', sz + 'px');
+      var p = document.getElementById('passageBox');
+      var q = document.getElementById('questionBox');
+      if (p) p.style.fontSize = sz + 'px';
+      if (q) q.style.fontSize = sz + 'px';
+    }
+
+    window.changeFontSize = function(delta) {
+      curSize = Math.min(Math.max(curSize + delta, 12), 24);
+      setFont(curSize);
+      try { localStorage.setItem('ielts_font_size', curSize); } catch(e) {}
+    };
+
+    window.toggleTheme = function() {
+      var isDark = document.body.classList.toggle('dark-theme');
+      var btn = document.getElementById('btnThemeToggle');
+      if (btn) btn.innerText = isDark ? '☀️ Sáng' : '🌙 Tối';
+      try { localStorage.setItem('ielts_theme', isDark ? 'dark' : 'light'); } catch(e) {}
+    };
+
+    // Tự kích hoạt khi tải trang
+    window.addEventListener('DOMContentLoaded', function() {
+      setFont(curSize);
+      try {
+        if (localStorage.getItem('ielts_theme') === 'dark') {
+          document.body.classList.add('dark-theme');
+          var btn = document.getElementById('btnThemeToggle');
+          if (btn) btn.innerText = '☀️ Sáng';
+        }
+      } catch(e) {}
+    });
+  })();
+</script>
   <div class="timer-container">
     <span>⏱️ Thời gian:</span>
     <span class="timer-display" id="timerDisplay">00:00</span>
