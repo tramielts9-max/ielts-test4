@@ -97,7 +97,9 @@
       document.getElementById('unlockedContentBox').style.display = 'block';
       document.getElementById('userNameDisplay').innerText = user.name || 'Học viên';
       document.getElementById('userEmailDisplay').innerText = user.email;
-      fetchHistory(user.email);
+      
+      // Khởi chạy đồng bộ lịch sử và load catalog đề
+      syncAndRenderHistory(user.email);
       loadCatalog();
     } else {
       document.getElementById('authGateBox').style.display = 'flex';
@@ -105,67 +107,123 @@
     }
   }
 
-  async function fetchHistory(email) {
+  // ==========================================================================
+  // CƠ CHẾ LƯU KÉP: HIỆN NGAY TỪ LOCAL -> ĐỒNG BỘ NGẦM TỪ DRIVE
+  // ==========================================================================
+  async function syncAndRenderHistory(email) {
     const resultsBox = document.getElementById('historyResultsList');
+    
+    // BƯỚC 1: Đọc ngay lịch sử đã lưu tại LocalStorage (HIỆN NGAY 0.01 GIÂY)
+    let localAttempts = [];
+    try {
+      const raw = localStorage.getItem('ielts_local_history');
+      if (raw) {
+        localAttempts = JSON.parse(raw).filter(a => !a.studentEmail || a.studentEmail.toLowerCase() === email.toLowerCase());
+      }
+    } catch(e) {}
+
+    if (localAttempts.length > 0) {
+      renderHistoryUI(localAttempts, email);
+    } else {
+      resultsBox.innerHTML = `<div style="text-align:center; padding:15px; color:var(--text-muted);">⏳ Đang đồng bộ lịch sử từ Google Drive...</div>`;
+    }
+
+    // BƯỚC 2: Gọi lên Google Drive để lấy toàn bộ bài làm trên các máy khác về
     if (!CONFIG.DRIVE_STORAGE_URL) return;
 
     try {
       const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
         method: "POST",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({ action: "get_history", email: email })
       });
-      const data = await res.json();
-      const attempts = data?.attempts || [];
 
-      document.getElementById('totalAttemptsBadge').innerText = `${attempts.length} bài`;
-
-      if (attempts.length === 0) {
-        resultsBox.innerHTML = `<div style="text-align:center; padding:12px; color:var(--text-muted); font-size:14px;">ℹ️ Em chưa có bài làm nào trên hệ thống. Hãy chọn đề bên dưới để luyện tập nhé!</div>`;
-        return;
+      const rawText = await res.text();
+      let data = null;
+      try {
+        data = JSON.parse(rawText);
+      } catch(err) {
+        console.warn("⚠️ Google Apps Script trả về chuỗi không phải JSON (có thể do lỗi phân quyền Apps Script):", rawText);
       }
 
-      // Gom nhóm lịch sử theo ngày
-      const groups = {};
-      attempts.forEach(att => {
-        let datePart = "Khác";
-        const m = att.timestamp?.match(/(\d{2}\/\d{2}\/\d{4})/);
-        if (m) datePart = m[1];
-        if (!groups[datePart]) groups[datePart] = [];
-        groups[datePart].push(att);
-      });
+      if (data && data.attempts) {
+        const driveAttempts = data.attempts;
+        
+        // Hợp nhất dữ liệu giữa Cloud và Local (loại bỏ trùng lặp id)
+        const map = new Map();
+        [...localAttempts, ...driveAttempts].forEach(item => {
+          if (item && item.id) map.set(item.id, item);
+        });
+        const merged = Array.from(map.values()).sort((a, b) => (b.id || '').localeCompare(a.id || ''));
 
-      let html = '';
-      for (const date in groups) {
-        html += `
-          <div style="margin-bottom: 10px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
-            <div style="padding: 8px 12px; background: #f1f5f9; font-weight: bold; font-size: 13.5px;">📅 Ngày ${date} (${groups[date].length} bài)</div>
-            <div style="padding: 6px 12px;">
+        // Cập nhật ngược lại vào LocalStorage
+        localStorage.setItem('ielts_local_history', JSON.stringify(merged));
+
+        // Vẽ lại giao diện đầy đủ nhất
+        renderHistoryUI(merged, email);
+      }
+    } catch (e) {
+      console.error("Lỗi kết nối Google Drive:", e);
+      // Nếu lỗi mạng, nếu đã có bài ở Local thì giữ nguyên, nếu chưa có thì báo học viên
+      if (localAttempts.length === 0) {
+        resultsBox.innerHTML = `
+          <div style="text-align:center; padding:14px; color:var(--text-muted); font-size:13.5px;">
+            ℹ️ Chưa có kết nối đến Cloud Drive. Các bài em làm tiếp theo sẽ được tự động lưu an toàn tại máy này nhé!
+          </div>
         `;
-        groups[date].forEach(att => {
-          // Xây dựng link xem lại chính xác với URL runner và query params
-          const separator = att.pageUrl.includes('?') ? '&' : '?';
-          const reviewLink = `${att.pageUrl}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
+      }
+    }
+  }
 
-          html += `
-            <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
-              <div>
-                <b>📖 ${att.testTitle}</b>
-                <div style="font-size: 12.5px; color: var(--text-muted);">⏱️ Nộp lúc: ${att.timestamp} • Thời gian: ${att.timeSpent || 'N/A'}</div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <span class="score-pill">Điểm: ${att.score}</span>
-                <a href="${reviewLink}" class="btn-review">👁️ Xem lại bài</a>
+  function renderHistoryUI(attempts, email) {
+    const resultsBox = document.getElementById('historyResultsList');
+    document.getElementById('totalAttemptsBadge').innerText = `${attempts.length} bài`;
+
+    if (attempts.length === 0) {
+      resultsBox.innerHTML = `<div style="text-align:center; padding:14px; color:var(--text-muted); font-size:14px;">ℹ️ Em chưa có bài làm nào. Hãy chọn đề bên dưới để luyện tập nhé!</div>`;
+      return;
+    }
+
+    // Gom nhóm theo ngày làm bài
+    const groups = {};
+    attempts.forEach(att => {
+      let datePart = "Gần đây";
+      const m = att.timestamp?.match(/(\d{2}\/\d{2}\/\d{4})/);
+      if (m) datePart = m[1];
+      if (!groups[datePart]) groups[datePart] = [];
+      groups[datePart].push(att);
+    });
+
+    let html = '';
+    for (const date in groups) {
+      html += `
+        <div style="margin-bottom: 12px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: var(--bg-card);">
+          <div style="padding: 8px 14px; background: #f8fafc; font-weight: bold; font-size: 13.5px; border-bottom: 1px solid var(--border-color);">
+            📅 Ngày ${date} (${groups[date].length} bài)
+          </div>
+          <div style="padding: 6px 14px;">
+      `;
+      groups[date].forEach(att => {
+        const separator = att.pageUrl.includes('?') ? '&' : '?';
+        const reviewLink = `${att.pageUrl}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
+
+        html += `
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
+            <div>
+              <b style="color: var(--text-main); font-size: 14px;">📖 ${att.testTitle}</b>
+              <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">
+                ⏱️ Nộp lúc: <b>${att.timestamp}</b> • Thời gian làm: <b>${att.timeSpent || 'N/A'}</b>
               </div>
             </div>
-          `;
-        });
-        html += `</div></div>`;
-      }
-      resultsBox.innerHTML = html;
-    } catch (e) {
-      resultsBox.innerHTML = `<div style="text-align:center; padding:10px; color:var(--text-muted);">ℹ️ Em có thể làm các đề bên dưới bình thường nhé!</div>`;
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="score-pill">Điểm: ${att.score}</span>
+              <a href="${reviewLink}" class="btn-review">👁️ Xem lại bài</a>
+            </div>
+          </div>
+        `;
+      });
+      html += `</div></div>`;
     }
+    resultsBox.innerHTML = html;
   }
 
   async function loadCatalog() {
