@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IELTS Listening Examination</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
@@ -9,6 +10,7 @@
 </head>
 <body class="listening-test">
 
+<!-- KHUNG THÔNG TIN HỌC VIÊN -->
 <div class="user-info-box">
   <div class="user-info-field">
     <label for="studentNameInput">👤 Họ và Tên:</label>
@@ -20,13 +22,47 @@
   </div>
 </div>
 
-<!-- BỘ ĐIỀU KHIỂN CỠ CHỮ & THEME TỐI/SÁNG TRỰC TIẾP -->
+<!-- THANH ĐIỀU KHIỂN & TIMER -->
+<div class="header-bar">
+  <h1 id="testTitleHeader">IELTS Listening Test</h1>
+  <div class="header-nav">
+    <a href="index.html" class="nav-link">🏠 Trang chủ</a>
+  </div>
+  <div class="header-controls">
+    <button type="button" class="btn-header" onclick="window.changeFontSize(-1)">A-</button>
+    <button type="button" class="btn-header" onclick="window.changeFontSize(1)">A+</button>
+    <button type="button" class="btn-header" id="btnThemeToggle" onclick="window.toggleTheme()">🌙 Tối/Sáng</button>
+  </div>
+  <div class="timer-container">
+    <span>⏱️ Thời gian:</span>
+    <span class="timer-display" id="timerDisplay">00:00</span>
+    <button type="button" class="btn-header" style="background:#22c55e;" onclick="window.startTimer && window.startTimer()">▶️ Bắt đầu</button>
+    <button type="button" class="btn-header" style="background:#eab308;" onclick="window.pauseTimer && window.pauseTimer()">⏸️ Tạm dừng</button>
+  </div>
+  <div class="score-badge" id="scoreBadge">Điểm số: <span id="scoreText">0/10</span></div>
+</div>
+
+<!-- TRÌNH PHÁT AUDIO -->
+<div class="audio-player-container" id="audioPlayerWrapper" style="display: none;">
+  <audio id="mainAudioElement" class="audio-player-element" controls preload="auto"></audio>
+</div>
+
+<!-- KHUNG TRANSCRIPT & CÂU HỎI -->
+<div class="container" id="mainContainer">
+  <div class="passage-box" id="passageBox"></div>
+  <div class="resizer" id="dragResizer"><div class="resizer-icon">◄►</div></div>
+  <div class="question-box" id="questionBox">
+    <div style="text-align:center; padding: 40px; color: var(--text-muted);">⏳ Đang tải nội dung phần thi Nghe...</div>
+  </div>
+</div>
+
+<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE & THEME (HOẠT ĐỘNG ĐỘC LẬP) -->
 <script>
   (function() {
     var curSize = 15;
     try {
       var saved = localStorage.getItem('ielts_font_size');
-      if (saved) curSize = parseInt(saved);
+      if (saved) curSize = parseInt(saved, 10);
     } catch(e) {}
 
     function setFont(sz) {
@@ -50,37 +86,20 @@
       try { localStorage.setItem('ielts_theme', isDark ? 'dark' : 'light'); } catch(e) {}
     };
 
-    // Tự kích hoạt khi tải trang
-    window.addEventListener('DOMContentLoaded', function() {
-      setFont(curSize);
-      try {
-        if (localStorage.getItem('ielts_theme') === 'dark') {
-          document.body.classList.add('dark-theme');
-          var btn = document.getElementById('btnThemeToggle');
-          if (btn) btn.innerText = '☀️ Sáng';
-        }
-      } catch(e) {}
-    });
+    // Áp dụng ngay khi mở trang
+    setFont(curSize);
+    try {
+      if (localStorage.getItem('ielts_theme') === 'dark') {
+        document.body.classList.add('dark-theme');
+        var btn = document.getElementById('btnThemeToggle');
+        if (btn) btn.innerText = '☀️ Sáng';
+      }
+    } catch(e) {}
   })();
 </script>
-  <div class="timer-container">
-    <span>⏱️ Thời gian:</span>
-    <span class="timer-display" id="timerDisplay">00:00</span>
-    <button class="btn-timer" onclick="startTimer()">▶️ Bắt đầu</button>
-    <button class="btn-timer" onclick="pauseTimer()">⏸️ Tạm dừng</button>
-  </div>
-  <div class="score-badge" id="scoreBadge">Điểm số: <span id="scoreText">0/10</span></div>
-</div>
 
-<div class="container" id="mainContainer">
-  <div class="passage-box" id="passageBox"></div>
-  <div class="resizer" id="dragResizer"><div class="resizer-icon">◄►</div></div>
-  <div class="question-box" id="questionBox"></div>
-</div>
-
+<!-- SCRIPT TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY APP -->
 <script type="module">
-  import { stateManager } from './js/state.js';
-
   const params = new URLSearchParams(window.location.search);
   let testId = params.get('test');
 
@@ -94,11 +113,11 @@
       const folderName = fileName.replace(/-p\d+.*$/i, '');
 
       const urlsToTry = [
-        `data/${folderName}/${fileName}.json`,   // data/cam21-lis-test1/cam21-lis-test1-p2.json
-        `data/${raw}.json`,
-        `${raw}.json`,
+        `data/${folderName}/${fileName}.json`,
         `data/${fileName}.json`,
-        `${fileName}.json`
+        `${fileName}.json`,
+        `data/${raw}.json`,
+        `${raw}.json`
       ];
 
       let data = null;
@@ -124,8 +143,19 @@
 
       document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
-      document.getElementById('passageBox').innerHTML = data.passageHtml || data.transcriptHtml || "";
+      document.getElementById('passageBox').innerHTML = data.transcriptHtml || data.passageHtml || "";
       document.getElementById('questionBox').innerHTML = data.questionHtml || "";
+      
+      // Kích hoạt Audio Player nếu có link mp3
+      if (data.audioUrl) {
+        const audioEl = document.getElementById('mainAudioElement');
+        const wrapper = document.getElementById('audioPlayerWrapper');
+        if (audioEl && wrapper) {
+          audioEl.src = data.audioUrl;
+          wrapper.style.display = 'block';
+        }
+      }
+
       window.TEST_DATA = { title: data.title, answers: data.answers };
 
       await import('./js/app.js');
