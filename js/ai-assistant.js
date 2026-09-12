@@ -2,8 +2,14 @@
  * js/ai-assistant.js - Kết nối và hỏi đáp Gemini AI
  */
 import { CONFIG } from './config.js';
+import { stateManager } from './state.js';
 
 export async function askGemini(qId, promptText) {
+  if (stateManager.isReviewMode) {
+    alert("Em đang ở chế độ xem lại bài đã nộp.");
+    return;
+  }
+
   const inputEl = document.getElementById(`ai_ask_${qId}`);
   const responseBox = document.getElementById(`ai_response_${qId}`);
   if (!inputEl || !responseBox) return;
@@ -60,6 +66,9 @@ Dùng **từ khóa** để IN ĐẬM, ==bằng chứng== để TÔ VÀNG, [kw]t�
         <div style="font-weight: 700; color: var(--primary-blue); font-size: 13.5px;">💬 "${safeText}"</div>
         <div style="line-height: 1.65; margin-top: 4px;"><b>🤖 Trợ giảng AI:</b><br>${formatted}</div>
       `;
+
+      // Kích hoạt event input để tự động lưu box chat này vào state LocalStorage
+      document.dispatchEvent(new Event('input'));
     }
   } catch {
     const targetEl = document.getElementById(tempId);
