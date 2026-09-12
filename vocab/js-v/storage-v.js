@@ -1,6 +1,6 @@
 export const StorageManager = {
-  // 👇 DÁN ĐƯỜNG LINK GOOGLE APPS SCRIPT BẠN VỪA COPY VÀO ĐÂY 👇
-  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbz_dien_link_cua_ban_vao_day/exec",
+  // Đường link Google Apps Script chính thức của bạn
+  GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbyNErQQFdciAQM0k9KUrACtpX7rxKkopjChYAC2Ubwj5MGzFOeekDEGs8C1n7P9cNR6vg/exec",
 
   KEYS: {
     USER: 'sv_user_data_v',
@@ -66,10 +66,7 @@ export const StorageManager = {
   },
 
   async sendSessionToCloud(payload) {
-    if (!this.GOOGLE_SCRIPT_URL || this.GOOGLE_SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbyNErQQFdciAQM0k9KUrACtpX7rxKkopjChYAC2Ubwj5MGzFOeekDEGs8C1n7P9cNR6vg/exec")) {
-      console.warn("Chưa cấu hình Google Script URL, dữ liệu chỉ lưu tại máy.");
-      return;
-    }
+    if (!this.GOOGLE_SCRIPT_URL) return;
     try {
       fetch(this.GOOGLE_SCRIPT_URL, {
         method: "POST",
