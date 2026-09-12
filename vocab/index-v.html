@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Vocab - Trợ Lý Trí Nhớ Cá Nhân</title>
+  <!-- Gọi các file trong thư mục css-v -->
+  <link rel="stylesheet" href="css-v/base-v.css">
+  <link rel="stylesheet" href="css-v/dashboard-v.css">
+  <link rel="stylesheet" href="css-v/quiz-v.css">
+  <link rel="stylesheet" href="css-v/leaderboard-v.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <a href="../index.html" style="text-decoration: none; font-size: 20px;" title="Về trang luyện thi IELTS">🏠</a>
+      <div style="font-weight: 800; font-size: 18px; color: var(--primary);">
+        🧠 SMART VOCAB
+      </div>
+    </div>
+    <div class="user-stats">
+      <div class="stat-badge" id="userStreak">🔥 1 ngày</div>
+      <div class="stat-badge" id="userFreeze">🧊 1 thẻ</div>
+      <div class="stat-badge" id="userXP">⚡ 0 XP</div>
+      <div class="stat-badge" id="userLeague">🏆 Hạng Bạc</div>
+    </div>
+  </header>
+
+  <main id="dashboardView">
+    <div class="dashboard-grid">
+      <section class="card">
+        <h2>Thời Điểm Vàng Ôn Tập</h2>
+        <div class="golden-timer-box">
+          <div style="font-size: 13px; color: var(--text-muted);">Đợt quên tiếp theo sau:</div>
+          <div class="countdown" id="goldenCountdown">00:00:00</div>
+          <button class="btn" id="btnStartReview" style="width: 100%;">⚡ ÔN TẬP NGAY</button>
+        </div>
+
+        <h2>Tháp Trí Nhớ 5 Tầng</h2>
+        <div class="memory-tower">
+          <div class="tower-tier tier-1">
+            <span>Tầng 1: Mới gặp (Cần ôn gấp)</span>
+            <span id="towerT1">0 từ</span>
+          </div>
+          <div class="tower-tier tier-2">
+            <span>Tầng 2: Nhớ mang máng</span>
+            <span id="towerT2">0 từ</span>
+          </div>
+          <div class="tower-tier tier-3">
+            <span>Tầng 3: Tạm nhớ</span>
+            <span id="towerT3">0 từ</span>
+          </div>
+          <div class="tower-tier tier-4">
+            <span>Tầng 4: Ghi nhớ tốt</span>
+            <span id="towerT4">0 từ</span>
+          </div>
+          <div class="tower-tier tier-5">
+            <span>Tầng 5: Dài hạn (Master)</span>
+            <span id="towerT5">0 từ</span>
+          </div>
+        </div>
+
+        <div class="metrics-box">
+          <div class="metric-item">
+            <div class="val" id="retentionRateDisplay">0%</div>
+            <div class="label">Tỷ lệ giữ vững trí nhớ</div>
+          </div>
+          <div class="metric-item">
+            <div class="val">1.2s</div>
+            <div class="label">Tốc độ phản xạ TB</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" style="padding: 0; overflow: hidden;">
+        <div class="league-header">
+          <span>🏆 GIẢI ĐẤU TUẦN (BẢNG 30 NGƯỜI)</span>
+          <span style="font-size: 12px; font-weight: normal;">Kết thúc vào Chủ Nhật</span>
+        </div>
+        <div class="leaderboard-list" id="leaderboardList"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="quizContainer" class="quiz-container hidden"></div>
+</div>
+
+<!-- Gọi file app-v.js từ thư mục js-v -->
+<script type="module" src="js-v/app-v.js"></script>
+</body>
+</html>
