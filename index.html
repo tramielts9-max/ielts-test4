@@ -11,9 +11,17 @@
       background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
       color: white; padding: 35px 20px; text-align: center; border-radius: 12px; margin-bottom: 25px;
     }
+    .user-dashboard-bar {
+      background: var(--bg-card); border: 1px solid var(--border-color); padding: 16px 20px; border-radius: 10px;
+      margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .history-section {
+      background: var(--bg-card); border: 1.5px solid var(--border-color); border-radius: 10px; padding: 18px; margin-bottom: 30px;
+    }
+    .score-pill { background: #16a34a; color: white; padding: 3px 10px; border-radius: 20px; font-weight: 700; font-size: 13px; }
+    .btn-review { background: #0284c7; color: white; text-decoration: none; padding: 5px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; }
     .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 35px; }
     .test-card { background: var(--bg-card); border-radius: 10px; padding: 20px; border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between; }
-    .test-card:hover { transform: translateY(-2px); border-color: #0284c7; }
     .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
     .badge-reading { background: #e0f2fe; color: #0369a1; }
     .badge-listening { background: #fef3c7; color: #b45309; }
@@ -26,75 +34,171 @@
 <div style="max-width: 1200px; margin: auto; padding: 15px;">
   <div class="portal-hero">
     <h1 style="margin:0 0 8px 0; font-size: 24px;">📚 CỔNG LUYỆN THI IELTS PRACTICE TESTS</h1>
-    <p style="margin:0; opacity: 0.9;">Tự động chấm điểm • AI Trợ giảng giải thích • Lưu điểm Google Drive</p>
+    <p style="margin:0; opacity: 0.9;">Tự động chấm điểm • AI Trợ giảng giải thích • Lưu bảng điểm Google Drive</p>
   </div>
 
-  <!-- 1. CỔNG ĐĂNG NHẬP HỌC VIÊN -->
-  <div class="user-info-box" style="max-width: 600px; margin: 0 auto 25px auto; padding: 20px; display: flex; flex-direction: column; gap: 12px;">
-    <h3 style="margin: 0; text-align: center;">👤 Thông Tin Học Viên</h3>
-    <input type="text" id="studentNameInput" placeholder="Nhập họ và tên..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
-    <input type="email" id="studentEmailInput" placeholder="Nhập email Google để lưu kết quả..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
-    <button type="button" class="btn-submit" onclick="saveUserAndRefresh()" style="margin-top: 5px; padding: 10px;">Đồng Bộ & Bắt Đầu Học</button>
+  <!-- 1. CỔNG ĐĂNG NHẬP -->
+  <div id="authGateBox" class="user-info-box" style="max-width: 550px; margin: 0 auto 30px auto; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+    <h3 style="margin: 0; text-align: center;">👤 Đăng Nhập Học Viên</h3>
+    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); text-align: center;">Nhập thông tin 1 lần để mở khóa bài thi và đồng bộ lịch sử:</p>
+    <input type="text" id="loginNameInput" placeholder="Họ và tên..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
+    <input type="email" id="loginEmailInput" placeholder="Email Google..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
+    <button type="button" class="btn-submit" onclick="handleStudentLogin()" style="margin-top: 5px; padding: 10px;">🚀 Bắt Đầu Học Ngay</button>
   </div>
 
-  <!-- 2. KHU VỰC DANH SÁCH ĐỀ THI TỰ ĐỘNG -->
-  <div id="catalogContainer">
-    <div style="text-align: center; padding: 30px; color: var(--text-muted);">⏳ Đang nạp danh mục đề thi...</div>
+  <!-- 2. KHU VỰC ĐÃ ĐĂNG NHẬP -->
+  <div id="unlockedContentBox" style="display: none;">
+    <!-- Thanh thông tin học viên -->
+    <div class="user-dashboard-bar">
+      <div>
+        <h4 style="margin: 0; font-size: 16px;" id="userNameDisplay">Học viên</h4>
+        <p style="margin: 2px 0 0 0; font-size: 13px; color: var(--text-muted);" id="userEmailDisplay">email@gmail.com</p>
+      </div>
+      <button type="button" class="btn-header" style="background:#fee2e2; color:#dc2626; border-color:#fca5a5;" onclick="handleStudentLogout()">🚪 Đổi tài khoản</button>
+    </div>
+
+    <!-- KHUNG LỊCH SỬ BÀI LÀM (ACCORDION THEO NGÀY) -->
+    <div class="history-section">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 12px;">
+        <h3 style="margin: 0; font-size: 17px;">📜 Lịch sử các lần làm bài <span id="totalAttemptsBadge" style="font-size: 12px; background: #e0f2fe; color: #0284c7; padding: 2px 8px; border-radius: 12px;">0 bài</span></h3>
+      </div>
+      <div id="historyResultsList"><div style="text-align:center; padding:12px; color:var(--text-muted);">⏳ Đang đồng bộ lịch sử từ Google Drive...</div></div>
+    </div>
+
+    <!-- DANH MỤC ĐỀ THI -->
+    <div id="catalogContainer"></div>
   </div>
 </div>
 
 <script type="module">
+  import { CONFIG } from './js/config.js';
   import { stateManager } from './js/state.js';
 
-  // Tự điền thông tin học viên cũ
-  const user = stateManager.getUser();
-  if (user.name) document.getElementById('studentNameInput').value = user.name;
-  if (user.email) document.getElementById('studentEmailInput').value = user.email;
-
-  window.saveUserAndRefresh = () => {
-    const name = document.getElementById('studentNameInput').value.trim();
-    const email = document.getElementById('studentEmailInput').value.trim();
-    if (!email) { alert("⚠️ Vui lòng nhập email để hệ thống lưu bảng điểm!"); return; }
-    stateManager.saveUser(name, email);
-    alert("✅ Đã lưu thông tin học viên thành công!");
+  window.handleStudentLogin = () => {
+    const name = document.getElementById('loginNameInput').value.trim();
+    const email = document.getElementById('loginEmailInput').value.trim().toLowerCase();
+    if (!email) { alert("⚠️ Vui lòng nhập Email để hệ thống lưu bảng điểm!"); return; }
+    stateManager.saveUser(name || 'Học viên', email);
+    checkAuthStatus();
   };
 
-  // Tự động đọc file JSON và vẽ ra danh sách đề
-  try {
-    const res = await fetch('data/catalog.json');
-    const categories = await res.json();
-    let html = '';
+  window.handleStudentLogout = () => {
+    if (confirm("Em có muốn đổi tài khoản học viên khác không?")) {
+      localStorage.removeItem(CONFIG.STORAGE_KEYS.STUDENT_NAME);
+      localStorage.removeItem(CONFIG.STORAGE_KEYS.STUDENT_EMAIL);
+      checkAuthStatus();
+    }
+  };
 
-    categories.forEach(cat => {
-      const isLis = cat.type === 'listening';
-      const badgeClass = isLis ? 'badge-listening' : 'badge-reading';
-      const badgeText = isLis ? '🎧 Listening' : '📖 Reading';
-      const btnClass = isLis ? 'btn-start-test lis' : 'btn-start-test';
+  function checkAuthStatus() {
+    const user = stateManager.getUser();
+    if (user.email) {
+      document.getElementById('authGateBox').style.display = 'none';
+      document.getElementById('unlockedContentBox').style.display = 'block';
+      document.getElementById('userNameDisplay').innerText = user.name || 'Học viên';
+      document.getElementById('userEmailDisplay').innerText = user.email;
+      fetchHistory(user.email);
+      loadCatalog();
+    } else {
+      document.getElementById('authGateBox').style.display = 'flex';
+      document.getElementById('unlockedContentBox').style.display = 'none';
+    }
+  }
 
-      html += `<h2 style="margin-top: 30px;">${cat.category}</h2><div class="test-grid">`;
+  async function fetchHistory(email) {
+    const resultsBox = document.getElementById('historyResultsList');
+    if (!CONFIG.DRIVE_STORAGE_URL) return;
 
-      cat.tests.forEach(test => {
-        html += `
-          <div class="test-card">
-            <div>
-              <span class="badge ${badgeClass}">${badgeText}</span>
-              <h3 style="margin: 0 0 8px 0;">${test.title}</h3>
-              <p style="font-size: 13.5px; color: var(--text-muted); margin: 0;">${test.desc}</p>
-            </div>
-            <a href="${test.url}" class="${btnClass}">
-              ${isLis ? '🎧 Làm Bài Nghe' : '▶️ Làm Bài Đọc'}
-            </a>
-          </div>
-        `;
+    try {
+      const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ action: "get_history", email: email })
+      });
+      const data = await res.json();
+      const attempts = data?.attempts || [];
+
+      document.getElementById('totalAttemptsBadge').innerText = `${attempts.length} bài`;
+
+      if (attempts.length === 0) {
+        resultsBox.innerHTML = `<div style="text-align:center; padding:12px; color:var(--text-muted); font-size:14px;">ℹ️ Em chưa có bài làm nào trên hệ thống. Hãy chọn đề bên dưới để luyện tập nhé!</div>`;
+        return;
+      }
+
+      // Gom nhóm lịch sử theo ngày
+      const groups = {};
+      attempts.forEach(att => {
+        let datePart = "Khác";
+        const m = att.timestamp?.match(/(\d{2}\/\d{2}\/\d{4})/);
+        if (m) datePart = m[1];
+        if (!groups[datePart]) groups[datePart] = [];
+        groups[datePart].push(att);
       });
 
-      html += `</div>`;
-    });
+      let html = '';
+      for (const date in groups) {
+        html += `
+          <div style="margin-bottom: 10px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div style="padding: 8px 12px; background: #f1f5f9; font-weight: bold; font-size: 13.5px;">📅 Ngày ${date} (${groups[date].length} bài)</div>
+            <div style="padding: 6px 12px;">
+        `;
+        groups[date].forEach(att => {
+          // Xây dựng link xem lại chính xác với URL runner và query params
+          const separator = att.pageUrl.includes('?') ? '&' : '?';
+          const reviewLink = `${att.pageUrl}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
 
-    document.getElementById('catalogContainer').innerHTML = html;
-  } catch (err) {
-    document.getElementById('catalogContainer').innerHTML = `<p style="color:red; text-align:center;">Lỗi tải catalog đề thi!</p>`;
+          html += `
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
+              <div>
+                <b>📖 ${att.testTitle}</b>
+                <div style="font-size: 12.5px; color: var(--text-muted);">⏱️ Nộp lúc: ${att.timestamp} • Thời gian: ${att.timeSpent || 'N/A'}</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span class="score-pill">Điểm: ${att.score}</span>
+                <a href="${reviewLink}" class="btn-review">👁️ Xem lại bài</a>
+              </div>
+            </div>
+          `;
+        });
+        html += `</div></div>`;
+      }
+      resultsBox.innerHTML = html;
+    } catch (e) {
+      resultsBox.innerHTML = `<div style="text-align:center; padding:10px; color:var(--text-muted);">ℹ️ Em có thể làm các đề bên dưới bình thường nhé!</div>`;
+    }
   }
+
+  async function loadCatalog() {
+    try {
+      const res = await fetch('data/catalog.json');
+      const categories = await res.json();
+      let html = '';
+      categories.forEach(cat => {
+        const isLis = cat.type === 'listening';
+        html += `<h2 style="margin-top: 30px;">${cat.category}</h2><div class="test-grid">`;
+        cat.tests.forEach(test => {
+          html += `
+            <div class="test-card">
+              <div>
+                <span class="badge ${isLis ? 'badge-listening' : 'badge-reading'}">${isLis ? '🎧 Listening' : '📖 Reading'}</span>
+                <h3 style="margin: 0 0 8px 0;">${test.title}</h3>
+                <p style="font-size: 13.5px; color: var(--text-muted); margin: 0;">${test.desc}</p>
+              </div>
+              <a href="${test.url}" class="btn-start-test ${isLis ? 'lis' : ''}">
+                ${isLis ? '🎧 Làm Bài Nghe' : '▶️ Làm Bài Đọc'}
+              </a>
+            </div>
+          `;
+        });
+        html += `</div>`;
+      });
+      document.getElementById('catalogContainer').innerHTML = html;
+    } catch (e) {
+      document.getElementById('catalogContainer').innerHTML = `<p style="color:red; text-align:center;">Lỗi tải catalog đề thi!</p>`;
+    }
+  }
+
+  checkAuthStatus();
 </script>
 </body>
 </html>
