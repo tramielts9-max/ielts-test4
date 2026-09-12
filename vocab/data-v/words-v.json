@@ -1,0 +1,58 @@
+[
+  {
+    "id": "w_001",
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪk.wə.təs/",
+    "meaning": "có mặt ở khắp nơi, phổ biến rộng rãi",
+    "example": "Smartphones have become ubiquitous in daily life.",
+    "options": ["hiếm hoi", "có mặt ở khắp nơi", "cổ xưa", "tạm thời"]
+  },
+  {
+    "id": "w_002",
+    "word": "ephemeral",
+    "phonetic": "/ɪˈfem.ər.əl/",
+    "meaning": "phù du, ngắn ngủi",
+    "example": "Fame in the internet age can be ephemeral.",
+    "options": ["vĩnh cửu", "nguy hiểm", "phù du, ngắn ngủi", "to lớn"]
+  },
+  {
+    "id": "w_003",
+    "word": "mitigate",
+    "phonetic": "/ˈmɪt.ɪ.ɡeɪt/",
+    "meaning": "làm giảm bớt, xoa dịu (thiệt hại, nỗi đau)",
+    "example": "Trees can help mitigate the effects of climate change.",
+    "options": ["làm tăng thêm", "phá hủy", "làm giảm bớt", "bắt đầu"]
+  },
+  {
+    "id": "w_004",
+    "word": "meticulous",
+    "phonetic": "/məˈtɪk.jə.ləs/",
+    "meaning": "tỉ mỉ, cẩn thận từng chi tiết",
+    "example": "He described the process in meticulous detail.",
+    "options": ["cẩu thả", "tỉ mỉ, cẩn thận", "nhanh chóng", "lười biếng"]
+  },
+  {
+    "id": "w_005",
+    "word": "resilient",
+    "phonetic": "/rɪˈzɪl.jənt/",
+    "meaning": "kiên cường, mau hồi phục sau biến cố",
+    "example": "Children can be remarkably resilient when facing difficulties.",
+    "options": ["yếu ớt", "sợ hãi", "kiên cường, mau hồi phục", "giận dữ"]
+  },
+  {
+    "id": "w_006",
+    "word": "pragmatic",
+    "phonetic": "/præɡˈmæt.ɪk/",
+    "meaning": "thực dụng, trọng thực tế",
+    "example": "We need a pragmatic approach to solve this issue.",
+    "options": ["mơ mộng", "thực dụng, thực tế", "lý thuyết suông", "nghiêm khắc"]
+  },
+  {
+    "id": "w_007",
+    "word": "scrutinize",
+    "phonetic": "/ˈskruː.tɪ.naɪz/",
+    "meaning": "xem xét kĩ lưỡng, soi sét kỹ",
+    "example": "Customers should carefully scrutinize every bank statement.",
+    "options": ["bỏ qua", "xem xét kỹ lưỡng", "khen ngợi", "quên lãng"]
+  }
+]
