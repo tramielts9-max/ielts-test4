@@ -23,7 +23,7 @@
 }
 
 .word-display .word {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 800;
   color: var(--primary);
 }
@@ -39,29 +39,31 @@
   color: var(--primary);
   border: none;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 18px;
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
   cursor: pointer;
   margin-top: 10px;
+  transition: transform 0.1s;
 }
+.audio-btn:hover { transform: scale(1.1); }
 
 .quiz-options {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .quiz-opt-btn {
   background: #f8fafc;
   border: 2px solid var(--border-color);
-  padding: 14px 18px;
+  padding: 15px 18px;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   text-align: left;
-  transition: all 0.2s;
+  transition: all 0.15s ease-in-out;
 }
 
 .quiz-opt-btn:hover {
@@ -69,14 +71,25 @@
   border-color: #cbd5e1;
 }
 
+/* 🔥 HIỆU ỨNG CHỌN ĐÚNG: XANH LÁ RỰC RỠ 100% 🔥 */
 .quiz-opt-btn.correct {
-  background: #dcfce7 !important;
-  border-color: #22c55e !important;
-  color: #15803d !important;
+  background: #10b981 !important;
+  border-color: #059669 !important;
+  color: #ffffff !important;
+  transform: scale(1.02);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
 }
 
+/* 🔥 HIỆU ỨNG CHỌN SAI: ĐỎ RỰC RỠ 🔥 */
 .quiz-opt-btn.wrong {
-  background: #fee2e2 !important;
-  border-color: #ef4444 !important;
-  color: #b91c1c !important;
+  background: #ef4444 !important;
+  border-color: #b91c1c !important;
+  color: #ffffff !important;
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
 }
