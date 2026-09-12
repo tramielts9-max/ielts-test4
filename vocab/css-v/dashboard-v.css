@@ -1,0 +1,92 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  font-size: 16px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.golden-timer-box {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 100%);
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.golden-timer-box .countdown {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.memory-tower {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+.tower-tier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.tier-5 { background: #10b981; }
+.tier-4 { background: #3b82f6; }
+.tier-3 { background: #8b5cf6; }
+.tier-2 { background: #f59e0b; }
+.tier-1 { background: #ef4444; }
+
+.metrics-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.metric-item {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-item .val {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.metric-item .label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
