@@ -1,14 +1,16 @@
 export class QuizController {
-  constructor(words, onCompleteWord, onFinishSession) {
+  constructor(words, isGoldenTime, onFinishSession) {
     this.words = words;
-    this.onCompleteWord = onCompleteWord;
+    this.isGoldenTime = isGoldenTime;
     this.onFinishSession = onFinishSession;
     this.currentIndex = 0;
+    this.sessionResults = [];
     this.startTime = null;
   }
 
   start() {
     this.currentIndex = 0;
+    this.sessionResults = [];
     this.renderQuestion();
   }
 
@@ -23,7 +25,7 @@ export class QuizController {
 
   renderQuestion() {
     if (this.currentIndex >= this.words.length) {
-      this.onFinishSession();
+      this.onFinishSession(this.sessionResults, this.isGoldenTime);
       return;
     }
 
@@ -36,8 +38,8 @@ export class QuizController {
 
     quizBox.innerHTML = `
       <div class="quiz-header">
-        <span>Từ ${this.currentIndex + 1}/${this.words.length}</span>
-        <span>⏱️ Phản xạ nhanh nhận thưởng XP</span>
+        <span>Từ ${this.currentIndex + 1}/${this.words.length} (${this.isGoldenTime ? '⚡ Giờ Vàng' : '🎯 Học tự do'})</span>
+        <span id="thinkTimer">⏱️ 0.0s</span>
       </div>
 
       <div class="word-display">
@@ -66,7 +68,8 @@ export class QuizController {
 
   handleAnswer(selectedBtn, item, allButtons) {
     allButtons.forEach(b => b.disabled = true);
-    const timeSpentSec = (Date.now() - this.startTime) / 1000;
+    // Đo thời gian suy nghĩ chính xác từng từ (lấy đến 2 chữ số thập phân)
+    const thinkTimeSec = Math.round(((Date.now() - this.startTime) / 1000) * 100) / 100;
     const selectedAnswer = selectedBtn.getAttribute('data-answer');
     const isCorrect = (selectedAnswer === item.meaning);
 
@@ -79,10 +82,18 @@ export class QuizController {
       });
     }
 
+    this.sessionResults.push({
+      wordId: item.id,
+      word: item.word,
+      meaning: item.meaning,
+      userChoice: selectedAnswer,
+      isCorrect: isCorrect,
+      thinkTimeSec: thinkTimeSec
+    });
+
     setTimeout(() => {
-      this.onCompleteWord(item.id, isCorrect, timeSpentSec);
       this.currentIndex++;
       this.renderQuestion();
-    }, 1200);
+    }, 1000);
   }
 }
