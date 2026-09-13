@@ -7,6 +7,7 @@ import { UIController } from './ui-v.js';
 class App {
   constructor() {
     this.words = [];
+    this.selectedUnit = 'all'; // Mặc định là 'all' hoặc 1, 2, 3...
     this.user = StorageManager.getUser();
     this.progress = StorageManager.getWordProgress();
     this.leaderboard = StorageManager.getLeaderboard();
@@ -29,14 +30,28 @@ class App {
     this.updateUserStatsUI();
     this.refreshDashboard();
 
+    // Sự kiện chọn Unit
+    const unitSel = document.getElementById('unitSelector');
+    if (unitSel) {
+      unitSel.onchange = (e) => {
+        this.selectedUnit = e.target.value;
+        this.refreshDashboard();
+      };
+    }
+
     document.getElementById('btnStartReview').onclick = () => this.startReviewSession();
 
-    // Giả lập bot cày điểm nhẹ mỗi 15 giây
     setInterval(() => {
       this.leaderboard = BotsSimulation.simulateBotProgress(this.leaderboard, this.user.xp);
       StorageManager.saveLeaderboard(this.leaderboard);
       UIController.renderLeaderboard(this.leaderboard, 'me');
     }, 15000);
+  }
+
+  getActiveWords() {
+    if (this.selectedUnit === 'all') return this.words;
+    const unitNum = parseInt(this.selectedUnit, 10);
+    return this.words.filter(w => w.unit === unitNum);
   }
 
   updateUserStatsUI() {
@@ -47,9 +62,10 @@ class App {
   }
 
   refreshDashboard() {
-    // Kích hoạt tính năng bấm vào 5 tầng tháp để xem danh sách từ
-    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
-      const wordsInTier = this.words.filter(w => {
+    const activeWords = this.getActiveWords();
+
+    UIController.renderMemoryTower(activeWords, this.progress, (tierLevel) => {
+      const wordsInTier = activeWords.filter(w => {
         const p = this.progress[w.id];
         return (p ? p.level : 1) === tierLevel;
       });
@@ -58,23 +74,26 @@ class App {
 
     UIController.renderLeaderboard(this.leaderboard, 'me');
 
-    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
-    const nextTime = SRSEngine.getNextReviewCountdown(this.words, this.progress);
+    const queueData = SRSEngine.getReviewQueue(activeWords, this.progress);
+    const nextTime = SRSEngine.getNextReviewCountdown(activeWords, this.progress);
 
     UIController.startGoldenTimer(nextTime, queueData.isGoldenTime);
   }
 
   startReviewSession() {
-    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
+    const activeWords = this.getActiveWords();
+    const queueData = SRSEngine.getReviewQueue(activeWords, this.progress);
+
     if (queueData.words.length === 0) {
-      alert("Chưa có từ vựng nào trong hệ thống!");
+      alert("Chưa có từ vựng nào trong Unit này!");
       return;
     }
 
     const quiz = new QuizController(
       queueData.words,
       queueData.isGoldenTime,
-      (results, isGoldenTime) => this.onFinishSession(results, isGoldenTime)
+      (results, isGoldenTime) => this.onFinishSession(results, isGoldenTime),
+      this.words // Truyền toàn bộ kho 300 từ để tự sinh 4 đáp án trắc nghiệm
     );
 
     quiz.start();
@@ -85,7 +104,6 @@ class App {
     let totalThinkTime = 0;
     const wordsSummaryArr = [];
 
-    // 1. Cập nhật 5 Hũ Trí Nhớ & tính điểm
     sessionResults.forEach(res => {
       if (res.isCorrect) correctCount++;
       totalThinkTime += res.thinkTimeSec;
@@ -98,7 +116,6 @@ class App {
 
     StorageManager.saveWordProgress(this.progress);
 
-    // 2. Tính XP và cập nhật Gamification
     const earnedXP = correctCount * (isGoldenTime ? 15 : 10);
     this.user.xp += earnedXP;
     StorageManager.saveUser(this.user);
@@ -106,12 +123,12 @@ class App {
     const sessionCount = StorageManager.incrementSessionCount();
     const avgResponseTime = Math.round((totalThinkTime / sessionResults.length) * 10) / 10;
 
-    // 3. ĐỒNG BỘ ĐẦY ĐỦ DỮ LIỆU LÊN GOOGLE DRIVE/SHEETS
     const payload = {
       studentName: this.user.name,
       studentEmail: this.user.email,
       sessionData: {
         sessionNumber: sessionCount,
+        unit: this.selectedUnit,
         sessionType: isGoldenTime ? "Thời Điểm Vàng" : "Luyện tập tự do",
         score: correctCount,
         totalWords: sessionResults.length,
@@ -123,12 +140,11 @@ class App {
 
     StorageManager.sendSessionToCloud(payload);
 
-    // 4. Cập nhật giao diện
     this.updateUserStatsUI();
     document.getElementById('quizContainer').classList.add('hidden');
     document.getElementById('dashboardView').classList.remove('hidden');
 
-    alert(`🎉 Hoàn thành lượt học #${sessionCount}!\n- Kết quả: ${correctCount}/${sessionResults.length} từ đúng\n- Phản xạ TB: ${avgResponseTime}s/từ\n- Nhận được: +${earnedXP} XP\nDữ liệu đã được lưu an toàn lên Google Drive!`);
+    alert(`🎉 Hoàn thành Unit!\n- Kết quả: ${correctCount}/${sessionResults.length} từ đúng\n- Phản xạ TB: ${avgResponseTime}s/từ\n- Nhận được: +${earnedXP} XP\nDữ liệu đã lưu an toàn lên Google Drive!`);
 
     this.refreshDashboard();
   }
