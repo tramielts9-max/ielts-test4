@@ -1,0 +1,20 @@
+[
+  {
+    "id": "course_ielts_300",
+    "title": "300 TỪ HỌC THUẬT IELTS CỐT LÕI",
+    "totalWords": 300,
+    "dataFile": "words-v.json",
+    "lessons": [
+      {"unit": 1, "title": "Positive Attitude & Impact", "subTitle": "1. Thái độ & Tác động tích cực", "icon": "🌱", "count": 30},
+      {"unit": 2, "title": "Negative Attitude & Impact", "subTitle": "2. Thái độ & Tác động tiêu cực", "icon": "⚠️", "count": 30},
+      {"unit": 3, "title": "Negative Actions & Harm", "subTitle": "3. Tác động & Hành động tiêu cực", "icon": "🌪️", "count": 30},
+      {"unit": 4, "title": "Research & Evidence", "subTitle": "4. Chức năng nghiên cứu & Bằng chứng", "icon": "🔬", "count": 30},
+      {"unit": 5, "title": "Transformation & Adaptation", "subTitle": "5. Biến đổi, Tác động & Điều chỉnh", "icon": "🔄", "count": 30},
+      {"unit": 6, "title": "Conservation & Solutions", "subTitle": "6. Bảo vệ, Bảo tồn & Giải quyết", "icon": "🛡️", "count": 30},
+      {"unit": 7, "title": "Significance & Speed", "subTitle": "7. Tính chất mức độ & Tốc độ", "icon": "⚡", "count": 30},
+      {"unit": 8, "title": "Nature & Relationships", "subTitle": "8. Bản chất, Mối quan hệ & Cấu trúc", "icon": "🧩", "count": 30},
+      {"unit": 9, "title": "Shift & Demographics", "subTitle": "9. Đối chiếu, Dịch chuyển & Dân số", "icon": "📊", "count": 30},
+      {"unit": 10, "title": "Society & Environment", "subTitle": "10. Xã hội, Thương mại & Môi trường", "icon": "🌍", "count": 30}
+    ]
+  }
+]
