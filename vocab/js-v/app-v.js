@@ -7,7 +7,9 @@ import { UIController } from './ui-v.js';
 class App {
   constructor() {
     this.words = [];
-    this.selectedUnit = 'all'; // Mặc định là 'all' hoặc 1, 2, 3...
+    this.courses = [];
+    this.currentCourse = null;
+    this.activeTab = 'ontap'; // 'ontap', 'roadmap', 'sotay', 'rank'
     this.user = StorageManager.getUser();
     this.progress = StorageManager.getWordProgress();
     this.leaderboard = StorageManager.getLeaderboard();
@@ -15,10 +17,15 @@ class App {
 
   async init() {
     try {
-      const res = await fetch('data-v/words-v.json');
-      this.words = await res.json();
+      const [resWords, resCourses] = await Promise.all([
+        fetch('data-v/words-v.json'),
+        fetch('data-v/courses-v.json')
+      ]);
+      this.words = await resWords.json();
+      this.courses = await resCourses.json();
+      this.currentCourse = this.courses[0];
     } catch (e) {
-      alert("Không tìm thấy file data-v/words-v.json!");
+      alert("Không thể tải dữ liệu khóa học!");
       return;
     }
 
@@ -27,19 +34,12 @@ class App {
       StorageManager.saveLeaderboard(this.leaderboard);
     }
 
+    this.initNavigationTabs();
     this.updateUserStatsUI();
+    this.renderWeeklyStreak();
     this.refreshDashboard();
 
-    // Sự kiện chọn Unit
-    const unitSel = document.getElementById('unitSelector');
-    if (unitSel) {
-      unitSel.onchange = (e) => {
-        this.selectedUnit = e.target.value;
-        this.refreshDashboard();
-      };
-    }
-
-    document.getElementById('btnStartReview').onclick = () => this.startReviewSession();
+    document.getElementById('btnStartReview').onclick = () => this.startReviewSession(this.words);
 
     setInterval(() => {
       this.leaderboard = BotsSimulation.simulateBotProgress(this.leaderboard, this.user.xp);
@@ -48,70 +48,112 @@ class App {
     }, 15000);
   }
 
-  getActiveWords() {
-    if (this.selectedUnit === 'all') return this.words;
-    const unitNum = parseInt(this.selectedUnit, 10);
-    return this.words.filter(w => w.unit === unitNum);
+  initNavigationTabs() {
+    const tabs = ['ontap', 'roadmap', 'sotay', 'rank'];
+    tabs.forEach(tab => {
+      document.getElementById(`tab_${tab}`)?.addEventListener('click', () => {
+        this.activeTab = tab;
+        tabs.forEach(t => {
+          document.getElementById(`tab_${t}`)?.classList.toggle('active', t === tab);
+          document.getElementById(`view_${t}`)?.classList.toggle('hidden', t !== tab);
+        });
+        if (tab === 'roadmap') this.renderRoadmap();
+        if (tab === 'sotay') this.renderSotay();
+        if (tab === 'rank') UIController.renderLeaderboard(this.leaderboard, 'me');
+      });
+    });
+  }
+
+  renderRoadmap() {
+    const container = document.getElementById('roadmapLessonList');
+    if (!container || !this.currentCourse) return;
+
+    document.getElementById('courseHeaderTitle').innerText = this.currentCourse.title;
+
+    container.innerHTML = this.currentCourse.lessons.map((lesson, idx) => {
+      const isStart = idx === 0;
+      return `
+        <div class="lesson-card ${isStart ? 'active-start' : ''}" onclick="window.startLesson(${lesson.unit})">
+          ${isStart ? '<div class="badge-start-here">START HERE</div>' : ''}
+          <div class="lesson-avatar">${lesson.icon}</div>
+          <div class="lesson-info">
+            <div class="lesson-title">${lesson.title}</div>
+            <div class="lesson-subtitle">${lesson.subTitle}</div>
+          </div>
+          <div class="lesson-badge-count">${lesson.count} từ</div>
+        </div>
+      `;
+    }).join('');
+
+    window.startLesson = (unitNum) => {
+      const unitWords = this.words.filter(w => w.unit === unitNum);
+      this.startReviewSession(unitWords);
+    };
+  }
+
+  renderSotay() {
+    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
+      const wordsInTier = this.words.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
+      UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
+    });
+  }
+
+  renderWeeklyStreak() {
+    const checkedDays = StorageManager.getWeekCheckin();
+    // 1: T2, 2: T3, 3: T4, 4: T5, 5: T6, 6: T7, 0: CN
+    const daysMap = [
+      { day: 1, label: "T2" }, { day: 2, label: "T3" }, { day: 3, label: "T4" },
+      { day: 4, label: "T5" }, { day: 5, label: "T6" }, { day: 6, label: "T7" }, { day: 0, label: "CN" }
+    ];
+
+    const container = document.getElementById('weekStreakDays');
+    if (!container) return;
+
+    container.innerHTML = daysMap.map(d => {
+      const isDone = checkedDays.includes(d.day);
+      return `
+        <div class="day-bubble">
+          <div class="day-circle ${isDone ? 'checked' : ''}">${isDone ? '✓' : ''}</div>
+          <div class="day-label">${d.label}</div>
+        </div>
+      `;
+    }).join('');
   }
 
   updateUserStatsUI() {
     document.getElementById('userStreak').innerText = `🔥 ${this.user.streak} ngày`;
     document.getElementById('userFreeze').innerText = `🧊 ${this.user.freezeCards} thẻ`;
-    document.getElementById('userXP').innerText = `⚡ ${this.user.xp} XP`;
-    document.getElementById('userLeague').innerText = `🏆 Hạng ${this.user.currentLeague}`;
+    document.getElementById('userXP').innerText = `⚡ ${this.user.xp} KN`;
+    document.getElementById('userLeague').innerText = `🏆 ${this.user.currentLeague}`;
   }
 
   refreshDashboard() {
-    const activeWords = this.getActiveWords();
-
-    UIController.renderMemoryTower(activeWords, this.progress, (tierLevel) => {
-      const wordsInTier = activeWords.filter(w => {
-        const p = this.progress[w.id];
-        return (p ? p.level : 1) === tierLevel;
-      });
+    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
+      const wordsInTier = this.words.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
       UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
     });
 
-    UIController.renderLeaderboard(this.leaderboard, 'me');
-
-    const queueData = SRSEngine.getReviewQueue(activeWords, this.progress);
-    const nextTime = SRSEngine.getNextReviewCountdown(activeWords, this.progress);
-
+    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
+    const nextTime = SRSEngine.getNextReviewCountdown(this.words, this.progress);
     UIController.startGoldenTimer(nextTime, queueData.isGoldenTime);
   }
 
-  startReviewSession() {
-    const activeWords = this.getActiveWords();
-    const queueData = SRSEngine.getReviewQueue(activeWords, this.progress);
-
-    if (queueData.words.length === 0) {
-      alert("Chưa có từ vựng nào trong Unit này!");
-      return;
-    }
-
+  startReviewSession(wordsPool) {
+    const queueData = SRSEngine.getReviewQueue(wordsPool, this.progress);
     const quiz = new QuizController(
       queueData.words,
       queueData.isGoldenTime,
-      (results, isGoldenTime) => this.onFinishSession(results, isGoldenTime),
-      this.words // Truyền toàn bộ kho 300 từ để tự sinh 4 đáp án trắc nghiệm
+      (results, isGoldenTime, totalSecs) => this.onFinishSession(results, isGoldenTime, totalSecs)
     );
-
     quiz.start();
   }
 
-  async onFinishSession(sessionResults, isGoldenTime) {
+  onFinishSession(sessionResults, isGoldenTime, totalSecs) {
     let correctCount = 0;
-    let totalThinkTime = 0;
-    const wordsSummaryArr = [];
-
     sessionResults.forEach(res => {
       if (res.isCorrect) correctCount++;
-      totalThinkTime += res.thinkTimeSec;
-      wordsSummaryArr.push(`${res.word} (${res.isCorrect ? 'ĐÚNG' : 'SAI'})`);
-
       const currentProg = this.progress[res.wordId];
-      const newProg = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
-      this.progress[res.wordId] = newProg;
+      this.progress[res.wordId] = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
     });
 
     StorageManager.saveWordProgress(this.progress);
@@ -119,41 +161,74 @@ class App {
     const earnedXP = correctCount * (isGoldenTime ? 15 : 10);
     this.user.xp += earnedXP;
     StorageManager.saveUser(this.user);
+    StorageManager.recordTodayCheckin();
+    this.renderWeeklyStreak();
 
     const sessionCount = StorageManager.incrementSessionCount();
-    const avgResponseTime = Math.round((totalThinkTime / sessionResults.length) * 10) / 10;
+    const mm = String(Math.floor(totalSecs / 60)).padStart(2, '0');
+    const ss = String(totalSecs % 60).padStart(2, '0');
+    const speedStr = `${mm}:${ss}`;
 
-    const payload = {
+    // Lưu đám mây Drive
+    StorageManager.sendSessionToCloud({
       studentName: this.user.name,
       studentEmail: this.user.email,
       sessionData: {
         sessionNumber: sessionCount,
-        unit: this.selectedUnit,
-        sessionType: isGoldenTime ? "Thời Điểm Vàng" : "Luyện tập tự do",
         score: correctCount,
         totalWords: sessionResults.length,
-        avgResponseTime: avgResponseTime,
-        wordsSummary: wordsSummaryArr.join(', '),
+        duration: speedStr,
         details: sessionResults
       }
-    };
-
-    StorageManager.sendSessionToCloud(payload);
+    });
 
     this.updateUserStatsUI();
     document.getElementById('quizContainer').classList.add('hidden');
     document.getElementById('dashboardView').classList.remove('hidden');
 
-    alert(`🎉 Hoàn thành Unit!\n- Kết quả: ${correctCount}/${sessionResults.length} từ đúng\n- Phản xạ TB: ${avgResponseTime}s/từ\n- Nhận được: +${earnedXP} XP\nDữ liệu đã lưu an toàn lên Google Drive!`);
-
+    // HIỂN THỊ POP-UP KẾT QUẢ 3 CHỈ SỐ LỚN (ĐÃ LƯU, ĐIỂM KN, TỐC ĐỘ)
+    this.showResultPopup(correctCount, sessionResults.length, earnedXP, speedStr);
     this.refreshDashboard();
+  }
+
+  showResultPopup(correct, total, xp, speedStr) {
+    let existing = document.getElementById('sessionResultModal');
+    if (existing) existing.remove();
+
+    const modal = document.createElement('div');
+    modal.id = 'sessionResultModal';
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+      <div class="result-modal-card">
+        <div class="result-celebrate-icon">🎉</div>
+        <h2>Tuyệt vời!</h2>
+        <div class="result-subtitle">Bạn vừa hoàn thành một phiên luyện từ vựng xuất sắc</div>
+
+        <div class="result-stats-grid">
+          <div class="result-stat-box">
+            <div class="stat-val">${correct}/${total}</div>
+            <div class="stat-lbl">ĐÃ LƯU</div>
+          </div>
+          <div class="result-stat-box">
+            <div class="stat-val" style="color: #f59e0b;">+${xp}</div>
+            <div class="stat-lbl">ĐIỂM KN</div>
+          </div>
+          <div class="result-stat-box">
+            <div class="stat-val" style="color: #10b981;">${speedStr}</div>
+            <div class="stat-lbl">TỐC ĐỘ</div>
+          </div>
+        </div>
+
+        <button class="btn-result-finish" id="btnFinishPopup">TIẾP TỤC</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+    document.getElementById('btnFinishPopup').onclick = () => modal.remove();
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  if ("Notification" in window && Notification.permission !== "granted") {
-    Notification.requestPermission();
-  }
   const app = new App();
   app.init();
 });
