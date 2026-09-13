@@ -1,53 +1,169 @@
 .quiz-container {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 24px;
-  max-width: 600px;
+  max-width: 680px;
   margin: 20px auto;
-  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-.quiz-header {
+.quiz-top-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-muted);
-  font-size: 14px;
-  margin-bottom: 20px;
 }
 
-.word-display {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.word-display .word {
-  font-size: 34px;
-  font-weight: 800;
-  color: var(--primary);
-}
-
-.word-display .phonetic {
-  color: var(--text-muted);
-  font-size: 16px;
-  margin-top: 4px;
-}
-
-.audio-btn {
+.mode-switcher-btn {
   background: #ede9fe;
   color: var(--primary);
-  border: none;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  font-size: 20px;
+  border: 1.5px solid var(--primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 12.5px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: transform 0.1s;
+  transition: all 0.2s;
 }
-.audio-btn:hover { transform: scale(1.1); }
+.mode-switcher-btn:hover {
+  background: var(--primary);
+  color: white;
+}
 
+/* ==========================================================================
+   GIAO DIỆN THẺ GHI NHỚ LẬT 3D (QUIZLET FLASHCARD)
+   ========================================================================== */
+.flashcard-wrapper {
+  perspective: 1000px;
+  margin: 15px 0 25px 0;
+}
+
+.flashcard {
+  width: 100%;
+  min-height: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.4, 0.2, 0.2, 1);
+  cursor: pointer;
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #334155;
+  background: #1e293b; /* Tông màu xanh đen sang trọng như Quizlet */
+  color: #f8fafc;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-face-back {
+  transform: rotateY(180deg);
+  background: #0f172a;
+  border-color: var(--primary);
+}
+
+.card-main-content {
+  margin: auto 0;
+  text-align: center;
+}
+
+.card-term {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.card-phonetic {
+  color: #94a3b8;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.card-meaning {
+  font-size: 28px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.card-example {
+  margin-top: 14px;
+  font-size: 14.5px;
+  color: #cbd5e1;
+  font-style: italic;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.card-hint-bar {
+  font-size: 12.5px;
+  color: #94a3b8;
+  background: rgba(255,255,255,0.08);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* NÚT BẤM DƯỚI THẺ (X VÀ CHECK TO TRÒN CHUẨN QUIZLET) */
+.flashcard-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.btn-fc-action {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.btn-fc-wrong {
+  background: #fee2e2;
+  color: #ef4444;
+  border-color: #fca5a5;
+}
+.btn-fc-wrong:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn-fc-correct {
+  background: #dcfce7;
+  color: #10b981;
+  border-color: #86efac;
+}
+.btn-fc-correct:hover {
+  background: #10b981;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   GIAO DIỆN TRẮC NGHIỆM 4 ĐÁP ÁN (TỰ SINH ĐÁP ÁN)
+   ========================================================================== */
 .quiz-options {
   display: flex;
   flex-direction: column;
@@ -71,7 +187,6 @@
   border-color: #cbd5e1;
 }
 
-/* 🔥 HIỆU ỨNG CHỌN ĐÚNG: XANH LÁ RỰC RỠ 100% 🔥 */
 .quiz-opt-btn.correct {
   background: #10b981 !important;
   border-color: #059669 !important;
@@ -80,16 +195,22 @@
   box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
 }
 
-/* 🔥 HIỆU ỨNG CHỌN SAI: ĐỎ RỰC RỠ 🔥 */
 .quiz-opt-btn.wrong {
   background: #ef4444 !important;
   border-color: #b91c1c !important;
   color: #ffffff !important;
-  animation: shake 0.3s;
 }
 
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-6px); }
-  75% { transform: translateX(6px); }
+.audio-btn {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.1s;
 }
+.audio-btn:hover { transform: scale(1.1); }
