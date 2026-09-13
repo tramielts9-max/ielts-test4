@@ -19,6 +19,15 @@
     ]
   },
   {
+    "category": "Cambridge IELTS 21 - Academic Reading Test 2",
+    "type": "reading",
+    "tests": [
+      { "title": "Passage 1: Do animals dream?", "desc": "Table Completion, True/False/Not Given", "url": "runner-reading.html?test=cam21-test2-p1" },
+      { "title": "Passage 2: Mapungubwe", "desc": "Matching Information, Multiple Choice, Summary", "url": "runner-reading.html?test=cam21-test2-p2" },
+      { "title": "Passage 3: Artificial Intelligence", "desc": "Multiple Choice, Summary, Yes/No/Not Given", "url": "runner-reading.html?test=cam21-test2-p3" }
+    ]
+  },
+  {
     "category": "Cambridge IELTS 21 - Academic Reading Test 3",
     "type": "reading",
     "tests": [
