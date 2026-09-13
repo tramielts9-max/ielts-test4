@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Vocab - Trợ Lý Trí Nhớ Cá Nhân</title>
-  <!-- Gọi các file trong thư mục css-v -->
   <link rel="stylesheet" href="css-v/base-v.css">
   <link rel="stylesheet" href="css-v/dashboard-v.css">
   <link rel="stylesheet" href="css-v/quiz-v.css">
@@ -13,6 +12,7 @@
 <body>
 
 <div class="container">
+  <!-- Header hiển thị Gamification (Streak, Freeze, XP, League) -->
   <header>
     <div style="display: flex; align-items: center; gap: 15px;">
       <a href="../index.html" style="text-decoration: none; font-size: 20px;" title="Về trang luyện thi IELTS">🏠</a>
@@ -23,78 +23,84 @@
     <div class="user-stats">
       <div class="stat-badge" id="userStreak">🔥 1 ngày</div>
       <div class="stat-badge" id="userFreeze">🧊 1 thẻ</div>
-      <div class="stat-badge" id="userXP">⚡ 0 XP</div>
-      <div class="stat-badge" id="userLeague">🏆 Hạng Bạc</div>
+      <div class="stat-badge" id="userXP">⚡ 0 KN</div>
+      <div class="stat-badge" id="userLeague">🏆 Đồng 🥉</div>
     </div>
   </header>
 
+  <!-- THANH ĐIỀU HƯỚNG TAB MOCHIVOCAB -->
+  <nav class="mochi-nav">
+    <button class="nav-tab-btn active" id="tab_ontap">🔄 Ôn tập</button>
+    <button class="nav-tab-btn" id="tab_roadmap">📖 Học từ mới</button>
+    <button class="nav-tab-btn" id="tab_sotay">📒 Sổ tay</button>
+    <button class="nav-tab-btn" id="tab_rank">🏆 Xếp hạng</button>
+  </nav>
+
+  <!-- NỘI DUNG CHÍNH (ĐỔI THEO TAB) -->
   <main id="dashboardView">
-    <div class="dashboard-grid">
-      <section class="card">
-<h2>Thời Điểm Vàng Ôn Tập</h2>
-        <div class="golden-timer-box">
-          <!-- Ô CHỌN UNIT / NGÀY HỌC -->
-          <div style="margin-bottom: 12px; text-align: left;">
-            <label style="font-size: 13px; font-weight: 700; color: #4338ca; display: block; margin-bottom: 4px;">🎯 Chọn Unit muốn học:</label>
-            <select id="unitSelector" style="width: 100%; padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--primary); font-weight: 700; color: var(--text-main); outline: none; background: white; cursor: pointer;">
-              <option value="all">🌟 Tất cả các Unit (300 từ)</option>
-              <option value="1">Day 1: Thái độ & Tác động tích cực (30 từ)</option>
-              <option value="2">Day 2: Thái độ & Tác động tiêu cực (30 từ)</option>
-              <option value="3">Day 3: Tác động & Hành động tiêu cực (30 từ)</option>
-              <option value="4">Day 4: Chức năng nghiên cứu & Bằng chứng (30 từ)</option>
-              <option value="5">Day 5: Biến đổi, Tác động & Điều chỉnh (30 từ)</option>
-              <option value="6">Day 6: Bảo vệ, Bảo tồn & Giải quyết (30 từ)</option>
-              <option value="7">Day 7: Tính chất mức độ, Quan trọng & Tốc độ (30 từ)</option>
-              <option value="8">Day 8: Bản chất, Mối quan hệ & Cấu trúc (30 từ)</option>
-              <option value="9">Day 9: Đối chiếu, Dịch chuyển & Dân số (30 từ)</option>
-              <option value="10">Day 10: Xã hội, Thương mại & Môi trường (30 từ)</option>
-            </select>
-          </div>
-
-          <div style="font-size: 13px; color: var(--text-muted);">Đợt quên tiếp theo sau:</div>
-          <div class="countdown" id="goldenCountdown">00:00:00</div>
-          <button class="btn" id="btnStartReview" style="width: 100%;">⚡ ÔN TẬP NGAY</button>
+    <!-- TAB 1: ÔN TẬP (DEFAULT) -->
+    <div id="view_ontap">
+      <!-- Lịch check-in tuần -->
+      <div class="streak-card">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-weight: 800; color: #9a3412;">🔥 CHUỖI NGÀY HỌC LIÊN TIẾP</div>
+          <div style="font-size: 12px; color: #c2410c; font-weight: 700;">Mục tiêu: 7 Ngày 🎯</div>
         </div>
+        <div class="streak-week-days" id="weekStreakDays"></div>
+      </div>
 
-        <h2>Tháp Trí Nhớ 5 Tầng</h2>
-        <div class="memory-tower">
-          <div class="tower-tier tier-1">
-            <span>Tầng 1: Mới gặp (Cần ôn gấp)</span>
-            <span id="towerT1">0 từ</span>
+      <div class="dashboard-grid">
+        <section class="card">
+          <h2>Thời Điểm Vàng Ôn Tập</h2>
+          <div class="golden-timer-box">
+            <div style="font-size: 13px; color: var(--text-muted);">Đợt quên tiếp theo sau:</div>
+            <div class="countdown" id="goldenCountdown">00:00:00</div>
+            <button class="btn" id="btnStartReview" style="width: 100%;">⚡ ÔN TẬP TẤT CẢ (GIỜ VÀNG)</button>
           </div>
-          <div class="tower-tier tier-2">
-            <span>Tầng 2: Nhớ mang máng</span>
-            <span id="towerT2">0 từ</span>
+        </section>
+
+        <section class="card">
+          <h2>Tháp Trí Nhớ 5 Tầng</h2>
+          <div class="memory-tower">
+            <div class="tower-tier tier-1"><span>Tầng 1: Mới gặp (Cần ôn gấp)</span><span id="towerT1">0 từ 👉</span></div>
+            <div class="tower-tier tier-2"><span>Tầng 2: Nhớ mang máng</span><span id="towerT2">0 từ 👉</span></div>
+            <div class="tower-tier tier-3"><span>Tầng 3: Tạm nhớ</span><span id="towerT3">0 từ 👉</span></div>
+            <div class="tower-tier tier-4"><span>Tầng 4: Ghi nhớ tốt</span><span id="towerT4">0 từ 👉</span></div>
+            <div class="tower-tier tier-5"><span>Tầng 5: Dài hạn (Master)</span><span id="towerT5">0 từ 👉</span></div>
           </div>
-          <div class="tower-tier tier-3">
-            <span>Tầng 3: Tạm nhớ</span>
-            <span id="towerT3">0 từ</span>
-          </div>
-          <div class="tower-tier tier-4">
-            <span>Tầng 4: Ghi nhớ tốt</span>
-            <span id="towerT4">0 từ</span>
-          </div>
-          <div class="tower-tier tier-5">
-            <span>Tầng 5: Dài hạn (Master)</span>
-            <span id="towerT5">0 từ</span>
-          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- TAB 2: LỘ TRÌNH BÀI HỌC (CHUẨN ẢNH MOCHIVOCAB) -->
+    <div id="view_roadmap" class="hidden">
+      <div class="roadmap-container">
+        <div class="course-banner-header" id="courseHeaderTitle">
+          300 TỪ HỌC THUẬT IELTS CỐT LÕI
         </div>
+        <div class="lesson-list" id="roadmapLessonList"></div>
+      </div>
+    </div>
 
-        <div class="metrics-box">
-          <div class="metric-item">
-            <div class="val" id="retentionRateDisplay">0%</div>
-            <div class="label">Tỷ lệ giữ vững trí nhớ</div>
-          </div>
-          <div class="metric-item">
-            <div class="val">1.2s</div>
-            <div class="label">Tốc độ phản xạ TB</div>
-          </div>
+    <!-- TAB 3: SỔ TAY TỪ VỰNG -->
+    <div id="view_sotay" class="hidden">
+      <div class="card" style="max-width: 700px; margin: 0 auto;">
+        <h2>Sổ Tay Phân Cấp Trí Nhớ (Bấm vào từng tầng để xem từ)</h2>
+        <div class="memory-tower" style="margin-top: 15px;">
+          <div class="tower-tier tier-1"><span>Tầng 1: Mới gặp (Cần ôn gấp)</span><span id="towerT1">0 từ 👉</span></div>
+          <div class="tower-tier tier-2"><span>Tầng 2: Nhớ mang máng</span><span id="towerT2">0 từ 👉</span></div>
+          <div class="tower-tier tier-3"><span>Tầng 3: Tạm nhớ</span><span id="towerT3">0 từ 👉</span></div>
+          <div class="tower-tier tier-4"><span>Tầng 4: Ghi nhớ tốt</span><span id="towerT4">0 từ 👉</span></div>
+          <div class="tower-tier tier-5"><span>Tầng 5: Dài hạn (Master)</span><span id="towerT5">0 từ 👉</span></div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section class="card" style="padding: 0; overflow: hidden;">
+    <!-- TAB 4: BẢNG XẾP HẠNG (LEADERBOARD) -->
+    <div id="view_rank" class="hidden">
+      <section class="card" style="max-width: 700px; margin: 0 auto; padding: 0; overflow: hidden;">
         <div class="league-header">
-          <span>🏆 GIẢI ĐẤU TUẦN (BẢNG 30 NGƯỜI)</span>
+          <span>🏆 BẢNG XẾP HẠNG LEAGUE 30 NGƯỜI</span>
           <span style="font-size: 12px; font-weight: normal;">Kết thúc vào Chủ Nhật</span>
         </div>
         <div class="leaderboard-list" id="leaderboardList"></div>
@@ -105,7 +111,6 @@
   <div id="quizContainer" class="quiz-container hidden"></div>
 </div>
 
-<!-- Gọi file app-v.js từ thư mục js-v -->
 <script type="module" src="js-v/app-v.js"></script>
 </body>
 </html>
