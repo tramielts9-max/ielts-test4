@@ -18,25 +18,6 @@
   color: var(--text-muted);
 }
 
-.mode-switcher-btn {
-  background: #ede9fe;
-  color: var(--primary);
-  border: 1.5px solid var(--primary);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-weight: 700;
-  font-size: 12.5px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.mode-switcher-btn:hover {
-  background: var(--primary);
-  color: white;
-}
-
-/* ==========================================================================
-   GIAO DIỆN THẺ GHI NHỚ LẬT 3D (QUIZLET FLASHCARD)
-   ========================================================================== */
 .flashcard-wrapper {
   perspective: 1000px;
   margin: 15px 0 25px 0;
@@ -51,166 +32,65 @@
   cursor: pointer;
 }
 
-.flashcard.is-flipped {
-  transform: rotateY(180deg);
-}
+.flashcard.is-flipped { transform: rotateY(180deg); }
 
 .card-face {
-  position: absolute;
-  inset: 0;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  padding: 30px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid #334155;
-  background: #1e293b; /* Tông màu xanh đen sang trọng như Quizlet */
-  color: #f8fafc;
+  position: absolute; inset: 0; backface-visibility: hidden;
+  border-radius: 16px; padding: 30px 24px;
+  display: flex; flex-direction: column; justify-content: space-between; align-items: center;
+  border: 2px solid #334155; background: #1e293b; color: #f8fafc;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.card-face-back {
-  transform: rotateY(180deg);
-  background: #0f172a;
-  border-color: var(--primary);
-}
+.card-face-back { transform: rotateY(180deg); background: #0f172a; border-color: var(--primary); }
+.card-main-content { margin: auto 0; text-align: center; }
+.card-term { font-size: 32px; font-weight: 800; }
+.card-phonetic { color: #94a3b8; font-size: 16px; margin-top: 6px; }
+.card-meaning { font-size: 28px; font-weight: 800; color: #38bdf8; }
+.card-example { margin-top: 14px; font-size: 14.5px; color: #cbd5e1; font-style: italic; max-width: 500px; line-height: 1.5; }
+.card-hint-bar { font-size: 12.5px; color: #94a3b8; background: rgba(255,255,255,0.08); padding: 6px 14px; border-radius: 20px; }
 
-.card-main-content {
-  margin: auto 0;
-  text-align: center;
-}
-
-.card-term {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-}
-
-.card-phonetic {
-  color: #94a3b8;
-  font-size: 16px;
-  margin-top: 6px;
-}
-
-.card-meaning {
-  font-size: 28px;
-  font-weight: 800;
-  color: #38bdf8;
-}
-
-.card-example {
-  margin-top: 14px;
-  font-size: 14.5px;
-  color: #cbd5e1;
-  font-style: italic;
-  max-width: 500px;
-  line-height: 1.5;
-}
-
-.card-hint-bar {
-  font-size: 12.5px;
-  color: #94a3b8;
-  background: rgba(255,255,255,0.08);
-  padding: 6px 14px;
-  border-radius: 20px;
-}
-
-/* NÚT BẤM DƯỚI THẺ (X VÀ CHECK TO TRÒN CHUẨN QUIZLET) */
-.flashcard-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 35px;
-}
-
+.flashcard-actions { display: flex; justify-content: center; align-items: center; gap: 35px; }
 .btn-fc-action {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 64px; height: 64px; border-radius: 50%; border: 2px solid transparent;
+  font-size: 24px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s;
 }
+.btn-fc-wrong { background: #fee2e2; color: #ef4444; border-color: #fca5a5; }
+.btn-fc-wrong:hover { background: #ef4444; color: white; transform: scale(1.1); }
+.btn-fc-correct { background: #dcfce7; color: #10b981; border-color: #86efac; }
+.btn-fc-correct:hover { background: #10b981; color: white; transform: scale(1.1); }
 
-.btn-fc-wrong {
-  background: #fee2e2;
-  color: #ef4444;
-  border-color: #fca5a5;
-}
-.btn-fc-wrong:hover {
-  background: #ef4444;
-  color: white;
-  transform: scale(1.1);
-}
-
-.btn-fc-correct {
-  background: #dcfce7;
-  color: #10b981;
-  border-color: #86efac;
-}
-.btn-fc-correct:hover {
-  background: #10b981;
-  color: white;
-  transform: scale(1.1);
+.audio-btn {
+  background: rgba(255,255,255,0.15); color: white; border: none; border-radius: 50%;
+  width: 44px; height: 44px; font-size: 20px; cursor: pointer; margin-top: 10px;
 }
 
 /* ==========================================================================
-   GIAO DIỆN TRẮC NGHIỆM 4 ĐÁP ÁN (TỰ SINH ĐÁP ÁN)
+   POP-UP KẾT THÚC PHIÊN HỌC (3 CHỈ SỐ LỚN: ĐÃ LƯU, ĐIỂM KN, TỐC ĐỘ)
    ========================================================================== */
-.quiz-options {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.result-modal-card {
+  background: white; border-radius: 20px; max-width: 480px; width: 100%;
+  padding: 30px 24px; text-align: center; box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 
-.quiz-opt-btn {
-  background: #f8fafc;
-  border: 2px solid var(--border-color);
-  padding: 15px 18px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.15s ease-in-out;
+.result-celebrate-icon { font-size: 55px; margin-bottom: 10px; }
+.result-modal-card h2 { font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 4px; }
+.result-subtitle { font-size: 13.5px; color: var(--text-muted); margin-bottom: 24px; }
+
+.result-stats-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 25px;
 }
 
-.quiz-opt-btn:hover {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
+.result-stat-box {
+  background: #f8fafc; border: 1.5px solid var(--border-color); border-radius: 12px; padding: 14px 8px;
 }
 
-.quiz-opt-btn.correct {
-  background: #10b981 !important;
-  border-color: #059669 !important;
-  color: #ffffff !important;
-  transform: scale(1.02);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
-}
+.result-stat-box .stat-val { font-size: 22px; font-weight: 800; color: var(--primary); margin-bottom: 4px; }
+.result-stat-box .stat-lbl { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
 
-.quiz-opt-btn.wrong {
-  background: #ef4444 !important;
-  border-color: #b91c1c !important;
-  color: #ffffff !important;
+.btn-result-finish {
+  background: #f59e0b; color: white; border: none; padding: 14px 28px;
+  border-radius: 30px; font-weight: 800; font-size: 15px; width: 100%; cursor: pointer;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
 }
-
-.audio-btn {
-  background: rgba(255,255,255,0.15);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: transform 0.1s;
-}
-.audio-btn:hover { transform: scale(1.1); }
+.btn-result-finish:hover { background: #d97706; }
