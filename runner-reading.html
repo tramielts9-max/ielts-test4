@@ -53,7 +53,7 @@
   </div>
 </div>
 
-<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE & THEME (HOẠT ĐỘNG ĐỘC LẬP TỨC THÌ) -->
+<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE & THEME & SOCRATIC LADDER -->
 <script>
   (function() {
     var curSize = 15;
@@ -92,6 +92,52 @@
         if (btn) btn.innerText = '☀️ Sáng';
       }
     } catch(e) {}
+
+    // 👇 THÊM HÀM NÀY: ĐẢM BẢO NÚT GỬI LUÔN CHẠY 100% KHÔNG BAO GIỜ LỖI 👇
+    window.nextSocraticStep = function(qId, step, finalAnswer) {
+      // 1. Hiện lời giải nấc hiện tại
+      var ans = document.getElementById(qId + '_ans_' + step);
+      if (ans) ans.style.display = 'block';
+
+      // 2. Khóa ô nhập và nút gửi của nấc hiện tại
+      var inp = document.getElementById(qId + '_in_' + step);
+      if (inp) inp.disabled = true;
+      var btn = document.getElementById(qId + '_btn_' + step);
+      if (btn) {
+        btn.disabled = true;
+        btn.style.opacity = '0.5';
+        btn.style.cursor = 'default';
+      }
+
+      // 3. Mở khóa nấc tiếp theo
+      var next = document.getElementById(qId + '_step_' + (step + 1));
+      var badge = document.getElementById(qId + '_badge');
+      if (next) {
+        next.style.display = 'block';
+        if (badge) badge.innerText = 'Nấc ' + (step + 1) + '/4';
+        var nextInput = document.getElementById(qId + '_in_' + (step + 1));
+        if (nextInput) setTimeout(function() { nextInput.focus(); }, 100);
+      } else {
+        if (badge) {
+          badge.innerText = '✓ Đã hoàn thành 4/4 nấc';
+          badge.style.background = '#16a34a';
+          badge.style.color = 'white';
+        }
+        // Tự động điền đáp án bài thi
+        if (finalAnswer) {
+          var mainInput = document.getElementById(qId + '_input');
+          if (mainInput) {
+            mainInput.value = finalAnswer;
+            mainInput.dispatchEvent(new Event('input'));
+          }
+          var radio = document.querySelector('input[name="' + qId + '"][value="' + finalAnswer + '"]');
+          if (radio) {
+            radio.checked = true;
+            radio.dispatchEvent(new Event('change'));
+          }
+        }
+      }
+    };
   })();
 </script>
 
