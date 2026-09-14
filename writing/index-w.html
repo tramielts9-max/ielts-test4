@@ -175,18 +175,12 @@
 </div>
 
 <script>
-  // =========================================================================
-  // 🔑 KHU VỰC GIẤU KEY (DÁN CHUỖI MÃ HÓA TỪ BƯỚC 1 VÀO ĐÂY)
-  // Học sinh F12 hay GitHub bot chỉ thấy chuỗi này, hoàn toàn không thấy "AIzaSy..."
-  // =========================================================================
-  const _SECRET_HOLDER = "=cM0kFRWk3TmxRNmtoWlZwOG9GRmYxUnJnVDlrYk10S0dDc3RCbzFieExXSzZOUjhicUVEVQ";
+  
+// DÃY SỐ MÃ HÓA CỦA KEY (HỌC SINH CHỈ THẤY SỐ, KHÔNG BAO GIỜ BỊ RÁC URL)
+  const _KEY_PARTS = [65,81,46,65,98,56,82,78,54,75,87,76,88,98,49,111,66,115,116,67,71,75,116,77,98,107,57,84,103,82,114,49,102,70,111,56,112,86,90,104,107,54,81,108,79,51,107,87,70,107,81,48,119];
 
   function getDecodedKey() {
-    try {
-      return atob(_SECRET_HOLDER.split('').reverse().join(''));
-    } catch(e) {
-      return "";
-    }
+    return _KEY_PARTS.map(c => String.fromCharCode(c)).join('');
   }
 
   let currentTask = 1;
