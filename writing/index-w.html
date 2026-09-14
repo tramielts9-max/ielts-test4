@@ -306,10 +306,12 @@
     }
   });
 
-  // HÀM GỌI STREAMING TỪNG CHỮ SIÊU NHANH
+// GIỮ NGUYÊN DANH SÁCH DÒ MODEL GỐC CỦA MÀY
   async function streamGeminiDirect(apiKey, parts, onChunk) {
     const modelsQueue = [
-      "gemini-2.5-flash",
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash",
+      "gemini-2.0-flash-lite",
       "gemini-2.0-flash",
       "gemini-1.5-flash"
     ];
@@ -324,7 +326,10 @@
           body: JSON.stringify({ contents: [{ role: 'user', parts: parts }] })
         });
 
-        if (!response.ok) throw new Error(`Model ${model} bận`);
+        if (!response.ok) {
+          const errData = await response.json();
+          throw new Error(errData.error?.message || `HTTP ${response.status}`);
+        }
 
         const reader = response.body.getReader();
         const decoder = new TextDecoder("utf-8");
@@ -347,12 +352,13 @@
             }
           }
         }
-        return true;
+        return model; // Chạy thành công thì dừng vòng lặp
       } catch (err) {
+        console.warn(`Model ${model} bận hoặc lỗi: ${err.message}. Đang tự động thử model kế tiếp...`);
         lastError = err;
       }
     }
-    throw lastError || new Error("Không thể kết nối đến máy chủ AI");
+    throw lastError;
   }
 
   window.startGrading = async () => {
@@ -452,9 +458,9 @@ HÃY XUẤT BÀI CHẤM THEO ĐÚNG CẤU TRÚC SAU:
       submitBtn.disabled = false;
       submitBtn.innerText = "CHẤM LẠI BÀI KHÁC";
       printBtn.style.display = "inline-block";
-    } catch (err) {
+} catch (err) {
       console.error(err);
-      statusBar.innerHTML = "⚠️ Có lỗi trong lúc chấm bài. Em vui lòng bấm thử lại nhé!";
+      statusBar.innerHTML = "❌ Lỗi chi tiết: " + err.message;
       submitBtn.disabled = false;
       submitBtn.innerText = "THỬ LẠI";
     }
