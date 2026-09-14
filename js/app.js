@@ -236,68 +236,60 @@ if (document.readyState === 'loading') {
 }
 
 // ==========================================================================
-// HỆ THỐNG XỬ LÝ KỊCH BẢN MỚM DẪN DẮT SOCRATIC 4 NẤC (INTERACTIVE LADDER)
+// BỘ MÁY SOCRATIC TIỆM TIẾN: BẤM GỬI LÀ HIỆN ĐÁP ÁN + MỞ NẤC TIẾP THEO
 // ==========================================================================
-window.checkSocratic = function(qId, stepIdx, acceptedArr, wrongArr, correctMsg, wrongMsg, fallbackMsg, finalAnswer) {
+window.checkSocratic = function(qId, stepIdx, guideAnswer, bridgeNext, finalAnswer) {
   const inputEl = document.getElementById(`${qId}_soc_in_${stepIdx}`);
   const fbEl = document.getElementById(`${qId}_soc_fb_${stepIdx}`);
   const nextStepEl = document.getElementById(`${qId}_soc_step_${stepIdx + 1}`);
   const badgeEl = document.getElementById(`socratic_badge_${qId}`);
-  if (!inputEl || !fbEl) return;
+  if (!fbEl) return;
 
-  const userVal = inputEl.value.trim().toLowerCase();
-  if (!userVal) {
-    alert("Em hãy gõ câu trả lời vào ô trước khi bấm Gửi nhé!");
-    return;
+  // 1. Khóa ô nhập và nút gửi của nấc hiện tại
+  if (inputEl) inputEl.disabled = true;
+  const btn = document.getElementById(`btn_${qId}_s${stepIdx}`);
+  if (btn) {
+    btn.disabled = true;
+    btn.style.opacity = "0.6";
+    btn.style.cursor = "default";
   }
 
+  // 2. Hiện ngay Lời giải hướng dẫn & Cầu nối dẫn dắt
   fbEl.style.display = "block";
-  let isCorrect = acceptedArr.some(k => userVal.includes(k.toLowerCase()));
-  let isWrongTrap = wrongArr.some(w => userVal.includes(w.toLowerCase()));
+  fbEl.innerHTML = `
+    <div style="background: #f0fdf4; border-left: 4px solid #16a34a; padding: 10px 14px; border-radius: 6px; margin-top: 8px; line-height: 1.6;">
+      <div style="color: #166534; font-weight: 700; margin-bottom: 4px;">🎯 LỜI GIẢI HƯỚNG DẪN:</div>
+      <div style="color: #1e293b;">${guideAnswer}</div>
+      ${bridgeNext ? `<div style="margin-top: 6px; font-style: italic; color: #475569; font-size: 0.95em;">🌉 <i>${bridgeNext}</i></div>` : ''}
+    </div>
+  `;
 
-  if (isCorrect) {
-    fbEl.style.color = "#15803d";
-    fbEl.style.background = "#dcfce7";
-    fbEl.style.border = "1px solid #86efac";
-    fbEl.style.padding = "8px 12px";
-    fbEl.style.borderRadius = "6px";
-    fbEl.innerHTML = correctMsg;
+  // 3. Mở khóa nấc tiếp theo
+  if (nextStepEl) {
+    nextStepEl.style.display = "block";
+    if (badgeEl) badgeEl.innerText = `Nấc ${stepIdx + 1}/4`;
+    const nextInput = document.getElementById(`${qId}_soc_in_${stepIdx + 1}`);
+    if (nextInput) setTimeout(() => nextInput.focus(), 150);
+  } else {
+    // Đã qua nấc 4/4: Đánh dấu hoàn thành
+    if (badgeEl) {
+      badgeEl.innerText = `✓ Đã hoàn thành 4/4 nấc`;
+      badgeEl.style.background = "#16a34a";
+      badgeEl.style.color = "white";
+    }
 
-    inputEl.disabled = true;
-    const btn = inputEl.nextElementSibling;
-    if (btn) btn.disabled = true;
-
-    if (nextStepEl) {
-      nextStepEl.style.display = "block";
-      if (badgeEl) badgeEl.innerText = `Nấc ${stepIdx + 1}/4`;
-      const nextInput = document.getElementById(`${qId}_soc_in_${stepIdx + 1}`);
-      if (nextInput) setTimeout(() => nextInput.focus(), 200);
-    } else {
-      if (badgeEl) {
-        badgeEl.innerText = `✓ Đã hoàn thành 4/4 nấc!`;
-        badgeEl.style.background = "#22c55e";
-        badgeEl.style.color = "white";
+    // Tự động điền đáp án chuẩn vào bài làm chính
+    if (finalAnswer) {
+      const textInput = document.getElementById(`${qId}_input`);
+      if (textInput) {
+        textInput.value = finalAnswer;
+        textInput.dispatchEvent(new Event('input'));
       }
-      // Tự động điền đáp án chuẩn vào ô bài thi chính
-      const mainInput = document.getElementById(`${qId}_input`);
-      if (mainInput && finalAnswer) {
-        mainInput.value = finalAnswer;
-        mainInput.dispatchEvent(new Event('input'));
+      const radioBtn = document.querySelector(`input[name="${qId}"][value="${finalAnswer}"]`);
+      if (radioBtn) {
+        radioBtn.checked = true;
+        radioBtn.dispatchEvent(new Event('change'));
       }
     }
-  } else if (isWrongTrap) {
-    fbEl.style.color = "#b91c1c";
-    fbEl.style.background = "#fee2e2";
-    fbEl.style.border = "1px solid #fca5a5";
-    fbEl.style.padding = "8px 12px";
-    fbEl.style.borderRadius = "6px";
-    fbEl.innerHTML = wrongMsg;
-  } else {
-    fbEl.style.color = "#c2410c";
-    fbEl.style.background = "#ffedd5";
-    fbEl.style.border = "1px solid #fdba74";
-    fbEl.style.padding = "8px 12px";
-    fbEl.style.borderRadius = "6px";
-    fbEl.innerHTML = fallbackMsg;
   }
 };
