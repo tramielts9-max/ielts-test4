@@ -163,22 +163,32 @@
         `${raw}.json`
       ];
 
-      let data = null;
+   let data = null;
+      let loadError = null;
+
       for (const url of urlsToTry) {
         try {
           const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
           if (res.ok) {
-            data = await res.json();
-            break;
+            try {
+              data = await res.json();
+              break;
+            } catch (jsonErr) {
+              loadError = "Lỗi cú pháp JSON bên trong file: " + jsonErr.message;
+              break;
+            }
           }
-        } catch (e) {}
+        } catch (e) {
+          loadError = e.message;
+        }
       }
 
       if (!data) {
         document.getElementById('mainContainer').innerHTML = `
           <div style="padding: 30px; max-width: 700px; margin: 0 auto; text-align: center;">
-            <h3 style="color: #dc2626;">❌ Không tìm thấy file đề: <code>${fileName}.json</code></h3>
-            <p style="color: var(--text-muted);">Vui lòng kiểm tra lại đường dẫn file trong thư mục của bạn.</p>
+            <h3 style="color: #dc2626;">❌ Không thể nạp đề thi</h3>
+            <p style="color: #b91c1c; font-weight: bold;">${loadError || "Không tìm thấy file: " + fileName + ".json"}</p>
+            <p style="color: var(--text-muted); font-size: 13px;">Vui lòng kiểm tra đường dẫn hoặc cú pháp JSON của file.</p>
             <a href="index.html" class="nav-link" style="display:inline-block; margin-top: 10px;">Quay về trang chủ</a>
           </div>
         `;
