@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/reading.css">
+  <!-- BỘ DỰNG GIAO DIỆN TỰ ĐỘNG TỪ DATA SẠCH -->
+  <script src="js/reading-builder.js"></script>
 </head>
 <body>
 
@@ -93,13 +95,11 @@
       }
     } catch(e) {}
 
-    // 👇 THÊM HÀM NÀY: ĐẢM BẢO NÚT GỬI LUÔN CHẠY 100% KHÔNG BAO GIỜ LỖI 👇
+    // HÀM ĐIỀU KHIỂN BƯỚC SOCRATIC
     window.nextSocraticStep = function(qId, step, finalAnswer) {
-      // 1. Hiện lời giải nấc hiện tại
       var ans = document.getElementById(qId + '_ans_' + step);
       if (ans) ans.style.display = 'block';
 
-      // 2. Khóa ô nhập và nút gửi của nấc hiện tại
       var inp = document.getElementById(qId + '_in_' + step);
       if (inp) inp.disabled = true;
       var btn = document.getElementById(qId + '_btn_' + step);
@@ -109,7 +109,6 @@
         btn.style.cursor = 'default';
       }
 
-      // 3. Mở khóa nấc tiếp theo
       var next = document.getElementById(qId + '_step_' + (step + 1));
       var badge = document.getElementById(qId + '_badge');
       if (next) {
@@ -123,7 +122,6 @@
           badge.style.background = '#16a34a';
           badge.style.color = 'white';
         }
-        // Tự động điền đáp án bài thi
         if (finalAnswer) {
           var mainInput = document.getElementById(qId + '_input');
           if (mainInput) {
@@ -150,7 +148,7 @@
     alert("⚠️ Không tìm thấy mã đề thi!");
     window.location.href = 'index.html';
   } else {
- async function loadTest() {
+    async function loadTest() {
       const raw = testId.replace(/\.json$/i, '');
       const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
       const folderName = fileName.replace(/-p\d+.*$/i, '');
@@ -172,11 +170,9 @@
           if (res.ok) {
             const rawText = await res.text();
             try {
-              // 1. Thử đọc JSON bình thường
               data = JSON.parse(rawText);
               break;
             } catch (jsonErr) {
-              // 2. TỰ ĐỘNG SỬA LỖI: Tẩy sạch các dấu \' và escape sai chuẩn trong file
               try {
                 const autoFixedText = rawText
                   .replace(/\\'/g, "'")
@@ -209,7 +205,14 @@
       document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.passageHtml || "";
-      document.getElementById('questionBox').innerHTML = data.questionHtml || "";
+
+      // TỰ ĐỘNG CHỌN: NẾU CÓ DATA CẤU TRÚC SẠCH THÌ TỰ BUILD, CÒN FILE CŨ THÌ RENDER NHƯ CŨ
+      if (data.questions && window.buildReadingHtml) {
+        document.getElementById('questionBox').innerHTML = window.buildReadingHtml(data);
+      } else {
+        document.getElementById('questionBox').innerHTML = data.questionHtml || "";
+      }
+
       window.TEST_DATA = { title: data.title, answers: data.answers };
 
       await import('./js/app.js');
