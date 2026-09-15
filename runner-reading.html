@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/reading.css">
-  <!-- BỘ DỰNG GIAO DIỆN TỰ ĐỘNG TỪ DATA SẠCH -->
-  <script src="js/reading-builder.js"></script>
 </head>
 <body>
 
@@ -55,7 +53,7 @@
   </div>
 </div>
 
-<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE & THEME & SOCRATIC LADDER -->
+<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE, THEME & BỘ MÁY SOCRATIC -->
 <script>
   (function() {
     var curSize = 15;
@@ -85,7 +83,6 @@
       try { localStorage.setItem('ielts_theme', isDark ? 'dark' : 'light'); } catch(e) {}
     };
 
-    // Áp dụng ngay khi mở trang
     setFont(curSize);
     try {
       if (localStorage.getItem('ielts_theme') === 'dark') {
@@ -95,11 +92,13 @@
       }
     } catch(e) {}
 
-    // HÀM ĐIỀU KHIỂN BƯỚC SOCRATIC
+    // BỘ MÁY ĐIỀU KHIỂN BẬC THANG SOCRATIC (GỬI -> HIỆN GỢI Ý -> MỞ NẤC TIẾP)
     window.nextSocraticStep = function(qId, step, finalAnswer) {
+      // 1. Hiện lời giải nấc hiện tại
       var ans = document.getElementById(qId + '_ans_' + step);
       if (ans) ans.style.display = 'block';
 
+      // 2. Khóa ô nhập và nút gửi của nấc hiện tại
       var inp = document.getElementById(qId + '_in_' + step);
       if (inp) inp.disabled = true;
       var btn = document.getElementById(qId + '_btn_' + step);
@@ -109,19 +108,23 @@
         btn.style.cursor = 'default';
       }
 
+      // 3. Mở khóa nấc tiếp theo hoặc hoàn thành
       var next = document.getElementById(qId + '_step_' + (step + 1));
       var badge = document.getElementById(qId + '_badge');
+
       if (next) {
         next.style.display = 'block';
-        if (badge) badge.innerText = 'Nấc ' + (step + 1) + '/4';
+        var totalSteps = badge ? (badge.getAttribute('data-total') || '3') : '3';
+        if (badge) badge.innerText = 'Nấc ' + (step + 1) + '/' + totalSteps;
         var nextInput = document.getElementById(qId + '_in_' + (step + 1));
         if (nextInput) setTimeout(function() { nextInput.focus(); }, 100);
       } else {
         if (badge) {
-          badge.innerText = '✓ Đã hoàn thành 4/4 nấc';
+          badge.innerText = '✓ Đã hoàn thành';
           badge.style.background = '#16a34a';
           badge.style.color = 'white';
         }
+        // Tự động điền đáp án chuẩn vào bài thi
         if (finalAnswer) {
           var mainInput = document.getElementById(qId + '_input');
           if (mainInput) {
@@ -137,6 +140,130 @@
       }
     };
   })();
+
+  // =========================================================================
+  // BỘ DỰNG GIAO DIỆN TỰ ĐỘNG TỪ JSON SẠCH (CÓ SOCRATIC, LỜI GIẢI, DẪN CHỨNG)
+  // =========================================================================
+  window.buildReadingHtml = function(data) {
+    if (!data.groups || !data.questions) return data.questionHtml || "";
+
+    let html = '';
+
+    data.groups.forEach(group => {
+      html += `<div class="section-title">${group.title}</div>`;
+      if (group.instructions) html += `<p>${group.instructions}</p>`;
+      if (group.summaryTitle) html += `<h3>${group.summaryTitle}</h3>`;
+
+      // 1. DẠNG SUMMARY COMPLETION (ĐIỀN TỪ VÀO ĐOẠN VĂN)
+      if (group.template) {
+        let summaryText = group.template;
+        group.questionIds.forEach(qId => {
+          const q = data.questions[qId];
+          const width = q?.inputWidth || "120px";
+          summaryText = summaryText.replace(
+            new RegExp(`{{${qId}}}`, 'g'),
+            `<input type="text" class="fill-input" id="${qId}_input" style="width:${width};" placeholder="Điền từ...">`
+          );
+        });
+
+        html += `<div class="question"><p>${summaryText}</p>`;
+
+        group.questionIds.forEach(qId => {
+          const q = data.questions[qId];
+          if (!q) return;
+          html += `
+            <div id="${qId}" style="margin-top:15px; border-top:1px dashed var(--border-color); padding-top:12px;">
+              <b style="color:var(--primary-blue);">Câu ${q.num || qId.replace('q','')}:</b>
+              <div class="result"></div>
+              ${renderSocraticHtml(qId, q)}
+              ${renderExplanationHtml(qId, q)}
+            </div>
+          `;
+        });
+        html += `</div>`;
+      } 
+      // 2. DẠNG CÂU HỎI RỜI (MATCHING INFO, MATCHING NAMES, TRUE/FALSE...)
+      else {
+        group.questionIds.forEach(qId => {
+          const q = data.questions[qId];
+          if (!q) return;
+
+          html += `
+            <div class="question" id="${qId}">
+              <p><b>${q.num}.</b> ${q.text}</p>
+              <div style="margin-bottom: 12px;">
+                <input type="text" class="fill-input" id="${qId}_input" placeholder="Nhập đáp án..." style="width:${q.inputWidth || '120px'};">
+              </div>
+              <div class="result"></div>
+              ${renderSocraticHtml(qId, q)}
+              ${renderExplanationHtml(qId, q)}
+              <div class="thought-box">
+                <label>💡 Mạch suy nghĩ của em:</label>
+                <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
+              </div>
+            </div>
+          `;
+        });
+      }
+    });
+
+    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()">Nộp Bài / Xem Kết Quả</button>`;
+    return html;
+  };
+
+  function renderSocraticHtml(qId, q) {
+    if (!q.socratic || !q.socratic.steps || q.socratic.steps.length === 0) return '';
+    const total = q.socratic.steps.length;
+    const ans = q.finalAnswer || '';
+
+    let sHtml = `
+      <div class="socratic-container" style="background:var(--bg-subcard); border:1.5px solid var(--border-color); border-radius:8px; padding:14px; margin-top:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <b style="color:#0284c7; font-size:13.5px;">🪜 BẬC THANG DẪN DẮT (SOCRATIC)</b>
+          <span id="${qId}_badge" data-total="${total}" style="background:#0284c7; color:white; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:12px;">Nấc 1/${total}</span>
+        </div>
+    `;
+
+    q.socratic.steps.forEach((step, idx) => {
+      const stepNum = idx + 1;
+      const isFirst = stepNum === 1;
+
+      sHtml += `
+        <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed var(--border-color); padding-top:10px;' : ''}">
+          <p style="margin:0 0 6px 0; font-size:13.5px; font-weight:700; color:var(--text-main);">
+            Nấc ${stepNum}: ${step.title}<br>
+            <span style="font-weight:normal; color:var(--text-muted);">${step.question}</span>
+          </p>
+          <div style="display:flex; gap:6px;">
+            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập suy nghĩ hoặc câu trả lời..." style="flex:1; padding:6px 10px; border:1px solid var(--border-color); border-radius:4px; font-size:13px; background:var(--bg-card); color:var(--text-main);">
+            <button type="button" id="${qId}_btn_${stepNum}" style="background:#0284c7; color:white; border:none; padding:6px 14px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
+          </div>
+          <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:13px; line-height:1.5;">
+            <div style="color:#166534; font-weight:700;">💡 HƯỚNG DẪN:</div>
+            <div style="color:#1e293b;">${step.guide}</div>
+            ${step.bridge ? `<div style="margin-top:4px; font-style:italic; color:#475569;">🌉 <i>${step.bridge}</i></div>` : ''}
+          </div>
+        </div>
+      `;
+    });
+
+    sHtml += `</div>`;
+    return sHtml;
+  }
+
+  function renderExplanationHtml(qId, q) {
+    if (!q.explanation || !q.explanation.steps) return '';
+    let expSteps = q.explanation.steps.map(s => `<p style="margin:4px 0;">${s}</p>`).join('');
+    let hlBtn = q.highlightId ? `<button type="button" class="btn-header" style="background:#0284c7; margin-top:8px;" onclick="window.highlightText('${q.highlightId}')">📍 Xem dẫn chứng bài đọc</button>` : '';
+
+    return `
+      <div class="explanation" style="display:none;">
+        <div class="kw-exp">🎯 LỜI GIẢI CHI TIẾT:</div>
+        ${expSteps}
+        ${hlBtn}
+      </div>
+    `;
+  }
 </script>
 
 <!-- SCRIPT TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY APP -->
@@ -206,7 +333,7 @@
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.passageHtml || "";
 
-      // TỰ ĐỘNG CHỌN: NẾU CÓ DATA CẤU TRÚC SẠCH THÌ TỰ BUILD, CÒN FILE CŨ THÌ RENDER NHƯ CŨ
+      // TỰ ĐỘNG CHỌN: CÓ STRUCTURE SẠCH THÌ TỰ BUILD, KHÔNG CÓ THÌ DÙNG QUESTIONHTML CŨ
       if (data.questions && window.buildReadingHtml) {
         document.getElementById('questionBox').innerHTML = window.buildReadingHtml(data);
       } else {
