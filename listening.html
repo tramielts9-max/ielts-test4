@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Listening Practice - Cambridge 17 to 21</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .listening-hero {
+      background: linear-gradient(135deg, #0284c7 0%, #0f172a 100%);
+      color: white; padding: 28px 20px; text-align: center; border-radius: 12px; margin-bottom: 22px;
+      box-shadow: 0 8px 20px rgba(2, 132, 199, 0.25);
+    }
+    .top-nav-bar {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
+    }
+    .cam-tabs-bar {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px;
+      background: var(--bg-card); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border-color);
+    }
+    .cam-tab-btn {
+      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
+      padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s;
+    }
+    .cam-tab-btn:hover { border-color: #0284c7; color: #0284c7; }
+    .cam-tab-btn.active {
+      background: #0284c7; border-color: #0284c7; color: #ffffff !important;
+      box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+    }
+
+    .test-heading {
+      font-size: 17px; font-weight: 800; color: #0f172a; margin: 28px 0 14px 0;
+      padding-bottom: 6px; border-bottom: 2.5px solid #0284c7;
+    }
+    .test-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; margin-bottom: 15px;
+    }
+    .test-card {
+      background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 18px;
+      display: flex; flex-direction: column; justify-content: space-between; min-height: 185px;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .test-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+    .badge-lis {
+      display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 12px;
+      font-size: 12px; font-weight: 700; background: #e0f2fe; color: #0284c7; margin-bottom: 10px; width: fit-content;
+    }
+    .card-title { color: #0369a1; font-size: 15.5px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
+    .card-desc { font-size: 13px; color: #64748b; margin: 0 0 16px 0; line-height: 1.5; }
+    .btn-play {
+      display: flex; align-items: center; justify-content: center; gap: 6px; background: #0284c7;
+      color: #ffffff; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: 14px;
+      transition: background 0.2s;
+    }
+    .btn-play:hover { background: #0369a1; }
+  </style>
+</head>
+<body>
+
+<div style="max-width: 1200px; margin: auto; padding: 15px;">
+  <!-- HEADER -->
+  <div class="listening-hero">
+    <h1 style="margin: 0 0 6px 0; font-size: 24px;">🎧 PHÒNG LUYỆN THI IELTS LISTENING</h1>
+    <p style="margin: 0; opacity: 0.9; font-size: 14px;">Audio Synchronized Transcripts • Bấm câu nghe ngay • Tự động chấm điểm & Lưu Google Drive</p>
+  </div>
+
+  <div class="top-nav-bar">
+    <a href="index.html" class="btn-header" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+      🏠 Về Cổng Thi Chính (Reading)
+    </a>
+    <span id="userStatusTag" style="font-size: 13px; color: var(--text-muted); font-weight: 600;"></span>
+  </div>
+
+  <!-- TABS CHỌN CAMBRIDGE -->
+  <div class="cam-tabs-bar">
+    <span style="font-weight: 800; font-size: 14px; margin-right: 6px; display: flex; align-items: center;">Bộ Sách:</span>
+    <button type="button" class="cam-tab-btn active" onclick="switchCam(21)">Cambridge 21</button>
+    <button type="button" class="cam-tab-btn" onclick="switchCam(20)">Cambridge 20</button>
+    <button type="button" class="cam-tab-btn" onclick="switchCam(19)">Cambridge 19</button>
+    <button type="button" class="cam-tab-btn" onclick="switchCam(18)">Cambridge 18</button>
+    <button type="button" class="cam-tab-btn" onclick="switchCam(17)">Cambridge 17</button>
+    <button type="button" class="cam-tab-btn" onclick="switchCam('all')">Xem Tất Cả</button>
+  </div>
+
+  <!-- CONTAINER DANH SÁCH BÀI THI -->
+  <div id="listeningCatalogContainer">
+    <div style="text-align: center; padding: 40px; color: var(--text-muted);">⏳ Đang tải dữ liệu bài thi Listening...</div>
+  </div>
+</div>
+
+<script type="module">
+  import { stateManager } from './js/state.js';
+
+  let listeningData = [];
+  let currentCam = 21;
+
+  // Hiển thị tên học viên nếu đã login ở index.html
+  const user = stateManager.getUser();
+  if (user && user.email) {
+    document.getElementById('userStatusTag').innerText = `👤 Học viên: ${user.name || user.email}`;
+  }
+
+  // Tải danh mục bài nghe từ file tách riêng
+  async function loadCatalog() {
+    try {
+      const res = await fetch(`data/listening-catalog.json?t=${Date.now()}`);
+      if (!res.ok) throw new Error("Chưa tìm thấy data/listening-catalog.json");
+      listeningData = await res.json();
+      renderUI();
+    } catch (e) {
+      document.getElementById('listeningCatalogContainer').innerHTML = `
+        <div style="text-align:center; padding: 30px; color: #dc2626;">
+          ⚠️ Không thể nạp danh mục bài nghe: ${e.message}
+        </div>
+      `;
+    }
+  }
+
+  window.switchCam = (cam) => {
+    currentCam = cam;
+    document.querySelectorAll('.cam-tab-btn').forEach(b => {
+      if (cam === 'all') {
+        b.classList.toggle('active', b.innerText.includes('Xem Tất Cả'));
+      } else {
+        b.classList.toggle('active', b.innerText.includes(`Cambridge ${cam}`));
+      }
+    });
+    renderUI();
+  };
+
+  function renderUI() {
+    const container = document.getElementById('listeningCatalogContainer');
+    const filtered = (currentCam === 'all') 
+      ? listeningData 
+      : listeningData.filter(item => item.cam === currentCam);
+
+    if (filtered.length === 0) {
+      container.innerHTML = `<div style="text-align:center; padding: 30px; color: var(--text-muted);">Đang chuẩn bị đề cho tập này...</div>`;
+      return;
+    }
+
+    let html = '';
+    filtered.forEach(item => {
+      item.tests.forEach(test => {
+        html += `
+          <div class="test-heading">
+            🎧 Cambridge IELTS ${item.cam} - Listening Test ${test.testNum}
+          </div>
+          <div class="test-grid">
+        `;
+
+        test.parts.forEach(part => {
+          const testUrl = `runner-listening.html?test=${part.file}`;
+          html += `
+            <div class="test-card">
+              <div>
+                <span class="badge-lis">🎧 Part ${part.p}</span>
+                <h4 class="card-title">${part.title}</h4>
+                <div class="card-desc">${part.desc}</div>
+              </div>
+              <a href="${testUrl}" class="btn-play">
+                <span>▶</span> Nghe & Làm Bài
+              </a>
+            </div>
+          `;
+        });
+
+        html += `</div>`;
+      });
+    });
+
+    container.innerHTML = html;
+  }
+
+  loadCatalog();
+</script>
+</body>
+</html>
