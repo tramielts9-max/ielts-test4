@@ -150,7 +150,7 @@
     alert("⚠️ Không tìm thấy mã đề thi!");
     window.location.href = 'index.html';
   } else {
-    async function loadTest() {
+ async function loadTest() {
       const raw = testId.replace(/\.json$/i, '');
       const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
       const folderName = fileName.replace(/-p\d+.*$/i, '');
@@ -163,19 +163,30 @@
         `${raw}.json`
       ];
 
-   let data = null;
+      let data = null;
       let loadError = null;
 
       for (const url of urlsToTry) {
         try {
           const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
           if (res.ok) {
+            const rawText = await res.text();
             try {
-              data = await res.json();
+              // 1. Thử đọc JSON bình thường
+              data = JSON.parse(rawText);
               break;
             } catch (jsonErr) {
-              loadError = "Lỗi cú pháp JSON bên trong file: " + jsonErr.message;
-              break;
+              // 2. TỰ ĐỘNG SỬA LỖI: Tẩy sạch các dấu \' và escape sai chuẩn trong file
+              try {
+                const autoFixedText = rawText
+                  .replace(/\\'/g, "'")
+                  .replace(/\\([^"\\/bfnrtu])/g, '$1');
+                data = JSON.parse(autoFixedText);
+                break;
+              } catch (retryErr) {
+                loadError = "Lỗi cú pháp JSON: " + jsonErr.message;
+                break;
+              }
             }
           }
         } catch (e) {
@@ -203,7 +214,6 @@
 
       await import('./js/app.js');
     }
-
     loadTest();
   }
 </script>
