@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IELTS Reading Practice - Cambridge 17 to 21</title>
+  <title>IELTS Reading Practice - Cambridge & Vol Actual Tests</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <style>
@@ -15,45 +15,64 @@
     .top-nav-bar {
       display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
     }
-    .cam-tabs-bar {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px;
+    .series-tabs-container {
+      display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;
+    }
+    .tabs-bar {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
       background: var(--bg-card); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border-color);
     }
-    .cam-tab-btn {
-      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
-      padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s;
+    .tab-label {
+      font-weight: 800; font-size: 13.5px; margin-right: 6px; display: flex; align-items: center; min-width: 130px;
     }
-    .cam-tab-btn:hover { border-color: #8B1518; color: #8B1518; }
-    .cam-tab-btn.active {
-      background: #8B1518; border-color: #8B1518; color: #ffffff !important;
+    .tab-btn {
+      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
+      padding: 7px 15px; border-radius: 8px; font-weight: 700; font-size: 13.5px; cursor: pointer; transition: all 0.2s;
+    }
+    .tab-btn:hover { border-color: #8B1518; color: #8B1518; }
+    .tab-btn.active-cam {
+      background: #8B1518 !important; border-color: #8B1518 !important; color: #ffffff !important;
       box-shadow: 0 4px 10px rgba(139, 21, 24, 0.3);
+    }
+    .tab-btn.active-vol {
+      background: #4338ca !important; border-color: #4338ca !important; color: #ffffff !important;
+      box-shadow: 0 4px 10px rgba(67, 56, 202, 0.3);
     }
 
     .test-heading {
-      font-size: 17px; font-weight: 800; color: #0f172a; margin: 28px 0 14px 0;
+      font-size: 16.5px; font-weight: 800; color: #0f172a; margin: 26px 0 12px 0;
       padding-bottom: 6px; border-bottom: 2.5px solid #8B1518;
     }
+    .test-heading.vol-heading {
+      border-bottom-color: #4338ca;
+    }
     .test-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px; margin-bottom: 15px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 15px;
     }
     .test-card {
-      background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 18px;
-      display: flex; flex-direction: column; justify-content: space-between; min-height: 185px;
+      background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px;
+      display: flex; flex-direction: column; justify-content: space-between; min-height: 150px;
       transition: transform 0.15s, box-shadow 0.15s;
     }
     .test-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
     .badge-reading {
       display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 12px;
-      font-size: 12px; font-weight: 700; background: #fee2e2; color: #8B1518; margin-bottom: 10px; width: fit-content;
+      font-size: 12px; font-weight: 700; background: #fee2e2; color: #8B1518; margin-bottom: 8px; width: fit-content;
     }
-    .card-title { color: #8B1518; font-size: 15.5px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
-    .card-desc { font-size: 13px; color: #64748b; margin: 0 0 16px 0; line-height: 1.5; }
+    .badge-reading.badge-vol {
+      background: #e0e7ff; color: #4338ca;
+    }
+    .card-title { color: #8B1518; font-size: 15px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
+    .card-title.vol-title { color: #4338ca; }
+    .card-desc { font-size: 13px; color: #64748b; margin: 0 0 14px 0; line-height: 1.4; }
     .btn-play {
       display: flex; align-items: center; justify-content: center; gap: 6px; background: #8B1518;
-      color: #ffffff; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: 14px;
+      color: #ffffff; text-decoration: none; padding: 9px 14px; border-radius: 6px; font-weight: 700; font-size: 13.5px;
       transition: background 0.2s;
     }
     .btn-play:hover { background: #6b0f11; }
+    .btn-play.btn-vol { background: #4338ca; }
+    .btn-play.btn-vol:hover { background: #3730a3; }
   </style>
 </head>
 <body>
@@ -62,7 +81,7 @@
   <!-- HEADER -->
   <div class="reading-hero">
     <h1 style="margin: 0 0 6px 0; font-size: 24px;">📖 PHÒNG LUYỆN THI IELTS READING</h1>
-    <p style="margin: 0; opacity: 0.9; font-size: 14px;">Trọn bộ Cambridge 17 - 21 • Chấm điểm tức thì • Trợ giảng AI giải thích chi tiết</p>
+    <p style="margin: 0; opacity: 0.9; font-size: 14px;">Trọn bộ Cambridge 17-21 & IELTS Recent Actual Tests (Vol 8 đến Vol 1) • Chấm điểm tức thì</p>
   </div>
 
   <div class="top-nav-bar">
@@ -72,15 +91,30 @@
     <span id="userStatusTag" style="font-size: 13px; color: var(--text-muted); font-weight: 600;"></span>
   </div>
 
-  <!-- TABS CHỌN CAMBRIDGE -->
-  <div class="cam-tabs-bar">
-    <span style="font-weight: 800; font-size: 14px; margin-right: 6px; display: flex; align-items: center;">Bộ Sách:</span>
-    <button type="button" class="cam-tab-btn active" onclick="switchCam(21)">Cambridge 21</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(20)">Cambridge 20</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(19)">Cambridge 19</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(18)">Cambridge 18</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(17)">Cambridge 17</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam('all')">Xem Tất Cả</button>
+  <!-- BỘ 2 THANH TABS RIÊNG BIỆT: CAMBRIDGE & VOL -->
+  <div class="series-tabs-container">
+    <!-- THANH 1: CAMBRIDGE -->
+    <div class="tabs-bar">
+      <span class="tab-label" style="color: #8B1518;">📚 Cambridge IELTS:</span>
+      <button type="button" class="tab-btn active-cam" data-series="cam" data-val="21" onclick="switchSeries('cam', 21)">Cambridge 21</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="20" onclick="switchSeries('cam', 20)">Cambridge 20</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="19" onclick="switchSeries('cam', 19)">Cambridge 19</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="18" onclick="switchSeries('cam', 18)">Cambridge 18</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="17" onclick="switchSeries('cam', 17)">Cambridge 17</button>
+    </div>
+
+    <!-- THANH 2: RECENT ACTUAL TESTS (VOL 8 -> VOL 1) -->
+    <div class="tabs-bar">
+      <span class="tab-label" style="color: #4338ca;">⚡ Đề Vol (1-8):</span>
+      <button type="button" class="tab-btn" data-series="vol" data-val="8" onclick="switchSeries('vol', 8)">Vol 8</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="7" onclick="switchSeries('vol', 7)">Vol 7</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="6" onclick="switchSeries('vol', 6)">Vol 6</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="5" onclick="switchSeries('vol', 5)">Vol 5</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="4" onclick="switchSeries('vol', 4)">Vol 4</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="3" onclick="switchSeries('vol', 3)">Vol 3</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="2" onclick="switchSeries('vol', 2)">Vol 2</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="1" onclick="switchSeries('vol', 1)">Vol 1</button>
+    </div>
   </div>
 
   <!-- CONTAINER DANH SÁCH BÀI THI -->
@@ -90,221 +124,87 @@
 <script type="module">
   import { stateManager } from './js/state.js';
 
+  // DỮ LIỆU CAMBRIDGE
   const CAM_DATA = [
     {
       cam: 21,
       tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The Davies Sisters", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Why we need silence", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "The World of Sugar", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Do animals dream?", desc: "True/False/Not Given, Flow-chart" },
-            { p: 2, title: "Mapungubwe", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "Artificial Intelligence", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Saving the saiga", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Getting around Dar es Salaam", desc: "True/False/Not Given, Notes Completion" },
-            { p: 3, title: "Rethinking the Past", desc: "Multiple Choice, Sentence Endings, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Water Hyacinth in Kenya", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Multilingualism in India", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" },
-            { p: 3, title: "The Globemakers", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" }
-          ]
-        }
+        { testNum: 1, passages: [{ p: 1, title: "The Davies Sisters", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Why we need silence", desc: "Matching Information, Summary Completion" }, { p: 3, title: "The World of Sugar", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 2, passages: [{ p: 1, title: "Do animals dream?", desc: "True/False/Not Given, Flow-chart" }, { p: 2, title: "Mapungubwe", desc: "Matching Headings, Sentence Completion" }, { p: 3, title: "Artificial Intelligence", desc: "Multiple Choice, Summary Completion" }] },
+        { testNum: 3, passages: [{ p: 1, title: "Saving the saiga", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Getting around Dar es Salaam", desc: "True/False/Not Given, Notes Completion" }, { p: 3, title: "Rethinking the Past", desc: "Multiple Choice, Sentence Endings, Yes/No/Not Given" }] },
+        { testNum: 4, passages: [{ p: 1, title: "Water Hyacinth in Kenya", desc: "True/False/Not Given, Flow-chart, Notes" }, { p: 2, title: "Multilingualism in India", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" }, { p: 3, title: "The Globemakers", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" }] }
       ]
     },
     {
       cam: 20,
       tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The kākāpō", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Bringing elms to Britain", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "How stress affects our judgement", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Manatees", desc: "True/False/Not Given, Diagram Labelling" },
-            { p: 2, title: "Procrastination", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "Invasion of the Robot Umpires", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Frozen Food", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Can the planet's coral reefs be saved?", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Robots and us", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Georgia O'Keeffe", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Adapting to the effects of climate change", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "A new role for livestock guard dogs", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
+        { testNum: 1, passages: [{ p: 1, title: "The kākāpō", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Bringing elms to Britain", desc: "Matching Information, Summary Completion" }, { p: 3, title: "How stress affects our judgement", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 2, passages: [{ p: 1, title: "Manatees", desc: "True/False/Not Given, Diagram Labelling" }, { p: 2, title: "Procrastination", desc: "Matching Headings, Sentence Completion" }, { p: 3, title: "Invasion of the Robot Umpires", desc: "Multiple Choice, Summary Completion" }] },
+        { testNum: 3, passages: [{ p: 1, title: "Frozen Food", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Can the planet's coral reefs be saved?", desc: "Summary Completion, Multiple Choice" }, { p: 3, title: "Robots and us", desc: "Matching Features, Yes/No/Not Given" }] },
+        { testNum: 4, passages: [{ p: 1, title: "Georgia O'Keeffe", desc: "True/False/Not Given, Flow-chart, Notes" }, { p: 2, title: "Adapting to the effects of climate change", desc: "Matching Information, Notes Completion" }, { p: 3, title: "A new role for livestock guard dogs", desc: "Multiple Choice, Summary Completion" }] }
       ]
     },
     {
       cam: 19,
       tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "How tennis rackets have changed", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The pirates of the ancient Mediterranean", desc: "Summary Completion, Matching Features" },
-            { p: 3, title: "The persistence and peril of misinformation", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "The Industrial Revolution in Britain", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "Athletes and stress", desc: "Matching Headings, Summary Completion" },
-            { p: 3, title: "The 19th-century railway mania", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Archaeologists discover evidence of prehistoric island settlers", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The global importance of wetlands", desc: "Matching Information, Sentence Completion" },
-            { p: 3, title: "Is the era of artificial speech translation upon us?", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "The impact of climate change on butterflies in Britain", desc: "True/False/Not Given, Flow-chart" },
-            { p: 2, title: "Deep-sea mining", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "How playing games shapes human thinking", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        }
+        { testNum: 1, passages: [{ p: 1, title: "How tennis rackets have changed", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "The pirates of the ancient Mediterranean", desc: "Summary Completion, Matching Features" }, { p: 3, title: "The persistence and peril of misinformation", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 2, passages: [{ p: 1, title: "The Industrial Revolution in Britain", desc: "True/False/Not Given, Table Completion" }, { p: 2, title: "Athletes and stress", desc: "Matching Headings, Summary Completion" }, { p: 3, title: "The 19th-century railway mania", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 3, passages: [{ p: 1, title: "Archaeologists discover evidence of prehistoric island settlers", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "The global importance of wetlands", desc: "Matching Information, Sentence Completion" }, { p: 3, title: "Is the era of artificial speech translation upon us?", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 4, passages: [{ p: 1, title: "The impact of climate change on butterflies in Britain", desc: "True/False/Not Given, Flow-chart" }, { p: 2, title: "Deep-sea mining", desc: "Summary Completion, Multiple Choice" }, { p: 3, title: "How playing games shapes human thinking", desc: "Matching Features, Yes/No/Not Given" }] }
       ]
     },
     {
       cam: 18,
       tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "Urban farming", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Forest management in Pennsylvania, USA", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "Conquering Earth's space junk problem", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Stonehenge", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "Living with artificial intelligence", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "An ideal city", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Materials to take us beyond concrete", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The thylacine", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Plant 'know-how'", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Green roofs", desc: "True/False/Not Given, Diagram Labelling" },
-            { p: 2, title: "The spread of human populations", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "The value of handwriting", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
+        { testNum: 1, passages: [{ p: 1, title: "Urban farming", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Forest management in Pennsylvania, USA", desc: "Matching Information, Summary Completion" }, { p: 3, title: "Conquering Earth's space junk problem", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 2, passages: [{ p: 1, title: "Stonehenge", desc: "True/False/Not Given, Table Completion" }, { p: 2, title: "Living with artificial intelligence", desc: "Matching Headings, Sentence Completion" }, { p: 3, title: "An ideal city", desc: "Multiple Choice, Summary Completion" }] },
+        { testNum: 3, passages: [{ p: 1, title: "Materials to take us beyond concrete", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "The thylacine", desc: "Summary Completion, Multiple Choice" }, { p: 3, title: "Plant 'know-how'", desc: "Matching Features, Yes/No/Not Given" }] },
+        { testNum: 4, passages: [{ p: 1, title: "Green roofs", desc: "True/False/Not Given, Diagram Labelling" }, { p: 2, title: "The spread of human populations", desc: "Matching Information, Notes Completion" }, { p: 3, title: "The value of handwriting", desc: "Multiple Choice, Summary Completion" }] }
       ]
     },
     {
       cam: 17,
       tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The development of the London Underground railway", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Stadiums: past, present and future", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "To catch a king", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "The Dead Sea Scrolls", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "A second attempt at domesticating the tomato", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "The case for the minimum wage", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "The thylacine", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Palm oil", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Building the Skyline: The Birth and Growth of Manhattan's Skyscrapers", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Bats to the rescue", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Does education fuel economic growth?", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "Timur Gareyev – blindfold chess champion", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
+        { testNum: 1, passages: [{ p: 1, title: "The development of the London Underground railway", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Stadiums: past, present and future", desc: "Matching Information, Summary Completion" }, { p: 3, title: "To catch a king", desc: "Multiple Choice, Yes/No/Not Given" }] },
+        { testNum: 2, passages: [{ p: 1, title: "The Dead Sea Scrolls", desc: "True/False/Not Given, Table Completion" }, { p: 2, title: "A second attempt at domesticating the tomato", desc: "Matching Headings, Sentence Completion" }, { p: 3, title: "The case for the minimum wage", desc: "Multiple Choice, Summary Completion" }] },
+        { testNum: 3, passages: [{ p: 1, title: "The thylacine", desc: "Notes Completion, True/False/Not Given" }, { p: 2, title: "Palm oil", desc: "Summary Completion, Multiple Choice" }, { p: 3, title: "Building the Skyline: Manhattan's Skyscrapers", desc: "Matching Features, Yes/No/Not Given" }] },
+        { testNum: 4, passages: [{ p: 1, title: "Bats to the rescue", desc: "True/False/Not Given, Flow-chart, Notes" }, { p: 2, title: "Does education fuel economic growth?", desc: "Matching Information, Notes Completion" }, { p: 3, title: "Timur Gareyev – blindfold chess champion", desc: "Multiple Choice, Summary Completion" }] }
       ]
     }
   ];
 
-  let currentCam = 21;
+  let currentSeries = 'cam';
+  let currentVal = 21;
 
   const user = stateManager.getUser();
   if (user && user.email) {
     document.getElementById('userStatusTag').innerText = `👤 Học viên: ${user.name || user.email}`;
   }
 
-  window.switchCam = (cam) => {
-    currentCam = cam;
-    document.querySelectorAll('.cam-tab-btn').forEach(b => {
-      if (cam === 'all') {
-        b.classList.toggle('active', b.innerText.includes('Xem Tất Cả'));
-      } else {
-        b.classList.toggle('active', b.innerText.includes(`Cambridge ${cam}`));
+  window.switchSeries = (series, val) => {
+    currentSeries = series;
+    currentVal = val;
+
+    // Cập nhật trạng thái nút bấm
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.remove('active-cam', 'active-vol');
+      if (btn.dataset.series === series && parseInt(btn.dataset.val) === val) {
+        btn.classList.add(series === 'cam' ? 'active-cam' : 'active-vol');
       }
     });
+
     renderUI();
   };
 
   function renderUI() {
     const container = document.getElementById('readingCatalogContainer');
-    const filtered = (currentCam === 'all') 
-      ? CAM_DATA 
-      : CAM_DATA.filter(item => item.cam === currentCam);
-
     let html = '';
-    filtered.forEach(camItem => {
+
+    // NẾU CHỌN CAMBRIDGE
+    if (currentSeries === 'cam') {
+      const camItem = CAM_DATA.find(item => item.cam === currentVal);
+      if (!camItem) return;
+
       camItem.tests.forEach(test => {
         html += `
           <div class="test-heading">
@@ -312,7 +212,6 @@
           </div>
           <div class="test-grid">
         `;
-
         test.passages.forEach(psg => {
           const testUrl = `runner-reading.html?test=data/cam${camItem.cam}-test${test.testNum}/cam${camItem.cam}-test${test.testNum}-p${psg.p}.json`;
           html += `
@@ -328,10 +227,37 @@
             </div>
           `;
         });
-
         html += `</div>`;
       });
-    });
+    } 
+    // NẾU CHỌN BỘ ĐỀ VOL (1 ĐẾN 8 - MỖI VOL CÓ 10 TEST)
+    else if (currentSeries === 'vol') {
+      const volNum = currentVal;
+      for (let t = 1; t <= 10; t++) {
+        html += `
+          <div class="test-heading vol-heading">
+            ⚡ Vol ${volNum} Test ${t} - Reading
+          </div>
+          <div class="test-grid">
+        `;
+        for (let p = 1; p <= 3; p++) {
+          const testUrl = `runner-reading.html?test=vol${volNum}-test${t}-p${p}`;
+          html += `
+            <div class="test-card">
+              <div>
+                <span class="badge-reading badge-vol">📄 Passage ${p}</span>
+                <h4 class="card-title vol-title">Vol ${volNum} Test ${t} - Passage ${p}</h4>
+                <div class="card-desc">IELTS Reading Practice Passage ${p}</div>
+              </div>
+              <a href="${testUrl}" class="btn-play btn-vol">
+                <span>▶</span> Vào Làm Passage ${p}
+              </a>
+            </div>
+          `;
+        }
+        html += `</div>`;
+      }
+    }
 
     container.innerHTML = html;
   }
