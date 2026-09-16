@@ -1,5 +1,5 @@
 {
-  "title": "IELTS Academic Vol 7 - Reading Test 1 - Passage 1",
+  "title": "Reading Passage 1: Carnivorous plant",
   "answers": {
     "q1": "raindrops",
     "q2": "stomach",
@@ -15,6 +15,550 @@
     "q12": "TRUE",
     "q13": "FALSE"
   },
-  "passageHtml": "<h2>READING PASSAGE 1</h2><h3>Carnivorous plant</h3><p>The naturalist and author of Origin of Species, Charles Darwin, was fascinated by carnivorous plants. In 1860, soon after he came across his first carnivorous plant - the sundew, Drosera - he wrote, ‘I care more about Drosera than the origin of all the species in the world.’ ... <span class='hl' id='hl-q1' data-q='[Q1]'>Yet sundews, he observed, ignored <span class='kw'>raindrops</span>. To react to such a false alarm, he reasoned, would obviously be a great evil to the plant</span>.</p><p>Darwin expanded his studies... <span class='hl' id='hl-q2' data-q='[Q2]'>He showed that when one of its leaves snapped shut, it formed itself into a temporary ‘<span class='kw'>stomach</span>’, secreting enzymes that could dissolve the prey</span>.</p><p>Today, biologists using 21st-century tools... Alexander Volkov, a plant physiologist... declares, ‘is an electrical plant.’</p><p>When an insect brushes against a hair on the leaf of a Venus flytrap... <span class='hl' id='hl-q3' data-q='[Q3]'>Volkov’s experiments reveal that the electric charge travels down fluid-filled tunnels in a leaf, which opens up <span class='kw'>pores</span> in cell membranes</span>.</p><p>The bladderwort plant has an equally sophisticated way... <span class='hl' id='hl-q4' data-q='[Q4]'>The cells in the bladder then begin to pump water out again, creating a new <span class='kw'>vacuum</span></span>. <span class='hl' id='hl-q5' data-q='[Q5]'>Some of the largest have pitchers up to 30cm deep and can consume whole <span class='kw'>frogs</span> unlucky enough to fall into them</span>.</p><p><span class='hl' id='hl-q6' data-q='[Q6]'>when scientists feed pitcher plants extra bugs, the plants get <span class='kw'>bigger</span></span>. <span class='hl' id='hl-q7' data-q='[Q7]'>Carnivorous plants, however, take nitrogen and phosphorus from the flesh in order to build <span class='kw'>light-harvesting enzymes</span></span>.</p><p><span class='hl' id='hl-q8' data-q='[Q8]'>A pitcher or a flytrap is not very good at photosynthesis because, unlike plants with ordinary leaves, they do not have flat solar panels that can absorb lots of sunlight</span>. <span class='hl' id='hl-q9' data-q='[Q9]'>The poor soil of bogs and swamps, where many carnivorous plants grow, offers little nitrogen and phosphorus...</span> <span class='hl' id='hl-q10' data-q='[Q10]'>Also, bogs are often <span class='kw'>flooded with sunshine</span>, so even an inefficient carnivorous plant can carry out enough photosynthesis to survive</span>.</p><p><span class='hl' id='hl-q11' data-q='[Q11]'>Chemical fertilizers used in agriculture and pollution from power plants are adding extra nitrogen to many bogs in North America</span>. <span class='hl' id='hl-q12' data-q='[Q12]'>The <span class='kw'>black market trade</span> in exotic carnivorous plants is strong</span>. <span class='hl' id='hl-q13' data-q='[Q13]'>The suppression of wildfires by government agencies allows other plants to grow quickly and <span class='kw'>outcompete the Venus flytraps</span></span>.</p>",
-  "questionHtml": "<div class='section-title'>Questions 1-5</div><p><i>Complete the notes below. Write <b>ONE WORD ONLY</b>.</i></p><div style='background: var(--bg-subcard); padding: 18px; border-radius: 8px;'><div class='question' id='q1'>He understood why the plant did not respond to <b>1.</b> <input type='text' id='q1_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> raindrops</div></div><div class='question' id='q2'>Act like a <b>2.</b> <input type='text' id='q2_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> stomach</div></div><div class='question' id='q3'>Opens up <b>3.</b> <input type='text' id='q3_input' class='fill-input'> in cell walls<div class='result'></div><div class='explanation'><b>Đáp án:</b> pores</div></div><div class='question' id='q4'>A <b>4.</b> <input type='text' id='q4_input' class='fill-input'> builds up inside<div class='result'></div><div class='explanation'><b>Đáp án:</b> vacuum</div></div><div class='question' id='q5'>Capture and eat <b>5.</b> <input type='text' id='q5_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> frogs</div></div></div><div class='section-title'>Questions 6-13</div><p><i>TRUE / FALSE / NOT GIVEN:</i></p><div class='question' id='q6'><p><b>6.</b> Pitcher plants increase in size after digesting insects.</p><div class='options'><label><input type='radio' name='q6' value='TRUE'> TRUE</label><label><input type='radio' name='q6' value='FALSE'> FALSE</label><label><input type='radio' name='q6' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> TRUE</div></div><div class='question' id='q7'><p><b>7.</b> Produce light-harvesting enzymes with nutrients from animals.</p><div class='options'><label><input type='radio' name='q7' value='TRUE'> TRUE</label><label><input type='radio' name='q7' value='FALSE'> FALSE</label><label><input type='radio' name='q7' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> TRUE</div></div><div class='question' id='q8'><p><b>8.</b> Pitcher plants are more efficient at photosynthesis than ordinary leaves.</p><div class='options'><label><input type='radio' name='q8' value='TRUE'> TRUE</label><label><input type='radio' name='q8' value='FALSE'> FALSE</label><label><input type='radio' name='q8' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> FALSE</div></div><div class='question' id='q9'><p><b>9.</b> Better adapted to soil than other carnivorous plants.</p><div class='options'><label><input type='radio' name='q9' value='TRUE'> TRUE</label><label><input type='radio' name='q9' value='FALSE'> FALSE</label><label><input type='radio' name='q9' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> NOT GIVEN</div></div><div class='question' id='q10'><p><b>10.</b> Difficult to photosynthesise in bogs due to lack of sunlight.</p><div class='options'><label><input type='radio' name='q10' value='TRUE'> TRUE</label><label><input type='radio' name='q10' value='FALSE'> FALSE</label><label><input type='radio' name='q10' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> FALSE</div></div><div class='question' id='q11'><p><b>11.</b> Scientists campaigned to reduce nitrogen.</p><div class='options'><label><input type='radio' name='q11' value='TRUE'> TRUE</label><label><input type='radio' name='q11' value='FALSE'> FALSE</label><label><input type='radio' name='q11' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> NOT GIVEN</div></div><div class='question' id='q12'><p><b>12.</b> Sold illegally on black market.</p><div class='options'><label><input type='radio' name='q12' value='TRUE'> TRUE</label><label><input type='radio' name='q12' value='FALSE'> FALSE</label><label><input type='radio' name='q12' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> TRUE</div></div><div class='question' id='q13'><p><b>13.</b> Preventing wildfires is beneficial to Venus flytrap.</p><div class='options'><label><input type='radio' name='q13' value='TRUE'> TRUE</label><label><input type='radio' name='q13' value='FALSE'> FALSE</label><label><input type='radio' name='q13' value='NOT GIVEN'> NOT GIVEN</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> FALSE</div></div><button class='btn-submit' onclick='checkAnswers()'>CHẤM BÀI VÀ NỘP KẾT QUẢ</button>"
+  "passageHtml": "<h2>READING PASSAGE 1</h2><p>You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.</p><h3>Carnivorous plant</h3><p><em>They attract insects and then eat their flesh. Is that any way for a plant to behave?</em></p><p>The naturalist and author of Origin of Species, Charles Darwin, was fascinated by carnivorous plants. In 1860, soon after he came across his first carnivorous plant - the sundew, Drosera - he wrote, ‘I care more about Drosera than the origin of all the species in the world.’ He spent months running experiments on the plants. He dropped flies and bits of meat on their leaves and watched them slowly fold their sticky tentacles over their prey. He thought it incredible that brushing a leaf with a single strand of human hair was enough to bring about a response. <span class=\"hl\" id=\"hl-q1\" data-q=\"[Q1]\">Yet sundews, he observed, <span class=\"kw\">ignored raindrops</span>. To react to such a false alarm, he reasoned, would obviously be a great evil to the plant.</span> This was no accident. This was adaptation.</p><p>Darwin expanded his studies from sundews to other species in his book Insectivorous Plants. He was amazed at the quickness and power of the Venus flytrap. <span class=\"hl\" id=\"hl-q2\" data-q=\"[Q2]\">He showed that when one of its leaves snapped shut, it formed itself into a temporary ‘<span class=\"kw\">stomach</span>’, secreting enzymes that could dissolve the prey.</span> He noted that a leaf took more than a week to reopen after closing, and reasoned that the interlocking spines along the margin of the leaf allowed tiny insects to escape, saving the plant the expense of digesting an insufficient meal.</p><p>Today, biologists using 21st-century tools to study cells and DNA are beginning to understand how these plants hunt, eat, and digest - and how these strange adaptations came about in the first place. Alexander Volkov, a plant physiologist at Oakwood University in Alabama, believes he has figured out the Venus flytrap’s secret. ‘This,’ Volkov declares, ‘is an electrical plant.’</p><p>When an insect brushes against a hair on the leaf of a Venus flytrap, the movement sets off an electric charge. The charge builds up inside the tissue of the leaf but is not enough to stimulate the snap, which keeps the Venus flytrap from reacting to false alarms, such as raindrops. An insect, however, is likely to brush a second hair, adding enough electric charge for the leaf to close.</p><p><span class=\"hl\" id=\"hl-q3\" data-q=\"[Q3]\">Volkov’s experiments reveal that the electric charge travels down fluid-filled tunnels in a leaf, which opens up <span class=\"kw\">pores</span> in cell membranes.</span> Water rushes from the cells on the inside of the leaf to those on the outside, causing the leaf to rapidly flip in shape from convex to concave, like a soft contact lens. As the leaves flip, they snap together, trapping an insect inside.</p><p>The bladderwort plant has an equally sophisticated way of setting its underwater trap. It pumps water out of tiny air sacs or bladders, lowering the pressure inside. When a water flea or some other small creature swims past, it bends hairs on the bladder, causing a flap to spring apart. The low pressure sucks water in, carrying the creature along with it. In one five-hundredth of a second, the flap swings shut again. <span class=\"hl\" id=\"hl-q4\" data-q=\"[Q4]\">The cells in the bladder then begin to pump water out again, creating a new <span class=\"kw\">vacuum</span>.</span> Many other species of carnivorous plants act like living flypaper, catching animals on sticky tentacles. Pitcher plants use yet another strategy, growing long tube-shaped leaves into which insects fall. <span class=\"hl\" id=\"hl-q5\" data-q=\"[Q5]\">Some of the largest have pitchers up to 30cm deep and can consume whole <span class=\"kw\">frogs</span> unlucky enough to fall into them.</span> Sophisticated chemistry helps make the pitcher a death trap.</p><p>Nicholas Gotelli, of the University of Vermont, is trying to figure out what evolutionary forces pushed these plants towards meat. <span class=\"hl\" id=\"hl-q6\" data-q=\"[Q6]\">Carnivorous plants clearly benefit from eating animals; when scientists feed pitcher plants <span class=\"kw\">extra bugs</span>, the plants <span class=\"kw\">get bigger</span>.</span> But the benefits of eating flesh are not the ones you might expect. Carnivorous animals, like ourselves, use the carbon in protein and the fat in meat to build muscles and store energy. <span class=\"hl\" id=\"hl-q7\" data-q=\"[Q7]\">Carnivorous plants, however, take nitrogen and phosphorus from the flesh in order to build <span class=\"kw\">light-harvesting enzymes</span>.</span> Eating animals, in other words, lets carnivorous plants do what all plants do: grow by taking energy directly from the sun.</p><p>Unfortunately, they do a really bad job of it. That’s because they have to use a lot of energy to make the equipment they need to catch animals - the enzymes, the pumps, the sticky tentacles, and so on. <span class=\"hl\" id=\"hl-q8\" data-q=\"[Q8]\">A pitcher or a flytrap is <span class=\"kw\">not very good at photosynthesis</span> because, unlike plants with ordinary leaves, they do not have flat solar panels that can absorb lots of sunlight.</span> Gotelli suspects that only under special conditions are the benefits of being carnivorous greater than the costs. <span class=\"hl\" id=\"hl-q9\" data-q=\"[Q9]\">The poor soil of bogs and swamps, where many carnivorous plants grow, offers little nitrogen and phosphorus, so carnivorous plants enjoy an advantage there over ‘conventional’ plants.</span> <span class=\"hl\" id=\"hl-q10\" data-q=\"[Q10]\">Also, bogs are often <span class=\"kw\">flooded with sunshine</span>, so even an inefficient carnivorous plant can carry out enough photosynthesis to survive.</span> ‘They’re stuck, and they’re making the best of it,’ says Aaron Ellison of Harvard University.</p><p>Unfortunately, the adaptations that enable carnivorous plants to survive in harsh habitats also make them extremely sensitive to environmental changes. <span class=\"hl\" id=\"hl-q11\" data-q=\"[Q11]\">Chemical fertilizers used in agriculture and pollution from power plants are adding extra nitrogen to many bogs in North America. Carnivorous plants are so finely adapted to low levels of nitrogen that this extra fertilizer is overloading their systems.</span> Humans also threaten carnivorous plants in other ways. <span class=\"hl\" id=\"hl-q12\" data-q=\"[Q12]\">The <span class=\"kw\">black market trade</span> in exotic carnivorous plants is <span class=\"kw\">strong</span>, but even if this can be prevented, carnivorous plants will continue to suffer from other dangers.</span> Their habitat is disappearing, to be replaced by shopping centers and houses. <span class=\"hl\" id=\"hl-q13\" data-q=\"[Q13]\">The <span class=\"kw\">suppression of wildfires</span> by government agencies allows other plants to grow quickly and <span class=\"kw\">outcompete the Venus flytraps</span>.</span> Good news, perhaps, for flies. But a loss for all who delight in the inventiveness of evolution.</p>",
+  "groups": [
+    {
+      "id": "g1",
+      "type": "summary",
+      "title": "Questions 1–5",
+      "instructions": "Complete the notes below.<br>Choose <b>ONE WORD ONLY</b> from the passage for each answer.",
+      "summaryTitle": "Carnivorous Plants",
+      "questionIds": ["q1", "q2", "q3", "q4", "q5"],
+      "template": "<p><b>Darwin’s experiments</b><br><b>Drosera</b><br>• He put insects and small amounts of meat onto leaves and observed what happened.<br>• He was amazed that one human hair triggered a response.<br>• He understood why the plant did not respond to <b>1.</b> {{q1}}<br><b>Venus Flytrap</b><br>• He demonstrated how leaves close and then, for a short period, act like a <b>2.</b> {{q2}}<br>• He noted the structure of leaves ensures small insects are released.</p><p><b>Biology today</b><br><b>Venus Flytrap</b><br>• If insects come into contact with leaf hairs, their movement produces an electric charge.<br>• The charge enters fluid-filled tunnels, causing <b>3.</b> {{q3}} in the cell walls to open.<br>• Water moves between cells and then the leaf changes from convex to concave, trapping the insect inside.<br><b>Bladderwort</b><br>• Hairs bend when insects swim past, resulting in opening of a flap.<br>• Water is sucked in.<br>• When water is pumped out of bladder cells, a <b>4.</b> {{q4}} builds up inside.<br><b>Pitcher Plants</b><br>• The plants have tube-shaped leaves that insects fall into.<br>• Some plants are big enough to capture and eat <b>5.</b> {{q5}}</p>"
+    },
+    {
+      "id": "g2",
+      "type": "true_false_not_given",
+      "title": "Questions 6–13",
+      "instructions": "Do the following statements agree with the information given in Reading Passage 1?<br>In boxes 6–13 on your answer sheet, write:<br><b>TRUE</b> if the statement agrees with the information<br><b>FALSE</b> if the statement contradicts the information<br><b>NOT GIVEN</b> if there is no information on this",
+      "questionIds": ["q6", "q7", "q8", "q9", "q10", "q11", "q12", "q13"]
+    }
+  ],
+  "questions": {
+    "q1": {
+      "num": 1,
+      "text": "He understood why the plant did not respond to 1 ………………..",
+      "finalAnswer": "raindrops",
+      "highlightId": "hl-q1",
+      "inputWidth": "120px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp sau giới từ",
+            "question": "Nhìn vào chỗ trống đứng sau giới từ 'respond to 1 ______', theo Quy tắc 21, từ cần điền bắt buộc phải là loại từ gì và mang ý nghĩa gì?",
+            "guide": "Đứng sau giới từ 'to', từ cần điền bắt buộc phải là một Danh từ chỉ một tác nhân/hiện tượng tự nhiên mà cây Drosera không phản ứng lại.",
+            "bridge": "Khóa hiện trường bằng mỏ neo tiêu đề phụ."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo cứng",
+            "question": "Nhìn lên tiêu đề bài tóm tắt 'Darwin's experiments' và tên loài 'Drosera'. Hai mỏ neo cứng này dẫn mắt em đến đoạn nào trong bài đọc (Quy tắc 1)?",
+            "guide": "Dẫn thẳng mắt về Đoạn 1 (nơi Darwin quan sát loài sundew / Drosera).",
+            "bridge": "Lột vỏ từ đồng nghĩa triệt tiêu hành vi không phản ứng."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa triệt tiêu",
+            "question": "Trong Đoạn 1, động từ nào mang nghĩa 'did not respond to' (phớt lờ / không phản ứng lại)? Tác nhân đứng ngay sau động từ đó là gì?",
+            "guide": "'did not respond to' được paraphrase thành 'ignored' (phớt lờ, bỏ qua). Danh từ đứng ngay sau chữ 'ignored' là 'raindrops' (những hạt mưa).",
+            "bridge": "Kiểm tra luật số từ và ý nghĩa bản chất."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra luật ONE WORD ONLY & Chốt sổ",
+            "question": "Từ 'raindrops' có đúng 1 từ không? Lý do Darwin hiểu cây không phản ứng với hạt mưa có phải vì tránh báo động giả ('false alarm') không?",
+            "guide": "'raindrops' là 1 từ duy nhất (viết liền), đúng nghĩa hiện tượng cây không phản ứng. Áp dụng Quy tắc 30 -> Chốt raindrops.",
+            "bridge": "Hoàn thành câu 1."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Cấu trúc 'did not respond to [1]' đòi hỏi một Danh từ chỉ tác nhân kích thích bị bỏ qua.<br>• Bước 2 (Keyword): Mỏ neo 'Darwin's experiments' và 'Drosera' định vị nửa sau Đoạn 1.<br>• Bước 3: Đối chiếu paraphrase: 'did not respond to' = 'ignored'. Danh từ đối tượng trong bài là 'raindrops'. Tác giả giải thích Darwin hiểu rằng phản ứng với nước mưa là báo động giả gây hại cho cây ('false alarm... a great evil').<br>• Bước 4: 'raindrops' khớp hoàn toàn ngữ nghĩa và luật ONE WORD ONLY. Điền raindrops.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'did not respond to ______' (không phản ứng với cái gì) -> Cần 1 Danh từ.<br>• Bước 2: Quét Đoạn 1 thấy chữ 'Drosera' và 'human hair'.<br>• Bước 3: Đọc tiếp thấy chữ 'ignored' (= did not respond: lờ đi/không phản ứng), đứng sau nó là chữ 'raindrops' (hạt mưa).<br>• Bước 4: Chép đúng 1 từ raindrops."
+        ]
+      }
+    },
+    "q2": {
+      "num": 2,
+      "text": "He demonstrated how leaves close and then, for a short period, act like a 2 ………………..",
+      "finalAnswer": "stomach",
+      "highlightId": "hl-q2",
+      "inputWidth": "110px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp & Ép sàn số ít",
+            "question": "Chỗ trống đứng sau mạo từ 'a' ('act like a 2 ______'). Theo Quy tắc 22, từ cần điền bắt buộc phải có dạng thức ngữ pháp như thế nào?",
+            "guide": "Đứng sau 'a', từ cần điền 100% bắt buộc phải là Danh từ đếm được số ít (không có đuôi -s/-es) chỉ một bộ phận/vật thể mà chiếc lá biến thành.",
+            "bridge": "Định vị hiện trường bằng tiêu đề loài cây thứ hai."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo cứng",
+            "question": "Nhìn đề mục 'Venus Flytrap' và hành động 'leaves close' (lá khép lại). Quét xuống Đoạn 2, câu nào mô tả việc lá đóng lại?",
+            "guide": "Dòng 2 Đoạn 2: 'He showed that when one of its leaves snapped shut...' ('snapped shut' = leaves close).",
+            "bridge": "Bắt cặp từ đồng nghĩa chỉ trạng thái tạm thời và mô phỏng."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa tạm thời",
+            "question": "Trong câu trên, cụm từ nào đồng nghĩa với 'for a short period' (trong một khoảng thời gian ngắn)? Cụm nào đồng nghĩa với 'act like a' (đóng vai trò như là)?",
+            "guide": "'for a short period' = 'temporary' (tạm thời); 'act like a' = 'formed itself into a' (tự biến thành một cái gì đó). Danh từ đứng sau mạo từ 'a' là 'stomach' (dạ dày).",
+            "bridge": "Kiểm tra dạng thức số ít và luật số từ."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra dạng từ & Chốt sổ",
+            "question": "Từ 'stomach' có phải danh từ số ít không? Có đúng 1 từ duy nhất không?",
+            "guide": "'stomach' là danh từ số ít, thỏa mãn nhãn mạo từ 'a', đúng luật 1 từ. Áp dụng Quy tắc 30 -> Chốt stomach.",
+            "bridge": "Hoàn thành câu 2."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'act like a [2]' -> Nhãn: Danh từ số ít chỉ bộ phận tiêu hóa mô phỏng.<br>• Bước 2 (Keyword): 'Venus Flytrap' và 'leaves close' định vị dòng 2 Đoạn 2 ('leaves snapped shut').<br>• Bước 3: Đối chiếu: 'for a short period' = 'temporary'; 'act like a' = 'formed itself into a'. Danh từ cốt lõi sau đó là 'stomach'.<br>• Bước 4: 'stomach' số ít, khớp ngữ pháp sau 'a'. Điền stomach.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'act like a ______' -> Cần 1 từ số ít (không có đuôi -s) đứng sau chữ 'a'.<br>• Bước 2: Quét Đoạn 2 thấy chữ 'snapped shut' (= close: đóng lá lại).<br>• Bước 3: Thấy chữ 'temporary' (= for a short period: tạm thời), nhìn thấy cụm 'into a temporary stomach'.<br>• Bước 4: Nhặt danh từ đứng sau chữ 'a temporary' là stomach (cái dạ dày)."
+        ]
+      }
+    },
+    "q3": {
+      "num": 3,
+      "text": "The charge enters fluid-filled tunnels, causing 3 ……………….. in the cell walls to open.",
+      "finalAnswer": "pores",
+      "highlightId": "hl-q3",
+      "inputWidth": "100px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp trước cụm giới từ",
+            "question": "Nhìn vào ngữ pháp: 'causing 3 ______ in the cell walls to open'. Từ cần điền là đối tượng bị mở ra, đứng trước động từ nguyên mẫu 'open'. Đây phải là loại từ gì?",
+            "guide": "Bắt buộc phải là một Danh từ (thường là số nhiều) chỉ các lỗ/khe hở trên thành tế bào bị mở toang ra.",
+            "bridge": "Khóa vị trí bằng thuật ngữ kỹ thuật có gạch nối."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo cứng",
+            "question": "Cụm từ có dấu gạch ngang độc lạ nào: 'fluid-filled tunnels' (Quy tắc 4) giúp em khóa trúng câu văn ở Đoạn 5?",
+            "guide": "Cụm từ có dấu gạch nối: 'fluid-filled tunnels' xuất hiện ngay ở dòng 1 Đoạn 5.",
+            "bridge": "Triệt tiêu đối xứng và tìm danh từ bị mở ra."
+          },
+          {
+            "title": "Nấc 3/4 - Triệt tiêu đối xứng & Bắt từ bị mở ra",
+            "question": "Đối chiếu câu: 'opens up' = 'to open'; 'cell membranes' = 'cell walls'. Từ nào đứng trực tiếp sau cụm 'opens up' trong bài đọc?",
+            "guide": "Bài đọc viết: 'which OPENS UP PORES in cell membranes' (thứ mà mở toang các LỖ HỔNG trong màng tế bào). Danh từ đó là 'pores'.",
+            "bridge": "Kiểm tra ký tự số nhiều và chốt từ."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra số từ & Chốt sổ",
+            "question": "Từ 'pores' có đúng chuẩn 1 từ không? Có giữ nguyên đuôi '-s' theo Quy tắc 30 không?",
+            "guide": "'pores' (các lỗ khí/khe hở) là danh từ số nhiều, giữ nguyên ký tự, đúng luật ONE WORD ONLY -> Chốt pores.",
+            "bridge": "Hoàn thành câu 3."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'causing [3] in the cell walls to open' -> Cần Danh từ số nhiều chỉ cấu trúc lỗ màng tế bào.<br>• Bước 2 (Keyword): Cụm từ kỹ thuật 'fluid-filled tunnels' dẫn thẳng mắt vào dòng đầu Đoạn 5.<br>• Bước 3: Đối chiếu: 'which opens up' = 'causing... to open'; 'cell membranes' = 'cell walls'. Danh từ tân ngữ trực tiếp sau 'opens up' là 'pores'.<br>• Bước 4: 'pores' thỏa mãn chính xác cấu trúc sinh học và giới hạn 1 từ. Điền pores.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'causing ______ to open' -> Cần tìm cái gì đó 'bị mở ra' (open).<br>• Bước 2: Quét Đoạn 5 thấy chữ gạch ngang 'fluid-filled tunnels'.<br>• Bước 3: Đọc tiếp thấy chữ 'opens up' (= to open: mở ra), ngay sau nó là chữ 'pores' (lỗ hổng).<br>• Bước 4: Chép đúng 1 từ pores có đuôi -s."
+        ]
+      }
+    },
+    "q4": {
+      "num": 4,
+      "text": "When water is pumped out of bladder cells, a 4 ……………….. builds up inside.",
+      "finalAnswer": "vacuum",
+      "highlightId": "hl-q4",
+      "inputWidth": "110px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp sau mạo từ 'a'",
+            "question": "Đề ghi: 'a 4 ______ builds up inside'. Sau mạo từ 'a', từ cần điền bắt buộc phải là loại từ gì (Quy tắc 22)?",
+            "guide": "100% bắt buộc là Danh từ đếm được số ít (không có đuôi -s/-es) chỉ trạng thái/vật thể được hình thành bên trong bẫy.",
+            "bridge": "Khóa hiện trường bằng tiêu đề phụ loài cây."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng tên loài thực vật",
+            "question": "Đề mục chuyển sang loài cây nào: 'Bladderwort'? Tên loài này xuất hiện ở đoạn mấy?",
+            "guide": "Mỏ neo cứng: 'Bladderwort' dẫn thẳng mắt đến Đoạn 6.",
+            "bridge": "Bắt hành động bơm nước và hệ quả tạo ra."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa bơm nước ra",
+            "question": "Quét cụm 'pump water out' trong Đoạn 6: Khi tế bào bơm nước ra ('begin to pump water out again'), nó tạo ra thứ gì ('creating a new ______')?",
+            "guide": "Bài đọc viết: 'The cells in the bladder then begin to pump water out again, creating a new VACUUM' (tạo ra một khoảng chân không mới).",
+            "bridge": "So khớp cấu trúc tích tụ/hình thành bên trong."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt sổ",
+            "question": "Việc tạo ra khoảng chân không ('creating a new vacuum') có đồng nghĩa với việc hình thành chân không bên trong ('a vacuum builds up inside') không?",
+            "guide": "'vacuum' là danh từ số ít đứng hoàn hảo sau mạo từ 'a', đúng nghĩa khoảng chân không hút con mồi. Đúng 1 từ -> Chốt vacuum.",
+            "bridge": "Hoàn thành câu 4."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'a [4] builds up inside' -> Cần Danh từ số ít chỉ môi trường áp suất/trạng thái vật lý được tạo ra.<br>• Bước 2 (Keyword): Tiêu đề phụ 'Bladderwort' và cụm hành động 'pump water out' định vị dòng 4-5 Đoạn 6.<br>• Bước 3: Đối chiếu: 'pump water out' = 'pump water out again'; 'builds up inside' = 'creating a new...'. Danh từ đứng sau 'a new' là 'vacuum'.<br>• Bước 4: 'vacuum' là danh từ số ít khớp hoàn hảo sau 'a'. Điền vacuum.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'a ______' -> Cần 1 từ số ít không có đuôi -s.<br>• Bước 2: Quét chữ 'Bladderwort' ở Đoạn 6.<br>• Bước 3: Tìm chữ 'pump water out', đọc ngay sau dấu phẩy thấy: 'creating a new VACUUM'.<br>• Bước 4: Nhặt chữ đứng sau 'a new' là vacuum (chân không)."
+        ]
+      }
+    },
+    "q5": {
+      "num": 5,
+      "text": "Some plants are big enough to capture and eat 5 ………………..",
+      "finalAnswer": "frogs",
+      "highlightId": "hl-q5",
+      "inputWidth": "100px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp sau động từ ăn",
+            "question": "Chỗ trống đứng sau động từ hành động: 'capture and eat 5 ______' (bắt và ăn thịt...). Từ cần điền phải là loại từ gì và chỉ đối tượng nào?",
+            "guide": "Cần một Danh từ (thường là số nhiều) chỉ tên một loài động vật làm con mồi cho cây nắp ấm lớn.",
+            "bridge": "Khóa đoạn văn bằng tiêu đề phụ Pitcher Plants."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng tên loài cây",
+            "question": "Tiêu đề phụ chuyển sang loài 'Pitcher Plants' (Cây nắp ấm) và kích thước lớn ('Some plants are big enough'). Thông tin này nằm ở dòng nào?",
+            "guide": "Dòng cuối Đoạn 6 vắt sang đầu Đoạn 7: 'Pitcher plants... Some of the largest have pitchers up to 30cm deep...'.",
+            "bridge": "Bắt cặp từ đồng nghĩa tiêu thụ con mồi."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa bắt và ăn",
+            "question": "Đọc câu đầu Đoạn 7: Cụm từ nào đồng nghĩa với 'eat' (ăn thịt)? Con vật nào là đối tượng bị nuốt chửng nguyên con?",
+            "guide": "'eat' = 'consume' (tiêu thụ / ăn thịt). Loài động vật bị ăn thịt là 'frogs' ('whole frogs' - những con ếch nguyên con).",
+            "bridge": "Kiểm tra luật ONE WORD ONLY."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra luật ONE WORD ONLY & Chốt sổ",
+            "question": "Đề yêu cầu ONE WORD ONLY. Ta điền cả cụm 'whole frogs' hay chỉ nhặt đúng danh từ 'frogs'?",
+            "guide": "Phải bỏ tính từ 'whole', chỉ lấy đúng danh từ chỉ loài vật là 'frogs' (đúng 1 từ, giữ nguyên đuôi -s theo Quy tắc 30) -> Chốt frogs.",
+            "bridge": "Hoàn thành câu 5."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: V [capture and eat] + O [5 ______] -> Cần Danh từ chỉ con mồi động vật.<br>• Bước 2 (Keyword): Tiêu đề phụ 'Pitcher Plants' kết hợp mỏ neo kích thước 'Some plants are big enough' = 'Some of the largest have pitchers up to 30cm deep'.<br>• Bước 3: 'capture and eat' = 'consume... unlucky enough to fall into them'. Con mồi cụ thể được nêu là 'frogs'.<br>• Bước 4: Giới hạn ONE WORD ONLY: nhặt danh từ 'frogs'. Điền frogs.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'eat ______' (ăn con gì) -> Cần tìm Tên 1 con vật.<br>• Bước 2: Quét chữ 'Pitcher plants' và 'largest' (to nhất) ở đầu Đoạn 7.<br>• Bước 3: Thấy chữ 'consume' (= eat: ăn thịt), thấy con vật là 'frogs' (những con ếch).<br>• Bước 4: Chép đúng 1 từ frogs có đuôi -s."
+        ]
+      }
+    },
+    "q6": {
+      "num": 6,
+      "text": "Pitcher plants increase in size after they have digested a lot of insects.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q6",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu theo S-V-O & Bắt điều kiện",
+            "question": "Xé câu 6 làm 2 vế: Chủ ngữ cây nắp ấm làm gì và điều kiện phía sau là gì (Quy tắc 6)?",
+            "guide": "[Pitcher plants] / [increase in size - tăng kích thước/to lên] / [after they have digested a lot of insects - sau khi tiêu hóa nhiều côn trùng].",
+            "bridge": "Khóa hiện trường hai chân kiềng thực nghiệm."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường hai chân kiềng",
+            "question": "Cụm từ nào trong bài đọc chứa mỏ neo 'pitcher plants' kết hợp với việc cho ăn thêm côn trùng ('feed... bugs')?",
+            "guide": "Xuất hiện tại dòng 2-3 Đoạn 7: 'when scientists feed pitcher plants extra bugs...'.",
+            "bridge": "Bắt cặp đối xứng 3 điểm về dinh dưỡng và kích thước."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa 3 điểm",
+            "question": "Đối chiếu: Cụm nào đồng nghĩa với 'increase in size' (to ra)? Cụm nào đồng nghĩa với 'digested a lot of insects' (tiêu hóa nhiều côn trùng)?",
+            "guide": "'increase in size' = 'the plants get bigger' (cây trở nên to lớn hơn); 'digested a lot of insects' = 'feed pitcher plants extra bugs' (cho cây ăn thêm nhiều bọ).",
+            "bridge": "Cân logic giữa hai khẳng định thực nghiệm."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "Khi được ăn nhiều côn trùng thì cây to ra. Cả 3 thành phần S-V-O có khớp 100% về mặt logic không? Theo Quy tắc 11 chọn gì?",
+            "guide": "Khớp hoàn toàn cả về hành động lẫn kết quả thực nghiệm. Áp dụng Quy tắc 11 -> Chốt TRUE.",
+            "bridge": "Hoàn thành câu 6."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Pitcher plants] + V [increase in size] + Trạng ngữ thời gian [after they have digested a lot of insects].<br>• Bước 2 (Keyword): 'Pitcher plants' và danh từ chỉ côn trùng 'insects' = 'bugs' định vị Đoạn 7.<br>• Bước 3: Đoạn 7 mô tả nghiên cứu của Nicholas Gotelli: 'when scientists feed pitcher plants extra bugs, the plants get bigger'. Ta có: 'feed extra bugs' = 'digested a lot of insects'; 'get bigger' = 'increase in size'.<br>• Bước 4: Toàn bộ quan hệ logic trùng khớp 100%. Chọn TRUE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Cây nắp ấm 'increase in size' (to lên) sau khi ăn nhiều côn trùng ('a lot of insects').<br>• Bước 2: Quét Đoạn 7 thấy chữ 'pitcher plants' và 'bugs' (= côn trùng).<br>• Bước 3: Thấy câu: 'feed pitcher plants extra bugs, the plants GET BIGGER' (cho ăn thêm bọ thì cây TO HƠN).<br>• Bước 4: To hơn = Tăng kích thước. Đúng 100% -> Điền TRUE."
+        ]
+      }
+    },
+    "q7": {
+      "num": 7,
+      "text": "Carnivorous plants produce light-harvesting enzymes with the nutrients they extract from animals.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q7",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu theo S-V-O & Bắt mục đích",
+            "question": "Xé câu 7 làm 3 phần. Cây bắt mồi sản xuất 'light-harvesting enzymes' bằng thứ gì lấy từ động vật (Quy tắc 6)?",
+            "guide": "[Carnivorous plants] / [produce light-harvesting enzymes] / [with the nutrients they extract from animals - bằng các chất dinh dưỡng chiết xuất từ động vật].",
+            "bridge": "Khóa thuật ngữ khoa học khó thay thế."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng thuật ngữ khoa học",
+            "question": "Cụm thuật ngữ khoa học ghép nào: 'light-harvesting enzymes' là Hard Keyword (Quy tắc 1)? Nó nằm ở dòng nào Đoạn 7?",
+            "guide": "Cụm từ 'light-harvesting enzymes' xuất hiện nguyên văn ở dòng 6-7 Đoạn 7.",
+            "bridge": "Bắt cặp từ đồng nghĩa chất dinh dưỡng và quá trình tổng hợp."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa chất dinh dưỡng và chiết xuất",
+            "question": "Trong câu chứa thuật ngữ đó: Cụm nào đồng nghĩa với 'nutrients' (chất dinh dưỡng)? Cụm nào đồng nghĩa với 'extract from animals' (chiết xuất từ động vật)? Cụm nào đồng nghĩa với 'produce' (sản xuất/tạo ra)?",
+            "guide": "'produce' = 'build' (xây dựng / tạo nên); 'nutrients' = 'nitrogen and phosphorus' (chất đạm nitơ và phốt pho); 'extract from animals' = 'take... from the flesh' (lấy từ phần thịt động vật).",
+            "bridge": "Cân logic mục đích sinh hóa."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "Cây lấy nitơ và phốt pho từ thịt động vật để tạo ra enzyme quang hợp có khớp hoàn toàn với câu hỏi không?",
+            "guide": "Các vế S-V-O và mối quan hệ mục đích ('in order to build') khớp 100%. Áp dụng Quy tắc 11 -> Chốt TRUE.",
+            "bridge": "Hoàn thành câu 7."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Carnivorous plants] + V [produce light-harvesting enzymes] + Phương tiện [with nutrients extracted from animals].<br>• Bước 2 (Keyword): Thuật ngữ sinh hóa 'light-harvesting enzymes' là Hard Keyword tuyệt đối ở dòng 6-7 Đoạn 7.<br>• Bước 3: Đối chiếu: 'take nitrogen and phosphorus' = 'nutrients they extract'; 'from the flesh' = 'from animals'; 'in order to build' = 'produce'.<br>• Bước 4: Mọi thành phần đều trùng khớp hoàn hảo về mặt sinh học. Chọn TRUE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Cây tạo ra 'light-harvesting enzymes' nhờ chất lấy từ động vật ('nutrients from animals').<br>• Bước 2: Quét Đoạn 7 thấy cụm từ dài ngoằng: 'light-harvesting enzymes'.<br>• Bước 3: Đọc câu đó: thấy cây lấy 'nitrogen and phosphorus' (chất dinh dưỡng) 'from the flesh' (từ thịt động vật) để 'build' (= produce: tạo ra) loại enzyme đó.<br>• Bước 4: Khớp từng chữ -> Điền TRUE."
+        ]
+      }
+    },
+    "q8": {
+      "num": 8,
+      "text": "Pitcher plants and Venus flytraps are more efficient at photosynthesis than plants with ordinary leaves.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q8",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Đóng khung bẫy so sánh",
+            "question": "Xé câu làm 3 phần. Bản chất của phép so sánh ở vị ngữ là gì: Cây ăn thịt quang hợp 'MORE efficient' (hiệu quả HƠN) hay KÉM HƠN cây lá bình thường (Quy tắc 8)?",
+            "guide": "[Pitcher plants and Venus flytraps] / [are MORE EFFICIENT at photosynthesis THAN - quang hợp HIỆU QUẢ HƠN] / [plants with ordinary leaves]. Phép so sánh: Cây ăn thịt > Cây lá thường.",
+            "bridge": "Khóa hai đối tượng so sánh bằng mỏ neo quang hợp."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường hai chân kiềng",
+            "question": "Cặp mỏ neo đối chiếu nào: 'photosynthesis' (quang hợp) và 'plants with ordinary leaves' (cây có lá bình thường) dẫn em đến Đoạn 8?",
+            "guide": "Quét từ 'photosynthesis' và 'ordinary leaves' -> Dừng lại ở dòng 3-4 Đoạn 8.",
+            "bridge": "So sánh năng lực quang hợp thực tế trong văn bản."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng khả năng quang hợp",
+            "question": "Đọc câu đó ở Đoạn 8: Bài đọc nhận xét khả năng quang hợp của cây nắp ấm và cây bẫy kẹp thế nào ('is ______ at photosynthesis')? Và tại sao chúng không bằng cây có lá bình thường ('unlike plants with ordinary leaves')?",
+            "guide": "Bài đọc viết: 'A pitcher or a flytrap is NOT VERY GOOD at photosynthesis because, unlike plants with ordinary leaves, they do not have flat solar panels...' (Cây nắp ấm hay bẫy kẹp KHÔNG GIỎI quang hợp, vì KHÔNG GIỐNG NHƯ cây có lá bình thường, chúng không có những tấm pin mặt trời phẳng để hấp thụ nhiều ánh sáng).",
+            "bridge": "Cân logic đối lập giữa hiệu quả hơn và kém hơn."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "Đề bài khẳng định cây ăn thịt quang hợp 'HIỆU QUẢ HƠN' (more efficient), nhưng bài đọc bảo chúng 'KHÔNG GIỎI' (not very good) và kém hơn cây lá thường vì thiếu diện tích hứng sáng. Hai khẳng định này có đập nhau chan chát không? Theo Quy tắc 13 chốt gì?",
+            "guide": "'More efficient' đối nghịch 100% với 'not very good / unlike ordinary leaves'. Hai thông tin triệt tiêu lẫn nhau. Áp dụng Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành câu 8."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Pitcher plants and Venus flytraps] + V [are more efficient at photosynthesis than] + O [plants with ordinary leaves]. Cấu trúc so sánh hơn A > B.<br>• Bước 2 (Keyword): Cặp thuật ngữ 'photosynthesis' và 'ordinary leaves' định vị dòng 3-5 Đoạn 8.<br>• Bước 3: Bài đọc nêu rõ: cây ăn thịt 'is not very good at photosynthesis' bởi vì không giống cây lá thường ('unlike plants with ordinary leaves'), chúng không có lá phẳng để hấp thu ánh nắng.<br>• Bước 4: Thực tế cây ăn thịt quang hợp kém hiệu quả hơn cây lá thường. Nhận định 'more efficient' sai hoàn toàn. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề so sánh: Cây ăn thịt quang hợp 'MORE efficient' (TỐT HƠN/HIỆU QUẢ HƠN) cây lá thường.<br>• Bước 2: Quét Đoạn 8 thấy chữ 'photosynthesis' và 'ordinary leaves'.<br>• Bước 3: Đọc câu đó thấy bài bảo: Cây ăn thịt 'is NOT VERY GOOD at photosynthesis' (KHÔNG TỐT LẮM môn quang hợp).<br>• Bước 4: Đề bảo TỐT HƠN >< Bài bảo KHÔNG TỐT BẰNG. Đập nhau chan chát -> Điền FALSE."
+        ]
+      }
+    },
+    "q9": {
+      "num": 9,
+      "text": "Venus flytraps are better adapted to the soil of swamps and bogs than other carnivorous plants.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q9",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Bắt đối tượng so sánh",
+            "question": "Xé câu 9 làm 3 phần. Đề bài so sánh 'Venus flytraps' thích nghi với đất đầm lầy 'BETTER THAN' (tốt hơn) đối tượng nào (Quy tắc 8)?",
+            "guide": "[Venus flytraps] / [are better adapted to the soil of swamps and bogs] / [than OTHER CARNIVOROUS PLANTS - hơn các loài cây ăn thịt khác]. Phép so sánh nội bộ: Cây bẫy kẹp > Cây ăn thịt khác.",
+            "bridge": "Định vị hiện trường môi trường đất đầm lầy."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường hai chân kiềng",
+            "question": "Cụm từ chỉ địa hình: 'soil of bogs and swamps' nằm ở dòng nào của Đoạn 8?",
+            "guide": "Xuất hiện ở dòng 6-7 Đoạn 8: 'The poor soil of bogs and swamps, where many carnivorous plants grow...'.",
+            "bridge": "Kiểm tra hai vế thực tế được so sánh trong bài."
+          },
+          {
+            "title": "Nấc 3/4 - Kiểm tra đối tượng được so sánh trong bài",
+            "question": "Đọc kỹ câu đó: Bài đọc so sánh 'carnivorous plants' (cây ăn thịt nói chung) có lợi thế hơn loài cây nào ('enjoy an advantage there over ______')? Có chữ nào so sánh riêng cây Venus flytrap với các cây ăn thịt khác không?",
+            "guide": "Bài đọc chỉ so sánh: Cây ăn thịt nói chung có lợi thế hơn 'conventional plants' (cây cối thông thường). Hoàn toàn KHÔNG hề đặt cây Venus flytrap lên bàn cân so sánh với các loài cây ăn thịt khác.",
+            "bridge": "Áp dụng bộ lọc thiếu thành phần so sánh."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc thiếu vế & Chốt đáp án",
+            "question": "Đề bài tự ý đưa ra phép so sánh giữa 'Venus flytraps' và 'other carnivorous plants' mà bài đọc không hề so sánh. Theo Quy tắc 14 & 29 chốt đáp án gì trong 1 giây?",
+            "guide": "Thiếu hẳn thành phần so sánh này trong văn bản. Cấm tự suy diễn (Quy tắc 12). Theo Quy tắc 14 -> Chốt NOT GIVEN.",
+            "bridge": "Hoàn thành câu 9."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Venus flytraps] + V [are better adapted... than] + O [other carnivorous plants]. Phép so sánh hơn giữa hai nhóm cây ăn thịt.<br>• Bước 2 (Keyword): Cụm 'soil of swamps and bogs' định vị nửa sau Đoạn 8.<br>• Bước 3: Văn bản chỉ ra rằng đất nghèo dinh dưỡng ở đầm lầy giúp cây ăn thịt nói chung có lợi thế cạnh tranh trước cây thông thường ('carnivorous plants enjoy an advantage there over conventional plants').<br>• Bước 4: Tác giả không hề so sánh khả năng thích nghi của Venus flytrap với bất kỳ loài cây ăn thịt nào khác. Áp dụng Quy tắc 14. Chọn NOT GIVEN.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề so sánh: Cây Venus flytrap thích nghi đất đầm lầy TỐT HƠN (better than) các cây ăn thịt KHÁC.<br>• Bước 2: Quét Đoạn 8 thấy chữ 'soil of bogs and swamps'.<br>• Bước 3: Đọc câu đó: Bài chỉ bảo cây ăn thịt hơn cây bình thường ('conventional plants'), KHÔNG hề so sánh cây flytrap với các anh em cây ăn thịt khác.<br>• Bước 4: Đề tự bịa ra phép so sánh -> Áp dụng Quy tắc 14, điền NOT GIVEN."
+        ]
+      }
+    },
+    "q10": {
+      "num": 10,
+      "text": "Carnivorous plants frequently find it difficult to photosynthesise in bogs due to a lack of sunlight.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q10",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Bắt nguyên nhân - kết quả",
+            "question": "Xé câu 10: Đề bài bảo cây ăn thịt khó quang hợp ở đầm lầy DO NGUYÊN NHÂN GÌ ('due to a ______')?",
+            "guide": "[Carnivorous plants] / [find it difficult to photosynthesise in bogs] / [DUE TO A LACK OF SUNLIGHT - do THIẾU ÁNH NẮNG MẶT TRỜI].",
+            "bridge": "Dò tiếp câu liền kề theo dòng chảy tịnh tiến."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng dòng chảy tịnh tiến",
+            "question": "Nằm ngay sau câu 9 ở Đoạn 8, câu nào bàn về ánh nắng ('sunshine') ở đầm lầy (Quy tắc 26)?",
+            "guide": "Dòng 8-9 Đoạn 8: 'Also, bogs are often flooded with sunshine...'.",
+            "bridge": "Đối chiếu điều kiện ánh sáng thực tế."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng điều kiện ánh sáng",
+            "question": "Đề bài nói đầm lầy 'lack of sunlight' (thiếu ánh sáng), còn bài đọc mô tả lượng ánh nắng ở bogs như thế nào ('flooded with ______')?",
+            "guide": "Bài đọc viết: 'flooded with sunshine' (ngập tràn / chan hòa ánh nắng mặt trời).",
+            "bridge": "Cân logic đối kháng 100%."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "'Thiếu ánh nắng' (lack of sunlight) và 'ngập tràn ánh nắng' (flooded with sunshine) có đá nhau chan chát 100% không? Theo Quy tắc 13 chốt gì?",
+            "guide": "Hai mệnh đề trái ngược nhau hoàn toàn (Thiếu >< Ngập tràn). Áp dụng Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành câu 10."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Carnivorous plants] + V [find it difficult to photosynthesise in bogs] + Nguyên nhân [due to a lack of sunlight].<br>• Bước 2 (Keyword): Mỏ neo 'bogs' và 'sunlight' = 'sunshine' ở cuối Đoạn 8.<br>• Bước 3: Tác giả giải thích: đầm lầy thường ngập tràn ánh nắng ('flooded with sunshine'), do đó ngay cả cây ăn thịt quang hợp kém vẫn có thể tiến hành đủ lượng quang hợp để sống sót ('carry out enough photosynthesis to survive').<br>• Bước 4: 'lack of sunlight' mâu thuẫn trực tiếp với 'flooded with sunshine'. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Cây khó quang hợp vì 'lack of sunlight' (THIẾU ánh nắng).<br>• Bước 2: Quét cuối Đoạn 8 thấy chữ 'sunshine' (ánh nắng).<br>• Bước 3: Bài bảo: Đầm lầy thường 'FLOODED with sunshine' ('flooded' = ngập tràn/thừa mứa ánh nắng).<br>• Bước 4: Đề bảo THIẾU >< Bài bảo NGẬP TRÀN. Cãi nhau 100% -> Điền FALSE."
+        ]
+      }
+    },
+    "q11": {
+      "num": 11,
+      "text": "Scientists have campaigned to reduce the amount of nitrogen that is released into the soil by agricultural practices.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q11",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Khóa hành động chính",
+            "question": "Xé câu 11: Chủ ngữ 'Scientists' được đề bài khẳng định đã thực hiện hành động cụ thể nào (Quy tắc 6)?",
+            "guide": "[Scientists - Các nhà khoa học] / [HAVE CAMPAIGNED to reduce - đã vận động chiến dịch để giảm thiểu] / [the amount of nitrogen...]. Hành động then chốt là 'campaigned' (mở chiến dịch vận động).",
+            "bridge": "Khóa đoạn văn bằng hai mỏ neo nitơ và nông nghiệp."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng hai chân kiềng",
+            "question": "Cụm từ 'nitrogen' và 'agricultural practices' (nông nghiệp) dẫn em đến đoạn nào trong bài?",
+            "guide": "Dẫn thẳng mắt đến dòng 2-3 Đoạn 9 ('Chemical fertilizers used in agriculture... adding extra nitrogen...').",
+            "bridge": "Kiểm tra xem các nhà khoa học có mở chiến dịch vận động không."
+          },
+          {
+            "title": "Nấc 3/4 - Kiểm tra hành động của các nhà khoa học",
+            "question": "Đọc hết Đoạn 9: Bài đọc có nói phân bón nông nghiệp làm tăng nitơ gây hại cây không? Nhưng có từ nào nhắc đến việc 'các nhà khoa học đã đứng ra vận động/chiến dịch' ('campaigned') để giảm nitơ không?",
+            "guide": "Bài đọc chỉ nêu thực trạng phân bón nông nghiệp đưa thêm nitơ vào bãi lầy làm quá tải hệ thống của cây. Hoàn toàn KHÔNG nhắc đến bất kỳ chiến dịch vận động nào của giới khoa học.",
+            "bridge": "Áp dụng bộ lọc chống tự suy diễn."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc tự suy diễn & Chốt đáp án",
+            "question": "Thấy cây bị hại mà tự suy ra 'chắc các nhà khoa học phải vận động cứu cây' là phạm vào quy tắc nào (Quy tắc 12)? Chốt đáp án gì?",
+            "guide": "Vi phạm nghiêm trọng Quy tắc 12 (Tự suy diễn). Không có chữ hiển thị = Không tồn tại. Áp dụng Quy tắc 29 -> Chốt NOT GIVEN.",
+            "bridge": "Hoàn thành câu 11."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Scientists] + V [have campaigned to reduce] + O [the amount of nitrogen...].<br>• Bước 2 (Keyword): Cặp từ khóa 'nitrogen' và 'agricultural' định vị nửa đầu Đoạn 9.<br>• Bước 3: Tác giả chỉ ra phân bón hóa học trong nông nghiệp ('Chemical fertilizers used in agriculture') đang làm bão hòa lượng nitơ trong đất, đe dọa sinh tồn của cây ăn thịt.<br>• Bước 4: Không có bất kỳ thông tin nào đề cập đến việc các nhà khoa học đã tiến hành chiến dịch kêu gọi cắt giảm ('campaigned to reduce'). Chọn NOT GIVEN.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: 'Scientists' (các nhà khoa học) đã 'campaigned' (làm chiến dịch vận động) để giảm nitơ từ nông nghiệp.<br>• Bước 2: Quét Đoạn 9 thấy chữ 'agriculture' (nông nghiệp) và 'nitrogen'.<br>• Bước 3: Đọc cả đoạn: Chỉ thấy kể phân bón làm đất nhiều nitơ khiến cây bị ngộ độc, KHÔNG hề có chữ nào bảo các nhà khoa học mở chiến dịch kêu gọi.<br>• Bước 4: Tự bịa ra hành động chiến dịch -> Áp dụng Quy tắc 12 & 29, điền NOT GIVEN."
+        ]
+      }
+    },
+    "q12": {
+      "num": 12,
+      "text": "A lot of exotic carnivorous plants are sold illegally.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q12",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Đóng khung từ mức độ",
+            "question": "Xé câu làm 3 phần. Đề bài nói về việc mua bán cây ăn thịt ngoại lai: 'A lot of exotic carnivorous plants are sold illegally'. Từ nào chỉ tính chất buôn bán phạm pháp (Quy tắc 6)?",
+            "guide": "[A lot of exotic carnivorous plants] / [are sold illegally - bị bán bất hợp pháp]. Từ quyết định là 'sold illegally'.",
+            "bridge": "Khóa mỏ neo cụm từ hiếm gặp."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo hiếm",
+            "question": "Cụm từ đặc định 'exotic carnivorous plants' (cây ăn thịt ngoại lai) xuất hiện ở câu nào của Đoạn 9?",
+            "guide": "Dòng 6-7 Đoạn 9: 'The black market trade in exotic carnivorous plants is strong...'.",
+            "bridge": "Lột vỏ từ đồng nghĩa chợ đen và quy mô mạnh mẽ."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa chợ đen",
+            "question": "Cụm từ nào trong bài đọc đồng nghĩa với 'sold illegally' (bán lậu / bán bất hợp pháp)? Cụm nào tương đương với 'a lot' (số lượng lớn)?",
+            "guide": "'sold illegally' = 'black market trade' (buôn bán trên thị trường chợ đen); 'A lot' = 'is strong' (diễn ra mạnh mẽ/quy mô lớn).",
+            "bridge": "Cân logic quy mô và bản chất phạm pháp."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "Hoạt động buôn bán chợ đen các loài cây ngoại lai diễn ra mạnh mẽ có khớp 100% với việc 'nhiều cây bị bán bất hợp pháp' không? Theo Quy tắc 11 chọn gì?",
+            "guide": "Khớp hoàn toàn cả về bản chất phạm pháp lẫn quy mô giao dịch. Áp dụng Quy tắc 11 -> Chốt TRUE.",
+            "bridge": "Hoàn thành câu 12."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [A lot of exotic carnivorous plants] + V [are sold illegally].<br>• Bước 2 (Keyword): Cụm danh từ 'exotic carnivorous plants' dẫn đến giữa Đoạn 9.<br>• Bước 3: Bài đọc ghi: 'The black market trade in exotic carnivorous plants is strong'. Ta có: 'black market trade' (giao dịch chợ đen) = 'sold illegally'; 'is strong' = 'a lot'.<br>• Bước 4: Toàn bộ mệnh đề trùng khớp 100%. Chọn TRUE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Nhiều cây ăn thịt lạ bị 'sold illegally' (bán phạm pháp/bán lậu).<br>• Bước 2: Quét Đoạn 9 thấy cụm 'exotic carnivorous plants'.<br>• Bước 3: Thấy chữ 'BLACK MARKET trade' (buôn bán ở CHỢ ĐEN) và 'is strong' (rất mạnh/rất nhiều).<br>• Bước 4: Bán ở chợ đen = Bán bất hợp pháp. Đúng 100% -> Điền TRUE."
+        ]
+      }
+    },
+    "q13": {
+      "num": 13,
+      "text": "Preventing wildfires is beneficial to the Venus flytrap.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q13",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu & Bắt tính chất có lợi",
+            "question": "Xé câu làm 3 phần. Đề bài khẳng định việc dập tắt cháy rừng ('Preventing wildfires') mang lại tác động gì cho cây bẫy kẹp ('beneficial' - có lợi hay có hại)?",
+            "guide": "[Preventing wildfires] / [is BENEFICIAL to - mang lại LỢI ÍCH cho] / [the Venus flytrap].",
+            "bridge": "Khóa hai chân kiềng ở những dòng cuối văn bản."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng hai chân kiềng",
+            "question": "Cặp mỏ neo 'wildfires' (cháy rừng) và 'Venus flytrap' nằm ở những dòng cuối nào của Đoạn 9?",
+            "guide": "Xuất hiện ở 3 dòng cuối cùng của Đoạn 9 ('The suppression of wildfires... outcompete the Venus flytraps').",
+            "bridge": "Lột vỏ từ đồng nghĩa dập lửa và phân tích hậu quả."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa dập lửa và hậu quả",
+            "question": "Trong bài đọc, từ nào đồng nghĩa với 'Preventing wildfires' (ngăn chặn cháy rừng)? Khi cháy rừng bị dập tắt thì điều gì xảy ra với cây Venus flytrap?",
+            "guide": "'Preventing wildfires' = 'The suppression of wildfires' (việc dập tắt / ngăn chặn cháy rừng). Hậu quả: khiến các cây khác mọc nhanh và 'outcompete the Venus flytraps' (chèn ép, lấn át cạnh tranh loại bỏ cây bẫy kẹp) -> đem lại sự mất mát ('a loss').",
+            "bridge": "Cân logic giữa có lợi và chịu thiệt hại mất mát."
+          },
+          {
+            "title": "Nấc 4/4 - Cân logic & Chốt đáp án",
+            "question": "Đề bài bảo ngăn cháy rừng là 'CÓ LỢI' (beneficial), nhưng bài đọc chứng minh việc dập lửa làm cây bị loài khác lấn át tiêu diệt (CÓ HẠI / MẤT MÁT). Hai ý này có đập nhau chan chát không? Theo Quy tắc 13 chốt gì?",
+            "guide": "'Beneficial' (có lợi) đối nghịch 100% với 'outcompete / a loss' (bị chèn ép chết / có hại). Áp dụng Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành toàn bộ câu hỏi của bài đọc."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Preventing wildfires] + V [is beneficial to] + O [the Venus flytrap].<br>• Bước 2 (Keyword): Danh từ ghép 'wildfires' và tên loài 'Venus flytrap' định vị những dòng cuối Đoạn 9.<br>• Bước 3: 'Preventing wildfires' = 'The suppression of wildfires'. Tác giả nêu rõ việc ngăn chặn cháy rừng cho phép các thực vật khác phát triển áp đảo và cạnh tranh triệt tiêu cây bẫy kẹp ('outcompete the Venus flytraps').<br>• Bước 4: Ngăn cháy rừng thực chất gây hại chứ không hề 'beneficial'. Hai vế triệt tiêu nhau. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Ngăn cháy rừng (preventing wildfires) thì 'beneficial' (CÓ LỢI) cho cây Venus flytrap.<br>• Bước 2: Quét cuối Đoạn 9 thấy chữ 'wildfires' và 'Venus flytraps'.<br>• Bước 3: Đọc thấy: Việc dập lửa ('suppression of wildfires') làm cây khác mọc đè bẹp cây flytrap ('outcompete') và gây ra 'a loss' (sự mất mát/thiệt hại).<br>• Bước 4: Đề bảo CÓ LỢI >< Bài bảo BỊ HẠI/MẤT MÁT. Cãi nhau 100% -> Điền FALSE."
+        ]
+      }
+    }
+  }
 }
