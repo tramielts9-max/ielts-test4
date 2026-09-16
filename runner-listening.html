@@ -156,9 +156,13 @@
         }
       }
 
-      window.TEST_DATA = { title: data.title, answers: data.answers };
+window.TEST_DATA = { title: data.title, answers: data.answers };
 
       await import('./js/app.js');
+      
+      // 👉 KÍCH HOẠT THANH ĐIỀU HƯỚNG ĐÁY & MODAL POPUP:
+      const { initListeningNavigation } = await import('./js/listening-nav.js');
+      initListeningNavigation();
     }
 
     loadTest();
