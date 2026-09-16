@@ -7,6 +7,76 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/listening.css">
+  <style>
+    /* Styling cho thẻ câu hỏi & các box tính năng tự sinh */
+    .lis-question-card {
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .lis-control-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn-locate {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 12.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.2s;
+    }
+    .btn-locate:hover {
+      background: #0369a1;
+    }
+    .ai-assistant-box {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: 10px;
+    }
+    .ai-input-group {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .ai-input-group input {
+      flex: 1;
+      padding: 6px 10px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .ai-btn {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .ai-response {
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #1e293b;
+      display: none;
+    }
+  </style>
 </head>
 <body class="listening-test">
 
@@ -56,7 +126,7 @@
   </div>
 </div>
 
-<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE & THEME (HOẠT ĐỘNG ĐỘC LẬP) -->
+<!-- BỘ TỰ ĐỘNG SINH GIAO DIỆN & TÍNH NĂNG (FEATURES BUILDER) -->
 <script>
   (function() {
     var curSize = 15;
@@ -86,7 +156,6 @@
       try { localStorage.setItem('ielts_theme', isDark ? 'dark' : 'light'); } catch(e) {}
     };
 
-    // Áp dụng ngay khi mở trang
     setFont(curSize);
     try {
       if (localStorage.getItem('ielts_theme') === 'dark') {
@@ -95,7 +164,106 @@
         if (btn) btn.innerText = '☀️ Sáng';
       }
     } catch(e) {}
+
+    // Bấm câu transcript hoặc nút định vị để nhảy audio
+    window.seekAudioTo = function(seconds, highlightId) {
+      const audio = document.getElementById('mainAudioElement');
+      if (audio && seconds) {
+        audio.currentTime = parseFloat(seconds);
+        audio.play().catch(() => {});
+      }
+      if (highlightId && window.highlightText) {
+        window.highlightText(highlightId);
+      }
+    };
   })();
+
+  // =========================================================================
+  // BỘ MÁY BUILD GIAO DIỆN & TÍNH NĂNG CHO BÀI LISTENING
+  // =========================================================================
+  window.buildListeningHtml = function(data) {
+    if (!data.groups || !data.questions) return data.questionHtml || "";
+
+    let html = '';
+
+    data.groups.forEach(group => {
+      html += `<div class="section-title">${group.title}</div>`;
+      if (group.instructions) {
+        html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
+      }
+
+      // Xử lý Table hoặc Notes template
+      let contentBody = group.tableHtml || group.template || '';
+      if (group.notesTitle) {
+        contentBody = `<div style="background:var(--bg-subcard); border:1px solid var(--border-color); padding:16px; border-radius:8px;"><h4 style="margin-top:0;">${group.notesTitle}</h4>${contentBody}</div>`;
+      }
+
+      // Thay thế placeholder {{q1}}, {{q2}} thành input thực tế
+      group.questionIds.forEach(qId => {
+        const q = data.questions[qId];
+        const width = q?.inputWidth || "120px";
+        const inputHtml = `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]">`;
+        contentBody = contentBody.replace(new RegExp(`{{${qId}}}`, 'g'), inputHtml);
+      });
+
+      html += `<div style="margin-bottom:18px;">${contentBody}</div>`;
+
+      // Render từng Card câu hỏi chứa toàn bộ Features (Thought, AI, Result, Exp, Locate)
+      group.questionIds.forEach(qId => {
+        const q = data.questions[qId];
+        if (!q) return;
+
+        let expSteps = '';
+        if (q.explanation && q.explanation.steps) {
+          expSteps = q.explanation.steps.map(s => `<div class="exp-step">${s}</div>`).join('');
+        }
+
+        html += `
+          <div class="lis-question-card" id="${qId}">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <b style="color:var(--primary-blue); font-size:14.5px;">📍 Câu ${q.num || qId.replace('q','')}:</b>
+              ${q.time ? `<button type="button" class="btn-locate" onclick="window.seekAudioTo(${q.time}, '${q.highlightId || ''}')">▶ Nghe đoạn này (${formatTime(q.time)})</button>` : ''}
+            </div>
+
+            <!-- Kết quả chấm -->
+            <div class="result" style="margin-top:8px;"></div>
+
+            <!-- Mạch suy nghĩ -->
+            <div class="thought-box" style="margin-top:8px;">
+              <label>💭 Mạch suy nghĩ của em:</label>
+              <textarea id="${qId}_thought" placeholder="Ghi chú lý do em nghe từ này..."></textarea>
+            </div>
+
+            <!-- Lời giải chi tiết -->
+            <div class="explanation" style="display:none; margin-top:8px;">
+              <div class="kw-exp" style="font-weight:700; margin-bottom:4px;">🎯 GIẢI THÍCH:</div>
+              ${expSteps}
+              ${q.highlightId ? `<button type="button" class="btn-locate" style="margin-top:6px;" onclick="window.highlightText('${q.highlightId}')">📍 Xem vị trí transcript</button>` : ''}
+            </div>
+
+            <!-- Trợ giảng AI -->
+            <div class="ai-assistant-box">
+              <label style="font-weight:700; font-size:12.5px; color:#475569;">🤖 Hỏi Trợ giảng AI về câu ${q.num || qId}:</label>
+              <div class="ai-input-group">
+                <input type="text" id="ai_ask_${qId}" placeholder="Ví dụ: Vì sao câu này chọn ${q.finalAnswer || 'từ này'}?">
+                <button type="button" class="ai-btn" onclick="window.askGeminiAI && window.askGeminiAI('${qId}')">Gửi AI</button>
+              </div>
+              <div class="ai-response" id="ai_response_${qId}"></div>
+            </div>
+          </div>
+        `;
+      });
+    });
+
+    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">CHẤM BÀI VÀ NỘP KẾT QUẢ</button>`;
+    return html;
+  };
+
+  function formatTime(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+  }
 </script>
 
 <!-- SCRIPT TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY APP -->
@@ -144,9 +312,26 @@
       document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.transcriptHtml || data.passageHtml || "";
-      document.getElementById('questionBox').innerHTML = data.questionHtml || "";
+
+      // Gắn sự kiện click vào từng dòng transcript để nhảy audio
+      setTimeout(() => {
+        document.querySelectorAll('.transcript-line[data-time]').forEach(el => {
+          el.style.cursor = 'pointer';
+          el.addEventListener('click', () => {
+            const time = el.getAttribute('data-time');
+            if (time) window.seekAudioTo(time);
+          });
+        });
+      }, 300);
+
+      // Render câu hỏi thông qua buildListeningHtml (tương tự buildReadingHtml)
+      if (data.groups && window.buildListeningHtml) {
+        document.getElementById('questionBox').innerHTML = window.buildListeningHtml(data);
+      } else {
+        document.getElementById('questionBox').innerHTML = data.questionHtml || "";
+      }
       
-      // Kích hoạt Audio Player nếu có link mp3
+      // Kích hoạt Audio Player
       if (data.audioUrl) {
         const audioEl = document.getElementById('mainAudioElement');
         const wrapper = document.getElementById('audioPlayerWrapper');
@@ -156,13 +341,14 @@
         }
       }
 
-window.TEST_DATA = { title: data.title, answers: data.answers };
+      window.TEST_DATA = { title: data.title, answers: data.answers };
 
       await import('./js/app.js');
       
-      // 👉 KÍCH HOẠT THANH ĐIỀU HƯỚNG ĐÁY & MODAL POPUP:
-      const { initListeningNavigation } = await import('./js/listening-nav.js');
-      initListeningNavigation();
+      try {
+        const { initListeningNavigation } = await import('./js/listening-nav.js');
+        initListeningNavigation();
+      } catch(e) {}
     }
 
     loadTest();
