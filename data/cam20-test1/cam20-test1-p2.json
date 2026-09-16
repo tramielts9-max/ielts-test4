@@ -40,37 +40,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Tách ý câu hỏi",
-            "question": "Câu 14 đề cập đến hai nội dung gắn liền nhau nào khi nói về việc tìm hiểu cây du?",
-            "guide": "Hãy chú ý đến vế trở ngại trong công việc nghiên cứu và lý do xuất phát từ số lượng ít ỏi của những cây to còn sống.",
-            "bridge": "Bây giờ ta hãy rà soát xem đoạn nào bắt đầu nói về việc nghiên cứu những cây sống sót."
+            "title": "Phân tích cụm ý câu hỏi",
+            "question": "Câu 14 liên kết hai thành phần nào: rào cản trong công việc gì và nguyên nhân thực tế từ những cái cây ra sao?",
+            "guide": "Để ý hai vế: rào cản nghiên cứu ('research problems') và việc số lượng cây to còn sống quá ít ('only a few surviving large elms').",
+            "bridge": "Bây giờ ta đi tìm đoạn văn bắt đầu đề cập tới việc nghiên cứu các cây còn sống."
           },
           {
-            "title": "Định vị đối tượng nghiên cứu",
-            "question": "Ở đoạn nào tác giả đề cập tới những cây du cổ thụ còn sống sót và mong muốn tìm hiểu nguyên nhân của các nhà khoa học?",
-            "guide": "Đoạn C có nhắc đến những cây cổ thụ hàng trăm năm tuổi và mục tiêu nghiên cứu để tìm hiểu lý do tại sao chúng trụ vững.",
-            "bridge": "Hãy xem tiếp những câu ngay sau đó xem việc nghiên cứu có diễn ra thuận lợi hay gặp rào cản gì."
+            "title": "Quét mỏ neo đối tượng nghiên cứu",
+            "question": "Ở đoạn nào trong bài bắt đầu nói về việc tìm hiểu và nghiên cứu những cây du cổ thụ sống sót ('study those trees that have survived')?",
+            "guide": "Hãy quan sát nửa sau của đoạn C, nơi chuyên gia Karen Russell nói về mục tiêu nghiên cứu cây sống sót.",
+            "bridge": "Đọc tiếp câu liền kề sau đó xem công việc này có gặp trở ngại gì không."
           },
           {
-            "title": "Nhận diện từ diễn đạt tương đương",
-            "question": "Trong đoạn C, cụm từ nào thể hiện 'khó khăn/hạn chế cho việc nghiên cứu' và 'số lượng cây sống sót quá ít'?",
-            "guide": "Tác giả dùng liên từ chuyển hướng 'Nevertheless' và câu 'opportunities are limited as the number of these mature survivors is relatively small'.",
-            "bridge": "Hãy đối chiếu ý nghĩa của câu này với nhận định trong đề bài."
+            "title": "Bắt cặp từ diễn đạt tương đương",
+            "question": "Trong đoạn C, câu văn nào chỉ ra 'cơ hội nghiên cứu bị hạn chế' do 'số lượng cây sống sót khá ít'?",
+            "guide": "Bài đọc viết: 'opportunities are limited as the number of these mature survivors is relatively small'.",
+            "bridge": "So sánh xem hai vế này có ăn khớp hoàn toàn với câu hỏi không."
           },
           {
-            "title": "Xác định đoạn văn phù hợp",
-            "question": "Việc 'cơ hội bị giới hạn' do 'mẫu vật còn lại khá nhỏ' hoàn toàn trùng khớp với ý của câu 14. Vậy bạn chọn đoạn nào?",
-            "guide": "Đoạn văn chứa toàn bộ nội dung lập luận này chính là đoạn C.",
-            "bridge": "Đáp án câu 14 là C."
+            "title": "Chốt đoạn văn chính xác",
+            "question": "'Opportunities are limited' khớp với 'research problems', còn 'number is relatively small' khớp với 'only a few'. Vậy đáp án là chữ cái nào?",
+            "guide": "Đoạn văn chứa trọn vẹn sự đối chiếu này là đoạn C.",
+            "bridge": "Chốt đáp án C cho câu 14."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Đề cập đến những khó khăn trong nghiên cứu bắt nguồn từ việc chỉ còn lại rất ít cây du lớn sống sót.",
-          "<b>Đoạn C (nửa cuối):</b> <i>'Nevertheless, opportunities are limited as the number of these mature survivors is relatively small.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>research problems</i> = <i>opportunities are limited</i>; <i>only a few surviving large elms</i> = <i>number of these mature survivors is relatively small</i>.",
-          "<b>Kết luận:</b> Chọn <b>C</b>."
+          "<b>Bước 1 (Phân tích câu hỏi):</b> Cần tìm đoạn văn chứa thông tin về khó khăn trong nghiên cứu sinh ra từ việc chỉ còn quá ít cây du lớn sống sót.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét cụm từ <i>study those trees</i> tại đoạn C dòng 9-11.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>'opportunities are limited'</i> = <i>research problems</i>; <i>'the number of these mature survivors is relatively small'</i> = <i>only a few surviving large elms</i>.",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>C</b>.<br><br><b>Phương án đơn giản:</b> Thấy câu hỏi có chữ 'research' và 'surviving large elms', quét đoạn C thấy <i>'study those trees that have survived'</i> và <i>'opportunities are limited'</i> (cơ hội bị giới hạn/khó khăn) -> Chọn ngay C."
         ]
       }
     },
@@ -82,37 +82,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Phân tích yêu cầu đề bài",
-            "question": "Để khớp với cụm 'difference of opinion' về giá trị của việc trồng lại cây du, nội dung đoạn văn cần có cấu trúc gì?",
-            "guide": "Cần một đoạn văn thể hiện sự tranh luận hoặc hai góc nhìn trái ngược: một bên thấy có ích, một bên e ngại hoặc phản đối.",
-            "bridge": "Chúng ta hãy tìm đoạn văn thảo luận về sự đón nhận của xã hội hoặc phản ứng của các bên liên quan."
+            "title": "Nhận diện dạng thông tin",
+            "question": "Cụm 'difference of opinion' đòi hỏi nội dung đoạn văn phải mang cấu trúc gì về mặt quan điểm?",
+            "guide": "Đoạn văn bắt buộc phải có sự tranh luận, bất đồng hoặc hai chiều ý kiến: một bên ủng hộ và một bên lo ngại, phản đối.",
+            "bridge": "Hãy tìm đoạn văn thảo luận về việc xã hội đón nhận hay nghi ngại kế hoạch trồng lại cây du."
           },
           {
-            "title": "Tìm các quan điểm trái chiều",
-            "question": "Khi đọc đoạn G, bạn nhận thấy bà Karen Russell và ông Matt Elliot nhìn nhận thế nào về việc đưa giống cây mới vào tự nhiên?",
-            "guide": "Russell nhận định lý lẽ về môi trường là rất thuyết phục, trong khi câu tiếp theo lại bắt đầu bằng 'Others are more wary' cùng những phân tích bất lợi từ Elliot.",
-            "bridge": "Hãy so sánh bản chất thái độ của hai luồng ý kiến này."
+            "title": "Quét đoạn có các luồng ý kiến",
+            "question": "Đoạn nào mở đầu bằng việc đặt câu hỏi về sự chấp nhận của xã hội ('social acceptance') và có sự xuất hiện của hai chuyên gia với góc nhìn khác nhau?",
+            "guide": "Đoạn G mở đầu bằng câu hỏi của Russell và ngay sau đó đưa ra hai góc nhìn trái chiều.",
+            "bridge": "Hãy đọc kỹ ý kiến của từng người trong đoạn G."
           },
           {
-            "title": "Đối chiếu lập luận của hai phía",
-            "question": "Những lý lẽ cụ thể nào cho thấy hai bên đang nhìn nhận giá trị của kế hoạch này theo cách khác nhau?",
-            "guide": "Một bên tin cây sẽ làm nơi trú ngụ tốt cho sinh vật, còn bên kia cảnh báo nguy cơ đưa mầm bệnh mới và hành động này thực chất giống như nhân bản vô tính.",
-            "bridge": "Đây rõ ràng là sự xung đột quan điểm về tính xác đáng của việc tái sinh cây du."
+            "title": "So sánh hai luồng quan điểm",
+            "question": "Bà Russell và ông Elliot đánh giá như thế nào về giá trị của việc trồng lại giống cây du mới?",
+            "guide": "Russell khẳng định lý do bảo vệ môi trường là rất thuyết phục ('case... is strong'), nhưng sau đó câu 'Others are more wary' dẫn lời Elliot chỉ ra nguy cơ đem bệnh và coi đó như nhân bản vô tính.",
+            "bridge": "Một bên thấy 'strong', một bên 'more wary' chính là minh chứng rõ nhất cho sự bất đồng ý kiến."
           },
           {
             "title": "Chốt đoạn văn đáp án",
-            "question": "Đoạn văn nào trình bày chi tiết về những góc nhìn bất đồng quanh kế hoạch tái du nhập này?",
-            "guide": "Toàn bộ cuộc thảo luận đa chiều này được đặt trong đoạn G.",
-            "bridge": "Đáp án câu 15 là G."
+            "question": "Đoạn văn nào trình bày chi tiết về sự khác biệt trong góc nhìn giữa các chuyên gia về việc đem cây du trở lại?",
+            "guide": "Đó chính là đoạn G.",
+            "bridge": "Chốt đáp án G cho câu 15."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Chi tiết về sự bất đồng quan điểm quanh giá trị của việc đưa cây du trở lại nước Anh.",
-          "<b>Đoạn G:</b> Đặt ra hai góc nhìn đối lập: Russell thấy ích lợi môi trường rất lớn (<i>'the environmental case... is strong'</i>), trong khi Elliot và những người khác thận trọng (<i>'Others are more wary'</i>) vì lo ngại rủi ro nhân bản vô tính và dịch bệnh mới.",
-          "<b>Từ đồng nghĩa:</b> <i>difference of opinion</i> = sự đối lập giữa quan điểm ủng hộ (<i>strong case</i>) và dè chừng (<i>more wary</i>).",
-          "<b>Kết luận:</b> Chọn <b>G</b>."
+          "<b>Bước 1 (Phân tích câu hỏi):</b> Cần tìm chi tiết về sự bất đồng quan điểm quanh giá trị của việc trồng lại cây du ở Anh.",
+          "<b>Bước 2 (Định vị trong bài):</b> Đoạn G nói về <i>social acceptance</i>, nêu quan điểm của Russell và Elliot.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> Russell tin rằng <i>'the environmental case for reintroducing elm is strong'</i> >< Elliot và nhóm khác thì <i>'more wary'</i> (lo ngại thay thế cây bản địa bằng cây lai, nguy cơ dịch bệnh mới). Đây chính là <i>difference of opinion</i>.",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>G</b>.<br><br><b>Phương án đơn giản:</b> Đề hỏi 'difference of opinion' (bất đồng ý kiến), nhìn đoạn G thấy người thì bảo <i>'is strong'</i> (rất tốt), người thì bảo <i>'more wary / The problem is'</i> (dè chừng/có vấn đề) -> Chọn G."
         ]
       }
     },
@@ -124,37 +124,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Xác định trọng tâm thông tin",
-            "question": "Từ khóa cốt lõi 'how... was brought into Britain' yêu cầu chúng ta phải tìm kiếm thông tin gì?",
-            "guide": "Cần tìm con đường, cách thức hoặc chuyến vận chuyển đã mang nguồn lây dịch bệnh từ nơi khác vào nước Anh.",
-            "bridge": "Hãy tìm những mốc thời gian hoặc tuyến vận tải hàng hóa quốc tế trong bài."
+            "title": "Bóc tách câu hỏi",
+            "question": "Cụm 'how... was brought into Britain' yêu cầu chúng ta tìm kiếm thông tin về điều gì?",
+            "guide": "Cần tìm con đường, nguồn gốc hoặc phương tiện vận chuyển mang mầm bệnh từ nước ngoài tràn vào nước Anh.",
+            "bridge": "Hãy quét các tên quốc gia hoặc các phương thức vận tải hàng hóa trong bài."
           },
           {
-            "title": "Quét mốc phát tán dịch bệnh",
-            "question": "Đoạn nào nói về các đợt bùng phát dịch bệnh và nguyên nhân kích hoạt đợt thứ hai?",
-            "guide": "Ở đoạn B, tác giả nhắc đến đợt dịch đầu tiên vào những năm 1920 và sự bùng phát nghiêm trọng hơn vào thập niên 1970.",
-            "bridge": "Hãy nhìn kỹ câu miêu tả nguyên nhân trực tiếp làm dịch bệnh bùng phát trở lại."
+            "title": "Định vị mốc lịch sử dịch bệnh",
+            "question": "Đoạn văn nào miêu tả sự bùng phát của dịch bệnh và nhắc đến một quốc gia xuất khẩu gỗ?",
+            "guide": "Ở đoạn B, tác giả nói về đợt dịch thứ hai vào những năm 1970 liên quan đến các chuyến tàu chở gỗ.",
+            "bridge": "Đọc kỹ câu văn chứa tên nước Canada trong đoạn B."
           },
           {
-            "title": "Làm rõ phương thức xâm nhập",
-            "question": "Dịch bệnh đã xâm nhập vào nước Anh thông qua mặt hàng cụ thể nào và từ đâu?",
-            "guide": "Đoạn B nêu rõ dịch bệnh bắt nguồn từ các chuyến hàng chở gỗ du từ Canada ('shipments of elm from Canada') phục vụ việc đóng tàu.",
-            "bridge": "Thông tin này giải thích nguồn gốc và phương tiện đưa nấm bệnh vào lãnh thổ nước Anh."
+            "title": "Bắt cặp từ chỉ phương thức vận chuyển",
+            "question": "Câu văn nào trong đoạn B mô tả việc mầm bệnh theo các chuyến hàng gỗ vượt biển vào nước Anh?",
+            "guide": "Bài viết: 'a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building...'.",
+            "bridge": "Những kiện hàng gỗ chuyển từ Canada chính là con đường đưa dịch bệnh vào Anh."
           },
           {
-            "title": "Lựa chọn đoạn văn",
-            "question": "Đoạn văn nào chứa lời giải thích về con đường dịch bệnh tràn vào nước Anh?",
-            "guide": "Chính là đoạn B với các chi tiết về chuyến tàu chở gỗ từ nước ngoài.",
-            "bridge": "Đáp án câu 16 là B."
+            "title": "Chốt đoạn văn chính xác",
+            "question": "Vậy đoạn văn nào giải thích cụ thể nguồn gốc mầm bệnh được đưa vào nước Anh bằng cách nào?",
+            "guide": "Toàn bộ thông tin này nằm ở đoạn B.",
+            "bridge": "Chốt đáp án B cho câu 16."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Nhắc đến việc bệnh dịch cây du đã xâm nhập vào nước Anh như thế nào.",
-          "<b>Đoạn B (giữa đoạn):</b> <i>'...in the '70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building...'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>how Dutch elm disease was brought into Britain</i> = <i>triggered by shipments of elm from Canada</i>.",
-          "<b>Kết luận:</b> Chọn <b>B</b>."
+          "<b>Bước 1 (Phân tích câu hỏi):</b> Cần tìm nguồn gốc, cách thức mà dịch bệnh cây du xâm nhập vào nước Anh.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét từ khóa <i>Canada, shipments</i> tại đoạn B dòng 4-7.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>'triggered by shipments of elm from Canada'</i> khớp hoàn toàn với việc giải thích <i>how Dutch elm disease was brought into Britain</i>.",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>B</b>.<br><br><b>Phương án đơn giản:</b> Đề hỏi bệnh vào Anh bằng cách nào (<i>how brought into Britain</i>), đoạn B có chữ <i>'shipments of elm from Canada'</i> (các chuyến tàu chở gỗ từ Canada) -> Chọn B."
         ]
       }
     },
@@ -166,37 +166,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Nhận diện dấu hiệu tìm kiếm",
-            "question": "Câu hỏi này đòi hỏi hai yếu tố then chốt nào: về địa lý và về yếu tố tác động?",
-            "guide": "Cần tìm một địa danh cụ thể ở Anh ('a location in Britain') và các điều kiện tự nhiên tại đó ('conditions') giúp bảo vệ cây thoát nạn.",
-            "bridge": "Hãy rà soát tên các thành phố hoặc địa phương xuất hiện trong các đoạn văn."
+            "title": "Xác định hai yếu tố cần tìm",
+            "question": "Câu hỏi này đòi hỏi chúng ta phải tìm ra hai mảnh ghép thông tin nào?",
+            "guide": "Thứ nhất là một địa danh cụ thể ở Anh ('a location in Britain'), thứ hai là yếu tố/điều kiện tự nhiên ('conditions') giúp nơi đó thoát nạn.",
+            "bridge": "Hãy quét nhanh các tên riêng chỉ thành phố ven biển trong bài."
           },
           {
-            "title": "Định vị địa danh còn tồn tại cây du",
-            "question": "Đoạn văn nào nhắc tới một thành phố ven biển ở Anh vẫn còn số lượng lớn cây du sống sót?",
-            "guide": "Trong đoạn E, tác giả có đề cập đến thành phố ven biển Brighton với khoảng 17.000 cây du còn trụ lại.",
-            "bridge": "Bây giờ hãy tìm xem đoạn đó giải thích điều kiện gì giúp nơi đây giữ được cây."
+            "title": "Định vị địa phương còn nhiều cây",
+            "question": "Trong đoạn E, thành phố nào được nhắc đến với số lượng khoảng 17.000 cây du vẫn còn sống sót?",
+            "guide": "Tác giả nhắc đến thành phố biển Brighton và sự tồn tại đáng kinh ngạc của quần thể cây du ở đây.",
+            "bridge": "Bây giờ hãy tìm xem đoạn E giải thích điều kiện khí hậu gì ở Brighton đã giúp ích."
           },
           {
-            "title": "Tìm yếu tố điều kiện giúp cây thoát nạn",
-            "question": "Yếu tố môi trường nào được chỉ ra là đã cản trở loài côn trùng gây bệnh tấn công cây ở nơi này?",
-            "guide": "Đoạn E giải thích rằng gió biển rất mạnh ('Strong winds from the sea') làm loài bọ vỏ cây gặp nhiều trở ngại khi bay tới tấn công.",
-            "bridge": "Gió biển mạnh chính là điều kiện tự nhiên giúp địa phương này tránh được sự tàn phá."
+            "title": "Tìm điều kiện tự nhiên bảo vệ cây",
+            "question": "Yếu tố thời tiết địa phương nào đã làm cho loài bọ cánh cứng mang nấm không thể tấn công được rặng cây ở đây?",
+            "guide": "Đoạn E viết: 'Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack...'.",
+            "bridge": "'Strong winds from the sea' chính là 'conditions', còn 'Brighton' là 'a location in Britain'.",
+            "question_type": "matching_info"
           },
           {
-            "title": "Kết luận đoạn tương ứng",
-            "question": "Vậy đoạn văn nào vừa có địa danh, vừa miêu tả điều kiện giúp nơi đó thoát dịch bệnh?",
-            "guide": "Đó chính là đoạn E.",
-            "bridge": "Đáp án câu 17 là E."
+            "title": "Khớp đoạn văn đáp án",
+            "question": "Vậy đoạn văn nào miêu tả các điều kiện giúp một địa phương ở Anh thoát khỏi dịch bệnh?",
+            "guide": "Đoạn E chứa trọn vẹn tên địa danh Brighton và điều kiện gió biển mạnh.",
+            "bridge": "Chốt đáp án E cho câu 17."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Miêu tả các điều kiện giúp một địa phương tại Anh thoát khỏi bệnh dịch cây du.",
-          "<b>Đoạn E:</b> <i>'Today, the city of Brighton's elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack...'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>a location in Britain</i> = <i>the city of Brighton</i>; <i>conditions</i> = <i>Local factors / Strong winds from the sea</i>; <i>escape... disease</i> = <i>contributed to their survival / difficult... to attack</i>.",
-          "<b>Kết luận:</b> Chọn <b>E</b>."
+          "<b>Bước 1 (Phân tích câu hỏi):</b> Tìm đoạn văn miêu tả điều kiện giúp một địa điểm ở Anh thoát khỏi dịch bệnh.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét tên riêng <i>Brighton</i> tại đoạn E dòng 5-8.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>a location in Britain</i> = thành phố <i>Brighton</i>; <i>conditions</i> = <i>Local factors / Strong winds from the sea</i>; <i>escape... disease</i> = <i>contributed to their survival / difficult... to attack</i>.",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>E</b>.<br><br><b>Phương án đơn giản:</b> Tìm địa danh ở Anh (<i>location in Britain</i>) -> thấy thành phố <i>Brighton</i> ở đoạn E; có điều kiện gió biển (<i>strong winds</i>) giúp cây sống sót -> Chọn E."
         ]
       }
     },
@@ -208,38 +209,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Phân tích khái niệm trong câu hỏi",
-            "question": "Khái niệm 'the stage' khi nói về cây non ('young elms') thường được tác giả cụ thể hóa bằng thước đo nào?",
-            "guide": "Tác giả thường mô tả giai đoạn sinh trưởng thông qua độ tuổi, thời gian phát triển hoặc kích thước cụ thể của thân cây.",
-            "bridge": "Hãy tìm đoạn văn có nói về các cây du còn nhỏ mọc ở các bụi rậm hay bờ rào."
+            "title": "Phân tích khái niệm 'giai đoạn'",
+            "question": "Từ 'the stage' (giai đoạn) đối với cây con thường được thể hiện bằng thông số phát triển nào?",
+            "guide": "Nó thường gắn liền với độ lớn, độ tuổi hoặc một kích thước đo đạc cụ thể trên thân cây.",
+            "bridge": "Hãy tìm đoạn văn nói về những cây du nhỏ mọc dọc các hàng rào ở làng quê."
           },
           {
-            "title": "Định vị vị trí cây non",
-            "question": "Đoạn nào nói về hàng triệu cây du nhỏ đang sinh trưởng và thời điểm chúng bị bọ cánh cứng để ý?",
-            "guide": "Ở đầu đoạn C, tác giả nói về những cây du nhỏ ở hàng rào ('small elms in hedgerows') và việc chúng bị nhắm tới.",
-            "bridge": "Hãy đọc kỹ mốc kích thước được miêu tả ngay sau đó."
+            "title": "Định vị thông tin cây du non",
+            "question": "Ở đầu đoạn C, tác giả mô tả hàng triệu cây du nhỏ ('small elms in hedgerows') bắt đầu bị bọ tấn công vào lúc nào?",
+            "guide": "Đoạn C nói chúng bị nhắm tới 'as soon as they reach a certain size' (ngay khi đạt đến kích cỡ nhất định).",
+            "bridge": "Hãy đọc câu tiếp theo để tìm kích thước đo lường cụ thể của giai đoạn này."
           },
           {
-            "title": "Bắt cặp thông tin về thời điểm dễ nhiễm bệnh",
-            "question": "Những câu văn nào mô tả chính xác lúc thân cây đạt ngưỡng có thể bị bọ đẻ trứng và truyền nấm?",
-            "guide": "Đoạn C viết: 'as soon as they reach a certain size' và 'Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs...'.",
-            "bridge": "'Khi đạt kích thước 10-15 cm' chính là giai đoạn cây bắt đầu gặp nguy hiểm.",
+            "title": "Bắt cặp số liệu định lượng",
+            "question": "Kích thước thân cây đạt bao nhiêu thì trở thành môi trường hoàn hảo cho bọ đẻ trứng và nấm xâm nhập?",
+            "guide": "Bài đọc nêu rõ: 'Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold'.",
+            "bridge": "Mốc 'đường kính 10-15 cm' chính là thời điểm cây bước vào giai đoạn dễ bị tổn thương ('vulnerable').",
             "question_type": "matching_info"
           },
           {
-            "title": "Chốt đoạn văn chính xác",
-            "question": "Đoạn văn nào chỉ rõ giai đoạn kích thước mà cây du nhỏ bắt đầu dễ bị tổn thương?",
-            "guide": "Đó chính là đoạn C (đoạn C được chọn thêm một lần nữa cho nhóm câu hỏi này).",
-            "bridge": "Đáp án câu 18 là C."
+            "title": "Xác định đoạn văn phù hợp",
+            "question": "Vậy đoạn văn nào đề cập đến giai đoạn cụ thể khiến cây non trở nên dễ mắc bệnh?",
+            "guide": "Đó chính là đoạn C (đoạn C được chọn lần thứ hai theo luật 'NB You may use any letter more than once').",
+            "bridge": "Chốt đáp án C cho câu 18."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Đề cập đến giai đoạn mà những cây du non bắt đầu trở nên dễ bị nhiễm bệnh.",
-          "<b>Đoạn C (đầu đoạn):</b> <i>'...they get targeted by the beetle as soon as they reach a certain size... Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>the stage</i> = <i>as soon as they reach a certain size / Once the trunk reaches 10-15 centimetres</i>; <i>become vulnerable</i> = <i>get targeted / perfect size for beetles to lay eggs and for the fungus to take hold</i>.",
-          "<b>Kết luận:</b> Chọn <b>C</b>."
+          "<b>Bước 1 (Phân tích câu hỏi):</b> Cần tìm thông tin về giai đoạn mà cây non bắt đầu dễ bị nhiễm dịch bệnh.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét cụm từ <i>small elms</i> ở đầu đoạn C dòng 2-6.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>the stage</i> = <i>as soon as they reach a certain size / reaches 10-15 centimetres in diameter</i>; <i>become vulnerable</i> = <i>get targeted by the beetle / perfect size for beetles to lay eggs and for the fungus to take hold</i>.",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>C</b>.<br><br><b>Phương án đơn giản:</b> Đề hỏi mốc thời điểm/giai đoạn cây non dễ dính bệnh, đoạn C có câu 'ngay khi đạt kích thước nhất định, thân cây đạt 10-15 cm là bọ tới đẻ trứng' -> Chọn C."
         ]
       }
     },
@@ -251,38 +252,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Tìm ý cốt lõi của nhận định",
-            "question": "Nhận định 19 nhấn mạnh vào mối liên hệ gì giữa việc lây nhiễm bệnh và thời gian biểu hiện ra bên ngoài?",
-            "guide": "Ý chính là: một khi cây nhiễm mầm bệnh thì hậu quả/dấu hiệu hư hại sẽ xuất hiện rất nhanh và dễ nhận thấy bằng mắt thường.",
-            "bridge": "Hãy tìm đoạn văn miêu tả thí nghiệm lây nhiễm nhân tạo mầm nấm vào cây con."
+            "title": "Xác định cốt lõi nhận định",
+            "question": "Nhận định 19 nhấn mạnh điều gì về tốc độ biểu hiện thiệt hại khi cây bị tiêm/nhiễm mầm bệnh?",
+            "guide": "Nhận định nói rằng thiệt hại hoặc dấu hiệu hư tổn sẽ nhanh chóng lộ rõ ra bên ngoài ('rapidly becomes visible').",
+            "bridge": "Hãy tìm đoạn văn miêu tả thử nghiệm tiêm mầm bệnh trực tiếp vào cây con giống mới."
           },
           {
-            "title": "Quét đoạn thử nghiệm gây bệnh",
-            "question": "Trong đoạn F, nhà nghiên cứu nào mô tả việc rạch vỏ cây để đưa nấm bệnh vào và quan sát diễn biến sau đó?",
-            "guide": "Đoạn F nhắc đến phát ngôn của Karen Russell khi đánh giá tốc độ phát tác sau khi tiêm mầm bệnh.",
-            "bridge": "Hãy đọc kỹ lời nói trực tiếp của chuyên gia này trong ngoặc kép."
+            "title": "Quét vùng phát ngôn của chuyên gia",
+            "question": "Trong đoạn F, chuyên gia nào đưa ra nhận xét về kết quả kiểm tra độ chịu đựng của cây sau khi tiêm nấm bệnh?",
+            "guide": "Đoạn F trích dẫn phát biểu trực tiếp của bà Karen Russell: 'The effects are very quick,' says Russell.",
+            "bridge": "Hãy đọc tiếp câu nói của bà Russell về những gì xảy ra sau vài tuần."
           },
           {
-            "title": "Đối chiếu tốc độ và triệu chứng nhìn thấy",
-            "question": "Bà Russell mô tả thời gian và dấu hiệu hư hại trên những cây không có sức đề kháng bằng những từ ngữ nào?",
-            "guide": "Bà nhận xét 'The effects are very quick' và chỉ sau 4 đến 6 tuần thì cây nhạy cảm đã 'show leaf loss and may even have died completely'.",
-            "bridge": "'Very quick' tương ứng với 'rapidly', còn việc 'rụng lá hay chết' là thiệt hại biểu hiện rõ ràng.",
+            "title": "So khớp biểu hiện và thời gian",
+            "question": "Bà Russell mô tả những cây yếu sẽ có biểu hiện cụ thể gì chỉ sau 4 đến 6 tuần?",
+            "guide": "Bà nói sau 4-6 tuần, cây yếu sẽ 'show leaf loss and may even have died completely' (rụng lá rõ rệt hoặc chết khô hoàn toàn).",
+            "bridge": "'Very quick' tương đương 'rapidly', còn 'show leaf loss' tương đương 'damage becomes visible'.",
             "question_type": "matching_names"
           },
           {
-            "title": "Xác định chuyên gia phát ngôn",
-            "question": "Ai là người đưa ra nhận định về việc triệu chứng hư hại xuất hiện nhanh chóng sau khi nhiễm bệnh?",
-            "guide": "Người phát biểu câu này chính là bà Karen Russell.",
-            "bridge": "Đáp án câu 19 là B."
+            "title": "Chốt chuyên gia đưa ra nhận định",
+            "question": "Chữ cái đại diện cho chuyên gia Karen Russell trong danh sách A, B, C là chữ gì?",
+            "guide": "Karen Russell tương ứng với chữ cái B.",
+            "bridge": "Chốt đáp án B cho câu 19."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý nhận định:</b> Nếu một cây bị nhiễm bệnh, thiệt hại sẽ biểu hiện ra ngoài rất nhanh chóng.",
-          "<b>Đoạn F:</b> Karen Russell phát biểu: <i>'The effects are very quick... You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>rapidly</i> = <i>very quick / in four to six weeks</i>; <i>the damage becomes visible</i> = <i>show leaf loss / died completely</i>.",
-          "<b>Kết luận:</b> Chọn <b>B (Karen Russell)</b>."
+          "<b>Bước 1 (Phân tích nhận định):</b> Nhận định cho rằng nếu cây bị nhiễm bệnh, thiệt hại sẽ nhanh chóng nhìn thấy được.",
+          "<b>Bước 2 (Định vị tên riêng):</b> Quét tên <i>Russell</i> tại đoạn F dòng 6-9.",
+          "<b>Bước 3 (Đối chiếu lời thoại):</b> Karen Russell nói: <i>'The effects are very quick... You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.'</i> (<i>very quick</i> = <i>rapidly</i>; <i>show leaf loss</i> = <i>damage becomes visible</i>).",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>B (Karen Russell)</b>.<br><br><b>Phương án đơn giản:</b> Đề nói bệnh phát tác nhanh thấy rõ (<i>rapidly becomes visible</i>), bà Russell ở đoạn F nói <i>'effects are very quick... show leaf loss'</i> -> Chọn B."
         ]
       }
     },
@@ -294,38 +295,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Phân tích quan điểm cần tìm",
-            "question": "Nhận định này thể hiện hướng tiếp cận thế nào đối với những cây du cổ thụ còn sống sót?",
-            "guide": "Nhận định ủng hộ phương án kiên nhẫn quan sát ('wait and see'), để tự nhiên tự vận hành thay vì can thiệp vội vàng bằng việc trồng mới.",
-            "bridge": "Hãy tìm phát ngôn của các chuyên gia ở đoạn cuối khi bàn về việc có nên trồng giống mới hay không."
+            "title": "Bóc tách thái độ của nhận định",
+            "question": "Nhận định này đề xuất giải pháp gì: chủ động trồng cây lai tạo hay kiên nhẫn chờ xem tự nhiên tự hồi phục?",
+            "guide": "Nhận định khuyên nên chờ xem ('better to wait and see') liệu các cây lớn sống sót có tự mình tiếp tục phát triển tốt hay không.",
+            "bridge": "Hãy tìm đoạn cuối bài xem chuyên gia nào của tổ chức bảo tồn đưa ra lời khuyên để thiên nhiên tự xoay xở."
           },
           {
-            "title": "Định vị chuyên gia bàn về tự nhiên phục hồi",
-            "question": "Ở cuối đoạn G, chuyên gia nào nói về việc dành không gian cho những cây tự sinh tồn thay vì trồng cây mới?",
-            "guide": "Đoạn G trích dẫn góc nhìn của Matt Elliot từ tổ chức Woodland Trust.",
-            "bridge": "Hãy xem lời khuyên cụ thể của ông Elliot về thời gian hồi phục."
+            "title": "Quét tên chuyên gia ở đoạn G",
+            "question": "Ở cuối đoạn G, chuyên gia nào thuộc tổ chức Woodland Trust lên tiếng về hướng đi này?",
+            "guide": "Đó là ông Matt Elliot, đại diện cho quan điểm của Woodland Trust.",
+            "bridge": "Hãy xem câu phát biểu trong ngoặc kép của ông Elliot."
           },
           {
-            "title": "Đối chiếu nội dung phát ngôn",
-            "question": "Ông Matt Elliot đã dùng cụm từ nào để khuyên nên dành thời gian cho tự nhiên tự xoay xở?",
-            "guide": "Ông nói: 'Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance'.",
-            "bridge": "'Give nature time to recover' hoàn toàn tương đồng với ý niệm 'wait and see' để cây tiếp tục phát triển.",
+            "title": "Bắt cặp tư tưởng kiên nhẫn chờ đợi",
+            "question": "Ông Elliot đã khuyên chúng ta nên làm gì thay vì vội vàng can thiệp trồng giống cây mới?",
+            "guide": "Ông nói: 'Rather than plant new elms... Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance'.",
+            "bridge": "'Give nature time to recover' (cho tự nhiên thời gian hồi phục) chính là thái độ 'wait and see'.",
             "question_type": "matching_names"
           },
           {
-            "title": "Chọn chuyên gia đại diện",
-            "question": "Chuyên gia nào là tác giả của quan điểm khuyên nên kiên nhẫn theo dõi sự phục hồi tự nhiên?",
-            "guide": "Đó chính là Matt Elliot.",
-            "bridge": "Đáp án câu 20 là A."
+            "title": "Khớp chữ cái chuyên gia",
+            "question": "Ai là người có quan điểm trùng khớp với câu 20: Matt Elliot (A), Karen Russell (B) hay Peter Bourne (C)?",
+            "guide": "Phát biểu này là của Matt Elliot, tương ứng với chữ cái A.",
+            "bridge": "Chốt đáp án A cho câu 20."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý nhận định:</b> Có thể sẽ tốt hơn nếu kiên nhẫn chờ xem liệu những cây lớn sống sót có tiếp tục phát triển tốt hay không.",
-          "<b>Đoạn G (cuối đoạn):</b> Matt Elliot phát biểu: <i>'Rather than plant new elms... Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance'</i>.",
-          "<b>Từ đồng nghĩa:</b> <i>better to wait and see</i> = <i>the best thing you can do is just give nature time to recover over time</i>.",
-          "<b>Kết luận:</b> Chọn <b>A (Matt Elliot)</b>."
+          "<b>Bước 1 (Phân tích nhận định):</b> Tốt hơn là nên kiên nhẫn chờ xem liệu những cây lớn sống sót có tiếp tục phát triển tốt hay không.",
+          "<b>Bước 2 (Định vị tên riêng):</b> Quét tên <i>Elliot</i> tại đoạn G dòng 10-13.",
+          "<b>Bước 3 (Đối chiếu lời thoại):</b> Matt Elliot phát biểu: <i>'Rather than plant new elms... Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance'</i> (<i>give nature time to recover</i> = <i>wait and see if they continue to flourish</i>).",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>A (Matt Elliot)</b>.<br><br><b>Phương án đơn giản:</b> Đề khuyên nên 'chờ xem' (<i>wait and see</i>), ông Elliot ở đoạn G khuyên <i>'give nature time to recover'</i> (cho tự nhiên thời gian tự hồi phục) -> Chọn A."
         ]
       }
     },
@@ -337,38 +338,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Nắm bắt logic của nhận định",
-            "question": "Cụm 'There must be an explanation' muốn truyền tải thông điệp gì về việc một số cây cổ thụ còn sống?",
-            "guide": "Điều này có nghĩa là sự sống sót của chúng không phải là chuyện ngẫu nhiên hay may rủi, mà chắc chắn phải có nguyên do sinh học hoặc cơ chế rõ ràng.",
-            "bridge": "Hãy tìm đoạn văn mà chuyên gia đặt ra câu hỏi về nguyên do sống sót của những cây đại thụ."
+            "title": "Hiểu bản chất khẳng định",
+            "question": "Cụm từ 'There must be an explanation' muốn nhấn mạnh điều gì về nguyên do sống sót của những cây đại thụ?",
+            "guide": "Nó khẳng định chắc chắn phải có lý do khoa học rõ ràng (kháng bệnh, tránh né...), tuyệt đối không thể là điều ngẫu nhiên hay may rủi.",
+            "bridge": "Hãy tìm đoạn văn mà chuyên gia nói về các lý do sống sót của cây ở đoạn C."
           },
           {
-            "title": "Tìm câu hỏi về lý do sinh tồn",
-            "question": "Trong đoạn C, ai là người đã trực tiếp đặt ra câu hỏi 'What are the reasons for their survival?'?",
-            "guide": "Đó là bà Karen Russell khi phân tích những mẫu cây trưởng thành ở hạt Cambridgeshire.",
-            "bridge": "Hãy đọc tiếp kết luận của bà ở câu văn kế tiếp."
+            "title": "Quét tên chuyên gia ở đoạn C",
+            "question": "Chuyên gia nào ở cuối đoạn C đặt câu hỏi tìm hiểu nguyên nhân tại sao một số cây du vẫn đứng vững khi hàng triệu cây khác chết rụi?",
+            "guide": "Đoạn C trích lời bà Karen Russell: 'The key, Russell says, is to identify and study those trees... and work out why they stood tall...'.",
+            "bridge": "Hãy xem tiếp câu hỏi và câu chốt của bà Russell ngay sau đó."
           },
           {
-            "title": "Xem xét lập luận bác bỏ sự may mắn",
-            "question": "Bà Russell đã khẳng định điều gì về vai trò của sự may mắn đối với sự sống sót của cây?",
-            "guide": "Bà nói rõ: 'I don't see how it can be entirely down to luck', đồng nghĩa việc sống sót phải có nguyên nhân đằng sau (như né tránh, chống chịu hay kháng bệnh).",
-            "bridge": "Ý nghĩ 'không thể do may mắn' tương ứng trọn vẹn với 'chắc chắn phải có lời giải thích'.",
+            "title": "Bắt cặp logic loại trừ may mắn",
+            "question": "Bà Russell nói gì về vai trò của sự may mắn đối với sự sống sót của các cây này?",
+            "guide": "Bà đặt câu hỏi: 'What are the reasons for their survival?' và kết luận: 'I don't see how it can be entirely down to luck' (không thể hoàn toàn do may mắn được).",
+            "bridge": "Không thể do may mắn có nghĩa là chắc chắn phải có lời giải thích cụ thể.",
             "question_type": "matching_names"
           },
           {
-            "title": "Khớp với danh sách chuyên gia",
-            "question": "Vậy ai là người có cùng quan điểm với nhận định ở câu 21?",
-            "guide": "Đó chính là bà Karen Russell.",
-            "bridge": "Đáp án câu 21 là B."
+            "title": "Xác định chữ cái của chuyên gia",
+            "question": "Vậy nhận định này thuộc về chuyên gia nào trong danh sách?",
+            "guide": "Đó là bà Karen Russell, tương ứng với chữ cái B.",
+            "bridge": "Chốt đáp án B cho câu 21."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý nhận định:</b> Chắc chắn phải có một lời giải thích cho sự sống sót của một số cây du lớn.",
-          "<b>Đoạn C (cuối đoạn):</b> Karen Russell nói: <i>'What are the reasons for their survival? ... I don't see how it can be entirely down to luck.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>must be an explanation</i> = <i>What are the reasons / not entirely down to luck</i>; <i>survival of some mature elms</i> = <i>their survival</i>.",
-          "<b>Kết luận:</b> Chọn <b>B (Karen Russell)</b>."
+          "<b>Bước 1 (Phân tích nhận định):</b> Chắc chắn phải có một lời giải thích khoa học cho sự sống sót của một số cây du cổ thụ.",
+          "<b>Bước 2 (Định vị tên riêng):</b> Quét tên <i>Russell</i> tại cuối đoạn C dòng 9-14.",
+          "<b>Bước 3 (Đối chiếu lời thoại):</b> Karen Russell nói: <i>'What are the reasons for their survival? ... I don't see how it can be entirely down to luck.'</i> (Không thể do may mắn = chắc chắn phải có lý do/lời giải thích).",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>B (Karen Russell)</b>.<br><br><b>Phương án đơn giản:</b> Đề nói 'phải có lời giải thích' (<i>must be an explanation</i>), bà Russell bảo <i>'không thể hoàn toàn do may mắn (not entirely down to luck), phải tìm ra lý do (What are the reasons)'</i> -> Chọn B."
         ]
       }
     },
@@ -380,38 +381,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Tách thành phần cảnh báo",
-            "question": "Câu nhận định cảnh báo về hai điều gì liên quan đến côn trùng mang mầm bệnh?",
-            "guide": "Thứ nhất là phải có ý thức cảnh giác ('need to be aware'), thứ hai là khoảng cách địa lý của đàn côn trùng rất gần ('not very far away').",
-            "bridge": "Hãy tìm đoạn văn có nhắc đến sự xuất hiện hay rình rập của loài bọ cánh cứng."
+            "title": "Phân tích nội dung cảnh báo",
+            "question": "Nhận định này đưa ra lời nhắc nhở gì về khoảng cách địa lý của đàn côn trùng truyền bệnh?",
+            "guide": "Nhận định cảnh báo rằng chúng ta phải luôn cẩn trọng vì đàn bọ cánh cứng mang nấm bệnh đang ở rất gần ('not very far away').",
+            "bridge": "Hãy tìm đoạn văn miêu tả về nguy cơ bọ cánh cứng vẫn đang rình rập ở một thành phố."
           },
           {
-            "title": "Quét phát ngôn cảnh báo về loài bọ",
-            "question": "Ở cuối đoạn E, nhân vật nào đưa ra nhận định về việc đàn bọ có thể tấn công bất cứ lúc nào?",
-            "guide": "Đó là ông Peter Bourne thuộc bộ sưu tập Elm Quốc gia ở thành phố Brighton.",
-            "bridge": "Hãy xem cách ông ấy hình tượng hóa mức độ cận kề của mối nguy."
+            "title": "Định vị chuyên gia ở vùng ven biển",
+            "question": "Trong đoạn E, chuyên gia nào thuộc Bộ sưu tập Elm Quốc gia lên tiếng cảnh báo về loài bọ này?",
+            "guide": "Đó là ông Peter Bourne ở thành phố Brighton.",
+            "bridge": "Hãy đọc câu nói trực tiếp ở cuối đoạn E của ông Bourne."
           },
           {
-            "title": "Đối chiếu hình ảnh ẩn dụ về khoảng cách",
-            "question": "Cụm thành ngữ nào trong lời nói của Peter Bourne tương đương với ý 'ở rất gần chúng ta'?",
-            "guide": "Ông Bourne dùng cụm 'the threat is right on our doorstep' (nguy cơ đang ở ngay trước thềm cửa) kèm theo lời nhắc 'if we're not careful'.",
-            "bridge": "'Right on our doorstep' là cách diễn đạt sinh động của 'not very far away'.",
+            "title": "Nhận diện từ ngữ ẩn dụ vị trí",
+            "question": "Ông Peter Bourne đã dùng hình ảnh ẩn dụ nào để diễn tả việc đàn bọ đang ở sát ngay bên cạnh?",
+            "guide": "Ông nói: 'The beetles can just march in if we're not careful, as the threat is right on our doorstep' (mối nguy đang ở ngay trước cửa nhà).",
+            "bridge": "'Right on our doorstep' (ngay trước cửa) chính là cách nói tương đương của 'not very far away'.",
             "question_type": "matching_names"
           },
           {
-            "title": "Chọn chuyên gia tương ứng",
-            "question": "Ai là người cảnh báo mối đe dọa từ côn trùng đang ở sát bên sườn?",
-            "guide": "Đó là ông Peter Bourne.",
-            "bridge": "Đáp án câu 22 là C."
+            "title": "Khớp chuyên gia vào đáp án",
+            "question": "Ai là người đưa ra lời cảnh báo rằng đàn bọ mang bệnh đang ở rất gần?",
+            "guide": "Người phát biểu là Peter Bourne, tương ứng với chữ cái C.",
+            "bridge": "Chốt đáp án C cho câu 22."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý nhận định:</b> Chúng ta cần nhận thức được rằng những loài côn trùng mang mầm bệnh đang ở rất gần.",
-          "<b>Đoạn E (cuối đoạn):</b> Peter Bourne cảnh báo: <i>'The beetles can just march in if we're not careful, as the threat is right on our doorstep'</i>.",
-          "<b>Từ đồng nghĩa:</b> <i>insects carrying Dutch elm disease</i> = <i>The beetles</i>; <i>not very far away</i> = <i>right on our doorstep</i>; <i>need to be aware</i> = <i>if we're not careful</i>.",
-          "<b>Kết luận:</b> Chọn <b>C (Peter Bourne)</b>."
+          "<b>Bước 1 (Phân tích nhận định):</b> Cần nhận thức rằng côn trùng mang mầm bệnh đang ở khoảng cách rất gần.",
+          "<b>Bước 2 (Định vị tên riêng):</b> Quét tên <i>Peter Bourne</i> tại đoạn E dòng 8-10.",
+          "<b>Bước 3 (Đối chiếu lời thoại):</b> Peter Bourne cảnh báo: <i>'The beetles can just march in if we're not careful, as the threat is right on our doorstep'</i> (<i>the beetles</i> = <i>insects carrying disease</i>; <i>right on our doorstep</i> = <i>not very far away</i>; <i>if we're not careful</i> = <i>need to be aware</i>).",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>C (Peter Bourne)</b>.<br><br><b>Phương án đơn giản:</b> Đề nói côn trùng ở rất gần (<i>not very far away</i>), ông Bourne ở đoạn E nói lũ bọ đang ở <i>'right on our doorstep'</i> (ngay trước thềm nhà) -> Chọn C."
         ]
       }
     },
@@ -423,38 +424,38 @@
       "socratic": {
         "steps": [
           {
-            "title": "Phân tích điều kiện nhận thức",
-            "question": "Nhận định này cho rằng người ta chỉ thấm thía tác động của dịch bệnh khi làm được việc gì?",
-            "guide": "Khi tận mắt nhìn thấy bằng chứng thực tế chứng minh cây du từng to lớn và chiếm vị trí quan trọng như thế nào trong quá khứ.",
-            "bridge": "Hãy lật lại đoạn mở đầu (đoạn A) xem chuyên gia nào nói về việc nhìn lại cảnh xưa."
+            "title": "Tách ý nghĩa của nhận định",
+            "question": "Theo nhận định 23, hành động nhìn thấy bằng chứng quá khứ ('see evidence') giúp con người nhận thức được điều gì?",
+            "guide": "Giúp con người hiểu thấu được tác động tàn khốc của bệnh dịch sau khi thấy loài cây này từng to lớn và thống trị ra sao trước đây.",
+            "bridge": "Hãy quay lại đoạn mở đầu (đoạn A) để xem phát biểu của chuyên gia đầu tiên."
           },
           {
-            "title": "Tìm bằng chứng thị giác trong quá khứ",
-            "question": "Ở đoạn A, ông Matt Elliot nhắc đến tư liệu hình ảnh nào để người thời nay hình dung về cây du?",
-            "guide": "Ông nhắc đến việc xem những bức ảnh cũ chụp từ những năm 1960 ('look at old photographs from the 1960s').",
-            "bridge": "Những bức ảnh cũ này chính là bằng chứng trực quan."
+            "title": "Tìm bằng chứng thị giác trong đoạn A",
+            "question": "Ở cuối đoạn A, ông Matt Elliot khuyên người ta nên nhìn vào tư liệu gì để hình dung về quá khứ?",
+            "guide": "Ông nói: 'You look at old photographs from the 1960s' (hãy nhìn vào những bức ảnh chụp cũ thời thập niên 1960).",
+            "bridge": "Những bức ảnh chụp cũ này chính là bằng chứng xác thực được nhắc tới."
           },
           {
-            "title": "Khớp nối sự thay đổi nhận thức",
-            "question": "Theo ông Elliot, khi nhìn vào những bức ảnh đó, người ta mới nhận ra ('realise') điều gì?",
-            "guide": "Ông nói 'it's only then that you realise the impact... They were significant, large trees' (chỉ khi đó mới nhận ra tác động, khi biết chúng từng là những cái cây to lớn, quan trọng dường nào).",
-            "bridge": "'Realise the impact' khớp với 'understand the effect', và 'significant, large trees' khớp với 'how prominent the tree once was'.",
+            "title": "Bắt cặp sự thấu hiểu tác động",
+            "question": "Ông Elliot nói rằng chỉ khi nhìn ảnh cũ thì người ta mới nhận ra ('realise') điều gì về tầm vóc của cây du?",
+            "guide": "Ông nói: 'it's only then that you realise the impact... They were significant, large trees... then they were gone.'",
+            "bridge": "'Realise the impact' tương đương 'understand the effect', còn 'significant, large trees' tương đương 'how prominent the tree once was'.",
             "question_type": "matching_names"
           },
           {
-            "title": "Xác định chuyên gia đưa ra phát biểu",
-            "question": "Ai là người gắn liền với quan điểm nhìn ảnh xưa để thấu hiểu hậu quả của dịch bệnh?",
-            "guide": "Đó chính là Matt Elliot.",
-            "bridge": "Đáp án câu 23 là A."
+            "title": "Chọn chuyên gia tương ứng",
+            "question": "Nhận định này thuộc về chuyên gia Matt Elliot. Vậy bạn chọn chữ cái nào?",
+            "guide": "Matt Elliot tương ứng với chữ cái A.",
+            "bridge": "Chốt đáp án A cho câu 23."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Ý nhận định:</b> Bạn sẽ hiểu được tác động của dịch bệnh khi nhìn thấy bằng chứng về vị thế nổi bật của loài cây này trước đây.",
-          "<b>Đoạn A (cuối đoạn):</b> Matt Elliot nói: <i>'You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] ... They were significant, large trees... then they were gone.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>see evidence</i> = <i>look at old photographs</i>; <i>understand the effect</i> = <i>realise the impact</i>; <i>how prominent the tree once was</i> = <i>They were significant, large trees</i>.",
-          "<b>Kết luận:</b> Chọn <b>A (Matt Elliot)</b>."
+          "<b>Bước 1 (Phân tích nhận định):</b> Bạn sẽ hiểu được ảnh hưởng của bệnh dịch khi nhìn thấy bằng chứng về việc loài cây này từng to lớn/nổi bật thế nào trong quá khứ.",
+          "<b>Bước 2 (Định vị tên riêng):</b> Quét tên <i>Matt Elliot</i> tại cuối đoạn A dòng 6-9.",
+          "<b>Bước 3 (Đối chiếu lời thoại):</b> Matt Elliot nói: <i>'You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] ... They were significant, large trees... then they were gone.'</i> (<i>look at old photographs</i> = <i>see evidence</i>; <i>realise the impact</i> = <i>understand the effect</i>; <i>significant, large trees</i> = <i>how prominent the tree once was</i>).",
+          "<b>Bước 4 (Kết luận):</b> Chọn <b>A (Matt Elliot)</b>.<br><br><b>Phương án đơn giản:</b> Đề nói thấy bằng chứng quá khứ cây từng nổi bật (<i>see evidence / how prominent once was</i>), ông Elliot ở đoạn A bảo nhìn vào <i>'old photographs'</i> mới thấy chúng từng là <i>'significant, large trees'</i> -> Chọn A."
         ]
       }
     },
@@ -466,38 +467,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Phân tích ngữ pháp và loại từ",
-            "question": "Cụm 'the only tree that was more popular in Britain than elm was ______' đòi hỏi loại từ gì ở chỗ trống?",
-            "guide": "Sau động từ tobe 'was' và bổ nghĩa cho 'the only tree', ta bắt buộc phải điền một danh từ chỉ tên một loài cây gỗ.",
-            "bridge": "Hãy tìm câu nói về thứ hạng phổ biến của các loài cây gỗ ở nước Anh trong đoạn D."
+            "title": "Phân tích ngữ pháp ô trống",
+            "question": "Trong câu 'the only tree that was more popular in Britain than elm was 24 ______', từ cần điền phải là loại từ gì?",
+            "guide": "Đứng sau động từ 'was' và bổ nghĩa cho 'the only tree', chỗ trống chắc chắn phải là một Danh từ chỉ tên một loài cây thân gỗ.",
+            "bridge": "Hãy quét câu đầu tiên của đoạn D nói về sự so sánh giữa cây du và các loài cây khác."
           },
           {
-            "title": "Quét câu đầu tiên của đoạn D",
-            "question": "Câu đầu đoạn D dùng cấu trúc nào để so sánh độ phổ biến của cây du với một loài cây khác?",
-            "guide": "Tác giả viết: 'For centuries, elm ran a close second to ______ as the hardwood tree of choice in Britain'.",
-            "bridge": "'Ran a close second to' có nghĩa là đứng vị trí thứ hai suýt soát sau một loài cây đứng đầu.",
-            "question_type": "summary"
+            "title": "Định vị cấu trúc so sánh thứ hạng",
+            "question": "Câu đầu đoạn D dùng cấu trúc nào để mô tả vị trí của cây du trong sự ưa chuộng của người Anh?",
+            "guide": "Tác giả viết: 'For centuries, elm ran a close second to ______ as the hardwood tree of choice in Britain...'.",
+            "bridge": "Cụm 'ran a close second to' có nghĩa là đứng thứ hai sát nút sau một loài cây đứng đầu."
           },
           {
-            "title": "Xác định loài cây đứng trên cây du",
-            "question": "Loài cây gỗ nào đứng vị trí thứ nhất khiến cây du chỉ xếp vị trí thứ hai ngay sát sau nó?",
-            "guide": "Trong câu gốc, từ đứng ngay sau 'second to' chính là tên loài cây này.",
-            "bridge": "Đối chiếu quy tắc: chỉ chọn đúng 1 từ duy nhất nguyên văn trong bài."
+            "title": "Xác định loài cây đứng đầu",
+            "question": "Loài cây gỗ nào đứng vị trí số một khiến cây du chỉ xếp vị trí thứ hai ngay sau nó?",
+            "guide": "Từ đứng ngay sau cụm 'second to' chính là tên của loài cây được ưa chuộng hơn cây du.",
+            "bridge": "Kiểm tra luật ONE WORD ONLY: chỉ chép đúng 1 từ nguyên văn từ bài đọc."
           },
           {
             "title": "Chốt từ cần điền",
-            "question": "Từ đơn nào chỉ loài cây phổ biến hơn cây du để điền vào chỗ trống?",
-            "guide": "Đó chính là từ 'oak'.",
-            "bridge": "Đáp án câu 24 là oak."
+            "question": "Từ đơn duy nhất chỉ loài cây phổ biến hơn cây du ở Anh là gì?",
+            "guide": "Đó chính là từ 'oak' (cây sồi).",
+            "bridge": "Chốt câu 24: oak."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Phân tích ngữ pháp:</b> Cần một danh từ chỉ loài cây xếp trên cây du về mức độ ưa chuộng.",
-          "<b>Đoạn D (câu đầu tiên):</b> <i>'For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain...'</i>",
-          "<b>So sánh cấu trúc:</b> <i>elm ran a close second to oak</i> = cây du chỉ đứng thứ hai sau cây <i>oak</i> (sồi); do đó cây duy nhất phổ biến hơn cây du chính là <i>oak</i>.",
-          "<b>Đáp án:</b> <b>oak</b>."
+          "<b>Bước 1 (Phân tích ngữ pháp):</b> Cần một danh từ chỉ loài cây thân gỗ phổ biến hơn cây du ở Anh.",
+          "<b>Bước 2 (Định vị trong bài):</b> Đoạn D câu đầu tiên: <i>'For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain...'</i>",
+          "<b>Bước 3 (Đối chiếu nghĩa):</b> <i>ran a close second to oak</i> nghĩa là chỉ xếp thứ hai sau cây <i>oak</i> -> loài cây duy nhất hơn cây du là <i>oak</i>.",
+          "<b>Bước 4 (Kết luận):</b> Điền <b>oak</b>.<br><br><b>Phương án đơn giản:</b> Cần tên 1 loài cây hơn cây du, đoạn D dòng 1 có chữ <i>'elm ran a close second to oak'</i> (cây du đứng thứ hai sau cây sồi) -> Điền oak."
         ]
       }
     },
@@ -509,37 +509,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Xác định mỏ neo và vị trí ngữ pháp",
-            "question": "Trong câu 'wood for boxes and ______', từ cần điền có mối quan hệ ngữ pháp thế nào với từ đứng trước?",
-            "guide": "Từ đứng sau liên từ 'and' và song hành với danh từ 'boxes' (thùng/hộp), thuộc công dụng lấy gỗ vào thế kỷ 18 ('18th century').",
-            "bridge": "Hãy quét mốc thời gian '18th century' trong đoạn D để tìm câu chứa dẫn chứng."
+            "title": "Phân tích ngữ pháp và liên từ",
+            "question": "Trong cụm 'wood for boxes and 25 ______', từ cần điền phải có đặc điểm gì về mặt ngữ pháp?",
+            "guide": "Đứng sau liên từ 'and' và nối tiếp danh từ 'boxes' (thùng, hộp), chỗ trống cần một Danh từ chỉ sản phẩm, vật dụng làm từ gỗ vào thế kỷ 18.",
+            "bridge": "Hãy quét mốc thời gian '18th century' trong đoạn D."
           },
           {
             "title": "Định vị câu chứa mốc thế kỷ 18",
-            "question": "Câu văn nào trong đoạn D nhắc đến các sản phẩm được chế tạo từ gỗ du vào thế kỷ 18?",
-            "guide": "Đoạn D viết: 'In the 18th century, it was planted more widely and its wood was used for items such as storage crates and ______'.",
-            "bridge": "Hãy so sánh danh sách các vật phẩm được liệt kê trong câu này."
+            "question": "Câu văn nào ở đoạn D nhắc đến các vật dụng làm từ gỗ cây du vào thế kỷ 18?",
+            "guide": "Bài viết: 'In the 18th century, it was planted more widely and its wood was used for items such as storage crates and ______'.",
+            "bridge": "Hãy so sánh danh sách liệt kê các đồ vật trong câu này."
           },
           {
             "title": "Bắt cặp từ đồng nghĩa",
-            "question": "Từ 'boxes' trong phần tóm tắt tương ứng với vật dụng nào trong câu gốc của bài đọc?",
-            "guide": "'Boxes' (các loại hộp/thùng) là từ đồng nghĩa khái quát của 'storage crates' (thùng chứa đồ).",
-            "bridge": "Vậy vật phẩm đi liền sau 'storage crates and...' chính là đáp án cần tìm."
+            "question": "Từ 'boxes' (thùng/hộp) trong tóm tắt đã thay thế cho từ nào trong bài đọc?",
+            "guide": "'Boxes' chính là từ đồng nghĩa của 'storage crates' (thùng/kiện chứa đồ).",
+            "bridge": "Vậy danh từ đi liền sau 'storage crates and...' chính là đáp án cần tìm."
           },
           {
             "title": "Bốc từ nguyên văn",
-            "question": "Danh từ nguyên bản nào trong bài đứng sau liên từ 'and' để hoàn thiện câu tóm tắt?",
-            "guide": "Từ đó chính là 'flooring' (vật liệu lót sàn).",
-            "bridge": "Đáp án câu 25 là flooring."
+            "question": "Từ 1 chữ duy nhất đứng sau liên từ 'and' trong câu gốc là gì?",
+            "guide": "Đó chính là từ 'flooring' (ván lót sàn).",
+            "bridge": "Chốt câu 25: flooring."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Phân tích ngữ pháp:</b> Cần danh từ chỉ sản phẩm gia dụng/xây dựng làm từ gỗ du ở thế kỷ 18, nối với 'boxes' qua từ 'and'.",
-          "<b>Đoạn D (dòng 5-6):</b> <i>'In the 18th century... its wood was used for items such as storage crates and flooring.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>boxes</i> = <i>storage crates</i>; thành phần tử số hai đi cùng là <i>flooring</i>.",
-          "<b>Đáp án:</b> <b>flooring</b>."
+          "<b>Bước 1 (Phân tích ngữ pháp):</b> Cần một danh từ chỉ vật dụng/sản phẩm từ gỗ du ở thế kỷ 18, đứng sau liên từ <i>and</i>.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét mốc <i>18th century</i> tại đoạn D dòng 5-6.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>'wood was used for items such as storage crates and flooring'</i> (<i>boxes</i> = <i>storage crates</i>; từ đi kèm sau <i>and</i> là <i>flooring</i>).",
+          "<b>Bước 4 (Kết luận):</b> Điền <b>flooring</b>.<br><br><b>Phương án đơn giản:</b> Tìm mốc '18th century' ở đoạn D, thấy câu <i>'storage crates and flooring'</i>. Trong đề đã có 'boxes' (= storage crates), sau chữ 'and' còn lại từ <i>flooring</i> -> Điền flooring."
         ]
       }
     },
@@ -551,38 +551,37 @@
       "socratic": {
         "steps": [
           {
-            "title": "Xác định từ khóa định vị bất biến",
-            "question": "Trong cụm 'the Cutty Sark's ______ was also constructed from elm', từ khóa nào là tên riêng giúp tìm vị trí nhanh nhất?",
-            "guide": "Tên riêng viết hoa 'Cutty Sark' là mỏ neo cố định không thể bị thay thế hay biến đổi.",
-            "bridge": "Hãy tìm tên con tàu này ở đoạn D."
+            "title": "Bắt mỏ neo bất biến và từ loại",
+            "question": "Tên riêng viết hoa nào trong câu tóm tắt giúp định vị ngay lập tức, và sau sở hữu cách 'Cutty Sark's' cần loại từ gì?",
+            "guide": "Tên con tàu 'Cutty Sark' là mỏ neo cố định; sau sở hữu cách 's cần một Danh từ chỉ bộ phận của con tàu này.",
+            "bridge": "Hãy quét tên con tàu buồm 'Cutty Sark' ở cuối đoạn D."
           },
           {
-            "title": "Phân tích vị trí cấu trúc cần điền",
-            "question": "Đứng sau sở hữu cách 'Cutty Sark's', chỗ trống cần một danh từ biểu thị đối tượng gì của con tàu?",
-            "guide": "Cần một danh từ chỉ một bộ phận cấu tạo hoặc chi tiết kỹ thuật cụ thể của con tàu buồm này.",
-            "bridge": "Đọc câu văn chứa tên tàu Cutty Sark ở cuối đoạn D."
+            "title": "Định vị câu chứa tên con tàu",
+            "question": "Câu văn nào ở cuối đoạn D nhắc đến việc sử dụng gỗ du để đóng tàu Cutty Sark?",
+            "guide": "Bài viết: 'was used to build the ______ of the 19th-century sailing ship Cutty Sark...'.",
+            "bridge": "Cụm 'was constructed from elm' tương đương với 'was used to build'."
           },
           {
-            "title": "Tìm động từ và bộ phận tương ứng",
-            "question": "Gỗ du được nhắc đến là dùng để đóng/chế tạo ('build') bộ phận nào của con tàu Cutty Sark?",
-            "guide": "Đoạn D ghi: 'was used to build the ______ of the 19th-century sailing ship Cutty Sark'.",
-            "bridge": "Từ đứng giữa 'build the' và 'of the 19th-century sailing ship' chính là bộ phận tàu.",
-            "question_type": "summary"
+            "title": "Nhận diện bộ phận con tàu",
+            "question": "Trong câu gốc, từ nào đứng giữa 'build the' và 'of the 19th-century sailing ship Cutty Sark'?",
+            "guide": "Từ đứng ở vị trí đó chính là danh từ chỉ bộ phận kết cấu dưới đáy tàu buồm.",
+            "bridge": "Kiểm tra luật ONE WORD ONLY: giữ nguyên từng chữ cái của từ nhặt được."
           },
           {
             "title": "Chốt từ nguyên văn",
-            "question": "Từ đơn duy nhất trong bài chỉ bộ phận này là gì?",
+            "question": "Danh từ 1 chữ duy nhất cần điền vào chỗ trống là gì?",
             "guide": "Đó chính là từ 'keel' (sống tàu/lườn tàu).",
-            "bridge": "Đáp án câu 26 là keel."
+            "bridge": "Chốt câu 26: keel."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Phân tích ngữ pháp:</b> Cần danh từ chỉ một bộ phận kết cấu của tàu buồm Cutty Sark.",
-          "<b>Đoạn D (dòng 6-7):</b> <i>'...and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.'</i>",
-          "<b>Từ đồng nghĩa:</b> <i>was constructed from</i> = <i>was used to build</i>.",
-          "<b>Đáp án:</b> <b>keel</b>."
+          "<b>Bước 1 (Phân tích ngữ pháp):</b> Cần một danh từ chỉ bộ phận kết cấu của con tàu buồm sau sở hữu cách <i>Cutty Sark's</i>.",
+          "<b>Bước 2 (Định vị trong bài):</b> Quét tên riêng <i>Cutty Sark</i> ở cuối đoạn D dòng 6-8.",
+          "<b>Bước 3 (Đối chiếu từ đồng nghĩa):</b> <i>'used to build the keel of the 19th-century sailing ship Cutty Sark'</i> (<i>was constructed from</i> = <i>was used to build</i>; bộ phận tàu được đóng bằng gỗ du là <i>keel</i>).",
+          "<b>Bước 4 (Kết luận):</b> Điền <b>keel</b>.<br><br><b>Phương án đơn giản:</b> Tìm tên tàu 'Cutty Sark' ở cuối đoạn D, thấy cụm <i>'build the keel of the ... Cutty Sark'</i> -> Nhặt ngay danh từ <i>keel</i>."
         ]
       }
     }
