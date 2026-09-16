@@ -22,6 +22,7 @@
       "type": "true_false_not_given",
       "title": "Questions 1–6",
       "instructions": "Do the following statements agree with the information given in Reading Passage 1?<br>In boxes 1–6 on your answer sheet, write:<br><b>TRUE</b> if the statement agrees with the information<br><b>FALSE</b> if the statement contradicts the information<br><b>NOT GIVEN</b> if there is no information on this",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "questionIds": ["q1", "q2", "q3", "q4", "q5", "q6"]
     },
     {
@@ -37,6 +38,8 @@
   "questions": {
     "q1": {
       "num": 1,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "There are other parrots that share the kakapo's inability to fly.",
       "finalAnswer": "FALSE",
       "highlightId": "hl-q1",
@@ -77,6 +80,8 @@
     },
     "q2": {
       "num": 2,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "Adult kakapo produce chicks every year.",
       "finalAnswer": "FALSE",
       "highlightId": "hl-q2",
@@ -117,6 +122,8 @@
     },
     "q3": {
       "num": 3,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "Adult male kakapo bring food back to nesting females.",
       "finalAnswer": "FALSE",
       "highlightId": "hl-q3",
@@ -157,6 +164,8 @@
     },
     "q4": {
       "num": 4,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "The Polynesian rat was a greater threat to the kakapo than Polynesian settlers.",
       "finalAnswer": "NOT GIVEN",
       "highlightId": "hl-q4",
@@ -197,6 +206,8 @@
     },
     "q5": {
       "num": 5,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "Kakapo were transferred from Rakiura Island to other locations because they were at risk from feral cats.",
       "finalAnswer": "TRUE",
       "highlightId": "hl-q5",
@@ -237,6 +248,8 @@
     },
     "q6": {
       "num": 6,
+      "type": "true_false_not_given",
+      "options": ["TRUE", "FALSE", "NOT GIVEN"],
       "text": "One Recovery Plan initiative that helped increase the kakapo population size was caring for struggling young birds.",
       "finalAnswer": "TRUE",
       "highlightId": "hl-q6",
@@ -277,6 +290,7 @@
     },
     "q7": {
       "num": 7,
+      "type": "fill_in",
       "text": "diet consists of fern fronds, various parts of a tree and 7 …………….",
       "finalAnswer": "bulbs",
       "highlightId": "hl-q7",
@@ -318,6 +332,7 @@
     },
     "q8": {
       "num": 8,
+      "type": "fill_in",
       "text": "nests are created 8 ……………. in where eggs are laid.",
       "finalAnswer": "soil",
       "highlightId": "hl-q8",
@@ -359,6 +374,7 @@
     },
     "q9": {
       "num": 9,
+      "type": "fill_in",
       "text": "the 9 ……………. of the kakapo were used to make clothes.",
       "finalAnswer": "feathers",
       "highlightId": "hl-q9",
@@ -400,6 +416,7 @@
     },
     "q10": {
       "num": 10,
+      "type": "fill_in",
       "text": "10 ……………. were an animal which they introduced that ate the kakapo's food sources.",
       "finalAnswer": "deer",
       "highlightId": "hl-q10",
@@ -441,6 +458,7 @@
     },
     "q11": {
       "num": 11,
+      "type": "fill_in",
       "text": "a definite sighting of female kakapo on Rakiura Island was reported in the year 11 …………….",
       "finalAnswer": "1980",
       "highlightId": "hl-q11",
@@ -482,6 +500,7 @@
     },
     "q12": {
       "num": 12,
+      "type": "fill_in",
       "text": "the Recovery Plan included an increase in 12 …………….",
       "finalAnswer": "funding",
       "highlightId": "hl-q12",
@@ -523,6 +542,7 @@
     },
     "q13": {
       "num": 13,
+      "type": "fill_in",
       "text": "a current goal of the Recovery Plan is to maintain the involvement of 13 ……………. in kakapo protection.",
       "finalAnswer": "stakeholders",
       "highlightId": "hl-q13",
