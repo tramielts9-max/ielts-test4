@@ -198,6 +198,95 @@
       border-radius: 5px;
       border-left: 3px solid #10b981;
     }
+
+    /* =======================================================
+       TRẠNG THÁI LÀM BÀI: ẨN TRANSCRIPT, CÂU HỎI TRÀN MÀN HÌNH
+       ======================================================= */
+    body.listening-test:not(.submitted) #passageBox {
+      display: none !important;
+    }
+    body.listening-test:not(.submitted) #dragResizer {
+      display: none !important;
+    }
+    body.listening-test:not(.submitted) #questionBox {
+      width: 100% !important;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    /* =======================================================
+       TRẠNG THÁI SAU KHI NỘP: HIỆN SONG SONG 2 CỘT + THANH KÉO
+       ======================================================= */
+    body.listening-test.submitted #mainContainer {
+      display: flex !important;
+      flex-direction: row !important;
+      height: calc(100vh - 130px) !important;
+      overflow: hidden !important;
+      gap: 0 !important;
+    }
+
+    /* Cột Transcript bên trái */
+    body.listening-test.submitted #passageBox {
+      display: block !important;
+      width: 48%; /* Mặc định chiếm 48% */
+      min-width: 250px;
+      max-width: 75%;
+      height: 100% !important;
+      overflow-y: auto !important;
+      padding: 20px 24px;
+      background: var(--bg-card, #ffffff);
+      border-right: none;
+    }
+
+    /* Thanh kéo ở giữa */
+    body.listening-test.submitted #dragResizer {
+      display: flex !important;
+      width: 12px;
+      background: #cbd5e1;
+      cursor: col-resize;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      transition: background 0.2s;
+      z-index: 50;
+      flex-shrink: 0;
+    }
+    body.listening-test.submitted #dragResizer:hover,
+    body.listening-test.submitted #dragResizer.resizing {
+      background: #0284c7;
+    }
+    body.listening-test.submitted #dragResizer .resizer-icon {
+      font-size: 11px;
+      color: #475569;
+      pointer-events: none;
+    }
+    body.listening-test.submitted #dragResizer:hover .resizer-icon {
+      color: #ffffff;
+    }
+
+    /* Cột Câu hỏi + Lời giải bên phải */
+    body.listening-test.submitted #questionBox {
+      flex: 1;
+      min-width: 320px;
+      height: 100% !important;
+      overflow-y: auto !important;
+      padding: 20px 24px;
+      background: var(--bg-card, #ffffff);
+    }
+
+    /* Banner thông báo chúc mừng sau khi nộp */
+    .submit-banner {
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      color: #065f46;
+      font-size: 13.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
   </style>
 </head>
 <body class="listening-test">
@@ -599,6 +688,103 @@
     const s = Math.floor(sec % 60);
     return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
   }
+
+  // =========================================================================
+  // TÍNH NĂNG KÉO THẢ THANH RESIZER Ở GIỮA (DRAG RESIZE)
+  // =========================================================================
+  function initSplitResizer() {
+    const resizer = document.getElementById('dragResizer');
+    const leftBox = document.getElementById('passageBox');
+    const container = document.getElementById('mainContainer');
+    let isResizing = false;
+
+    if (!resizer || !leftBox || !container) return;
+
+    resizer.addEventListener('mousedown', function(e) {
+      isResizing = true;
+      resizer.classList.add('resizing');
+      document.body.style.cursor = 'col-resize';
+      document.body.style.userSelect = 'none';
+    });
+
+    window.addEventListener('mousemove', function(e) {
+      if (!isResizing) return;
+      const containerRect = container.getBoundingClientRect();
+      const newLeftWidth = e.clientX - containerRect.left;
+      const minW = 260;
+      const maxW = containerRect.width - 280;
+
+      if (newLeftWidth >= minW && newLeftWidth <= maxW) {
+        const percentage = (newLeftWidth / containerRect.width) * 100;
+        leftBox.style.width = percentage + '%';
+      }
+    });
+
+    window.addEventListener('mouseup', function() {
+      if (isResizing) {
+        isResizing = false;
+        resizer.classList.remove('resizing');
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+      }
+    });
+  }
+
+  // =========================================================================
+  // BẬT CHẾ ĐỘ 2 CỘT SONG SONG + THANH KÉO KHI NỘP BÀI
+  // =========================================================================
+  window.enableSplitViewAfterSubmit = function() {
+    // 1. Thêm class submitted để CSS mở cột transcript và thanh resizer
+    document.body.classList.add('submitted');
+
+    // 2. Kích hoạt bộ xử lý kéo chuột
+    initSplitResizer();
+
+    // 3. Hiện banner hướng dẫn trên đầu question-box
+    const questionBox = document.getElementById('questionBox');
+    if (questionBox && !document.getElementById('submitSuccessBanner')) {
+      const banner = document.createElement('div');
+      banner.id = 'submitSuccessBanner';
+      banner.className = 'submit-banner';
+      banner.innerHTML = `
+        <span>🎉 <b>Đã chấm bài xong!</b> Transcript đối chiếu đã mở ở cột bên trái. Bạn có thể giữ chuột vào thanh giữa ◄► để kéo co giãn.</span>
+      `;
+      questionBox.insertBefore(banner, questionBox.firstChild);
+    }
+
+    // 4. Cuộn mượt lên đầu
+    questionBox.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // =========================================================================
+  // TỰ ĐỘNG CUỘN VÀ CHỚP SÁNG TRANSCRIPT KHI BẤM XEM DẪN CHỨNG
+  // =========================================================================
+  window.highlightText = function(hlId) {
+    const el = document.getElementById(hlId);
+    const passageBox = document.getElementById('passageBox');
+    if (el && passageBox) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.style.transition = 'all 0.3s ease';
+      el.style.backgroundColor = '#fef08a';
+      el.style.outline = '2px solid #eab308';
+      setTimeout(() => {
+        el.style.backgroundColor = '';
+        el.style.outline = '';
+      }, 2200);
+    }
+  };
+
+  // =========================================================================
+  // BẮT SỰ KIỆN KHI BẤM NỘP BÀI (TỰ ĐỘNG CHUYỂN MÀN HÌNH)
+  // =========================================================================
+  const originalCheckAnswers = window.checkAnswers;
+  window.checkAnswers = function() {
+    if (typeof originalCheckAnswers === 'function') {
+      originalCheckAnswers();
+    }
+    window.enableSplitViewAfterSubmit();
+  };
+  
 </script>
 
 <!-- SCRIPT TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY APP -->
