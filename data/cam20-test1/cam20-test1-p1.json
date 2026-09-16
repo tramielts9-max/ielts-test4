@@ -1,593 +1,564 @@
 {
-  "title": "Cambridge 20 - Test 1 - Reading Passage 2: Bring elms to Britain",
+  "title": "Cambridge 20 - Test 1 - Reading Passage 1: The kākāpō",
   "answers": {
-    "q14": "C",
-    "q15": "G",
-    "q16": "B",
-    "q17": "E",
-    "q18": "C",
-    "q19": "B",
-    "q20": "A",
-    "q21": "B",
-    "q22": "C",
-    "q23": "A",
-    "q24": "oak",
-    "q25": "flooring",
-    "q26": "keel"
+    "q1": "FALSE",
+    "q2": "FALSE",
+    "q3": "FALSE",
+    "q4": "NOT GIVEN",
+    "q5": "TRUE",
+    "q6": "TRUE",
+    "q7": "bulbs",
+    "q8": "soil",
+    "q9": "feathers",
+    "q10": "deer",
+    "q11": "1980",
+    "q12": "funding",
+    "q13": "stakeholders"
   },
-  "passageHtml": "<h2>READING PASSAGE 2</h2><h3>Bring elms to Britain</h3><p><em>Mark Rowe investigates attempts to reintroduce elms to Britain</em></p><p><strong>A.</strong> Around 25 million elms, accounting for 90% of all elm trees in the UK, died during the 1960s and '70s of Dutch elm disease. In the aftermath, the elm, once so dominant in the British landscape, was largely forgotten. However, there's now hope the elm may be reintroduced to the countryside of central and southern England. Any reintroduction will start from a very low base. <span class=\"hl\" id=\"hl-q23\" data-q=\"[Q23]\">'The impact of the disease is difficult to picture if you hadn't seen what was there before,' says Matt Elliot of the Woodland Trust. 'You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] ... They were significant, large trees... then they were gone.'</span></p><p><strong>B.</strong> The disease is caused by a fungus that blocks the elms' vascular (water, nutrient and food transport) system, causing branches to wilt and die. <span class=\"hl\" id=\"hl-q16\" data-q=\"[Q16]\">A first epidemic, which occurred in the 1920s, gradually died down, but in the '70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus.</span> This time, the beetles carried a much more virulent strain that destroyed the vast majority of British elms.</p><p><strong>C.</strong> Today, elms still exist in the southern English countryside but mostly only in low hedgerows between fields. <span class=\"hl\" id=\"hl-q18\" data-q=\"[Q18]\">'We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a certain size,' says Karen Russell, co-author of the report 'Where we are with elm'. Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold.</span> Yet mature specimens have been identified, in counties such as Cambridgeshire, that are hundreds of years old, and have mysteriously escaped the epidemic.</p><p><span class=\"hl\" id=\"hl-q14\" data-q=\"[Q14]\">The key, Russell says, is to identify and study those trees that have survived and work out why they stood tall when millions of others succumbed. Nevertheless, <span class=\"kw\">opportunities are limited</span> as the <span class=\"kw\">number of these mature survivors is relatively small</span>.</span> <span class=\"hl\" id=\"hl-q21\" data-q=\"[Q21]\">'What are the reasons for their survival?' asks Russell. 'Avoidance, tolerance, resistance? We don't know where the balance lies between the three. I don't see how it can be entirely down to luck.'</span></p><p><strong>D.</strong> For centuries, <span class=\"hl\" id=\"hl-q24\" data-q=\"[Q24]\">elm ran a close second to <span class=\"kw\">oak</span> as the hardwood tree of choice in Britain and was in many instances the most prominent tree in the landscape.</span> Not only was elm common in European forests, it became a key component of birch, ash and hazel woodlands. The use of elm is thought to go back to the Bronze Age, when it was widely used for tools. Elm was also the preferred material for shields and early swords. In the 18th century, it was planted more widely and its wood was used for items such as storage crates and <span class=\"hl\" id=\"hl-q25\" data-q=\"[Q25]\"><span class=\"kw\">flooring</span></span>. It was also suitable for items that experienced high levels of impact and was used to build the <span class=\"hl\" id=\"hl-q26\" data-q=\"[Q26]\"><span class=\"kw\">keel</span></span> of the 19th-century sailing ship Cutty Sark as well as mining equipment.</p><p><strong>E.</strong> Given how ingrained elm is in British culture, it's unsurprising the tree has many advocates. Amongst them is Peter Bourne of the National Elm Collection in Brighton. 'I saw Dutch elm disease unfold as a small boy,' he says. 'The elm seemed to be part of rural England, but I remember watching trees just lose their leaves and that really stayed with me.' Today, the city of Brighton's elms total about 17,000. <span class=\"hl\" id=\"hl-q17\" data-q=\"[Q17]\">Local factors appear to have contributed to their survival. <span class=\"kw\">Strong winds from the sea</span> make it difficult for the determined elm bark beetle to attack this coastal city's elm population.</span> However, the situation is precarious. <span class=\"hl\" id=\"hl-q22\" data-q=\"[Q22]\">'The beetles can just march in if we're not careful, as <span class=\"kw\">the threat is right on our doorstep</span>,' says Bourne.</span></p><p><strong>F.</strong> Any prospect of the elm returning relies heavily on trees being either resistant to, or tolerant of, the disease. This means a widespread reintroduction would involve existing or new hybrid strains derived from resistant, generally non-native elm species. A new generation of seedlings have been bred and tested to see if they can withstand the fungus by cutting a small slit on the bark and injecting a tiny amount of the pathogen. <span class=\"hl\" id=\"hl-q19\" data-q=\"[Q19]\">'The effects are very quick,' says Russell. 'You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.'</span></p><p><strong>G.</strong> <span class=\"hl\" id=\"hl-q15\" data-q=\"[Q15]\">All of this raises questions of social acceptance, acknowledges Russell. 'If we're putting elm back into the landscape, a small element of it is not native are we bothered about that?' For her, the environmental case for reintroducing elm is strong. 'They will host wildlife, which is a good thing.' Others are more wary. 'On the face of it, it seems like a good idea,' says Elliot. The problem, he suggests, is that, 'You're replacing a native species with a horticultural analogue*. You're effectively cloning.' There's also the risk of introducing new diseases.</span> <span class=\"hl\" id=\"hl-q20\" data-q=\"[Q20]\">Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. 'Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance,' says Elliot.</span></p>",
+  "passageHtml": "<h2>READING PASSAGE 1</h2><p>You should spend about 20 minutes on Questions 1–13, which are based on Reading Passage 1 below.</p><h3>The kākāpō</h3><p><em>The kākāpō is a nocturnal, flightless parrot that is critically endangered and one of New Zealand's unique treasures.</em></p><p>The kākāpō, also known as the owl parrot, is a large, forest-dwelling bird, with a pale owl-like face. Up to 64 cm in length, it has predominantly yellow-green feathers, forward-facing eyes, a large grey beak, large blue feet, and relatively short wings and tail. <span class=\"hl\" id=\"hl-q1\" data-q=\"[Q1]\">It is the world's <span class=\"kw\">only</span> flightless parrot</span>, and is also possibly one of the world's longest-living birds, with a reported lifespan of up to 100 years.</p><p>Kākāpō are solitary birds and tend to occupy the same home range for many years. They forage on the ground and climb high into trees. They often leap from trees and flap their wings, but at best manage a controlled descent to the ground. <span class=\"hl\" id=\"hl-q7\" data-q=\"[Q7]\">They are entirely vegetarian, with their diet including the leaves, roots and bark of trees as well as <span class=\"kw\">bulbs</span>, and fern fronds.</span></p><p><span class=\"hl\" id=\"hl-q2\" data-q=\"[Q2]\">Kākāpō breed in summer and autumn, but <span class=\"kw\">only in years when food is plentiful</span>.</span> <span class=\"hl\" id=\"hl-q3\" data-q=\"[Q3]\">Males play <span class=\"kw\">no part</span> in incubation or chick-rearing – females alone incubate eggs and feed the chicks.</span> <span class=\"hl\" id=\"hl-q8\" data-q=\"[Q8]\">The 1–4 eggs are laid in <span class=\"kw\">soil</span>, which is repeatedly turned over before and during incubation.</span> The female kākāpō has to spend long periods away from the nest searching for food, which leaves the unattended eggs and chicks particularly vulnerable to predators.</p><p>Before humans arrived, kākāpō were common throughout New Zealand's forests. However, this all changed with the arrival of the first Polynesian settlers about 700 years ago. <span class=\"hl\" id=\"hl-q4\" data-q=\"[Q4]\"><span class=\"hl\" id=\"hl-q9\" data-q=\"[Q9]\">For the early settlers, the flightless kākāpō was easy prey. They ate its meat and used its <span class=\"kw\">feathers</span> to make soft cloaks.</span> With them came the Polynesian dog and rat, which <span class=\"kw\">also preyed</span> on kākāpō.</span></p><p>By the time European colonisers arrived in the early 1800s, kākāpō had become confined to the central North Island and forested parts of the South Island. The fall in kākāpō numbers was accelerated by European colonisation. <span class=\"hl\" id=\"hl-q10\" data-q=\"[Q10]\">A great deal of habitat was lost through forest clearance, and introduced species such as <span class=\"kw\">deer</span> depleted the remaining forests of food.</span> Other predators such as cats, stoats and two more species of rat were also introduced. The kākāpō were in serious trouble.</p><p>In 1894, the New Zealand government launched its first attempt to save the kākāpō. Conservationist Richard Henry led an effort to relocate several hundred of the birds to predator-free Resolution Island in Fiordland. Unfortunately, the island didn't remain predator free – stoats arrived within six years, eventually destroying the kākāpō population. By the mid-1900s, the kākāpō was practically a lost species. Only a few clung to life in the most isolated parts of New Zealand.</p><p>From 1949 to 1973, the newly formed New Zealand Wildlife Service made over 60 expeditions to find kākāpō, focusing mainly on Fiordland. Six were caught, but there were no females amongst them and all but one died within a few months of captivity. In 1974, a new initiative was launched, and by 1977, 18 more kākāpō were found in Fiordland. However, there were still no females. In 1977, a large population of males was spotted in Rakiura – a large island free from stoats, ferrets and weasels. <span class=\"hl\" id=\"hl-q11\" data-q=\"[Q11]\">There were about 200 individuals, and in <span class=\"kw\">1980</span> it was confirmed females were also present.</span> These birds have been the foundation of all subsequent work in managing the species.</p><p><span class=\"hl\" id=\"hl-q5\" data-q=\"[Q5]\">Unfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980–97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island.</span> However, breeding success was hard to achieve. Rats were found to be a major predator of kakapo chicks and an insufficient number of chicks survived to offset adult mortality. By 1995, although at least 12 chicks had been produced on the islands, only three had survived. The kākāpō population had dropped to 51 birds. The critical situation prompted an urgent review of kākāpō management in New Zealand.</p><p><span class=\"hl\" id=\"hl-q6\" data-q=\"[Q6]\"><span class=\"hl\" id=\"hl-q12\" data-q=\"[Q12]\">In 1996, a new Recovery Plan was launched, together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of <span class=\"kw\">funding</span>.</span> Renewed steps were taken to control predators on the three islands. Cats were eradicated from Little Barrier Island in 1980, and possums were eradicated from Codfish Island by 1986. However, the population did not start to increase until rats were removed from all three islands, and the birds were more intensively managed. This involved moving the birds between islands, supplementary feeding of adults and <span class=\"kw\">rescuing and hand-raising any failing chicks</span>.</span></p><p>After the first five years of the Recovery Plan, the population was on target. By 2000, five new females had been produced, and the total population had grown to 62 birds. For the first time, there was cautious optimism for the future of kākāpō and by June 2020, a total of 210 birds was recorded.</p><p><span class=\"hl\" id=\"hl-q13\" data-q=\"[Q13]\">Today, kākāpō management continues to be guided by the kākāpō Recovery Plan. Its key goals are: minimise the loss of genetic diversity in the kākāpō population, restore or maintain sufficient habitat to accommodate the expected increase in the kākāpō population, and ensure <span class=\"kw\">stakeholders</span> continue to be fully engaged in the preservation of the species.</span></p>",
   "groups": [
     {
       "id": "g1",
-      "type": "matching_info",
-      "title": "Questions 14-18",
-      "instructions": "Reading Passage 2 has seven sections, A-G. Which section contains the following information? Write the correct letter, A-G. NB You may use any letter more than once.",
-      "questionIds": ["q14", "q15", "q16", "q17", "q18"]
+      "type": "true_false_not_given",
+      "title": "Questions 1–6",
+      "instructions": "Do the following statements agree with the information given in Reading Passage 1?<br>In boxes 1–6 on your answer sheet, write:<br><b>TRUE</b> if the statement agrees with the information<br><b>FALSE</b> if the statement contradicts the information<br><b>NOT GIVEN</b> if there is no information on this",
+      "questionIds": ["q1", "q2", "q3", "q4", "q5", "q6"]
     },
     {
       "id": "g2",
-      "type": "matching_names",
-      "title": "Questions 19-23",
-      "instructions": "Look at the following statements (Questions 19-23) and the list of people below. Match each statement with the correct person, A, B, or C. NB You may use any letter more than once.",
-      "questionIds": ["q19", "q20", "q21", "q22", "q23"]
-    },
-    {
-      "id": "g3",
       "type": "summary",
-      "title": "Questions 24-26",
-      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
-      "summaryTitle": "Uses of a popular tree",
-      "questionIds": ["q24", "q25", "q26"],
-      "template": "<p>For hundreds of years, the only tree that was more popular in Britain than elm was <b>24.</b> {{q24}} Starting in the Bronze Age, many tools were made from elm and people also used it to make weapons. In the 18th century, it was grown to provide wood for boxes and <b>25.</b> {{q25}} Due to its strength, elm was often used for mining equipment and the Cutty Sark's <b>26.</b> {{q26}} was also constructed from elm.</p>"
+      "title": "Questions 7–13",
+      "instructions": "Complete the notes below.<br>Choose <b>ONE WORD AND/OR A NUMBER</b> from the passage for each answer.",
+      "summaryTitle": "New Zealand's kākāpō",
+      "questionIds": ["q7", "q8", "q9", "q10", "q11", "q12", "q13"],
+      "template": "<p><b>A type of parrot:</b><br>• diet consists of fern fronds, various parts of a tree and <b>7.</b> {{q7}}<br>• nests are created <b>8.</b> {{q8}} in where eggs are laid.</p><p><b>Arrival of Polynesian settlers:</b><br>• the <b>9.</b> {{q9}} of the kākāpō were used to make clothes.</p><p><b>Arrival of European colonisers:</b><br>• <b>10.</b> {{q10}} were an animal which they introduced that ate the kākāpō's food sources.</p><p><b>Protecting kākāpō:</b><br>• Richard Henry, a conservationist, tried to protect the kākāpō.<br>• a definite sighting of female kākāpō on Rakiura Island was reported in the year <b>11.</b> {{q11}}<br>• the Recovery Plan included an increase in <b>12.</b> {{q12}}<br>• a current goal of the Recovery Plan is to maintain the involvement of <b>13.</b> {{q13}} in kākāpō protection.</p>"
     }
   ],
   "questions": {
-    "q14": {
-      "num": 14,
-      "text": "reference to the research problems that arise from there being only a few surviving large elms",
-      "finalAnswer": "C",
-      "highlightId": "hl-q14",
+    "q1": {
+      "num": 1,
+      "text": "There are other parrots that share the kakapo's inability to fly.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q1",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Đo khuôn khái niệm trừu tượng",
-            "question": "Đề bài yêu cầu tìm thông tin về 'research problems' (khó khăn trong nghiên cứu) do 'only a few surviving large elms' (chỉ còn số ít cây du cổ thụ sống sót). Cần tìm đoạn văn chứa các từ đồng nghĩa chỉ sự giới hạn trong nghiên cứu và số lượng cây ít ỏi là gì?",
-            "guide": "'Research problems' thường xuất hiện dưới dạng hạn chế cơ hội ('opportunities are limited', 'difficult to study'). 'Only a few surviving large elms' tương ứng với 'number of mature survivors is relatively small'.",
-            "bridge": "Xác định đoạn văn đề cập đến các cây du cổ thụ sống sót và hạn chế khi nghiên cứu chúng."
+            "title": "Nấc 1/4 - Xé câu & Đóng khung từ quyết định",
+            "question": "Dùng Quy tắc 6 xé câu này làm 3 mảnh [S - V - O]. Từ hạn định nào mang tính quyết định số phận của nhận định này (Quy tắc 7)?",
+            "guide": "Xé 3 mảnh: [There are OTHER parrots - Có những loài vẹt KHÁC] / [share - cùng chia sẻ] / [the kakapo's inability to fly - việc không biết bay]. Từ quyết định tối hậu là 'OTHER' (loài khác). Ta phải tìm xem có loài nào khác ngoài kakapo không biết bay không.",
+            "bridge": "Xác định mỏ neo định vị để kiểm chứng sự tồn tại của loài vẹt khác."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào nói về các cây du trưởng thành (mature specimens) sống sót qua dịch bệnh và số lượng ít ỏi của chúng?",
-            "guide": "Quan sát nửa sau Đoạn C: 'The key, Russell says, is to identify and study those trees that have survived... Nevertheless, opportunities are limited as the number of these mature survivors is relatively small.'",
-            "bridge": "Đối chiếu các chi tiết trong câu với câu hỏi."
+            "title": "Nấc 2/4 - Chọn mỏ neo định vị",
+            "question": "Để định vị câu chứa thông tin này, tại sao em TUYỆT ĐỐI KHÔNG ĐƯỢC chọn từ 'kakapo' (Quy tắc 2)? Từ khóa đặc định nào về khả năng bay sẽ giúp em bắt trúng câu ở Đoạn 2?",
+            "guide": "'Kakapo' là tên bài đọc, xuất hiện ở mọi dòng nên scan nó là tự sát (Quy tắc 2). Hãy chọn cụm từ chỉ đặc tính bay: 'inability to fly' (được paraphrase thành 'flightless' - Quy tắc 5). Mắt dừng lại ngay tại câu 2 của Đoạn 2.",
+            "bridge": "So sánh đối xứng số lượng loài không biết bay."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Cụm 'opportunities are limited' và 'number of these mature survivors is relatively small' đối xứng với những từ nào trong câu hỏi?",
-            "guide": "'Opportunities are limited' = research problems; 'mature survivors is relatively small' = only a few surviving large elms.",
-            "bridge": "Khẳng định đoạn văn chứa thông tin này."
+            "title": "Nấc 3/4 - Bắt cặp đối xứng & Triệt tiêu",
+            "question": "Nhìn vào câu vừa tìm được ở Đoạn 2, triệt tiêu cụm 'inability to fly' = 'flightless'. Bài đọc dùng từ gì để chỉ số lượng loài vẹt không biết bay trên thế giới?",
+            "guide": "Bài đọc chốt hạ cụm: 'the world's ONLY flightless parrot' (loài vẹt không biết bay DUY NHẤT trên thế giới).",
+            "bridge": "Cân logic giữa hai khẳng định đối lập."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Đoạn văn nào là đáp án chính xác cho câu 14?",
-            "guide": "Đoạn C. Chốt C.",
-            "bridge": "Hoàn thành câu 14."
+            "title": "Nấc 4/4 - Cân logic & Chốt sổ",
+            "question": "Đề bài khẳng định có 'OTHER parrots' (những con vẹt KHÁC), bài đọc lại chốt là 'ONLY' (DUY NHẤT). Hai thông tin này đập nhau chan chát hay đi cùng chiều? Theo Quy tắc 13 chốt đáp án gì?",
+            "guide": "'OTHER' (loài khác) đập nhau chan chát 100% với 'ONLY' (duy nhất). Thằng này đúng thì thằng kia bắt buộc phải sai. Theo Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành câu 1."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Đề cập đến những khó khăn trong nghiên cứu bắt nguồn từ việc chỉ còn rất ít cây du lớn sống sót.",
-          "<b>Bước 2 / Trích dẫn đoạn C:</b> <i>'The key, Russell says, is to identify and study those trees that have survived and work out why they stood tall when millions of others succumbed. Nevertheless, opportunities are limited as the number of these mature survivors is relatively small.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>opportunities are limited</i> = research problems; <i>number of these mature survivors is relatively small</i> = only a few surviving large elms.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>C</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [There are other parrots] + V [share] + O [the kakapo's inability to fly]. Từ hạn định là 'other'.<br>• Bước 2 (Keyword): Chọn 'inability to fly' vì đây là chức năng đặc thù. Quét từ đồng nghĩa 'flightless' ở Đoạn 2.<br>• Bước 3: Đề bài: 'other parrots... inability to fly'. Bài đọc: 'the world's ONLY flightless parrot'.<br>• Bước 4: 'Other' mâu thuẫn trực tiếp với 'only'. Hai vế triệt tiêu lẫn nhau. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo 'other parrots' (có những con vẹt KHÁC cũng không biết bay).<br>• Bước 2: Quét mắt Đoạn 2 thấy chữ 'flightless parrot' (con vẹt không bay được).<br>• Bước 3: Thấy chữ 'ONLY' đứng trước (nghĩa là DUY NHẤT).<br>• Bước 4: Đề bảo 'Có loài khác' >< Bài bảo 'Duy nhất'. Cãi nhau 100% -> Điền FALSE."
         ]
       }
     },
-    "q15": {
-      "num": 15,
-      "text": "details of a difference of opinion about the value of reintroducing elms to Britain",
-      "finalAnswer": "G",
-      "highlightId": "hl-q15",
+    "q2": {
+      "num": 2,
+      "text": "Adult kakapo produce chicks every year.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q2",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Đo khuôn khái niệm trừu tượng",
-            "question": "Đề bài yêu cầu tìm 'difference of opinion' (sự bất đồng quan điểm/tranh luận) về 'value of reintroducing elms' (giá trị của việc tái du nhập cây du). Dấu hiệu nào trong bài đọc biểu đạt sự khác biệt giữa hai luồng ý kiến?",
-            "guide": "Sự xuất hiện của hai nhân vật hoặc hai quan điểm đối nghịch (ví dụ: một bên ủng hộ vì lợi ích môi trường, một bên lo ngại/cảnh giác bằng từ như 'Others are more wary').",
-            "bridge": "Tìm đoạn bàn về các quan điểm khác nhau đối với việc mang cây du trở lại."
+            "title": "Nấc 1/4 - Xé câu & Đóng khung từ tần suất",
+            "question": "Xé câu làm 3 mảnh [S - V - O]. Từ chỉ tần suất tuyệt đối nào ở cuối câu bắt buộc phải đóng khung lại (Quy tắc 7)?",
+            "guide": "[Adult kakapo] / [produce chicks] / [EVERY YEAR - Hàng năm/Mỗi năm]. Từ quyết định là 'every year'.",
+            "bridge": "Tìm hành động sinh sản được diễn đạt tương đương trong bài."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào trình bày quan điểm ủng hộ của Karen Russell và góc nhìn hoài nghi của Matt Elliot?",
-            "guide": "Xem Đoạn G: Russell cho rằng 'environmental case... is strong', trong khi Elliot và những người khác 'are more wary... The problem, he suggests, is that...'.",
-            "bridge": "So khớp cấu trúc bất đồng quan điểm giữa các chuyên gia."
+            "title": "Nấc 2/4 - Chọn mỏ neo định vị",
+            "question": "Hành động 'produce chicks' (sinh sản/đẻ con) thường được bài đọc khoa học paraphrase bằng động từ chuyên ngành nào bắt đầu bằng chữ 'b' (Quy tắc 5)? Quét nó ở đoạn nào?",
+            "guide": "'Produce chicks' được đổi vỏ thành động từ 'breed' (sinh sản). Mắt dừng lại ngay câu đầu tiên của Đoạn 4.",
+            "bridge": "Kiểm tra điều kiện đi kèm của hành động sinh sản."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Cụm 'difference of opinion' được thể hiện qua câu chữ nào ở Đoạn G?",
-            "guide": "Russell ủng hộ ('for her... case is strong') đối lập với Elliot ('Others are more wary... Rather than plant new elms, the Woodland Trust emphasises...').",
-            "bridge": "Xác định ký hiệu đoạn văn."
+            "title": "Nấc 3/4 - Bắt chữ lật kèo & Điều kiện",
+            "question": "Đọc câu đầu Đoạn 4: Ngay sau chữ 'but', bài đọc đưa ra điều kiện ngặt nghèo nào cho việc sinh sản của vẹt kakapo?",
+            "guide": "Bài viết: 'but ONLY in years when food is plentiful' (nhưng CHỈ VÀO NHỮNG NĂM thức ăn dồi dào).",
+            "bridge": "So sánh tần suất tuyệt đối với điều kiện phụ thuộc."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Đoạn nào chứa chi tiết về sự khác biệt ý kiến này?",
-            "guide": "Toàn bộ Đoạn G nói về câu hỏi chấp nhận xã hội và tranh luận giữa hai bên.",
-            "bridge": "Hoàn thành câu 15."
+            "title": "Nấc 4/4 - Cân logic & Chốt sổ",
+            "question": "Đề bài nói 'năm nào cũng đẻ' (every year), bài đọc lại bảo 'chỉ năm nào nhiều đồ ăn mới đẻ' (only in years when food is plentiful). Hai mốc thời gian này có khớp nhau không? Theo Quy tắc 13 chọn gì?",
+            "guide": "Năm nào cũng đẻ >< Chỉ năm đủ thức ăn mới đẻ (tức là năm đói kém sẽ KHÔNG đẻ). Hai điều kiện đá nhau chan chát. Theo Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành câu 2."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Chi tiết về sự khác biệt trong ý kiến về giá trị của việc đưa cây du trở lại nước Anh.",
-          "<b>Bước 2 / Trích dẫn đoạn G:</b> <i>'For her [Russell], the environmental case for reintroducing elm is strong... Others are more wary. \"On the face of it, it seems like a good idea,\" says Elliot. The problem, he suggests, is that, \"You're replacing a native species with a horticultural analogue...\"'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>case is strong vs. more wary / problem</i> = difference of opinion.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>G</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Adult kakapo] + V [produce chicks] + Trạng từ [every year]. Trọng tâm là tần suất hàng năm.<br>• Bước 2 (Keyword): Động từ 'produce chicks' được chuyển đổi sang thuật ngữ sinh sản 'breed'. Quét đầu Đoạn 4.<br>• Bước 3: Đề bài: 'every year'. Bài đọc: 'only in years when food is plentiful' (phụ thuộc vào mùa vụ thức ăn).<br>• Bước 4: 'Mỗi năm' đối lập trực tiếp với điều kiện 'chỉ khi thức ăn dồi dào'. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo 'every year' (năm nào cũng đẻ con).<br>• Bước 2: Quét đầu Đoạn 4 thấy chữ 'breed' (sinh sản).<br>• Bước 3: Thấy chữ 'only in years when food is plentiful' (chỉ năm nào nhiều đồ ăn mới đẻ).<br>• Bước 4: Đề bảo 'năm nào cũng đẻ' >< Bài bảo 'năm đói thì nhịn'. Cãi nhau -> Điền FALSE."
         ]
       }
     },
-    "q16": {
-      "num": 16,
-      "text": "reference to how Dutch elm disease was brought into Britain",
-      "finalAnswer": "B",
-      "highlightId": "hl-q16",
+    "q3": {
+      "num": 3,
+      "text": "Adult male kakapo bring food back to nesting females.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q3",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Đo khuôn khái niệm trừu tượng",
-            "question": "Đề bài yêu cầu tìm 'how Dutch elm disease was brought into Britain' (dịch bệnh cây du Hà Lan đã bị mang vào nước Anh bằng cách nào). Cần quét thông tin liên quan đến nguồn gốc du nhập hoặc con đường vận chuyển từ nước ngoài vào?",
-            "guide": "Tìm tên quốc gia xuất xứ ngoài nước Anh và phương tiện/hình thức vận chuyển (nhập khẩu, chuyến hàng, gỗ tròn...).",
-            "bridge": "Tìm đoạn văn nói về sự bùng phát dịch bệnh và chuyến hàng nhập khẩu."
+            "title": "Nấc 1/4 - Xé câu & Khóa chủ thể hành động",
+            "question": "Xé câu làm 3 phần. Chủ thể thực hiện hành động 'bring food back' (mang đồ ăn về) là con đực (MALE) hay con cái (FEMALE)?",
+            "guide": "[Adult MALE kakapo - Con vẹt ĐỰC] / [bring food back - mang thức ăn về] / [to nesting females - cho con cái trong tổ].",
+            "bridge": "Tìm vị trí nói về phân chia vai trò giới tính của vẹt."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào đề cập đến nguồn gốc của đợt bùng phát dịch bệnh thứ hai?",
-            "guide": "Đoạn B dòng 3-6: '...a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building...'.",
-            "bridge": "Đối chiếu việc mang mầm bệnh vào nước Anh."
+            "title": "Nấc 2/4 - Định vị kẹp bánh mì",
+            "question": "Câu 2 nằm ở dòng 1 Đoạn 4. Theo Quy tắc 26 (Dòng chảy tịnh tiến), câu 3 chắc chắn nằm ở đâu? Tìm chữ nào để bắt trúng con đực?",
+            "guide": "Nằm ngay dưới câu 2 tại Đoạn 4. Quét mỏ neo cứng: 'Males' (những con đực).",
+            "bridge": "So sánh hành động thực tế của con đực và con cái."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'Shipments of elm from Canada' mang theo 'elm bark beetles that spread the deadly fungus' thể hiện điều gì?",
-            "guide": "Chính là phương thức và con đường căn bệnh xâm nhập vào Anh quốc ('how... was brought into Britain').",
-            "bridge": "Xác định đoạn văn tương ứng."
+            "title": "Nấc 3/4 - Bắt hành vi thực tế",
+            "question": "Bài đọc nói con đực làm gì trong việc nuôi con ('Males play ______') và con cái phải tự làm gì để có thức ăn?",
+            "guide": "Bài đọc ghi: 'Males play NO PART in incubation or chick-rearing' (Con đực KHÔNG ĐÓNG VAI TRÒ GÌ). Con cái phải một mình nuôi con ('females alone') và phải 'away from the nest searching for food' (rời tổ tự đi kiếm ăn).",
+            "bridge": "Đối chiếu hành động giả định ở đề với sự thật bài đọc."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Đoạn văn nào là đáp án đúng cho câu 16?",
-            "guide": "Đoạn B.",
-            "bridge": "Hoàn thành câu 16."
+            "title": "Nấc 4/4 - Cân logic & Chốt sổ",
+            "question": "Đề bảo con đực 'ship đồ ăn về tổ cho con cái', nhưng bài đọc bảo con đực 'không làm gì cả' và con cái phải 'tự rời tổ đi kiếm ăn'. Hành động ở đề bài là Đúng hay Bị bác bỏ hoàn toàn?",
+            "guide": "Con đực không tham gia gì, con cái phải tự đi kiếm ăn -> Việc con đực mang thức ăn về là sự bịa đặt ngược lại thực tế. Theo Quy tắc 13 -> Chốt FALSE.",
+            "bridge": "Hoàn thành câu 3."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Đề cập đến cách bệnh dịch cây du Hà Lan bị đưa vào nước Anh.",
-          "<b>Bước 2 / Trích dẫn đoạn B:</b> <i>'...in the '70s a second epidemic was triggered by shipments of elm from Canada. The wood came in the form of logs destined for boat building and its intact bark was perfect for the elm bark beetles that spread the deadly fungus.'</i>",
-          "<b>Bước 3 / Phân tích:</b> Việc vận chuyển các khúc gỗ du từ Canada chứa bọ cánh cứng mang nấm chính là cách căn bệnh xâm nhập vào Anh.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>B</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [Adult male kakapo] + V [bring food back] + O [to nesting females].<br>• Bước 2 (Keyword): Chọn danh từ giới tính 'male' để định vị vai trò của con đực. Quét dòng 2-4 Đoạn 4 theo dòng chảy tịnh tiến.<br>• Bước 3: Đề bài: con đực mang thức ăn về tổ. Bài đọc: 'Males play no part', 'females alone... feed the chicks', con cái phải 'away from the nest searching for food'.<br>• Bước 4: Con cái phải tự rời tổ kiếm ăn vì con đực không có bất kỳ vai trò nào. Thông tin đối lập 100%. Chọn FALSE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo 'male' (con đực) 'bring food' (mang đồ ăn về).<br>• Bước 2: Quét tiếp Đoạn 4 thấy chữ 'Males' và chữ 'food'.<br>• Bước 3: Bài viết: 'Males play NO PART' (con đực không làm gì hết) và con cái phải 'away from nest searching for food' (tự đi kiếm ăn).<br>• Bước 4: Con đực bỏ mặc, con cái tự đi kiếm -> Bảo con đực ship đồ ăn là SAI. Điền FALSE."
         ]
       }
     },
-    "q17": {
-      "num": 17,
-      "text": "a description of the conditions that have enabled a location in Britain to escape Dutch elm disease",
-      "finalAnswer": "E",
-      "highlightId": "hl-q17",
+    "q4": {
+      "num": 4,
+      "text": "The Polynesian rat was a greater threat to the kakapo than Polynesian settlers.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q4",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Đo khuôn khái niệm trừu tượng",
-            "question": "Đề bài yêu cầu tìm 'conditions' (điều kiện tự nhiên) giúp 'a location in Britain' (một địa điểm cụ thể tại Anh) thoát khỏi căn bệnh ('escape Dutch elm disease'). Cần tìm địa danh cụ thể nào ở Anh?",
-            "guide": "Tìm một thành phố/khu vực tại Anh nơi cây du vẫn sống sót với số lượng lớn nhờ yếu tố khí hậu/địa lý đặc thù.",
-            "bridge": "Quét các địa danh ở nước Anh trong bài đọc."
+            "title": "Nấc 1/4 - Xé câu & Đóng khung bẫy so sánh",
+            "question": "Xé câu làm 3 phần. Dấu hiệu so sánh nào ở Mảnh 2 bắt buộc phải đóng khung cảnh giác (Quy tắc 8)?",
+            "guide": "[The Polynesian rat] / [was a GREATER threat THAN - Đe dọa LỚN HƠN] / [Polynesian settlers]. Công thức so sánh: Chuột > Người định cư.",
+            "bridge": "Định vị sự xuất hiện của hai đối tượng này trong cùng văn cảnh."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào nhắc đến thành phố ven biển Brighton và lý do cây du ở đây thoát nạn?",
-            "guide": "Đoạn E dòng 5-7: 'Today, the city of Brighton's elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack...'.",
-            "bridge": "Đối chiếu điều kiện gió biển với 'conditions'."
+            "title": "Nấc 2/4 - Khóa hiện trường hai chân kiềng",
+            "question": "Áp dụng Quy tắc 3 (Hai chân kiềng), 2 danh từ riêng nào bắt buộc phải xuất hiện cùng nhau để khóa đoạn văn?",
+            "guide": "Cần cặp từ: 'Polynesian settlers' và 'Polynesian rat'. Mắt quét thấy cả 2 cùng xuất hiện ở Đoạn 5.",
+            "bridge": "Kiểm tra xem tác giả có thực hiện phép so sánh hơn kém hay không."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'Brighton' tương ứng với 'a location in Britain', vậy điều kiện nào ('conditions') đã giúp chúng thoát nạn?",
-            "guide": "'Strong winds from the sea' cản trở bọ cánh cứng tấn công, giải thích sự sống sót ('survival' = escape the disease).",
-            "bridge": "Xác định đoạn văn chứa thông tin."
+            "title": "Nấc 3/4 - Kiểm tra phép so sánh",
+            "question": "Đọc kỹ Đoạn 5: Người định cư ăn thịt vẹt, và chuột 'CŨNG' (also) săn vẹt. Tác giả có đặt chữ nào lên bàn cân để so sánh xem Chuột hay Người nguy hiểm HƠN không?",
+            "guide": "Bài đọc chỉ dùng chữ 'also' (cũng) để LIỆT KÊ danh sách các loài săn vẹt (Người, Chó, Chuột). Hoàn toàn KHÔNG có bất kỳ cấu trúc so sánh hơn kém nào (greater, more, worse).",
+            "bridge": "Áp dụng quy tắc suy diễn khi thiếu vế so sánh."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Chọn chữ cái tương ứng với đoạn văn này?",
-            "guide": "Đoạn E.",
-            "bridge": "Hoàn thành câu 17."
+            "title": "Nấc 4/4 - Bộ lọc thiếu vế & Chốt sổ",
+            "question": "Theo Quy tắc 14: Đề có so sánh A > B, bài đọc nhắc cả A và B nhưng KHÔNG SO SÁNH. Ta có được tự suy diễn không (Quy tắc 12)? Bấm đáp án gì?",
+            "guide": "Thiếu hẳn thành phần so sánh. Áp dụng Quy tắc 14 & 29 -> Chốt NOT GIVEN ngay trong 1 giây.",
+            "bridge": "Hoàn thành câu 4."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Mô tả các điều kiện giúp một địa điểm ở Anh thoát khỏi bệnh dịch cây du Hà Lan.",
-          "<b>Bước 2 / Trích dẫn đoạn E:</b> <i>'Today, the city of Brighton's elms total about 17,000. Local factors appear to have contributed to their survival. Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city's elm population.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>city of Brighton</i> = a location in Britain; <i>strong winds from the sea</i> = conditions; <i>survival</i> = escape.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>E</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [The Polynesian rat] + V [was a greater threat than] + O [Polynesian settlers]. Cấu trúc so sánh hơn A > B.<br>• Bước 2 (Keyword): Cặp tên riêng lịch sử 'Polynesian settlers' và 'Polynesian rat' giúp định vị chính xác Đoạn 5.<br>• Bước 3: Bài đọc ghi người định cư săn vẹt, và chó/chuột 'also preyed on kakapo'. Đây thuần túy là phép liệt kê song hành (addition), không có yếu tố so sánh mức độ nguy hại.<br>• Bước 4: Đề so sánh A > B, bài không so sánh. Thiếu dữ kiện. Chọn NOT GIVEN.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề so sánh: Chuột (rat) nguy hiểm HƠN (greater than) Người (settlers).<br>• Bước 2: Quét Đoạn 5 thấy cả chữ 'settlers' và chữ 'rat'.<br>• Bước 3: Đọc câu văn: Người bắt vẹt ăn thịt, đi kèm có chuột 'ALSO' (CŨNG) bắt vẹt.<br>• Bước 4: Bài chỉ bảo 'cả hai cùng bắt', không hề nói con nào ghê HƠN -> Áp dụng luật thiếu so sánh, chọn NOT GIVEN."
         ]
       }
     },
-    "q18": {
-      "num": 18,
-      "text": "reference to the stage at which young elms become vulnerable to Dutch elm disease",
-      "finalAnswer": "C",
-      "highlightId": "hl-q18",
+    "q5": {
+      "num": 5,
+      "text": "Kakapo were transferred from Rakiura Island to other locations because they were at risk from feral cats.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q5",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Đo khuôn khái niệm trừu tượng",
-            "question": "Đề bài yêu cầu tìm 'the stage' (giai đoạn/thời điểm kích thước) mà 'young elms become vulnerable' (những cây du non trở nên dễ bị tổn thương/bị bọ tấn công). Cần tìm từ ngữ chỉ độ tuổi, kích thước hoặc đường kính của thân cây?",
-            "guide": "Tìm các con số đo lường (centimet, đường kính trunk) và thời điểm bọ cánh cứng bắt đầu nhắm vào cây.",
-            "bridge": "Quét các số đo kích thước thân cây trong bài."
+            "title": "Nấc 1/4 - Xé câu & Đóng khung quan hệ nhân quả",
+            "question": "Xé câu làm 2 vế. Từ liên từ logic chỉ nguyên nhân nào ở giữa câu là từ then chốt cần đóng khung (Quy tắc 7)?",
+            "guide": "[Kakapo were transferred... to other locations] / [BECAUSE - Bởi vì] / [they were at risk from feral cats]. Mối quan hệ: Bị mèo đe dọa -> Dẫn đến phải chuyển đi nơi khác.",
+            "bridge": "Khóa tọa độ địa lý và loài thú đe dọa."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào nói về việc cây non mọc ở hàng rào và kích thước khi chúng bị bọ nhắm tới?",
-            "guide": "Đoạn C dòng 2-4: '...they get targeted by the beetle as soon as they reach a certain size... Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs...'.",
-            "bridge": "Đối chiếu 'reach a certain size / 10-15 centimetres' với 'the stage'.",
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo cứng",
+            "question": "Tên riêng địa danh nào viết hoa (Quy tắc 1) kết hợp với loài thú 'feral cats' giúp em khóa chặt tọa độ bài đọc?",
+            "guide": "Mỏ neo cứng: 'Rakiura Island' và 'feral cats'. Định vị ngay đầu Đoạn 9.",
+            "bridge": "Lột vỏ các cụm từ đồng nghĩa biểu thị di dời và nguy hiểm."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Cụm 'get targeted by the beetle' và 'perfect size for beetles to lay eggs and for the fungus to take hold' khớp với cụm nào trong câu hỏi?",
-            "guide": "Khớp với 'become vulnerable to Dutch elm disease'. 'Once the trunk... reaches 10-15 cm' khớp với 'stage'.",
-            "bridge": "Xác định đoạn văn."
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa hai vế",
+            "question": "Trong Đoạn 9, cụm từ nào đồng nghĩa với 'transferred to other locations' (chuyển đi nơi khác)? Cụm nào đồng nghĩa với 'at risk from feral cats'?",
+            "guide": "'Transferred to other locations' = 'evacuated to three island sanctuaries' (sơ tán tới 3 hòn đảo bảo tồn). 'At risk from feral cats' = 'predation by feral cats' (bị mèo hoang săn bắt).",
+            "bridge": "Đối chiếu mối quan hệ logic nhân quả."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Đoạn văn nào chứa thông tin trên?",
-            "guide": "Đoạn C. Chốt C.",
-            "bridge": "Hoàn thành câu 18."
+            "title": "Nấc 4/4 - Khớp bản chất logic & Chốt sổ",
+            "question": "Bài đọc dùng liên từ chỉ kết quả nào ('As a ______') để nối việc bị mèo bắt với việc phải sơ tán? Chiều logic có khớp 100% với chữ 'BECAUSE' ở đề không?",
+            "guide": "Bài đọc dùng: 'As a result' (Kết quả là / Do đó). Nguyên nhân do mèo -> Kết quả là phải chuyển đi. Logic khớp hoàn hảo 100%. Áp dụng Quy tắc 11 -> Chốt TRUE.",
+            "bridge": "Hoàn thành câu 5."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Đề cập đến giai đoạn mà các cây du non trở nên dễ bị nhiễm bệnh.",
-          "<b>Bước 2 / Trích dẫn đoạn C:</b> <i>'\"We have millions of small elms in hedgerows but they get targeted by the beetle as soon as they reach a certain size,\" says Karen Russell... Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold.'</i>",
-          "<b>Bước 3 / Phân tích:</b> Giai đoạn thân cây đạt 10-15 cm đường kính chính là thời điểm cây non trở thành mục tiêu của bọ cánh cứng truyền bệnh.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>C</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Mệnh đề chính [Kakapo were transferred... to other locations] + Liên từ [because] + Mệnh đề nguyên nhân [they were at risk from feral cats].<br>• Bước 2 (Keyword): Tên riêng địa danh 'Rakiura Island' và cụm loài xâm lấn 'feral cats' là Hard Keywords ở đầu Đoạn 9.<br>• Bước 3: 'transferred... to other locations' = 'evacuated to three island sanctuaries'; 'at risk from feral cats' = 'predation by feral cats'; 'because' = 'As a result'.<br>• Bước 4: Toàn bộ quan hệ nguyên nhân - kết quả trùng khớp tuyệt đối. Chọn TRUE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Vẹt bị chuyển đi nơi khác BỞI VÌ (because) gặp nguy hiểm do mèo hoang (feral cats).<br>• Bước 2: Quét chữ viết hoa 'Rakiura Island' và chữ 'feral cats' ở đầu Đoạn 9.<br>• Bước 3: Thấy 'evacuated' (= transferred: sơ tán/chuyển đi), thấy 'predation by cats' (= at risk from cats: bị mèo ăn thịt).<br>• Bước 4: Thấy chữ 'As a result' (Do đó) nối 2 câu. Đúng quan hệ nguyên nhân - kết quả -> Điền TRUE."
         ]
       }
     },
-    "q19": {
-      "num": 19,
-      "text": "If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible.",
-      "finalAnswer": "B",
-      "highlightId": "hl-q19",
+    "q6": {
+      "num": 6,
+      "text": "One Recovery Plan initiative that helped increase the kakapo population size was caring for struggling young birds.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q6",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Câu nhận định: Khi một cây bị nhiễm bệnh, thiệt hại xuất hiện rất nhanh ('damage rapidly becomes visible'). Ai trong số 3 chuyên gia (A. Matt Elliot, B. Karen Russell, C. Peter Bourne) nói về tốc độ phát tác biểu hiện bệnh?",
-            "guide": "Tìm phát ngôn của chuyên gia có từ đồng nghĩa với 'rapidly' (quick, fast) và 'damage becomes visible' (triệu chứng, rụng lá).",
-            "bridge": "Định vị vị trí tên các chuyên gia trong văn bản."
+            "title": "Nấc 1/4 - Xé câu & Phân tích hành động",
+            "question": "Xé câu: Kế hoạch Phục hồi (Recovery Plan) đã thực hiện hành động cụ thể nào đối với 'struggling young birds' (những con chim non yếu ớt)?",
+            "guide": "[One Recovery Plan initiative] / [was] / [CARING FOR struggling young birds - Chăm sóc những con chim non gặp khó khăn/yếu ớt].",
+            "bridge": "Tìm vị trí kế hoạch phục hồi được triển khai."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn nào nói về việc tiêm mầm bệnh vào vỏ cây và quan sát phản ứng sau vài tuần?",
-            "guide": "Đoạn F câu cuối: '\"The effects are very quick,\" says Russell. \"You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.\"'",
-            "bridge": "Đối chiếu phát ngôn của Russell với câu hỏi."
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo viết hoa",
+            "question": "Cụm từ viết hoa nào là mỏ neo định vị tuyệt đối (Quy tắc 1)? Nó xuất hiện ở đoạn nào?",
+            "guide": "Mỏ neo cứng: 'Recovery Plan' (Kế hoạch Phục hồi). Xuất hiện tại câu đầu Đoạn 10.",
+            "bridge": "Lột vỏ các từ đồng nghĩa chỉ hành vi chăm sóc chim non yếu."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'The effects are very quick' và 'show leaf loss and may even have died' tương đương với cụm từ nào?",
-            "guide": "'Very quick' = rapidly; 'show leaf loss' = damage becomes visible.",
-            "bridge": "Khẳng định chuyên gia phát biểu câu này."
+            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa 3 lớp",
+            "question": "Ở câu cuối Đoạn 10, tìm 3 từ đồng nghĩa đối xứng với: 'young birds' (chim non), 'struggling' (yếu ớt), và 'caring for' (chăm sóc)?",
+            "guide": "• 'young birds' = 'chicks' (chim non).<br>• 'struggling' = 'failing' (suy yếu, sắp chết).<br>• 'caring for' = 'rescuing and hand-raising' (giải cứu và tự tay nuôi nấng).",
+            "bridge": "So khớp ý nghĩa và kết quả phục hồi bầy đàn."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Ai là người đưa ra nhận định này?",
-            "guide": "Karen Russell -> Ứng với đáp án B.",
-            "bridge": "Hoàn thành câu 19."
+            "title": "Nấc 4/4 - Cân logic & Chốt sổ",
+            "question": "Hành động 'tự tay chăm sóc nuôi nấng chim non yếu ớt' trong bài đọc có khớp 100% với ý 'caring for struggling young birds' của kế hoạch không? Chốt đáp án gì?",
+            "guide": "Các cặp từ đối xứng khớp hoàn toàn về ngữ nghĩa và hành động thực tế. Áp dụng Quy tắc 11 -> Chốt TRUE.",
+            "bridge": "Hoàn thành câu 6."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Nếu cây bị nhiễm bệnh, thiệt hại/triệu chứng sẽ nhanh chóng nhìn thấy rõ.",
-          "<b>Bước 2 / Trích dẫn phát ngôn:</b> <i>'\"The effects are very quick,\" says Russell. \"You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.\"' (Đoạn F)</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>effects are very quick</i> = rapidly; <i>show leaf loss</i> = damage becomes visible.",
-          "<b>Bước 4 / Kết luận:</b> Người phát biểu là Karen Russell. Chọn <b>B</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [One Recovery Plan initiative...] + V [was] + Cụm danh động từ [caring for struggling young birds].<br>• Bước 2 (Keyword): Tên chương trình viết hoa 'Recovery Plan' định vị chính xác Đoạn 10.<br>• Bước 3: Đối chiếu paraphrase 3 điểm: 'caring for' = 'rescuing and hand-raising'; 'struggling' = 'failing'; 'young birds' = 'chicks'.<br>• Bước 4: Toàn bộ hành động cứu trợ chim non khớp 100% với đề bài. Chọn TRUE.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề bảo: Có một kế hoạch là 'caring for' (chăm sóc) 'young birds' (chim non).<br>• Bước 2: Quét chữ viết hoa 'Recovery Plan' ở Đoạn 10.<br>• Bước 3: Đọc câu cuối: thấy chữ 'hand-raising' (tự tay nuôi = chăm sóc), thấy 'chicks' (= chim non), thấy 'failing' (= yếu ớt).<br>• Bước 4: Khớp từng chữ một, đúng 100% -> Điền TRUE."
         ]
       }
     },
-    "q20": {
-      "num": 20,
-      "text": "It may be better to wait and see if the mature elms that have survived continue to flourish.",
-      "finalAnswer": "A",
-      "highlightId": "hl-q20",
+    "q7": {
+      "num": 7,
+      "text": "diet consists of fern fronds, various parts of a tree and 7 …………….",
+      "finalAnswer": "bulbs",
+      "highlightId": "hl-q7",
+      "inputWidth": "110px",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Câu nhận định: Có lẽ tốt hơn là nên chờ đợi xem liệu những cây du già sống sót có tiếp tục phát triển hay không ('wait and see... give nature time'). Ai khuyên nên kiên nhẫn chờ tự nhiên phục hồi thay vì trồng cây mới?",
-            "guide": "Tìm ý kiến về việc không trồng giống mới mà để tự nhiên tự hồi phục theo thời gian ('give nature time to recover over time').",
-            "bridge": "Quét tên các chuyên gia ở đoạn cuối (Đoạn G)."
+            "title": "Nấc 1/4 - Rào ngữ pháp chuỗi liệt kê",
+            "question": "Chỗ trống đứng sau từ nối 'and' trong chuỗi liệt kê: 'fern fronds, various parts of a tree and [7]'. Theo Quy tắc 21 & 22, từ cần điền phải có dạng ngữ pháp gì và thuộc trường nghĩa nào?",
+            "guide": "Chuỗi danh từ liệt kê thức ăn ('fern fronds' có số nhiều). Do đó, ô trống 7 bắt buộc phải là Danh từ (số nhiều hoặc không đếm được) chỉ một món ăn của vẹt.",
+            "bridge": "Chọn từ khóa thực vật hiếm gặp để định vị."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Câu cuối cùng của Đoạn G do ai phát biểu và có nội dung gì?",
-            "guide": "'Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. \"Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance,\" says Elliot.'",
-            "bridge": "So sánh phát ngôn của Elliot với câu hỏi."
+            "title": "Nấc 2/4 - Chọn mỏ neo mềm",
+            "question": "Cụm từ thực vật đặc định nào trong câu hỏi ('fern fronds' / 'parts of a tree') giúp em quét nhanh mà không bị nhầm đoạn?",
+            "guide": "Dùng cụm từ lạ tai 'fern fronds' (lá dương xỉ) làm mỏ neo mềm. Quét mắt thấy ngay ở cuối Đoạn 3.",
+            "bridge": "Gạch bỏ các thành phần đã xuất hiện trong câu tóm tắt."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'Give nature time to recover over time' đối xứng với cụm nào trong câu nhận định?",
-            "guide": "'Give nature time' = wait and see; 'those elms that have survived independently' = mature elms that have survived.",
-            "bridge": "Xác định chữ cái của Matt Elliot."
+            "title": "Nấc 3/4 - Triệt tiêu đối xứng chuỗi thức ăn",
+            "question": "Hãy đặt bút gạch bỏ các món ăn đã có trong câu hỏi: Gạch 'fern fronds'; gạch 'various parts of a tree' (= leaves, roots and bark of trees). Sau khi gạch xong, món ăn duy nhất còn lại là gì?",
+            "guide": "Bài đọc liệt kê: 'leaves, roots and bark of trees' (đã gạch) + 'fern fronds' (đã gạch) + 'bulbs' (củ cây). Từ duy nhất còn lại chưa bị gạch là 'bulbs'.",
+            "bridge": "Kiểm tra hình thái số nhiều và giới hạn từ."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Chọn chuyên gia nào cho câu 20?",
-            "guide": "Matt Elliot -> Đáp án A.",
-            "bridge": "Hoàn thành câu 20."
+            "title": "Nấc 4/4 - Kiểm tra luật số nhiều & Chốt sổ",
+            "question": "Từ 'bulbs' có đuôi '-s' không? Có thỏa mãn luật ONE WORD ONLY và nhãn danh từ số nhiều ở bước 1 không?",
+            "guide": "'Bulbs' có đuôi '-s' (danh từ số nhiều), đúng 1 từ duy nhất. Áp dụng Quy tắc 30 (giữ nguyên ký tự) -> Chốt bulbs.",
+            "bridge": "Hoàn thành câu 7."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Có thể tốt hơn nên chờ xem liệu những cây du sống sót có tiếp tục phát triển hay không.",
-          "<b>Bước 2 / Trích dẫn đoạn G:</b> <i>'Rather than plant new elms, the Woodland Trust emphasises providing space to those elms that have survived independently. \"Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance,\" says Elliot.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>give nature time to recover over time</i> = wait and see; <i>elms that have survived independently</i> = mature elms that have survived.",
-          "<b>Bước 4 / Kết luận:</b> Người phát biểu là Matt Elliot. Chọn <b>A</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Cấu trúc song hành 'A, B and C': Cần một Danh từ số nhiều chỉ loại thực vật thuộc 'diet' (chế độ ăn).<br>• Bước 2 (Keyword): Chọn 'fern fronds' (lá dương xỉ) làm từ khóa đặc định vì đây là danh từ sinh học hiếm gặp ở Đoạn 3.<br>• Bước 3: Triệt tiêu: 'various parts of a tree' = 'the leaves, roots and bark of trees'; 'fern fronds' = 'fern fronds'. Thành phần thức ăn còn sót lại sau 'as well as' là 'bulbs'.<br>• Bước 4: 'bulbs' thỏa mãn ngữ pháp số nhiều và giới hạn ONE WORD ONLY. Điền bulbs.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Chỗ trống nằm trong danh sách đồ ăn, đứng sau chữ 'and' -> Cần 1 từ chỉ cây cối/thức ăn có đuôi -s.<br>• Bước 2: Quét chữ lạ 'fern fronds' ở cuối Đoạn 3.<br>• Bước 3: Gạch chữ trùng: Gạch 'fern fronds', gạch 'trees'. Thấy còn trơ lại chữ 'bulbs' (củ cây).<br>• Bước 4: Chép nguyên chữ bulbs có đuôi -s vào bài."
         ]
       }
     },
-    "q21": {
-      "num": 21,
-      "text": "There must be an explanation for the survival of some mature elms.",
-      "finalAnswer": "B",
-      "highlightId": "hl-q21",
+    "q8": {
+      "num": 8,
+      "text": "nests are created 8 ……………. in where eggs are laid.",
+      "finalAnswer": "soil",
+      "highlightId": "hl-q8",
+      "inputWidth": "100px",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Câu nhận định: Chắc chắn phải có lời giải thích cho sự sống sót của một số cây du cổ thụ ('must be an explanation... cannot be entirely down to luck'). Chuyên gia nào đề cập đến việc này không thể chỉ do may mắn?",
-            "guide": "Tìm phát ngôn bàn về các nguyên nhân có thể (tránh né, chịu đựng, kháng bệnh) và bác bỏ yếu tố hoàn toàn ngẫu nhiên hay may mắn.",
-            "bridge": "Quét tên chuyên gia nói về các 'mature specimens' sống sót ở Đoạn C."
+            "title": "Nấc 1/4 - Rào ngữ pháp vị trí",
+            "question": "Chỗ trống đứng sau giới từ chỉ địa điểm 'in' ('created in 8 ______'). Theo Quy tắc 21, từ cần điền bắt buộc phải là loại từ gì?",
+            "guide": "Đứng sau giới từ 'in', cần một Danh từ chỉ nơi chốn / chất liệu / môi trường nơi tổ được tạo ra để đẻ trứng.",
+            "bridge": "Định vị hành vi đẻ trứng của vẹt."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Xem đoạn C câu cuối, Karen Russell nói gì về lý do sống sót của những cây du?",
-            "guide": "'\"What are the reasons for their survival?\" asks Russell. \"Avoidance, tolerance, resistance? We don't know where the balance lies between the three. I don't see how it can be entirely down to luck.\"'",
-            "bridge": "Đối chiếu 'reasons for their survival... not entirely down to luck' với câu hỏi."
+            "title": "Nấc 2/4 - Chọn mỏ neo mềm",
+            "question": "Cụm từ hành động nào ('nests' / 'eggs are laid') giúp em bắt trúng câu văn ở Đoạn 4?",
+            "guide": "Dùng cụm từ 'eggs are laid' (trứng được đẻ). Mắt quét dừng lại ở dòng 3 Đoạn 4.",
+            "bridge": "So khớp cấu trúc câu chứa giới từ in."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Việc bác bỏ 'cannot be entirely down to luck' hàm ý điều gì?",
-            "guide": "Hàm ý phải có nguyên nhân/cơ chế khoa học cụ thể ('there must be an explanation for the survival').",
-            "bridge": "Xác định chữ cái của chuyên gia."
+            "title": "Nấc 3/4 - Triệt tiêu đối xứng & Bắt giới từ",
+            "question": "Đối chiếu câu: Đề có 'where eggs are laid' <-> Bài có 'The 1-4 eggs are laid in...'. Sau giới từ 'in' của bài đọc là danh từ nào?",
+            "guide": "Bài đọc viết: 'eggs are laid in SOIL' (trứng được đẻ trong ĐẤT).",
+            "bridge": "Kiểm tra tính phù hợp ngữ nghĩa và quy tắc số từ."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Chọn chuyên gia nào cho câu 21?",
-            "guide": "Karen Russell -> Đáp án B.",
-            "bridge": "Hoàn thành câu 21."
+            "title": "Nấc 4/4 - Kiểm tra nghĩa & Chốt sổ",
+            "question": "Từ 'soil' (đất) có phải danh từ chỉ chất liệu/nơi làm tổ không? Có đúng 1 từ duy nhất không?",
+            "guide": "'Soil' là danh từ không đếm được, khớp hoàn toàn với giới từ 'in', đúng luật 1 từ. Áp dụng Quy tắc 30 -> Chốt soil.",
+            "bridge": "Hoàn thành câu 8."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Chắc chắn phải có lời giải thích cho sự sống sót của một số cây du cổ thụ.",
-          "<b>Bước 2 / Trích dẫn đoạn C:</b> <i>'\"What are the reasons for their survival?\" asks Russell. \"Avoidance, tolerance, resistance? We don't know where the balance lies between the three. I don't see how it can be entirely down to luck.\"'</i>",
-          "<b>Bước 3 / Phân tích:</b> Russell cho rằng sự sống sót của các cây này không thể chỉ hoàn toàn nhờ vào may mắn (not entirely down to luck), đồng nghĩa phải có lý do/giải thích rõ ràng.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>B</b> (Karen Russell)."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'nests are created in [8] where eggs are laid' -> Cần Danh từ chỉ địa điểm/chất liệu tổ chim.<br>• Bước 2 (Keyword): Chọn cụm 'eggs are laid' làm mỏ neo vì hành vi sinh học này xuất hiện duy nhất ở Đoạn 4.<br>• Bước 3: Đối chiếu: Đề có 'in [chỗ trống] where eggs are laid' = Bài có 'eggs are laid in soil'.<br>• Bước 4: Danh từ đứng sau giới từ 'in' chỉ vị trí là 'soil'. Điền soil.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'created in ______' (được tạo ra ở đâu) -> Cần 1 từ chỉ nơi chốn.<br>• Bước 2: Quét chữ 'eggs are laid' (trứng được đẻ) ở dòng 3 Đoạn 4.<br>• Bước 3: Nhìn ngay sau chữ 'in': Thấy chữ 'soil' (đất cát).<br>• Bước 4: Chép đúng 1 từ soil."
         ]
       }
     },
-    "q22": {
-      "num": 22,
-      "text": "We need to be aware that insects carrying Dutch elm disease are not very far away.",
-      "finalAnswer": "C",
-      "highlightId": "hl-q22",
-      "socratic": {
-        "steps": [
-          {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Câu nhận định: Cần nhận thức rằng loài côn trùng mang mầm bệnh đang ở rất gần ('insects... not very far away'). Cụm từ nào trong bài thể hiện mối hiểm họa đang cận kề?",
-            "guide": "Thành ngữ 'on our doorstep' (ngay trước cửa nhà = rất gần) và từ 'beetles' (bọ cánh cứng = insects).",
-            "bridge": "Tìm chuyên gia nói câu có hình ảnh 'doorstep' và nguy cơ bọ tràn vào."
-          },
-          {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Ở cuối Đoạn E, Peter Bourne cảnh báo điều gì?",
-            "guide": "'\"The beetles can just march in if we're not careful, as the threat is right on our doorstep,\" says Bourne.'",
-            "bridge": "Đối chiếu phát ngôn của Bourne với câu nhận định."
-          },
-          {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'The beetles' và 'the threat is right on our doorstep' khớp với những từ nào trong câu hỏi?",
-            "guide": "'The beetles' = insects carrying disease; 'threat is right on our doorstep' = not very far away.",
-            "bridge": "Xác định chữ cái của Peter Bourne."
-          },
-          {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Chuyên gia nào là đáp án của câu 22?",
-            "guide": "Peter Bourne -> Đáp án C.",
-            "bridge": "Hoàn thành câu 22."
-          }
-        ]
-      },
-      "explanation": {
-        "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Chúng ta cần nhận thức rằng côn trùng mang bệnh không ở đâu xa.",
-          "<b>Bước 2 / Trích dẫn đoạn E:</b> <i>'\"The beetles can just march in if we're not careful, as the threat is right on our doorstep,\" says Bourne.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>beetles</i> = insects; <i>right on our doorstep</i> = not very far away.",
-          "<b>Bước 4 / Kết luận:</b> Người phát biểu là Peter Bourne. Chọn <b>C</b>."
-        ]
-      }
-    },
-    "q23": {
-      "num": 23,
-      "text": "You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once was.",
-      "finalAnswer": "A",
-      "highlightId": "hl-q23",
-      "socratic": {
-        "steps": [
-          {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Câu nhận định: Bạn chỉ hiểu được tác động của dịch bệnh khi thấy bằng chứng về việc loài cây này từng nổi bật thế nào ('see evidence of how prominent...'). Bằng chứng bằng thị giác nào được nhắc đến?",
-            "guide": "Tìm chuyên gia nhắc đến việc nhìn những bức ảnh cũ trong quá khứ ('look at old photographs') để nhận ra tác động ('realise the impact').",
-            "bridge": "Định vị vị trí chuyên gia phát biểu ở Đoạn A."
-          },
-          {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn A trích lời ai nói về việc xem ảnh cũ từ những năm 1960?",
-            "guide": "'...says Matt Elliot of the Woodland Trust. \"You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] ... They were significant, large trees... then they were gone.\"'",
-            "bridge": "Đối chiếu phát ngôn của Elliot với nhận định."
-          },
-          {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'Look at old photographs' và 'significant, large trees' tương ứng với cụm từ nào?",
-            "guide": "'Look at old photographs' = see evidence; 'significant, large trees' = how prominent the tree once was; 'realise the impact' = understand the effect.",
-            "bridge": "Xác định mã chữ cái cho Matt Elliot."
-          },
-          {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Đáp án cho câu 23 là gì?",
-            "guide": "Matt Elliot -> Đáp án A.",
-            "bridge": "Hoàn thành câu 23."
-          }
-        ]
-      },
-      "explanation": {
-        "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Bạn sẽ hiểu được ảnh hưởng của bệnh dịch khi bạn nhìn thấy bằng chứng về việc loài cây này từng chiếm vị trí nổi bật như thế nào.",
-          "<b>Bước 2 / Trích dẫn đoạn A:</b> <i>'\"The impact of the disease is difficult to picture if you hadn't seen what was there before,\" says Matt Elliot... \"You look at old photographs from the 1960s and it's only then that you realise the impact [elms had] ... They were significant, large trees... then they were gone.\"'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>look at old photographs</i> = see evidence; <i>significant, large trees</i> = how prominent the tree once was; <i>realise the impact</i> = understand the effect.",
-          "<b>Bước 4 / Kết luận:</b> Chọn <b>A</b> (Matt Elliot)."
-        ]
-      }
-    },
-    "q24": {
-      "num": 24,
-      "text": "For hundreds of years, the only tree that was more popular in Britain than elm was 24 ……………",
-      "finalAnswer": "oak",
-      "highlightId": "hl-q24",
+    "q9": {
+      "num": 9,
+      "text": "the 9 ……………. of the kakapo were used to make clothes.",
+      "finalAnswer": "feathers",
+      "highlightId": "hl-q9",
       "inputWidth": "120px",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Chỗ trống cần điền đứng sau động từ tobe 'was' và bổ ngữ cho cụm 'the only tree that was more popular in Britain than elm'. Từ cần điền là loại từ gì?",
-            "guide": "Bắt buộc là một Danh từ chỉ tên một loài cây thân gỗ cụ thể.",
-            "bridge": "Định vị đoạn văn nói về lịch sử sử dụng gỗ của các loài cây (Đoạn D)."
+            "title": "Nấc 1/4 - Rào ngữ pháp cấu trúc sở hữu",
+            "question": "Chỗ trống đứng giữa 'the' và 'of the kakapo' ('the 9 ______ of the kakapo'). Theo Quy tắc 24, từ cần điền là loại từ gì và thuộc bộ phận nào của con vật?",
+            "guide": "Cần một Danh từ chỉ bộ phận cơ thể của con vẹt, dùng làm nguyên liệu may mặc ('used to make clothes').",
+            "bridge": "Sử dụng tiêu đề phụ để quét nhanh đoạn văn."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn D câu đầu tiên so sánh vị trí của cây du với loài cây nào khác?",
-            "guide": "'For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain...'",
-            "bridge": "Phân tích cấu trúc 'ran a close second to...'."
+            "title": "Nấc 2/4 - Định vị tiêu đề phụ",
+            "question": "Nhìn lên tiêu đề phụ trong bảng ghi 'Arrival of Polynesian settlers'. Tên người định cư này đưa em đến đoạn văn nào?",
+            "guide": "Tiêu đề phụ dẫn thẳng mắt đến Đoạn 5 ('the first Polynesian settlers').",
+            "bridge": "Tìm từ đồng nghĩa với trang phục, quần áo."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Cụm 'elm ran a close second to oak' nghĩa là gì khi nói về sự phổ biến?",
-            "guide": "Nghĩa là cây sồi (oak) đứng thứ nhất, cây du (elm) đứng thứ nhì suýt soát -> Loài cây duy nhất phổ biến hơn cây du chính là 'oak'.",
-            "bridge": "Kiểm tra giới hạn số từ (ONE WORD ONLY)."
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa may mặc",
+            "question": "Trong Đoạn 5, từ nào đồng nghĩa với 'clothes' (quần áo - Quy tắc 5)? Và người ta dùng thứ gì của con vẹt để may thứ đó?",
+            "guide": "'Clothes' (quần áo) được đổi vỏ thành 'cloaks' (áo choàng). Bài đọc ghi: 'used its FEATHERS to make soft cloaks'.",
+            "bridge": "Kiểm tra đuôi số nhiều và giới hạn 1 từ."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Từ duy nhất cần điền vào ô trống là gì?",
-            "guide": "'oak'.",
-            "bridge": "Hoàn thành câu 24."
+            "title": "Nấc 4/4 - Kiểm tra chính tả & Chốt sổ",
+            "question": "Giữa 'meat' (thịt) và 'feathers' (lông vũ), từ nào dùng làm áo choàng? Từ đó có đuôi '-s' không?",
+            "guide": "Thịt (meat) để ăn, lông vũ (feathers) để làm áo choàng. Từ 'feathers' có đuôi '-s', thỏa mãn 1 từ duy nhất -> Chốt feathers.",
+            "bridge": "Hoàn thành câu 9."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Trong hàng trăm năm, loài cây duy nhất phổ biến hơn cây du ở Anh là loài cây nào.",
-          "<b>Bước 2 / Trích dẫn đoạn D:</b> <i>'For centuries, elm ran a close second to oak as the hardwood tree of choice in Britain...'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>For centuries</i> = For hundreds of years; <i>ran a close second to oak</i> = the only tree that was more popular... was oak.",
-          "<b>Bước 4 / Kết luận:</b> Đáp án là <b>oak</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'the [9] of the kakapo were used to make clothes' -> Cần Danh từ chỉ bộ phận sinh học làm chất liệu may mặc.<br>• Bước 2 (Keyword): Tiêu đề phụ 'Polynesian settlers' định vị Đoạn 5. Quét từ đồng nghĩa của 'clothes' là 'cloaks'.<br>• Bước 3: Đối chiếu: 'used to make clothes' = 'used its... to make soft cloaks'. Hai đối tượng sở hữu của 'its' là 'meat' và 'feathers'.<br>• Bước 4: Chỉ có 'feathers' (lông vũ) mới dùng để làm áo. Giữ nguyên đuôi -s. Điền feathers.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Cần 1 thứ trên người con vẹt dùng làm 'clothes' (quần áo).<br>• Bước 2: Quét Đoạn 5 thấy 'Polynesian settlers' (người định cư).<br>• Bước 3: Thấy 'cloaks' (áo choàng), thấy câu: 'used its feathers to make soft cloaks'.<br>• Bước 4: Lông vũ làm áo -> Chép từ feathers có đuôi -s."
         ]
       }
     },
-    "q25": {
-      "num": 25,
-      "text": "In the 18th century, it was grown to provide wood for boxes and 25 ……………",
-      "finalAnswer": "flooring",
-      "highlightId": "hl-q25",
-      "inputWidth": "130px",
+    "q10": {
+      "num": 10,
+      "text": "10 ……………. were an animal which they introduced that ate the kakapo's food sources.",
+      "finalAnswer": "deer",
+      "highlightId": "hl-q10",
+      "inputWidth": "100px",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Quan sát cấu trúc song song: 'boxes and [ 25 ______ ]'. Đứng sau liên từ 'and', từ cần điền là loại từ gì?",
-            "guide": "Cần một Danh từ chỉ đồ vật hoặc vật dụng làm từ gỗ cây du vào thế kỷ 18.",
-            "bridge": "Quét mốc thời gian '18th century' trong Đoạn D."
+            "title": "Nấc 1/4 - Rào ngữ pháp số nhiều",
+            "question": "Chỗ trống đứng đầu câu trước động từ to-be số nhiều 'were' ('10 ______ were an animal...'). Theo Quy tắc 21 & 22, từ cần điền phải là danh từ có dạng thức như thế nào?",
+            "guide": "Bắt buộc phải là Danh từ số nhiều (hoặc danh từ có dạng số ít/nhiều như nhau) chỉ tên một loài động vật du nhập.",
+            "bridge": "Định vị mốc người thực dân châu Âu đến."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Đoạn D dòng 5-6 viết gì về các sản phẩm làm từ gỗ cây du vào thế kỷ 18?",
-            "guide": "'In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring.'",
-            "bridge": "Đối chiếu 'storage crates' với 'boxes'."
+            "title": "Nấc 2/4 - Định vị tiêu đề phụ",
+            "question": "Tiêu đề phụ ghi 'Arrival of European colonisers'. Cụm từ lịch sử này nằm ở đoạn mấy?",
+            "guide": "Dẫn thẳng mắt đến câu đầu tiên của Đoạn 6 ('European colonisers arrived').",
+            "bridge": "Tìm hành động ăn cạn kiệt thức ăn của loài thú du nhập."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "'Storage crates' trong bài đọc đồng nghĩa với 'boxes' trong đề bài. Vậy danh từ song hành còn lại sau chữ 'and' là gì?",
-            "guide": "Chính là danh từ 'flooring' (ván sàn/sàn nhà).",
-            "bridge": "Kiểm tra luật ONE WORD ONLY."
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa ăn cạn kiệt thức ăn",
+            "question": "Trong Đoạn 6, cụm từ nào đồng nghĩa với 'ate food sources' (ăn mất nguồn thức ăn)? Con vật nào đứng ngay sau chữ ví dụ 'such as'?",
+            "guide": "'Ate the food sources' được đổi vỏ thành 'depleted the remaining forests of food' (làm cạn kiệt thức ăn trong rừng). Loài vật đứng sau 'introduced species such as' là 'deer'.",
+            "bridge": "Giải thích bẫy số nhiều bất quy tắc."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Từ chính xác cần điền vào chỗ trống là gì?",
-            "guide": "'flooring'.",
-            "bridge": "Hoàn thành câu 25."
+            "title": "Nấc 4/4 - Bẫy ngữ pháp số nhiều & Chốt sổ",
+            "question": "Từ 'deer' không có đuôi '-s', tại sao nó lại đi được với động từ 'were' ở câu hỏi? Có thỏa mãn luật ONE WORD ONLY không?",
+            "guide": "Trong tiếng Anh, 'deer' (loài hươu/nai) là danh từ đặc biệt: số ít và số nhiều viết y chang nhau. Trong bài đọc, nó đi với 'introduced species' (số nhiều) nên hoàn toàn làm chủ ngữ cho 'were'. Đúng 1 từ -> Chốt deer.",
+            "bridge": "Hoàn thành câu 10."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Vào thế kỷ 18, cây du được trồng để lấy gỗ làm thùng hộp và vật phẩm gì.",
-          "<b>Bước 2 / Trích dẫn đoạn D:</b> <i>'In the 18th century, it was planted more widely and its wood was used for items such as storage crates and flooring.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>storage crates</i> = boxes; từ nối tiếp là <i>flooring</i>.",
-          "<b>Bước 4 / Kết luận:</b> Đáp án là <b>flooring</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: S [10 ______] + V [were an animal...] -> Cần Danh từ chỉ tên loài động vật số nhiều ăn tranh thức ăn.<br>• Bước 2 (Keyword): Tiêu đề phụ 'European colonisers' khóa chặt Đoạn 6. Quét từ đồng nghĩa 'ate food' = 'depleted... of food'.<br>• Bước 3: Đề bài: 'introduced [animal] that ate... food sources'. Bài đọc: 'introduced species such as deer depleted the remaining forests of food'.<br>• Bước 4: 'Deer' là danh từ số nhiều bất quy tắc (không thêm -s). Điền deer.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Cần Tên một con vật đứng trước chữ 'were' (số nhiều).<br>• Bước 2: Quét Đoạn 6 thấy 'European colonisers' và chữ 'food' (thức ăn).<br>• Bước 3: Thấy 'introduced species such as deer' (loài du nhập ví dụ như con hươu).<br>• Bước 4: 'Deer' nghĩa là con hươu (số nhiều vẫn viết là deer) -> Điền deer."
         ]
       }
     },
-    "q26": {
-      "num": 26,
-      "text": "Due to its strength, elm was often used for mining equipment and the Cutty Sark's 26 …………… was also constructed from elm.",
-      "finalAnswer": "keel",
-      "highlightId": "hl-q26",
+    "q11": {
+      "num": 11,
+      "text": "a definite sighting of female kakapo on Rakiura Island was reported in the year 11 …………….",
+      "finalAnswer": "1980",
+      "highlightId": "hl-q11",
+      "inputWidth": "100px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp thời gian",
+            "question": "Đề bài viết: 'in the year 11 ______'. Chỗ trống này 100% bắt buộc phải là loại dữ liệu gì?",
+            "guide": "Sau cụm 'in the year', bắt buộc phải là một Con số chỉ Năm (Year/Number).",
+            "bridge": "Dùng cặp mỏ neo cứng để tìm đoạn có con số."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường hai chân kiềng",
+            "question": "Cặp mỏ neo cứng gồm địa danh viết hoa 'Rakiura Island' và từ 'female' xuất hiện ở đoạn mấy?",
+            "guide": "Quét mỏ neo 'Rakiura' và 'female' -> Dừng lại ở nửa sau của Đoạn 8.",
+            "bridge": "Lột vỏ cụm từ chỉ việc xác nhận nhìn thấy."
+          },
+          {
+            "title": "Nấc 3/4 - Triệt tiêu từ đồng nghĩa xác nhận nhìn thấy",
+            "question": "Cụm từ nào trong bài đồng nghĩa với 'a definite sighting was reported' (đã chính thức nhìn thấy)? Con số năm nào đi liền với nó?",
+            "guide": "'A definite sighting was reported' được viết lại thành 'it was confirmed' (đã được xác nhận). Mốc năm gắn liền là 1980.",
+            "bridge": "Kiểm tra điều kiện đáp án là con số."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra luật ONE WORD/NUMBER & Chốt sổ",
+            "question": "Con số 1980 có thỏa mãn luật điền từ không?",
+            "guide": "1980 là 1 con số duy nhất, thỏa mãn ONE WORD AND/OR A NUMBER -> Chốt 1980.",
+            "bridge": "Hoàn thành câu 11."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'in the year [11]' -> Nhãn tuyệt đối: Con số chỉ năm (4 chữ số).<br>• Bước 2 (Keyword): Tên riêng 'Rakiura Island' và danh từ 'female' là cặp chân kiềng ở Đoạn 8.<br>• Bước 3: Đối chiếu: 'definite sighting... was reported' = 'it was confirmed females were also present'.<br>• Bước 4: Mốc thời gian xác nhận là '1980'. Điền 1980.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'in the year ______' -> Cần tìm 1 Năm (con số có 4 số).<br>• Bước 2: Quét chữ viết hoa 'Rakiura' ở Đoạn 8.<br>• Bước 3: Tìm chữ 'females' (con cái), thấy ngay cụm: 'and in 1980 it was confirmed females were also present'.<br>• Bước 4: Chép đúng con số 1980."
+        ]
+      }
+    },
+    "q12": {
+      "num": 12,
+      "text": "the Recovery Plan included an increase in 12 …………….",
+      "finalAnswer": "funding",
+      "highlightId": "hl-q12",
       "inputWidth": "120px",
       "socratic": {
         "steps": [
           {
-            "title": "Nấc 1/4 - Rào ngữ pháp / Đo khuôn khái niệm",
-            "question": "Nhìn cấu trúc sở hữu cách: 'the Cutty Sark's [ 26 ______ ] was also constructed from elm'. Chỗ trống cần loại từ gì?",
-            "guide": "Cần một Danh từ chỉ một bộ phận cấu thành của con tàu buồm huyền thoại Cutty Sark.",
-            "bridge": "Quét mỏ neo tên riêng viết hoa 'Cutty Sark' ở cuối Đoạn D."
+            "title": "Nấc 1/4 - Rào ngữ pháp sau lượng từ tăng tiến",
+            "question": "Đề ghi 'an increase in 12 ______'. Sau giới từ 'in' của cụm tăng trưởng này, mày cần điền loại từ gì?",
+            "guide": "Cần một Danh từ (thường là danh từ không đếm được/trừu tượng) chỉ thứ được gia tăng/rót thêm vào kế hoạch.",
+            "bridge": "Quét mỏ neo tên kế hoạch viết hoa."
           },
           {
-            "title": "Nấc 2/4 - Quét tọa độ / Chọn mỏ neo",
-            "question": "Câu cuối cùng của Đoạn D đề cập đến bộ phận nào của con tàu Cutty Sark?",
-            "guide": "'...and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.'",
-            "bridge": "Đối chiếu 'build the keel of the sailing ship Cutty Sark' với câu hỏi."
+            "title": "Nấc 2/4 - Khóa hiện trường bằng mỏ neo cứng",
+            "question": "Cụm từ viết hoa 'Recovery Plan' xuất hiện lại ở đoạn mấy?",
+            "guide": "Xuất hiện tại câu đầu Đoạn 10 ('In 1996, a new Recovery Plan was launched...').",
+            "bridge": "Bắt cụm từ đồng nghĩa chỉ sự gia tăng."
           },
           {
-            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa / Triệt tiêu đối xứng",
-            "question": "Cụm 'the Cutty Sark's [keel] was also constructed' khớp như thế nào với bài đọc?",
-            "guide": "'build the keel of... Cutty Sark' = the Cutty Sark's keel was constructed.",
-            "bridge": "Kiểm tra luật ONE WORD ONLY."
+            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa tăng thêm",
+            "question": "Trong Đoạn 10, cụm từ nào đồng nghĩa với 'an increase in' (sự gia tăng về...)? Danh từ nào đứng ngay sau chữ 'of'?",
+            "guide": "'An increase in' được đổi vỏ thành 'a higher amount of' (một lượng cao hơn của...). Danh từ đứng ngay sau là 'funding' (tiền tài trợ/ngân sách).",
+            "bridge": "Kiểm tra giới hạn từ và ý nghĩa."
           },
           {
-            "title": "Nấc 4/4 - So khớp & Chốt sổ",
-            "question": "Từ chính xác 1 từ duy nhất cần điền là gì?",
-            "guide": "'keel' (sống tàu).",
-            "bridge": "Hoàn thành toàn bộ câu hỏi của bài đọc."
+            "title": "Nấc 4/4 - Kiểm tra nghĩa & Chốt sổ",
+            "question": "Từ 'funding' có nghĩa là gì? Có đúng 1 từ duy nhất không?",
+            "guide": "'Funding' là tiền tài trợ/kinh phí, hoàn toàn phù hợp với ngữ cảnh tăng ngân sách cho dự án cứu vẹt. Đúng 1 từ -> Chốt funding.",
+            "bridge": "Hoàn thành câu 12."
           }
         ]
       },
       "explanation": {
         "steps": [
-          "<b>Bước 1 / Ý câu hỏi:</b> Nhờ độ bền, gỗ du được dùng làm sống tàu của con tàu Cutty Sark.",
-          "<b>Bước 2 / Trích dẫn đoạn D:</b> <i>'It was also suitable for items that experienced high levels of impact and was used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment.'</i>",
-          "<b>Bước 3 / Từ đồng nghĩa:</b> <i>build the keel of... Cutty Sark</i> = the Cutty Sark's keel was constructed.",
-          "<b>Bước 4 / Kết luận:</b> Đáp án là <b>keel</b>."
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'included an increase in [12]' -> Cần Danh từ chỉ đối tượng được tăng cường.<br>• Bước 2 (Keyword): 'Recovery Plan' là thuật ngữ dự án viết hoa ở đầu Đoạn 10.<br>• Bước 3: 'an increase in' = 'a higher amount of'. Danh từ cốt lõi sau 'of' là 'funding'.<br>• Bước 4: 'funding' là danh từ không đếm được, khớp hoàn hảo. Điền funding.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'increase in ______' (tăng cái gì đó lên) -> Cần 1 Danh từ.<br>• Bước 2: Quét chữ viết hoa 'Recovery Plan' ở đầu Đoạn 10.<br>• Bước 3: Tìm chữ đồng nghĩa: 'higher amount of' (= increase: số lượng nhiều hơn/tăng lên).<br>• Bước 4: Từ đứng sau chữ 'of' là 'funding' (tiền tài trợ) -> Điền funding."
+        ]
+      }
+    },
+    "q13": {
+      "num": 13,
+      "text": "a current goal of the Recovery Plan is to maintain the involvement of 13 ……………. in kakapo protection.",
+      "finalAnswer": "stakeholders",
+      "highlightId": "hl-q13",
+      "inputWidth": "140px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp đối tượng con người",
+            "question": "Cấu trúc đề bài: 'maintain the involvement of 13 ______' (duy trì sự tham gia của...). Theo Quy tắc 21, từ cần điền là loại từ gì và chỉ đối tượng nào?",
+            "guide": "Cần một Danh từ (thường là số nhiều) chỉ nhóm người / tổ chức / bên liên quan tham gia vào việc bảo tồn.",
+            "bridge": "Quét xuống câu cuối của văn bản theo dòng chảy tịnh tiến."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường câu cuối cùng",
+            "question": "Dòng chảy tịnh tiến (Quy tắc 26): Câu 13 là câu cuối cùng của bài thi, có mỏ neo 'current goal' (mục tiêu hiện nay). Mắt em phải quét xuống đoạn nào?",
+            "guide": "Quét xuống Đoạn 12 (đoạn cuối cùng) bắt đầu bằng chữ 'Today... Its key goals are...'.",
+            "bridge": "Triệt tiêu cụm từ duy trì sự can thiệp, gắn kết."
+          },
+          {
+            "title": "Nấc 3/4 - Triệt tiêu cấu trúc duy trì sự tham gia",
+            "question": "Cấu trúc 'maintain the involvement of... in protection' đồng nghĩa với cụm nào ở cuối đoạn 12? Danh từ nhóm người nào đứng giữa chữ 'ensure' và 'continue'?",
+            "guide": "'Maintain the involvement in...' được viết lại thành 'ensure... continue to be fully engaged in...'. Nhóm đối tượng đứng ở giữa là 'stakeholders' (các bên liên quan).",
+            "bridge": "Kiểm tra đuôi số nhiều của danh từ."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra ký tự & Chốt sổ",
+            "question": "Từ 'stakeholders' có đuôi '-s' không? Có giữ nguyên 100% dạng chữ theo Quy tắc 30 không?",
+            "guide": "'Stakeholders' có đuôi '-s', đúng 1 từ duy nhất. Áp dụng Quy tắc 30 -> Chốt stakeholders.",
+            "bridge": "Hoàn thành câu 13."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'the involvement of [13] in kakapo protection' -> Cần Danh từ chỉ chủ thể tham gia.<br>• Bước 2 (Keyword): 'current goal' = 'Today... key goals' dẫn thẳng mắt về Đoạn 12 (đoạn cuối).<br>• Bước 3: 'maintain the involvement... in kakapo protection' = 'ensure... continue to be fully engaged in the preservation of the species'.<br>• Bước 4: Chủ thể ở vị trí đối xứng là 'stakeholders'. Điền stakeholders.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'involvement of ______' (sự tham gia của ai đó) -> Cần từ chỉ người.<br>• Bước 2: Quét đoạn cuối cùng thấy chữ 'Today' (= current: hiện nay) và chữ 'goals' (mục tiêu).<br>• Bước 3: Thấy 'engaged in' (= involvement: tham gia), thấy 'preservation' (= protection: bảo vệ).<br>• Bước 4: Nhặt từ lạ chỉ người đứng ở giữa là 'stakeholders' (các bên liên quan) -> Chép nguyên chữ stakeholders."
         ]
       }
     }
