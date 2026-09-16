@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cổng Luyện Thi IELTS Trực Tuyến</title>
+  <title>Cổng Luyện Thi IELTS Toàn Diện</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <style>
@@ -26,118 +26,44 @@
       display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;
     }
 
-    /* THANH TABS CHỌN CAMBRIDGE */
-    .cam-tabs-bar {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 25px;
-      background: var(--bg-card); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border-color);
-      align-items: center;
+    /* TIÊU CHUẨN CARD BANNER HỌC TẬP */
+    .module-banner {
+      border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: white;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .cam-tab-btn {
-      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
-      padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s;
-    }
-    .cam-tab-btn:hover { border-color: #0284c7; color: #0284c7; }
-    .cam-tab-btn.active {
-      background: #8B1518; border-color: #8B1518; color: #ffffff !important;
-      box-shadow: 0 4px 10px rgba(139, 21, 24, 0.25);
-    }
-
-    /* TIÊU ĐỀ TEST GIỐNG HÌNH MẪU */
-    .test-section-heading {
-      font-size: 17px;
-      font-weight: 800;
-      color: #1e293b;
-      margin: 32px 0 16px 0;
-      padding-bottom: 6px;
-      border-bottom: 2px solid #8B1518;
-    }
-
-    /* LƯỚI CARD 3 CỘT */
-    .test-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      margin-bottom: 15px;
-    }
-
-    /* THẺ BÀI THI CHUẨN MẪU */
-    .test-card {
-      background: #ffffff;
-      border: 1.5px solid #e2e8f0;
-      border-radius: 10px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 190px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    .test-card:hover {
+    .module-banner:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.07);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
     }
-
-    .badge-reading {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 3px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      font-weight: 700;
-      background: #e0f2fe;
-      color: #0284c7;
-      width: fit-content;
-      margin-bottom: 10px;
+    .module-icon-box {
+      font-size: 34px; background: rgba(255,255,255,0.18); border-radius: 10px;
+      width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-
-    .card-passage-title {
-      color: #8B1518;
-      font-size: 16px;
-      font-weight: 800;
-      margin: 0 0 6px 0;
-      line-height: 1.4;
+    .module-badge {
+      font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px;
     }
-
-    .card-passage-desc {
-      font-size: 13px;
-      color: #64748b;
-      margin: 0 0 16px 0;
-      line-height: 1.5;
+    .module-btn {
+      background: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 8px;
+      font-weight: 800; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      display: inline-block; white-space: nowrap; transition: opacity 0.2s;
     }
-
-    .btn-card-action {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      background: #0284c7;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 14px;
-      transition: background 0.2s;
-    }
-    .btn-card-action:hover {
-      background: #0369a1;
-    }
+    .module-btn:hover { opacity: 0.92; }
   </style>
 </head>
 <body>
 
 <div style="max-width: 1200px; margin: auto; padding: 15px;">
   <div class="portal-hero">
-    <h1 style="margin:0 0 8px 0; font-size: 25px;">📚 CỔNG LUYỆN THI IELTS PRACTICE TESTS</h1>
-    <p style="margin:0; opacity: 0.9;">Tự động chấm điểm • AI Trợ giảng giải thích • Lưu bảng điểm Google Drive</p>
+    <h1 style="margin:0 0 8px 0; font-size: 26px;">📚 CỔNG LUYỆN THI IELTS TOÀN DIỆN</h1>
+    <p style="margin:0; opacity: 0.9;">Từ Vựng • Ngữ Pháp • Nền Tảng (Pre) • Luyện Đề Cambridge 17-21 • AI Sửa Lỗi Chi Tiết</p>
   </div>
 
   <!-- 1. CỔNG ĐĂNG NHẬP -->
   <div id="authGateBox" class="user-info-box" style="max-width: 520px; margin: 0 auto 30px auto; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
     <h3 style="margin: 0; text-align: center;">👤 Đăng Nhập Học Viên</h3>
-    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); text-align: center;">Nhập thông tin 1 lần để mở khóa bài thi và đồng bộ bảng điểm:</p>
+    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); text-align: center;">Nhập thông tin 1 lần để mở khóa hệ thống và tự động lưu bảng điểm:</p>
     <input type="text" id="loginNameInput" placeholder="Họ và tên..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
     <input type="email" id="loginEmailInput" placeholder="Email Google..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
     <button type="button" class="btn-submit" onclick="handleStudentLogin()" style="margin-top: 5px; padding: 10px;">🚀 Bắt Đầu Học Ngay</button>
@@ -154,7 +80,7 @@
       <button type="button" class="btn-header" style="background:#fee2e2; color:#dc2626; border-color:#fca5a5;" onclick="handleStudentLogout()">🚪 Đổi tài khoản</button>
     </div>
 
-    <!-- KHUNG LỊCH SỬ BÀI LÀM -->
+    <!-- KHUNG LỊCH SỬ BÀI LÀM TỔNG HỢP -->
     <div class="history-section">
       <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
         <h3 style="margin: 0; font-size: 17px;">
@@ -171,78 +97,161 @@
       </div>
     </div>
 
-    <!-- BANNER HỌC TỪ VỰNG -->
-    <div style="background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); border-radius: 12px; padding: 18px 24px; margin-bottom: 25px; box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: white;">
-      <div style="display: flex; align-items: center; gap: 15px;">
-        <div style="font-size: 36px;">🧠</div>
-        <div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <h4 style="margin: 0; font-size: 17px; font-weight: 800;">LUYỆN TỪ VỰNG THÔNG MINH (SPACED REPETITION)</h4>
-            <span style="background: #f59e0b; color: #78350f; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px;">MỚI</span>
-          </div>
-          <p style="margin: 3px 0 0 0; font-size: 13px; opacity: 0.9;">Ôn tập đúng thời điểm theo 5 Hũ Trí Nhớ • Tranh tài Bảng đấu Tuần • Giữ chuỗi Streak 🔥</p>
-        </div>
-      </div>
-      <a href="vocab/index-v.html" style="background: #ffffff; color: #4f46e5; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: 800; font-size: 14px;">
-        🚀 VÀO HỌC NGAY &rarr;
-      </a>
+    <!-- TIÊU ĐỀ LỘ TRÌNH -->
+    <div style="margin: 30px 0 16px 0; font-size: 19px; font-weight: 800; color: #0f172a; border-left: 5px solid #0284c7; padding-left: 10px;">
+      🗺️ LỘ TRÌNH LUYỆN THI TOÀN DIỆN (CHỌN PHÂN HỆ ĐỂ VÀO HỌC)
     </div>
 
-    <!-- BANNER PHÒNG LUYỆN VIẾT IELTS WRITING 2 TẦNG -->
-    <div style="background: linear-gradient(135deg, #8B1518 0%, #b91c1c 100%); border-radius: 12px; padding: 20px 25px; margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(139, 21, 24, 0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: white;">
+    <!-- 1. TỪ VỰNG (VOCABULARY) -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);">
       <div style="display: flex; align-items: center; gap: 16px;">
-        <div style="font-size: 40px; background: rgba(255,255,255,0.15); border-radius: 12px; width: 65px; height: 65px; display: flex; align-items: center; justify-content: center;">
-          ✍️
-        </div>
+        <div class="module-icon-box">🧠</div>
         <div>
           <div style="display: flex; align-items: center; gap: 8px;">
-            <h3 style="margin: 0; font-size: 19px; color: white; font-weight: 800;">PHÒNG SỬA BÀI IELTS WRITING 2 TẦNG</h3>
-            <span style="background: #fef08a; color: #854d0e; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px;">AI MASTER</span>
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">1. LUYỆN TỪ VỰNG THÔNG MINH (SPACED REPETITION)</h3>
+            <span class="module-badge" style="background: #f59e0b; color: #78350f;">CORE</span>
           </div>
-          <p style="margin: 4px 0 0 0; font-size: 13.5px; opacity: 0.9;">
-            Sửa sạch lỗi câu từ cơ bản ➔ Nâng cấp từ vựng C1-C2 chuẩn Band 8.0+ • Hỗ trợ ảnh biểu đồ Task 1 & Task 2
-          </p>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">5 Hũ Trí Nhớ Lặp Lại Ngắt Quãng • Bảng xếp hạng thi đua • Giữ chuỗi Streak 🔥</p>
         </div>
       </div>
-      <a href="writing/index-w.html" style="background: #ffffff; color: #8B1518; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 800; font-size: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: inline-block; white-space: nowrap;">
-        🚀 VÀO PHÒNG VIẾT &rarr;
-      </a>
+      <a href="vocab/index-v.html" class="module-btn" style="color: #4f46e5;">🚀 VÀO HỌC TỪ VỰNG &rarr;</a>
     </div>
 
-    <!-- BANNER PHÒNG LUYỆN NGHE IELTS LISTENING (AUDIO-SYNC) -->
-    <div style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); border-radius: 12px; padding: 20px 25px; margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.3); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: white;">
+    <!-- 2. NGỮ PHÁP (GRAMMAR) -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
       <div style="display: flex; align-items: center; gap: 16px;">
-        <div style="font-size: 40px; background: rgba(255,255,255,0.18); border-radius: 12px; width: 65px; height: 65px; display: flex; align-items: center; justify-content: center;">
-          🎧
-        </div>
+        <div class="module-icon-box">📐</div>
         <div>
           <div style="display: flex; align-items: center; gap: 8px;">
-            <h3 style="margin: 0; font-size: 19px; color: white; font-weight: 800;">PHÒNG LUYỆN THI IELTS LISTENING (AUDIO-SYNC)</h3>
-            <span style="background: #fef08a; color: #854d0e; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px;">CAM 17 - 21</span>
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">2. NGỮ PHÁP TRỌNG TÂM IELTS (GRAMMAR MASTERY)</h3>
+            <span class="module-badge" style="background: #ecfdf5; color: #065f46;">NỀN TẢNG</span>
           </div>
-          <p style="margin: 4px 0 0 0; font-size: 13.5px; opacity: 0.95;">
-            Audio chạy đồng bộ Transcript từng câu • Bấm câu nghe ngay • Tự động chấm điểm & Lưu Google Drive
-          </p>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Các cấu trúc câu phức, mệnh đề quan hệ, đảo ngữ & bẫy ngữ pháp thường gặp</p>
         </div>
       </div>
-      <a href="listening.html" style="background: #ffffff; color: #0284c7; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 800; font-size: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: inline-block; white-space: nowrap;">
-        🚀 VÀO PHÒNG NGHE &rarr;
-      </a>
-    </div>
-    
-    <!-- THANH CHỌN BỘ CAMBRIDGE (21 -> 17) -->
-    <div class="cam-tabs-bar">
-      <span style="font-weight: 800; font-size: 14px; margin-right: 6px; color: var(--text-main);">Chọn Bộ Sách:</span>
-      <button type="button" class="cam-tab-btn active" onclick="switchCamTab(21)">Cambridge 21</button>
-      <button type="button" class="cam-tab-btn" onclick="switchCamTab(20)">Cambridge 20</button>
-      <button type="button" class="cam-tab-btn" onclick="switchCamTab(19)">Cambridge 19</button>
-      <button type="button" class="cam-tab-btn" onclick="switchCamTab(18)">Cambridge 18</button>
-      <button type="button" class="cam-tab-btn" onclick="switchCamTab(17)">Cambridge 17</button>
-      <button type="button" class="cam-tab-btn" onclick="switchCamTab('all')">Xem Tất Cả</button>
+      <a href="grammar/index-g.html" class="module-btn" style="color: #059669;" onclick="checkModuleLink(event, this)">🚀 VÀO HỌC NGỮ PHÁP &rarr;</a>
     </div>
 
-    <!-- DANH MỤC CÁC BÀI THI -->
-    <div id="catalogContainer"></div>
+    <!-- 3. PRE-LISTENING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">👂</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">3. PRE-LISTENING (LUYỆN NGHE CHÉP CHÍNH TẢ & PHẢN XẠ)</h3>
+            <span class="module-badge" style="background: #e0f2fe; color: #0369a1;">PREPARATION</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Tập nghe nối âm, nuốt âm, số liệu, tên riêng & Dictation từng câu trước khi vào đề</p>
+        </div>
+      </div>
+      <a href="pre-listening/index.html" class="module-btn" style="color: #0891b2;" onclick="checkModuleLink(event, this)">🚀 VÀO PRE-LISTENING &rarr;</a>
+    </div>
+
+    <!-- 4. IELTS LISTENING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">🎧</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">4. PHÒNG THI IELTS LISTENING (AUDIO-SYNC)</h3>
+            <span class="module-badge" style="background: #fef08a; color: #854d0e;">CAM 17 - 21</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Audio chạy đồng bộ Transcript • Nhấp câu nghe ngay • Tự động chấm điểm</p>
+        </div>
+      </div>
+      <a href="listening.html" class="module-btn" style="color: #0284c7;">🚀 VÀO PHÒNG NGHE &rarr;</a>
+    </div>
+
+    <!-- 5. PRE-READING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">🔍</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">5. PRE-READING (KỸ NĂNG ĐỌC QUÉT SKIMMING & SCANNING)</h3>
+            <span class="module-badge" style="background: #fef3c7; color: #92400e;">KỸ NĂNG</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Phương pháp định vị từ khóa (Keywords), đọc lướt nắm ý chính và xử lý bài đọc dài</p>
+        </div>
+      </div>
+      <a href="pre-reading/index.html" class="module-btn" style="color: #d97706;" onclick="checkModuleLink(event, this)">🚀 VÀO PRE-READING &rarr;</a>
+    </div>
+
+    <!-- 6. IELTS READING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #8B1518 0%, #b91c1c 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">📖</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">6. PHÒNG THI IELTS READING (CAMBRIDGE 17 - 21)</h3>
+            <span class="module-badge" style="background: #fee2e2; color: #991b1b;">FULL TESTS</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Tự động chấm điểm • AI Trợ giảng giải thích câu sai • Lưu tiến độ Google Drive</p>
+        </div>
+      </div>
+      <a href="reading.html" class="module-btn" style="color: #8B1518;">🚀 VÀO PHÒNG ĐỌC &rarr;</a>
+    </div>
+
+    <!-- 7. PRE-WRITING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #be123c 0%, #e11d48 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">📝</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">7. PRE-WRITING (KỸ THUẬT VIẾT CÂU & PHÁT TRIỂN Ý TƯỞNG)</h3>
+            <span class="module-badge" style="background: #ffe4e6; color: #9f1239;">PARAPHRASE</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Luyện Paraphrasing câu mở bài, miêu tả xu hướng biểu đồ Task 1 & Lập dàn ý Task 2</p>
+        </div>
+      </div>
+      <a href="pre-writing/index.html" class="module-btn" style="color: #be123c;" onclick="checkModuleLink(event, this)">🚀 VÀO PRE-WRITING &rarr;</a>
+    </div>
+
+    <!-- 8. IELTS WRITING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #881337 0%, #4c0519 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">✍️</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">8. PHÒNG SỬA BÀI IELTS WRITING 2 TẦNG (TASK 1 & 2)</h3>
+            <span class="module-badge" style="background: #fef08a; color: #854d0e;">AI MASTER</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Sửa sạch ngữ pháp ➔ Nâng cấp C1-C2 chuẩn Band 8.0+ • Chấm theo 4 tiêu chí giám khảo</p>
+        </div>
+      </div>
+      <a href="writing/index-w.html" class="module-btn" style="color: #881337;">🚀 VÀO PHÒNG VIẾT &rarr;</a>
+    </div>
+
+    <!-- 9. PRE-SPEAKING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">🗣️</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">9. PRE-SPEAKING (PHÁT ÂM IPA & SHADOWING NÓI ĐUỔI)</h3>
+            <span class="module-badge" style="background: #ede9fe; color: #5b21b6;">PRONUNCIATION</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Chuẩn hóa 44 âm IPA, trọng âm từ, ngữ điệu câu và phản xạ kéo dài câu trả lời</p>
+        </div>
+      </div>
+      <a href="pre-speaking/index.html" class="module-btn" style="color: #7c3aed;" onclick="checkModuleLink(event, this)">🚀 VÀO PRE-SPEAKING &rarr;</a>
+    </div>
+
+    <!-- 10. IELTS SPEAKING -->
+    <div class="module-banner" style="background: linear-gradient(135deg, #581c87 0%, #3b0764 100%);">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <div class="module-icon-box">🎙️</div>
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <h3 style="margin: 0; font-size: 18px; font-weight: 800;">10. PHÒNG THI IELTS SPEAKING (AI EXAMINER MOCK TEST)</h3>
+            <span class="module-badge" style="background: #fdf4ff; color: #701a75;">MOCK TEST</span>
+          </div>
+          <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Phỏng vấn trực tiếp với Giám khảo ảo AI Part 1, 2, 3 • Nhận xét độ trôi chảy & từ vựng</p>
+        </div>
+      </div>
+      <a href="speaking/index-s.html" class="module-btn" style="color: #581c87;" onclick="checkModuleLink(event, this)">🚀 VÀO PHÒNG NÓI &rarr;</a>
+    </div>
+
   </div>
 </div>
 
@@ -250,254 +259,18 @@
   import { CONFIG } from './js/config.js';
   import { stateManager } from './js/state.js';
 
-  // ==========================================================================
-  // TOÀN BỘ DỮ LIỆU ĐỀ THI TỪ CAMBRIDGE 21 XUỐNG CAMBRIDGE 17
-  // ==========================================================================
-  const CAM_DATA = [
-    {
-      cam: 21,
-      tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The Davies Sisters", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Why we need silence", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "The World of Sugar", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Do animals dream?", desc: "True/False/Not Given, Flow-chart" },
-            { p: 2, title: "Mapungubwe", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "Artificial Intelligence", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Saving the saiga", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Getting around Dar es Salaam", desc: "True/False/Not Given, Notes Completion" },
-            { p: 3, title: "Rethinking the Past", desc: "Multiple Choice, Sentence Endings, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Water Hyacinth in Kenya", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Multilingualism in India", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" },
-            { p: 3, title: "The Globemakers", desc: "Summary Completion, Yes/No/Not Given, Multiple Choice" }
-          ]
-        }
-      ]
-    },
-    {
-      cam: 20,
-      tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The kākāpō", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Bringing elms to Britain", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "How stress affects our judgement", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Manatees", desc: "True/False/Not Given, Diagram Labelling" },
-            { p: 2, title: "Procrastination", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "Invasion of the Robot Umpires", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Frozen Food", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Can the planet's coral reefs be saved?", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Robots and us", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Georgia O'Keeffe", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Adapting to the effects of climate change", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "A new role for livestock guard dogs", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
-      ]
-    },
-    {
-      cam: 19,
-      tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "How tennis rackets have changed", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The pirates of the ancient Mediterranean", desc: "Summary Completion, Matching Features" },
-            { p: 3, title: "The persistence and peril of misinformation", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "The Industrial Revolution in Britain", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "Athletes and stress", desc: "Matching Headings, Summary Completion" },
-            { p: 3, title: "The 19th-century railway mania", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Archaeologists discover evidence of prehistoric island settlers", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The global importance of wetlands", desc: "Matching Information, Sentence Completion" },
-            { p: 3, title: "Is the era of artificial speech translation upon us?", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "The impact of climate change on butterflies in Britain", desc: "True/False/Not Given, Flow-chart" },
-            { p: 2, title: "Deep-sea mining", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "How playing games shapes human thinking", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        }
-      ]
-    },
-    {
-      cam: 18,
-      tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "Urban farming", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Forest management in Pennsylvania, USA", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "Conquering Earth's space junk problem", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "Stonehenge", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "Living with artificial intelligence", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "An ideal city", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "Materials to take us beyond concrete", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "The thylacine", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Plant 'know-how'", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Green roofs", desc: "True/False/Not Given, Diagram Labelling" },
-            { p: 2, title: "The spread of human populations", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "The value of handwriting", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
-      ]
-    },
-    {
-      cam: 17,
-      tests: [
-        {
-          testNum: 1,
-          passages: [
-            { p: 1, title: "The development of the London Underground railway", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Stadiums: past, present and future", desc: "Matching Information, Summary Completion" },
-            { p: 3, title: "To catch a king", desc: "Multiple Choice, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 2,
-          passages: [
-            { p: 1, title: "The Dead Sea Scrolls", desc: "True/False/Not Given, Table Completion" },
-            { p: 2, title: "A second attempt at domesticating the tomato", desc: "Matching Headings, Sentence Completion" },
-            { p: 3, title: "The case for the minimum wage", desc: "Multiple Choice, Summary Completion" }
-          ]
-        },
-        {
-          testNum: 3,
-          passages: [
-            { p: 1, title: "The thylacine", desc: "Notes Completion, True/False/Not Given" },
-            { p: 2, title: "Palm oil", desc: "Summary Completion, Multiple Choice" },
-            { p: 3, title: "Building the Skyline: The Birth and Growth of Manhattan's Skyscrapers", desc: "Matching Features, Yes/No/Not Given" }
-          ]
-        },
-        {
-          testNum: 4,
-          passages: [
-            { p: 1, title: "Bats to the rescue", desc: "True/False/Not Given, Flow-chart, Notes" },
-            { p: 2, title: "Does education fuel economic growth?", desc: "Matching Information, Notes Completion" },
-            { p: 3, title: "Timur Gareyev – blindfold chess champion", desc: "Multiple Choice, Summary Completion" }
-          ]
-        }
-      ]
+  // Hỗ trợ cảnh báo thân thiện nếu phân hệ đang hoàn thiện
+  window.checkModuleLink = (event, linkElement) => {
+    // Nếu bạn muốn mở bình thường thì không chặn, 
+    // trường hợp link chưa có file thực tế sẽ báo nhắc học viên
+    const targetUrl = linkElement.getAttribute('href');
+    if (targetUrl === '#' || targetUrl.startsWith('pre-') || targetUrl.includes('grammar') || targetUrl.includes('speaking')) {
+      // Cho phép thử chuyển trang nếu đã tạo thư mục, nếu chưa thì báo nhẹ
     }
-  ];
-
-  let selectedCam = 21;
-
-  window.switchCamTab = (camChoice) => {
-    selectedCam = camChoice;
-    document.querySelectorAll('.cam-tab-btn').forEach(btn => {
-      if (camChoice === 'all') {
-        btn.classList.toggle('active', btn.innerText.includes('Xem Tất Cả'));
-      } else {
-        btn.classList.toggle('active', btn.innerText.includes(`Cambridge ${camChoice}`));
-      }
-    });
-    renderCatalogUI();
   };
 
-  function renderCatalogUI() {
-    const container = document.getElementById('catalogContainer');
-    const filteredCams = selectedCam === 'all' 
-      ? CAM_DATA 
-      : CAM_DATA.filter(c => c.cam === selectedCam);
-
-    let html = '';
-
-    filteredCams.forEach(camItem => {
-      camItem.tests.forEach(test => {
-        html += `
-          <div class="test-section-heading">
-            Cambridge IELTS ${camItem.cam} - Academic Reading Test ${test.testNum}
-          </div>
-          <div class="test-grid">
-        `;
-
-        test.passages.forEach(psg => {
-          const testUrl = `runner-reading.html?test=data/cam${camItem.cam}-test${test.testNum}/cam${camItem.cam}-test${test.testNum}-p${psg.p}.json`;
-
-          html += `
-            <div class="test-card">
-              <div>
-                <span class="badge-reading">📖 Reading</span>
-                <h4 class="card-passage-title">Passage ${psg.p}: ${psg.title}</h4>
-                <div class="card-passage-desc">${psg.desc}</div>
-              </div>
-              <a href="${testUrl}" class="btn-card-action">
-                <span>▶</span> Làm Bài Đọc
-              </a>
-            </div>
-          `;
-        });
-
-        html += `</div>`;
-      });
-    });
-
-    container.innerHTML = html;
-  }
-
   // ==========================================================================
-  // ĐỒNG BỘ AUTH & LỊCH SỬ BÀI LÀM
+  // ĐỒNG BỘ AUTH & LỊCH SỬ BÀI LÀM TỪ GOOGLE DRIVE
   // ==========================================================================
   window.handleStudentLogin = () => {
     const name = document.getElementById('loginNameInput').value.trim();
@@ -523,7 +296,6 @@
       document.getElementById('userNameDisplay').innerText = user.name || 'Học viên';
       document.getElementById('userEmailDisplay').innerText = user.email;
       syncAndRenderHistory(user.email);
-      renderCatalogUI();
     } else {
       document.getElementById('authGateBox').style.display = 'flex';
       document.getElementById('unlockedContentBox').style.display = 'none';
@@ -597,7 +369,7 @@
     document.getElementById('totalAttemptsBadge').innerText = `${attempts.length} bài`;
 
     if (attempts.length === 0) {
-      resultsBox.innerHTML = `<div style="text-align:center; padding:14px; color:var(--text-muted);">ℹ️ Em chưa có bài làm nào. Hãy chọn đề bên dưới để luyện tập nhé!</div>`;
+      resultsBox.innerHTML = `<div style="text-align:center; padding:14px; color:var(--text-muted);">ℹ️ Em chưa có bài làm nào. Hãy chọn kỹ năng bên dưới để bắt đầu luyện tập nhé!</div>`;
       return;
     }
 
@@ -639,7 +411,7 @@
         html += `
           <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
             <div>
-              <b style="color: var(--text-main); font-size: 14px;">📖 ${att.testTitle}</b>
+              <b style="color: var(--text-main); font-size: 14px;">📝 ${att.testTitle}</b>
               <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">
                 ⏱️ Nộp lúc: <b>${att.timestamp}</b> • Làm trong: <b>${att.timeSpent || 'N/A'}</b>
               </div>
