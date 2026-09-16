@@ -1,5 +1,5 @@
 {
-  "title": "IELTS Academic Vol 7 - Reading Test 1 - Passage 3",
+  "title": "Reading Passage 3: Neanderthal Technology",
   "answers": {
     "q27": "v",
     "q28": "iii",
@@ -11,11 +11,613 @@
     "q34": "C",
     "q35": "B",
     "q36": "C",
-    "q37": ["sub-arctic", "subarctic"],
+    "q37": "sub-arctic",
     "q38": "short",
-    "q39": ["predatory animals", "animals"],
+    "q39": "predatory animals",
     "q40": "C"
   },
-  "passageHtml": "<h2>READING PASSAGE 3</h2><h3>Neanderthal Technology</h3><p><b>A</b> <span class='hl' id='hl-q27' data-q='[Q27]'>We think of our prehistoric ancestors as people of the ice and snow, living in caves... open-air sites with constructed shelter were the only option</span>.</p><p><b>B</b> <span class='hl' id='hl-q28' data-q='[Q28]'>In south-west France, the limestone caves of the Périgord region made ideal homes for the Neanderthal people... exceptionally benign habitat...</span></p><p><b>C</b> <span class='hl' id='hl-q29' data-q='[Q29]'>In Central and Eastern Europe, open-air sites were mostly located near water...</span> <span class='hl' id='hl-q35' data-q='[Q35]'>From <span class='kw'>Moldova</span>, comes evidence of a large tent: a ring of mainly mammoth bones</span>.</p><p><b>D</b> <span class='hl' id='hl-q30' data-q='[Q30]'>In the Grotte du Lazaret, claims for skin tents have been advanced...</span> <span class='hl' id='hl-q36' data-q='[Q36]'>wolf and fox foot bones indicate the use of <span class='kw'>animal pelts</span></span>. <span class='hl' id='hl-q34' data-q='[Q34]'>Ancient fires are edged with small <span class='kw'>marine mollusc shells</span></span>. <span class='hl' id='hl-q33' data-q='[Q33]'>The cave of <span class='kw'>Baume-Bonne</span> contains cobbles laid down to take care of a puddle area</span>.</p><p><b>E</b> <span class='hl' id='hl-q31' data-q='[Q31]'>survival in the <span class='kw'>sub-arctic</span> conditions is inconceivable without control of fire. Fire gave warmth, light, and defence against <span class='kw'>predatory animals</span></span>. <span class='hl' id='hl-q32' data-q='[Q32]'>A charred piece of birch from <span class='kw'>Krapina</span> is thought to be a twirl stick</span>. <span class='hl' id='hl-q38' data-q='[Q38]'>Judging from shallow heat penetration, this fire was only of a <span class='kw'>short</span> duration</span>.</p>",
-  "questionHtml": "<div class='section-title'>Questions 27-31: Headings</div><div class='question' id='q27'>Paragraph A: <input type='text' id='q27_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> v</div></div><div class='question' id='q28'>Paragraph B: <input type='text' id='q28_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> iii</div></div><div class='question' id='q29'>Paragraph C: <input type='text' id='q29_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> i</div></div><div class='question' id='q30'>Paragraph D: <input type='text' id='q30_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> iv</div></div><div class='question' id='q31'>Paragraph E: <input type='text' id='q31_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> vi</div></div><div class='section-title'>Questions 32-36: Matching Places</div><div class='question' id='q32'>32. Burnt piece of wood: <input type='text' id='q32_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> E (Krapina)</div></div><div class='question' id='q33'>33. Prevent pools of water: <input type='text' id='q33_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> D (Baume-Bonne)</div></div><div class='question' id='q34'>34. Remains of sea creatures: <input type='text' id='q34_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> C (Lazaret)</div></div><div class='question' id='q35'>35. Circular arrangement of bones: <input type='text' id='q35_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> B (Moldova)</div></div><div class='question' id='q36'>36. Animal fur for warmth: <input type='text' id='q36_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> C (Lazaret)</div></div><div class='section-title'>Questions 37-39: Summary</div><div class='question' id='q37'>37. Conditions were: <input type='text' id='q37_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> sub-arctic</div></div><div class='question' id='q38'>38. Lasted a: <input type='text' id='q38_input' class='fill-input'> time<div class='result'></div><div class='explanation'><b>Đáp án:</b> short</div></div><div class='question' id='q39'>39. Dangerous: <input type='text' id='q39_input' class='fill-input'><div class='result'></div><div class='explanation'><b>Đáp án:</b> predatory animals</div></div><div class='section-title'>Question 40</div><div class='question' id='q40'>40. Purpose: <b>C.</b> discuss what is known about Neanderthal settlements<div class='options-vertical'><label><input type='radio' name='q40' value='A'> A</label><label><input type='radio' name='q40' value='B'> B</label><label><input type='radio' name='q40' value='C'> C</label><label><input type='radio' name='q40' value='D'> D</label></div><div class='result'></div><div class='explanation'><b>Đáp án:</b> C</div></div><button class='btn-submit' onclick='checkAnswers()'>CHẤM BÀI VÀ NỘP KẾT QUẢ</button>"
+  "passageHtml": "<h2>READING PASSAGE 3</h2><p>You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.</p><h3>Neanderthal Technology</h3><p><strong>A</strong> <span class=\"hl\" id=\"hl-q27\" data-q=\"[Q27]\">We think of our prehistoric ancestors as people of the ice and snow, <span class=\"kw\">living in caves</span>, and for many of the west European Neanderthalers that is a just picture of their life. But where there were no caves, further to the east on the Russian steppe, for example, <span class=\"kw\">open-air sites with some sort of constructed shelter</span> were the only option. We now know much more about the cave sites than the open-air ones because, historically, it was the cave sites of Western Europe that were first explored by archaeologists and also because open-air sites are harder to find - many of them have disappeared under deep mud deposits or under the rising postglacial seas. Caves, moreover, aid the survival of archaeological material and can preserve the records of remote millennia.</span></p><p><strong>B</strong> <span class=\"hl\" id=\"hl-q28\" data-q=\"[Q28]\">In south-west France, the limestone caves of the Périgord region made <span class=\"kw\">ideal homes</span> for the Neanderthal people. There were good supplies of flint to hand for axes and the like, and the caves were often sited in small river valleys that offered protection against the worst of the weather. The Neanderthalers liked south-facing caves, for obvious reasons of sunshine and wind avoidance, and caves at some height above the valley floor offered refuge from floods and good game-watching vantage points. The Périgord region during the last ice age was, in fact, an <span class=\"kw\">exceptionally benign habitat</span> for humans. It enjoyed a rather maritime climate with cooler summers that permitted the extension of tundra and steppe over its higher plateaux, and its year-round high levels of sunshine favoured the growth of the ground plants needed by reindeer, bison and horse. Winters were mild for the ice age, animals never needed to migrate far from summer to winter, and men never needed to travel far from home to find abundant supplies of meat.</span></p><p><strong>C</strong> <span class=\"hl\" id=\"hl-q29\" data-q=\"[Q29]\">In Central and Eastern Europe, where caves were unavailable, such open-air sites as have been discovered were mostly located near water - both because this was a good area to be for people and animals, and also because the sedimentation potential of lakes and stream courses has aided archaeological preservation - whereas erosion has presumably blown away sites which were out in the open. Some of the open-air sites in Germany, Central Europe and Russia have provided valuable information about Neanderthal man and his way of life. <span class=\"hl\" id=\"hl-q35\" data-q=\"[Q35]\">From <span class=\"kw\">Moldova</span>, for example, comes <span class=\"kw\">evidence</span> that has been interpreted as the remains of wind-break structures, or even a large tent: <span class=\"kw\">a ring</span> up to about 8 x 5m in size, of mainly <span class=\"kw\">mammoth bones</span> enclosing a dense concentration of stone tools, animal bones and ash.</span></span></p><p><strong>D</strong> <span class=\"hl\" id=\"hl-q30\" data-q=\"[Q30]\">From the west European caves more evidence of built structures is available, and some of it goes back a long way in time. In the Grotte du Lazaret, near Nice, at a date during the last ice age but one, claims for some sort of skin tent within the cave have been advanced, on the basis of arrangements of large stones out from the cave wall that might have supported timber struts for a covering of skins up to the rock face above.<br><br><span class=\"hl\" id=\"hl-q36\" data-q=\"[Q36]\">At <span class=\"kw\">Lazaret</span>, what might be openings in the hypothesised tents seem to point away from the cave mouth, and <span class=\"kw\">finds of wolf and fox foot bones</span>, without the rest of the skeletons, inside these ‘tents’ have been thought to indicate the use of <span class=\"kw\">animal pelts as bed coverings</span>.</span> <span class=\"hl\" id=\"hl-q34\" data-q=\"[Q34]\">The two patches of ash at Lazaret that mark ancient fires, with stone tools around them evidently made and used on the spot, are <span class=\"kw\">edged with small marine mollusc shells</span>, prompting the excavator to suggest that seaweed had been used as bedding around the fires.</span> <span class=\"hl\" id=\"hl-q33\" data-q=\"[Q33]\">The cave of <span class=\"kw\">Baume-Bonne</span> in the Basses-Alpes region of France, another early site, contains ten square metres of <span class=\"kw\">cobbles</span> brought up from the local river and laid down, as though to <span class=\"kw\">take care of a puddle area</span> in the cave, with the smoothest and roundest surfaces of the stones uppermost, and there are other similar cases.</span></span></p><p><strong>E</strong> <span class=\"hl\" id=\"hl-q31\" data-q=\"[Q31]\">The ash encountered in concentrations at some sites testifies to the Neanderthal people’s use of fire: not surprising, since use of fire was, by Neanderthal times, an already ancient accomplishment of evolving humanity, and <span class=\"hl\" id=\"hl-q37\" data-q=\"[Q37]\"><span class=\"kw\">survival</span> in the <span class=\"kw\">sub-arctic</span> conditions faced by the Neanderthalers is <span class=\"kw\">inconceivable without control of fire</span></span>. <span class=\"hl\" id=\"hl-q39\" data-q=\"[Q39]\">Fire gave warmth, light, heat for cooking and <span class=\"kw\">defence against predatory animals</span>.</span> <span class=\"hl\" id=\"hl-q32\" data-q=\"[Q32]\">A <span class=\"kw\">charred piece of birch</span> from <span class=\"kw\">Krapina</span> in Croatia, is thought to be the remains of a fire-making twirl stick.</span> But Neanderthal hearths, in the sense of specially constructed places for fire, are fewer and harder to identify with certainty than the mere ash piles that are a regular feature of their sites. They seem often to have just lit a small fire (40-50cm across) on the existing ground surface of the cave, without preparation. <span class=\"hl\" id=\"hl-q38\" data-q=\"[Q38]\">Judging from the shallow penetration of heat effects under the ash, this fire was only of a <span class=\"kw\">short duration</span>.</span> Sometimes the fires were larger in size, up to one metre across, and quite irregular in shape. It is not always easy to decide how much additional structure some fires possessed: claims of stone circles to contain the fire run up against the fact that stones tend to litter the cave floors everywhere and those around a fire can quite accidentally look as though they were arranged in a circle.</span></p>",
+  "groups": [
+    {
+      "id": "g1",
+      "type": "matching_headings",
+      "title": "Questions 27–31",
+      "instructions": "Reading Passage 3 has five sections.<br>Choose the correct heading for each section from the list of headings below.<br>Choose the correct number, <b>i–vi</b>, in boxes 27–31 on your answer sheet.<br><br><b>List of Headings</b><br><b>i</b> Evidence of outdoor dwellings<br><b>ii</b> Learning to make fire<br><b>iii</b> A perfect place to live<br><b>iv</b> Examining the cave contents<br><b>v</b> Contrasting two types of home<br><b>vi</b> A vital source of power",
+      "questionIds": ["q27", "q28", "q29", "q30", "q31"]
+    },
+    {
+      "id": "g2",
+      "type": "matching_names",
+      "title": "Questions 32–36",
+      "instructions": "Look at the following findings (Questions 32–36) and the list of places below.<br>Match each finding with the correct place, <b>A–E</b>.<br>Write the correct letter, <b>A–E</b>, in boxes 32–36 on your answer sheet.<br><b>NB</b> You may use any letter more than once.<br><br><b>List of Places</b><br><b>A</b> The Périgord region<br><b>B</b> Moldova<br><b>C</b> The Grotte du Lazaret<br><b>D</b> The cave of Baume-Bonne<br><b>E</b> Krapina",
+      "questionIds": ["q32", "q33", "q34", "q35", "q36"]
+    },
+    {
+      "id": "g3",
+      "type": "summary",
+      "title": "Questions 37–39",
+      "instructions": "Complete the summary below.<br>Choose <b>NO MORE THAN TWO WORDS</b> from the passage for each answer.",
+      "summaryTitle": "The use of fire",
+      "questionIds": ["q37", "q38", "q39"],
+      "template": "<p>Neanderthalers could not have survived without fire because the conditions they lived in were <b>37.</b> {{q37}}. Most evidence of purpose-built fires takes the form of ash piles, features of which suggest that the fires lasted a <b>38.</b> {{q38}} time. It is hard to be certain about the size and structure of the fires, though they were certainly needed to protect the occupants from dangerous <b>39.</b> {{q39}}, among other things.</p>"
+    },
+    {
+      "id": "g4",
+      "type": "multiple_choice",
+      "title": "Question 40",
+      "instructions": "Choose the correct letter, <b>A</b>, <b>B</b>, <b>C</b> or <b>D</b>.",
+      "questionIds": ["q40"]
+    }
+  ],
+  "questions": {
+    "q27": {
+      "num": 27,
+      "text": "Paragraph A",
+      "finalAnswer": "v",
+      "highlightId": "hl-q27",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu & Bắt tín hiệu cấu trúc",
+            "question": "Đọc câu 1 và câu 2 của Đoạn A: Tác giả đặt 2 hình thức cư trú nào của người Neanderthal lên bàn cân đối chiếu thông qua liên từ lật kèo 'But' (Quy tắc 20)?",
+            "guide": "Tác giả đặt cạnh nhau hai kiểu nhà: 'living in caves' (sống trong hang đá ở Tây Âu) và 'open-air sites with constructed shelter' (các khu lều bạt dựng ngoài trời ở thảo nguyên Nga).",
+            "bridge": "Quét tiếp mạch triển khai toàn đoạn để xem đoạn văn nói về một nơi hay cả hai."
+          },
+          {
+            "title": "Nấc 2/4 - Quét mạch triển khai toàn đoạn",
+            "question": "Nửa sau Đoạn A giải thích lý do tại sao ta biết về hang động nhiều hơn nơi cư trú ngoài trời. Cả đoạn văn này phục vụ mục đích so sánh hai kiểu nơi ở hay chỉ nói riêng về một địa điểm?",
+            "guide": "Toàn bộ đoạn văn liên tục so sánh đối chiếu giữa 'cave sites' (nơi ở trong hang) và 'open-air ones' (nơi ở ngoài trời) về mức độ bảo tồn và khai quật khảo cổ.",
+            "bridge": "Đối chiếu đối tượng so sánh với danh sách các tiêu đề Heading."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa trong danh sách Headings",
+            "question": "Hành động so sánh 2 kiểu nơi ở (hang đá >< lều ngoài trời) khớp 100% với Heading nào có danh từ 'two types of home' và động từ 'Contrasting'?",
+            "guide": "Khớp hoàn hảo với Heading v: 'Contrasting two types of home' (So sánh tương phản hai kiểu nhà ở).",
+            "bridge": "Loại trừ bẫy chi tiết nhỏ trước khi chốt đáp án."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc bẫy chi tiết nhỏ & Chốt đáp án",
+            "question": "Tại sao ta KHÔNG chọn Heading i (Evidence of outdoor dwellings) cho Đoạn A dù đoạn này có nhắc đến 'open-air sites' (Quy tắc 28)?",
+            "guide": "Vì 'open-air sites' ở Đoạn A chỉ là một vế đối chiếu, đoạn văn chưa hề đưa ra bất kỳ bằng chứng khảo cổ cụ thể nào (evidence) như kích thước lều hay xương voi ma mút. Ý chính bao trùm là sự so sánh giữa 2 kiểu nhà -> Chốt v.",
+            "bridge": "Hoàn thành câu 27."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Phân tích cấu trúc đoạn A: Mở đầu bằng sự phân hóa không gian sống giữa người Neanderthal Tây Âu ('living in caves') và người ở thảo nguyên phía Đông ('open-air sites with constructed shelter').<br>• Bước 2 (Lý do chọn Keyword): Đoạn văn liên tục lặp lại phép so sánh đối xứng 'cave sites' versus 'open-air ones' thông qua các liên từ 'But', 'than', 'more about... than'.<br>• Bước 3: Heading v 'Contrasting two types of home' bao quát trọn vẹn cả hai chủ thể được so sánh (hang động và lều ngoài trời).<br>• Bước 4: Loại Heading i vì ở đoạn A chưa có bằng chứng khảo cổ chi tiết (evidence), chi tiết này thuộc về đoạn C. Chọn v.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đọc câu đầu và câu 2: Thấy nhắc 'living in caves' (sống trong hang - A1) và 'open-air shelter' (nhà dựng ngoài trời - A2).<br>• Bước 2: Thấy chữ 'But' (nhưng) so sánh 2 nơi ở này với nhau xuyên suốt đoạn A.<br>• Bước 3: Soi danh sách Headings: Thấy Heading v có chữ 'Contrasting' (so sánh ngược nhau) và 'two types of home' (2 kiểu nhà).<br>• Bước 4: Khớp đúng 2 kiểu nhà -> Điền số La Mã v."
+        ]
+      }
+    },
+    "q28": {
+      "num": 28,
+      "text": "Paragraph B",
+      "finalAnswer": "iii",
+      "highlightId": "hl-q28",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu & Bắt tính từ đánh giá",
+            "question": "Đọc câu mở đầu của Đoạn B: Cụm từ nào đánh giá các hang động ở vùng Périgord là nơi ở tuyệt vời cho người Neanderthal?",
+            "guide": "Câu chủ đề khẳng định: các hang đá vôi ở Périgord tạo thành 'ideal homes' (những ngôi nhà lý tưởng).",
+            "bridge": "Quét các luận cứ chi tiết bổ trợ cho tính từ lý tưởng này."
+          },
+          {
+            "title": "Nấc 2/4 - Quét các yếu tố chứng minh sự hoàn hảo",
+            "question": "Liệt kê nhanh các lợi thế tự nhiên được kể ra trong Đoạn B: nguồn đá làm rìu ra sao, thời tiết thế nào, ánh nắng và nguồn thức ăn dồi dào ra sao?",
+            "guide": "Đoạn B liệt kê hàng loạt điểm cộng: đá làm rìu sẵn có (good supplies of flint), tránh bão gió (protection against weather), đón nắng ấm (sunshine), khí hậu ôn hòa (exceptionally benign habitat), và thịt thú rừng dồi dào (abundant meat).",
+            "bridge": "Đối chiếu cụm từ chỉ nơi sống lý tưởng với danh sách Heading."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa trong danh sách Headings",
+            "question": "Một nơi ở hội tụ đầy đủ yếu tố 'ideal homes' (nhà lý tưởng), 'benign habitat' (môi trường sống tuyệt hảo) và 'abundant supplies' sẽ khớp với Heading nào?",
+            "guide": "'ideal homes / benign habitat' = Heading iii: 'A perfect place to live' (Một nơi ở hoàn hảo).",
+            "bridge": "Kiểm tra xem có khía cạnh nào khác cạnh tranh ý chính không."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc & Chốt đáp án",
+            "question": "Đoạn B có nói về việc học nhóm lửa hay làm lều ngoài trời không? Có heading nào khác phù hợp hơn không?",
+            "guide": "Toàn bộ đoạn B chỉ tập trung làm rõ tại sao vùng Périgord lại là nơi định cư hoàn hảo cho con người -> Chốt iii.",
+            "bridge": "Hoàn thành câu 28."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Câu chủ đề Đoạn B: 'the limestone caves of the Périgord region made ideal homes for the Neanderthal people'.<br>• Bước 2 (Lý do chọn Keyword): Toàn bộ thân đoạn bổ trợ luận điểm 'ideal homes' bằng các điều kiện sống tối ưu: công cụ đá có sẵn, tránh lũ, tránh gió, nhiều nắng, khí hậu ôn hòa ('exceptionally benign habitat') và nguồn thức ăn không bao giờ cạn kiệt ('abundant supplies of meat').<br>• Bước 3: Khớp trường nghĩa tuyệt đối giữa 'ideal homes / benign habitat' với Heading iii 'A perfect place to live'.<br>• Bước 4: Đoạn văn mang năng lượng tích cực toàn diện, không có tranh cãi hay kỹ thuật khác. Chọn iii.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đọc câu đầu Đoạn B: thấy chữ 'ideal homes' (nhà ở lý tưởng).<br>• Bước 2: Đọc lướt cả đoạn thấy toàn khen: đồ ăn nhiều ('abundant meat'), nắng ấm ('sunshine'), tránh bão tốt ('protection').<br>• Bước 3: Soi danh sách Headings: Heading iii ghi 'A perfect place to live' (Nơi hoàn hảo để sống).<br>• Bước 4: 'Lý tưởng' = 'Hoàn hảo' -> Điền số La Mã iii."
+        ]
+      }
+    },
+    "q29": {
+      "num": 29,
+      "text": "Paragraph C",
+      "finalAnswer": "i",
+      "highlightId": "hl-q29",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu & Bắt mỏ neo địa điểm",
+            "question": "Đoạn C chuyển dịch bối cảnh sang khu vực nào của châu Âu nơi 'caves were unavailable' (không có hang đá)? Họ phải ở đâu?",
+            "guide": "Chuyển sang Trung và Đông Âu (Đức, Nga, Moldova). Vì không có hang động nên họ phải ở tại các khu lều ngoài trời: 'open-air sites'.",
+            "bridge": "Tìm kiếm các chi tiết khảo cổ cụ thể chứng minh nơi ở ngoài trời."
+          },
+          {
+            "title": "Nấc 2/4 - Quét bằng chứng khảo cổ cụ thể",
+            "question": "Tác giả dẫn chứng bằng chứng khảo cổ học cụ thể nào tại Moldova (kích thước bao nhiêu, làm bằng vật liệu gì)?",
+            "guide": "Dẫn chứng di tích một chiếc lều lớn ngoài trời: 'evidence... remains of wind-break structures, or even a large tent: a ring up to about 8 x 5m in size, of mainly mammoth bones' (vòng tròn xương voi ma mút kích thước 8x5m tạo thành lều chắn gió).",
+            "bridge": "Ghép thuật ngữ bài đọc với danh mục Heading."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa trong danh sách Headings",
+            "question": "'open-air sites' và di tích 'large tent / wind-break structures' (lều bạt ngoài trời) đồng nghĩa chính xác với cụm từ nào trong Heading i?",
+            "guide": "'open-air sites / tent' = 'outdoor dwellings' (nơi ở ngoài trời). Bằng chứng xương voi ma mút = 'Evidence'. Khớp với Heading i: 'Evidence of outdoor dwellings'.",
+            "bridge": "Phân biệt ranh giới giữa Đoạn A và Đoạn C."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc phân biệt Đoạn A & Đoạn C",
+            "question": "Tại sao Heading i phải nằm ở Đoạn C chứ không phải Đoạn A?",
+            "guide": "Vì Đoạn C mới là nơi cung cấp các dữ liệu khảo cổ xác thực và chi tiết (evidence: Moldova, 8x5m ring of mammoth bones) về các ngôi nhà ngoài trời (outdoor dwellings) -> Chốt i.",
+            "bridge": "Hoàn thành câu 29."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Chủ đề Đoạn C: Khảo sát các khu định cư ngoài trời ('open-air sites') tại vùng không có hang động ở Trung và Đông Âu.<br>• Bước 2 (Lý do chọn Keyword): Từ khóa 'open-air sites' kết hợp với danh từ 'evidence... remains of wind-break structures, or even a large tent' tại Moldova.<br>• Bước 3: Đối chiếu paraphrase: 'open-air sites / wind-break structures / tent' = 'outdoor dwellings'; di tích vòng xương voi ma mút 8x5m = 'evidence'.<br>• Bước 4: Khớp hoàn toàn với Heading i 'Evidence of outdoor dwellings'. Chọn i.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đọc Đoạn C thấy nhắc liên tục chữ 'open-air sites' (khu vực ngoài trời).<br>• Bước 2: Thấy chữ 'evidence' (bằng chứng) và chữ 'large tent' (cái lều lớn) làm bằng xương voi.<br>• Bước 3: Soi danh sách Headings: Heading i có chữ 'Evidence' (bằng chứng) và 'outdoor dwellings' (= lều ngoài trời).<br>• Bước 4: Khớp từng chữ -> Điền số La Mã i."
+        ]
+      }
+    },
+    "q30": {
+      "num": 30,
+      "text": "Paragraph D",
+      "finalAnswer": "iv",
+      "highlightId": "hl-q30",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu & Bắt không gian khảo sát",
+            "question": "Đoạn D quay trở lại khảo sát không gian nào ở Tây Âu ('west European caves')? Tác giả đi sâu vào bên trong hay chỉ đứng bên ngoài?",
+            "guide": "Quay trở lại bên trong các hang động (caves) như Grotte du Lazaret và Baume-Bonne để kiểm tra những thứ người tiền sử đã xây dựng và để lại bên trong hang.",
+            "bridge": "Liệt kê các đồ vật tàn tích được khai quật bên trong."
+          },
+          {
+            "title": "Nấc 2/4 - Quét chuỗi hiện vật bên trong hang",
+            "question": "Đọc lướt Đoạn D: Liệt kê các thứ được tìm thấy bên trong hang Lazaret và Baume-Bonne (lều da, xương chân thú, tro tàn bếp lửa, đá cuội lát sàn)?",
+            "guide": "Tìm thấy một loạt đồ đạc/cấu trúc bên trong hang: lều da thú (skin tent within the cave), xương chân sói/cáo (wolf and fox foot bones), thảm lông thú (animal pelts), đống tro bếp lửa (patches of ash), công cụ đá (stone tools), vỏ sò (mollusc shells) và đá cuội lát chống vũng nước (cobbles to take care of a puddle).",
+            "bridge": "Quy nạp chuỗi chi tiết này vào tiêu đề khái quát."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa trong danh sách Headings",
+            "question": "Việc đào bới, phân tích tỉ mỉ từng đồ vật, xương thú, đống tro và sỏi đá bên trong hang động tương đương với Heading nào có chữ 'Examining the cave contents'?",
+            "guide": "Toàn bộ hành động kiểm tra chi tiết các thứ bên trong hang khớp hoàn toàn với Heading iv: 'Examining the cave contents' (Kiểm tra/khảo sát những thứ chứa bên trong hang động).",
+            "bridge": "Loại trừ bẫy chi tiết cục bộ về lửa."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc & Chốt đáp án",
+            "question": "Đoạn D có nói về việc học cách tạo ra lửa hay nguồn năng lượng sống còn không?",
+            "guide": "Đống tro bếp lửa ở đoạn D chỉ là một trong số các hiện vật bên trong hang chứ không phải ý chính của cả đoạn. Ý chính là kiểm tra toàn bộ vật chất trong hang -> Chốt iv.",
+            "bridge": "Hoàn thành câu 30."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Chủ đề Đoạn D: Khai quật và phân tích các tàn tích kiến trúc cũng như đồ tạo tác bên trong các hang động ở Pháp (Grotte du Lazaret, Baume-Bonne).<br>• Bước 2 (Lý do chọn Keyword): Đoạn văn đi sâu vào việc miêu tả từng hiện vật cụ thể bên trong lòng hang: cấu trúc lều căng da thú, xương chân sói làm đệm lót, vệt tro bếp cổ đại, công cụ đá chế tác tại chỗ, vỏ ốc biển và sàn lát đá cuội.<br>• Bước 3: Danh từ 'cave contents' (các thành phần/hiện vật trong hang) thâu tóm chính xác chuỗi liệt kê hiện vật khảo cổ học này. 'Examining' phản ánh quá trình phân tích dấu tích của các nhà khảo cổ.<br>• Bước 4: Khớp trọn vẹn với Heading iv. Chọn iv.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Quét Đoạn D thấy nhắc đến bên trong hang đá ('within the cave').<br>• Bước 2: Thấy liệt kê rất nhiều đồ vật bên trong hang: lều ('tents'), xương thú ('bones'), tro lửa ('ash'), đá cuội ('cobbles').<br>• Bước 3: Soi danh sách Headings: Heading iv có chữ 'Examining' (kiểm tra/soi xét) và 'the cave contents' (các đồ vật trong hang).<br>• Bước 4: Khớp đúng hành động soi các đồ vật trong hang -> Điền số La Mã iv."
+        ]
+      }
+    },
+    "q31": {
+      "num": 31,
+      "text": "Paragraph E",
+      "finalAnswer": "vi",
+      "highlightId": "hl-q31",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu & Bắt chủ thể trung tâm",
+            "question": "Chủ thể xuyên suốt từ đầu đến cuối Đoạn E là phát minh/yếu tố gì của con người cổ đại ('use of ______')?",
+            "guide": "Chủ thể duy nhất bao trùm Đoạn E là LỬA (fire / use of fire / hearths).",
+            "bridge": "Xem xét vai trò sống còn của ngọn lửa đối với người tiền sử."
+          },
+          {
+            "title": "Nấc 2/4 - Quét vai trò sống còn của ngọn lửa",
+            "question": "Đọc câu 1 và 2 Đoạn E: Tác giả nhấn mạnh nếu không kiểm soát được lửa thì con người có sống sót nổi ở vùng cận cực không? Lửa mang lại những sức mạnh/công dụng thiết yếu nào?",
+            "guide": "Tác giả khẳng định: sinh tồn là không thể nếu thiếu kiểm soát lửa (survival is inconceivable without control of fire). Lửa cung cấp: hơi ấm (warmth), ánh sáng (light), nhiệt để nấu nướng (cooking) và sức mạnh phòng thủ chống thú dữ (defence against predatory animals).",
+            "bridge": "Khớp sức mạnh sống còn này với tiêu đề phù hợp."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa trong danh sách Headings",
+            "question": "Lửa vừa là năng lượng sưởi ấm, nấu ăn, vừa là vũ khí phòng vệ sống còn. Điều này tương đương với Heading nào có chữ 'vital source of power' (nguồn năng lượng/sức mạnh thiết yếu)?",
+            "guide": "'survival is inconceivable without fire / warmth, light, defence' = Heading vi: 'A vital source of power' (Nguồn năng lượng/sức mạnh mang tính sống còn).",
+            "bridge": "Loại bỏ bẫy sai lệch ý nghĩa 'học tạo lửa'."
+          },
+          {
+            "title": "Nấc 4/4 - Bộ lọc bẫy 'Learning to make fire' & Chốt đáp án",
+            "question": "Tại sao KHÔNG ĐƯỢC chọn Heading ii (Learning to make fire) dù trong đoạn có nhắc que tạo lửa ở Krapina (Quy tắc 28)?",
+            "guide": "Vì bài đọc nói rõ: việc dùng lửa đã là 'an already ancient accomplishment' (thành tựu cổ xưa từ lâu rồi) chứ người Neanderthal thời kỳ này KHÔNG PHẢI đang học cách tạo lửa (learning). Heading ii sai bản chất -> Chốt vi.",
+            "bridge": "Hoàn thành câu 31."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Chủ đề trung tâm Đoạn E: Phân tích vai trò tối thượng của lửa trong đời sống sinh tồn của người Neanderthal.<br>• Bước 2 (Lý do chọn Keyword): Luận điểm chính: 'survival in the sub-arctic conditions... is inconceivable without control of fire'. Lửa đóng vai trò là nguồn lực đa năng: cung cấp nhiệt lượng, ánh sáng, năng lượng nấu nướng và sức mạnh tự vệ trước thú săn mồi hung dữ.<br>• Bước 3: Thuật ngữ 'power' trong Heading vi được hiểu theo cả hai nghĩa: nguồn năng lượng nhiệt/ánh sáng vật lý và sức mạnh bảo vệ sinh tồn. 'vital' tương đương với 'survival is inconceivable without...'.<br>• Bước 4: Loại bỏ bẫy Heading ii ('Learning to make fire') vì tác giả khẳng định việc tạo ra lửa đã là thành tựu thuần thục từ thời tiền bối cổ xưa, không phải bài học mới học. Chọn vi.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Quét Đoạn E thấy chữ 'FIRE' (lửa) xuất hiện ở khắp mọi câu.<br>• Bước 2: Đọc thấy nếu không có lửa thì không thể sống sót ('survival is inconceivable without fire'). Lửa cho hơi ấm, nấu ăn, đuổi thú dữ.<br>• Bước 3: Soi danh sách Headings: Thấy Heading vi có chữ 'vital' (= sống còn) và 'source of power' (= nguồn sức mạnh/năng lượng).<br>• Bước 4: Không chọn Heading ii vì họ không phải đang 'học' (họ biết dùng lửa từ lâu rồi) -> Điền số La Mã vi."
+        ]
+      }
+    },
+    "q32": {
+      "num": 32,
+      "text": "a burnt piece of wood",
+      "finalAnswer": "E",
+      "highlightId": "hl-q32",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu hỏi & Lột vỏ từ đồng nghĩa",
+            "question": "Câu 32 tìm 'a burnt piece of wood' (một mẩu gỗ bị cháy). Trong bài viết khoa học, từ nào đồng nghĩa với 'burnt' (bị cháy/thành than) và loài cây lấy gỗ nào bắt đầu bằng chữ 'b' (Quy tắc 5)?",
+            "guide": "'burnt' = 'charred' (bị cháy thành than); 'wood' = 'birch' (cây gỗ bạch dương).",
+            "bridge": "Dùng danh sách địa danh A–E để quét tìm vị trí xuất hiện mẩu gỗ này."
+          },
+          {
+            "title": "Nấc 2/4 - Quét tọa độ địa danh trong danh sách A–E",
+            "question": "Quét nhanh 5 địa danh viết hoa: Périgord, Moldova, Lazaret, Baume-Bonne, Krapina. Tên nào xuất hiện ngay cạnh cụm từ mẩu gỗ cháy?",
+            "guide": "Mắt dừng lại ở dòng 5 Đoạn E: địa danh 'Krapina' ('from Krapina in Croatia').",
+            "bridge": "Đối chiếu hiện vật tìm thấy với nhận định của đề bài."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng",
+            "question": "Đọc câu chứa 'Krapina': Hiện vật gì được tìm thấy ở đây ('A ______ piece of ______')?",
+            "guide": "Bài đọc viết: 'A charred piece of birch from Krapina...' (Một mẩu gỗ bạch dương bị cháy thành than từ Krapina).",
+            "bridge": "Khớp tên địa danh tương ứng với chữ cái A–E."
+          },
+          {
+            "title": "Nấc 4/4 - So khớp & Chốt chữ cái",
+            "question": "Mẩu gỗ cháy này khớp với địa điểm nào trong bảng từ A đến E?",
+            "guide": "Khớp 100% với E. Krapina -> Chốt E.",
+            "bridge": "Hoàn thành câu 32."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Khái niệm cần tìm: 'a burnt piece of wood' (mẩu gỗ bị đốt cháy).<br>• Bước 2 (Lý do chọn Keyword): Cặp từ đồng nghĩa: 'burnt' = 'charred'; 'wood' = 'birch' (gỗ phong/bạch dương).<br>• Bước 3: Tại Đoạn E, tác giả nêu bằng chứng khảo cổ: 'A charred piece of birch from Krapina in Croatia, is thought to be the remains of a fire-making twirl stick'.<br>• Bước 4: Hiện vật mẩu gỗ cháy được phát hiện chính xác tại Krapina (E). Chọn E.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề tìm: 'burnt' (bị cháy) 'wood' (miếng gỗ).<br>• Bước 2: Quét Đoạn E thấy chữ 'charred' (= burnt: cháy đen thui) và 'birch' (tên một loại cây gỗ).<br>• Bước 3: Nhìn ngay bên cạnh thấy tên riêng viết hoa: 'Krapina'.<br>• Bước 4: Khớp với đáp án E. Krapina -> Điền chữ E."
+        ]
+      }
+    },
+    "q33": {
+      "num": 33,
+      "text": "evidence of efforts to prevent pools of water forming",
+      "finalAnswer": "D",
+      "highlightId": "hl-q33",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu hỏi & Lột vỏ từ đồng nghĩa vũng nước",
+            "question": "Câu 33 nói về 'prevent pools of water forming' (ngăn các vũng nước hình thành). Trong tiếng Anh, danh từ quen thuộc nào chỉ 'vũng nước'?",
+            "guide": "'pools of water' được đổi vỏ thành danh từ 'puddle' (vũng nước đọng).",
+            "bridge": "Định vị hành động xử lý vũng nước gắn với tên hang động."
+          },
+          {
+            "title": "Nấc 2/4 - Quét hành động ngăn chặn & Tọa độ địa danh",
+            "question": "Tại hang động nào ở cuối Đoạn D, người tiền sử đã khiêng 10 mét vuông đá cuội từ bờ sông về lát sàn để xử lý vũng nước đọng?",
+            "guide": "Địa danh xuất hiện: 'The cave of Baume-Bonne' (Hang Baume-Bonne ở Pháp).",
+            "bridge": "So sánh hành vi lát đá cuội với mục đích ngăn vũng nước."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng nỗ lực xử lý",
+            "question": "Người Neanderthal ở hang Baume-Bonne đã làm hành động gì để xử lý vũng nước ('as though to take care of a puddle area')?",
+            "guide": "Họ mang đá cuội từ sông lên lát sàn (brought up cobbles from the river and laid down), quay mặt nhẵn lên trên để triệt tiêu khu vực ẩm ướt đọng nước.",
+            "bridge": "So khớp địa điểm với chữ cái trong danh mục A–E."
+          },
+          {
+            "title": "Nấc 4/4 - So khớp & Chốt chữ cái",
+            "question": "Bằng chứng ngăn ngừa vũng nước đọng thuộc về địa điểm nào trong danh sách A–E?",
+            "guide": "Khớp chính xác với D. The cave of Baume-Bonne -> Chốt D.",
+            "bridge": "Hoàn thành câu 33."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Tìm kiếm: 'evidence of efforts to prevent pools of water forming' (chứng cứ về nỗ lực ngăn chặn sự đọng nước).<br>• Bước 2 (Lý do chọn Keyword): 'pools of water' = 'puddle area'; 'efforts to prevent' = 'laid down cobbles... to take care of'.<br>• Bước 3: Cuối Đoạn D mô tả phát hiện tại hang Baume-Bonne: 10 mét vuông đá cuội sông được rải phẳng phiu có chủ đích nhằm giải quyết khu vực đọng nước bên trong hang ('to take care of a puddle area').<br>• Bước 4: Địa điểm thực hiện nỗ lực này là hang Baume-Bonne (D). Chọn D.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề tìm: Nơi có người tìm cách ngăn 'pools of water' (vũng nước đọng).<br>• Bước 2: Quét cuối Đoạn D thấy chữ 'puddle' (= vũng nước đọng).<br>• Bước 3: Thấy họ nhặt sỏi đá ('cobbles') xếp lên sàn hang để ngăn nước.<br>• Bước 4: Nhìn tên hang đá viết hoa ở đầu câu: 'The cave of Baume-Bonne' -> Điền chữ D."
+        ]
+      }
+    },
+    "q34": {
+      "num": 34,
+      "text": "the remains of sea creatures",
+      "finalAnswer": "C",
+      "highlightId": "hl-q34",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu hỏi & Lột vỏ từ đồng nghĩa sinh vật biển",
+            "question": "Nhận định 34 nhắc đến 'remains of sea creatures' (tàn tích của các sinh vật biển). Từ chuyên ngành nào trong bài đồng nghĩa với sinh vật biển thân mềm (như sò, ốc)?",
+            "guide": "'sea' = 'marine'; 'creatures' = 'mollusc' (động vật thân mềm); 'remains' = 'shells' (vỏ sò, vỏ ốc còn sót lại).",
+            "bridge": "Quét tọa độ địa danh phát hiện vỏ sinh vật biển."
+          },
+          {
+            "title": "Nấc 2/4 - Quét tọa độ địa danh",
+            "question": "Cụm từ 'small marine mollusc shells' xuất hiện ở đoạn văn nói về địa danh nào: Lazaret hay Périgord?",
+            "guide": "Xuất hiện tại câu văn mô tả hiện trường đống tro bếp ở hang: 'Lazaret' (The Grotte du Lazaret ở Đoạn D).",
+            "bridge": "Kiểm tra ngữ cảnh chi tiết quanh đống tro tàn."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng",
+            "question": "Đọc câu chứa 'marine mollusc shells': Các vỏ ốc biển này nằm ở đâu tại hang Lazaret?",
+            "guide": "Chúng viền quanh hai đống tro bếp lửa cổ đại (edged with small marine mollusc shells), gợi ý người cổ đại đã mang rong biển (seaweed) vào làm đệm nằm.",
+            "bridge": "Khớp địa danh với danh sách đáp án A–E."
+          },
+          {
+            "title": "Nấc 4/4 - So khớp & Chốt chữ cái",
+            "question": "Tàn tích sinh vật biển này được phát hiện tại địa điểm nào trong danh sách A–E?",
+            "guide": "Khớp với C. The Grotte du Lazaret -> Chốt C.",
+            "bridge": "Hoàn thành câu 34."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Tìm kiếm: 'the remains of sea creatures' (dấu tích còn lại của sinh vật biển).<br>• Bước 2 (Lý do chọn Keyword): Khớp thuật ngữ sinh học: 'sea creatures' = 'marine mollusc'; 'remains' = 'shells' (vỏ sò ốc).<br>• Bước 3: Tại Đoạn D, nhóm khảo cứu tại hang Grotte du Lazaret ghi nhận các vệt tro bếp cổ đại được bao quanh bởi vỏ của các loài thân mềm biển ('small marine mollusc shells'), minh chứng cho việc mang rong biển vào hang.<br>• Bước 4: Hiện vật sinh vật biển thuộc về Grotte du Lazaret (C). Chọn C.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề tìm: 'sea creatures' (con vật sống ở biển).<br>• Bước 2: Quét Đoạn D thấy chữ 'marine' (= sea: biển) và 'shells' (vỏ ốc, sò).<br>• Bước 3: Đọc lùi lại xem hang này tên gì: thấy chữ 'Lazaret' ('The two patches of ash at Lazaret').<br>• Bước 4: Khớp với đáp án C. The Grotte du Lazaret -> Điền chữ C."
+        ]
+      }
+    },
+    "q35": {
+      "num": 35,
+      "text": "a circular arrangement of animal bones",
+      "finalAnswer": "B",
+      "highlightId": "hl-q35",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu hỏi & Lột vỏ từ đồng nghĩa hình tròn",
+            "question": "Nhận định 35 nhắc tới 'a circular arrangement' (sự sắp đặt theo hình tròn). Từ đồng nghĩa nào trong bài mô tả một kết cấu hình vòng tròn khép kín?",
+            "guide": "'a circular arrangement' được đổi vỏ thành từ 'a ring' (một chiếc nhẫn / một vòng tròn khép kín).",
+            "bridge": "Tìm chất liệu xương con vật tạo nên vòng tròn này."
+          },
+          {
+            "title": "Nấc 2/4 - Quét từ chỉ xương động vật & Tọa độ địa danh",
+            "question": "Vòng tròn này được xếp bằng xương của loài động vật to lớn nào ('animal bones') và tìm thấy ở quốc gia/địa danh nào?",
+            "guide": "Xếp bằng xương voi ma mút: 'mammoth bones' tại địa danh viết hoa: 'Moldova' (Đoạn C).",
+            "bridge": "Đối chiếu đối xứng cấu trúc câu văn."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp đối xứng",
+            "question": "Đối chiếu câu: 'a circular arrangement of animal bones' <-> 'a ring... of mainly mammoth bones'. Hai cụm này có trùng khớp bản chất 100% không?",
+            "guide": "'a circular arrangement' = 'a ring'; 'animal bones' = 'mammoth bones'. Cấu trúc và ngữ nghĩa trùng khớp tuyệt đối.",
+            "bridge": "Chọn chữ cái tương ứng trong danh sách A–E."
+          },
+          {
+            "title": "Nấc 4/4 - So khớp & Chốt chữ cái",
+            "question": "Phát hiện vòng xương voi ma mút này tương ứng với địa điểm nào trong danh sách A–E?",
+            "guide": "Khớp chính xác với B. Moldova -> Chốt B.",
+            "bridge": "Hoàn thành câu 35."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Tìm kiếm: 'a circular arrangement of animal bones' (bố cục sắp đặt xương động vật thành hình vòng tròn).<br>• Bước 2 (Lý do chọn Keyword): Cặp đối xứng: 'circular arrangement' = 'a ring' (vòng tròn); 'animal bones' = 'mammoth bones' (xương voi ma mút).<br>• Bước 3: Tại Đoạn C, tác giả đưa ra ví dụ điển hình tại Moldova: dấu tích lều chắn gió được tạo thành từ một vòng tròn khép kín kích thước 8x5m làm chủ yếu từ xương voi ma mút ('a ring... of mainly mammoth bones').<br>• Bước 4: Hiện vật sắp đặt hình tròn thuộc về địa danh Moldova (B). Chọn B.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề tìm: 'circular' (hình tròn) làm bằng 'animal bones' (xương con vật).<br>• Bước 2: Quét Đoạn C thấy chữ 'a ring' (= circular: vòng tròn) và 'mammoth bones' (xương voi ma mút).<br>• Bước 3: Nhìn ngay đầu câu xem ở đâu: thấy chữ 'FROM MOLDOVA'.<br>• Bước 4: Khớp với đáp án B. Moldova -> Điền chữ B."
+        ]
+      }
+    },
+    "q36": {
+      "num": 36,
+      "text": "evidence suggesting the use of animal fur for warmth",
+      "finalAnswer": "C",
+      "highlightId": "hl-q36",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Đo khuôn câu hỏi & Lột vỏ từ đồng nghĩa lông thú",
+            "question": "Nhận định 36 tìm bằng chứng về 'animal fur for warmth' (dùng lông thú để giữ ấm). Trong tiếng Anh, danh từ cổ nào chỉ da lông thú dùng làm áo/chăn?",
+            "guide": "'animal fur' được paraphrase thành 'animal pelts' (tấm da lông thú). Mục đích giữ ấm (for warmth) thể hiện qua việc làm chăn đệm: 'bed coverings'.",
+            "bridge": "Quét vết tích xương bàn chân của loài thú."
+          },
+          {
+            "title": "Nấc 2/4 - Quét manh mối xương chân thú",
+            "question": "Khảo cổ học tìm thấy xương chân của loài thú nào (chó sói và cáo) mà không thấy các phần xương còn lại? Tọa độ này ở đâu?",
+            "guide": "Tìm thấy xương chân sói và cáo (wolf and fox foot bones) tại hang: 'Lazaret' (Đoạn D).",
+            "bridge": "Giải mã mối liên hệ giữa xương chân và da lông thú."
+          },
+          {
+            "title": "Nấc 3/4 - Giải mã suy luận khảo cổ",
+            "question": "Tại sao việc chỉ tìm thấy xương bàn chân sói và cáo bên trong lều lại chứng minh việc dùng lông thú làm chăn đệm?",
+            "guide": "Vì khi người cổ đại lột da lông thú (pelts) để làm chăn đệm, xương bàn chân thường dính liền theo bộ da. Các nhà khảo cổ kết luận: đây là bằng chứng dùng da lông thú làm đệm giường (animal pelts as bed coverings).",
+            "bridge": "Kiểm tra quy định NB và chốt đáp án."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra luật NB & Chốt chữ cái",
+            "question": "Địa điểm Lazaret đã được dùng ở câu 34. Đề có dòng chữ 'NB You may use any letter more than once' không? Chốt đáp án nào?",
+            "guide": "Đề có chữ NB cho phép dùng lặp lại. Địa điểm chính xác là C. The Grotte du Lazaret -> Chốt C.",
+            "bridge": "Hoàn thành câu 36."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Tìm kiếm: 'evidence suggesting the use of animal fur for warmth' (chứng cứ cho thấy việc dùng lông thú để giữ nhiệt).<br>• Bước 2 (Lý do chọn Keyword): Thuật ngữ đối xứng: 'animal fur' = 'animal pelts' (tấm da lông động vật); 'for warmth' = 'bed coverings' (chăn đệm sưởi ấm khi ngủ).<br>• Bước 3: Tại hang Lazaret (Đoạn D), việc tìm thấy duy nhất các mẩu xương ngón chân của sói và cáo bên trong lều mà không có phần xương thân thể chứng tỏ bộ da lông của chúng đã được mang vào để làm thảm trải giường giữ ấm.<br>• Bước 4: Bằng chứng này được ghi nhận tại The Grotte du Lazaret (C). Chọn C.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Đề tìm: 'animal fur' (lông thú) để 'warmth' (giữ ấm).<br>• Bước 2: Quét Đoạn D thấy chữ 'animal pelts' (= animal fur: da lông thú) và 'bed coverings' (chăn đệm để ấm khi ngủ).<br>• Bước 3: Thấy nhắc xương chân chó sói và cáo ở hang 'Lazaret'.<br>• Bước 4: Khớp với đáp án C. The Grotte du Lazaret (Chữ C dùng lại lần 2 vì có NB) -> Điền chữ C."
+        ]
+      }
+    },
+    "q37": {
+      "num": 37,
+      "text": "Neanderthalers could not have survived without fire because the conditions they lived in were 37 ………………..",
+      "finalAnswer": "sub-arctic",
+      "highlightId": "hl-q37",
+      "inputWidth": "120px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp sau động từ to-be",
+            "question": "Đề bài ghi: 'the conditions they lived in were 37 ______'. Đứng sau 'were', từ cần điền phải là loại từ gì để miêu tả đặc điểm của điều kiện sống?",
+            "guide": "Cần một Tính từ miêu tả tính chất khắc nghiệt/khí hậu của môi trường sống mà người Neanderthal phải đối mặt.",
+            "bridge": "Khóa đoạn văn thông qua tiêu đề bài tóm tắt."
+          },
+          {
+            "title": "Nấc 2/4 - Khóa hiện trường bằng tiêu đề bài tóm tắt",
+            "question": "Tiêu đề bài tóm tắt là 'The use of fire' (Việc sử dụng lửa). Toàn bộ thông tin này nằm trọn trong đoạn văn nào?",
+            "guide": "Nằm trọn vẹn tại Đoạn E (đoạn chuyên biệt về lửa).",
+            "bridge": "Triệt tiêu câu đối xứng để nhặt tính từ đi cùng conditions."
+          },
+          {
+            "title": "Nấc 3/4 - Triệt tiêu đối xứng & Bắt từ chỉ điều kiện",
+            "question": "Đối chiếu câu: Đề có 'could not have survived without fire' <-> Bài có 'survival... is inconceivable without control of fire'. Tính từ nào đứng ngay trước chữ 'conditions' trong bài đọc?",
+            "guide": "Bài đọc viết: 'survival in the SUB-ARCTIC conditions...' (sự sống sót trong những điều kiện cận cực). Tính từ đứng trước 'conditions' là 'sub-arctic'.",
+            "bridge": "Kiểm tra giới hạn số từ và từ ghép gạch nối."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra giới hạn từ & Chốt sổ",
+            "question": "Từ 'sub-arctic' (hoặc subarctic) có dấu gạch nối được tính là mấy từ? Giới hạn đề bài cho phép mấy từ?",
+            "guide": "Từ có dấu gạch nối tính là 1 từ duy nhất, giới hạn cho phép NO MORE THAN TWO WORDS. Áp dụng Quy tắc 30 -> Chốt sub-arctic (hoặc subarctic).",
+            "bridge": "Hoàn thành câu 37."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'the conditions they lived in were [37]' -> Cần Tính từ miêu tả điều kiện khí hậu sinh tồn.<br>• Bước 2 (Lý do chọn Keyword): Tiêu đề 'The use of fire' dẫn thẳng mắt vào Đoạn E.<br>• Bước 3: Triệt tiêu đối xứng: 'could not have survived without fire' = 'survival... is inconceivable without control of fire'. Thành phần miêu tả điều kiện: 'in the sub-arctic conditions'.<br>• Bước 4: Tính từ đứng trước 'conditions' là 'sub-arctic'. Thỏa mãn giới hạn từ. Điền sub-arctic (hoặc subarctic).",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'conditions were ______' (điều kiện thời tiết thì thế nào) -> Cần 1 Tính từ.<br>• Bước 2: Quét Đoạn E thấy chữ 'conditions' (điều kiện).<br>• Bước 3: Nhìn từ đứng ngay trước chữ 'conditions': Thấy chữ có dấu gạch ngang 'sub-arctic' (vùng cận Bắc Cực).<br>• Bước 4: Chép đúng chữ sub-arctic vào chỗ trống."
+        ]
+      }
+    },
+    "q38": {
+      "num": 38,
+      "text": "features of which suggest that the fires lasted a 38 ……………….. time.",
+      "finalAnswer": "short",
+      "highlightId": "hl-q38",
+      "inputWidth": "100px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp trước danh từ thời gian",
+            "question": "Đề bài ghi: 'lasted a 38 ______ time'. Đứng giữa mạo từ 'a' và danh từ 'time', từ cần điền bắt buộc phải là loại từ gì?",
+            "guide": "Bắt buộc phải là một Tính từ miêu tả khoảng thời gian dài hay ngắn mà ngọn lửa đã cháy.",
+            "bridge": "Dùng từ khóa tàn tích tro và nhiệt độ để định vị."
+          },
+          {
+            "title": "Nấc 2/4 - Quét từ khóa đống tro tàn",
+            "question": "Mỏ neo 'ash' (tro) và 'heat effects' (tác động nhiệt) dẫn mắt em đến câu nào ở giữa Đoạn E?",
+            "guide": "Dừng mắt ở dòng 9-10 Đoạn E: 'Judging from the shallow penetration of heat effects under the ash...'",
+            "bridge": "Lột vỏ cụm từ chỉ thời lượng."
+          },
+          {
+            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa khoảng thời gian",
+            "question": "Bài đọc viết ngọn lửa chỉ kéo dài trong một khoảng thời gian thế nào: 'this fire was only of a ______ duration'? Cụm 'of a short duration' đồng nghĩa với cụm nào ở câu hỏi?",
+            "guide": "Bài đọc ghi: 'of a SHORT duration' (trong một khoảng thời gian ngắn). Cụm 'a short duration' tương đương hoàn toàn với 'a short time'.",
+            "bridge": "Trích xuất tính từ và kiểm tra số từ."
+          },
+          {
+            "title": "Nấc 4/4 - Bốc từ & Kiểm tra luật chơi",
+            "question": "Nhặt đúng 1 từ đứng trước 'duration' trong bài đọc thả vào chỗ trống 'a [38] time'. Từ đó là gì?",
+            "guide": "Từ cần nhặt là 'short'. Thỏa mãn 1 từ duy nhất theo Quy tắc 30 -> Chốt short.",
+            "bridge": "Hoàn thành câu 38."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'lasted a [38] time' -> Cần Tính từ bổ nghĩa cho 'time' chỉ độ dài thời gian cháy của lửa.<br>• Bước 2 (Lý do chọn Keyword): Khóa câu văn chứa mỏ neo 'ash' và 'heat effects' ở giữa Đoạn E.<br>• Bước 3: Phân tích câu gốc: 'Judging from the shallow penetration of heat effects under the ash, this fire was only of a short duration'. Đối chiếu: 'duration' = 'time'.<br>• Bước 4: Tính từ mô tả khoảng thời gian là 'short'. Điền short.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'a ______ time' -> Cần 1 chữ đi kèm với chữ time (thời gian dài hay ngắn).<br>• Bước 2: Quét tiếp Đoạn E thấy chữ 'ash' (đống tro) và chữ 'duration' (= time: thời gian).<br>• Bước 3: Thấy câu: 'this fire was only of a SHORT duration'.<br>• Bước 4: Nhặt đúng chữ short (ngắn ngủi) điền vào trước chữ time."
+        ]
+      }
+    },
+    "q39": {
+      "num": 39,
+      "text": "though they were certainly needed to protect the occupants from dangerous 39 ……………….., among other things.",
+      "finalAnswer": "predatory animals",
+      "highlightId": "hl-q39",
+      "inputWidth": "160px",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Rào ngữ pháp sau tính từ 'dangerous'",
+            "question": "Đề bài ghi: 'protect... from dangerous 39 ______'. Đứng sau tính từ 'dangerous' (nguy hiểm), từ cần điền phải là loại từ gì và mang nghĩa gì?",
+            "guide": "Cần một Danh từ (hoặc Cụm danh từ số nhiều) chỉ đối tượng nguy hiểm rình rập bên ngoài mà người ở trong hang cần phòng vệ.",
+            "bridge": "Tìm công dụng bảo vệ của ngọn lửa trong Đoạn E."
+          },
+          {
+            "title": "Nấc 2/4 - Quét câu bằng chứng công dụng của lửa",
+            "question": "Ở dòng 4 Đoạn E, lửa được dùng để phòng vệ chống lại thứ gì ('defence against ______')?",
+            "guide": "Bài đọc viết: 'Fire gave... and DEFENCE AGAINST PREDATORY ANIMALS' (Lửa đem lại sự phòng thủ chống lại các loài thú săn mồi).",
+            "bridge": "Đối chiếu từ đồng nghĩa phòng thủ và thú dữ nguy hiểm."
+          },
+          {
+            "title": "Nấc 3/4 - Lột vỏ từ đồng nghĩa phòng vệ & nguy hiểm",
+            "question": "'protect the occupants from' đồng nghĩa với cụm nào trong bài? Từ 'dangerous' (nguy hiểm) đồng nghĩa với tính từ nào chỉ loài thú ăn thịt?",
+            "guide": "'protect... from' = 'defence against' (phòng vệ chống lại); 'dangerous' = 'predatory' (săn mồi/hung dữ). Danh từ đi sau là 'animals' (hoặc cụm 'predatory animals').",
+            "bridge": "Kiểm tra giới hạn từ NO MORE THAN TWO WORDS."
+          },
+          {
+            "title": "Nấc 4/4 - Kiểm tra giới hạn từ & Chốt sổ",
+            "question": "Đề bài cho phép điền tối đa mấy từ (NO MORE THAN TWO WORDS)? Ta nên bốc cụm 2 từ nào nguyên văn từ bài đọc?",
+            "guide": "Cụm nguyên văn trong bài là 'predatory animals' (đúng 2 từ). Nếu điền 1 từ 'animals' vẫn đúng ngữ pháp, nhưng 'predatory animals' chuẩn xác 100% ngữ nghĩa. Áp dụng Quy tắc 30 -> Chốt predatory animals (chấp nhận: animals).",
+            "bridge": "Hoàn thành câu 39."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: 'protect the occupants from dangerous [39]' -> Cần Danh từ/Cụm danh từ chỉ hiểm họa tự nhiên.<br>• Bước 2 (Lý do chọn Keyword): Quét cấu trúc liệt kê chức năng của lửa ở dòng 4 Đoạn E: 'warmth, light, heat for cooking and defence against...'.<br>• Bước 3: Triệt tiêu: 'protect... from' = 'defence against'. Cụm danh từ chỉ hiểm họa là 'predatory animals'. Tính từ 'predatory' mang nghĩa săn mồi hung dữ đồng dạng với 'dangerous'.<br>• Bước 4: Cụm 'predatory animals' dài 2 từ, hoàn toàn chuẩn xác với giới hạn từ. Điền predatory animals (hoặc animals).",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: 'protect from dangerous ______' (bảo vệ khỏi cái gì đó nguy hiểm) -> Cần 1 từ chỉ mối nguy/con vật.<br>• Bước 2: Quét Đoạn E thấy chữ 'defence against' (= protect from: bảo vệ chống lại).<br>• Bước 3: Nhìn chữ đứng sau 'defence against': thấy cụm 'predatory animals' (thú ăn thịt hung dữ).<br>• Bước 4: Đề cho phép 2 từ -> Bốc nguyên cụm predatory animals (hoặc chữ animals)."
+        ]
+      }
+    },
+    "q40": {
+      "num": 40,
+      "text": "The purpose of the writer of this article is to",
+      "options": [
+        "A. argue that Neanderthal homes were bigger than originally thought.",
+        "B. explain why Neanderthal people migrated to Western Europe.",
+        "C. discuss what is known about Neanderthal settlements.",
+        "D. track the progress of early Neanderthal development."
+      ],
+      "finalAnswer": "C",
+      "highlightId": "hl-q31",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Nấc 1/4 - Xé câu hỏi & Xác định loại câu hỏi",
+            "question": "Câu 40 hỏi về 'The purpose of the writer of this article' (Mục đích của tác giả bài viết này). Đây là câu hỏi chi tiết ở 1 đoạn hay câu hỏi bao quát toàn bài (Global Question)?",
+            "guide": "Đây là câu hỏi bao quát toàn bài. Đáp án đúng bắt buộc phải bao trùm được nội dung của tất cả các đoạn từ A đến E, không được chọn phương án chỉ là chi tiết nhỏ (Quy tắc 28).",
+            "bridge": "Tổng hợp linh hồn và đề tài cốt lõi xuyên suốt các đoạn văn."
+          },
+          {
+            "title": "Nấc 2/4 - Tổng hợp linh hồn từng đoạn văn",
+            "question": "Tóm tắt nhanh: Đoạn A nói về 2 kiểu nhà; Đoạn B nói về hang động Périgord; Đoạn C nói về lều ở Moldova; Đoạn D nói về đồ đạc trong hang Lazaret; Đoạn E nói về bếp lửa nơi ở. Tất cả các nội dung này đều xoay quanh chủ đề cốt lõi nào của người Neanderthal?",
+            "guide": "Tất cả đều xoay quanh: Các khu định cư / Nơi ăn chốn ở / Địa điểm cư trú (settlements / homes / sites) của người Neanderthal và những hiểu biết khảo cổ về chúng.",
+            "bridge": "Khớp chủ đề tổng quát với các phương án trắc nghiệm."
+          },
+          {
+            "title": "Nấc 3/4 - Bắt cặp từ đồng nghĩa bao quát",
+            "question": "Khái niệm 'những hiểu biết khảo cổ về nơi cư trú của người Neanderthal' khớp hoàn hảo với phương án nào trong 4 lựa chọn A, B, C, D?",
+            "guide": "Khớp hoàn hảo với Phương án C: 'discuss what is known about Neanderthal settlements' (thảo luận về những gì chúng ta đã biết về các khu định cư của người Neanderthal).",
+            "bridge": "Loại trừ 3 phương án bẫy để chốt chắc chắn."
+          },
+          {
+            "title": "Nấc 4/4 - Diệt 3 vỏ nhiễu & Chốt đáp án",
+            "question": "Tại sao loại A (bài có tranh cãi nhà to hơn tưởng tượng không?), loại B (bài có giải thích nguyên nhân di cư không?), và loại D (bài có theo dõi từng mốc tiến hóa phát triển theo dòng thời gian không)?",
+            "guide": "• Loại A: Chi tiết kích thước lều ở Moldova chỉ là 1 ví dụ nhỏ ở đoạn C, không phải ý cả bài.<br>• Loại B: Bài không hề nói về lý do di cư (migrated).<br>• Loại D: Bài không theo dõi tiến trình lịch sử tiến hóa (track progress of development), mà là khảo sát không gian sống.<br>-> Chốt C.",
+            "bridge": "Hoàn thành câu 40."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Cách 1 (Khá / Giỏi):</b><br>• Bước 1: Thân câu hỏi yêu cầu xác định mục đích tổng thể (main purpose) của tác giả trong bài viết 'Neanderthal Technology'.<br>• Bước 2 (Lý do chọn Keyword): Tổng hợp các luận điểm chính: Đoạn A phân loại hai mô hình cư trú (hang đá vs lều bạt); Đoạn B mô tả khu định cư lý tưởng tại Périgord; Đoạn C phân tích tàn tích lều ngoài trời; Đoạn D khảo sát nội thất và cấu trúc nơi ở trong hang; Đoạn E phân tích việc kiểm soát lửa tại các điểm định cư.<br>• Bước 3: Thuật ngữ 'settlements' (các điểm định cư / khu cư trú) là danh từ bao trùm toàn bộ các khái niệm 'homes', 'open-air sites', 'caves', 'shelter'. 'what is known' phản ánh góc nhìn khảo cổ học hiện đại xuyên suốt bài.<br>• Bước 4: Triệt tiêu các phương án sai: Loại A vì chi tiết kích thước chỉ xuất hiện cục bộ ở đoạn C. Loại B vì bài không giải thích nguyên nhân di cư. Loại D vì văn bản không trình bày theo trục thời gian tiến hóa. Chọn C.",
+          "<b>Cách 2 (Mất gốc / Lớp 5):</b><br>• Bước 1: Câu 40 hỏi cả bài viết này viết ra để làm gì.<br>• Bước 2: Nhìn lại các đoạn: Đoạn nào cũng thấy nói về 'homes' (nhà ở), 'caves' (hang động), 'tent' (cái lều), 'where they lived' (nơi họ sống).<br>• Bước 3: Soi câu C: Thấy chữ 'settlements' (= nơi ở/chỗ định cư) của người Neanderthal.<br>• Bước 4: Câu A, B, D chỉ nói về chi tiết lặt vặt hoặc không có trong bài -> Điền chữ C."
+        ]
+      }
+    }
+  }
 }
