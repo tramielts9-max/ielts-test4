@@ -7,6 +7,197 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/reading.css">
+  <style>
+    /* =======================================================
+       GIAO DIỆN CHUẨN CHO TỪNG DẠNG BÀI THI IELTS READING
+       ======================================================= */
+    
+    /* 1. Khung đề Matching (List of Headings / Features / Researchers) */
+    .matching-box {
+      background: var(--bg-subcard, #f8fafc);
+      border: 2px solid #0284c7;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 15px 0 22px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+    .matching-box-title {
+      font-weight: 800;
+      color: #0369a1;
+      margin-bottom: 12px;
+      font-size: 14.5px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1.5px solid #e0f2fe;
+      padding-bottom: 6px;
+    }
+    .matching-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 14px;
+    }
+    .matching-item {
+      padding: 8px 12px;
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 6px;
+      line-height: 1.5;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .matching-item-key {
+      font-weight: 800;
+      color: #0284c7;
+      background: #e0f2fe;
+      padding: 2px 8px;
+      border-radius: 4px;
+      min-width: 24px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .matching-item-text {
+      color: var(--text-main, #1e293b);
+      flex: 1;
+    }
+
+    /* Khung xem trước nội dung khi học sinh chọn trong Select */
+    .matching-selected-preview {
+      display: none;
+      margin-top: 8px;
+      padding: 6px 12px;
+      background: #f0fdf4;
+      border-left: 3px solid #16a34a;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #166534;
+      line-height: 1.4;
+    }
+
+    /* 2. Trắc nghiệm Multiple Choice (A, B, C, D) có ĐẦY ĐỦ ĐỀ */
+    .mcq-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .mcq-option-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1.5px solid var(--border-color, #cbd5e1);
+      border-radius: 8px;
+      background: var(--bg-card, #ffffff);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .mcq-option-item:hover {
+      border-color: #0284c7;
+      background: #f0f9ff;
+    }
+    .mcq-option-item.selected {
+      border-color: #0284c7;
+      background: #e0f2fe;
+      box-shadow: 0 0 0 1px #0284c7;
+    }
+    .mcq-option-item input[type="radio"],
+    .mcq-option-item input[type="checkbox"] {
+      margin-top: 4px;
+      cursor: pointer;
+      accent-color: #0284c7;
+      width: 16px;
+      height: 16px;
+    }
+    .mcq-badge {
+      font-weight: 800;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 13px;
+      min-width: 22px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .mcq-option-item.selected .mcq-badge {
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .mcq-text {
+      color: var(--text-main, #1e293b);
+      font-size: 14px;
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    /* 3. True / False / Not Given & Yes / No / Not Given */
+    .choice-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 12px 0;
+    }
+    .choice-btn-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--bg-card, #ffffff);
+      border: 1.5px solid var(--border-color, #cbd5e1);
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13.5px;
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+    .choice-btn-label:hover {
+      border-color: #0284c7;
+      background: #f0f9ff;
+    }
+    .choice-btn-label.active {
+      border-color: #0284c7;
+      background: #0284c7;
+      color: #ffffff;
+    }
+    .choice-btn-label.active span {
+      color: #ffffff;
+    }
+    .choice-btn-label input[type="radio"] {
+      accent-color: #0284c7;
+      cursor: pointer;
+    }
+
+    /* 4. Gap Fill / Summary: Ô Socratic nằm NGAY TRÊN ô điền */
+    .gap-fill-card {
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .gap-fill-answer-bar {
+      margin-top: 12px;
+      padding: 12px 16px;
+      background: var(--bg-subcard, #f8fafc);
+      border-radius: 6px;
+      border: 1.5px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .gap-fill-answer-bar:focus-within {
+      border-color: #0284c7;
+      background: #f0f9ff;
+    }
+  </style>
 </head>
 <body>
 
@@ -53,7 +244,7 @@
   </div>
 </div>
 
-<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE, THEME & BỘ MÁY SOCRATIC -->
+<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE, THEME, SOCRATIC & CÁC DẠNG BÀI -->
 <script>
   (function() {
     var curSize = 15;
@@ -92,13 +283,11 @@
       }
     } catch(e) {}
 
-    // BỘ MÁY ĐIỀU KHIỂN BẬC THANG SOCRATIC (GỬI -> HIỆN GỢI Ý -> MỞ NẤC TIẾP)
+    // BỘ MÁY ĐIỀU KHIỂN BẬC THANG SOCRATIC
     window.nextSocraticStep = function(qId, step, finalAnswer) {
-      // 1. Hiện lời giải nấc hiện tại
       var ans = document.getElementById(qId + '_ans_' + step);
       if (ans) ans.style.display = 'block';
 
-      // 2. Khóa ô nhập và nút gửi của nấc hiện tại
       var inp = document.getElementById(qId + '_in_' + step);
       if (inp) inp.disabled = true;
       var btn = document.getElementById(qId + '_btn_' + step);
@@ -108,7 +297,6 @@
         btn.style.cursor = 'default';
       }
 
-      // 3. Mở khóa nấc tiếp theo hoặc hoàn thành
       var next = document.getElementById(qId + '_step_' + (step + 1));
       var badge = document.getElementById(qId + '_badge');
 
@@ -124,25 +312,100 @@
           badge.style.background = '#16a34a';
           badge.style.color = 'white';
         }
-        // Tự động điền đáp án chuẩn vào bài thi
         if (finalAnswer) {
-          var mainInput = document.getElementById(qId + '_input');
-          if (mainInput) {
-            mainInput.value = finalAnswer;
-            mainInput.dispatchEvent(new Event('input'));
+          window.syncUserAnswer(qId, finalAnswer);
+        }
+      }
+    };
+
+    // ĐỒNG BỘ ĐÁP ÁN TOÀN DIỆN CHO MỌI ELEMENT CỦA CÂU HỎI
+    window.syncUserAnswer = function(qId, val, fullLabel) {
+      // 1. Đồng bộ ô input văn bản (kể cả ô chính và ô mirror của gap fill)
+      var textInputs = document.querySelectorAll(`input[id="${qId}_input"], input[id="${qId}_input_mirror"]`);
+      textInputs.forEach(el => {
+        if (el && el.value !== val) {
+          el.value = val;
+          el.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      });
+
+      // 2. Đồng bộ radio buttons / checkboxes
+      var radios = document.querySelectorAll(`input[name="${qId}"]`);
+      radios.forEach(rb => {
+        var isMatch = rb.value.trim().toUpperCase() === String(val).trim().toUpperCase();
+        if (rb.type === 'radio') rb.checked = isMatch;
+        var parentLabel = rb.closest('.choice-btn-label') || rb.closest('.mcq-option-item');
+        if (parentLabel) {
+          if (rb.checked) parentLabel.classList.add('active', 'selected');
+          else parentLabel.classList.remove('active', 'selected');
+        }
+      });
+
+      // 3. Đồng bộ Select Dropdown
+      var sel = document.getElementById(qId + '_select');
+      if (sel && sel.value !== val) {
+        sel.value = val;
+      }
+
+      // 4. Cập nhật preview cho dạng Matching nếu có
+      var previewBox = document.getElementById(qId + '_selected_preview');
+      if (previewBox) {
+        if (val) {
+          let labelText = fullLabel;
+          if (!labelText && sel && sel.selectedIndex >= 0) {
+            labelText = sel.options[sel.selectedIndex].text;
           }
-          var radio = document.querySelector('input[name="' + qId + '"][value="' + finalAnswer + '"]');
-          if (radio) {
-            radio.checked = true;
-            radio.dispatchEvent(new Event('change'));
-          }
+          previewBox.innerHTML = `Đã chọn: <b>${labelText || val}</b>`;
+          previewBox.style.display = 'block';
+        } else {
+          previewBox.style.display = 'none';
         }
       }
     };
   })();
 
   // =========================================================================
-  // BỘ DỰNG GIAO DIỆN TỰ ĐỘNG TỪ JSON SẠCH (CÓ SOCRATIC, LỜI GIẢI, DẪN CHỨNG)
+  // BỘ PHÂN TÍCH VÀ CHUẨN HÓA DANH SÁCH LỰA CHỌN (KHÔNG BAO GIỜ THIẾU ĐỀ)
+  // =========================================================================
+  function parseOptionsList(rawOptions) {
+    if (!rawOptions) return [];
+
+    // Trường hợp 1: Dạng mảng
+    if (Array.isArray(rawOptions)) {
+      return rawOptions.map((opt, idx) => {
+        const defaultKey = String.fromCharCode(65 + idx);
+        if (typeof opt === 'string') {
+          // Bóc tách nếu chuỗi có dạng "A. Text", "A - Text", "(A) Text"
+          const m = opt.match(/^([A-Za-z0-9ivxlcdm]+)[\.\:\-\)\s]\s*(.*)$/i);
+          if (m) {
+            return { key: m[1].toUpperCase(), text: m[2] ? m[2].trim() : opt.trim() };
+          }
+          return { key: defaultKey, text: opt.trim() };
+        } else if (typeof opt === 'object' && opt !== null) {
+          const k = opt.key || opt.id || opt.letter || opt.val || defaultKey;
+          const t = opt.text || opt.title || opt.content || opt.name || opt.value || '';
+          return { key: String(k).trim().toUpperCase(), text: String(t).trim() };
+        }
+        return { key: defaultKey, text: String(opt) };
+      });
+    }
+
+    // Trường hợp 2: Dạng Object { "A": "Nội dung...", "B": "Nội dung..." }
+    if (typeof rawOptions === 'object' && rawOptions !== null) {
+      return Object.keys(rawOptions).map(key => {
+        const val = rawOptions[key];
+        const text = (typeof val === 'object' && val !== null) 
+          ? (val.text || val.title || val.name || JSON.stringify(val))
+          : String(val);
+        return { key: key.trim(), text: text.trim() };
+      });
+    }
+
+    return [];
+  }
+
+  // =========================================================================
+  // DỰNG GIAO DIỆN TỰ ĐỘNG CHUẨN XÁC THEO TỪNG DẠNG BÀI IELTS
   // =========================================================================
   window.buildReadingHtml = function(data) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
@@ -151,53 +414,116 @@
 
     data.groups.forEach(group => {
       html += `<div class="section-title">${group.title}</div>`;
-      if (group.instructions) html += `<p>${group.instructions}</p>`;
-      if (group.summaryTitle) html += `<h3>${group.summaryTitle}</h3>`;
+      if (group.instructions) {
+        html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
+      }
 
-      // 1. DẠNG SUMMARY COMPLETION (ĐIỀN TỪ VÀO ĐOẠN VĂN)
+      // Nhận diện dạng bài
+      const gType = (group.type || '').toLowerCase();
+      const gMeta = (group.title + ' ' + (group.instructions || '')).toLowerCase();
+      const isTFNG = gType.includes('tfng') || gType.includes('true') || gMeta.includes('true/false/not given') || gMeta.includes('true, false, not given');
+      const isYNNG = gType.includes('ynng') || gType.includes('yes') || gMeta.includes('yes/no/not given') || gMeta.includes('yes, no, not given');
+      const matchingRaw = group.options || group.headings || group.features || group.people || group.box || null;
+
+      // 1. HIỂN THỊ KHUNG ĐỀ MATCHING (LIST OF HEADINGS / OPTIONS / PEOPLE / WORDS)
+      const parsedMatchingOptions = parseOptionsList(matchingRaw);
+      if (parsedMatchingOptions.length > 0) {
+        html += renderMatchingBoxHtml(parsedMatchingOptions, group.optionsTitle || "📋 KHUNG ĐỀ / DANH SÁCH LỰA CHỌN");
+      }
+
+      // 2. DẠNG SUMMARY / GAP FILL: SOCRATIC PHẢI NẰM NGAY TRÊN Ô ĐIỀN ĐÁP ÁN
       if (group.template) {
+        if (group.summaryTitle) html += `<h3 style="margin-top:12px; margin-bottom:8px;">${group.summaryTitle}</h3>`;
+
+        // Đoạn văn tóm tắt ở trên
         let summaryText = group.template;
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
-          const width = q?.inputWidth || "120px";
+          const width = q?.inputWidth || "130px";
           summaryText = summaryText.replace(
             new RegExp(`{{${qId}}}`, 'g'),
-            `<input type="text" class="fill-input" id="${qId}_input" style="width:${width};" placeholder="Điền từ...">`
+            `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`
           );
         });
 
-        html += `<div class="question"><p>${summaryText}</p>`;
+        html += `
+          <div class="question" style="background:var(--bg-subcard, #f8fafc); border-left:4px solid #0284c7; padding:16px; border-radius:6px; line-height:1.85; font-size:14.5px;">
+            ${summaryText}
+          </div>
+        `;
 
+        // Từng câu hỏi Gap Fill: Socratic NGAY TRÊN ô điền của chính câu đó
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
           if (!q) return;
+
           html += `
-            <div id="${qId}" style="margin-top:15px; border-top:1px dashed var(--border-color); padding-top:12px;">
-              <b style="color:var(--primary-blue);">Câu ${q.num || qId.replace('q','')}:</b>
-              <div class="result"></div>
+            <div class="gap-fill-card" id="${qId}">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <b style="color:var(--primary-blue); font-size:15px;">📍 Câu ${q.num || qId.replace('q','')}:</b>
+                <span style="font-size:12px; color:var(--text-muted); background:var(--bg-subcard); padding:2px 8px; border-radius:4px;">Gap Fill</span>
+              </div>
+
+              <!-- NẤC SOCRATIC ĐẶT NGAY TRÊN Ô ĐIỀN ĐÁP ÁN -->
               ${renderSocraticHtml(qId, q)}
+
+              <!-- Ô NHẬP ĐÁP ÁN NẰM NGAY LIỀN KỀ DƯỚI SOCRATIC -->
+              <div class="gap-fill-answer-bar">
+                <label for="${qId}_input_mirror" style="font-size:14px;">✍️ <b>Đáp án cho Câu ${q.num || qId}:</b></label>
+                <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Điền từ cần tìm..." style="width:220px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
+                <span style="font-size:12px; color:var(--text-muted);">(Tự động đồng bộ với ô trống trên đoạn tóm tắt)</span>
+              </div>
+
+              <div class="result"></div>
               ${renderExplanationHtml(qId, q)}
             </div>
           `;
         });
-        html += `</div>`;
-      } 
-      // 2. DẠNG CÂU HỎI RỜI (MATCHING INFO, MATCHING NAMES, TRUE/FALSE...)
+      }
+      // 3. CÁC DẠNG CÂU HỎI RỜI (MCQ ĐẦY ĐỦ ĐỀ, MATCHING, TFNG, YNNG)
       else {
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
           if (!q) return;
 
           html += `
-            <div class="question" id="${qId}">
-              <p><b>${q.num}.</b> ${q.text}</p>
-              <div style="margin-bottom: 12px;">
-                <input type="text" class="fill-input" id="${qId}_input" placeholder="Nhập đáp án..." style="width:${q.inputWidth || '120px'};">
+            <div class="question" id="${qId}" style="margin-bottom:18px;">
+              <p style="font-size:15px; line-height:1.55; margin-bottom:12px;"><b>${q.num}.</b> ${q.text}</p>
+          `;
+
+          const qOptions = parseOptionsList(q.options);
+
+          // A. True / False / Not Given
+          if (isTFNG || q.type === 'tfng') {
+            html += renderChoicePillsHtml(qId, ['TRUE', 'FALSE', 'NOT GIVEN']);
+          }
+          // B. Yes / No / Not Given
+          else if (isYNNG || q.type === 'ynng') {
+            html += renderChoicePillsHtml(qId, ['YES', 'NO', 'NOT GIVEN']);
+          }
+          // C. Multiple Choice (Có đầy đủ phương án A, B, C, D kèm nội dung đề)
+          else if (qOptions.length > 0) {
+            html += renderMultipleChoiceHtml(qId, qOptions, q.multiple || false);
+          }
+          // D. Matching có khung đề chung
+          else if (parsedMatchingOptions.length > 0) {
+            html += renderMatchingSelectHtml(qId, parsedMatchingOptions, q.inputWidth || '100%');
+          }
+          // E. Nhập đáp án văn bản thông thường
+          else {
+            html += `
+              <div style="margin: 10px 0;">
+                <input type="text" class="fill-input" id="${qId}_input" placeholder="Nhập đáp án..." style="width:${q.inputWidth || '180px'}; font-weight:600;" oninput="window.syncUserAnswer('${qId}', this.value)">
               </div>
+            `;
+          }
+
+          // Kèm Socratic, Lời giải và Box suy nghĩ
+          html += `
               <div class="result"></div>
               ${renderSocraticHtml(qId, q)}
               ${renderExplanationHtml(qId, q)}
-              <div class="thought-box">
+              <div class="thought-box" style="margin-top:10px;">
                 <label>💡 Mạch suy nghĩ của em:</label>
                 <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
               </div>
@@ -207,17 +533,87 @@
       }
     });
 
-    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()">Nộp Bài / Xem Kết Quả</button>`;
+    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">Nộp Bài / Xem Kết Quả</button>`;
     return html;
   };
 
+  // RENDER KHUNG ĐỀ MATCHING (LIST OF OPTIONS / HEADINGS)
+  function renderMatchingBoxHtml(options, boxTitle) {
+    const listHtml = options.map(item => `
+      <div class="matching-item">
+        <span class="matching-item-key">${item.key}</span>
+        <span class="matching-item-text">${item.text}</span>
+      </div>
+    `).join('');
+
+    return `
+      <div class="matching-box">
+        <div class="matching-box-title">${boxTitle}</div>
+        <div class="matching-list">${listHtml}</div>
+      </div>
+    `;
+  }
+
+  // RENDER MENU SELECT CHO DẠNG MATCHING (HIỂN THỊ ĐỦ A - NỘI DUNG VÀ PREVIEW)
+  function renderMatchingSelectHtml(qId, options, width) {
+    let opts = '<option value="">-- Bấm vào đây để chọn đáp án --</option>';
+    options.forEach(item => {
+      opts += `<option value="${item.key}">${item.key} — ${item.text}</option>`;
+    });
+
+    return `
+      <div style="margin: 12px 0;">
+        <select id="${qId}_select" class="fill-input" style="width:${width}; max-width:100%; padding:9px 12px; cursor:pointer; font-weight:600;" onchange="window.syncUserAnswer('${qId}', this.value, this.options[this.selectedIndex].text)">
+          ${opts}
+        </select>
+        <div id="${qId}_selected_preview" class="matching-selected-preview"></div>
+        <input type="hidden" id="${qId}_input">
+      </div>
+    `;
+  }
+
+  // RENDER MULTIPLE CHOICE (ĐẦY ĐỦ ĐỀ CỦA TỪNG PHƯƠNG ÁN A, B, C, D)
+  function renderMultipleChoiceHtml(qId, options, isMultiple) {
+    let html = `<div class="mcq-options-list">`;
+    const inputType = isMultiple ? 'checkbox' : 'radio';
+
+    options.forEach(opt => {
+      html += `
+        <label class="mcq-option-item" onclick="window.syncUserAnswer('${qId}', '${opt.key}')">
+          <input type="${inputType}" name="${qId}" value="${opt.key}">
+          <span class="mcq-badge">${opt.key}</span>
+          <span class="mcq-text">${opt.text}</span>
+        </label>
+      `;
+    });
+
+    html += `<input type="hidden" id="${qId}_input"></div>`;
+    return html;
+  }
+
+  // RENDER TRUE / FALSE / NOT GIVEN HOẶC YES / NO / NOT GIVEN
+  function renderChoicePillsHtml(qId, choices) {
+    let html = `<div class="choice-group">`;
+    choices.forEach(ch => {
+      html += `
+        <label class="choice-btn-label" onclick="window.syncUserAnswer('${qId}', '${ch}')">
+          <input type="radio" name="${qId}" value="${ch}">
+          <span>${ch}</span>
+        </label>
+      `;
+    });
+    html += `<input type="hidden" id="${qId}_input"></div>`;
+    return html;
+  }
+
+  // RENDER SOCRATIC LADDER
   function renderSocraticHtml(qId, q) {
     if (!q.socratic || !q.socratic.steps || q.socratic.steps.length === 0) return '';
     const total = q.socratic.steps.length;
     const ans = q.finalAnswer || '';
 
     let sHtml = `
-      <div class="socratic-container" style="background:var(--bg-subcard); border:1.5px solid var(--border-color); border-radius:8px; padding:14px; margin-top:12px;">
+      <div class="socratic-container" style="background:var(--bg-subcard, #f8fafc); border:1.5px solid #cbd5e1; border-radius:8px; padding:14px; margin-top:10px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
           <b style="color:#0284c7; font-size:13.5px;">🪜 BẬC THANG DẪN DẮT (SOCRATIC)</b>
           <span id="${qId}_badge" data-total="${total}" style="background:#0284c7; color:white; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:12px;">Nấc 1/${total}</span>
@@ -229,13 +625,13 @@
       const isFirst = stepNum === 1;
 
       sHtml += `
-        <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed var(--border-color); padding-top:10px;' : ''}">
+        <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed #cbd5e1; padding-top:10px;' : ''}">
           <p style="margin:0 0 6px 0; font-size:13.5px; font-weight:700; color:var(--text-main);">
             Nấc ${stepNum}: ${step.title}<br>
             <span style="font-weight:normal; color:var(--text-muted);">${step.question}</span>
           </p>
           <div style="display:flex; gap:6px;">
-            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập suy nghĩ hoặc câu trả lời..." style="flex:1; padding:6px 10px; border:1px solid var(--border-color); border-radius:4px; font-size:13px; background:var(--bg-card); color:var(--text-main);">
+            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập suy nghĩ hoặc câu trả lời..." style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:4px; font-size:13px; background:var(--bg-card, #fff); color:var(--text-main);">
             <button type="button" id="${qId}_btn_${stepNum}" style="background:#0284c7; color:white; border:none; padding:6px 14px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
           </div>
           <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:13px; line-height:1.5;">
@@ -251,6 +647,7 @@
     return sHtml;
   }
 
+  // RENDER LỜI GIẢI CHI TIẾT
   function renderExplanationHtml(qId, q) {
     if (!q.explanation || !q.explanation.steps) return '';
     let expSteps = q.explanation.steps.map(s => `<p style="margin:4px 0;">${s}</p>`).join('');
@@ -333,7 +730,7 @@
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.passageHtml || "";
 
-      // TỰ ĐỘNG CHỌN: CÓ STRUCTURE SẠCH THÌ TỰ BUILD, KHÔNG CÓ THÌ DÙNG QUESTIONHTML CŨ
+      // DỰNG GIAO DIỆN CÂU HỎI
       if (data.questions && window.buildReadingHtml) {
         document.getElementById('questionBox').innerHTML = window.buildReadingHtml(data);
       } else {
