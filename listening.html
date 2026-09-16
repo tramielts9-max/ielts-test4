@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IELTS Listening Practice - Cambridge 17 to 21</title>
+  <title>IELTS Listening Practice - Cambridge & Vol Actual Tests</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <style>
@@ -15,45 +15,64 @@
     .top-nav-bar {
       display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
     }
-    .cam-tabs-bar {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px;
+    .series-tabs-container {
+      display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;
+    }
+    .tabs-bar {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
       background: var(--bg-card); padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border-color);
     }
-    .cam-tab-btn {
-      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
-      padding: 8px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s;
+    .tab-label {
+      font-weight: 800; font-size: 13.5px; margin-right: 6px; display: flex; align-items: center; min-width: 130px;
     }
-    .cam-tab-btn:hover { border-color: #0284c7; color: #0284c7; }
-    .cam-tab-btn.active {
-      background: #0284c7; border-color: #0284c7; color: #ffffff !important;
+    .tab-btn {
+      background: var(--bg-subcard); border: 1.5px solid var(--border-color); color: var(--text-main);
+      padding: 7px 15px; border-radius: 8px; font-weight: 700; font-size: 13.5px; cursor: pointer; transition: all 0.2s;
+    }
+    .tab-btn:hover { border-color: #0284c7; color: #0284c7; }
+    .tab-btn.active-cam {
+      background: #0284c7 !important; border-color: #0284c7 !important; color: #ffffff !important;
       box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+    }
+    .tab-btn.active-vol {
+      background: #0d9488 !important; border-color: #0d9488 !important; color: #ffffff !important;
+      box-shadow: 0 4px 10px rgba(13, 148, 136, 0.3);
     }
 
     .test-heading {
-      font-size: 17px; font-weight: 800; color: #0f172a; margin: 28px 0 14px 0;
+      font-size: 16.5px; font-weight: 800; color: #0f172a; margin: 26px 0 12px 0;
       padding-bottom: 6px; border-bottom: 2.5px solid #0284c7;
     }
+    .test-heading.vol-heading {
+      border-bottom-color: #0d9488;
+    }
     .test-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px; margin-bottom: 15px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 15px;
     }
     .test-card {
-      background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 18px;
-      display: flex; flex-direction: column; justify-content: space-between; min-height: 185px;
+      background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px;
+      display: flex; flex-direction: column; justify-content: space-between; min-height: 150px;
       transition: transform 0.15s, box-shadow 0.15s;
     }
     .test-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
     .badge-lis {
       display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 12px;
-      font-size: 12px; font-weight: 700; background: #e0f2fe; color: #0284c7; margin-bottom: 10px; width: fit-content;
+      font-size: 12px; font-weight: 700; background: #e0f2fe; color: #0284c7; margin-bottom: 8px; width: fit-content;
     }
-    .card-title { color: #0369a1; font-size: 15.5px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
-    .card-desc { font-size: 13px; color: #64748b; margin: 0 0 16px 0; line-height: 1.5; }
+    .badge-lis.badge-vol {
+      background: #ccfbf1; color: #0f766e;
+    }
+    .card-title { color: #0369a1; font-size: 15px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
+    .card-title.vol-title { color: #0f766e; }
+    .card-desc { font-size: 13px; color: #64748b; margin: 0 0 14px 0; line-height: 1.4; }
     .btn-play {
       display: flex; align-items: center; justify-content: center; gap: 6px; background: #0284c7;
-      color: #ffffff; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 700; font-size: 14px;
+      color: #ffffff; text-decoration: none; padding: 9px 14px; border-radius: 6px; font-weight: 700; font-size: 13.5px;
       transition: background 0.2s;
     }
     .btn-play:hover { background: #0369a1; }
+    .btn-play.btn-vol { background: #0d9488; }
+    .btn-play.btn-vol:hover { background: #0f766e; }
   </style>
 </head>
 <body>
@@ -62,25 +81,40 @@
   <!-- HEADER -->
   <div class="listening-hero">
     <h1 style="margin: 0 0 6px 0; font-size: 24px;">🎧 PHÒNG LUYỆN THI IELTS LISTENING</h1>
-    <p style="margin: 0; opacity: 0.9; font-size: 14px;">Audio Synchronized Transcripts • Bấm câu nghe ngay • Tự động chấm điểm & Lưu Google Drive</p>
+    <p style="margin: 0; opacity: 0.9; font-size: 14px;">Trọn bộ Cambridge 17-21 & IELTS Recent Actual Tests (Vol 8 đến Vol 1) • Bấm câu nghe ngay</p>
   </div>
 
   <div class="top-nav-bar">
     <a href="index.html" class="btn-header" style="background: var(--bg-card); color: var(--text-main); border: 1px solid var(--border-color); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-      🏠 Về Cổng Thi Chính (Reading)
+      🏠 Về Cổng Thi Chính
     </a>
     <span id="userStatusTag" style="font-size: 13px; color: var(--text-muted); font-weight: 600;"></span>
   </div>
 
-  <!-- TABS CHỌN CAMBRIDGE -->
-  <div class="cam-tabs-bar">
-    <span style="font-weight: 800; font-size: 14px; margin-right: 6px; display: flex; align-items: center;">Bộ Sách:</span>
-    <button type="button" class="cam-tab-btn active" onclick="switchCam(21)">Cambridge 21</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(20)">Cambridge 20</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(19)">Cambridge 19</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(18)">Cambridge 18</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam(17)">Cambridge 17</button>
-    <button type="button" class="cam-tab-btn" onclick="switchCam('all')">Xem Tất Cả</button>
+  <!-- BỘ 2 THANH TABS: CAMBRIDGE & VOL -->
+  <div class="series-tabs-container">
+    <!-- THANH 1: CAMBRIDGE -->
+    <div class="tabs-bar">
+      <span class="tab-label" style="color: #0284c7;">🎧 Cambridge IELTS:</span>
+      <button type="button" class="tab-btn active-cam" data-series="cam" data-val="21" onclick="switchSeries('cam', 21)">Cambridge 21</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="20" onclick="switchSeries('cam', 20)">Cambridge 20</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="19" onclick="switchSeries('cam', 19)">Cambridge 19</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="18" onclick="switchSeries('cam', 18)">Cambridge 18</button>
+      <button type="button" class="tab-btn" data-series="cam" data-val="17" onclick="switchSeries('cam', 17)">Cambridge 17</button>
+    </div>
+
+    <!-- THANH 2: RECENT ACTUAL TESTS (VOL 8 -> VOL 1) -->
+    <div class="tabs-bar">
+      <span class="tab-label" style="color: #0d9488;">⚡ Đề Vol (1-8):</span>
+      <button type="button" class="tab-btn" data-series="vol" data-val="8" onclick="switchSeries('vol', 8)">Vol 8</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="7" onclick="switchSeries('vol', 7)">Vol 7</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="6" onclick="switchSeries('vol', 6)">Vol 6</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="5" onclick="switchSeries('vol', 5)">Vol 5</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="4" onclick="switchSeries('vol', 4)">Vol 4</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="3" onclick="switchSeries('vol', 3)">Vol 3</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="2" onclick="switchSeries('vol', 2)">Vol 2</button>
+      <button type="button" class="tab-btn" data-series="vol" data-val="1" onclick="switchSeries('vol', 1)">Vol 1</button>
+    </div>
   </div>
 
   <!-- CONTAINER DANH SÁCH BÀI THI -->
@@ -93,55 +127,52 @@
   import { stateManager } from './js/state.js';
 
   let listeningData = [];
-  let currentCam = 21;
+  let currentSeries = 'cam';
+  let currentVal = 21;
 
-  // Hiển thị tên học viên nếu đã login ở index.html
   const user = stateManager.getUser();
   if (user && user.email) {
     document.getElementById('userStatusTag').innerText = `👤 Học viên: ${user.name || user.email}`;
   }
 
-  // Tải danh mục bài nghe từ file tách riêng
   async function loadCatalog() {
     try {
       const res = await fetch(`data/listening-catalog.json?t=${Date.now()}`);
-      if (!res.ok) throw new Error("Chưa tìm thấy data/listening-catalog.json");
-      listeningData = await res.json();
-      renderUI();
+      if (res.ok) {
+        listeningData = await res.json();
+      }
     } catch (e) {
-      document.getElementById('listeningCatalogContainer').innerHTML = `
-        <div style="text-align:center; padding: 30px; color: #dc2626;">
-          ⚠️ Không thể nạp danh mục bài nghe: ${e.message}
-        </div>
-      `;
+      console.warn("Chưa tải được listening-catalog.json, sử dụng chế độ mặc định.");
     }
+    renderUI();
   }
 
-  window.switchCam = (cam) => {
-    currentCam = cam;
-    document.querySelectorAll('.cam-tab-btn').forEach(b => {
-      if (cam === 'all') {
-        b.classList.toggle('active', b.innerText.includes('Xem Tất Cả'));
-      } else {
-        b.classList.toggle('active', b.innerText.includes(`Cambridge ${cam}`));
+  window.switchSeries = (series, val) => {
+    currentSeries = series;
+    currentVal = val;
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.classList.remove('active-cam', 'active-vol');
+      if (btn.dataset.series === series && parseInt(btn.dataset.val) === val) {
+        btn.classList.add(series === 'cam' ? 'active-cam' : 'active-vol');
       }
     });
+
     renderUI();
   };
 
   function renderUI() {
     const container = document.getElementById('listeningCatalogContainer');
-    const filtered = (currentCam === 'all') 
-      ? listeningData 
-      : listeningData.filter(item => item.cam === currentCam);
-
-    if (filtered.length === 0) {
-      container.innerHTML = `<div style="text-align:center; padding: 30px; color: var(--text-muted);">Đang chuẩn bị đề cho tập này...</div>`;
-      return;
-    }
-
     let html = '';
-    filtered.forEach(item => {
+
+    // NẾU CHỌN CAMBRIDGE
+    if (currentSeries === 'cam') {
+      const item = listeningData.find(d => d.cam === currentVal);
+      if (!item || !item.tests) {
+        container.innerHTML = `<div style="text-align:center; padding: 40px; color: var(--text-muted);">Đang chuẩn bị dữ liệu cho Cambridge ${currentVal}...</div>`;
+        return;
+      }
+
       item.tests.forEach(test => {
         html += `
           <div class="test-heading">
@@ -149,7 +180,6 @@
           </div>
           <div class="test-grid">
         `;
-
         test.parts.forEach(part => {
           const testUrl = `runner-listening.html?test=${part.file}`;
           html += `
@@ -165,10 +195,37 @@
             </div>
           `;
         });
-
         html += `</div>`;
       });
-    });
+    }
+    // NẾU CHỌN BỘ ĐỀ VOL (1 ĐẾN 8 - MỖI VOL CÓ 10 TEST)
+    else if (currentSeries === 'vol') {
+      const volNum = currentVal;
+      for (let t = 1; t <= 10; t++) {
+        html += `
+          <div class="test-heading vol-heading">
+            ⚡ Vol ${volNum} Test ${t} - Listening
+          </div>
+          <div class="test-grid">
+        `;
+        for (let p = 1; p <= 4; p++) {
+          const testUrl = `runner-listening.html?test=vol${volNum}-lis-test${t}-p${p}`;
+          html += `
+            <div class="test-card">
+              <div>
+                <span class="badge-lis badge-vol">🎧 Part ${p}</span>
+                <h4 class="card-title vol-title">Vol ${volNum} Test ${t} - Part ${p}</h4>
+                <div class="card-desc">IELTS Listening Practice Part ${p}</div>
+              </div>
+              <a href="${testUrl}" class="btn-play btn-vol">
+                <span>▶</span> Vào Nghe Part ${p}
+              </a>
+            </div>
+          `;
+        }
+        html += `</div>`;
+      }
+    }
 
     container.innerHTML = html;
   }
