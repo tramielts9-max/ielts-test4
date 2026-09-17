@@ -733,27 +733,30 @@
   // =========================================================================
   // BẬT CHẾ ĐỘ 2 CỘT SONG SONG + THANH KÉO KHI NỘP BÀI
   // =========================================================================
-  window.enableSplitViewAfterSubmit = function() {
-    // 1. Thêm class submitted để CSS mở cột transcript và thanh resizer
+window.enableSplitViewAfterSubmit = function() {
+    // 1. Thêm class submitted vào body
     document.body.classList.add('submitted');
 
-    // 2. Kích hoạt bộ xử lý kéo chuột
-    initSplitResizer();
+    // 2. Ép hiển thị trực tiếp cho chắc chắn (không lo bị CSS khác đè)
+    const passageBox = document.getElementById('passageBox');
+    const dragResizer = document.getElementById('dragResizer');
+    const mainContainer = document.getElementById('mainContainer');
 
-    // 3. Hiện banner hướng dẫn trên đầu question-box
-    const questionBox = document.getElementById('questionBox');
-    if (questionBox && !document.getElementById('submitSuccessBanner')) {
-      const banner = document.createElement('div');
-      banner.id = 'submitSuccessBanner';
-      banner.className = 'submit-banner';
-      banner.innerHTML = `
-        <span>🎉 <b>Đã chấm bài xong!</b> Transcript đối chiếu đã mở ở cột bên trái. Bạn có thể giữ chuột vào thanh giữa ◄► để kéo co giãn.</span>
-      `;
-      questionBox.insertBefore(banner, questionBox.firstChild);
+    if (passageBox) passageBox.style.setProperty('display', 'block', 'important');
+    if (dragResizer) dragResizer.style.setProperty('display', 'flex', 'important');
+    if (mainContainer) {
+      mainContainer.style.setProperty('display', 'flex', 'important');
+      mainContainer.style.setProperty('flex-direction', 'row', 'important');
+    }
+
+    // 3. Kích hoạt thanh kéo chuột ở giữa
+    if (typeof initSplitResizer === 'function') {
+      initSplitResizer();
     }
 
     // 4. Cuộn mượt lên đầu
-    questionBox.scrollTo({ top: 0, behavior: 'smooth' });
+    const questionBox = document.getElementById('questionBox');
+    if (questionBox) questionBox.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // =========================================================================
@@ -863,16 +866,33 @@
         }
       }
 
-      window.TEST_DATA = { title: data.title, answers: data.answers };
+window.TEST_DATA = { title: data.title, answers: data.answers };
 
+      // 1. Chờ nạp xong app.js
       await import('./js/app.js');
+
+      // 2. GẮN LỆNH MỞ TRANSCRIPT NGAY TẠI ĐÂY (TRÁNH BỊ GHI ĐÈ)
+      const realCheckAnswers = window.checkAnswers;
+      window.checkAnswers = function() {
+        if (typeof realCheckAnswers === 'function') realCheckAnswers();
+        if (window.enableSplitViewAfterSubmit) window.enableSplitViewAfterSubmit();
+      };
+
+      // 3. Phòng hờ học sinh bấm nộp từ thanh bar dưới đáy (listening-nav)
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('button, a');
+        if (btn && (btn.innerText.includes('NỘP') || btn.innerText.includes('CHẤM') || btn.classList.contains('btn-submit'))) {
+          setTimeout(() => {
+            if (window.enableSplitViewAfterSubmit) window.enableSplitViewAfterSubmit();
+          }, 200);
+        }
+      });
       
-      // Khởi động thanh điều hướng đáy
+      // 4. Kích hoạt thanh điều hướng đáy
       try {
         const { initListeningNavigation } = await import('./js/listening-nav.js');
         initListeningNavigation();
       } catch(e) {}
-    }
 
     loadTest();
   }
