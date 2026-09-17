@@ -387,7 +387,7 @@
         window.highlightText(highlightId);
       }
     };
-
+window.enableSplitViewAfterSubmit = function() {
     // 2. TÍNH NĂNG ĐỒNG BỘ 2 CHIỀU MỌI LOẠI INPUT CÂU TRẢ LỜI
     window.syncUserAnswer = function(qId, val, fullLabel) {
       // A. Đồng bộ các ô text input (cả ô trong đề lẫn ô mirror dưới card)
@@ -737,28 +737,44 @@ window.enableSplitViewAfterSubmit = function() {
     // 1. Thêm class submitted vào body
     document.body.classList.add('submitted');
 
-    // 2. Ép hiển thị trực tiếp cho chắc chắn (không lo bị CSS khác đè)
+    // 2. Ép hiển thị trực tiếp bằng Javascript (Đảm bảo 100% không bị bất kỳ file CSS nào đè)
     const passageBox = document.getElementById('passageBox');
     const dragResizer = document.getElementById('dragResizer');
     const mainContainer = document.getElementById('mainContainer');
 
-    if (passageBox) passageBox.style.setProperty('display', 'block', 'important');
-    if (dragResizer) dragResizer.style.setProperty('display', 'flex', 'important');
+    if (passageBox) {
+      passageBox.style.setProperty('display', 'block', 'important');
+      if (!passageBox.style.width) passageBox.style.width = '48%';
+    }
+    if (dragResizer) {
+      dragResizer.style.setProperty('display', 'flex', 'important');
+    }
     if (mainContainer) {
       mainContainer.style.setProperty('display', 'flex', 'important');
       mainContainer.style.setProperty('flex-direction', 'row', 'important');
+      mainContainer.style.setProperty('height', 'calc(100vh - 130px)', 'important');
     }
 
-    // 3. Kích hoạt thanh kéo chuột ở giữa
+    // 3. Kích hoạt bộ xử lý kéo co giãn ở giữa
     if (typeof initSplitResizer === 'function') {
       initSplitResizer();
     }
 
-    // 4. Cuộn mượt lên đầu
+    // 4. Hiện banner thông báo
     const questionBox = document.getElementById('questionBox');
+    if (questionBox && !document.getElementById('submitSuccessBanner')) {
+      const banner = document.createElement('div');
+      banner.id = 'submitSuccessBanner';
+      banner.className = 'submit-banner';
+      banner.innerHTML = `
+        <span>🎉 <b>Đã chấm bài xong!</b> Transcript đối chiếu đã mở ở cột bên trái. Bạn có thể giữ chuột vào thanh giữa ◄► để kéo co giãn.</span>
+      `;
+      questionBox.insertBefore(banner, questionBox.firstChild);
+    }
+
+    // 5. Cuộn mượt lên đầu
     if (questionBox) questionBox.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
   // =========================================================================
   // TỰ ĐỘNG CUỘN VÀ CHỚP SÁNG TRANSCRIPT KHI BẤM XEM DẪN CHỨNG
   // =========================================================================
