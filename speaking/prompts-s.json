@@ -1,0 +1,15 @@
+{
+  "part1": [
+    { "id": "p1_1", "topic": "Study & Work", "prompt": "Do you prefer studying in the morning or in the evening? Why?" },
+    { "id": "p1_2", "topic": "Hometown", "prompt": "What do you like most about your hometown?" },
+    { "id": "p1_3", "topic": "Technology", "prompt": "How often do you use social media during the day?" }
+  ],
+  "part2": [
+    { "id": "p2_1", "topic": "Personal Challenge", "prompt": "Describe a difficult challenge you met and how you overcame it. You should say: what it was, when it happened, how you overcame it, and explain how you felt after completing it." },
+    { "id": "p2_2", "topic": "A Person You Admire", "prompt": "Describe an intelligent person you know. You should say: who this person is, how you know them, what they do, and explain why you think they are intelligent." }
+  ],
+  "part3": [
+    { "id": "p3_1", "topic": "Technology & Society", "prompt": "Do you think modern technology makes people more isolated or more connected? Why?" },
+    { "id": "p3_2", "topic": "Success & Hard Work", "prompt": "Is intelligence or hard work more important for achieving success in modern life?" }
+  ]
+}
