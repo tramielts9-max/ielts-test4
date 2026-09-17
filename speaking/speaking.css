@@ -1,0 +1,334 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f4ef;
+  margin: 0;
+  padding: 20px 15px;
+  color: #1e293b;
+}
+
+.s-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.s-header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.s-title {
+  color: #047857;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.s-subtitle {
+  color: #64748b;
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+
+/* Tabs Part 1, 2, 3 */
+.part-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.part-tab-btn {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.part-tab-btn.active {
+  background: #047857;
+  color: white;
+  border-color: #047857;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+select, input[type="text"], textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 14.5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+select:focus, input[type="text"]:focus, textarea:focus {
+  border-color: #047857;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* Khu vực thu âm */
+.record-box {
+  background: #ecfdf5;
+  border: 2px dashed #059669;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.rec-btn {
+  background: #e11d48;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.rec-btn.recording {
+  background: #059669;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(5, 150, 105, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+}
+
+.audio-player-container {
+  margin-top: 15px;
+  display: none;
+}
+
+audio {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+/* Nút Submit & Print */
+.btn-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  flex: 1;
+  min-width: 200px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-grade {
+  background: #047857;
+  color: white;
+}
+
+.btn-grade:hover {
+  background: #065f46;
+}
+
+.btn-grade:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.btn-print {
+  background: #0284c7;
+  color: white;
+  display: none;
+}
+
+#status-bar {
+  text-align: center;
+  font-size: 14.5px;
+  font-weight: 700;
+  margin-top: 16px;
+  color: #047857;
+}
+
+/* Bảng màu chú thích & Result */
+.color-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#result-box {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 2px dashed #cbd5e0;
+  display: none;
+}
+
+#result-content {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+#result-content hr {
+  border: none;
+  height: 2px;
+  background: #e2e8f0;
+  margin: 30px 0;
+}
+
+#result-content h3 {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 6px solid #047857;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 16.5px;
+  color: #047857;
+  margin-top: 20px;
+}
+
+del.err {
+  color: #e53e3e;
+  background-color: #ffe3e3;
+  text-decoration: line-through;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+ins.fix {
+  color: #166534;
+  background-color: #dcfce7;
+  text-decoration: none;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+mark.vocab {
+  background-color: #fef9c3;
+  color: #854d0e;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+span.teacher-note {
+  color: #6b21a8;
+  background-color: #f3e8ff;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-style: italic;
+  font-size: 13.5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #fff;
+}
+
+table, th, td {
+  border: 1px solid #cbd5e0;
+}
+
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+}
+
+th {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.score-box {
+  background: #ecfdf5;
+  border: 1.5px solid #a7f3d0;
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.score-box h2 {
+  margin: 0;
+  color: #065f46;
+  font-size: 20px;
+}
+
+blockquote {
+  background: #f8fafc;
+  border-left: 4px solid #cbd5e0;
+  padding: 12px 16px;
+  margin: 15px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+@media print {
+  body { background: white; padding: 0; }
+  .s-container { box-shadow: none; border: none; max-width: 100%; padding: 0; }
+  .part-tabs, .input-group, .record-box, .btn-container, #status-bar, .s-header-nav { display: none !important; }
+  #result-box { display: block !important; border: none; padding: 0; }
+}
