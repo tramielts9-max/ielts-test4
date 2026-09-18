@@ -1,0 +1,92 @@
+{
+  "tense_id": "present-simple",
+  "tense_name": "SIMPLE PRESENT (HIỆN TẠI ĐƠN)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "to-be-rules",
+      "title": "1. DẠNG ĐỘNG TỪ TO BE",
+      "formulas": {
+        "affirmative": "(+) S + am/is/are + O",
+        "negative": "(–) S + am/is/are + NOT + O",
+        "interrogative": "(?) Am/is/are + S + O?"
+      },
+      "subject_rules": [
+        "I ➔ am",
+        "He, she, it, danh từ số ÍT ➔ is",
+        "You, we, they, danh từ số NHIỀU ➔ are"
+      ],
+      "note": "Câu hỏi trong thì hiện tại đơn đảo ngược thứ tự giữa chủ ngữ và động từ 'to be' (am/is/are) để tạo thành câu hỏi. Ví dụ: 'She is at the party.' ➔ 'Is she at the party?'"
+    },
+    {
+      "id": "action-verb-rules",
+      "title": "2. DẠNG ĐỘNG TỪ THƯỜNG (V)",
+      "formulas": {
+        "affirmative": "(+) S + V (s/es) + O",
+        "negative": "(–) S + do/does + NOT + V0 + O",
+        "interrogative": "(?) Do/does + S + V0 + O?"
+      },
+      "subject_rules": [
+        "He, she, it, danh từ số ÍT ➔ V(s/es)",
+        "I, you, we, they, danh từ số NHIỀU ➔ V0 (nguyên mẫu)",
+        "Phủ định: He, she, it, ÍT + does not / doesn't + V0",
+        "Phủ định: I, you, we, they, NHIỀU + do not / don't + V0",
+        "Nghi vấn: Does + He, she, it, ÍT + V0?",
+        "Nghi vấn: Do + I, you, we, they, NHIỀU + V0?"
+      ],
+      "spelling_rules": [
+        {
+          "condition": "Động từ kết thúc bằng các chữ cái S, X, Z, CH, SH, O",
+          "rule": "Thêm '-es'",
+          "examples": "pass -> passes, fix -> fixes, buzz -> buzzes, watch -> watches, push -> pushes, go -> goes, do -> does"
+        },
+        {
+          "condition": "Động từ kết thúc bằng phụ âm + Y",
+          "rule": "Đổi 'Y' thành 'IES'",
+          "examples": "carry -> carries, study -> studies, marry -> marries, worry -> worries, try -> tries"
+        },
+        {
+          "condition": "Động từ kết thúc bằng nguyên âm + Y",
+          "rule": "Giữ nguyên 'Y' và thêm 'S'",
+          "examples": "play -> plays, enjoy -> enjoys, buy -> buys, say -> says, stay -> stays"
+        },
+        {
+          "condition": "Động từ bất quy tắc",
+          "rule": "Biến đổi riêng",
+          "examples": "have -> has, be -> is (am/are cho các chủ ngữ khác)"
+        }
+      ]
+    },
+    {
+      "id": "usage-rules",
+      "title": "3. CÁCH SỬ DỤNG (USAGE)",
+      "usages": [
+        { "name": "Thói quen (Habit)", "desc": "Hành động lặp đi lặp lại thường xuyên", "example": "I play football everyday" },
+        { "name": "Chân lý (Fact/General truth)", "desc": "Sự thật hiển nhiên, quy luật tự nhiên khoa học", "example": "Water boils at 100 °C" },
+        { "name": "Lịch trình tương lai (Scheduled event)", "desc": "Kế hoạch theo thời gian biểu, lịch tàu xe cố định", "example": "The train leaves at 9:00 this morning." }
+      ]
+    },
+    {
+      "id": "signal-markers",
+      "title": "4. DẤU HIỆU NHẬN BIẾT & TẦN SUẤT (FREQUENCY)",
+      "markers": [
+        { "word": "Every + thời gian (every day, every week...)", "percent": "~100%", "vn": "mỗi / hàng ngày" },
+        { "word": "Always", "percent": "100%", "vn": "luôn luôn" },
+        { "word": "Usually", "percent": "~90%", "vn": "thường xuyên" },
+        { "word": "Frequently / Often", "percent": "~70-80%", "vn": "thường xuyên / thường thường" },
+        { "word": "Often / Generally", "percent": "~50-60%", "vn": "thường thường" },
+        { "word": "Sometimes", "percent": "~30-50%", "vn": "thỉnh thoảng" },
+        { "word": "Rarely / Seldom", "percent": "~10-20%", "vn": "hiếm khi" },
+        { "word": "Never", "percent": "0%", "vn": "không bao giờ / chưa bao giờ" }
+      ]
+    }
+  ]
+}
