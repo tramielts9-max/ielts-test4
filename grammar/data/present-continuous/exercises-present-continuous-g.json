@@ -1,0 +1,285 @@
+{
+  "tense_id": "present-continuous",
+  "title": "BÀI TẬP THÌ HIỆN TẠI TIẾP DIỄN (PRESENT CONTINUOUS)",
+  "exercise_groups": [
+    {
+      "group_id": "pc_tobe_i_am",
+      "group_title": "1. Ôn Tập Nền Tảng To Be: Nhóm I + am",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "pc_tbi_1", "type": "blank", "prompt": "I [blank] a student.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "pc_tbi_2", "type": "blank", "prompt": "I [blank] happy.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "pc_tbi_3", "type": "blank", "prompt": "I [blank] from Vietnam.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "pc_tbi_4", "type": "blank", "prompt": "I [blank] tired today.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "pc_tbi_5", "type": "blank", "prompt": "I [blank] ready to start the meeting.", "answers": ["am", "'m"], "explanation": "I + am." }
+      ]
+    },
+    {
+      "group_id": "pc_tobe_he_she_it",
+      "group_title": "2. Ôn Tập Nền Tảng To Be: Nhóm He/ She/ It + is",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "pc_tbhsi_1", "type": "blank", "prompt": "He [blank] a doctor.", "answers": ["is", "'s"], "explanation": "He đi với is." },
+        { "id": "pc_tbhsi_2", "type": "blank", "prompt": "She [blank] very kind.", "answers": ["is", "'s"], "explanation": "She đi với is." },
+        { "id": "pc_tbhsi_3", "type": "blank", "prompt": "It [blank] a sunny day.", "answers": ["is", "'s"], "explanation": "It đi với is." },
+        { "id": "pc_tbhsi_4", "type": "blank", "prompt": "He [blank] always on time for meetings.", "answers": ["is", "'s"], "explanation": "He đi với is." },
+        { "id": "pc_tbhsi_5", "type": "blank", "prompt": "She [blank] my best friend.", "answers": ["is", "'s"], "explanation": "She đi với is." }
+      ]
+    },
+    {
+      "group_id": "pc_tobe_you_we_they",
+      "group_title": "3. Ôn Tập Nền Tảng To Be: Nhóm You/ We/ They + are",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "pc_tbywt_1", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are", "'re"], "explanation": "You đi với are." },
+        { "id": "pc_tbywt_2", "type": "blank", "prompt": "We [blank] excited about the concert tonight.", "answers": ["are", "'re"], "explanation": "We đi với are." },
+        { "id": "pc_tbywt_3", "type": "blank", "prompt": "They [blank] ready for the exam.", "answers": ["are", "'re"], "explanation": "They đi với are." },
+        { "id": "pc_tbywt_4", "type": "blank", "prompt": "You [blank] always very helpful.", "answers": ["are", "'re"], "explanation": "You đi với are." },
+        { "id": "pc_tbywt_5", "type": "blank", "prompt": "We [blank] interested in learning new languages.", "answers": ["are", "'re"], "explanation": "We đi với are." }
+      ]
+    },
+    {
+      "group_id": "pc_tobe_mixed",
+      "group_title": "4. Ôn Tập Nền Tảng To Be: Trộn (Mixed)",
+      "instruction": "Điền am, is hoặc are vào chỗ trống:",
+      "questions": [
+        { "id": "pc_tbm_1", "type": "blank", "prompt": "I [blank] a student at this school.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "pc_tbm_2", "type": "blank", "prompt": "He [blank] a good singer.", "answers": ["is", "'s"], "explanation": "He + is." },
+        { "id": "pc_tbm_3", "type": "blank", "prompt": "We [blank] going to the beach today.", "answers": ["are", "'re"], "explanation": "We + are." },
+        { "id": "pc_tbm_4", "type": "blank", "prompt": "She [blank] excited about her new job.", "answers": ["is", "'s"], "explanation": "She + is." },
+        { "id": "pc_tbm_5", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are", "'re"], "explanation": "You + are." },
+        { "id": "pc_tbm_6", "type": "blank", "prompt": "They [blank] not here right now.", "answers": ["are"], "explanation": "They + are." },
+        { "id": "pc_tbm_7", "type": "blank", "prompt": "It [blank] a beautiful day outside.", "answers": ["is", "'s"], "explanation": "It + is." },
+        { "id": "pc_tbm_8", "type": "blank", "prompt": "I [blank] very tired after the long trip.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "pc_tbm_9", "type": "blank", "prompt": "They [blank] happy with the results.", "answers": ["are", "'re"], "explanation": "They + are." },
+        { "id": "pc_tbm_10", "type": "blank", "prompt": "She [blank] always very polite.", "answers": ["is", "'s"], "explanation": "She + is." }
+      ]
+    },
+    {
+      "group_id": "pc_affirmative_10",
+      "group_title": "5. Hiện Tại Tiếp Diễn: Dạng Khẳng Định (+)",
+      "instruction": "Chia động từ trong ngoặc theo cấu trúc (+) S + am/is/are + V-ing:",
+      "questions": [
+        { "id": "pca_1", "type": "blank", "prompt": "1. The flowers (be, bloom) [blank] beautifully.", "answers": ["are blooming"], "explanation": "The flowers là số nhiều ➔ are blooming." },
+        { "id": "pca_2a", "type": "blank", "prompt": "2. Sarah and Emily (be, be) [blank] in the garden.", "answers": ["are being", "are"], "explanation": "Sarah and Emily là chủ ngữ 2 người ➔ are being / are." },
+        { "id": "pca_2b", "type": "blank", "prompt": "They (be, plant) [blank] flowers.", "answers": ["are planting"], "explanation": "They ➔ are planting." },
+        { "id": "pca_3", "type": "blank", "prompt": "3. The dog (be, bark) [blank] loudly.", "answers": ["is barking"], "explanation": "The dog là số ít ➔ is barking." },
+        { "id": "pca_4", "type": "blank", "prompt": "4. This building (be, stand) [blank] tall.", "answers": ["is standing"], "explanation": "This building là số ít ➔ is standing." },
+        { "id": "pca_5a", "type": "blank", "prompt": "5. My parents (be, be) [blank] at work.", "answers": ["are being", "are"], "explanation": "My parents là số nhiều ➔ are being / are." },
+        { "id": "pca_5b", "type": "blank", "prompt": "They (be, be) [blank] busy today.", "answers": ["are being", "are"], "explanation": "They ➔ are being / are." },
+        { "id": "pca_6", "type": "blank", "prompt": "6. The milk (be, smell) [blank] fresh.", "answers": ["is smelling"], "explanation": "The milk là số ít ➔ is smelling." },
+        { "id": "pca_7", "type": "blank", "prompt": "7. These chairs (be, feel) [blank] comfortable.", "answers": ["are feeling"], "explanation": "These chairs là số nhiều ➔ are feeling." },
+        { "id": "pca_8", "type": "blank", "prompt": "8. The students (be, read) [blank] in the library.", "answers": ["are reading"], "explanation": "The students là số nhiều ➔ are reading." },
+        { "id": "pca_9", "type": "blank", "prompt": "9. This movie (be, be) [blank] interesting.", "answers": ["is being", "is"], "explanation": "This movie là số ít ➔ is being / is." },
+        { "id": "pca_10", "type": "blank", "prompt": "10. My neighbors (be, be) [blank] friendly.", "answers": ["are being", "are"], "explanation": "My neighbors là số nhiều ➔ are being / are." }
+      ]
+    },
+    {
+      "group_id": "pc_negative_10",
+      "group_title": "6. Hiện Tại Tiếp Diễn: Dạng Phủ Định (–)",
+      "instruction": "Chia động từ trong ngoặc theo cấu trúc (–) S + am/is/are + NOT + V-ing:",
+      "questions": [
+        { "id": "pcn_1", "type": "blank", "prompt": "1. The flowers (be, not, wilt) [blank].", "answers": ["are not wilting", "aren't wilting"], "explanation": "The flowers (số nhiều) ➔ are not wilting." },
+        { "id": "pcn_2", "type": "blank", "prompt": "2. Sarah and Emily (be, not, be) [blank] in the house.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "Sarah and Emily ➔ are not being." },
+        { "id": "pcn_3", "type": "blank", "prompt": "3. The dog (be, not, be) [blank] quiet.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "The dog ➔ is not being." },
+        { "id": "pcn_4", "type": "blank", "prompt": "4. This building (be, not, be) [blank] short.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "This building ➔ is not being." },
+        { "id": "pcn_5", "type": "blank", "prompt": "5. My parents (be, not, be) [blank] at home.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "My parents ➔ are not being." },
+        { "id": "pcn_6", "type": "blank", "prompt": "6. The milk (be, not, expire) [blank].", "answers": ["is not expiring", "isn't expiring"], "explanation": "The milk (không đếm được) ➔ is not expiring." },
+        { "id": "pcn_7", "type": "blank", "prompt": "7. These chairs (be, not, be) [blank] hard.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "These chairs ➔ are not being." },
+        { "id": "pcn_8", "type": "blank", "prompt": "8. The students (be, not, play) [blank] outside.", "answers": ["are not playing", "aren't playing"], "explanation": "The students ➔ are not playing." },
+        { "id": "pcn_9", "type": "blank", "prompt": "9. This movie (be, not, be) [blank] boring.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "This movie ➔ is not being." },
+        { "id": "pcn_10", "type": "blank", "prompt": "10. My neighbors (be, not, be) [blank] rude.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "My neighbors ➔ are not being." }
+      ]
+    },
+    {
+      "group_id": "pc_questions_comprehensive_20",
+      "group_title": "7. Hiện Tại Tiếp Diễn: Dạng Câu Hỏi & Bài Tập Tổng Hợp",
+      "instruction": "Chia dạng đúng của động từ (câu hỏi, khẳng định hoặc phủ định tiếp diễn):",
+      "questions": [
+        { "id": "pcq_1", "type": "blank", "prompt": "1. (be) [blank] this your favorite book?", "answers": ["Is", "is"], "explanation": "Câu hỏi to be với this favorite book ➔ Is." },
+        { "id": "pcq_2a", "type": "blank", "prompt": "2. The milk (be) [blank] (smell) [blank] fresh.", "answers": ["is smelling"], "explanation": "The milk is smelling fresh." },
+        { "id": "pcq_2b", "type": "blank", "prompt": "It (be, not) [blank] (expire) [blank].", "answers": ["is not expiring", "isn't expiring"], "explanation": "It is not expiring." },
+        { "id": "pcq_3", "type": "blank", "prompt": "3. (be) [blank] they coming to the party tonight?", "answers": ["Are", "are"], "explanation": "They ➔ Are they coming...?" },
+        { "id": "pcq_4a", "type": "blank", "prompt": "4. Sarah and Emily (be) [blank] (be) in the garden.", "answers": ["are being", "are"], "explanation": "Sarah and Emily are in the garden." },
+        { "id": "pcq_4b", "type": "blank", "prompt": "They (be, not) [blank] (be) in the house.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "They are not in the house." },
+        { "id": "pcq_5", "type": "blank", "prompt": "5. (be) [blank] I in the right room?", "answers": ["Am", "am"], "explanation": "I ➔ Am I in the right room?" },
+        { "id": "pcq_6a", "type": "blank", "prompt": "6. The train (be) [blank] (run) [blank] on time today.", "answers": ["is running"], "explanation": "The train is running on time today." },
+        { "id": "pcq_6b", "type": "blank", "prompt": "It (be, not) [blank] (be) late.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "It is not being / is not late." },
+        { "id": "pcq_7a", "type": "blank", "prompt": "7. My neighbors (be) [blank] (be) friendly.", "answers": ["are being", "are"], "explanation": "My neighbors are friendly." },
+        { "id": "pcq_7b", "type": "blank", "prompt": "They (be, not) [blank] (be) rude.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "They are not being / are not rude." },
+        { "id": "pcq_8", "type": "blank", "prompt": "8. (be) [blank] you going to the market today?", "answers": ["Are", "are"], "explanation": "You ➔ Are you going to the market today?" },
+        { "id": "pcq_9a", "type": "blank", "prompt": "9. These chairs (be) [blank] (be) comfortable.", "answers": ["are being", "are"], "explanation": "These chairs are comfortable." },
+        { "id": "pcq_9b", "type": "blank", "prompt": "They (be, not) [blank] (be) hard.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "They are not hard." },
+        { "id": "pcq_10", "type": "blank", "prompt": "10. (be) [blank] we allowed to use our phones in class?", "answers": ["Are", "are"], "explanation": "We ➔ Are we allowed to use our phones in class?" },
+        { "id": "pcq_11a", "type": "blank", "prompt": "11. The sky (be) [blank] (be) clear this morning.", "answers": ["is being", "is"], "explanation": "The sky is clear this morning." },
+        { "id": "pcq_11b", "type": "blank", "prompt": "It (be, not) [blank] (be) cloudy.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "It is not cloudy." },
+        { "id": "pcq_12a", "type": "blank", "prompt": "12. The coffee (be) [blank] (be) hot.", "answers": ["is being", "is"], "explanation": "The coffee is hot." },
+        { "id": "pcq_12b", "type": "blank", "prompt": "It (be, not) [blank] (be) cold.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "It is not cold." },
+        { "id": "pcq_13", "type": "blank", "prompt": "13. (be) [blank] she your sister?", "answers": ["Is", "is"], "explanation": "She ➔ Is she your sister?" },
+        { "id": "pcq_14", "type": "blank", "prompt": "14. (be) [blank] it going to rain this afternoon?", "answers": ["Is", "is"], "explanation": "It ➔ Is it going to rain this afternoon?" },
+        { "id": "pcq_15a", "type": "blank", "prompt": "15. My parents (be) [blank] (be) at work.", "answers": ["are being", "are"], "explanation": "My parents are at work." },
+        { "id": "pcq_15b", "type": "blank", "prompt": "They (be, not) [blank] (be) at home.", "answers": ["are not being", "aren't being", "are not", "aren't"], "explanation": "They are not at home." },
+        { "id": "pcq_16a", "type": "blank", "prompt": "16. The flowers (be) [blank] (bloom) [blank] beautifully.", "answers": ["are blooming"], "explanation": "The flowers are blooming beautifully." },
+        { "id": "pcq_16b", "type": "blank", "prompt": "They (be, not) [blank] (wilt).", "answers": ["are not wilting", "aren't wilting"], "explanation": "They are not wilting." },
+        { "id": "pcq_17", "type": "blank", "prompt": "17. (be) [blank] he your best friend?", "answers": ["Is", "is"], "explanation": "He ➔ Is he your best friend?" },
+        { "id": "pcq_18a", "type": "blank", "prompt": "18. The students (be) [blank] (read) [blank] in the library.", "answers": ["are reading"], "explanation": "The students are reading in the library." },
+        { "id": "pcq_18b", "type": "blank", "prompt": "They (be, not) [blank] (play) outside.", "answers": ["are not playing", "aren't playing"], "explanation": "They are not playing outside." },
+        { "id": "pcq_19a", "type": "blank", "prompt": "19. This movie (be) [blank] (be) interesting.", "answers": ["is being", "is"], "explanation": "This movie is interesting." },
+        { "id": "pcq_19b", "type": "blank", "prompt": "It (be, not) [blank] (be) boring.", "answers": ["is not being", "isn't being", "is not", "isn't"], "explanation": "It is not boring." },
+        { "id": "pcq_20", "type": "blank", "prompt": "20. (be) [blank] I late for the meeting?", "answers": ["Am", "am"], "explanation": "I ➔ Am I late for the meeting?" }
+      ]
+    },
+    {
+      "group_id": "v_ing_spelling_15",
+      "group_title": "8. Quy Tắc Thêm Đuôi -ing Vào Động Từ",
+      "instruction": "Viết dạng -ing của các động từ dưới đây (VD: go ➔ going):",
+      "questions": [
+        { "id": "ving_1", "type": "blank", "prompt": "take ➔ [blank]", "answers": ["taking"], "explanation": "Bỏ e trước khi thêm -ing: take ➔ taking." },
+        { "id": "ving_2", "type": "blank", "prompt": "drive ➔ [blank]", "answers": ["driving"], "explanation": "Bỏ e thêm -ing: drive ➔ driving." },
+        { "id": "ving_3", "type": "blank", "prompt": "see ➔ [blank]", "answers": ["seeing"], "explanation": "Đuôi ee giữ nguyên: see ➔ seeing." },
+        { "id": "ving_4", "type": "blank", "prompt": "agree ➔ [blank]", "answers": ["agreeing"], "explanation": "Đuôi ee giữ nguyên: agree ➔ agreeing." },
+        { "id": "ving_5", "type": "blank", "prompt": "open ➔ [blank]", "answers": ["opening"], "explanation": "Trọng âm rơi vào âm tiết đầu ➔ không gấp đôi: opening." },
+        { "id": "ving_6", "type": "blank", "prompt": "enter ➔ [blank]", "answers": ["entering"], "explanation": "Trọng âm âm 1 ➔ entering." },
+        { "id": "ving_7", "type": "blank", "prompt": "happen ➔ [blank]", "answers": ["happening"], "explanation": "Trọng âm âm 1 ➔ happening." },
+        { "id": "ving_8", "type": "blank", "prompt": "try ➔ [blank]", "answers": ["trying"], "explanation": "Đuôi y giữ nguyên thêm -ing: trying." },
+        { "id": "ving_9", "type": "blank", "prompt": "play ➔ [blank]", "answers": ["playing"], "explanation": "playing." },
+        { "id": "ving_10", "type": "blank", "prompt": "work ➔ [blank]", "answers": ["working"], "explanation": "working." },
+        { "id": "ving_11", "type": "blank", "prompt": "speak ➔ [blank]", "answers": ["speaking"], "explanation": "speaking." },
+        { "id": "ving_12", "type": "blank", "prompt": "get ➔ [blank]", "answers": ["getting"], "explanation": "1 nguyên âm kẹp giữa 2 phụ âm ➔ gấp đôi t: getting." },
+        { "id": "ving_13", "type": "blank", "prompt": "travel ➔ [blank]", "answers": ["travelling", "traveling"], "explanation": "traveling (US) hoặc travelling (UK)." },
+        { "id": "ving_14", "type": "blank", "prompt": "lie ➔ [blank]", "answers": ["lying"], "explanation": "Đuôi -ie đổi thành -y rồi thêm -ing: lie ➔ lying." },
+        { "id": "ving_15", "type": "blank", "prompt": "win ➔ [blank]", "answers": ["winning"], "explanation": "Gấp đôi phụ âm cuối n: winning." }
+      ]
+    },
+    {
+      "group_id": "pc_rewrite_aff_to_qn",
+      "group_title": "9. Chuyển Câu Khẳng Định Sang Câu Hỏi Và Phủ Định (+ => ?-)",
+      "instruction": "Viết lại thành câu hỏi (?) và câu phủ định (–):",
+      "questions": [
+        { "id": "pcr_aq_1", "type": "rewrite", "prompt": "She is playing tennis every weekend. ➔ Câu hỏi:", "targetStart": "", "answers": ["Is she playing tennis every weekend?", "Is she playing tennis every weekend"], "explanation": "Đảo Is lên đầu: Is she playing tennis every weekend?" },
+        { "id": "pcr_an_1", "type": "rewrite", "prompt": "She is playing tennis every weekend. ➔ Câu phủ định:", "targetStart": "", "answers": ["She is not playing tennis every weekend.", "She isn't playing tennis every weekend.", "She is not playing tennis every weekend", "She isn't playing tennis every weekend"], "explanation": "She is not / isn't playing tennis every weekend." },
+        { "id": "pcr_aq_2", "type": "rewrite", "prompt": "They are studying English at school. ➔ Câu hỏi:", "targetStart": "", "answers": ["Are they studying English at school?", "Are they studying English at school"], "explanation": "Are they studying English at school?" },
+        { "id": "pcr_an_2", "type": "rewrite", "prompt": "They are studying English at school. ➔ Câu phủ định:", "targetStart": "", "answers": ["They are not studying English at school.", "They aren't studying English at school.", "They are not studying English at school", "They aren't studying English at school"], "explanation": "They are not / aren't studying English at school." },
+        { "id": "pcr_aq_3", "type": "rewrite", "prompt": "He is liking coffee. ➔ Câu hỏi:", "targetStart": "", "answers": ["Is he liking coffee?", "Is he liking coffee"], "explanation": "Is he liking coffee?" },
+        { "id": "pcr_an_3", "type": "rewrite", "prompt": "He is liking coffee. ➔ Câu phủ định:", "targetStart": "", "answers": ["He is not liking coffee.", "He isn't liking coffee.", "He is not liking coffee", "He isn't liking coffee"], "explanation": "He is not / isn't liking coffee." },
+        { "id": "pcr_aq_4", "type": "rewrite", "prompt": "We are going to the gym every day. ➔ Câu hỏi:", "targetStart": "", "answers": ["Are we going to the gym every day?", "Are you going to the gym every day?", "Are we going to the gym every day", "Are you going to the gym every day"], "explanation": "Are we/you going to the gym every day?" },
+        { "id": "pcr_an_4", "type": "rewrite", "prompt": "We are going to the gym every day. ➔ Câu phủ định:", "targetStart": "", "answers": ["We are not going to the gym every day.", "We aren't going to the gym every day.", "We are not going to the gym every day", "We aren't going to the gym every day"], "explanation": "We are not / aren't going to the gym every day." },
+        { "id": "pcr_aq_5", "type": "rewrite", "prompt": "I am watching movies in the evening. ➔ Câu hỏi:", "targetStart": "", "answers": ["Am I watching movies in the evening?", "Are you watching movies in the evening?", "Am I watching movies in the evening", "Are you watching movies in the evening"], "explanation": "Am I / Are you watching movies in the evening?" },
+        { "id": "pcr_an_5", "type": "rewrite", "prompt": "I am watching movies in the evening. ➔ Câu phủ định:", "targetStart": "", "answers": ["I am not watching movies in the evening.", "I'm not watching movies in the evening.", "I am not watching movies in the evening", "I'm not watching movies in the evening"], "explanation": "I am not watching movies in the evening." }
+      ]
+    },
+    {
+      "group_id": "pc_rewrite_qn_to_aff_neg",
+      "group_title": "10. Chuyển Câu Hỏi Sang Khẳng Định Và Phủ Định (? => +-)",
+      "instruction": "Chuyển câu hỏi đã cho thành câu khẳng định (+) và phủ định (–):",
+      "questions": [
+        { "id": "pcr_qa_1", "type": "rewrite", "prompt": "Is she studying for her exam? ➔ Câu khẳng định:", "targetStart": "", "answers": ["She is studying for her exam.", "She is studying for her exam"], "explanation": "She is studying for her exam." },
+        { "id": "pcr_qn_1", "type": "rewrite", "prompt": "Is she studying for her exam? ➔ Câu phủ định:", "targetStart": "", "answers": ["She is not studying for her exam.", "She isn't studying for her exam.", "She is not studying for her exam", "She isn't studying for her exam"], "explanation": "She is not / isn't studying for her exam." },
+        { "id": "pcr_qa_2", "type": "rewrite", "prompt": "Are they playing video games? ➔ Câu khẳng định:", "targetStart": "", "answers": ["They are playing video games.", "They are playing video games"], "explanation": "They are playing video games." },
+        { "id": "pcr_qn_2", "type": "rewrite", "prompt": "Are they playing video games? ➔ Câu phủ định:", "targetStart": "", "answers": ["They are not playing video games.", "They aren't playing video games.", "They are not playing video games", "They aren't playing video games"], "explanation": "They are not / aren't playing video games." },
+        { "id": "pcr_qa_3", "type": "rewrite", "prompt": "Are they going to the concert tonight? ➔ Câu khẳng định:", "targetStart": "", "answers": ["They are going to the concert tonight.", "They are going to the concert tonight"], "explanation": "They are going to the concert tonight." },
+        { "id": "pcr_qn_3", "type": "rewrite", "prompt": "Are they going to the concert tonight? ➔ Câu phủ định:", "targetStart": "", "answers": ["They are not going to the concert tonight.", "They aren't going to the concert tonight.", "They are not going to the concert tonight", "They aren't going to the concert tonight"], "explanation": "They are not / aren't going to the concert tonight." },
+        { "id": "pcr_qa_4", "type": "rewrite", "prompt": "Is he planning to travel next month? ➔ Câu khẳng định:", "targetStart": "", "answers": ["He is planning to travel next month.", "He is planning to travel next month"], "explanation": "He is planning to travel next month." },
+        { "id": "pcr_qn_4", "type": "rewrite", "prompt": "Is he planning to travel next month? ➔ Câu phủ định:", "targetStart": "", "answers": ["He is not planning to travel next month.", "He isn't planning to travel next month.", "He is not planning to travel next month", "He isn't planning to travel next month"], "explanation": "He is not / isn't planning to travel next month." },
+        { "id": "pcr_qa_5", "type": "rewrite", "prompt": "Are you studying for the exam this week? ➔ Câu khẳng định:", "targetStart": "", "answers": ["I am studying for the exam this week.", "You are studying for the exam this week.", "I am studying for the exam this week", "You are studying for the exam this week"], "explanation": "I am / You are studying for the exam this week." },
+        { "id": "pcr_qn_5", "type": "rewrite", "prompt": "Are you studying for the exam this week? ➔ Câu phủ định:", "targetStart": "", "answers": ["I am not studying for the exam this week.", "I'm not studying for the exam this week.", "You are not studying for the exam this week.", "You aren't studying for the exam this week.", "I am not studying for the exam this week", "You are not studying for the exam this week"], "explanation": "I am not / You are not studying for the exam this week." }
+      ]
+    },
+    {
+      "group_id": "pc_categorize_usage_15",
+      "group_title": "11. Bài Tập Phân Loại Câu Theo Cách Sử Dụng",
+      "instruction": "Phân loại câu theo: Thời điểm nói / Đang diễn ra nhưng không cần ngay lúc nói / Dự trù trước cho tương lai / Thường xuyên, gây khó chịu (có always):",
+      "questions": [
+        { "id": "pcu_1", "type": "choice", "prompt": "1. She is always borrowing my books without asking. (Cô ấy luôn mượn sách của tôi mà không hỏi.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 3, "explanation": "Có 'always' phàn nàn hành động gây khó chịu." },
+        { "id": "pcu_2", "type": "choice", "prompt": "2. We are doing homework now. (Chúng tôi đang làm bài tập về nhà bây giờ.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 0, "explanation": "Có 'now' ➔ Diễn ra ngay thời điểm nói." },
+        { "id": "pcu_3", "type": "choice", "prompt": "3. They are developing a new software application. (Họ đang phát triển một ứng dụng phần mềm mới.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 1, "explanation": "Đang trong tiến trình thực hiện dự án, không nhất thiết ngay lúc nói." },
+        { "id": "pcu_4", "type": "choice", "prompt": "4. He is attending the exhibition tomorrow. (Anh ấy sẽ tham dự triển lãm vào ngày mai.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 2, "explanation": "Kế hoạch dự trù tương lai (tomorrow)." },
+        { "id": "pcu_5", "type": "choice", "prompt": "5. I am studying for my exams this semester. (Tôi đang học cho kỳ thi của mình trong học kỳ này.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 1, "explanation": "Quá trình diễn ra trong học kỳ này." },
+        { "id": "pcu_6", "type": "choice", "prompt": "6. She is always talking in my class. (Cô ấy luôn nói chuyện trong lớp của tôi.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 3, "explanation": "Phàn nàn hành động lặp lại gây khó chịu (always)." },
+        { "id": "pcu_7", "type": "choice", "prompt": "7. He is reading a book now. (Anh ấy đang đọc một cuốn sách bây giờ.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 0, "explanation": "Hành động ngay thời điểm nói (now)." },
+        { "id": "pcu_8", "type": "choice", "prompt": "8. They are always complaining about the noise. (Họ luôn phàn nàn về tiếng ồn.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 3, "explanation": "Gây khó chịu (always complaining)." },
+        { "id": "pcu_9", "type": "choice", "prompt": "9. I am visiting my grandparents this weekend. (Tôi sẽ thăm ông bà vào cuối tuần này.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 2, "explanation": "Kế hoạch sắp tới cuối tuần này." },
+        { "id": "pcu_10", "type": "choice", "prompt": "10. We are meeting our friends next week. (Chúng tôi sẽ gặp bạn bè vào tuần tới.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 2, "explanation": "Kế hoạch tuần tới (next week)." },
+        { "id": "pcu_11", "type": "choice", "prompt": "11. They are watching a movie at the moment. (Họ đang xem một bộ phim ngay bây giờ.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 0, "explanation": "Tại thời điểm nói (at the moment)." },
+        { "id": "pcu_12", "type": "choice", "prompt": "12. He is writing an economic book. (Anh ấy đang viết một cuốn sách kinh tế.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 1, "explanation": "Đang trong quá trình viết sách dài hạn." },
+        { "id": "pcu_13", "type": "choice", "prompt": "13. I am listening to music at present. (Tôi đang nghe nhạc vào lúc này.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 0, "explanation": "Thời điểm nói (at present)." },
+        { "id": "pcu_14", "type": "choice", "prompt": "14. She is starting her new job next month. (Cô ấy sẽ bắt đầu công việc mới vào tháng tới.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 2, "explanation": "Kế hoạch tháng sau (next month)." },
+        { "id": "pcu_15", "type": "choice", "prompt": "15. My brother is always playing video games during dinner. (Anh trai tôi luôn chơi video game trong bữa tối.)", "options": ["Thời điểm nói", "Đang diễn ra nhưng không cần ngay lúc nói", "Dự trù trước cho tương lai", "Thường xuyên, gây khó chịu (có always)"], "correctIndex": 3, "explanation": "Thường xuyên gây khó chịu (always playing during dinner)." }
+      ]
+    },
+    {
+      "group_id": "pc_identify_markers_20",
+      "group_title": "12. Bài Tập Nhận Diện Dấu Hiệu Thì Hiện Tại Tiếp Diễn",
+      "instruction": "Điền chính xác từ hoặc cụm từ chỉ dấu hiệu nhận biết thì Hiện tại tiếp diễn có trong câu:",
+      "questions": [
+        { "id": "pcm_1", "type": "blank", "prompt": "1. She is studying in the library now. ➔ Dấu hiệu:", "answers": ["now"], "explanation": "'now' (bây giờ)." },
+        { "id": "pcm_2", "type": "blank", "prompt": "2. They are having lunch right now. ➔ Dấu hiệu:", "answers": ["right now"], "explanation": "'right now' (ngay bây giờ)." },
+        { "id": "pcm_3", "type": "blank", "prompt": "3. I am reading a book at the moment. ➔ Dấu hiệu:", "answers": ["at the moment"], "explanation": "'at the moment' (lúc này)." },
+        { "id": "pcm_4", "type": "blank", "prompt": "4. He is working on his project at present. ➔ Dấu hiệu:", "answers": ["at present"], "explanation": "'at present' (hiện tại)." },
+        { "id": "pcm_5", "type": "blank", "prompt": "5. The meeting is starting at 2 PM. ➔ Dấu hiệu:", "answers": ["at 2 PM", "at 2 pm"], "explanation": "'at 2 PM' (at + giờ cụ thể)." },
+        { "id": "pcm_6", "type": "blank", "prompt": "6. We are going to the concert now. ➔ Dấu hiệu:", "answers": ["now"], "explanation": "'now'." },
+        { "id": "pcm_7", "type": "blank", "prompt": "7. She is preparing dinner right now. ➔ Dấu hiệu:", "answers": ["right now"], "explanation": "'right now'." },
+        { "id": "pcm_8", "type": "blank", "prompt": "8. They are playing soccer at the moment. ➔ Dấu hiệu:", "answers": ["at the moment"], "explanation": "'at the moment'." },
+        { "id": "pcm_9", "type": "blank", "prompt": "9. I am cleaning my room at present. ➔ Dấu hiệu:", "answers": ["at present"], "explanation": "'at present'." },
+        { "id": "pcm_10", "type": "blank", "prompt": "10. The train is arriving at 6:30 AM. ➔ Dấu hiệu:", "answers": ["at 6:30 AM", "at 6:30 am"], "explanation": "'at 6:30 AM'." },
+        { "id": "pcm_11", "type": "blank", "prompt": "11. I am watching a documentary now. ➔ Dấu hiệu:", "answers": ["now"], "explanation": "'now'." },
+        { "id": "pcm_12", "type": "blank", "prompt": "12. She is taking a walk right now. ➔ Dấu hiệu:", "answers": ["right now"], "explanation": "'right now'." },
+        { "id": "pcm_13", "type": "blank", "prompt": "13. They are discussing the project at the moment. ➔ Dấu hiệu:", "answers": ["at the moment"], "explanation": "'at the moment'." },
+        { "id": "pcm_14", "type": "blank", "prompt": "14. He is finishing his homework at present. ➔ Dấu hiệu:", "answers": ["at present"], "explanation": "'at present'." },
+        { "id": "pcm_15", "type": "blank", "prompt": "15. We are celebrating her birthday at 5 PM. ➔ Dấu hiệu:", "answers": ["at 5 PM", "at 5 pm"], "explanation": "'at 5 PM'." },
+        { "id": "pcm_16", "type": "blank", "prompt": "16. The kids are playing outside now. ➔ Dấu hiệu:", "answers": ["now"], "explanation": "'now'." },
+        { "id": "pcm_17", "type": "blank", "prompt": "17. She is drawing a picture right now. ➔ Dấu hiệu:", "answers": ["right now"], "explanation": "'right now'." },
+        { "id": "pcm_18", "type": "blank", "prompt": "18. He is learning to play the guitar at the moment. ➔ Dấu hiệu:", "answers": ["at the moment"], "explanation": "'at the moment'." },
+        { "id": "pcm_19", "type": "blank", "prompt": "19. They are organizing a party at present. ➔ Dấu hiệu:", "answers": ["at present"], "explanation": "'at present'." },
+        { "id": "pcm_20", "type": "blank", "prompt": "20. I am writing an email at 3 PM. ➔ Dấu hiệu:", "answers": ["at 3 PM", "at 3 pm"], "explanation": "'at 3 PM'." }
+      ]
+    },
+    {
+      "group_id": "pc_sentence_ordering_5",
+      "group_title": "13. Bài Tập Sắp Xếp Câu Thì Hiện Tại Tiếp Diễn",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp thì Hiện tại tiếp diễn:",
+      "questions": [
+        {
+          "id": "pco_1",
+          "type": "rewrite",
+          "prompt": "She/ wash / her hair. =>",
+          "targetStart": "She ",
+          "answers": ["is washing her hair.", "is washing her hair"],
+          "explanation": "She is washing her hair."
+        },
+        {
+          "id": "pco_2",
+          "type": "rewrite",
+          "prompt": "It/ snow. =>",
+          "targetStart": "It ",
+          "answers": ["is snowing.", "is snowing"],
+          "explanation": "It is snowing."
+        },
+        {
+          "id": "pco_3",
+          "type": "rewrite",
+          "prompt": "Jack and Rose/ sit/ on the couch. =>",
+          "targetStart": "Jack and Rose ",
+          "answers": ["are sitting on the couch.", "are sitting on the couch"],
+          "explanation": "Jack and Rose là số nhiều ➔ are sitting (gấp đôi t) on the couch."
+        },
+        {
+          "id": "pco_4",
+          "type": "rewrite",
+          "prompt": "It/ rain/ heavily. =>",
+          "targetStart": "It ",
+          "answers": ["is raining heavily.", "is raining heavily"],
+          "explanation": "It is raining heavily."
+        },
+        {
+          "id": "pco_5",
+          "type": "rewrite",
+          "prompt": "Linda/ learn/ French. =>",
+          "targetStart": "Linda ",
+          "answers": ["is learning French.", "is learning French"],
+          "explanation": "Linda is learning French."
+        }
+      ]
+    }
+  ]
+}
