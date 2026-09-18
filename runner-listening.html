@@ -486,36 +486,104 @@
   };
 
   // =========================================================================
-  // TỰ ĐỘNG DỰNG GIAO DIỆN BÀI LISTENING NẾU LÀ DATA THUẦN
+  // TỰ ĐỘNG DỰNG GIAO DIỆN BÀI LISTENING CHO TẤT CẢ CÁC DẠNG CÂU HỎI
+  // (Hỗ trợ: Multiple Choice, Matching, và Gap-fill)
   // =========================================================================
   window.buildListeningHtml = function(data) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
 
     let html = '';
+
     data.groups.forEach(group => {
-      html += `<div class="section-title" style="font-size:1.2em; font-weight:800; color:var(--primary-blue); margin-top:15px;">${group.title}</div>`;
+      // 1. Tiêu đề và Hướng dẫn làm bài của Group
+      html += `<div class="section-title" style="font-size:1.25em; font-weight:800; color:var(--primary-blue); margin-top:20px;">${group.title}</div>`;
       if (group.instructions) {
         html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
       }
 
+      // 2. Dạng MATCHING: Hiển thị Hộp lựa chọn (Matching Box A-F)
+      if (group.type === 'matching' && Array.isArray(group.options)) {
+        html += `
+          <div class="matching-box">
+            ${group.optionsTitle ? `<div style="font-weight:800; color:#0369a1; margin-bottom:10px; text-transform:uppercase; font-size:13px;">📋 ${group.optionsTitle}</div>` : ''}
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 8px;">
+              ${group.options.map(opt => `
+                <div class="matching-item">
+                  <span class="mcq-badge">${opt.key}</span>
+                  <span>${opt.text}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      // 3. Dạng GAP-FILL (Điền từ theo bảng hoặc template văn bản nếu có)
       let contentBody = group.tableHtml || group.template || '';
       if (group.notesTitle) {
         contentBody = `<div style="background:var(--bg-subcard); border:1px solid var(--border-color); padding:16px; border-radius:8px;"><h4 style="margin-top:0; margin-bottom:10px;">${group.notesTitle}</h4>${contentBody}</div>`;
       }
+      if (contentBody) {
+        group.questionIds.forEach(qId => {
+          const q = data.questions[qId];
+          const width = q?.inputWidth || "120px";
+          const inputHtml = `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`;
+          contentBody = contentBody.replace(new RegExp(`{{${qId}}}`, 'g'), inputHtml);
+        });
+        html += `<div style="margin-bottom:18px;">${contentBody}</div>`;
+      }
 
-      group.questionIds.forEach(qId => {
-        const q = data.questions[qId];
-        const width = q?.inputWidth || "120px";
-        const inputHtml = `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`;
-        contentBody = contentBody.replace(new RegExp(`{{${qId}}}`, 'g'), inputHtml);
-      });
-
-      html += `<div style="margin-bottom:18px;">${contentBody}</div>`;
-
+      // 4. Render từng Card câu hỏi chi tiết
       group.questionIds.forEach(qId => {
         const q = data.questions[qId];
         if (!q) return;
 
+        let answerControlHtml = '';
+
+        // --- TRƯỜNG HỢP A: CÂU TRẮC NGHIỆM (MULTIPLE CHOICE) ---
+        if (q.type === 'mcq' || (q.options && Array.isArray(q.options))) {
+          const optionsList = q.options.map((opt, idx) => {
+            const letterMatch = opt.match(/^([A-Z])[\.\:\s]/i);
+            const letter = letterMatch ? letterMatch[1].toUpperCase() : String.fromCharCode(65 + idx);
+            const text = letterMatch ? opt.substring(letterMatch[0].length).trim() : opt;
+
+            return `
+              <label class="mcq-option-item" onclick="window.syncUserAnswer('${qId}', '${letter}')">
+                <input type="radio" name="${qId}" value="${letter}" style="display:none;">
+                <span class="mcq-badge">${letter}</span>
+                <span style="font-size:13.5px; line-height:1.45;">${text}</span>
+              </label>
+            `;
+          }).join('');
+
+          answerControlHtml = `<div class="mcq-options-list">${optionsList}</div>`;
+        }
+
+        // --- TRƯỜNG HỢP B: CÂU NỐI Ý (MATCHING) ---
+        else if (q.type === 'matching' || group.type === 'matching') {
+          const opts = group.options || [];
+          answerControlHtml = `
+            <div class="gap-fill-answer-bar">
+              <label for="${qId}_select" style="font-size:13.5px; font-weight:700;">👉 Chọn đáp án cho Câu ${q.num || qId}:</label>
+              <select id="${qId}_select" class="fill-input" style="padding:6px 12px; font-weight:700; color:#0284c7; min-width:180px; border-radius:5px;" onchange="window.syncUserAnswer('${qId}', this.value)">
+                <option value="">-- Chọn chữ cái --</option>
+                ${opts.map(o => `<option value="${o.key}">${o.key} - ${o.text}</option>`).join('')}
+              </select>
+            </div>
+          `;
+        }
+
+        // --- TRƯỜNG HỢP C: CÂU ĐIỀN TỪ (GAP-FILL / COMPLETION) ---
+        else {
+          answerControlHtml = `
+            <div class="gap-fill-answer-bar">
+              <label for="${qId}_input_mirror" style="font-size:13.5px; font-weight:700;">✍️ Đáp án Câu ${q.num || qId}:</label>
+              <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Nhập từ em nghe được..." style="width:220px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
+            </div>
+          `;
+        }
+
+        // Tạo Card hiển thị câu hỏi
         html += `
           <div class="lis-question-card" id="${qId}">
             <div class="lis-card-header">
@@ -523,10 +591,7 @@
               ${q.time ? `<button type="button" class="btn-audio-jump" onclick="window.seekAudioTo(${q.time}, '${q.highlightId || ''}')">▶ Nghe câu này (${formatTime(q.time)})</button>` : ''}
             </div>
 
-            <div class="gap-fill-answer-bar">
-              <label for="${qId}_input_mirror" style="font-size:13.5px; font-weight:700;">✍️ Đáp án Câu ${q.num || qId}:</label>
-              <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Nhập từ em nghe được..." style="width:200px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
-            </div>
+            ${answerControlHtml}
 
             <div class="result" style="margin-top:8px;"></div>
 
@@ -546,7 +611,7 @@
             <div class="ai-assistant-box">
               <label style="font-weight:700; font-size:12px; color:#475569;">🤖 Hỏi Trợ giảng AI về câu ${q.num || qId}:</label>
               <div class="ai-input-group">
-                <input type="text" id="ai_ask_${qId}" placeholder="Hỏi lý do vì sao chọn từ này...">
+                <input type="text" id="ai_ask_${qId}" placeholder="Hỏi lý do chọn đáp án này...">
                 <button type="button" class="ai-btn" onclick="window.askGeminiAI && window.askGeminiAI('${qId}')">Gửi AI</button>
               </div>
               <div class="ai-response" id="ai_response_${qId}"></div>
