@@ -6,61 +6,39 @@
   <title>Trạm Ngữ Pháp IELTS Toàn Diện</title>
   <link rel="stylesheet" href="css/base-g.css">
   <link rel="stylesheet" href="css/components-g.css">
+  <style>
+    .topic-card {
+      background: white; border: 1.5px solid var(--border-color); border-radius: 10px;
+      padding: 22px; display: flex; justify-content: space-between; align-items: center;
+      transition: transform 0.2s, border-color 0.2s; text-decoration: none; color: inherit;
+    }
+    .topic-card:hover { transform: translateY(-3px); border-color: var(--primary-color); }
+  </style>
 </head>
 <body>
 
 <div class="container-g">
-  <!-- Hero Bar -->
-  <div class="header-hero-g">
-    <div>
-      <a href="../index (5).html" style="color: #99f6e4; text-decoration: none; font-size: 13px; font-weight: 700;">&larr; Quay lại Trang Chủ IELTS</a>
-      <h1 style="margin: 8px 0 4px 0; font-size: 26px;">📚 TRẠM NGỮ PHÁP TIẾNG ANH & IELTS</h1>
-      <p style="margin: 0; opacity: 0.9; font-size: 14px;">15 Chuyên đề ngữ pháp cốt lõi từ cơ bản đến nâng cao</p>
-    </div>
-    <div style="background: rgba(255,255,255,0.15); padding: 10px 18px; border-radius: 8px; text-align: right;">
-      <span style="font-size: 12px; display: block; opacity: 0.85;">Tiến độ hoàn thành:</span>
-      <b id="overallProgressDisplay" style="font-size: 20px;">0 / 15 Bài</b>
-    </div>
+  <a href="../index (5).html" class="nav-back-g">&larr; Quay lại Cổng Luyện Thi IELTS</a>
+  
+  <div class="hero-box-g">
+    <h1>📚 TRẠM NGỮ PHÁP TIẾNG ANH & IELTS</h1>
+    <p>Chọn chuyên đề để bắt đầu học lý thuyết và làm bài tập chấm điểm tự động.</p>
   </div>
 
-  <!-- Danh sách 15 Chuyên Đề -->
-  <div class="card-grid-g" id="catalogGrid"></div>
+  <div style="display: flex; flex-direction: column; gap: 14px;">
+    <!-- CHUYÊN ĐỀ 1: CÁC THÌ (Dẫn trực tiếp vào file JSON vừa tạo) -->
+    <a href="lesson-g.html?file=data/tenses-data-g.json" class="topic-card">
+      <div>
+        <span style="background: #ccfbf1; color: #0f766e; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 12px;">ĐÃ SẴN SÀNG</span>
+        <h3 style="margin: 6px 0 4px 0; color: #0f766e;">1. Các Thì Động Từ (Tenses) & Danh Từ</h3>
+        <p style="margin: 0; color: #64748b; font-size: 13.5px;">Toàn bộ lý thuyết từ cơ bản đến nâng cao, V2/V3 + Bài tập chấm điểm tự động.</p>
+      </div>
+      <div style="background: var(--primary-color); color: white; padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px;">
+        Vào Học ➔
+      </div>
+    </a>
+  </div>
 </div>
 
-<script type="module">
-  import { GRAMMAR_CATALOG } from './data/index-data-g.js';
-  import { grammarState } from './js/state-g.js';
-
-  function renderCatalogue() {
-    const grid = document.getElementById('catalogGrid');
-    const userProgress = grammarState.getProgress();
-    let completedCount = 0;
-
-    grid.innerHTML = GRAMMAR_CATALOG.map(item => {
-      const isPassed = userProgress[item.id]?.passed;
-      if (isPassed) completedCount++;
-
-      return `
-        <div class="lesson-card-g">
-          <div>
-            <span class="badge-tag-g">${item.badge}</span>
-            <h3 style="margin: 0 0 8px 0; font-size: 17px; color: #134e4a;">${item.title}</h3>
-            <p style="margin: 0 0 16px 0; font-size: 13.5px; color: var(--text-muted);">${item.desc}</p>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed var(--border-color); padding-top: 14px;">
-            <span style="font-size: 12.5px; font-weight: 600; color: ${isPassed ? '#16a34a' : '#64748b'};">
-              ${isPassed ? `✅ Đã đạt (${userProgress[item.id].percent}%)` : `⏳ Chưa hoàn thành`}
-            </span>
-            <a href="lesson-g.html?topic=${item.id}" class="btn-action-g">Vào Học ➔</a>
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    document.getElementById('overallProgressDisplay').innerText = `${completedCount} / ${GRAMMAR_CATALOG.length} Bài`;
-  }
-
-  renderCatalogue();
-</script>
 </body>
 </html>
