@@ -1,0 +1,92 @@
+{
+  "tense_id": "present-continuous",
+  "tense_name": "PRESENT CONTINUOUS (HIỆN TẠI TIẾP DIỄN CƠ BẢN)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "pc_formulas",
+      "title": "1. CẤU TRÚC THÌ HIỆN TẠI TIẾP DIỄN (FORMULAS)",
+      "formulas": {
+        "affirmative": "(+) S + am/is/are + V-ing",
+        "negative": "(–) S + am/is/are + NOT + V-ing",
+        "interrogative": "(?) Am/is/are + S + V-ing?"
+      },
+      "subject_rules": [
+        "I ➔ am + V-ing",
+        "He, she, it, danh từ số ÍT ➔ is + V-ing",
+        "You, we, they, danh từ số NHIỀU ➔ are + V-ing"
+      ]
+    },
+    {
+      "id": "pc_spelling_rules",
+      "title": "2. QUY TẮC THÊM ĐUÔI -ING VÀO ĐỘNG TỪ",
+      "spelling_rules": [
+        {
+          "condition": "Động từ kết thúc bằng -e",
+          "rule": "Bỏ -e trước khi thêm -ing",
+          "examples": "take → taking, drive → driving"
+        },
+        {
+          "condition": "Động từ kết thúc bằng phụ âm, trước nó là nguyên âm, trọng âm rơi vào âm tiết cuối",
+          "rule": "Gấp đôi phụ âm cuối rồi thêm -ing",
+          "examples": "begin → beginning, win → winning"
+        },
+        {
+          "condition": "Động từ có một nguyên âm kẹp giữa hai phụ âm",
+          "rule": "Gấp đôi phụ âm cuối rồi thêm -ing",
+          "examples": "run → running, swim → swimming"
+        },
+        {
+          "condition": "Trường hợp đặc biệt: Động từ kết thúc bằng -ie",
+          "rule": "Đổi -ie thành -y rồi thêm -ing",
+          "examples": "lie → lying, die → dying"
+        }
+      ]
+    },
+    {
+      "id": "pc_usages",
+      "title": "3. CÁCH SỬ DỤNG (USAGE)",
+      "usages": [
+        {
+          "name": "Thời điểm nói",
+          "desc": "Hành động đang diễn ra ngay tại thời điểm nói",
+          "example": "We are doing homework now. (Bây giờ chúng tôi đang làm bài tập về nhà)"
+        },
+        {
+          "name": "Đang diễn ra nhưng không cần diễn ra ngay lúc nói",
+          "desc": "Một kế hoạch, dự án hoặc hành động đang trong quá trình thực hiện xung quanh thời điểm hiện tại",
+          "example": "He is writing an economic book."
+        },
+        {
+          "name": "Dự trù trước cho tương lai",
+          "desc": "Kế hoạch đã được chuẩn bị, sắp đặt trước",
+          "example": "He is attending the exhibition tomorrow."
+        },
+        {
+          "name": "Thường xuyên, gây khó chịu (có always)",
+          "desc": "Phàn nàn về một thói quen tiêu cực lặp đi lặp lại",
+          "example": "She is always talking in my class."
+        }
+      ]
+    },
+    {
+      "id": "pc_time_markers",
+      "title": "4. DẤU HIỆU NHẬN BIẾT (TIME MARKERS)",
+      "markers": [
+        { "word": "now", "percent": "Hiện tại", "vn": "bây giờ" },
+        { "word": "right now", "percent": "Tức thì", "vn": "ngay bây giờ" },
+        { "word": "at the moment", "percent": "Hiện tại", "vn": "lúc này" },
+        { "word": "at present", "percent": "Hiện tại", "vn": "hiện tại" },
+        { "word": "at + giờ cụ thể", "percent": "Xác định", "vn": "vào lúc ... giờ (ví dụ: at 12 o'clock)" }
+      ]
+    }
+  ]
+}
