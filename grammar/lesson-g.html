@@ -3,51 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luyện Tập Ngữ Pháp Tự Động Chấm Điểm</title>
+  <title>Chi Tiết Bài Học Ngữ Pháp</title>
   <link rel="stylesheet" href="css/base-g.css">
   <link rel="stylesheet" href="css/components-g.css">
   <link rel="stylesheet" href="css/exercise-g.css">
 </head>
 <body>
 
-<div class="container-g">
-  <div style="margin-bottom: 15px;">
-    <a href="index-g.html" class="nav-back-g">&larr; Quay lại Danh Mục Ngữ Pháp</a>
-  </div>
-
-  <div id="lessonContainer">
-    <div style="text-align: center; padding: 40px; color: #64748b;">
-      ⏳ Đang tải toàn bộ dữ liệu bài tập và lý thuyết...
-    </div>
-  </div>
+<div class="container-g" id="appContainer">
+  <a href="index-g.html" class="nav-back-g">&larr; Trở về danh mục chuyên đề</a>
 </div>
 
 <script type="module">
   import { LessonRenderer } from './js/lesson-renderer-g.js';
 
-  async function loadLesson() {
+  async function initLesson() {
     const urlParams = new URLSearchParams(window.location.search);
-    const dataFile = urlParams.get('file') || 'data/tenses-data-g.json';
+    // Cho phép truyền link file JSON bất kỳ, mặc định là tenses-data-g.json
+    const jsonFile = urlParams.get('file') || 'data/tenses-data-g.json';
 
     try {
-      const res = await fetch(dataFile);
-      if (!res.ok) throw new Error("Không thể tải file JSON bài học");
-      const data = await res.json();
+      const response = await fetch(jsonFile);
+      if (!response.ok) throw new Error("Không thể tải file JSON bài học.");
+      const lessonData = await response.json();
 
-      const container = document.getElementById('lessonContainer');
-      const renderer = new LessonRenderer(container, data);
-      renderer.init();
-    } catch (e) {
-      document.getElementById('lessonContainer').innerHTML = `
+      const app = document.getElementById('appContainer');
+      const renderer = new LessonRenderer(app, lessonData);
+      renderer.renderAll();
+    } catch (err) {
+      document.getElementById('appContainer').innerHTML += `
         <div style="background:#fee2e2; color:#991b1b; padding:20px; border-radius:8px;">
-          <h3>⚠️ Không tìm thấy file dữ liệu</h3>
-          <p>Hãy đảm bảo file <code>${dataFile}</code> đã được đặt đúng thư mục <code>grammar/data/</code>.</p>
+          <h3>⚠️ Lỗi tải dữ liệu</h3>
+          <p>Không tìm thấy file nội dung: <code>${jsonFile}</code>. Vui lòng kiểm tra lại đường dẫn file JSON!</p>
         </div>
       `;
     }
   }
 
-  loadLesson();
+  initLesson();
 </script>
 </body>
 </html>
