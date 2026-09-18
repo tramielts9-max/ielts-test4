@@ -92,7 +92,7 @@ function initSpeechRecognition() {
   recognition.onresult = (event) => {
     let interim = '';
     let final = '';
-    for (let i = 0; i < event.results.length; ++i) {
+    for (let i = event.results.length; ++i) {
       if (event.results[i].isFinal) {
         final += event.results[i][0].transcript + ' ';
       } else {
@@ -156,10 +156,13 @@ window.toggleRecording = async () => {
   }
 };
 
-/* ================== STREAMING ENGINE & SỬA BÀI ================== */
+/* ================== STREAMING ENGINE (UU TIEN 3.5 -> 3.1) ================== */
 async function streamGeminiDirect(apiKey, parts, onChunk) {
+  // Hàng đợi gọi model theo yêu cầu: 3.5 Flash Lite -> 3.1 Flash Lite -> Dự phòng
   const modelsQueue = [
-    "gemini-2.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-2.0-flash-lite",
     "gemini-2.0-flash",
     "gemini-1.5-flash"
   ];
@@ -200,9 +203,9 @@ async function streamGeminiDirect(apiKey, parts, onChunk) {
           }
         }
       }
-      return model;
+      return model; // Kết thúc thành công khi model hiện tại phản hồi xong
     } catch (err) {
-      console.warn(`Model ${model} đang bận: ${err.message}. Tự động đổi dự phòng...`);
+      console.warn(`Model ${model} đang bận hoặc hết lượt: ${err.message}. Tự động chuyển model kế tiếp trong hàng đợi...`);
       lastError = err;
     }
   }
