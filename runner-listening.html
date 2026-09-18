@@ -223,7 +223,6 @@
       align-items: baseline;
       gap: 8px;
       font-size: 13.5px;
-      margin-bottom: 6px;
     }
 
     .ai-assistant-box {
@@ -368,29 +367,35 @@
       }
     };
 
-    // Đồng bộ đáp án 2 chiều
-    window.syncUserAnswer = function(qId, val, fullLabel) {
+    // Đồng bộ đáp án 2 chiều (Radio, Dropdown, Text Input)
+    window.syncUserAnswer = function(qId, val) {
+      if (val === undefined || val === null) return;
+      var cleanVal = String(val).trim();
+
+      // 1. Đồng bộ các text input (nếu có)
       var textInputs = document.querySelectorAll(`input[id="${qId}_input"], input[id="${qId}_input_mirror"]`);
       textInputs.forEach(el => {
-        if (el && el.value !== val) {
-          el.value = val;
+        if (el && el.value !== cleanVal) {
+          el.value = cleanVal;
           el.dispatchEvent(new Event('input', { bubbles: true }));
         }
       });
 
+      // 2. Đồng bộ các radio button MCQ
       var inputs = document.querySelectorAll(`input[name="${qId}"]`);
       inputs.forEach(rb => {
-        var isMatch = rb.value.trim().toUpperCase() === String(val).trim().toUpperCase();
-        if (rb.type === 'radio') rb.checked = isMatch;
+        var isMatch = rb.value.trim().toUpperCase() === cleanVal.toUpperCase();
+        rb.checked = isMatch;
         var parentLabel = rb.closest('.mcq-option-item');
         if (parentLabel) {
-          if (rb.checked) parentLabel.classList.add('selected');
+          if (isMatch) parentLabel.classList.add('selected');
           else parentLabel.classList.remove('selected');
         }
       });
 
+      // 3. Đồng bộ thẻ select (cho dạng Matching)
       var sel = document.getElementById(qId + '_select');
-      if (sel && sel.value !== val) sel.value = val;
+      if (sel && sel.value !== cleanVal) sel.value = cleanVal;
     };
   })();
 
@@ -487,7 +492,6 @@
 
   // =========================================================================
   // TỰ ĐỘNG DỰNG GIAO DIỆN BÀI LISTENING CHO TẤT CẢ CÁC DẠNG CÂU HỎI
-  // (Hỗ trợ: Multiple Choice, Matching, và Gap-fill)
   // =========================================================================
   window.buildListeningHtml = function(data) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
@@ -495,7 +499,7 @@
     let html = '';
 
     data.groups.forEach(group => {
-      // 1. Tiêu đề và Hướng dẫn làm bài của Group
+      // 1. Tiêu đề và Hướng dẫn làm bài
       html += `<div class="section-title" style="font-size:1.25em; font-weight:800; color:var(--primary-blue); margin-top:20px;">${group.title}</div>`;
       if (group.instructions) {
         html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
@@ -518,7 +522,7 @@
         `;
       }
 
-      // 3. Dạng GAP-FILL (Điền từ theo bảng hoặc template văn bản nếu có)
+      // 3. Dạng GAP-FILL: Điền từ theo bảng hoặc template văn bản nếu có
       let contentBody = group.tableHtml || group.template || '';
       if (group.notesTitle) {
         contentBody = `<div style="background:var(--bg-subcard); border:1px solid var(--border-color); padding:16px; border-radius:8px;"><h4 style="margin-top:0; margin-bottom:10px;">${group.notesTitle}</h4>${contentBody}</div>`;
@@ -540,7 +544,7 @@
 
         let answerControlHtml = '';
 
-        // --- TRƯỜNG HỢP A: CÂU TRẮC NGHIỆM (MULTIPLE CHOICE) ---
+        // --- TRƯỜNG HỢP A: MULTIPLE CHOICE (TRẮC NGHIỆM) ---
         if (q.type === 'mcq' || (q.options && Array.isArray(q.options))) {
           const optionsList = q.options.map((opt, idx) => {
             const letterMatch = opt.match(/^([A-Z])[\.\:\s]/i);
@@ -559,7 +563,7 @@
           answerControlHtml = `<div class="mcq-options-list">${optionsList}</div>`;
         }
 
-        // --- TRƯỜNG HỢP B: CÂU NỐI Ý (MATCHING) ---
+        // --- TRƯỜNG HỢP B: MATCHING (NỐI Ý) ---
         else if (q.type === 'matching' || group.type === 'matching') {
           const opts = group.options || [];
           answerControlHtml = `
@@ -573,7 +577,7 @@
           `;
         }
 
-        // --- TRƯỜNG HỢP C: CÂU ĐIỀN TỪ (GAP-FILL / COMPLETION) ---
+        // --- TRƯỜNG HỢP C: GAP FILL (ĐIỀN TỪ) ---
         else {
           answerControlHtml = `
             <div class="gap-fill-answer-bar">
@@ -583,7 +587,6 @@
           `;
         }
 
-        // Tạo Card hiển thị câu hỏi
         html += `
           <div class="lis-question-card" id="${qId}">
             <div class="lis-card-header">
@@ -646,6 +649,7 @@
       const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
       const folderName = fileName.replace(/-p\d+.*$/i, '');
 
+      // Các đường dẫn dự phòng để tìm file JSON
       const urlsToTry = [
         `data/${folderName}/${fileName}.json`,
         `data/${fileName}.json`,
@@ -668,7 +672,8 @@
       if (!data) {
         document.getElementById('mainContainer').innerHTML = `
           <div style="padding: 30px; text-align: center; width: 100%;">
-            <h3 style="color: #dc2626;">❌ Không tìm thấy file: <code>${fileName}.json</code></h3>
+            <h3 style="color: #dc2626;">❌ Không tìm thấy file đề: <code>${fileName}.json</code></h3>
+            <p style="color: #64748b;">Hãy kiểm tra lại xem file đã được tải lên thư mục <code>data/</code> trên GitHub chưa.</p>
             <a href="index.html" class="nav-link" style="display:inline-block; margin-top:10px;">Quay về trang chủ</a>
           </div>
         `;
@@ -679,7 +684,7 @@
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.transcriptHtml || data.passageHtml || "";
 
-      // Gắn sự kiện click vào transcript để nhảy audio
+      // Bấm vào dòng transcript để tua audio
       setTimeout(() => {
         document.querySelectorAll('.transcript-line[data-time]').forEach(el => {
           el.style.cursor = 'pointer';
@@ -691,14 +696,14 @@
         });
       }, 300);
 
-      // Render câu hỏi
+      // Render danh sách câu hỏi
       if (data.groups && window.buildListeningHtml) {
         document.getElementById('questionBox').innerHTML = window.buildListeningHtml(data);
       } else {
         document.getElementById('questionBox').innerHTML = data.questionHtml || "";
       }
       
-      // Khởi động Audio
+      // Nạp Audio
       if (data.audioUrl) {
         const audioEl = document.getElementById('mainAudioElement');
         const wrapper = document.getElementById('audioPlayerWrapper');
@@ -708,12 +713,20 @@
         }
       }
 
-      window.TEST_DATA = { title: data.title, answers: data.answers };
+      // Tạo cấu trúc đáp án cho app.js
+      window.TEST_DATA = { 
+        title: data.title, 
+        answers: data.answers || (data.questions ? Object.fromEntries(Object.entries(data.questions).map(([k, v]) => [k, v.finalAnswer])) : {})
+      };
 
-      // Nạp app.js
-      await import('./js/app.js');
+      // Tải logic chấm điểm từ app.js
+      try {
+        await import('./js/app.js');
+      } catch(e) {
+        console.warn("Không tìm thấy app.js:", e);
+      }
 
-      // Gắn hook sau khi app.js nạp xong
+      // Đảm bảo mở 2 cột Transcript sau khi bấm nút chấm bài
       const realCheckAnswers = window.checkAnswers;
       window.checkAnswers = function() {
         if (typeof realCheckAnswers === 'function') realCheckAnswers();
@@ -729,7 +742,7 @@
         }
       });
       
-      // Nạp listening-nav.js
+      // Nạp thanh điều hướng câu hỏi nếu có
       try {
         const { initListeningNavigation } = await import('./js/listening-nav.js');
         initListeningNavigation();
