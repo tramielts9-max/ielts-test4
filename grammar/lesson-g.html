@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Bài Học Ngữ Pháp</title>
+  <link rel="stylesheet" href="css/base-g.css">
+  <link rel="stylesheet" href="css/components-g.css">
+  <link rel="stylesheet" href="css/exercise-g.css">
+  <style>
+    .tab-bar-g { display: flex; gap: 10px; margin-bottom: 20px; }
+    .tab-btn-g { padding: 10px 20px; border-radius: 8px; border: 1.5px solid var(--border-color); background: white; cursor: pointer; font-weight: 700; }
+    .tab-btn-g.active { background: var(--primary-grammar); color: white; border-color: var(--primary-grammar); }
+    .theory-box-g { background: white; padding: 25px; border-radius: 10px; border: 1px solid var(--border-color); margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="container-g">
+  <div style="margin-bottom: 15px;">
+    <a href="index-g.html" style="color: var(--primary-grammar); text-decoration: none; font-weight: 700;">&larr; Trở lại danh mục chuyên đề</a>
+  </div>
+
+  <h2 id="lessonTitleHeader" style="margin-bottom: 20px; color: #134e4a;">Đang tải chuyên đề...</h2>
+
+  <div class="tab-bar-g">
+    <button class="tab-btn-g active" onclick="switchTab('theory')">📖 Lý Thuyết & Quy Tắc</button>
+    <button class="tab-btn-g" onclick="switchTab('exercise')">✍️ Luyện Tập Thực Hành</button>
+  </div>
+
+  <!-- Phần 1: Lý Thuyết -->
+  <div id="theoryTabContent"></div>
+
+  <!-- Phần 2: Bài Tập Tương Tác -->
+  <div id="exerciseTabContent" style="display: none;">
+    <form id="grammarQuizForm" onsubmit="return false;"></form>
+    <button type="button" class="btn-action-g" id="btnSubmitQuiz" style="width: 100%; padding: 14px; font-size: 16px;">
+      Nộp Bài & Chấm Điểm Ngay
+    </button>
+  </div>
+</div>
+
+<script type="module">
+  import { ExerciseEngine } from './js/exercise-engine-g.js';
+  import { grammarState } from './js/state-g.js';
+
+  let currentTopicData = null;
+
+  window.switchTab = (tabName) => {
+    document.querySelectorAll('.tab-btn-g').forEach((btn, idx) => {
+      btn.classList.toggle('active', (tabName === 'theory' && idx === 0) || (tabName === 'exercise' && idx === 1));
+    });
+    document.getElementById('theoryTabContent').style.display = tabName === 'theory' ? 'block' : 'none';
+    document.getElementById('exerciseTabContent').style.display = tabName === 'exercise' ? 'block' : 'none';
+  };
+
+  async function loadTopic() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const topic = urlParams.get('topic') || 'tenses';
+
+    try {
+      // Dynamic import file dữ liệu tương ứng của chuyên đề
+      const module = await import(`./data/${topic}-g.js`);
+      currentTopicData = module.LESSON_DATA;
+      renderLesson(currentTopicData);
+    } catch(err) {
+      document.getElementById('lessonTitleHeader').innerText = "⚠️ Không tìm thấy bài học này.";
+    }
+  }
+
+  function renderLesson(data) {
+    document.getElementById('lessonTitleHeader').innerText = data.title;
+
+    // Render Lý Thuyết
+    const theoryBox = document.getElementById('theoryTabContent');
+    theoryBox.innerHTML = data.theory.map(t => `
+      <div class="theory-box-g">
+        <h3 style="margin-top: 0; color: #0d9488;">${t.title}</h3>
+        <div>${t.content}</div>
+      </div>
+    `).join('');
+
+    // Render Bài Tập
+    const quizForm = document.getElementById('grammarQuizForm');
+    quizForm.innerHTML = data.exercises.map((q, idx) => {
+      let inputField = '';
+      if (q.type === 'fill_blank') {
+        const parts = q.prompt.split('[blank]');
+        inputField = `<div>${parts[0]} <input type="text" class="input-blank-g" data-qid="${q.id}"> ${parts[1] || ''}</div>`;
+      } else if (q.type === 'multiple_choice') {
+        inputField = `
+          <div style="font-weight:600; margin-bottom:6px;">${q.prompt}</div>
+          ${q.options.map((opt, oIdx) => `
+            <label style="display:block; margin-bottom:6px; cursor:pointer;">
+              <input type="radio" name="${q.id}" value="${oIdx}"> ${opt}
+            </label>
+          `).join('')}
+        `;
+      } else if (q.type === 'rewrite') {
+        inputField = `
+          <div style="font-weight:600; margin-bottom:6px;">Câu gốc: <i>"${q.prompt}"</i></div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span>${q.targetStart || ''}</span>
+            <input type="text" class="input-blank-g" style="flex:1;" data-qid="${q.id}">
+          </div>
+        `;
+      }
+
+      return `
+        <div class="exercise-box-g" id="box_${q.id}">
+          <div style="font-size: 13px; color: var(--text-muted); font-weight: 700;">CÂU ${idx + 1}: ${q.instruction}</div>
+          <div class="q-prompt-g">${inputField}</div>
+          <div class="feedback-pill-g" id="fb_${q.id}"></div>
+        </div>
+      `;
+    }).join('');
+
+    document.getElementById('btnSubmitQuiz').onclick = submitAnswers;
+  }
+
+  function submitAnswers() {
+    let score = 0;
+    const questions = currentTopicData.exercises;
+
+    questions.forEach(q => {
+      let userAns = "";
+      if (q.type === 'fill_blank' || q.type === 'rewrite') {
+        const inp = document.querySelector(`input[data-qid="${q.id}"]`);
+        userAns = inp ? inp.value : "";
+      } else if (q.type === 'multiple_choice') {
+        const checked = document.querySelector(`input[name="${q.id}"]:checked`);
+        userAns = checked ? checked.value : "-1";
+      }
+
+      const result = ExerciseEngine.checkAnswer(q, userAns);
+      const fbBox = document.getElementById(`fb_${q.id}`);
+      fbBox.style.display = 'block';
+
+      if (result.isCorrect) {
+        score++;
+        fbBox.className = "feedback-pill-g feedback-correct";
+        fbBox.innerHTML = `✅ <b>Chính xác!</b> ${q.explanation || ''}`;
+      } else {
+        fbBox.className = "feedback-pill-g feedback-wrong";
+        fbBox.innerHTML = `❌ <b>Chưa đúng!</b> Đáp án chuẩn: <u>${result.correctText}</u>. ${q.explanation || ''}`;
+      }
+    });
+
+    grammarState.saveLessonScore(currentTopicData.id, score, questions.length);
+    alert(`🎉 Bạn đã hoàn thành bài tập! Điểm số: ${score} / ${questions.length}`);
+  }
+
+  loadTopic();
+</script>
+</body>
+</html>
