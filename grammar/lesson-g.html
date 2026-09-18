@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chi Tiết Bài Học Ngữ Pháp</title>
+  <title>Luyện Tập Ngữ Pháp IELTS</title>
   <link rel="stylesheet" href="css/base-g.css">
   <link rel="stylesheet" href="css/components-g.css">
   <link rel="stylesheet" href="css/exercise-g.css">
@@ -14,33 +14,57 @@
   <a href="index-g.html" class="nav-back-g">&larr; Trở về danh mục chuyên đề</a>
 </div>
 
+<!-- ========================================== -->
+<!-- ĐÂY CHÍNH LÀ CHỖ THÊM ĐOẠN CODE ĐÓ VÀO NÈ -->
+<!-- ========================================== -->
 <script type="module">
   import { LessonRenderer } from './js/lesson-renderer-g.js';
 
   async function initLesson() {
+    const appContainer = document.getElementById('appContainer');
+    
+    // 1. Lấy tên thì từ đường dẫn URL (ví dụ: lesson-g.html?tense=present-simple)
+    // Mặc định nếu không ghi gì sẽ tải thì hiện tại đơn
     const urlParams = new URLSearchParams(window.location.search);
-    // Cho phép truyền link file JSON bất kỳ, mặc định là tenses-data-g.json
-    const jsonFile = urlParams.get('file') || 'data/tenses-data-g.json';
+    const tense = urlParams.get('tense') || 'present-simple';
 
     try {
-      const response = await fetch(jsonFile);
-      if (!response.ok) throw new Error("Không thể tải file JSON bài học.");
-      const lessonData = await response.json();
+      // 2. Tải đồng thời CẢ 2 FILE: lý thuyết và bài tập từ thư mục data
+      const [theoryRes, exerciseRes] = await Promise.all([
+        fetch(`data/${tense}/theory-${tense}-g.json`),
+        fetch(`data/${tense}/exercises-${tense}-g.json`)
+      ]);
 
-      const app = document.getElementById('appContainer');
-      const renderer = new LessonRenderer(app, lessonData);
+      if (!theoryRes.ok || !exerciseRes.ok) {
+        throw new Error("Không thể tìm thấy file JSON lý thuyết hoặc bài tập.");
+      }
+
+      const theoryData = await theoryRes.json();
+      const exerciseData = await exerciseRes.json();
+
+      // 3. Gửi cả 2 dữ liệu vào LessonRenderer để tự vẽ giao diện và chấm điểm
+      const renderer = new LessonRenderer(appContainer, theoryData, exerciseData);
       renderer.renderAll();
+
     } catch (err) {
-      document.getElementById('appContainer').innerHTML += `
-        <div style="background:#fee2e2; color:#991b1b; padding:20px; border-radius:8px;">
-          <h3>⚠️ Lỗi tải dữ liệu</h3>
-          <p>Không tìm thấy file nội dung: <code>${jsonFile}</code>. Vui lòng kiểm tra lại đường dẫn file JSON!</p>
+      console.error(err);
+      appContainer.innerHTML += `
+        <div style="background:#fee2e2; color:#991b1b; padding:20px; border-radius:8px; margin-top:20px;">
+          <h3>⚠️ Lỗi tải dữ liệu bài học</h3>
+          <p>Không thể tải dữ liệu cho thì: <b>${tense}</b>.</p>
+          <p>Hãy đảm bảo bạn đã tạo đủ 2 file:</p>
+          <ul>
+            <li><code>grammar/data/${tense}/theory-${tense}-g.json</code></li>
+            <li><code>grammar/data/${tense}/exercises-${tense}-g.json</code></li>
+          </ul>
         </div>
       `;
     }
   }
 
+  // Khởi động chạy trang web
   initLesson();
 </script>
+
 </body>
 </html>
