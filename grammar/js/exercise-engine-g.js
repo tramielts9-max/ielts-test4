@@ -1,6 +1,9 @@
+/**
+ * ENGINE CHẤM ĐIỂM BÀI TẬP NGỮ PHÁP TỰ ĐỘNG
+ */
 export class ExerciseEngine {
   /**
-   * Chuẩn hóa chuỗi người dùng nhập (bỏ hoa thường, bỏ dấu câu thừa)
+   * Chuẩn hóa chuỗi (bỏ dấu cách thừa, dấu câu cuối dòng, đổi thành chữ thường)
    */
   static clean(text) {
     return (text || "")
@@ -10,30 +13,25 @@ export class ExerciseEngine {
       .replace(/\s+/g, " ");
   }
 
-  /**
-   * Chấm điểm 1 câu hỏi dựa trên các đáp án được chấp nhận trong JSON
-   */
-  static grade(question, userValue) {
-    const cleanUser = this.clean(userValue);
-    
-    // Nếu học sinh bỏ trống
-    if (!cleanUser) {
+  static gradeQuestion(q, userVal) {
+    if (q.type === "blank" || q.type === "rewrite") {
+      const cleanUser = this.clean(userVal);
+      const isCorrect = q.answers.some(ans => this.clean(ans) === cleanUser);
       return {
-        isCorrect: false,
-        correctDisplay: question.answers.join(" HOẶC "),
-        isSkipped: true
+        isCorrect,
+        correctDisplay: q.answers.join(" HOẶC ")
       };
     }
 
-    const isCorrect = question.answers.some(ans => {
-      // Cho phép khớp chính xác hoặc khớp qua chuẩn hóa
-      return this.clean(ans) === cleanUser || ans.trim().toLowerCase() === userValue.trim().toLowerCase();
-    });
+    if (q.type === "choice") {
+      const selectedIndex = parseInt(userVal, 10);
+      const isCorrect = selectedIndex === q.correctIndex;
+      return {
+        isCorrect,
+        correctDisplay: q.options[q.correctIndex]
+      };
+    }
 
-    return {
-      isCorrect,
-      correctDisplay: question.answers.join(" HOẶC "),
-      isSkipped: false
-    };
+    return { isCorrect: false, correctDisplay: "" };
   }
 }
