@@ -12,7 +12,6 @@
        GIAO DIỆN CHUẨN ĐẦY ĐỦ TÍNH NĂNG CHO IELTS LISTENING
        ======================================================= */
     
-    /* 1. Trạng thái lúc làm bài: Ẩn transcript, câu hỏi canh giữa rộng rãi */
     body.listening-test:not(.submitted) #passageBox {
       display: none !important;
     }
@@ -25,7 +24,6 @@
       margin: 0 auto;
     }
 
-    /* 2. Trạng thái SAU KHI NỘP: Mở bung 2 cột song song */
     body.listening-test.submitted #mainContainer {
       display: flex !important;
       flex-direction: row !important;
@@ -34,7 +32,6 @@
       gap: 0 !important;
     }
 
-    /* Cột Transcript bên trái */
     body.listening-test.submitted #passageBox {
       display: block !important;
       width: 48%;
@@ -47,7 +44,6 @@
       border-right: none;
     }
 
-    /* Thanh kéo chuột ở giữa */
     body.listening-test.submitted #dragResizer {
       display: flex !important;
       width: 12px;
@@ -69,11 +65,7 @@
       color: #475569;
       pointer-events: none;
     }
-    body.listening-test.submitted #dragResizer:hover .resizer-icon {
-      color: #ffffff;
-    }
 
-    /* Cột Câu hỏi bên phải */
     body.listening-test.submitted #questionBox {
       flex: 1;
       min-width: 320px;
@@ -83,7 +75,6 @@
       background: var(--bg-card, #ffffff);
     }
 
-    /* Banner thông báo */
     .submit-banner {
       background: #ecfdf5;
       border: 1.5px solid #10b981;
@@ -97,7 +88,6 @@
       gap: 8px;
     }
 
-    /* Card câu hỏi & Tính năng */
     .lis-question-card {
       background: var(--bg-card, #ffffff);
       border: 1.5px solid var(--border-color, #e2e8f0);
@@ -158,10 +148,6 @@
       align-items: center;
       gap: 10px;
       flex-wrap: wrap;
-    }
-    .gap-fill-answer-bar:focus-within {
-      border-color: #0284c7;
-      background: #f0f9ff;
     }
 
     .mcq-options-list {
@@ -225,47 +211,116 @@
       font-size: 13.5px;
     }
 
-    .ai-assistant-box {
-      background: #f8fafc;
-      border: 1px dashed #94a3b8;
-      border-radius: 6px;
-      padding: 10px 12px;
-      margin-top: 12px;
-    }
-    .ai-input-group {
-      display: flex;
-      gap: 6px;
-      margin-top: 6px;
-    }
-    .ai-input-group input {
-      flex: 1;
-      padding: 7px 10px;
-      border: 1px solid #cbd5e1;
-      border-radius: 4px;
-      font-size: 13px;
-    }
-    .ai-btn {
-      background: #10b981;
+    /* Nút nộp bài tổng hợp Part 4 */
+    .btn-full-submit {
+      background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
       color: white;
       border: none;
-      padding: 7px 14px;
-      border-radius: 4px;
-      font-weight: 700;
+      padding: 16px 20px;
+      font-size: 17px;
+      font-weight: 800;
+      border-radius: 8px;
+      width: 100%;
       cursor: pointer;
-      font-size: 13px;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.35);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
-    .ai-btn:hover { background: #059669; }
-    .ai-response {
-      margin-top: 8px;
-      font-size: 13px;
-      line-height: 1.5;
-      color: #1e293b;
-      display: none;
+    .btn-full-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.45);
+    }
+
+    /* MODAL HIỂN THỊ KẾT QUẢ TỔNG HỢP 40 CÂU & BAND SCORE */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: 15px;
+    }
+    .modal-content {
       background: #ffffff;
-      padding: 10px;
-      border-radius: 5px;
-      border-left: 3px solid #10b981;
+      width: 100%;
+      max-width: 780px;
+      max-height: 90vh;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      animation: popIn 0.3s ease-out;
     }
+    @keyframes popIn {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .modal-header {
+      background: #0f172a;
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-body {
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .band-score-banner {
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border: 2px solid #22c55e;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .band-score-value {
+      font-size: 48px;
+      font-weight: 900;
+      color: #15803d;
+      line-height: 1.1;
+      margin: 5px 0;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .summary-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .summary-card b { font-size: 18px; color: #0284c7; }
+    .answers-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13.5px;
+    }
+    .answers-table th, .answers-table td {
+      border: 1px solid #e2e8f0;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    .answers-table th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+    }
+    .status-correct { color: #16a34a; font-weight: 700; }
+    .status-wrong { color: #dc2626; font-weight: 700; }
   </style>
 </head>
 <body class="listening-test">
@@ -316,6 +371,19 @@
   </div>
 </div>
 
+<!-- MODAL POPUP HIỂN THỊ TỔNG KẾT 40 CÂU & BAND SCORE -->
+<div id="fullScoreModal" class="modal-backdrop" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 style="margin: 0; font-size: 17px;">📊 BẢNG TỔNG KẾT ĐIỂM THI IELTS LISTENING (40 CÂU)</h3>
+      <button onclick="document.getElementById('fullScoreModal').style.display='none'" style="background:transparent; border:none; color:white; font-size:22px; cursor:pointer;">&times;</button>
+    </div>
+    <div class="modal-body" id="fullScoreModalBody">
+      <!-- Nội dung kết quả sẽ được chèn động ở đây -->
+    </div>
+  </div>
+</div>
+
 <!-- SCRIPT HỆ THỐNG XỬ LÝ GIAO DIỆN & TÍNH NĂNG -->
 <script>
   (function() {
@@ -347,15 +415,8 @@
     };
 
     setFont(curSize);
-    try {
-      if (localStorage.getItem('ielts_theme') === 'dark') {
-        document.body.classList.add('dark-theme');
-        var btn = document.getElementById('btnThemeToggle');
-        if (btn) btn.innerText = '☀️ Sáng';
-      }
-    } catch(e) {}
 
-    // Bấm câu để nhảy Audio
+    // Bấm câu để tua Audio
     window.seekAudioTo = function(seconds, highlightId) {
       const audio = document.getElementById('mainAudioElement');
       if (audio && seconds !== undefined && seconds !== null) {
@@ -367,12 +428,22 @@
       }
     };
 
-    // Đồng bộ đáp án 2 chiều (Radio, Dropdown, Text Input)
+    // Đồng bộ đáp án & Lưu trữ vào LocalStorage cho từng bài
     window.syncUserAnswer = function(qId, val) {
       if (val === undefined || val === null) return;
       var cleanVal = String(val).trim();
 
-      // 1. Đồng bộ các text input (nếu có)
+      // Lưu trữ đáp án để nộp tổng 40 câu
+      if (window.CURRENT_BASE_TEST) {
+        try {
+          const storeKey = `ielts_ans_${window.CURRENT_BASE_TEST}`;
+          const currentStore = JSON.parse(localStorage.getItem(storeKey) || '{}');
+          currentStore[qId] = cleanVal;
+          localStorage.setItem(storeKey, JSON.stringify(currentStore));
+        } catch(e) {}
+      }
+
+      // 1. Đồng bộ ô text input
       var textInputs = document.querySelectorAll(`input[id="${qId}_input"], input[id="${qId}_input_mirror"]`);
       textInputs.forEach(el => {
         if (el && el.value !== cleanVal) {
@@ -381,7 +452,7 @@
         }
       });
 
-      // 2. Đồng bộ các radio button MCQ
+      // 2. Đồng bộ radio button MCQ
       var inputs = document.querySelectorAll(`input[name="${qId}"]`);
       inputs.forEach(rb => {
         var isMatch = rb.value.trim().toUpperCase() === cleanVal.toUpperCase();
@@ -393,14 +464,32 @@
         }
       });
 
-      // 3. Đồng bộ thẻ select (cho dạng Matching)
+      // 3. Đồng bộ thẻ select (Matching)
       var sel = document.getElementById(qId + '_select');
       if (sel && sel.value !== cleanVal) sel.value = cleanVal;
     };
   })();
 
   // =========================================================================
-  // BẬT CHẾ ĐỘ 2 CỘT SONG SONG + THANH KÉO CO GIÃN KHI NỘP BÀI
+  // BẢNG QUY ĐỔI BAND SCORE THEO CHUẨN IELTS LISTENING
+  // =========================================================================
+  window.calculateIELTSListeningBand = function(correct) {
+    if (correct >= 39) return "9.0";
+    if (correct >= 37) return "8.5";
+    if (correct >= 35) return "8.0";
+    if (correct >= 32) return "7.5";
+    if (correct >= 30) return "7.0";
+    if (correct >= 26) return "6.5";
+    if (correct >= 23) return "6.0";
+    if (correct >= 18) return "5.5";
+    if (correct >= 16) return "5.0";
+    if (correct >= 13) return "4.5";
+    if (correct >= 10) return "4.0";
+    return "< 4.0";
+  };
+
+  // =========================================================================
+  // THANH KÉO CO GIÃN 2 CỘT SAU KHI NỘP BÀI
   // =========================================================================
   function initSplitResizer() {
     const resizer = document.getElementById('dragResizer');
@@ -491,21 +580,20 @@
   };
 
   // =========================================================================
-  // TỰ ĐỘNG DỰNG GIAO DIỆN BÀI LISTENING CHO TẤT CẢ CÁC DẠNG CÂU HỎI
+  // XÂY DỰNG GIAO DIỆN BÀI THI (MCQ, MATCHING, GAP-FILL)
   // =========================================================================
-  window.buildListeningHtml = function(data) {
+  window.buildListeningHtml = function(data, isPart4) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
 
     let html = '';
 
     data.groups.forEach(group => {
-      // 1. Tiêu đề và Hướng dẫn làm bài
       html += `<div class="section-title" style="font-size:1.25em; font-weight:800; color:var(--primary-blue); margin-top:20px;">${group.title}</div>`;
       if (group.instructions) {
         html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
       }
 
-      // 2. Dạng MATCHING: Hiển thị Hộp lựa chọn (Matching Box A-F)
+      // Hộp lựa chọn Matching Box (A - F)
       if (group.type === 'matching' && Array.isArray(group.options)) {
         html += `
           <div class="matching-box">
@@ -522,7 +610,7 @@
         `;
       }
 
-      // 3. Dạng GAP-FILL: Điền từ theo bảng hoặc template văn bản nếu có
+      // Template hoặc bảng điền từ
       let contentBody = group.tableHtml || group.template || '';
       if (group.notesTitle) {
         contentBody = `<div style="background:var(--bg-subcard); border:1px solid var(--border-color); padding:16px; border-radius:8px;"><h4 style="margin-top:0; margin-bottom:10px;">${group.notesTitle}</h4>${contentBody}</div>`;
@@ -537,14 +625,14 @@
         html += `<div style="margin-bottom:18px;">${contentBody}</div>`;
       }
 
-      // 4. Render từng Card câu hỏi chi tiết
+      // Render từng câu hỏi chi tiết
       group.questionIds.forEach(qId => {
         const q = data.questions[qId];
         if (!q) return;
 
         let answerControlHtml = '';
 
-        // --- TRƯỜNG HỢP A: MULTIPLE CHOICE (TRẮC NGHIỆM) ---
+        // 1. Multiple Choice
         if (q.type === 'mcq' || (q.options && Array.isArray(q.options))) {
           const optionsList = q.options.map((opt, idx) => {
             const letterMatch = opt.match(/^([A-Z])[\.\:\s]/i);
@@ -563,7 +651,7 @@
           answerControlHtml = `<div class="mcq-options-list">${optionsList}</div>`;
         }
 
-        // --- TRƯỜNG HỢP B: MATCHING (NỐI Ý) ---
+        // 2. Matching
         else if (q.type === 'matching' || group.type === 'matching') {
           const opts = group.options || [];
           answerControlHtml = `
@@ -577,7 +665,7 @@
           `;
         }
 
-        // --- TRƯỜNG HỢP C: GAP FILL (ĐIỀN TỪ) ---
+        // 3. Gap fill
         else {
           answerControlHtml = `
             <div class="gap-fill-answer-bar">
@@ -624,7 +712,18 @@
       });
     });
 
-    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">CHẤM BÀI VÀ NỘP KẾT QUẢ</button>`;
+    // Nút nộp bài Part hiện tại
+    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">CHẤM BÀI PHẦN NÀY VÀ MỞ TRANSCRIPT</button>`;
+
+    // NẾU LÀ PART 4: HIỆN NÚT NỘP TỔNG VÀ TÍNH BAND SCORE CẢ 40 CÂU
+    if (isPart4) {
+      html += `
+        <button type="button" class="btn-full-submit" onclick="window.submitFullListeningTest()">
+          🏆 NỘP TỔNG & TÍNH BAND SCORE CẢ 4 PARTS (40 CÂU)
+        </button>
+      `;
+    }
+
     return html;
   };
 
@@ -633,6 +732,158 @@
     const s = Math.floor(sec % 60);
     return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
   }
+
+  // =========================================================================
+  // XỬ LÝ CHẤM TOÀN DIỆN CẢ 4 PARTS (40 CÂU) VÀ TÍNH IELTS BAND SCORE
+  // =========================================================================
+  window.submitFullListeningTest = async function() {
+    if (typeof window.checkAnswers === 'function') {
+      window.checkAnswers();
+    }
+
+    const baseTest = window.CURRENT_BASE_TEST;
+    if (!baseTest) {
+      alert("Không tìm thấy mã bài test tương ứng!");
+      return;
+    }
+
+    const modal = document.getElementById('fullScoreModal');
+    const modalBody = document.getElementById('fullScoreModalBody');
+    modalBody.innerHTML = `<div style="text-align:center; padding:30px; font-size:15px; color:#64748b;">⏳ Đang tổng hợp dữ liệu và chấm bài cả 4 Parts (40 câu)...</div>`;
+    modal.style.display = 'flex';
+
+    // Lấy câu trả lời học viên đã lưu
+    const storeKey = `ielts_ans_${baseTest}`;
+    let userAnswers = {};
+    try {
+      userAnswers = JSON.parse(localStorage.getItem(storeKey) || '{}');
+    } catch(e) {}
+
+    // Thu thập thêm câu trả lời từ DOM hiện tại của Part 4
+    document.querySelectorAll('.lis-question-card').forEach(card => {
+      const qId = card.id;
+      const inp = card.querySelector(`input[id="${qId}_input_mirror"], input[id="${qId}_input"]`);
+      const radio = card.querySelector(`input[name="${qId}"]:checked`);
+      const sel = card.querySelector(`select[id="${qId}_select"]`);
+
+      if (radio) userAnswers[qId] = radio.value;
+      else if (sel && sel.value) userAnswers[qId] = sel.value;
+      else if (inp && inp.value) userAnswers[qId] = inp.value;
+    });
+
+    // Tải đáp án chuẩn của cả 4 Part (p1, p2, p3, p4)
+    const allOfficialAnswers = {};
+    const partScores = { p1: { correct: 0, total: 10 }, p2: { correct: 0, total: 10 }, p3: { correct: 0, total: 10 }, p4: { correct: 0, total: 10 } };
+
+    for (let p = 1; p <= 4; p++) {
+      const partFileName = `${baseTest}-p${p}`;
+      const urls = [
+        `data/${baseTest}/${partFileName}.json`,
+        `data/${partFileName}.json`,
+        `${partFileName}.json`
+      ];
+
+      for (const url of urls) {
+        try {
+          const res = await fetch(`${url}?t=${Date.now()}`);
+          if (res.ok) {
+            const json = await res.json();
+            const answers = json.answers || (json.questions ? Object.fromEntries(Object.entries(json.questions).map(([k, v]) => [k, v.finalAnswer])) : {});
+            Object.assign(allOfficialAnswers, answers);
+            break;
+          }
+        } catch(e) {}
+      }
+    }
+
+    // Chấm điểm 40 câu
+    let totalCorrect = 0;
+    const tableRowsHtml = [];
+
+    for (let i = 1; i <= 40; i++) {
+      const qId = `q${i}`;
+      const official = (allOfficialAnswers[qId] || "").trim();
+      const user = (userAnswers[qId] || "").trim();
+
+      // Kiểm tra đúng sai (linh hoạt chấp nhận ký tự hoa thường hoặc viết hoa)
+      let isCorrect = false;
+      if (official) {
+        if (official.length === 1 && /^[A-Z]$/i.test(official)) {
+          isCorrect = user.toUpperCase() === official.toUpperCase();
+        } else {
+          isCorrect = user.toLowerCase() === official.toLowerCase();
+        }
+      }
+
+      if (isCorrect) {
+        totalCorrect++;
+        const partKey = i <= 10 ? 'p1' : (i <= 20 ? 'p2' : (i <= 30 ? 'p3' : 'p4'));
+        partScores[partKey].correct++;
+      }
+
+      tableRowsHtml.push(`
+        <tr>
+          <td style="text-align:center; font-weight:700;">Câu ${i}</td>
+          <td><b>${user ? user : '<span style="color:#94a3b8; font-style:italic;">(Chưa làm)</span>'}</b></td>
+          <td style="color:#0284c7; font-weight:700;">${official || 'N/A'}</td>
+          <td style="text-align:center;" class="${isCorrect ? 'status-correct' : 'status-wrong'}">
+            ${isCorrect ? '✓ Đúng' : '✗ Sai'}
+          </td>
+        </tr>
+      `);
+    }
+
+    const bandScore = window.calculateIELTSListeningBand(totalCorrect);
+
+    // Hiển thị nội dung ra Modal
+    modalBody.innerHTML = `
+      <div class="band-score-banner">
+        <div style="font-size: 15px; font-weight: 700; color: #166534; text-transform: uppercase; letter-spacing: 0.5px;">ĐIỂM IELTS LISTENING CỦA BẠN</div>
+        <div class="band-score-value">BAND ${bandScore}</div>
+        <div style="font-size: 16px; color: #15803d; font-weight: 700;">Đúng ${totalCorrect} / 40 câu</div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div style="font-size: 12px; color: #64748b;">Part 1 (Câu 1-10)</div>
+          <b>${partScores.p1.correct}/10</b>
+        </div>
+        <div class="summary-card">
+          <div style="font-size: 12px; color: #64748b;">Part 2 (Câu 11-20)</div>
+          <b>${partScores.p2.correct}/10</b>
+        </div>
+        <div class="summary-card">
+          <div style="font-size: 12px; color: #64748b;">Part 3 (Câu 21-30)</div>
+          <b>${partScores.p3.correct}/10</b>
+        </div>
+        <div class="summary-card">
+          <div style="font-size: 12px; color: #64748b;">Part 4 (Câu 31-40)</div>
+          <b>${partScores.p4.correct}/10</b>
+        </div>
+      </div>
+
+      <h4 style="margin: 15px 0 10px; color: #1e293b;">📋 Bảng chi tiết kết quả 40 câu:</h4>
+      <div style="max-height: 280px; overflow-y: auto; border: 1px solid #cbd5e1; border-radius: 6px;">
+        <table class="answers-table">
+          <thead>
+            <tr>
+              <th style="width: 80px; text-align:center;">Câu</th>
+              <th>Bạn chọn</th>
+              <th>Đáp án đúng</th>
+              <th style="width: 90px; text-align:center;">Kết quả</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRowsHtml.join('')}
+          </tbody>
+        </table>
+      </div>
+
+      <button type="button" onclick="document.getElementById('fullScoreModal').style.display='none'" style="margin-top: 15px; width: 100%; padding: 12px; background: #0f172a; color: white; border: none; border-radius: 6px; font-weight: 700; cursor: pointer;">
+        ĐÓNG BẢNG ĐIỂM
+      </button>
+    `;
+  };
 </script>
 
 <!-- TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY HỆ THỐNG -->
@@ -649,7 +900,10 @@
       const fileName = raw.includes('/') ? raw.split('/').pop() : raw;
       const folderName = fileName.replace(/-p\d+.*$/i, '');
 
-      // Các đường dẫn dự phòng để tìm file JSON
+      // Xác định base test name (vd: cam21-lis-test1) và kiểm tra xem có phải là Part 4 không
+      window.CURRENT_BASE_TEST = folderName;
+      const isPart4 = fileName.toLowerCase().endsWith('-p4') || fileName.toLowerCase().includes('-p4');
+
       const urlsToTry = [
         `data/${folderName}/${fileName}.json`,
         `data/${fileName}.json`,
@@ -684,7 +938,7 @@
       document.getElementById('testTitleHeader').innerText = data.title;
       document.getElementById('passageBox').innerHTML = data.transcriptHtml || data.passageHtml || "";
 
-      // Bấm vào dòng transcript để tua audio
+      // Click vào transcript để tua audio
       setTimeout(() => {
         document.querySelectorAll('.transcript-line[data-time]').forEach(el => {
           el.style.cursor = 'pointer';
@@ -696,9 +950,9 @@
         });
       }, 300);
 
-      // Render danh sách câu hỏi
+      // Render danh sách câu hỏi (truyền cờ isPart4)
       if (data.groups && window.buildListeningHtml) {
-        document.getElementById('questionBox').innerHTML = window.buildListeningHtml(data);
+        document.getElementById('questionBox').innerHTML = window.buildListeningHtml(data, isPart4);
       } else {
         document.getElementById('questionBox').innerHTML = data.questionHtml || "";
       }
@@ -713,20 +967,18 @@
         }
       }
 
-      // Tạo cấu trúc đáp án cho app.js
+      // Chuẩn bị answers cho app.js
       window.TEST_DATA = { 
         title: data.title, 
         answers: data.answers || (data.questions ? Object.fromEntries(Object.entries(data.questions).map(([k, v]) => [k, v.finalAnswer])) : {})
       };
 
-      // Tải logic chấm điểm từ app.js
+      // Tải logic từ app.js
       try {
         await import('./js/app.js');
-      } catch(e) {
-        console.warn("Không tìm thấy app.js:", e);
-      }
+      } catch(e) {}
 
-      // Đảm bảo mở 2 cột Transcript sau khi bấm nút chấm bài
+      // Mở 2 cột Transcript sau khi bấm nộp bài
       const realCheckAnswers = window.checkAnswers;
       window.checkAnswers = function() {
         if (typeof realCheckAnswers === 'function') realCheckAnswers();
