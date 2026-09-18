@@ -1,0 +1,46 @@
+.exercise-box-g {
+  background: #ffffff;
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.q-prompt-g {
+  font-size: 15.5px;
+  font-weight: 600;
+  margin: 10px 0 14px 0;
+}
+
+.input-blank-g {
+  padding: 8px 12px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.input-blank-g:focus {
+  outline: none;
+  border-color: var(--primary-grammar);
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+.feedback-pill-g {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13.5px;
+  display: none;
+}
+.feedback-correct {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+.feedback-wrong {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
