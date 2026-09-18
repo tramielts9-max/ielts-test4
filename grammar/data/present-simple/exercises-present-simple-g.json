@@ -1,0 +1,389 @@
+{
+  "tense_id": "present-simple",
+  "title": "BÀI TẬP THÌ HIỆN TẠI ĐƠN (SIMPLE PRESENT)",
+  "exercise_groups": [
+    {
+      "group_id": "tobe_i_am",
+      "group_title": "1. Động Từ To Be: Nhóm I + am",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "tb_i_1", "type": "blank", "prompt": "I [blank] a student.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với to be 'am'." },
+        { "id": "tb_i_2", "type": "blank", "prompt": "I [blank] happy.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với to be 'am'." },
+        { "id": "tb_i_3", "type": "blank", "prompt": "I [blank] from Vietnam.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với to be 'am'." },
+        { "id": "tb_i_4", "type": "blank", "prompt": "I [blank] tired today.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với to be 'am'." },
+        { "id": "tb_i_5", "type": "blank", "prompt": "I [blank] ready to start the meeting.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với to be 'am'." }
+      ]
+    },
+    {
+      "group_id": "tobe_he_she_it",
+      "group_title": "2. Động Từ To Be: Nhóm He/ She/ It + is",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "tb_hsi_1", "type": "blank", "prompt": "He [blank] a doctor.", "answers": ["is", "'s"], "explanation": "Chủ ngữ He đi với to be 'is'." },
+        { "id": "tb_hsi_2", "type": "blank", "prompt": "She [blank] very kind.", "answers": ["is", "'s"], "explanation": "Chủ ngữ She đi với to be 'is'." },
+        { "id": "tb_hsi_3", "type": "blank", "prompt": "It [blank] a sunny day.", "answers": ["is", "'s"], "explanation": "Chủ ngữ It đi với to be 'is'." },
+        { "id": "tb_hsi_4", "type": "blank", "prompt": "He [blank] always on time for meetings.", "answers": ["is", "'s"], "explanation": "Chủ ngữ He đi với to be 'is'." },
+        { "id": "tb_hsi_5", "type": "blank", "prompt": "She [blank] my best friend.", "answers": ["is", "'s"], "explanation": "Chủ ngữ She đi với to be 'is'." }
+      ]
+    },
+    {
+      "group_id": "tobe_you_we_they",
+      "group_title": "3. Động Từ To Be: Nhóm You/ We/ They + are",
+      "instruction": "Điền dạng đúng của to be vào chỗ trống:",
+      "questions": [
+        { "id": "tb_ywt_1", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are", "'re"], "explanation": "Chủ ngữ You đi với to be 'are'." },
+        { "id": "tb_ywt_2", "type": "blank", "prompt": "We [blank] excited about the concert tonight.", "answers": ["are", "'re"], "explanation": "Chủ ngữ We đi với to be 'are'." },
+        { "id": "tb_ywt_3", "type": "blank", "prompt": "They [blank] ready for the exam.", "answers": ["are", "'re"], "explanation": "Chủ ngữ They đi với to be 'are'." },
+        { "id": "tb_ywt_4", "type": "blank", "prompt": "You [blank] always very helpful.", "answers": ["are", "'re"], "explanation": "Chủ ngữ You đi với to be 'are'." },
+        { "id": "tb_ywt_5", "type": "blank", "prompt": "We [blank] interested in learning new languages.", "answers": ["are", "'re"], "explanation": "Chủ ngữ We đi với to be 'are'." }
+      ]
+    },
+    {
+      "group_id": "tobe_mixed",
+      "group_title": "4. Động Từ To Be: Luyện Tập Trộn (Mixed)",
+      "instruction": "Điền am, is hoặc are vào chỗ trống:",
+      "questions": [
+        { "id": "tb_m_1", "type": "blank", "prompt": "I [blank] a student at this school.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "tb_m_2", "type": "blank", "prompt": "He [blank] a good singer.", "answers": ["is", "'s"], "explanation": "He + is." },
+        { "id": "tb_m_3", "type": "blank", "prompt": "We [blank] going to the beach today.", "answers": ["are", "'re"], "explanation": "We + are." },
+        { "id": "tb_m_4", "type": "blank", "prompt": "She [blank] excited about her new job.", "answers": ["is", "'s"], "explanation": "She + is." },
+        { "id": "tb_m_5", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are", "'re"], "explanation": "You + are." },
+        { "id": "tb_m_6", "type": "blank", "prompt": "They [blank] not here right now.", "answers": ["are"], "explanation": "They + are." },
+        { "id": "tb_m_7", "type": "blank", "prompt": "It [blank] a beautiful day outside.", "answers": ["is", "'s"], "explanation": "It + is." },
+        { "id": "tb_m_8", "type": "blank", "prompt": "I [blank] very tired after the long trip.", "answers": ["am", "'m"], "explanation": "I + am." },
+        { "id": "tb_m_9", "type": "blank", "prompt": "They [blank] happy with the results.", "answers": ["are", "'re"], "explanation": "They + are." },
+        { "id": "tb_m_10", "type": "blank", "prompt": "She [blank] always very polite.", "answers": ["is", "'s"], "explanation": "She + is." }
+      ]
+    },
+    {
+      "group_id": "tobe_singular_plural",
+      "group_title": "5. Động Từ To Be Với Danh Từ Số Ít / Số Nhiều (Khẳng Định)",
+      "instruction": "Chia dạng khẳng định của động từ To Be (am/is/are):",
+      "questions": [
+        { "id": "tb_sp_1", "type": "blank", "prompt": "The men [blank] working in the office.", "answers": ["are"], "explanation": "The men là danh từ số nhiều của man ➔ dùng are." },
+        { "id": "tb_sp_2", "type": "blank", "prompt": "The woman [blank] wearing a hat.", "answers": ["is"], "explanation": "The woman là danh từ số ít ➔ dùng is." },
+        { "id": "tb_sp_3", "type": "blank", "prompt": "The buses [blank] on time today.", "answers": ["are"], "explanation": "The buses là số nhiều (đuôi -es) ➔ dùng are." },
+        { "id": "tb_sp_4", "type": "blank", "prompt": "The leaf [blank] turning yellow in the fall.", "answers": ["is"], "explanation": "The leaf là số ít (số nhiều là leaves) ➔ dùng is." },
+        { "id": "tb_sp_5", "type": "blank", "prompt": "The bird [blank] singing in the morning.", "answers": ["is"], "explanation": "The bird là danh từ số ít ➔ dùng is." },
+        { "id": "tb_sp_6", "type": "blank", "prompt": "The person [blank] pulling the cart.", "answers": ["is"], "explanation": "The person là danh từ số ít (số nhiều là people) ➔ dùng is." },
+        { "id": "tb_sp_7", "type": "blank", "prompt": "The families [blank] having dinner together.", "answers": ["are"], "explanation": "The families là danh từ số nhiều (đuôi -ies) ➔ dùng are." },
+        { "id": "tb_sp_8", "type": "blank", "prompt": "The mouse [blank] hiding behind the cupboard.", "answers": ["is"], "explanation": "The mouse là danh từ số ít (số nhiều là mice) ➔ dùng is." },
+        { "id": "tb_sp_9", "type": "blank", "prompt": "The geese [blank] flying south for the winter.", "answers": ["are"], "explanation": "The geese là danh từ số nhiều của goose ➔ dùng are." },
+        { "id": "tb_sp_10", "type": "blank", "prompt": "The teeth [blank] hurting after eating candy.", "answers": ["are"], "explanation": "The teeth là danh từ số nhiều của tooth ➔ dùng are." },
+        { "id": "tb_sp_11", "type": "blank", "prompt": "The flowers (be) [blank] beautiful.", "answers": ["are"], "explanation": "The flowers là số nhiều ➔ are." },
+        { "id": "tb_sp_12a", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["are"], "explanation": "Sarah and Emily là chủ ngữ 2 người (số nhiều) ➔ are." },
+        { "id": "tb_sp_12b", "type": "blank", "prompt": "They (be) [blank] planting flowers.", "answers": ["are"], "explanation": "They ➔ are." },
+        { "id": "tb_sp_13", "type": "blank", "prompt": "The dog (be) [blank] barking loudly.", "answers": ["is"], "explanation": "The dog là số ít ➔ is." },
+        { "id": "tb_sp_14", "type": "blank", "prompt": "This building (be) [blank] tall.", "answers": ["is"], "explanation": "This building là số ít ➔ is." },
+        { "id": "tb_sp_15a", "type": "blank", "prompt": "My parents (be) [blank] at work.", "answers": ["are"], "explanation": "My parents (bố mẹ) là số nhiều ➔ are." },
+        { "id": "tb_sp_15b", "type": "blank", "prompt": "They (be) [blank] busy today.", "answers": ["are"], "explanation": "They ➔ are." },
+        { "id": "tb_sp_16", "type": "blank", "prompt": "The milk (be) [blank] fresh.", "answers": ["is"], "explanation": "The milk là danh từ không đếm được ➔ xem như số ít ➔ is." },
+        { "id": "tb_sp_17", "type": "blank", "prompt": "These chairs (be) [blank] comfortable.", "answers": ["are"], "explanation": "These chairs là số nhiều ➔ are." },
+        { "id": "tb_sp_18", "type": "blank", "prompt": "The students (be) [blank] reading in the library.", "answers": ["are"], "explanation": "The students là số nhiều ➔ are." },
+        { "id": "tb_sp_19", "type": "blank", "prompt": "This movie (be) [blank] interesting.", "answers": ["is"], "explanation": "This movie là số ít ➔ is." },
+        { "id": "tb_sp_20", "type": "blank", "prompt": "My neighbors (be) [blank] friendly.", "answers": ["are"], "explanation": "My neighbors là số nhiều ➔ are." }
+      ]
+    },
+    {
+      "group_id": "tobe_negative_mixed",
+      "group_title": "6. Động Từ To Be: Dạng Khẳng Định và Phủ Định Song Hành",
+      "instruction": "Điền dạng khẳng định và phủ định của To Be theo ngữ cảnh:",
+      "questions": [
+        { "id": "tb_neg_1", "type": "blank", "prompt": "The flowers (be) are beautiful. They (be, not) [blank] wilted.", "answers": ["are not", "aren't"], "explanation": "They đi với phủ định are not / aren't." },
+        { "id": "tb_neg_2", "type": "blank", "prompt": "Sarah and Emily (be) are in the garden. They (be, not) [blank] in the house.", "answers": ["are not", "aren't"], "explanation": "They + are not / aren't." },
+        { "id": "tb_neg_3", "type": "blank", "prompt": "The dog (be) is barking loudly. It (be, not) [blank] quiet.", "answers": ["is not", "isn't"], "explanation": "It đi với phủ định is not / isn't." },
+        { "id": "tb_neg_4", "type": "blank", "prompt": "This building (be) is tall. It (be, not) [blank] short.", "answers": ["is not", "isn't"], "explanation": "It + is not / isn't." },
+        { "id": "tb_neg_5", "type": "blank", "prompt": "My parents (be) are at work. They (be, not) [blank] at home.", "answers": ["are not", "aren't"], "explanation": "They + are not / aren't." },
+        { "id": "tb_neg_6", "type": "blank", "prompt": "The milk (be) is fresh. It (be, not) [blank] expired.", "answers": ["is not", "isn't"], "explanation": "It + is not / isn't." },
+        { "id": "tb_neg_7", "type": "blank", "prompt": "These chairs (be) are comfortable. They (be, not) [blank] hard.", "answers": ["are not", "aren't"], "explanation": "They + are not / aren't." },
+        { "id": "tb_neg_8", "type": "blank", "prompt": "The students (be) are reading in the library. They (be, not) [blank] playing outside.", "answers": ["are not", "aren't"], "explanation": "They + are not / aren't." },
+        { "id": "tb_neg_9", "type": "blank", "prompt": "This movie (be) is interesting. It (be, not) [blank] boring.", "answers": ["is not", "isn't"], "explanation": "It + is not / isn't." },
+        { "id": "tb_neg_10", "type": "blank", "prompt": "My neighbors (be) are friendly. They (be, not) [blank] rude.", "answers": ["are not", "aren't"], "explanation": "They + are not / aren't." }
+      ]
+    },
+    {
+      "group_id": "tobe_comprehensive_questions",
+      "group_title": "7. Bài Tập Tổng Hợp Động Từ To Be (Câu Hỏi & Trộn)",
+      "instruction": "Điền dạng đúng của động từ to be (khẳng định, phủ định hoặc nghi vấn):",
+      "questions": [
+        { "id": "tb_comp_1", "type": "blank", "prompt": "[blank] (be) this your favorite book?", "answers": ["Is", "is"], "explanation": "This your favorite book là danh từ số ít ➔ đảo Is lên đầu." },
+        { "id": "tb_comp_2a", "type": "blank", "prompt": "The milk (be) [blank] fresh.", "answers": ["is"], "explanation": "The milk là danh từ không đếm được ➔ is." },
+        { "id": "tb_comp_2b", "type": "blank", "prompt": "It (be, not) [blank] expired.", "answers": ["is not", "isn't"], "explanation": "Phủ định số ít ➔ is not / isn't." },
+        { "id": "tb_comp_3", "type": "blank", "prompt": "[blank] (be) they coming to the party tonight?", "answers": ["Are", "are"], "explanation": "Chủ ngữ they ➔ đảo Are lên đầu." },
+        { "id": "tb_comp_4a", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["are"], "explanation": "2 người ➔ are." },
+        { "id": "tb_comp_4b", "type": "blank", "prompt": "They (be, not) [blank] in the house.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_5", "type": "blank", "prompt": "[blank] (be) I in the right room?", "answers": ["Am", "am"], "explanation": "Chủ ngữ I ➔ đảo Am lên đầu." },
+        { "id": "tb_comp_6a", "type": "blank", "prompt": "The train (be) [blank] on time today.", "answers": ["is"], "explanation": "The train là số ít ➔ is." },
+        { "id": "tb_comp_6b", "type": "blank", "prompt": "It (be, not) [blank] late.", "answers": ["is not", "isn't"], "explanation": "It + is not." },
+        { "id": "tb_comp_7a", "type": "blank", "prompt": "My neighbors (be) [blank] friendly.", "answers": ["are"], "explanation": "My neighbors là số nhiều ➔ are." },
+        { "id": "tb_comp_7b", "type": "blank", "prompt": "They (be, not) [blank] rude.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_8", "type": "blank", "prompt": "[blank] (be) you going to the market today?", "answers": ["Are", "are"], "explanation": "Chủ ngữ you ➔ đảo Are lên đầu." },
+        { "id": "tb_comp_9a", "type": "blank", "prompt": "These chairs (be) [blank] comfortable.", "answers": ["are"], "explanation": "These chairs ➔ are." },
+        { "id": "tb_comp_9b", "type": "blank", "prompt": "They (be, not) [blank] hard.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_10", "type": "blank", "prompt": "[blank] (be) we allowed to use our phones in class?", "answers": ["Are", "are"], "explanation": "Chủ ngữ we ➔ đảo Are lên đầu." },
+        { "id": "tb_comp_11a", "type": "blank", "prompt": "The sky (be) [blank] clear this morning.", "answers": ["is"], "explanation": "The sky là số ít ➔ is." },
+        { "id": "tb_comp_11b", "type": "blank", "prompt": "It (be, not) [blank] cloudy.", "answers": ["is not", "isn't"], "explanation": "It + is not." },
+        { "id": "tb_comp_12a", "type": "blank", "prompt": "The coffee (be) [blank] hot.", "answers": ["is"], "explanation": "The coffee không đếm được ➔ is." },
+        { "id": "tb_comp_12b", "type": "blank", "prompt": "It (be, not) [blank] cold.", "answers": ["is not", "isn't"], "explanation": "It + is not." },
+        { "id": "tb_comp_13", "type": "blank", "prompt": "[blank] (be) she your sister?", "answers": ["Is", "is"], "explanation": "Chủ ngữ she ➔ đảo Is lên đầu." },
+        { "id": "tb_comp_14", "type": "blank", "prompt": "[blank] (be) it going to rain this afternoon?", "answers": ["Is", "is"], "explanation": "Chủ ngữ it ➔ đảo Is lên đầu." },
+        { "id": "tb_comp_15a", "type": "blank", "prompt": "My parents (be) [blank] at work.", "answers": ["are"], "explanation": "My parents ➔ are." },
+        { "id": "tb_comp_15b", "type": "blank", "prompt": "They (be, not) [blank] at home.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_16a", "type": "blank", "prompt": "The flowers (be) [blank] beautiful.", "answers": ["are"], "explanation": "The flowers ➔ are." },
+        { "id": "tb_comp_16b", "type": "blank", "prompt": "They (be, not) [blank] wilted.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_17", "type": "blank", "prompt": "[blank] (be) he your best friend?", "answers": ["Is", "is"], "explanation": "Chủ ngữ he ➔ đảo Is lên đầu." },
+        { "id": "tb_comp_18a", "type": "blank", "prompt": "The students (be) [blank] reading in the library.", "answers": ["are"], "explanation": "The students ➔ are." },
+        { "id": "tb_comp_18b", "type": "blank", "prompt": "They (be, not) [blank] playing outside.", "answers": ["are not", "aren't"], "explanation": "They + are not." },
+        { "id": "tb_comp_19a", "type": "blank", "prompt": "This movie (be) [blank] interesting.", "answers": ["is"], "explanation": "This movie ➔ is." },
+        { "id": "tb_comp_19b", "type": "blank", "prompt": "It (be, not) [blank] boring.", "answers": ["is not", "isn't"], "explanation": "It + is not." },
+        { "id": "tb_comp_20", "type": "blank", "prompt": "[blank] (be) I late for the meeting?", "answers": ["Am", "am"], "explanation": "Chủ ngữ I ➔ đảo Am lên đầu." }
+      ]
+    },
+    {
+      "group_id": "v_spelling_rules",
+      "group_title": "8. Viết Lại Động Từ Ở Ngôi Thứ Ba Số Ít (Spelling Rules)",
+      "instruction": "Viết lại động từ dưới đây ở ngôi thứ ba số ít (he/she/it):",
+      "questions": [
+        { "id": "v_sp_1", "type": "blank", "prompt": "pass -> [blank]", "answers": ["passes"], "explanation": "Tận cùng là 'ss' ➔ thêm -es." },
+        { "id": "v_sp_2", "type": "blank", "prompt": "fix -> [blank]", "answers": ["fixes"], "explanation": "Tận cùng là 'x' ➔ thêm -es." },
+        { "id": "v_sp_3", "type": "blank", "prompt": "buzz -> [blank]", "answers": ["buzzes"], "explanation": "Tận cùng là 'z' ➔ thêm -es." },
+        { "id": "v_sp_4", "type": "blank", "prompt": "watch -> [blank]", "answers": ["watches"], "explanation": "Tận cùng là 'ch' ➔ thêm -es." },
+        { "id": "v_sp_5", "type": "blank", "prompt": "push -> [blank]", "answers": ["pushes"], "explanation": "Tận cùng là 'sh' ➔ thêm -es." },
+        { "id": "v_sp_6", "type": "blank", "prompt": "carry -> [blank]", "answers": ["carries"], "explanation": "Phụ âm + 'y' ➔ đổi thành -ies." },
+        { "id": "v_sp_7", "type": "blank", "prompt": "study -> [blank]", "answers": ["studies"], "explanation": "Phụ âm + 'y' ➔ đổi thành -ies." },
+        { "id": "v_sp_8", "type": "blank", "prompt": "marry -> [blank]", "answers": ["marries"], "explanation": "Phụ âm + 'y' ➔ đổi thành -ies." },
+        { "id": "v_sp_9", "type": "blank", "prompt": "worry -> [blank]", "answers": ["worries"], "explanation": "Phụ âm + 'y' ➔ đổi thành -ies." },
+        { "id": "v_sp_10", "type": "blank", "prompt": "try -> [blank]", "answers": ["tries"], "explanation": "Phụ âm + 'y' ➔ đổi thành -ies." },
+        { "id": "v_sp_11", "type": "blank", "prompt": "play -> [blank]", "answers": ["plays"], "explanation": "Nguyên âm + 'y' ➔ chỉ thêm -s." },
+        { "id": "v_sp_12", "type": "blank", "prompt": "enjoy -> [blank]", "answers": ["enjoys"], "explanation": "Nguyên âm + 'y' ➔ chỉ thêm -s." },
+        { "id": "v_sp_13", "type": "blank", "prompt": "buy -> [blank]", "answers": ["buys"], "explanation": "Nguyên âm + 'y' ➔ chỉ thêm -s." },
+        { "id": "v_sp_14", "type": "blank", "prompt": "say -> [blank]", "answers": ["says"], "explanation": "Nguyên âm + 'y' ➔ chỉ thêm -s." },
+        { "id": "v_sp_15", "type": "blank", "prompt": "stay -> [blank]", "answers": ["stays"], "explanation": "Nguyên âm + 'y' ➔ chỉ thêm -s." },
+        { "id": "v_sp_16", "type": "blank", "prompt": "have -> [blank]", "answers": ["has"], "explanation": "Bất quy tắc: have chuyển thành has cho ngôi thứ ba số ít." },
+        { "id": "v_sp_17", "type": "blank", "prompt": "be (cho 'I' và 'he') -> [blank]", "answers": ["am, is", "am and is", "am is"], "explanation": "I đi với am, he đi với is." }
+      ]
+    },
+    {
+      "group_id": "v_affirmative_15",
+      "group_title": "9. Động Từ Thường: Dạng Khẳng Định (+)",
+      "instruction": "Chia dạng đúng của động từ trong ngoặc ở thì Hiện tại đơn:",
+      "questions": [
+        { "id": "va_1", "type": "blank", "prompt": "1) I (bake) [blank] cakes.", "answers": ["bake"], "explanation": "Chủ ngữ I đi với động từ nguyên mẫu: bake." },
+        { "id": "va_2", "type": "blank", "prompt": "2) You (work) [blank] in an office.", "answers": ["work"], "explanation": "Chủ ngữ You ➔ work." },
+        { "id": "va_3", "type": "blank", "prompt": "3) We (take) [blank] pictures of birds.", "answers": ["take"], "explanation": "Chủ ngữ We ➔ take." },
+        { "id": "va_4", "type": "blank", "prompt": "4) They (talk) [blank] about cars.", "answers": ["talk"], "explanation": "Chủ ngữ They ➔ talk." },
+        { "id": "va_5", "type": "blank", "prompt": "5) He (think) [blank] about school.", "answers": ["thinks"], "explanation": "Chủ ngữ He là ngôi thứ 3 số ít ➔ thêm -s: thinks." },
+        { "id": "va_6", "type": "blank", "prompt": "6) She (play) [blank] soccer.", "answers": ["plays"], "explanation": "Chủ ngữ She ➔ plays." },
+        { "id": "va_7", "type": "blank", "prompt": "7) It (rain) [blank] here a lot.", "answers": ["rains"], "explanation": "Chủ ngữ It ➔ rains." },
+        { "id": "va_8", "type": "blank", "prompt": "8) I (like) [blank] chocolate.", "answers": ["like"], "explanation": "Chủ ngữ I ➔ like." },
+        { "id": "va_9", "type": "blank", "prompt": "9) He (like) [blank] chocolate.", "answers": ["likes"], "explanation": "Chủ ngữ He ➔ likes." },
+        { "id": "va_10", "type": "blank", "prompt": "10) You (watch) [blank] movies.", "answers": ["watch"], "explanation": "Chủ ngữ You ➔ watch." },
+        { "id": "va_11", "type": "blank", "prompt": "11) She (watch) [blank] movies.", "answers": ["watches"], "explanation": "Chủ ngữ She, động từ tận cùng là ch ➔ watches." },
+        { "id": "va_12", "type": "blank", "prompt": "12) The babies (cry) [blank] every night.", "answers": ["cry"], "explanation": "The babies là số nhiều ➔ cry." },
+        { "id": "va_13", "type": "blank", "prompt": "13) The baby (cry) [blank] every night.", "answers": ["cries"], "explanation": "The baby là số ít ➔ cries." },
+        { "id": "va_14", "type": "blank", "prompt": "14) I (fly) [blank] to Belize every year.", "answers": ["fly"], "explanation": "Chủ ngữ I ➔ fly." },
+        { "id": "va_15", "type": "blank", "prompt": "15) My father (fly) [blank] to Belize every year.", "answers": ["flies"], "explanation": "My father là số ít ➔ flies." }
+      ]
+    },
+    {
+      "group_id": "v_negative_10",
+      "group_title": "10. Động Từ Thường: Dạng Phủ Định (–)",
+      "instruction": "Chia động từ ở thể phủ định (do not/does not + V0):",
+      "questions": [
+        { "id": "vn_1", "type": "blank", "prompt": "They (eat, not) [blank] vegetables.", "answers": ["do not eat", "don't eat"], "explanation": "They + do not eat." },
+        { "id": "vn_2", "type": "blank", "prompt": "He (work, not) [blank] on Sundays.", "answers": ["does not work", "doesn't work"], "explanation": "He + does not work." },
+        { "id": "vn_3", "type": "blank", "prompt": "She (speak, not) [blank] Spanish.", "answers": ["does not speak", "doesn't speak"], "explanation": "She + does not speak." },
+        { "id": "vn_4", "type": "blank", "prompt": "We (drive, not) [blank] to school.", "answers": ["do not drive", "don't drive"], "explanation": "We + do not drive." },
+        { "id": "vn_5", "type": "blank", "prompt": "You (study, not) [blank] French.", "answers": ["do not study", "don't study"], "explanation": "You + do not study." },
+        { "id": "vn_6", "type": "blank", "prompt": "It (snow, not) [blank] in the summer.", "answers": ["does not snow", "doesn't snow"], "explanation": "It + does not snow." },
+        { "id": "vn_7", "type": "blank", "prompt": "I (go, not) [blank] to the gym every day.", "answers": ["do not go", "don't go"], "explanation": "I + do not go." },
+        { "id": "vn_8", "type": "blank", "prompt": "They (sing, not) [blank] in the choir.", "answers": ["do not sing", "don't sing"], "explanation": "They + do not sing." },
+        { "id": "vn_9", "type": "blank", "prompt": "We (read, not) [blank] newspapers.", "answers": ["do not read", "don't read"], "explanation": "We + do not read." },
+        { "id": "vn_10", "type": "blank", "prompt": "He (drink, not) [blank] coffee in the morning.", "answers": ["does not drink", "doesn't drink"], "explanation": "He + does not drink." }
+      ]
+    },
+    {
+      "group_id": "v_question_5",
+      "group_title": "11. Động Từ Thường: Dạng Câu Hỏi (?)",
+      "instruction": "Điền Do hoặc Does vào chỗ trống để tạo câu hỏi hoàn chỉnh:",
+      "questions": [
+        { "id": "vq_1", "type": "blank", "prompt": "1. [blank] the students study hard every day?", "answers": ["Do", "do"], "explanation": "The students là số nhiều ➔ dùng Do." },
+        { "id": "vq_2", "type": "blank", "prompt": "2. [blank] Mr. Brown go to his office every day?", "answers": ["Does", "does"], "explanation": "Mr. Brown là số ít ➔ dùng Does." },
+        { "id": "vq_3", "type": "blank", "prompt": "3. [blank] you want cream and sugar in your coffee??", "answers": ["Do", "do"], "explanation": "You ➔ dùng Do." },
+        { "id": "vq_4", "type": "blank", "prompt": "4. [blank] the children go to bed very early?", "answers": ["Do", "do"], "explanation": "The children là số nhiều của child ➔ dùng Do." },
+        { "id": "vq_5", "type": "blank", "prompt": "5. [blank] that girl come from South Africa?", "answers": ["Does", "does"], "explanation": "That girl là số ít ➔ dùng Does." }
+      ]
+    },
+    {
+      "group_id": "v_rewrite_affirm_to_qn",
+      "group_title": "12. Chuyển Từ Câu Khẳng Định Sang Câu Hỏi Và Phủ Định (+ => ?-)",
+      "instruction": "Viết lại thành câu hỏi và câu phủ định:",
+      "questions": [
+        { "id": "rw_aq_1", "type": "rewrite", "prompt": "She plays tennis every weekend. ➔ Câu hỏi:", "targetStart": "", "answers": ["Does she play tennis every weekend?", "Does she play tennis every weekend"], "explanation": "Đảo Does lên trước, đưa plays về play." },
+        { "id": "rw_an_1", "type": "rewrite", "prompt": "She plays tennis every weekend. ➔ Câu phủ định:", "targetStart": "", "answers": ["She does not play tennis every weekend.", "She doesn't play tennis every weekend.", "She does not play tennis every weekend", "She doesn't play tennis every weekend"], "explanation": "Thêm does not / doesn't + play." },
+        { "id": "rw_aq_2", "type": "rewrite", "prompt": "They study English at school. ➔ Câu hỏi:", "targetStart": "", "answers": ["Do they study English at school?", "Do they study English at school"], "explanation": "Đảo Do lên trước, giữ nguyên study." },
+        { "id": "rw_an_2", "type": "rewrite", "prompt": "They study English at school. ➔ Câu phủ định:", "targetStart": "", "answers": ["They do not study English at school.", "They don't study English at school.", "They do not study English at school", "They don't study English at school"], "explanation": "Thêm do not / don't + study." },
+        { "id": "rw_aq_3", "type": "rewrite", "prompt": "He likes coffee. ➔ Câu hỏi:", "targetStart": "", "answers": ["Does he like coffee?", "Does he like coffee"], "explanation": "Đảo Does lên trước, đưa likes về like." },
+        { "id": "rw_an_3", "type": "rewrite", "prompt": "He likes coffee. ➔ Câu phủ định:", "targetStart": "", "answers": ["He does not like coffee.", "He doesn't like coffee.", "He does not like coffee", "He doesn't like coffee"], "explanation": "He + does not like coffee." },
+        { "id": "rw_aq_4", "type": "rewrite", "prompt": "We go to the gym every day. ➔ Câu hỏi:", "targetStart": "", "answers": ["Do we go to the gym every day?", "Do we go to the gym every day"], "explanation": "Đảo Do lên trước: Do we go to the gym every day?" },
+        { "id": "rw_an_4", "type": "rewrite", "prompt": "We go to the gym every day. ➔ Câu phủ định:", "targetStart": "", "answers": ["We do not go to the gym every day.", "We don't go to the gym every day.", "We do not go to the gym every day", "We don't go to the gym every day"], "explanation": "We do not go to the gym every day." },
+        { "id": "rw_aq_5", "type": "rewrite", "prompt": "I watch movies in the evening. ➔ Câu hỏi:", "targetStart": "", "answers": ["Do you watch movies in the evening?", "Do I watch movies in the evening?", "Do you watch movies in the evening", "Do I watch movies in the evening"], "explanation": "Do I/you watch movies in the evening?" },
+        { "id": "rw_an_5", "type": "rewrite", "prompt": "I watch movies in the evening. ➔ Câu phủ định:", "targetStart": "", "answers": ["I do not watch movies in the evening.", "I don't watch movies in the evening.", "I do not watch movies in the evening", "I don't watch movies in the evening"], "explanation": "I do not watch movies in the evening." }
+      ]
+    },
+    {
+      "group_id": "v_rewrite_qn_to_aff_neg",
+      "group_title": "13. Chuyển Từ Câu Hỏi Sang Khẳng Định Và Phủ Định (? => +-)",
+      "instruction": "Chuyển câu hỏi đã cho thành câu khẳng định và phủ định:",
+      "questions": [
+        { "id": "rw_qa_1", "type": "rewrite", "prompt": "Does she play tennis every weekend? ➔ Câu khẳng định:", "targetStart": "", "answers": ["She plays tennis every weekend.", "She plays tennis every weekend"], "explanation": "She plays tennis every weekend." },
+        { "id": "rw_qn_1", "type": "rewrite", "prompt": "Does she play tennis every weekend? ➔ Câu phủ định:", "targetStart": "", "answers": ["She does not play tennis every weekend.", "She doesn't play tennis every weekend.", "She does not play tennis every weekend", "She doesn't play tennis every weekend"], "explanation": "She does not / doesn't play tennis every weekend." },
+        { "id": "rw_qa_2", "type": "rewrite", "prompt": "Do they study English at school? ➔ Câu khẳng định:", "targetStart": "", "answers": ["They study English at school.", "They study English at school"], "explanation": "They study English at school." },
+        { "id": "rw_qn_2", "type": "rewrite", "prompt": "Do they study English at school? ➔ Câu phủ định:", "targetStart": "", "answers": ["They do not study English at school.", "They don't study English at school.", "They do not study English at school", "They don't study English at school"], "explanation": "They do not / don't study English at school." },
+        { "id": "rw_qa_3", "type": "rewrite", "prompt": "Does he like coffee? ➔ Câu khẳng định:", "targetStart": "", "answers": ["He likes coffee.", "He likes coffee"], "explanation": "He likes coffee." },
+        { "id": "rw_qn_3", "type": "rewrite", "prompt": "Does he like coffee? ➔ Câu phủ định:", "targetStart": "", "answers": ["He does not like coffee.", "He doesn't like coffee.", "He does not like coffee", "He doesn't like coffee"], "explanation": "He does not / doesn't like coffee." },
+        { "id": "rw_qa_4", "type": "rewrite", "prompt": "Do we go to the gym every day? ➔ Câu khẳng định:", "targetStart": "", "answers": ["We go to the gym every day.", "We go to the gym every day"], "explanation": "We go to the gym every day." },
+        { "id": "rw_qn_4", "type": "rewrite", "prompt": "Do we go to the gym every day? ➔ Câu phủ định:", "targetStart": "", "answers": ["We do not go to the gym every day.", "We don't go to the gym every day.", "We do not go to the gym every day", "We don't go to the gym every day"], "explanation": "We do not / don't go to the gym every day." },
+        { "id": "rw_qa_5", "type": "rewrite", "prompt": "Do I watch movies in the evening? ➔ Câu khẳng định:", "targetStart": "", "answers": ["I watch movies in the evening.", "You watch movies in the evening.", "I watch movies in the evening", "You watch movies in the evening"], "explanation": "I/You watch movies in the evening." },
+        { "id": "rw_qn_5", "type": "rewrite", "prompt": "Do I watch movies in the evening? ➔ Câu phủ định:", "targetStart": "", "answers": ["I do not watch movies in the evening.", "I don't watch movies in the evening.", "I do not watch movies in the evening", "I don't watch movies in the evening"], "explanation": "I do not / don't watch movies in the evening." }
+      ]
+    },
+    {
+      "group_id": "categorize_usage_15",
+      "group_title": "14. Bài Tập Phân Loại Câu Theo Cách Sử Dụng (Categorize Sentences)",
+      "instruction": "Chọn cách sử dụng phù hợp: Thói quen (Habit) / Chân lý (Fact/General truth) / Lịch trình cố định (Scheduled event):",
+      "questions": [
+        { "id": "cat_1", "type": "choice", "prompt": "She brushes her teeth every morning. (Cô ấy đánh răng mỗi sáng.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 0, "explanation": "Hành động đánh răng mỗi sáng là thói quen (Habit)." },
+        { "id": "cat_2", "type": "choice", "prompt": "The sun sets in the west. (Mặt trời lặn ở phía tây.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Mặt trời lặn hướng tây là chân lý / quy luật tự nhiên (Fact)." },
+        { "id": "cat_3", "type": "choice", "prompt": "The train departs at 7 PM tonight. (Tàu hỏa khởi hành vào lúc 7 giờ tối nay.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 2, "explanation": "Lịch trình tàu xe cố định (Scheduled event)." },
+        { "id": "cat_4", "type": "choice", "prompt": "I visit my grandparents every Sunday. (Tôi thăm ông bà mỗi Chủ nhật.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 0, "explanation": "Thói quen hàng tuần (Habit)." },
+        { "id": "cat_5", "type": "choice", "prompt": "Water freezes at 0°C. (Nước đóng băng ở 0°C.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Chân lý khoa học hiển nhiên (Fact)." },
+        { "id": "cat_6", "type": "choice", "prompt": "He drinks coffee every morning before work. (Anh ấy uống cà phê mỗi sáng trước khi đi làm.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 0, "explanation": "Thói quen mỗi sáng (Habit)." },
+        { "id": "cat_7", "type": "choice", "prompt": "Birds fly south during the winter. (Chim bay về phía nam trong mùa đông.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Quy luật tự nhiên của loài chim (General truth)." },
+        { "id": "cat_8", "type": "choice", "prompt": "The bus arrives at the station at 6:30 AM. (Xe buýt đến bến lúc 6:30 sáng.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 2, "explanation": "Lịch trình xe buýt (Scheduled event)." },
+        { "id": "cat_9", "type": "choice", "prompt": "They jog in the park every weekend. (Họ chạy bộ trong công viên mỗi cuối tuần.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 0, "explanation": "Thói quen cuối tuần (Habit)." },
+        { "id": "cat_10", "type": "choice", "prompt": "Ice melts when heated above 0°C. (Đá tan chảy khi được đun nóng trên 0°C.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Chân lý vật lý hiển nhiên (Fact)." },
+        { "id": "cat_11", "type": "choice", "prompt": "The movie starts at 9 PM tonight. (Bộ phim bắt đầu lúc 9 giờ tối nay.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 2, "explanation": "Lịch chiếu phim cố định (Scheduled event)." },
+        { "id": "cat_12", "type": "choice", "prompt": "She waters the plants every other day. (Cô ấy tưới cây mỗi hai ngày.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 0, "explanation": "Thói quen lặp lại đều đặn (Habit)." },
+        { "id": "cat_13", "type": "choice", "prompt": "Gravity keeps us on the ground. (Lực hấp dẫn giữ chúng ta trên mặt đất.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Chân lý / định luật vật lý (Fact)." },
+        { "id": "cat_14", "type": "choice", "prompt": "Our flight takes off at 3 PM tomorrow. (Chuyến bay của chúng ta cất cánh lúc 3 giờ chiều ngày mai.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 2, "explanation": "Lịch trình chuyến bay (Scheduled event)." },
+        { "id": "cat_15", "type": "choice", "prompt": "Dogs bark when they sense danger. (Chó sủa khi chúng cảm thấy nguy hiểm.)", "options": ["Thói quen (Habit)", "Chân lý (Fact/General truth)", "Lịch trình cố định (Scheduled event)"], "correctIndex": 1, "explanation": "Tập tính tự nhiên hiển nhiên của loài chó (General truth)." }
+      ]
+    },
+    {
+      "group_id": "identify_time_markers_15",
+      "group_title": "15. Bài Tập Nhận Diện Dấu Hiệu Nhận Biết (Identify Time Markers)",
+      "instruction": "Điền chính xác từ/cụm từ chỉ tần suất hoặc dấu hiệu nhận biết thì Hiện tại đơn có trong câu:",
+      "questions": [
+        { "id": "tm_1", "type": "blank", "prompt": "He usually goes jogging in the morning. ➔ Dấu hiệu:", "answers": ["usually", "in the morning"], "explanation": "'usually' (thường xuyên) là trạng từ chỉ tần suất." },
+        { "id": "tm_2", "type": "blank", "prompt": "We have a meeting every Monday. ➔ Dấu hiệu:", "answers": ["every Monday", "every monday"], "explanation": "'every Monday' (mỗi thứ Hai) là dấu hiệu lặp lại." },
+        { "id": "tm_3", "type": "blank", "prompt": "My sister never eats breakfast. ➔ Dấu hiệu:", "answers": ["never"], "explanation": "'never' (không bao giờ) là trạng từ tần suất 0%." },
+        { "id": "tm_4", "type": "blank", "prompt": "They play tennis twice a week. ➔ Dấu hiệu:", "answers": ["twice a week"], "explanation": "'twice a week' (hai lần một tuần) là cụm từ chỉ tần suất." },
+        { "id": "tm_5", "type": "blank", "prompt": "The store closes at 9 PM every day. ➔ Dấu hiệu:", "answers": ["every day", "at 9 PM every day", "everyday"], "explanation": "'every day' là dấu hiệu nhận biết hàng ngày." },
+        { "id": "tm_6", "type": "blank", "prompt": "She always drinks coffee before work. ➔ Dấu hiệu:", "answers": ["always"], "explanation": "'always' (luôn luôn) là trạng từ tần suất 100%." },
+        { "id": "tm_7", "type": "blank", "prompt": "The train arrives at 8:30 AM every morning. ➔ Dấu hiệu:", "answers": ["every morning", "at 8:30 AM every morning"], "explanation": "'every morning' là dấu hiệu lặp lại mỗi sáng." },
+        { "id": "tm_8", "type": "blank", "prompt": "We rarely go to the cinema. ➔ Dấu hiệu:", "answers": ["rarely"], "explanation": "'rarely' (hiếm khi) là trạng từ tần suất 10-20%." },
+        { "id": "tm_9", "type": "blank", "prompt": "He often visits his grandparents on Sundays. ➔ Dấu hiệu:", "answers": ["often", "on Sundays"], "explanation": "'often' là trạng từ tần suất, 'on Sundays' là thói quen vào chủ nhật." },
+        { "id": "tm_10", "type": "blank", "prompt": "They sometimes eat out for dinner. ➔ Dấu hiệu:", "answers": ["sometimes"], "explanation": "'sometimes' (thỉnh thoảng) là trạng từ tần suất." },
+        { "id": "tm_11", "type": "blank", "prompt": "My teacher gives homework every day. ➔ Dấu hiệu:", "answers": ["every day", "everyday"], "explanation": "'every day' là dấu hiệu nhận biết thì hiện tại đơn." },
+        { "id": "tm_12", "type": "blank", "prompt": "The kids play soccer in the park every weekend. ➔ Dấu hiệu:", "answers": ["every weekend"], "explanation": "'every weekend' (mỗi cuối tuần) là dấu hiệu lặp lại." },
+        { "id": "tm_13", "type": "blank", "prompt": "She hardly ever misses her favorite TV show. ➔ Dấu hiệu:", "answers": ["hardly ever"], "explanation": "'hardly ever' (hầu như không bao giờ) là trạng từ tần suất." },
+        { "id": "tm_14", "type": "blank", "prompt": "The gym closes at 10 PM on weekdays. ➔ Dấu hiệu:", "answers": ["on weekdays"], "explanation": "'on weekdays' (vào các ngày trong tuần) là mốc lặp lại theo lịch." },
+        { "id": "tm_15", "type": "blank", "prompt": "Our team has practice three times a week. ➔ Dấu hiệu:", "answers": ["three times a week"], "explanation": "'three times a week' (3 lần/tuần) là cụm từ chỉ tần suất." }
+      ]
+    },
+    {
+      "group_id": "fill_frequency_adverbs_10",
+      "group_title": "16. Bài Tập Điền Trạng Từ Tần Suất Dựa Vào Phần Trăm (%)",
+      "instruction": "Điền always (100%), usually (90%), often (70-80%), sometimes (30-50%), rarely (10-20%), never (0%):",
+      "questions": [
+        { "id": "fa_1", "type": "blank", "prompt": "1. He [blank] (100%) wakes up at 6 AM to exercise.", "answers": ["always"], "explanation": "100% tương ứng với 'always'." },
+        { "id": "fa_2", "type": "blank", "prompt": "2. I [blank] (90%) prepare my lessons the night before.", "answers": ["usually"], "explanation": "90% tương ứng với 'usually'." },
+        { "id": "fa_3", "type": "blank", "prompt": "3. She [blank] (70%) takes her dog for a walk in the evening.", "answers": ["often", "frequently"], "explanation": "70% tương ứng với 'often' hoặc 'frequently'." },
+        { "id": "fa_4", "type": "blank", "prompt": "4. We [blank] (50%) have lunch together as a family.", "answers": ["sometimes", "often"], "explanation": "50% tương ứng với 'sometimes'." },
+        { "id": "fa_5", "type": "blank", "prompt": "5. They [blank] (30%) watch movies on Friday nights.", "answers": ["sometimes"], "explanation": "30% tương ứng với 'sometimes'." },
+        { "id": "fa_6", "type": "blank", "prompt": "6. My dad [blank] (20%) drinks soda; he prefers water.", "answers": ["rarely", "seldom"], "explanation": "20% tương ứng với 'rarely' / 'seldom'." },
+        { "id": "fa_7", "type": "blank", "prompt": "7. She [blank] (0%) skips her morning yoga routine.", "answers": ["never"], "explanation": "0% tương ứng với 'never'." },
+        { "id": "fa_8", "type": "blank", "prompt": "8. We [blank] (80%) spend holidays at the beach.", "answers": ["often", "usually"], "explanation": "80% tương ứng với 'often' hoặc 'usually'." },
+        { "id": "fa_9", "type": "blank", "prompt": "9. He [blank] (10%) eats spicy food because he doesn’t like it.", "answers": ["rarely", "seldom"], "explanation": "10% tương ứng với 'rarely' / 'seldom'." },
+        { "id": "fa_10", "type": "blank", "prompt": "10. The children [blank] (60%) play outside after school.", "answers": ["often"], "explanation": "60% tương ứng với 'often'." }
+      ]
+    },
+    {
+      "group_id": "true_false_10",
+      "group_title": "17. Bài Tập Đúng/Sai (True/False) Về Cách Dùng Thì",
+      "instruction": "Xác định câu sau là đúng (True) hay sai (False) dựa trên cách sử dụng thì Hiện tại đơn:",
+      "questions": [
+        { "id": "tf_1", "type": "choice", "prompt": "The train arrives at 6:30 PM every evening. (Lịch trình)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Hiện tại đơn diễn tả lịch trình cố định của phương tiện giao thông." },
+        { "id": "tf_2", "type": "choice", "prompt": "She usually goes to the gym after work. (Thói quen)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Hiện tại đơn diễn tả thói quen lặp lại." },
+        { "id": "tf_3", "type": "choice", "prompt": "Birds fly in the sky. (Chân lý)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Diễn tả sự thật hiển nhiên." },
+        { "id": "tf_4", "type": "choice", "prompt": "They are visiting their grandparents every weekend. (Thói quen)", "options": ["True", "False"], "correctIndex": 1, "explanation": "Sai (False): Diễn tả thói quen lặp lại (every weekend) phải dùng thì Hiện tại đơn ('They visit...'), không dùng tiếp diễn." },
+        { "id": "tf_5", "type": "choice", "prompt": "The library opens at 9 AM on weekdays. (Lịch trình)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Giờ mở cửa của thư viện là lịch trình cố định." },
+        { "id": "tf_6", "type": "choice", "prompt": "The Sun rises in the east. (Chân lý)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Mặt trời mọc hướng Đông là chân lý hiển nhiên." },
+        { "id": "tf_7", "type": "choice", "prompt": "He is eating lunch at 12 PM every day. (Thói quen)", "options": ["True", "False"], "correctIndex": 1, "explanation": "Sai (False): Thói quen hằng ngày (every day) phải dùng Hiện tại đơn ('He eats lunch...')." },
+        { "id": "tf_8", "type": "choice", "prompt": "I often read books before sleeping. (Thói quen)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): 'often read' diễn tả thói quen chuẩn xác." },
+        { "id": "tf_9", "type": "choice", "prompt": "The shop closes at 10 PM tonight. (Lịch trình)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Giờ đóng cửa theo lịch hoạt động cố định." },
+        { "id": "tf_10", "type": "choice", "prompt": "Ice melts at 0°C. (Chân lý)", "options": ["True", "False"], "correctIndex": 0, "explanation": "Đúng (True): Băng tan ở 0 độ C là định luật vật lý." }
+      ]
+    },
+    {
+      "group_id": "sentence_ordering_5",
+      "group_title": "18. Bài Tập Sắp Xếp Câu (Sentence Ordering)",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh đúng ngữ pháp thì Hiện tại đơn:",
+      "questions": [
+        {
+          "id": "so_1",
+          "type": "rewrite",
+          "prompt": "often / Jane / reads / bedtime stories / at night",
+          "targetStart": "Jane ",
+          "answers": ["often reads bedtime stories at night.", "often reads bedtime stories at night"],
+          "explanation": "Trạng từ tần suất đứng trước động từ thường: Jane often reads bedtime stories at night."
+        },
+        {
+          "id": "so_2",
+          "type": "rewrite",
+          "prompt": "always / my parents / watch / TV / together",
+          "targetStart": "My parents ",
+          "answers": ["always watch TV together.", "always watch tv together.", "always watch TV together", "always watch tv together"],
+          "explanation": "My parents always watch TV together."
+        },
+        {
+          "id": "so_3",
+          "type": "rewrite",
+          "prompt": "starts / every day / the bus / at 6 AM / work",
+          "targetStart": "The bus ",
+          "answers": ["starts work at 6 AM every day.", "starts work at 6 am every day.", "starts work at 6 AM every day", "starts work at 6 am every day"],
+          "explanation": "The bus starts work at 6 AM every day."
+        },
+        {
+          "id": "so_4",
+          "type": "rewrite",
+          "prompt": "never / I / have / dinner / after 9 PM",
+          "targetStart": "I ",
+          "answers": ["never have dinner after 9 PM.", "never have dinner after 9 pm.", "never have dinner after 9 PM", "never have dinner after 9 pm"],
+          "explanation": "Trạng từ tần suất trước V: I never have dinner after 9 PM."
+        },
+        {
+          "id": "so_5",
+          "type": "rewrite",
+          "prompt": "every summer / our family / goes / to the beach",
+          "targetStart": "Our family ",
+          "answers": ["goes to the beach every summer.", "goes to the beach every summer"],
+          "explanation": "Our family goes to the beach every summer."
+        }
+      ]
+    },
+    {
+      "group_id": "matching_usage_5",
+      "group_title": "19. Bài Tập Nối Câu Với Cách Sử Dụng (Match Usage)",
+      "instruction": "Chọn cách sử dụng tương ứng cho mỗi câu (a - Lịch trình, b - Chân lý, c - Thói quen, d - Kế hoạch tương lai, e - Tần suất):",
+      "questions": [
+        { "id": "mu_1", "type": "choice", "prompt": "1. The moon orbits the Earth.", "options": ["a) Lịch trình", "b) Chân lý", "c) Thói quen", "d) Kế hoạch tương lai", "e) Tần suất"], "correctIndex": 1, "explanation": "Mặt trăng quay quanh Trái đất là chân lý khoa học ➔ b." },
+        { "id": "mu_2", "type": "choice", "prompt": "2. I drink coffee every morning.", "options": ["a) Lịch trình", "b) Chân lý", "c) Thói quen", "d) Kế hoạch tương lai", "e) Tần suất"], "correctIndex": 2, "explanation": "Uống cà phê mỗi sáng là thói quen ➔ c." },
+        { "id": "mu_3", "type": "choice", "prompt": "3. The bus arrives at 7:30 AM.", "options": ["a) Lịch trình", "b) Chân lý", "c) Thói quen", "d) Kế hoạch tương lai", "e) Tần suất"], "correctIndex": 0, "explanation": "Xe buýt đến lúc 7:30 là lịch trình cố định ➔ a." },
+        { "id": "mu_4", "type": "choice", "prompt": "4. She never skips breakfast.", "options": ["a) Lịch trình", "b) Chân lý", "c) Thói quen", "d) Kế hoạch tương lai", "e) Tần suất"], "correctIndex": 4, "explanation": "Có 'never' diễn tả mức độ tần suất hành động ➔ e." },
+        { "id": "mu_5", "type": "choice", "prompt": "5. The concert begins at 8 PM.", "options": ["a) Lịch trình", "b) Chân lý", "c) Thói quen", "d) Kế hoạch tương lai", "e) Tần suất"], "correctIndex": 0, "explanation": "Buổi hòa nhạc bắt đầu lúc 8h tối là lịch trình/kế hoạch thời gian biểu ➔ a." }
+      ]
+    }
+  ]
+}
