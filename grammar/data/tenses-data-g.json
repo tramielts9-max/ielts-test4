@@ -1,0 +1,224 @@
+{
+  "id": "tenses",
+  "title": "CHUYÊN ĐỀ: CÁC THÌ (TENSES) & DANH TỪ CƠ BẢN",
+  "theory_sections": [
+    {
+      "heading": "1. Cơ bản: Danh từ số ít và số nhiều (Singular & Plural Nouns)",
+      "formula": "Số nhiều thông thường = Noun + 's' | Đuôi s, x, z, ch, sh, o + 'es'",
+      "rules": [
+        "Thêm '-s' vào danh từ thường: Cat ➔ Cats, Dog ➔ Dogs, Book ➔ Books.",
+        "Kết thúc bằng 's, x, z, sh, ch': Thêm '-es': Bus ➔ Buses, Box ➔ Boxes, Watch ➔ Watches.",
+        "Phụ âm + 'y': Đổi 'y' thành 'ies': Baby ➔ Babies, City ➔ Cities.",
+        "Nguyên âm (u, e, o, a, i) + 'y': Chỉ thêm '-s': Toy ➔ Toys, Day ➔ Days.",
+        "Kết thúc bằng 'f' hoặc 'fe': Thường đổi thành 'ves': Knife ➔ Knives, Wolf ➔ Wolves.",
+        "Bất quy tắc: Man ➔ Men, Woman ➔ Women, Tooth ➔ Teeth, Foot ➔ Feet, Child ➔ Children, Mouse ➔ Mice, Person ➔ People.",
+        "Không đổi dạng: Sheep ➔ Sheep, Deer ➔ Deer, Fish ➔ Fish, Aircraft ➔ Aircraft."
+      ],
+      "examples": [
+        "She has two cats and three watches.",
+        "Those children are playing with their toys."
+      ]
+    },
+    {
+      "heading": "2. Thì Hiện Tại Đơn (Simple Present)",
+      "formula": "To Be: S + am/is/are + O | Động từ thường: S + V(s/es) + O",
+      "rules": [
+        "Khẳng định V thường: He, She, It, Danh từ số ít ➔ V(s/es). I, You, We, They, Danh từ số nhiều ➔ V nguyên mẫu (V0).",
+        "Phủ định: S + do not / does not + V0.",
+        "Nghi vấn: Do / Does + S + V0?",
+        "Cách dùng: Thói quen lặp lại, Chân lý/sự thật hiển nhiên, Lịch trình tàu xe cố định.",
+        "Dấu hiệu: Always, Usually, Often, Sometimes, Rarely, Never, Every day/week/month..."
+      ],
+      "examples": [
+        "Water boils at 100°C. (Chân lý)",
+        "The train leaves at 9:00 this morning. (Lịch trình)",
+        "He always drinks coffee before work. (Thói quen)"
+      ]
+    },
+    {
+      "heading": "3. Thì Hiện Tại Tiếp Diễn (Present Continuous)",
+      "formula": "S + am/is/are + V-ing | S + am/is/are + not + V-ing | Am/Is/Are + S + V-ing?",
+      "rules": [
+        "Quy tắc thêm -ing: Bỏ 'e' trước khi thêm -ing (take ➔ taking); gấp đôi phụ âm cuối nếu 1 nguyên âm kẹp giữa 2 phụ âm (run ➔ running, swim ➔ swimming); đuôi '-ie' đổi thành '-y' rồi thêm -ing (lie ➔ lying, die ➔ dying).",
+        "Cách dùng: Hành động đang diễn ra tại thời điểm nói, kế hoạch tương lai gần đã định trước, phàn nàn sự việc gây khó chịu (đi với 'always').",
+        "Dấu hiệu: Now, right now, at the moment, at present, at + giờ cụ thể."
+      ],
+      "examples": [
+        "She is always talking in class! (Phàn nàn)",
+        "We are studying English right now."
+      ]
+    },
+    {
+      "heading": "4. Thì Quá Khứ Đơn (Past Simple)",
+      "formula": "To Be: S + was/were + O | Động từ thường: S + V2/ed + O | Phủ định: S + did not + V0",
+      "rules": [
+        "To Be: I, He, She, It, Danh từ số ít ➔ WAS. You, We, They, Danh từ số nhiều ➔ WERE.",
+        "Quy tắc thêm '-ed': Đuôi 'e' thêm 'd' (like ➔ liked); phụ âm + 'y' đổi thành 'i' + 'ed' (study ➔ studied); gấp đôi phụ âm (stop ➔ stopped); đuôi '-c' thêm '-ked' (panic ➔ panicked).",
+        "Dấu hiệu: Yesterday, ago, last night/week/month, in + năm quá khứ."
+      ],
+      "examples": [
+        "I visited my grandparents yesterday.",
+        "They were not at home last night."
+      ]
+    },
+    {
+      "heading": "5. Thì Quá Khứ Tiếp Diễn & Quá Khứ Hoàn Thành",
+      "formula": "QKTD: S + was/were + V-ing | QKHT: S + had + V3/ed + O",
+      "rules": [
+        "QKTD: Diễn tả hành động đang diễn ra tại thời điểm xác định trong quá khứ hoặc hành động đang xảy ra (QKTD) thì hành động khác cắt ngang (QKĐ: when + V2).",
+        "QKHT: Diễn tả hành động xảy ra và hoàn tất trước một hành động khác trong quá khứ: [S + had + V3/ed] BEFORE [S + V2/ed] hoặc AFTER [S + had + V3/ed], [S + V2/ed]."
+      ],
+      "examples": [
+        "I was reading a book when the lights went out.",
+        "She had finished the report before the meeting started."
+      ]
+    },
+    {
+      "heading": "6. Thì Hiện Tại Hoàn Thành & Tương Lai Đơn",
+      "formula": "HTHT: S + have/has + V3/ed | TLĐ: S + will + V0",
+      "rules": [
+        "HTHT dùng khi hành động đã xong không rõ thời gian, lặp lại nhiều lần, hoặc để lại kết quả ở hiện tại.",
+        "Dấu hiệu HTHT: Just, already, yet, recently, ever, never, since, for.",
+        "TLĐ: Diễn tả quyết định tức thì tại thời điểm nói, lời hứa hẹn, hoặc dự đoán không căn cứ."
+      ],
+      "examples": [
+        "I have lost my key, so I cannot get in.",
+        "I promise I will return the book on time."
+      ]
+    }
+  ],
+  "exercise_sections": [
+    {
+      "section_title": "Phần 1: Chuyển Danh Từ Số Ít Sang Số Nhiều (Nouns Plural)",
+      "instruction": "Điền dạng số nhiều chính xác của danh từ sau:",
+      "questions": [
+        { "id": "n1", "type": "blank", "prompt": "Book ➔ [blank]", "answers": ["books"], "explanation": "Thêm -s vào danh từ đếm được thông thường." },
+        { "id": "n2", "type": "blank", "prompt": "Chair ➔ [blank]", "answers": ["chairs"], "explanation": "Thêm -s vào danh từ thông thường." },
+        { "id": "n3", "type": "blank", "prompt": "Box ➔ [blank]", "answers": ["boxes"], "explanation": "Danh từ tận cùng là x nên thêm -es." },
+        { "id": "n4", "type": "blank", "prompt": "Watch ➔ [blank]", "answers": ["watches"], "explanation": "Danh từ tận cùng là ch nên thêm -es." },
+        { "id": "n5", "type": "blank", "prompt": "Party ➔ [blank]", "answers": ["parties"], "explanation": "Kết thúc bằng phụ âm + y ➔ đổi thành -ies." },
+        { "id": "n6", "type": "blank", "prompt": "Toy ➔ [blank]", "answers": ["toys"], "explanation": "Kết thúc bằng nguyên âm + y ➔ chỉ thêm -s." },
+        { "id": "n7", "type": "blank", "prompt": "Knife ➔ [blank]", "answers": ["knives"], "explanation": "Danh từ tận cùng -fe đổi thành -ves." },
+        { "id": "n8", "type": "blank", "prompt": "Leaf ➔ [blank]", "answers": ["leaves"], "explanation": "Danh từ tận cùng -f đổi thành -ves." },
+        { "id": "n9", "type": "blank", "prompt": "Sheep ➔ [blank]", "answers": ["sheep"], "explanation": "Danh từ giữ nguyên không thay đổi ở số nhiều." },
+        { "id": "n10", "type": "blank", "prompt": "Child ➔ [blank]", "answers": ["children"], "explanation": "Dạng số nhiều bất quy tắc: Child ➔ Children." }
+      ]
+    },
+    {
+      "section_title": "Phần 2: Hiện Tại Đơn với Động Từ To Be (Am / Is / Are)",
+      "instruction": "Điền dạng đúng của động từ To Be (am, is, are, hoặc dạng phủ định):",
+      "questions": [
+        { "id": "be1", "type": "blank", "prompt": "The men [blank] working in the office.", "answers": ["are"], "explanation": "The men là danh từ số nhiều (số ít là man) ➔ dùng are." },
+        { "id": "be2", "type": "blank", "prompt": "The woman [blank] wearing a hat.", "answers": ["is"], "explanation": "The woman là danh từ số ít (số nhiều là women) ➔ dùng is." },
+        { "id": "be3", "type": "blank", "prompt": "The mouse [blank] hiding behind the cupboard.", "answers": ["is"], "explanation": "The mouse là danh từ số ít (số nhiều là mice) ➔ dùng is." },
+        { "id": "be4", "type": "blank", "prompt": "The teeth [blank] hurting after eating candy.", "answers": ["are"], "explanation": "The teeth là danh từ số nhiều (số ít là tooth) ➔ dùng are." },
+        { "id": "be5", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["are"], "explanation": "Hai người (Sarah and Emily) là chủ ngữ số nhiều ➔ dùng are." },
+        { "id": "be6", "type": "blank", "prompt": "The dog (be) [blank] barking loudly.", "answers": ["is"], "explanation": "The dog là danh từ số ít ➔ dùng is." },
+        { "id": "be7", "type": "blank", "prompt": "This movie (be, not) [blank] boring.", "answers": ["is not", "isn't"], "explanation": "Chủ ngữ số ít 'This movie' ở thể phủ định ➔ is not / isn't." }
+      ]
+    },
+    {
+      "section_title": "Phần 3: Hiện Tại Đơn với Động Từ Thường (Simple Present)",
+      "instruction": "Chia động từ trong ngoặc theo đúng chủ ngữ ở thì Hiện tại đơn:",
+      "questions": [
+        { "id": "sp1", "type": "blank", "prompt": "He (think) [blank] about school.", "answers": ["thinks"], "explanation": "Chủ ngữ He là ngôi thứ 3 số ít ➔ động từ thêm -s." },
+        { "id": "sp2", "type": "blank", "prompt": "She (watch) [blank] movies.", "answers": ["watches"], "explanation": "Động từ watch kết thúc bằng ch, chủ ngữ She ➔ thêm -es." },
+        { "id": "sp3", "type": "blank", "prompt": "The baby (cry) [blank] every night.", "answers": ["cries"], "explanation": "The baby là số ít, động từ cry (phụ âm + y) ➔ đổi thành cries." },
+        { "id": "sp4", "type": "blank", "prompt": "My father (fly) [blank] to Belize every year.", "answers": ["flies"], "explanation": "Chủ ngữ My father là số ít, fly ➔ flies." },
+        { "id": "sp5", "type": "blank", "prompt": "They (eat, not) [blank] vegetables.", "answers": ["do not eat", "don't eat"], "explanation": "Chủ ngữ They là số nhiều, phủ định dùng do not / don't + V0." },
+        { "id": "sp6", "type": "blank", "prompt": "He (work, not) [blank] on Sundays.", "answers": ["does not work", "doesn't work"], "explanation": "Chủ ngữ He là số ít, phủ định dùng does not / doesn't + V0." }
+      ]
+    },
+    {
+      "section_title": "Phần 4: Hiện Tại Tiếp Diễn (Present Continuous)",
+      "instruction": "Chia động từ theo cấu trúc am/is/are + V-ing:",
+      "questions": [
+        { "id": "pc1", "type": "blank", "prompt": "The flowers (bloom) [blank] beautifully.", "answers": ["are blooming"], "explanation": "Chủ ngữ 'The flowers' là số nhiều ➔ are blooming." },
+        { "id": "pc2", "type": "blank", "prompt": "The dog (bark) [blank] loudly right now.", "answers": ["is barking"], "explanation": "Chủ ngữ 'The dog' là số ít ➔ is barking." },
+        { "id": "pc3", "type": "blank", "prompt": "The students (read, not) [blank] outside.", "answers": ["are not reading", "aren't reading"], "explanation": "Chủ ngữ số nhiều ở thể phủ định tiếp diễn ➔ are not reading." },
+        { "id": "pc4", "type": "blank", "prompt": "She (travel) [blank] to Paris next week.", "answers": ["is traveling", "is travelling"], "explanation": "Kế hoạch tương lai đã chuẩn bị ➔ dùng hiện tại tiếp diễn is traveling/travelling." }
+      ]
+    },
+    {
+      "section_title": "Phần 5: Quá Khứ Đơn (Past Simple & V2)",
+      "instruction": "Điền dạng quá khứ (V2/ed) thích hợp:",
+      "questions": [
+        { "id": "ps1", "type": "blank", "prompt": "I (go) [blank] to the store yesterday.", "answers": ["went"], "explanation": "Bất quy tắc V2 của 'go' là 'went'." },
+        { "id": "ps2", "type": "blank", "prompt": "She (bring) [blank] a cake to the party last night.", "answers": ["brought"], "explanation": "Bất quy tắc V2 của 'bring' là 'brought'." },
+        { "id": "ps3", "type": "blank", "prompt": "They (build) [blank] a new house last year.", "answers": ["built"], "explanation": "Bất quy tắc V2 của 'build' là 'built'." },
+        { "id": "ps4", "type": "blank", "prompt": "He (stop) [blank] the car immediately.", "answers": ["stopped"], "explanation": "Gấp đôi phụ âm cuối 'p' trước khi thêm -ed ➔ stopped." },
+        { "id": "ps5", "type": "blank", "prompt": "We (visit, not) [blank] the museum last Sunday.", "answers": ["did not visit", "didn't visit"], "explanation": "Phủ định quá khứ đơn: did not + V nguyên thể (visit)." }
+      ]
+    },
+    {
+      "section_title": "Phần 6: Quá Khứ Tiếp Diễn & Quá Khứ Hoàn Thành",
+      "instruction": "Điền dạng đúng của động từ (was/were + V-ing hoặc had + V3/ed):",
+      "questions": [
+        { "id": "pc_ps1", "type": "blank", "prompt": "At 8 PM last night, I (watch) [blank] a movie.", "answers": ["was watching"], "explanation": "Hành động đang diễn ra tại mốc thời gian cụ thể trong quá khứ ➔ was watching." },
+        { "id": "pc_ps2", "type": "blank", "prompt": "I (read) [blank] a book when the lights went out.", "answers": ["was reading"], "explanation": "Hành động đang diễn ra (was reading) thì hành động khác cắt ngang (went out)." },
+        { "id": "pp1", "type": "blank", "prompt": "She had (already read) [blank] the book before the teacher assigned it.", "answers": ["already read"], "explanation": "V3 của 'read' viết là 'read' (phát âm là /red/)." },
+        { "id": "pp2", "type": "blank", "prompt": "They (leave) [blank] before we arrived.", "answers": ["had left"], "explanation": "Hành động xảy ra trước mốc quá khứ khác ('arrived') ➔ thì quá khứ hoàn thành 'had left'." }
+      ]
+    },
+    {
+      "section_title": "Phần 7: Trắc Nghiệm Phân Biệt Các Thì (Multiple Choice)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D):",
+      "questions": [
+        {
+          "id": "mc1",
+          "type": "choice",
+          "prompt": "Water ______ at 100 degrees Celsius.",
+          "options": ["boil", "boils", "is boiling", "boiled"],
+          "correctIndex": 1,
+          "explanation": "Sự thật hiển nhiên/chân lý khoa học luôn chia ở hiện tại đơn ngôi thứ 3 số ít ➔ boils."
+        },
+        {
+          "id": "mc2",
+          "type": "choice",
+          "prompt": "Look! The train ______ into the station.",
+          "options": ["comes", "came", "is coming", "has come"],
+          "correctIndex": 2,
+          "explanation": "Có thán từ 'Look!' cảnh báo hành động đang diễn ra ngay trước mắt ➔ is coming."
+        },
+        {
+          "id": "mc3",
+          "type": "choice",
+          "prompt": "We ______ that movie three times so far.",
+          "options": ["watch", "watched", "have watched", "were watching"],
+          "correctIndex": 2,
+          "explanation": "Có 'three times' (lặp lại nhiều lần) và 'so far' ➔ dùng hiện tại hoàn thành have watched."
+        },
+        {
+          "id": "mc4",
+          "type": "choice",
+          "prompt": "Yesterday, as soon as the bell rang, the students ______ out of the classroom.",
+          "options": ["run", "ran", "were running", "had run"],
+          "correctIndex": 1,
+          "explanation": "Chuỗi hành động liên tiếp trong quá khứ (as soon as...) ➔ dùng quá khứ đơn 'ran'."
+        }
+      ]
+    },
+    {
+      "section_title": "Phần 8: Viết Lại Câu (Sentence Rewriting)",
+      "instruction": "Viết lại câu hoàn chỉnh theo từ gợi ý mà không làm thay đổi nghĩa:",
+      "questions": [
+        {
+          "id": "rw1",
+          "type": "rewrite",
+          "prompt": "She plays tennis every weekend. (Chuyển sang câu hỏi)",
+          "targetStart": "Does ",
+          "answers": ["she play tennis every weekend?", "she play tennis every weekend"],
+          "explanation": "Câu hỏi ngôi She: Đưa Does lên đầu + động từ play về nguyên mẫu."
+        },
+        {
+          "id": "rw2",
+          "type": "rewrite",
+          "prompt": "The last time I cooked was 3 years ago.",
+          "targetStart": "I haven't ",
+          "answers": ["cooked for 3 years.", "cooked for 3 years", "cooked for three years.", "cooked for three years"],
+          "explanation": "Cấu trúc tương đương: The last time + S + V2 + was [thời gian] ago ➔ S + haven't/hasn't + V3 + for [thời gian]."
+        }
+      ]
+    }
+  ]
+}
