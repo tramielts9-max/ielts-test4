@@ -1,223 +1,382 @@
 {
   "id": "tenses",
-  "title": "CHUYÊN ĐỀ: CÁC THÌ (TENSES) & DANH TỪ CƠ BẢN",
-  "theory_sections": [
+  "title": "CHUYÊN ĐỀ TOÀN DIỆN: CÁC THÌ (TENSES) & DANH TỪ CƠ BẢN",
+  "units": [
     {
-      "heading": "1. Cơ bản: Danh từ số ít và số nhiều (Singular & Plural Nouns)",
-      "formula": "Số nhiều thông thường = Noun + 's' | Đuôi s, x, z, ch, sh, o + 'es'",
-      "rules": [
-        "Thêm '-s' vào danh từ thường: Cat ➔ Cats, Dog ➔ Dogs, Book ➔ Books.",
-        "Kết thúc bằng 's, x, z, sh, ch': Thêm '-es': Bus ➔ Buses, Box ➔ Boxes, Watch ➔ Watches.",
-        "Phụ âm + 'y': Đổi 'y' thành 'ies': Baby ➔ Babies, City ➔ Cities.",
-        "Nguyên âm (u, e, o, a, i) + 'y': Chỉ thêm '-s': Toy ➔ Toys, Day ➔ Days.",
-        "Kết thúc bằng 'f' hoặc 'fe': Thường đổi thành 'ves': Knife ➔ Knives, Wolf ➔ Wolves.",
-        "Bất quy tắc: Man ➔ Men, Woman ➔ Women, Tooth ➔ Teeth, Foot ➔ Feet, Child ➔ Children, Mouse ➔ Mice, Person ➔ People.",
-        "Không đổi dạng: Sheep ➔ Sheep, Deer ➔ Deer, Fish ➔ Fish, Aircraft ➔ Aircraft."
-      ],
-      "examples": [
-        "She has two cats and three watches.",
-        "Those children are playing with their toys."
-      ]
-    },
-    {
-      "heading": "2. Thì Hiện Tại Đơn (Simple Present)",
-      "formula": "To Be: S + am/is/are + O | Động từ thường: S + V(s/es) + O",
-      "rules": [
-        "Khẳng định V thường: He, She, It, Danh từ số ít ➔ V(s/es). I, You, We, They, Danh từ số nhiều ➔ V nguyên mẫu (V0).",
-        "Phủ định: S + do not / does not + V0.",
-        "Nghi vấn: Do / Does + S + V0?",
-        "Cách dùng: Thói quen lặp lại, Chân lý/sự thật hiển nhiên, Lịch trình tàu xe cố định.",
-        "Dấu hiệu: Always, Usually, Often, Sometimes, Rarely, Never, Every day/week/month..."
-      ],
-      "examples": [
-        "Water boils at 100°C. (Chân lý)",
-        "The train leaves at 9:00 this morning. (Lịch trình)",
-        "He always drinks coffee before work. (Thói quen)"
-      ]
-    },
-    {
-      "heading": "3. Thì Hiện Tại Tiếp Diễn (Present Continuous)",
-      "formula": "S + am/is/are + V-ing | S + am/is/are + not + V-ing | Am/Is/Are + S + V-ing?",
-      "rules": [
-        "Quy tắc thêm -ing: Bỏ 'e' trước khi thêm -ing (take ➔ taking); gấp đôi phụ âm cuối nếu 1 nguyên âm kẹp giữa 2 phụ âm (run ➔ running, swim ➔ swimming); đuôi '-ie' đổi thành '-y' rồi thêm -ing (lie ➔ lying, die ➔ dying).",
-        "Cách dùng: Hành động đang diễn ra tại thời điểm nói, kế hoạch tương lai gần đã định trước, phàn nàn sự việc gây khó chịu (đi với 'always').",
-        "Dấu hiệu: Now, right now, at the moment, at present, at + giờ cụ thể."
-      ],
-      "examples": [
-        "She is always talking in class! (Phàn nàn)",
-        "We are studying English right now."
-      ]
-    },
-    {
-      "heading": "4. Thì Quá Khứ Đơn (Past Simple)",
-      "formula": "To Be: S + was/were + O | Động từ thường: S + V2/ed + O | Phủ định: S + did not + V0",
-      "rules": [
-        "To Be: I, He, She, It, Danh từ số ít ➔ WAS. You, We, They, Danh từ số nhiều ➔ WERE.",
-        "Quy tắc thêm '-ed': Đuôi 'e' thêm 'd' (like ➔ liked); phụ âm + 'y' đổi thành 'i' + 'ed' (study ➔ studied); gấp đôi phụ âm (stop ➔ stopped); đuôi '-c' thêm '-ked' (panic ➔ panicked).",
-        "Dấu hiệu: Yesterday, ago, last night/week/month, in + năm quá khứ."
-      ],
-      "examples": [
-        "I visited my grandparents yesterday.",
-        "They were not at home last night."
-      ]
-    },
-    {
-      "heading": "5. Thì Quá Khứ Tiếp Diễn & Quá Khứ Hoàn Thành",
-      "formula": "QKTD: S + was/were + V-ing | QKHT: S + had + V3/ed + O",
-      "rules": [
-        "QKTD: Diễn tả hành động đang diễn ra tại thời điểm xác định trong quá khứ hoặc hành động đang xảy ra (QKTD) thì hành động khác cắt ngang (QKĐ: when + V2).",
-        "QKHT: Diễn tả hành động xảy ra và hoàn tất trước một hành động khác trong quá khứ: [S + had + V3/ed] BEFORE [S + V2/ed] hoặc AFTER [S + had + V3/ed], [S + V2/ed]."
-      ],
-      "examples": [
-        "I was reading a book when the lights went out.",
-        "She had finished the report before the meeting started."
-      ]
-    },
-    {
-      "heading": "6. Thì Hiện Tại Hoàn Thành & Tương Lai Đơn",
-      "formula": "HTHT: S + have/has + V3/ed | TLĐ: S + will + V0",
-      "rules": [
-        "HTHT dùng khi hành động đã xong không rõ thời gian, lặp lại nhiều lần, hoặc để lại kết quả ở hiện tại.",
-        "Dấu hiệu HTHT: Just, already, yet, recently, ever, never, since, for.",
-        "TLĐ: Diễn tả quyết định tức thì tại thời điểm nói, lời hứa hẹn, hoặc dự đoán không căn cứ."
-      ],
-      "examples": [
-        "I have lost my key, so I cannot get in.",
-        "I promise I will return the book on time."
-      ]
-    }
-  ],
-  "exercise_sections": [
-    {
-      "section_title": "Phần 1: Chuyển Danh Từ Số Ít Sang Số Nhiều (Nouns Plural)",
-      "instruction": "Điền dạng số nhiều chính xác của danh từ sau:",
-      "questions": [
-        { "id": "n1", "type": "blank", "prompt": "Book ➔ [blank]", "answers": ["books"], "explanation": "Thêm -s vào danh từ đếm được thông thường." },
-        { "id": "n2", "type": "blank", "prompt": "Chair ➔ [blank]", "answers": ["chairs"], "explanation": "Thêm -s vào danh từ thông thường." },
-        { "id": "n3", "type": "blank", "prompt": "Box ➔ [blank]", "answers": ["boxes"], "explanation": "Danh từ tận cùng là x nên thêm -es." },
-        { "id": "n4", "type": "blank", "prompt": "Watch ➔ [blank]", "answers": ["watches"], "explanation": "Danh từ tận cùng là ch nên thêm -es." },
-        { "id": "n5", "type": "blank", "prompt": "Party ➔ [blank]", "answers": ["parties"], "explanation": "Kết thúc bằng phụ âm + y ➔ đổi thành -ies." },
-        { "id": "n6", "type": "blank", "prompt": "Toy ➔ [blank]", "answers": ["toys"], "explanation": "Kết thúc bằng nguyên âm + y ➔ chỉ thêm -s." },
-        { "id": "n7", "type": "blank", "prompt": "Knife ➔ [blank]", "answers": ["knives"], "explanation": "Danh từ tận cùng -fe đổi thành -ves." },
-        { "id": "n8", "type": "blank", "prompt": "Leaf ➔ [blank]", "answers": ["leaves"], "explanation": "Danh từ tận cùng -f đổi thành -ves." },
-        { "id": "n9", "type": "blank", "prompt": "Sheep ➔ [blank]", "answers": ["sheep"], "explanation": "Danh từ giữ nguyên không thay đổi ở số nhiều." },
-        { "id": "n10", "type": "blank", "prompt": "Child ➔ [blank]", "answers": ["children"], "explanation": "Dạng số nhiều bất quy tắc: Child ➔ Children." }
-      ]
-    },
-    {
-      "section_title": "Phần 2: Hiện Tại Đơn với Động Từ To Be (Am / Is / Are)",
-      "instruction": "Điền dạng đúng của động từ To Be (am, is, are, hoặc dạng phủ định):",
-      "questions": [
-        { "id": "be1", "type": "blank", "prompt": "The men [blank] working in the office.", "answers": ["are"], "explanation": "The men là danh từ số nhiều (số ít là man) ➔ dùng are." },
-        { "id": "be2", "type": "blank", "prompt": "The woman [blank] wearing a hat.", "answers": ["is"], "explanation": "The woman là danh từ số ít (số nhiều là women) ➔ dùng is." },
-        { "id": "be3", "type": "blank", "prompt": "The mouse [blank] hiding behind the cupboard.", "answers": ["is"], "explanation": "The mouse là danh từ số ít (số nhiều là mice) ➔ dùng is." },
-        { "id": "be4", "type": "blank", "prompt": "The teeth [blank] hurting after eating candy.", "answers": ["are"], "explanation": "The teeth là danh từ số nhiều (số ít là tooth) ➔ dùng are." },
-        { "id": "be5", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["are"], "explanation": "Hai người (Sarah and Emily) là chủ ngữ số nhiều ➔ dùng are." },
-        { "id": "be6", "type": "blank", "prompt": "The dog (be) [blank] barking loudly.", "answers": ["is"], "explanation": "The dog là danh từ số ít ➔ dùng is." },
-        { "id": "be7", "type": "blank", "prompt": "This movie (be, not) [blank] boring.", "answers": ["is not", "isn't"], "explanation": "Chủ ngữ số ít 'This movie' ở thể phủ định ➔ is not / isn't." }
-      ]
-    },
-    {
-      "section_title": "Phần 3: Hiện Tại Đơn với Động Từ Thường (Simple Present)",
-      "instruction": "Chia động từ trong ngoặc theo đúng chủ ngữ ở thì Hiện tại đơn:",
-      "questions": [
-        { "id": "sp1", "type": "blank", "prompt": "He (think) [blank] about school.", "answers": ["thinks"], "explanation": "Chủ ngữ He là ngôi thứ 3 số ít ➔ động từ thêm -s." },
-        { "id": "sp2", "type": "blank", "prompt": "She (watch) [blank] movies.", "answers": ["watches"], "explanation": "Động từ watch kết thúc bằng ch, chủ ngữ She ➔ thêm -es." },
-        { "id": "sp3", "type": "blank", "prompt": "The baby (cry) [blank] every night.", "answers": ["cries"], "explanation": "The baby là số ít, động từ cry (phụ âm + y) ➔ đổi thành cries." },
-        { "id": "sp4", "type": "blank", "prompt": "My father (fly) [blank] to Belize every year.", "answers": ["flies"], "explanation": "Chủ ngữ My father là số ít, fly ➔ flies." },
-        { "id": "sp5", "type": "blank", "prompt": "They (eat, not) [blank] vegetables.", "answers": ["do not eat", "don't eat"], "explanation": "Chủ ngữ They là số nhiều, phủ định dùng do not / don't + V0." },
-        { "id": "sp6", "type": "blank", "prompt": "He (work, not) [blank] on Sundays.", "answers": ["does not work", "doesn't work"], "explanation": "Chủ ngữ He là số ít, phủ định dùng does not / doesn't + V0." }
-      ]
-    },
-    {
-      "section_title": "Phần 4: Hiện Tại Tiếp Diễn (Present Continuous)",
-      "instruction": "Chia động từ theo cấu trúc am/is/are + V-ing:",
-      "questions": [
-        { "id": "pc1", "type": "blank", "prompt": "The flowers (bloom) [blank] beautifully.", "answers": ["are blooming"], "explanation": "Chủ ngữ 'The flowers' là số nhiều ➔ are blooming." },
-        { "id": "pc2", "type": "blank", "prompt": "The dog (bark) [blank] loudly right now.", "answers": ["is barking"], "explanation": "Chủ ngữ 'The dog' là số ít ➔ is barking." },
-        { "id": "pc3", "type": "blank", "prompt": "The students (read, not) [blank] outside.", "answers": ["are not reading", "aren't reading"], "explanation": "Chủ ngữ số nhiều ở thể phủ định tiếp diễn ➔ are not reading." },
-        { "id": "pc4", "type": "blank", "prompt": "She (travel) [blank] to Paris next week.", "answers": ["is traveling", "is travelling"], "explanation": "Kế hoạch tương lai đã chuẩn bị ➔ dùng hiện tại tiếp diễn is traveling/travelling." }
-      ]
-    },
-    {
-      "section_title": "Phần 5: Quá Khứ Đơn (Past Simple & V2)",
-      "instruction": "Điền dạng quá khứ (V2/ed) thích hợp:",
-      "questions": [
-        { "id": "ps1", "type": "blank", "prompt": "I (go) [blank] to the store yesterday.", "answers": ["went"], "explanation": "Bất quy tắc V2 của 'go' là 'went'." },
-        { "id": "ps2", "type": "blank", "prompt": "She (bring) [blank] a cake to the party last night.", "answers": ["brought"], "explanation": "Bất quy tắc V2 của 'bring' là 'brought'." },
-        { "id": "ps3", "type": "blank", "prompt": "They (build) [blank] a new house last year.", "answers": ["built"], "explanation": "Bất quy tắc V2 của 'build' là 'built'." },
-        { "id": "ps4", "type": "blank", "prompt": "He (stop) [blank] the car immediately.", "answers": ["stopped"], "explanation": "Gấp đôi phụ âm cuối 'p' trước khi thêm -ed ➔ stopped." },
-        { "id": "ps5", "type": "blank", "prompt": "We (visit, not) [blank] the museum last Sunday.", "answers": ["did not visit", "didn't visit"], "explanation": "Phủ định quá khứ đơn: did not + V nguyên thể (visit)." }
-      ]
-    },
-    {
-      "section_title": "Phần 6: Quá Khứ Tiếp Diễn & Quá Khứ Hoàn Thành",
-      "instruction": "Điền dạng đúng của động từ (was/were + V-ing hoặc had + V3/ed):",
-      "questions": [
-        { "id": "pc_ps1", "type": "blank", "prompt": "At 8 PM last night, I (watch) [blank] a movie.", "answers": ["was watching"], "explanation": "Hành động đang diễn ra tại mốc thời gian cụ thể trong quá khứ ➔ was watching." },
-        { "id": "pc_ps2", "type": "blank", "prompt": "I (read) [blank] a book when the lights went out.", "answers": ["was reading"], "explanation": "Hành động đang diễn ra (was reading) thì hành động khác cắt ngang (went out)." },
-        { "id": "pp1", "type": "blank", "prompt": "She had (already read) [blank] the book before the teacher assigned it.", "answers": ["already read"], "explanation": "V3 của 'read' viết là 'read' (phát âm là /red/)." },
-        { "id": "pp2", "type": "blank", "prompt": "They (leave) [blank] before we arrived.", "answers": ["had left"], "explanation": "Hành động xảy ra trước mốc quá khứ khác ('arrived') ➔ thì quá khứ hoàn thành 'had left'." }
-      ]
-    },
-    {
-      "section_title": "Phần 7: Trắc Nghiệm Phân Biệt Các Thì (Multiple Choice)",
-      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D):",
-      "questions": [
+      "unit_id": "unit_nouns",
+      "unit_name": "1. Cơ bản: Noun Số Ít & Số Nhiều",
+      "theory": [
         {
-          "id": "mc1",
-          "type": "choice",
-          "prompt": "Water ______ at 100 degrees Celsius.",
-          "options": ["boil", "boils", "is boiling", "boiled"],
-          "correctIndex": 1,
-          "explanation": "Sự thật hiển nhiên/chân lý khoa học luôn chia ở hiện tại đơn ngôi thứ 3 số ít ➔ boils."
+          "title": "Các ký hiệu loại từ cơ bản",
+          "content": "<b>S (Subject)</b>: Chủ ngữ (Người/vật thực hiện hành động).<br><b>O (Object)</b>: Tân ngữ (Người/vật nhận hành động).<br><b>N, n (Noun)</b>: Danh từ (City, teacher, happiness...).<br><b>adj (Adjective)</b>: Tính từ mô tả danh từ (A red car).<br><b>V, v (Verb)</b>: Động từ diễn tả hành động/trạng thái.<br><b>adv (Adverb)</b>: Trạng từ mô tả V, adj hoặc adv khác.<br><b>prep (Preposition)</b>: Giới từ chỉ nơi chốn, thời gian, cách thức."
         },
         {
-          "id": "mc2",
-          "type": "choice",
-          "prompt": "Look! The train ______ into the station.",
-          "options": ["comes", "came", "is coming", "has come"],
-          "correctIndex": 2,
-          "explanation": "Có thán từ 'Look!' cảnh báo hành động đang diễn ra ngay trước mắt ➔ is coming."
-        },
-        {
-          "id": "mc3",
-          "type": "choice",
-          "prompt": "We ______ that movie three times so far.",
-          "options": ["watch", "watched", "have watched", "were watching"],
-          "correctIndex": 2,
-          "explanation": "Có 'three times' (lặp lại nhiều lần) và 'so far' ➔ dùng hiện tại hoàn thành have watched."
-        },
-        {
-          "id": "mc4",
-          "type": "choice",
-          "prompt": "Yesterday, as soon as the bell rang, the students ______ out of the classroom.",
-          "options": ["run", "ran", "were running", "had run"],
-          "correctIndex": 1,
-          "explanation": "Chuỗi hành động liên tiếp trong quá khứ (as soon as...) ➔ dùng quá khứ đơn 'ran'."
+          "title": "Quy tắc phân biệt Noun số nhiều - Khi nào dùng 'are'",
+          "content": "• Thêm <b>-s</b> vào danh từ thông thường.<br>• Tận cùng bằng <b>s, x, z, sh, ch</b> ➔ thêm <b>-es</b>.<br>• Phụ âm + <b>y</b> ➔ đổi 'y' thành <b>-ies</b>.<br>• Nguyên âm (u,e,o,a,i) + <b>y</b> ➔ chỉ thêm <b>-s</b>.<br>• Tận cùng bằng <b>f / fe</b> ➔ thường đổi thành <b>-ves</b>.<br>• Danh từ không thay đổi dạng: sheep, deer, fish, aircraft, species.<br>• Danh từ bất quy tắc: man ➔ men, woman ➔ women, tooth ➔ teeth, foot ➔ feet, child ➔ children, mouse ➔ mice, goose ➔ geese, person ➔ people.<br>• Có từ 2 người trở lên (Tom and Jacob; Tommy, Steven, and Teddy) là danh từ số nhiều."
         }
+      ],
+      "exercises": [
+        { "id": "n_s1", "type": "blank", "prompt": "Book → [blank]", "answers": ["books"], "explanation": "Thêm -s vào danh từ thường." },
+        { "id": "n_s2", "type": "blank", "prompt": "Chair → [blank]", "answers": ["chairs"], "explanation": "Thêm -s." },
+        { "id": "n_s3", "type": "blank", "prompt": "Pen → [blank]", "answers": ["pens"], "explanation": "Thêm -s." },
+        { "id": "n_s4", "type": "blank", "prompt": "Table → [blank]", "answers": ["tables"], "explanation": "Thêm -s." },
+        { "id": "n_s5", "type": "blank", "prompt": "Apple → [blank]", "answers": ["apples"], "explanation": "Thêm -s." },
+        { "id": "n_es1", "type": "blank", "prompt": "Box → [blank]", "answers": ["boxes"], "explanation": "Đuôi x thêm -es." },
+        { "id": "n_es2", "type": "blank", "prompt": "Bus → [blank]", "answers": ["buses"], "explanation": "Đuôi s thêm -es." },
+        { "id": "n_es3", "type": "blank", "prompt": "Glass → [blank]", "answers": ["glasses"], "explanation": "Đuôi ss thêm -es." },
+        { "id": "n_es4", "type": "blank", "prompt": "Watch → [blank]", "answers": ["watches"], "explanation": "Đuôi ch thêm -es." },
+        { "id": "n_es5", "type": "blank", "prompt": "Dish → [blank]", "answers": ["dishes"], "explanation": "Đuôi sh thêm -es." },
+        { "id": "n_y1", "type": "blank", "prompt": "Party → [blank]", "answers": ["parties"], "explanation": "Phụ âm t + y đổi thành -ies." },
+        { "id": "n_y2", "type": "blank", "prompt": "Baby → [blank]", "answers": ["babies"], "explanation": "Phụ âm b + y đổi thành -ies." },
+        { "id": "n_y3", "type": "blank", "prompt": "City → [blank]", "answers": ["cities"], "explanation": "Phụ âm t + y đổi thành -ies." },
+        { "id": "n_y4", "type": "blank", "prompt": "Story → [blank]", "answers": ["stories"], "explanation": "Phụ âm r + y đổi thành -ies." },
+        { "id": "n_y5", "type": "blank", "prompt": "Family → [blank]", "answers": ["families"], "explanation": "Phụ âm l + y đổi thành -ies." },
+        { "id": "n_vy1", "type": "blank", "prompt": "Toy → [blank]", "answers": ["toys"], "explanation": "Nguyên âm o + y chỉ thêm -s." },
+        { "id": "n_vy2", "type": "blank", "prompt": "Key → [blank]", "answers": ["keys"], "explanation": "Nguyên âm e + y chỉ thêm -s." },
+        { "id": "n_vy3", "type": "blank", "prompt": "Boy → [blank]", "answers": ["boys"], "explanation": "Nguyên âm o + y chỉ thêm -s." },
+        { "id": "n_vy4", "type": "blank", "prompt": "Day → [blank]", "answers": ["days"], "explanation": "Nguyên âm a + y chỉ thêm -s." },
+        { "id": "n_vy5", "type": "blank", "prompt": "Monkey → [blank]", "answers": ["monkeys"], "explanation": "Nguyên âm e + y chỉ thêm -s." },
+        { "id": "n_f1", "type": "blank", "prompt": "Knife → [blank]", "answers": ["knives"], "explanation": "Đuôi -fe đổi thành -ves." },
+        { "id": "n_f2", "type": "blank", "prompt": "Leaf → [blank]", "answers": ["leaves"], "explanation": "Đuôi -f đổi thành -ves." },
+        { "id": "n_f3", "type": "blank", "prompt": "Wolf → [blank]", "answers": ["wolves"], "explanation": "Đuôi -f đổi thành -ves." },
+        { "id": "n_f4", "type": "blank", "prompt": "Life → [blank]", "answers": ["lives"], "explanation": "Đuôi -fe đổi thành -ves." },
+        { "id": "n_f5", "type": "blank", "prompt": "Shelf → [blank]", "answers": ["shelves"], "explanation": "Đuôi -f đổi thành -ves." },
+        { "id": "n_same1", "type": "blank", "prompt": "Sheep → [blank]", "answers": ["sheep"], "explanation": "Không đổi dạng ở số nhiều." },
+        { "id": "n_same2", "type": "blank", "prompt": "Deer → [blank]", "answers": ["deer"], "explanation": "Không đổi dạng ở số nhiều." },
+        { "id": "n_same3", "type": "blank", "prompt": "Fish → [blank]", "answers": ["fish", "fishes"], "explanation": "Thường giữ nguyên là fish." },
+        { "id": "n_same4", "type": "blank", "prompt": "Aircraft → [blank]", "answers": ["aircraft"], "explanation": "Giữ nguyên dạng." },
+        { "id": "n_same5", "type": "blank", "prompt": "Species → [blank]", "answers": ["species"], "explanation": "Giữ nguyên dạng." },
+        { "id": "n_irr1", "type": "blank", "prompt": "Man → [blank]", "answers": ["men"], "explanation": "Bất quy tắc: Man ➔ Men." },
+        { "id": "n_irr2", "type": "blank", "prompt": "Woman → [blank]", "answers": ["women"], "explanation": "Bất quy tắc: Woman ➔ Women." },
+        { "id": "n_irr3", "type": "blank", "prompt": "Tooth → [blank]", "answers": ["teeth"], "explanation": "Bất quy tắc: Tooth ➔ Teeth." },
+        { "id": "n_irr4", "type": "blank", "prompt": "Foot → [blank]", "answers": ["feet"], "explanation": "Bất quy tắc: Foot ➔ Feet." },
+        { "id": "n_irr5", "type": "blank", "prompt": "Child → [blank]", "answers": ["children"], "explanation": "Bất quy tắc: Child ➔ Children." },
+        { "id": "n_irr6", "type": "blank", "prompt": "Mouse → [blank]", "answers": ["mice"], "explanation": "Bất quy tắc: Mouse ➔ Mice." },
+        { "id": "n_irr7", "type": "blank", "prompt": "Goose → [blank]", "answers": ["geese"], "explanation": "Bất quy tắc: Goose ➔ Geese." },
+        { "id": "n_irr8", "type": "blank", "prompt": "Person → [blank]", "answers": ["people"], "explanation": "Bất quy tắc: Person ➔ People." },
+        { "id": "kt_1", "type": "blank", "prompt": "1. Cat → [blank]", "answers": ["cats"], "explanation": "Thêm -s." },
+        { "id": "kt_2", "type": "blank", "prompt": "2. City → [blank]", "answers": ["cities"], "explanation": "Phụ âm + y ➔ -ies." },
+        { "id": "kt_3", "type": "blank", "prompt": "3. Bus → [blank]", "answers": ["buses"], "explanation": "Đuôi s ➔ thêm -es." },
+        { "id": "kt_4", "type": "blank", "prompt": "4. Baby → [blank]", "answers": ["babies"], "explanation": "Phụ âm + y ➔ -ies." },
+        { "id": "kt_5", "type": "blank", "prompt": "5. Knife → [blank]", "answers": ["knives"], "explanation": "Đuôi -fe ➔ -ves." },
+        { "id": "kt_6", "type": "blank", "prompt": "6. Box → [blank]", "answers": ["boxes"], "explanation": "Đuôi x ➔ -es." },
+        { "id": "kt_7", "type": "blank", "prompt": "7. Party → [blank]", "answers": ["parties"], "explanation": "Phụ âm + y ➔ -ies." },
+        { "id": "kt_8", "type": "blank", "prompt": "8. Chair → [blank]", "answers": ["chairs"], "explanation": "Thêm -s." },
+        { "id": "kt_9", "type": "blank", "prompt": "9. Wolf → [blank]", "answers": ["wolves"], "explanation": "Đuôi -f ➔ -ves." },
+        { "id": "kt_10", "type": "blank", "prompt": "10. Toy → [blank]", "answers": ["toys"], "explanation": "Nguyên âm + y ➔ thêm -s." },
+        { "id": "kt_11", "type": "blank", "prompt": "11. Dish → [blank]", "answers": ["dishes"], "explanation": "Đuôi -sh ➔ thêm -es." },
+        { "id": "kt_12", "type": "blank", "prompt": "12. Leaf → [blank]", "answers": ["leaves"], "explanation": "Đuôi -f ➔ -ves." },
+        { "id": "kt_13", "type": "blank", "prompt": "13. Man → [blank]", "answers": ["men"], "explanation": "Bất quy tắc: Man ➔ Men." },
+        { "id": "kt_14", "type": "blank", "prompt": "14. Foot → [blank]", "answers": ["feet"], "explanation": "Bất quy tắc: Foot ➔ Feet." },
+        { "id": "kt_15", "type": "blank", "prompt": "15. Woman → [blank]", "answers": ["women"], "explanation": "Bất quy tắc: Woman ➔ Women." },
+        { "id": "kt_16", "type": "blank", "prompt": "16. Child → [blank]", "answers": ["children"], "explanation": "Bất quy tắc: Child ➔ Children." },
+        { "id": "kt_17", "type": "blank", "prompt": "17. Table → [blank]", "answers": ["tables"], "explanation": "Thêm -s." },
+        { "id": "kt_18", "type": "blank", "prompt": "18. Monkey → [blank]", "answers": ["monkeys"], "explanation": "Nguyên âm + y ➔ thêm -s." }
       ]
     },
     {
-      "section_title": "Phần 8: Viết Lại Câu (Sentence Rewriting)",
-      "instruction": "Viết lại câu hoàn chỉnh theo từ gợi ý mà không làm thay đổi nghĩa:",
-      "questions": [
+      "unit_id": "unit_simple_present",
+      "unit_name": "2. Hiện Tại Đơn (Simple Present)",
+      "theory": [
         {
-          "id": "rw1",
-          "type": "rewrite",
-          "prompt": "She plays tennis every weekend. (Chuyển sang câu hỏi)",
-          "targetStart": "Does ",
-          "answers": ["she play tennis every weekend?", "she play tennis every weekend"],
-          "explanation": "Câu hỏi ngôi She: Đưa Does lên đầu + động từ play về nguyên mẫu."
+          "title": "A. Công thức To Be",
+          "content": "• Khẳng định: S + am/is/are + O<br>• Phủ định: S + am/is/are + NOT + O<br>• Nghi vấn: Am/Is/Are + S + O?<br><b>Quy tắc:</b> I – am | He, she, it, danh từ số ít – is | You, we, they, danh từ số nhiều – are."
         },
         {
-          "id": "rw2",
-          "type": "rewrite",
-          "prompt": "The last time I cooked was 3 years ago.",
-          "targetStart": "I haven't ",
-          "answers": ["cooked for 3 years.", "cooked for 3 years", "cooked for three years.", "cooked for three years"],
-          "explanation": "Cấu trúc tương đương: The last time + S + V2 + was [thời gian] ago ➔ S + haven't/hasn't + V3 + for [thời gian]."
+          "title": "B. Công thức Động Từ Thường",
+          "content": "• Khẳng định: S + V(s/es) + O (He, she, it, số ít đi với Vs/es. I, you, we, they, số nhiều đi với V0).<br>• Phủ định: S + do/does + NOT + V0 + O<br>• Nghi vấn: Do/does + S + V0 + O?<br><b>Quy tắc thêm s/es:</b><br>- Tận cùng là S, X, Z, CH, SH, O ➔ thêm -es.<br>- Phụ âm + Y ➔ đổi thành -ies.<br>- Nguyên âm + Y ➔ thêm -s.<br>- Bất quy tắc: have ➔ has; be ➔ am/is/are."
+        },
+        {
+          "title": "C. Cách dùng & Dấu hiệu nhận biết",
+          "content": "• <b>Thói quen:</b> I play football every day.<br>• <b>Chân lý / Sự thật hiển nhiên:</b> Water boils at 100°C.<br>• <b>Lịch trình tương lai:</b> The train leaves at 9:00 this morning.<br>• <b>Trạng từ tần suất:</b> Always (100%), Usually (90%), Frequently/Often (70-80%), Often/Generally (50-60%), Sometimes (30-50%), Rarely/Seldom (10-20%), Never (0%)."
         }
+      ],
+      "exercises": [
+        { "id": "sp_be_1", "type": "blank", "prompt": "I [blank] a student.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "sp_be_2", "type": "blank", "prompt": "I [blank] happy.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "sp_be_3", "type": "blank", "prompt": "I [blank] from Vietnam.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "sp_be_4", "type": "blank", "prompt": "I [blank] tired today.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "sp_be_5", "type": "blank", "prompt": "I [blank] ready to start the meeting.", "answers": ["am", "'m"], "explanation": "Chủ ngữ I đi với am." },
+        { "id": "sp_be_6", "type": "blank", "prompt": "He [blank] a doctor.", "answers": ["is", "'s"], "explanation": "He đi với is." },
+        { "id": "sp_be_7", "type": "blank", "prompt": "She [blank] very kind.", "answers": ["is", "'s"], "explanation": "She đi với is." },
+        { "id": "sp_be_8", "type": "blank", "prompt": "It [blank] a sunny day.", "answers": ["is", "'s"], "explanation": "It đi với is." },
+        { "id": "sp_be_9", "type": "blank", "prompt": "He [blank] always on time for meetings.", "answers": ["is", "'s"], "explanation": "He đi với is." },
+        { "id": "sp_be_10", "type": "blank", "prompt": "She [blank] my best friend.", "answers": ["is", "'s"], "explanation": "She đi với is." },
+        { "id": "sp_be_11", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are", "'re"], "explanation": "You đi với are." },
+        { "id": "sp_be_12", "type": "blank", "prompt": "We [blank] excited about the concert tonight.", "answers": ["are", "'re"], "explanation": "We đi với are." },
+        { "id": "sp_be_13", "type": "blank", "prompt": "They [blank] ready for the exam.", "answers": ["are", "'re"], "explanation": "They đi với are." },
+        { "id": "sp_be_14", "type": "blank", "prompt": "You [blank] always very helpful.", "answers": ["are", "'re"], "explanation": "You đi với are." },
+        { "id": "sp_be_15", "type": "blank", "prompt": "We [blank] interested in learning new languages.", "answers": ["are", "'re"], "explanation": "We đi với are." },
+        { "id": "sp_mix_1", "type": "blank", "prompt": "I [blank] a student at this school.", "answers": ["am"], "explanation": "I am." },
+        { "id": "sp_mix_2", "type": "blank", "prompt": "He [blank] a good singer.", "answers": ["is"], "explanation": "He is." },
+        { "id": "sp_mix_3", "type": "blank", "prompt": "We [blank] going to the beach today.", "answers": ["are"], "explanation": "We are." },
+        { "id": "sp_mix_4", "type": "blank", "prompt": "She [blank] excited about her new job.", "answers": ["is"], "explanation": "She is." },
+        { "id": "sp_mix_5", "type": "blank", "prompt": "You [blank] my best friend.", "answers": ["are"], "explanation": "You are." },
+        { "id": "sp_mix_6", "type": "blank", "prompt": "They [blank] not here right now.", "answers": ["are"], "explanation": "They are." },
+        { "id": "sp_mix_7", "type": "blank", "prompt": "It [blank] a beautiful day outside.", "answers": ["is"], "explanation": "It is." },
+        { "id": "sp_mix_8", "type": "blank", "prompt": "I [blank] very tired after the long trip.", "answers": ["am"], "explanation": "I am." },
+        { "id": "sp_mix_9", "type": "blank", "prompt": "They [blank] happy with the results.", "answers": ["are"], "explanation": "They are." },
+        { "id": "sp_mix_10", "type": "blank", "prompt": "She [blank] always very polite.", "answers": ["is"], "explanation": "She is." },
+        { "id": "sp_naff_1", "type": "blank", "prompt": "The men [blank] working in the office.", "answers": ["are"], "explanation": "The men là danh từ số nhiều." },
+        { "id": "sp_naff_2", "type": "blank", "prompt": "The woman [blank] wearing a hat.", "answers": ["is"], "explanation": "The woman là danh từ số ít." },
+        { "id": "sp_naff_3", "type": "blank", "prompt": "The buses [blank] on time today.", "answers": ["are"], "explanation": "The buses là danh từ số nhiều." },
+        { "id": "sp_naff_4", "type": "blank", "prompt": "The leaf [blank] turning yellow in the fall.", "answers": ["is"], "explanation": "The leaf là số ít." },
+        { "id": "sp_naff_5", "type": "blank", "prompt": "The bird [blank] singing in the morning.", "answers": ["is"], "explanation": "The bird là số ít." },
+        { "id": "sp_naff_6", "type": "blank", "prompt": "The person [blank] pulling the cart.", "answers": ["is"], "explanation": "The person là số ít." },
+        { "id": "sp_naff_7", "type": "blank", "prompt": "The families [blank] having dinner together.", "answers": ["are"], "explanation": "The families là số nhiều." },
+        { "id": "sp_naff_8", "type": "blank", "prompt": "The mouse [blank] hiding behind the cupboard.", "answers": ["is"], "explanation": "The mouse là số ít." },
+        { "id": "sp_naff_9", "type": "blank", "prompt": "The geese [blank] flying south for the winter.", "answers": ["are"], "explanation": "The geese là số nhiều (số ít là goose)." },
+        { "id": "sp_naff_10", "type": "blank", "prompt": "The teeth [blank] hurting after eating candy.", "answers": ["are"], "explanation": "The teeth là số nhiều." },
+        { "id": "sp_naff_11", "type": "blank", "prompt": "The flowers (be) [blank] beautiful.", "answers": ["are"], "explanation": "The flowers số nhiều." },
+        { "id": "sp_naff_12", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["are"], "explanation": "Chủ ngữ 2 người là số nhiều." },
+        { "id": "sp_naff_13", "type": "blank", "prompt": "They (be) [blank] planting flowers.", "answers": ["are"], "explanation": "They đi với are." },
+        { "id": "sp_naff_14", "type": "blank", "prompt": "The dog (be) [blank] barking loudly.", "answers": ["is"], "explanation": "The dog số ít." },
+        { "id": "sp_naff_15", "type": "blank", "prompt": "This building (be) [blank] tall.", "answers": ["is"], "explanation": "This building số ít." },
+        { "id": "sp_naff_16", "type": "blank", "prompt": "My parents (be) [blank] at work.", "answers": ["are"], "explanation": "My parents số nhiều." },
+        { "id": "sp_naff_17", "type": "blank", "prompt": "They (be) [blank] busy today.", "answers": ["are"], "explanation": "They đi với are." },
+        { "id": "sp_naff_18", "type": "blank", "prompt": "The milk (be) [blank] fresh.", "answers": ["is"], "explanation": "The milk không đếm được ➔ dùng is." },
+        { "id": "sp_naff_19", "type": "blank", "prompt": "These chairs (be) [blank] comfortable.", "answers": ["are"], "explanation": "These chairs số nhiều." },
+        { "id": "sp_naff_20", "type": "blank", "prompt": "The students (be) [blank] reading in the library.", "answers": ["are"], "explanation": "The students số nhiều." },
+        { "id": "sp_naff_21", "type": "blank", "prompt": "This movie (be) [blank] interesting.", "answers": ["is"], "explanation": "This movie số ít." },
+        { "id": "sp_naff_22", "type": "blank", "prompt": "My neighbors (be) [blank] friendly.", "answers": ["are"], "explanation": "My neighbors số nhiều." },
+        { "id": "sp_v_pass", "type": "blank", "prompt": "pass -> [blank]", "answers": ["passes"], "explanation": "Đuôi ss thêm -es." },
+        { "id": "sp_v_fix", "type": "blank", "prompt": "fix -> [blank]", "answers": ["fixes"], "explanation": "Đuôi x thêm -es." },
+        { "id": "sp_v_buzz", "type": "blank", "prompt": "buzz -> [blank]", "answers": ["buzzes"], "explanation": "Đuôi zz thêm -es." },
+        { "id": "sp_v_watch", "type": "blank", "prompt": "watch -> [blank]", "answers": ["watches"], "explanation": "Đuôi ch thêm -es." },
+        { "id": "sp_v_push", "type": "blank", "prompt": "push -> [blank]", "answers": ["pushes"], "explanation": "Đuôi sh thêm -es." },
+        { "id": "sp_v_carry", "type": "blank", "prompt": "carry -> [blank]", "answers": ["carries"], "explanation": "Phụ âm + y đổi thành -ies." },
+        { "id": "sp_v_study", "type": "blank", "prompt": "study -> [blank]", "answers": ["studies"], "explanation": "Phụ âm + y đổi thành -ies." },
+        { "id": "sp_v_marry", "type": "blank", "prompt": "marry -> [blank]", "answers": ["marries"], "explanation": "Phụ âm + y đổi thành -ies." },
+        { "id": "sp_v_worry", "type": "blank", "prompt": "worry -> [blank]", "answers": ["worries"], "explanation": "Phụ âm + y đổi thành -ies." },
+        { "id": "sp_v_try", "type": "blank", "prompt": "try -> [blank]", "answers": ["tries"], "explanation": "Phụ âm + y đổi thành -ies." },
+        { "id": "sp_v_play", "type": "blank", "prompt": "play -> [blank]", "answers": ["plays"], "explanation": "Nguyên âm + y thêm -s." },
+        { "id": "sp_v_enjoy", "type": "blank", "prompt": "enjoy -> [blank]", "answers": ["enjoys"], "explanation": "Nguyên âm + y thêm -s." },
+        { "id": "sp_v_buy", "type": "blank", "prompt": "buy -> [blank]", "answers": ["buys"], "explanation": "Nguyên âm + y thêm -s." },
+        { "id": "sp_v_say", "type": "blank", "prompt": "say -> [blank]", "answers": ["says"], "explanation": "Nguyên âm + y thêm -s." },
+        { "id": "sp_v_stay", "type": "blank", "prompt": "stay -> [blank]", "answers": ["stays"], "explanation": "Nguyên âm + y thêm -s." },
+        { "id": "sp_v_have", "type": "blank", "prompt": "have -> [blank]", "answers": ["has"], "explanation": "Bất quy tắc: have ➔ has." },
+        { "id": "sp_v_be", "type": "blank", "prompt": "be (cho 'I' và 'he') -> [blank]", "answers": ["am và is", "am, is", "am/is", "am and is"], "explanation": "I am, He is." },
+        { "id": "sp_aff_1", "type": "blank", "prompt": "1) I (bake) [blank] cakes.", "answers": ["bake"], "explanation": "Chủ ngữ I đi với động từ nguyên mẫu." },
+        { "id": "sp_aff_2", "type": "blank", "prompt": "2) You (work) [blank] in an office.", "answers": ["work"], "explanation": "You đi với V nguyên mẫu." },
+        { "id": "sp_aff_3", "type": "blank", "prompt": "3) We (take) [blank] pictures of birds.", "answers": ["take"], "explanation": "We đi với V nguyên mẫu." },
+        { "id": "sp_aff_4", "type": "blank", "prompt": "4) They (talk) [blank] about cars.", "answers": ["talk"], "explanation": "They đi với V nguyên mẫu." },
+        { "id": "sp_aff_5", "type": "blank", "prompt": "5) He (think) [blank] about school.", "answers": ["thinks"], "explanation": "He thêm -s." },
+        { "id": "sp_aff_6", "type": "blank", "prompt": "6) She (play) [blank] soccer.", "answers": ["plays"], "explanation": "She thêm -s." },
+        { "id": "sp_aff_7", "type": "blank", "prompt": "7) It (rain) [blank] here a lot.", "answers": ["rains"], "explanation": "It thêm -s." },
+        { "id": "sp_aff_8", "type": "blank", "prompt": "8) I (like) [blank] chocolate.", "answers": ["like"], "explanation": "I đi với V nguyên mẫu." },
+        { "id": "sp_aff_9", "type": "blank", "prompt": "9) He (like) [blank] chocolate.", "answers": ["likes"], "explanation": "He thêm -s." },
+        { "id": "sp_aff_10", "type": "blank", "prompt": "10) You (watch) [blank] movies.", "answers": ["watch"], "explanation": "You đi với V nguyên mẫu." },
+        { "id": "sp_aff_11", "type": "blank", "prompt": "11) She (watch) [blank] movies.", "answers": ["watches"], "explanation": "She ➔ watches." },
+        { "id": "sp_aff_12", "type": "blank", "prompt": "12) The babies (cry) [blank] every night.", "answers": ["cry"], "explanation": "The babies số nhiều đi với V nguyên mẫu." },
+        { "id": "sp_aff_13", "type": "blank", "prompt": "13) The baby (cry) [blank] every night.", "answers": ["cries"], "explanation": "The baby số ít ➔ đổi thành cries." },
+        { "id": "sp_aff_14", "type": "blank", "prompt": "14) I (fly) [blank] to Belize every year.", "answers": ["fly"], "explanation": "I đi với V nguyên mẫu." },
+        { "id": "sp_aff_15", "type": "blank", "prompt": "15) My father (fly) [blank] to Belize every year.", "answers": ["flies"], "explanation": "My father số ít ➔ đổi thành flies." },
+        { "id": "sp_neg_1", "type": "blank", "prompt": "1. They (eat, not) [blank] vegetables.", "answers": ["do not eat", "don't eat"], "explanation": "They do not / don't eat." },
+        { "id": "sp_neg_2", "type": "blank", "prompt": "2. He (work, not) [blank] on Sundays.", "answers": ["does not work", "doesn't work"], "explanation": "He does not / doesn't work." },
+        { "id": "sp_neg_3", "type": "blank", "prompt": "3. She (speak, not) [blank] Spanish.", "answers": ["does not speak", "doesn't speak"], "explanation": "She does not / doesn't speak." },
+        { "id": "sp_neg_4", "type": "blank", "prompt": "4. We (drive, not) [blank] to school.", "answers": ["do not drive", "don't drive"], "explanation": "We do not / don't drive." },
+        { "id": "sp_neg_5", "type": "blank", "prompt": "5. You (study, not) [blank] French.", "answers": ["do not study", "don't study"], "explanation": "You do not / don't study." },
+        { "id": "sp_neg_6", "type": "blank", "prompt": "6. It (snow, not) [blank] in the summer.", "answers": ["does not snow", "doesn't snow"], "explanation": "It does not / doesn't snow." },
+        { "id": "sp_neg_7", "type": "blank", "prompt": "7. I (go, not) [blank] to the gym every day.", "answers": ["do not go", "don't go"], "explanation": "I do not / don't go." },
+        { "id": "sp_neg_8", "type": "blank", "prompt": "8. They (sing, not) [blank] in the choir.", "answers": ["do not sing", "don't sing"], "explanation": "They do not / don't sing." },
+        { "id": "sp_neg_9", "type": "blank", "prompt": "9. We (read, not) [blank] newspapers.", "answers": ["do not read", "don't read"], "explanation": "We do not / don't read." },
+        { "id": "sp_neg_10", "type": "blank", "prompt": "10. He (drink, not) [blank] coffee in the morning.", "answers": ["does not drink", "doesn't drink"], "explanation": "He does not / doesn't drink." },
+        { "id": "sp_q_1", "type": "blank", "prompt": "1. [blank] the students study hard every day?", "answers": ["Do"], "explanation": "The students số nhiều ➔ dùng Do." },
+        { "id": "sp_q_2", "type": "blank", "prompt": "2. [blank] Mr. Brown go to his office every day?", "answers": ["Does"], "explanation": "Mr. Brown số ít ➔ dùng Does." },
+        { "id": "sp_q_3", "type": "blank", "prompt": "3. [blank] you want cream and sugar in your coffee??", "answers": ["Do"], "explanation": "You ➔ dùng Do." },
+        { "id": "sp_q_4", "type": "blank", "prompt": "4. [blank] the children go to bed very early?", "answers": ["Do"], "explanation": "The children số nhiều ➔ dùng Do." },
+        { "id": "sp_q_5", "type": "blank", "prompt": "5. [blank] that girl come from South Africa?", "answers": ["Does"], "explanation": "That girl số ít ➔ dùng Does." },
+        { "id": "sp_ord_1", "type": "rewrite", "prompt": "often / Jane / reads / bedtime stories / at night", "targetStart": "", "answers": ["Jane often reads bedtime stories at night.", "Jane often reads bedtime stories at night"], "explanation": "Trạng từ tần suất đứng trước động từ thường." },
+        { "id": "sp_ord_2", "type": "rewrite", "prompt": "always / my parents / watch / TV / together", "targetStart": "", "answers": ["My parents always watch TV together.", "My parents always watch TV together"], "explanation": "My parents + always + watch TV together." },
+        { "id": "sp_ord_3", "type": "rewrite", "prompt": "starts / every day / the bus / at 6 AM / work", "targetStart": "", "answers": ["The bus starts work at 6 AM every day.", "The bus starts work at 6 AM every day", "Every day the bus starts work at 6 AM."], "explanation": "The bus starts work at 6 AM every day." },
+        { "id": "sp_ord_4", "type": "rewrite", "prompt": "never / I / have / dinner / after 9 PM", "targetStart": "", "answers": ["I never have dinner after 9 PM.", "I never have dinner after 9 PM"], "explanation": "I never have dinner after 9 PM." },
+        { "id": "sp_ord_5", "type": "rewrite", "prompt": "every summer / our family / goes / to the beach", "targetStart": "", "answers": ["Our family goes to the beach every summer.", "Our family goes to the beach every summer", "Every summer our family goes to the beach."], "explanation": "Our family goes to the beach every summer." }
+      ]
+    },
+    {
+      "unit_id": "unit_present_continuous",
+      "unit_name": "3. Hiện Tại Tiếp Diễn (Present Continuous)",
+      "theory": [
+        {
+          "title": "A. Công thức",
+          "content": "• Khẳng định: S + am/is/are + V-ing + O<br>• Phủ định: S + am/is/are + not + V-ing + O<br>• Nghi vấn: Am/Is/Are + S + V-ing + O?"
+        },
+        {
+          "title": "B. Quy tắc thêm -ing",
+          "content": "• Bỏ 'e' trước khi thêm -ing: take ➔ taking, drive ➔ driving.<br>• Gấp đôi phụ âm cuối nếu trọng âm rơi vào âm tiết cuối: begin ➔ beginning, win ➔ winning.<br>• 1 nguyên âm kẹp giữa 2 phụ âm: run ➔ running, swim ➔ swimming.<br>• Tận cùng '-ie' đổi thành '-y': lie ➔ lying, die ➔ dying."
+        }
+      ],
+      "exercises": [
+        { "id": "ving_1", "type": "blank", "prompt": "take ➔ [blank]", "answers": ["taking"], "explanation": "Bỏ e thêm -ing." },
+        { "id": "ving_2", "type": "blank", "prompt": "drive ➔ [blank]", "answers": ["driving"], "explanation": "Bỏ e thêm -ing." },
+        { "id": "ving_3", "type": "blank", "prompt": "see ➔ [blank]", "answers": ["seeing"], "explanation": "Đuôi ee giữ nguyên thêm -ing." },
+        { "id": "ving_4", "type": "blank", "prompt": "agree ➔ [blank]", "answers": ["agreeing"], "explanation": "Giữ nguyên thêm -ing." },
+        { "id": "ving_5", "type": "blank", "prompt": "open ➔ [blank]", "answers": ["opening"], "explanation": "Trọng âm rơi vào âm đầu không gấp đôi." },
+        { "id": "ving_6", "type": "blank", "prompt": "enter ➔ [blank]", "answers": ["entering"], "explanation": "Thêm -ing bình thường." },
+        { "id": "ving_7", "type": "blank", "prompt": "happen ➔ [blank]", "answers": ["happening"], "explanation": "Thêm -ing." },
+        { "id": "ving_8", "type": "blank", "prompt": "try ➔ [blank]", "answers": ["trying"], "explanation": "Đuôi y giữ nguyên thêm -ing." },
+        { "id": "ving_9", "type": "blank", "prompt": "play ➔ [blank]", "answers": ["playing"], "explanation": "Thêm -ing." },
+        { "id": "ving_10", "type": "blank", "prompt": "work ➔ [blank]", "answers": ["working"], "explanation": "Thêm -ing." },
+        { "id": "ving_11", "type": "blank", "prompt": "speak ➔ [blank]", "answers": ["speaking"], "explanation": "Thêm -ing." },
+        { "id": "ving_12", "type": "blank", "prompt": "get ➔ [blank]", "answers": ["getting"], "explanation": "Gấp đôi phụ âm t ➔ getting." },
+        { "id": "ving_13", "type": "blank", "prompt": "travel ➔ [blank]", "answers": ["traveling", "travelling"], "explanation": "Cả hai cách viết đều đúng." },
+        { "id": "ving_14", "type": "blank", "prompt": "lie ➔ [blank]", "answers": ["lying"], "explanation": "Đổi -ie thành -y rồi thêm -ing." },
+        { "id": "ving_15", "type": "blank", "prompt": "win ➔ [blank]", "answers": ["winning"], "explanation": "Gấp đôi n ➔ winning." },
+        { "id": "pc_aff_1", "type": "blank", "prompt": "The flowers (be, bloom) [blank] beautifully.", "answers": ["are blooming"], "explanation": "The flowers số nhiều ➔ are blooming." },
+        { "id": "pc_aff_2", "type": "blank", "prompt": "Sarah and Emily (be, be) [blank] in the garden.", "answers": ["are"], "explanation": "Sarah and Emily ➔ are." },
+        { "id": "pc_aff_3", "type": "blank", "prompt": "They (be, plant) [blank] flowers.", "answers": ["are planting"], "explanation": "They are planting." },
+        { "id": "pc_aff_4", "type": "blank", "prompt": "The dog (be, bark) [blank] loudly.", "answers": ["is barking"], "explanation": "The dog số ít ➔ is barking." },
+        { "id": "pc_aff_5", "type": "blank", "prompt": "This building (be, stand) [blank] tall.", "answers": ["is standing"], "explanation": "This building ➔ is standing." },
+        { "id": "pc_aff_6", "type": "blank", "prompt": "My parents (be, be) [blank] at work.", "answers": ["are"], "explanation": "My parents ➔ are." },
+        { "id": "pc_aff_7", "type": "blank", "prompt": "The milk (be, smell) [blank] fresh.", "answers": ["smells", "is smelling"], "explanation": "Động từ giác quan smell thường dùng hiện tại đơn smells." },
+        { "id": "pc_aff_8", "type": "blank", "prompt": "These chairs (be, feel) [blank] comfortable.", "answers": ["feel", "are feeling"], "explanation": "Tri giác feel ➔ feel." },
+        { "id": "pc_aff_9", "type": "blank", "prompt": "The students (be, read) [blank] in the library.", "answers": ["are reading"], "explanation": "The students are reading." },
+        { "id": "pc_aff_10", "type": "blank", "prompt": "This movie (be, be) [blank] interesting.", "answers": ["is"], "explanation": "This movie is." },
+        { "id": "pc_aff_11", "type": "blank", "prompt": "My neighbors (be, be) [blank] friendly.", "answers": ["are"], "explanation": "My neighbors are." },
+        { "id": "pc_neg_1", "type": "blank", "prompt": "The flowers (be, not, wilt) [blank].", "answers": ["are not wilting", "aren't wilting"], "explanation": "are not wilting." },
+        { "id": "pc_neg_2", "type": "blank", "prompt": "The students (be, not, play) [blank] outside.", "answers": ["are not playing", "aren't playing"], "explanation": "are not playing." }
+      ]
+    },
+    {
+      "unit_id": "unit_past_simple",
+      "unit_name": "4. Quá Khứ Đơn & Động Từ Bất Quy Tắc V2",
+      "theory": [
+        {
+          "title": "A. Công thức Quá Khứ Đơn",
+          "content": "• To be: I, He, She, It, Danh từ số ít + WAS | You, We, They, Danh từ số nhiều + WERE.<br>• Động từ thường: S + V2/ed + O | S + did not + V0 + O | Did + S + V0 + O?<br>• Quy tắc thêm '-ed': Đuôi e thêm d (liked); phụ âm + y đổi thành ied (studied); gấp đôi phụ âm (stopped); đuôi c thêm ked (panicked)."
+        }
+      ],
+      "exercises": [
+        { "id": "v2_ex1_1", "type": "blank", "prompt": "I (go) [blank] to the store yesterday.", "answers": ["went"], "explanation": "V2 của go là went." },
+        { "id": "v2_ex1_2", "type": "blank", "prompt": "She (bring) [blank] a cake to the party.", "answers": ["brought"], "explanation": "V2 của bring là brought." },
+        { "id": "v2_ex1_3", "type": "blank", "prompt": "They (build) [blank] a new house last year.", "answers": ["built"], "explanation": "V2 của build là built." },
+        { "id": "v2_ex1_4", "type": "blank", "prompt": "We (choose) [blank] the blue dress for the event.", "answers": ["chose"], "explanation": "V2 của choose là chose." },
+        { "id": "v2_ex1_5", "type": "blank", "prompt": "He (cut) [blank] the paper into small pieces.", "answers": ["cut"], "explanation": "V2 của cut vẫn là cut." },
+        { "id": "v2_ex1_6", "type": "blank", "prompt": "I (feel) [blank] tired after the long day.", "answers": ["felt"], "explanation": "V2 của feel là felt." },
+        { "id": "v2_ex1_7", "type": "blank", "prompt": "She (find) [blank] her lost keys under the sofa.", "answers": ["found"], "explanation": "V2 của find là found." },
+        { "id": "v2_ex1_8", "type": "blank", "prompt": "He (give) [blank] me a beautiful gift.", "answers": ["gave"], "explanation": "V2 của give là gave." },
+        { "id": "v2_ex1_9", "type": "blank", "prompt": "They (hear) [blank] a strange noise outside.", "answers": ["heard"], "explanation": "V2 của hear là heard." },
+        { "id": "v2_ex1_10", "type": "blank", "prompt": "She (hold) [blank] the baby in her arms.", "answers": ["held"], "explanation": "V2 của hold là held." },
+        { "id": "v2_ex1_11", "type": "blank", "prompt": "I (know) [blank] the answer to the question.", "answers": ["knew"], "explanation": "V2 của know là knew." },
+        { "id": "v2_ex1_12", "type": "blank", "prompt": "We (learn) [blank] a lot in that class.", "answers": ["learned", "learnt"], "explanation": "V2 của learn là learned hoặc learnt." },
+        { "id": "v2_ex1_13", "type": "blank", "prompt": "He (make) [blank] a big mistake.", "answers": ["made"], "explanation": "V2 của make là made." },
+        { "id": "v2_ex1_14", "type": "blank", "prompt": "They (pay) [blank] for their tickets online.", "answers": ["paid"], "explanation": "V2 của pay là paid." },
+        { "id": "v2_ex1_15", "type": "blank", "prompt": "She (put) [blank] the book on the shelf.", "answers": ["put"], "explanation": "V2 của put là put." },
+        { "id": "v2_ex1_16", "type": "blank", "prompt": "I (read) [blank] an interesting article last night.", "answers": ["read"], "explanation": "V2 của read viết là read." },
+        { "id": "v2_ex1_17", "type": "blank", "prompt": "The sun (rise) [blank] at 6:00 AM this morning.", "answers": ["rose"], "explanation": "V2 của rise là rose." },
+        { "id": "v2_ex1_18", "type": "blank", "prompt": "He (run) [blank] five miles yesterday.", "answers": ["ran"], "explanation": "V2 của run là ran." },
+        { "id": "v2_ex1_19", "type": "blank", "prompt": "She (say) [blank] something important during the meeting.", "answers": ["said"], "explanation": "V2 của say là said." },
+        { "id": "v2_ex1_20", "type": "blank", "prompt": "We (see) [blank] a beautiful rainbow after the rain.", "answers": ["saw"], "explanation": "V2 của see là saw." },
+        { "id": "ps_ed_stop", "type": "blank", "prompt": "stop → [blank]", "answers": ["stopped"], "explanation": "Gấp đôi p thêm -ed." },
+        { "id": "ps_ed_plan", "type": "blank", "prompt": "plan → [blank]", "answers": ["planned"], "explanation": "Gấp đôi n thêm -ed." },
+        { "id": "ps_ed_panic", "type": "blank", "prompt": "panic → [blank]", "answers": ["panicked"], "explanation": "Đuôi c thêm -ked." },
+        { "id": "ps_neg_1", "type": "blank", "prompt": "I (visit, not) [blank] my grandparents last weekend.", "answers": ["did not visit", "didn't visit"], "explanation": "Phủ định QKĐ: did not + V0." },
+        { "id": "ps_neg_2", "type": "blank", "prompt": "She (cook, not) [blank] dinner yesterday.", "answers": ["did not cook", "didn't cook"], "explanation": "did not cook." },
+        { "id": "ps_neg_3", "type": "blank", "prompt": "They (watch, not) [blank] the football match on TV.", "answers": ["did not watch", "didn't watch"], "explanation": "did not watch." },
+        { "id": "ps_q_1", "type": "blank", "prompt": "[blank] you go to the party last night?", "answers": ["Did"], "explanation": "Đảo Did lên đầu câu." },
+        { "id": "ps_q_2", "type": "blank", "prompt": "[blank] she enjoy the movie yesterday?", "answers": ["Did"], "explanation": "Đảo Did lên đầu câu." },
+        { "id": "ps_rw_1", "type": "rewrite", "prompt": "She cleaned her room yesterday. (Đổi sang câu hỏi)", "targetStart": "Did ", "answers": ["she clean her room yesterday?", "she clean her room yesterday"], "explanation": "Đảo Did + đưa cleaned về clean." }
+      ]
+    },
+    {
+      "unit_id": "unit_past_continuous",
+      "unit_name": "5. Quá Khứ Tiếp Diễn (Past Continuous)",
+      "theory": [
+        {
+          "title": "A. Công thức & Cách dùng",
+          "content": "• Khẳng định: S + was/were + V-ing<br>• Phủ định: S + was/were + not + V-ing<br>• Nghi vấn: Was/Were + S + V-ing?<br><b>Cách dùng:</b><br>- Tại thời điểm nhất định trong quá khứ: At 8 PM last night, I was watching a movie.<br>- Hai hành động xảy ra đồng thời: S + was/were V-ing WHILE S + was/were V-ing.<br>- Đang xảy ra thì bị cắt ngang: S + was/were V-ing WHEN S + V2/ed."
+        }
+      ],
+      "exercises": [
+        { "id": "pastc_1", "type": "blank", "prompt": "The children (be, play) [blank] in the park.", "answers": ["were playing"], "explanation": "The children số nhiều ➔ were playing." },
+        { "id": "pastc_2", "type": "blank", "prompt": "He (be, cook) [blank] dinner when I arrived.", "answers": ["was cooking"], "explanation": "Hành động đang diễn ra ➔ was cooking." },
+        { "id": "pastc_3", "type": "blank", "prompt": "We (be, watch) [blank] a movie last night.", "answers": ["were watching"], "explanation": "We were watching." },
+        { "id": "pastc_4", "type": "blank", "prompt": "The sun (be, shine) [blank] brightly all day.", "answers": ["was shining"], "explanation": "The sun was shining." },
+        { "id": "pastc_5", "type": "blank", "prompt": "The children (be, not, play) at 12 o’clock last night [blank] video games.", "answers": ["were not playing", "weren't playing"], "explanation": "Phủ định số nhiều ➔ were not playing." },
+        { "id": "pastc_ord_1", "type": "rewrite", "prompt": "soccer / park / They / in / were / playing / the.", "targetStart": "", "answers": ["They were playing soccer in the park.", "They were playing soccer in the park"], "explanation": "They were playing soccer in the park." },
+        { "id": "pastc_ord_2", "type": "rewrite", "prompt": "dinner / We / at / 7 PM / were / having.", "targetStart": "", "answers": ["We were having dinner at 7 PM.", "We were having dinner at 7 PM", "At 7 PM We were having dinner."], "explanation": "We were having dinner at 7 PM." }
+      ]
+    },
+    {
+      "unit_id": "unit_present_perfect",
+      "unit_name": "6. Hiện Tại Hoàn Thành (Present Perfect) & V3",
+      "theory": [
+        {
+          "title": "A. Công thức & Dấu hiệu",
+          "content": "• Khẳng định: S + have/has + V3/ed<br>• Phủ định: S + have/has + NOT + V3/ed<br>• Nghi vấn: Have/Has + S + V3/ed?<br>• Dấu hiệu: Just, recently, already, yet, ever, never, since, for, many times."
+        }
+      ],
+      "exercises": [
+        { "id": "v3_1", "type": "blank", "prompt": "She has (be) [blank] very supportive throughout the project.", "answers": ["been"], "explanation": "V3 của be là been." },
+        { "id": "v3_2", "type": "blank", "prompt": "They have (become) [blank] good friends over the years.", "answers": ["become"], "explanation": "V3 của become là become." },
+        { "id": "v3_3", "type": "blank", "prompt": "The show has (begin) [blank] already.", "answers": ["begun"], "explanation": "V3 của begin là begun." },
+        { "id": "v3_4", "type": "blank", "prompt": "The vase was (break) [blank] by the cat.", "answers": ["broken"], "explanation": "V3 của break là broken." },
+        { "id": "v3_5", "type": "blank", "prompt": "He has (bring) [blank] his homework to class.", "answers": ["brought"], "explanation": "V3 của bring là brought." },
+        { "id": "v3_6", "type": "blank", "prompt": "A new library has been (build) [blank] in town.", "answers": ["built"], "explanation": "V3 của build là built." },
+        { "id": "v3_7", "type": "blank", "prompt": "She has (buy) [blank] a new car.", "answers": ["bought"], "explanation": "V3 của buy là bought." },
+        { "id": "v3_8", "type": "blank", "prompt": "The winner was (choose) [blank] by the judges.", "answers": ["chosen"], "explanation": "V3 của choose là chosen." },
+        { "id": "v3_9", "type": "blank", "prompt": "He has already (come) [blank] home.", "answers": ["come"], "explanation": "V3 của come là come." },
+        { "id": "v3_10", "type": "blank", "prompt": "The paper was (cut) [blank] into small pieces.", "answers": ["cut"], "explanation": "V3 của cut là cut." },
+        { "id": "v3_11", "type": "blank", "prompt": "The work has been (do) [blank] perfectly.", "answers": ["done"], "explanation": "V3 của do là done." },
+        { "id": "v3_12", "type": "blank", "prompt": "All the water was (drink) [blank] by the guests.", "answers": ["drunk"], "explanation": "V3 của drink là drunk." },
+        { "id": "v3_13", "type": "blank", "prompt": "The cake has been (eat) [blank].", "answers": ["eaten"], "explanation": "V3 của eat là eaten." },
+        { "id": "v3_14", "type": "blank", "prompt": "The lost keys were (find) [blank] under the sofa.", "answers": ["found"], "explanation": "V3 của find là found." },
+        { "id": "v3_15", "type": "blank", "prompt": "The children have already (go) [blank] to bed.", "answers": ["gone"], "explanation": "V3 của go là gone." },
+        { "id": "pp_aff_1", "type": "blank", "prompt": "The cake (be) [blank] delicious.", "answers": ["has been"], "explanation": "The cake số ít ➔ has been." },
+        { "id": "pp_aff_2", "type": "blank", "prompt": "She (just finish) [blank] her homework.", "answers": ["has just finished"], "explanation": "has just finished." },
+        { "id": "pp_aff_3", "type": "blank", "prompt": "The team (practice) [blank] a lot this month, and they (improve) [blank] their skills.", "answers": ["has practiced, has improved", "have practiced, have improved", "has practiced have improved"], "explanation": "Hiện tại hoàn thành." },
+        { "id": "pp_neg_1", "type": "blank", "prompt": "She (not finish) [blank] her assignment yet.", "answers": ["has not finished", "hasn't finished"], "explanation": "Chủ ngữ She ở thể phủ định: hasn't finished." }
+      ]
+    },
+    {
+      "unit_id": "unit_past_perfect",
+      "unit_name": "7. Quá Khứ Hoàn Thành (Past Perfect)",
+      "theory": [
+        {
+          "title": "A. Công thức",
+          "content": "• Khẳng định: S + had + V3/ed + O<br>• Phủ định: S + had + not + V3/ed + O<br>• Nghi vấn: Had + S + V3/ed + O?<br><b>Cách dùng:</b> Diễn tả hành động xảy ra trước 1 thời điểm hoặc 1 hành động khác trong quá khứ.<br><b>Dấu hiệu:</b> Before, After, By the time, When."
+        }
+      ],
+      "exercises": [
+        { "id": "paf_1", "type": "blank", "prompt": "The guest (leave) [blank] the party before the cake was served.", "answers": ["had left"], "explanation": "Hành động xảy ra trước quá khứ khác ('was served') ➔ had left." },
+        { "id": "paf_2", "type": "blank", "prompt": "She (already read) [blank] the book before the teacher assigned it in class.", "answers": ["had already read"], "explanation": "had already read." },
+        { "id": "paf_3", "type": "blank", "prompt": "They (finish) [blank] their homework before their friends arrived to play.", "answers": ["had finished"], "explanation": "had finished." },
+        { "id": "paf_neg_1", "type": "blank", "prompt": "The guest (not leave) [blank] the venue before the speech began.", "answers": ["had not left", "hadn't left"], "explanation": "had not left." },
+        { "id": "paf_neg_2", "type": "blank", "prompt": "She (not complete) [blank] her assignment before the submission deadline passed.", "answers": ["had not completed", "hadn't completed"], "explanation": "had not completed." },
+        { "id": "paf_ord_1", "type": "rewrite", "prompt": "She/ write/ the report/ before/ the meeting/ start.", "targetStart": "", "answers": ["She had written the report before the meeting started.", "She had written the report before the meeting started"], "explanation": "Trước before chia QKHT, sau before chia QKĐ." },
+        { "id": "paf_ord_2", "type": "rewrite", "prompt": "They/ finish/ dinner/ by the time/ their friends/ arrive.", "targetStart": "", "answers": ["They had finished dinner by the time their friends arrived.", "They had finished dinner by the time their friends arrived"], "explanation": "By the time + QKĐ, mệnh đề chính dùng QKHT." }
+      ]
+    },
+    {
+      "unit_id": "unit_simple_future",
+      "unit_name": "8. Tương Lai Đơn (Simple Future)",
+      "theory": [
+        {
+          "title": "A. Công thức & Cách dùng",
+          "content": "• Khẳng định: S + will/shall + V0<br>• Phủ định: S + will/shall + not + V0 (will not = won't)<br>• Nghi vấn: Will/Shall + S + V0?<br><b>Cách dùng:</b> Quyết định tức thì lúc nói, lời hứa hẹn, đề nghị/yêu cầu.<br><b>Dấu hiệu:</b> tomorrow, in + khoảng thời gian, next week/month/year."
+        }
+      ],
+      "exercises": [
+        { "id": "sf_1", "type": "blank", "prompt": "1. They (do) [blank] it for you tomorrow.", "answers": ["will do"], "explanation": "Có 'tomorrow' ➔ will do." },
+        { "id": "sf_2", "type": "blank", "prompt": "2. My father (call) [blank] you in 5 minutes.", "answers": ["will call"], "explanation": "Có 'in 5 minutes' ➔ will call." },
+        { "id": "sf_3", "type": "blank", "prompt": "4. We believe that she (recover) [blank] from her illness soon.", "answers": ["will recover"], "explanation": "Dự đoán tương lai ➔ will recover." },
+        { "id": "sf_4", "type": "blank", "prompt": "5. I promise I (return) [blank] school on time.", "answers": ["will return"], "explanation": "Lời hứa (promise) ➔ will return." },
+        { "id": "sf_5", "type": "blank", "prompt": "6. If it rains, he (stay) [blank] at home.", "answers": ["will stay"], "explanation": "Câu điều kiện loại 1 ➔ will stay." },
+        { "id": "sf_6", "type": "blank", "prompt": "7. [blank] you (take) [blank] me to the zoo this weekend?", "answers": ["Will you take", "Will, take"], "explanation": "Lời đề nghị ➔ Will you take...?" },
+        { "id": "sf_7", "type": "blank", "prompt": "8. I think he (not come) [blank] back his hometown.", "answers": ["will not come", "won't come"], "explanation": "will not / won't come." },
+        { "id": "sf_rw_1", "type": "rewrite", "prompt": "She/ hope/ that/ Mary/ come/ party/ tonight.", "targetStart": "", "answers": ["She hopes that Mary will come to the party tonight.", "She hopes that Mary will come to the party tonight"], "explanation": "Hy vọng tương lai: will come to the party." },
+        { "id": "sf_rw_2", "type": "rewrite", "prompt": "I/ finish/ my report/ 2 days.", "targetStart": "", "answers": ["I will finish my report in 2 days.", "I will finish my report in 2 days"], "explanation": "in 2 days (trong 2 ngày nữa)." },
+        { "id": "sf_rw_3", "type": "rewrite", "prompt": "If/ you/ not/ study/ hard/,/ you/ not/ pass/ final/ exam.", "targetStart": "", "answers": ["If you do not study hard, you will not pass the final exam.", "If you don't study hard, you won't pass the final exam.", "If you don't study hard, you will not pass the final exam."], "explanation": "Câu điều kiện loại 1." },
+        { "id": "sf_rw_4", "type": "rewrite", "prompt": "You/ look/ tired,/ so/ I/ bring/ you/ something/ eat.", "targetStart": "", "answers": ["You look tired, so I will bring you something to eat.", "You look tired, so I will bring you something to eat"], "explanation": "Quyết định ngay lúc nói ➔ will bring." },
+        { "id": "sf_rw_5", "type": "rewrite", "prompt": "you/ please/ give/ me/ lift/ station?", "targetStart": "", "answers": ["Will you please give me a lift to the station?", "Will you please give me a lift to the station", "Could you please give me a lift to the station?"], "explanation": "Yêu cầu lịch sự ➔ Will you please give me a lift to the station?" },
+        { "id": "sf_b3_1", "type": "blank", "prompt": "Tomorrow it [blank] (not to rain) in the North.", "answers": ["will not rain", "won't rain"], "explanation": "will not / won't rain." },
+        { "id": "sf_b3_2", "type": "blank", "prompt": "Just a moment. I [blank] (not to help) you.", "answers": ["will not help", "won't help"], "explanation": "will not help." },
+        { "id": "sf_b3_3", "type": "blank", "prompt": "In 2010 there [blank] (not to be) more cars.", "answers": ["were not", "weren't", "would not be"], "explanation": "Năm 2010 là quá khứ (were not) hoặc dự đoán từ quá khứ (would not be)." },
+        { "id": "sf_b3_4", "type": "blank", "prompt": "I think Dennis [blank] (not to like) this CD.", "answers": ["will not like", "won't like"], "explanation": "will not like." },
+        { "id": "sf_b3_6", "type": "blank", "prompt": "My friend [blank] (not to be) 12 next Wednesday.", "answers": ["will not be", "won't be"], "explanation": "will not be." },
+        { "id": "sf_b3_7", "type": "blank", "prompt": "I don’t think the pupils [blank] (not to get) good marks in the test.", "answers": ["will get", "will not get", "won't get"], "explanation": "will get." },
+        { "id": "sf_b3_8", "type": "blank", "prompt": "I [blank] (not to see) you tonight.", "answers": ["will not see", "won't see"], "explanation": "will not see." },
+        { "id": "sf_b3_9", "type": "blank", "prompt": "People [blank] (not to buy) lots of cheap clothes.", "answers": ["will not buy", "won't buy"], "explanation": "will not buy." }
       ]
     }
   ]
