@@ -1,0 +1,86 @@
+{
+  "tense_id": "irregular-v2",
+  "tense_name": "ĐỘNG TỪ BẤT QUY TẮC: DẠNG V2 (PAST SIMPLE)",
+  "sections": [
+    {
+      "id": "intro-v2",
+      "title": "1. Khái Niệm Động Từ Bất Quy Tắc (Irregular Verbs V2)",
+      "rules": [
+        "Động từ có quy tắc trong quá khứ chỉ cần thêm đuôi '-ed' (Ví dụ: play ➔ played, walk ➔ walked).",
+        "Động từ bất quy tắc (V2) KHÔNG thêm '-ed' mà biến đổi hình thức riêng hoặc giữ nguyên dạng.",
+        "Dạng V2 được dùng trực tiếp trong câu khẳng định thì Quá khứ đơn (Past Simple): S + V2 + O."
+      ],
+      "note": "Cần học thuộc lòng 54 động từ cốt lõi dưới đây để không bị mất điểm trong các thì quá khứ và IELTS."
+    },
+    {
+      "id": "verbs-list-54",
+      "title": "2. Bảng 54 Động Từ Bất Quy Tắc Thông Dụng (V0 ➔ V2)",
+      "rules": [
+        "1. Be ➔ was/were (thì, là, ở)",
+        "2. Become ➔ became (trở thành)",
+        "3. Begin ➔ began (bắt đầu)",
+        "4. Break ➔ broke (làm vỡ, gãy)",
+        "5. Bring ➔ brought (mang đến)",
+        "6. Build ➔ built (xây dựng)",
+        "7. Buy ➔ bought (mua)",
+        "8. Choose ➔ chose (chọn lựa)",
+        "9. Come ➔ came (đến)",
+        "10. Cost ➔ cost (trị giá, tốn tiền)",
+        "11. Cut ➔ cut (cắt)",
+        "12. Do ➔ did (làm)",
+        "13. Dream ➔ dreamt / dreamed (mơ)",
+        "14. Drink ➔ drank (uống)",
+        "15. Eat ➔ ate (ăn)",
+        "16. Feel ➔ felt (cảm thấy)",
+        "17. Find ➔ found (tìm thấy)",
+        "18. Forget ➔ forgot (quên)",
+        "19. Get ➔ got (nhận được, có được)",
+        "20. Give ➔ gave (cho, tặng)",
+        "21. Go ➔ went (đi)",
+        "22. Have ➔ had (có)",
+        "23. Hear ➔ heard (nghe)",
+        "24. Hold ➔ held (cầm, nắm, giữ)",
+        "25. Keep ➔ kept (giữ)",
+        "26. Know ➔ knew (biết)",
+        "27. Learn ➔ learnt / learned (học)",
+        "28. Let ➔ let (để cho, cho phép)",
+        "29. Make ➔ made (làm, chế tạo)",
+        "30. Mean ➔ meant (có nghĩa là)",
+        "31. Meet ➔ met (gặp gỡ)",
+        "32. Pay ➔ paid (trả tiền)",
+        "33. Put ➔ put (đặt, để)",
+        "34. Read ➔ read /red/ (đọc)",
+        "35. Rise ➔ rose (mọc lên, tăng lên)",
+        "36. Run ➔ ran (chạy)",
+        "37. Say ➔ said (nói)",
+        "38. See ➔ saw (nhìn thấy)",
+        "39. Send ➔ sent (gửi đi)",
+        "40. Set ➔ set (thiết lập, cài đặt)",
+        "41. Shake ➔ shook (rung, lắc)",
+        "42. Shut ➔ shut (đóng lại)",
+        "43. Sing ➔ sang (hát)",
+        "44. Sit ➔ sat (ngồi)",
+        "45. Sleep ➔ slept (ngủ)",
+        "46. Stand ➔ stood (đứng)",
+        "47. Swim ➔ swam (bơi lội)",
+        "48. Take ➔ took (lấy, mang đi)",
+        "49. Teach ➔ taught (dạy học)",
+        "50. Tell ➔ told (bảo, kể)",
+        "51. Think ➔ thought (suy nghĩ)",
+        "52. Wear ➔ wore (mặc, đeo)",
+        "53. Win ➔ won (chiến thắng)",
+        "54. Write ➔ wrote (viết)"
+      ]
+    },
+    {
+      "id": "grouping-tips",
+      "title": "3. Mẹo Nhớ Nhanh Theo Nhóm Biến Đổi",
+      "rules": [
+        "Nhóm KHÔNG đổi dạng (V0 = V2): cut ➔ cut, put ➔ put, let ➔ let, cost ➔ cost, set ➔ set, shut ➔ shut.",
+        "Nhóm đổi 'd' thành 't': build ➔ built, send ➔ sent.",
+        "Nhóm có đuôi '-ought' / '-aught': buy ➔ bought, bring ➔ brought, think ➔ thought, teach ➔ taught.",
+        "Nhóm nguyên âm 'i' chuyển thành 'a': begin ➔ began, drink ➔ drank, sing ➔ sang, swim ➔ swam, sit ➔ sat, give ➔ gave."
+      ]
+    }
+  ]
+}
