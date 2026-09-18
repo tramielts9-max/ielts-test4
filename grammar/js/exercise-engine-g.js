@@ -1,30 +1,37 @@
+/**
+ * ENGINE CHẤM ĐIỂM BÀI TẬP NGỮ PHÁP TỰ ĐỘNG
+ */
 export class ExerciseEngine {
-  static normalize(str) {
-    return (str || "")
+  /**
+   * Chuẩn hóa chuỗi (bỏ dấu cách thừa, dấu câu cuối dòng, đổi thành chữ thường)
+   */
+  static clean(text) {
+    return (text || "")
       .trim()
       .toLowerCase()
-      .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+      .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"']/g, "")
       .replace(/\s+/g, " ");
   }
 
-  static checkAnswer(question, userAnswer) {
-    if (question.type === "fill_blank") {
-      const cleanUser = this.normalize(userAnswer);
-      const isCorrect = question.acceptAnswers.some(ans => this.normalize(ans) === cleanUser);
-      return { isCorrect, correctText: question.acceptAnswers.join(" / ") };
+  static gradeQuestion(q, userVal) {
+    if (q.type === "blank" || q.type === "rewrite") {
+      const cleanUser = this.clean(userVal);
+      const isCorrect = q.answers.some(ans => this.clean(ans) === cleanUser);
+      return {
+        isCorrect,
+        correctDisplay: q.answers.join(" HOẶC ")
+      };
     }
 
-    if (question.type === "multiple_choice") {
-      const isCorrect = parseInt(userAnswer, 10) === question.correctIndex;
-      return { isCorrect, correctText: question.options[question.correctIndex] };
+    if (q.type === "choice") {
+      const selectedIndex = parseInt(userVal, 10);
+      const isCorrect = selectedIndex === q.correctIndex;
+      return {
+        isCorrect,
+        correctDisplay: q.options[q.correctIndex]
+      };
     }
 
-    if (question.type === "rewrite") {
-      const cleanUser = this.normalize(userAnswer);
-      const isCorrect = question.acceptAnswers.some(ans => this.normalize(ans) === cleanUser);
-      return { isCorrect, correctText: question.acceptAnswers[0] };
-    }
-
-    return { isCorrect: false, correctText: "" };
+    return { isCorrect: false, correctDisplay: "" };
   }
 }
