@@ -1,0 +1,57 @@
+{
+  "tense_id": "past-continuous",
+  "tense_name": "THÌ QUÁ KHỨ TIẾP DIỄN (PAST CONTINUOUS)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "pc_formulas",
+      "title": "1. Công Thức Thì Quá Khứ Tiếp Diễn",
+      "formulas": {
+        "affirmative": "(+) S + was/were + V-ing",
+        "negative": "(–) S + was/were + NOT + V-ing",
+        "interrogative": "(?) Was / Were + S + V-ing?"
+      },
+      "subject_rules": [
+        "I, He, She, It, Danh từ số ÍT ➔ đi với WAS (hoặc was not / wasn't)",
+        "You, We, They, Danh từ số NHIỀU ➔ đi với WERE (hoặc were not / weren't)"
+      ]
+    },
+    {
+      "id": "pc_spelling_rules",
+      "title": "2. Quy Tắc Thêm Đuôi -ing Vào Động Từ",
+      "spelling_rules": [
+        { "condition": "Động từ kết thúc bằng '-e'", "rule": "Bỏ '-e' trước khi thêm '-ing'", "examples": "take ➔ taking, drive ➔ driving" },
+        { "condition": "Trọng âm rơi vào âm cuối & tận cùng là 1 phụ âm trước là 1 nguyên âm", "rule": "Gấp đôi phụ âm cuối rồi thêm '-ing'", "examples": "begin ➔ beginning, win ➔ winning" },
+        { "condition": "Một nguyên âm kẹp giữa hai phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm '-ing'", "examples": "run ➔ running, swim ➔ swimming" },
+        { "condition": "Đặc biệt: Động từ kết thúc bằng '-ie'", "rule": "Đổi '-ie' thành '-y' rồi thêm '-ing'", "examples": "lie ➔ lying, die ➔ dying" }
+      ]
+    },
+    {
+      "id": "pc_usages",
+      "title": "3. Cách Sử Dụng Thì Quá Khứ Tiếp Diễn",
+      "usages": [
+        { "name": "Ở thời điểm nhất định trong quá khứ", "desc": "Hành động đang diễn ra tại một mốc thời gian cụ thể", "example": "At 9:00 pm yesterday, we were watching Avenger: Endgame." },
+        { "name": "Xảy ra đồng thời trong quá khứ", "desc": "Hai hành động diễn ra song song cùng lúc (thường đi với 'while')", "example": "At this time yesterday, I was playing PUBG while my brother was doing his homework." },
+        { "name": "Đang xảy ra thì bị xen vào", "desc": "Hành động đang diễn ra (chia QKTD) thì một hành động ngắn khác cắt ngang (chia QKĐ - V2)", "example": "I was reading Harry Potter when he knocked on the door." }
+      ]
+    },
+    {
+      "id": "pc_markers",
+      "title": "4. Dấu Hiệu Nhận Biết",
+      "rules": [
+        "at + giờ + thời gian trong quá khứ (Ví dụ: at 12 o'clock last night, at 7 PM yesterday)",
+        "at this time + thời gian trong quá khứ (Ví dụ: at this time last month, at this moment last year)",
+        "Cấu trúc: was/were + V-ing (đang xảy ra) + WHEN + V2 (hành động xen vào)",
+        "Cấu trúc: was/were + V-ing + WHILE + was/were + V-ing (hai hành động song song)"
+      ]
+    }
+  ]
+}
