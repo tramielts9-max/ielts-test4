@@ -1,92 +1,121 @@
 {
   "tense_id": "present-simple",
-  "tense_name": "SIMPLE PRESENT (HIỆN TẠI ĐƠN)",
+  "tense_name": "THÌ HIỆN TẠI ĐƠN (SIMPLE PRESENT)",
   "word_symbols": [
-    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
-    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
-    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
-    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
-    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
-    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
-    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+    { "symbol": "S", "meaning": "Chủ ngữ (Subject)", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ (Object)", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ (Noun)", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ (Adjective)", "definition": "Mô tả đặc điểm danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ (Verb)", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ (Adverb)", "definition": "Mô tả động từ, tính từ hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ (Preposition)", "definition": "Chỉ nơi chốn, thời gian, cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
   ],
   "sections": [
     {
-      "id": "to-be-rules",
-      "title": "1. DẠNG ĐỘNG TỪ TO BE",
+      "id": "ps_tobe",
+      "title": "1. Động Từ To Be (Am / Is / Are)",
       "formulas": {
-        "affirmative": "(+) S + am/is/are + O",
-        "negative": "(–) S + am/is/are + NOT + O",
-        "interrogative": "(?) Am/is/are + S + O?"
+        "affirmative": "(+) S + am / is / are + O",
+        "negative": "(–) S + am / is / are + NOT + O",
+        "interrogative": "(?) Am / Is / Are + S + O?"
       },
       "subject_rules": [
-        "I ➔ am",
-        "He, she, it, danh từ số ÍT ➔ is",
-        "You, we, they, danh từ số NHIỀU ➔ are"
-      ],
-      "note": "Câu hỏi trong thì hiện tại đơn đảo ngược thứ tự giữa chủ ngữ và động từ 'to be' (am/is/are) để tạo thành câu hỏi. Ví dụ: 'She is at the party.' ➔ 'Is she at the party?'"
+        "I ➔ đi với AM",
+        "He, She, It, Danh từ số ÍT ➔ đi với IS",
+        "You, We, They, Danh từ số NHIỀU ➔ đi với ARE"
+      ]
     },
     {
-      "id": "action-verb-rules",
-      "title": "2. DẠNG ĐỘNG TỪ THƯỜNG (V)",
+      "id": "ps_verbs",
+      "title": "2. Động Từ Thường (Action Verbs)",
       "formulas": {
-        "affirmative": "(+) S + V (s/es) + O",
-        "negative": "(–) S + do/does + NOT + V0 + O",
-        "interrogative": "(?) Do/does + S + V0 + O?"
+        "affirmative": "(+) S + V(s/es) + O",
+        "negative": "(–) S + do / does + NOT + V0 + O",
+        "interrogative": "(?) Do / Does + S + V0 + O?"
       },
       "subject_rules": [
-        "He, she, it, danh từ số ÍT ➔ V(s/es)",
-        "I, you, we, they, danh từ số NHIỀU ➔ V0 (nguyên mẫu)",
-        "Phủ định: He, she, it, ÍT + does not / doesn't + V0",
-        "Phủ định: I, you, we, they, NHIỀU + do not / don't + V0",
-        "Nghi vấn: Does + He, she, it, ÍT + V0?",
-        "Nghi vấn: Do + I, you, we, they, NHIỀU + V0?"
+        "He, She, It, Danh từ số ÍT ➔ đi với V(s/es) | Mượn DOES trong phủ định & nghi vấn",
+        "I, You, We, They, Danh từ số NHIỀU ➔ đi với V nguyên mẫu (V0) | Mượn DO trong phủ định & nghi vấn"
       ],
       "spelling_rules": [
-        {
-          "condition": "Động từ kết thúc bằng các chữ cái S, X, Z, CH, SH, O",
-          "rule": "Thêm '-es'",
-          "examples": "pass -> passes, fix -> fixes, buzz -> buzzes, watch -> watches, push -> pushes, go -> goes, do -> does"
-        },
-        {
-          "condition": "Động từ kết thúc bằng phụ âm + Y",
-          "rule": "Đổi 'Y' thành 'IES'",
-          "examples": "carry -> carries, study -> studies, marry -> marries, worry -> worries, try -> tries"
-        },
-        {
-          "condition": "Động từ kết thúc bằng nguyên âm + Y",
-          "rule": "Giữ nguyên 'Y' và thêm 'S'",
-          "examples": "play -> plays, enjoy -> enjoys, buy -> buys, say -> says, stay -> stays"
-        },
-        {
-          "condition": "Động từ bất quy tắc",
-          "rule": "Biến đổi riêng",
-          "examples": "have -> has, be -> is (am/are cho các chủ ngữ khác)"
-        }
+        { "condition": "Động từ kết thúc bằng S, X, Z, CH, SH, O", "rule": "Thêm đuôi '-es'", "examples": "pass ➔ passes, fix ➔ fixes, buzz ➔ buzzes, watch ➔ watches, push ➔ pushes, go ➔ goes, do ➔ does" },
+        { "condition": "Động từ kết thúc bằng 'Phụ âm + Y'", "rule": "Đổi 'y' thành '-ies'", "examples": "carry ➔ carries, study ➔ studies, marry ➔ marries, worry ➔ worries, try ➔ tries" },
+        { "condition": "Động từ kết thúc bằng 'Nguyên âm + Y'", "rule": "Giữ nguyên 'y' và thêm '-s'", "examples": "play ➔ plays, enjoy ➔ enjoys, buy ➔ buys, say ➔ says, stay ➔ stays" },
+        { "condition": "Động từ bất quy tắc", "rule": "Biến đổi đặc biệt", "examples": "have ➔ has" }
       ]
     },
     {
-      "id": "usage-rules",
-      "title": "3. CÁCH SỬ DỤNG (USAGE)",
+      "id": "ps_usages",
+      "title": "3. Cách Sử Dụng Thì Hiện Tại Đơn",
       "usages": [
-        { "name": "Thói quen (Habit)", "desc": "Hành động lặp đi lặp lại thường xuyên", "example": "I play football everyday" },
-        { "name": "Chân lý (Fact/General truth)", "desc": "Sự thật hiển nhiên, quy luật tự nhiên khoa học", "example": "Water boils at 100 °C" },
-        { "name": "Lịch trình tương lai (Scheduled event)", "desc": "Kế hoạch theo thời gian biểu, lịch tàu xe cố định", "example": "The train leaves at 9:00 this morning." }
+        { "name": "Thói quen (Habit)", "desc": "Hành động lặp đi lặp lại hàng ngày", "example": "I play football everyday." },
+        { "name": "Chân lý (General truth)", "desc": "Sự thật hiển nhiên, quy luật tự nhiên", "example": "Water boils at 100°C." },
+        { "name": "Lịch trình cố định (Scheduled event)", "desc": "Thời gian biểu tàu xe, máy bay, lịch học", "example": "The train leaves at 9:00 this morning." }
       ]
     },
     {
-      "id": "signal-markers",
-      "title": "4. DẤU HIỆU NHẬN BIẾT & TẦN SUẤT (FREQUENCY)",
+      "id": "ps_markers",
+      "title": "4. Dấu Hiệu Nhận Biết & Trạng Từ Tần Suất",
       "markers": [
-        { "word": "Every + thời gian (every day, every week...)", "percent": "~100%", "vn": "mỗi / hàng ngày" },
-        { "word": "Always", "percent": "100%", "vn": "luôn luôn" },
-        { "word": "Usually", "percent": "~90%", "vn": "thường xuyên" },
-        { "word": "Frequently / Often", "percent": "~70-80%", "vn": "thường xuyên / thường thường" },
-        { "word": "Often / Generally", "percent": "~50-60%", "vn": "thường thường" },
-        { "word": "Sometimes", "percent": "~30-50%", "vn": "thỉnh thoảng" },
-        { "word": "Rarely / Seldom", "percent": "~10-20%", "vn": "hiếm khi" },
-        { "word": "Never", "percent": "0%", "vn": "không bao giờ / chưa bao giờ" }
+        { "word": "Always", "percent": "100%", "vn": "Luôn luôn" },
+        { "word": "Usually", "percent": "90%", "vn": "Thường xuyên" },
+        { "word": "Frequently / Often", "percent": "70-80%", "vn": "Thường thường" },
+        { "word": "Sometimes", "percent": "30-50%", "vn": "Thỉnh thoảng" },
+        { "word": "Rarely / Seldom", "percent": "10-20%", "vn": "Hiếm khi" },
+        { "word": "Never", "percent": "0%", "vn": "Không bao giờ" },
+        { "word": "Every + thời gian", "percent": "100%", "vn": "Mỗi (every day, every week...)" }
       ]
+    }
+  ],
+  "theory_recall": [
+    {
+      "id": "rec_ps_1",
+      "type": "blank",
+      "prompt": "Ký hiệu 'S' là [blank], 'V' là [blank], 'O' là [blank].",
+      "answers": ["chủ ngữ, động từ, tân ngữ", "chủ ngữ động từ tân ngữ"],
+      "explanation": "S = Subject (Chủ ngữ), V = Verb (Động từ), O = Object (Tân ngữ)."
+    },
+    {
+      "id": "rec_ps_2",
+      "type": "blank",
+      "prompt": "Công thức To Be ở hiện tại đơn dạng khẳng định: (+) S + [blank] + O.",
+      "answers": ["am/is/are", "am, is, are", "am is are"],
+      "explanation": "To Be ở hiện tại chia thành 3 dạng: am, is, are."
+    },
+    {
+      "id": "rec_ps_3",
+      "type": "blank",
+      "prompt": "Chủ ngữ ngôi 'I' đi với to be là [blank], He/She/It/Danh từ số ít đi với [blank], You/We/They đi với [blank].",
+      "answers": ["am, is, are", "am is are"],
+      "explanation": "I ➔ am; He/She/It/Ít ➔ is; You/We/They/Nhiều ➔ are."
+    },
+    {
+      "id": "rec_ps_4",
+      "type": "blank",
+      "prompt": "Động từ kết thúc bằng đuôi 's, x, z, ch, sh, o' khi đi với He/She/It ta thêm đuôi [blank].",
+      "answers": ["-es", "es"],
+      "explanation": "Ví dụ: passes, fixes, watches, washes, goes, does."
+    },
+    {
+      "id": "rec_ps_5",
+      "type": "blank",
+      "prompt": "Động từ kết thúc bằng 'phụ âm + y' (như study, carry) ta đổi 'y' thành [blank].",
+      "answers": ["-ies", "ies"],
+      "explanation": "Đổi y thành -ies: study ➔ studies, carry ➔ carries."
+    },
+    {
+      "id": "rec_ps_6",
+      "type": "blank",
+      "prompt": "Công thức phủ định động từ thường: S + [blank] + NOT + V0 + O.",
+      "answers": ["do/does", "do / does", "do, does"],
+      "explanation": "S + do/does + not + V nguyên mẫu (V0)."
+    },
+    {
+      "id": "rec_ps_7",
+      "type": "blank",
+      "prompt": "Trạng từ chỉ tần suất 100% là [blank], 0% là [blank].",
+      "answers": ["always, never", "always và never"],
+      "explanation": "Always = luôn luôn (100%), Never = không bao giờ (0%)."
     }
   ]
 }
