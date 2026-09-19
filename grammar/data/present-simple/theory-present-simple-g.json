@@ -67,55 +67,125 @@
       ]
     }
   ],
-  "theory_recall": [
+"theory_recall": [
     {
-      "id": "rec_ps_1",
+      "id": "rec_ps_sym_1",
       "type": "blank",
-      "prompt": "Ký hiệu 'S' là [blank], 'V' là [blank], 'O' là [blank].",
-      "answers": ["chủ ngữ, động từ, tân ngữ", "chủ ngữ động từ tân ngữ"],
-      "explanation": "S = Subject (Chủ ngữ), V = Verb (Động từ), O = Object (Tân ngữ)."
+      "prompt": "1. 'S' viết tắt của [blank], là đối tượng thực hiện hành động.",
+      "answers": ["chủ ngữ", "chu ngu"],
+      "explanation": "S = Subject (Chủ ngữ)."
     },
     {
-      "id": "rec_ps_2",
+      "id": "rec_ps_sym_2",
       "type": "blank",
-      "prompt": "Công thức To Be ở hiện tại đơn dạng khẳng định: (+) S + [blank] + O.",
-      "answers": ["am/is/are", "am, is, are", "am is are"],
-      "explanation": "To Be ở hiện tại chia thành 3 dạng: am, is, are."
+      "prompt": "2. 'O' viết tắt của [blank], là đối tượng nhận hành động.",
+      "answers": ["tân ngữ", "tan ngu"],
+      "explanation": "O = Object (Tân ngữ)."
     },
     {
-      "id": "rec_ps_3",
+      "id": "rec_ps_sym_3",
       "type": "blank",
-      "prompt": "Chủ ngữ ngôi 'I' đi với to be là [blank], He/She/It/Danh từ số ít đi với [blank], You/We/They đi với [blank].",
-      "answers": ["am, is, are", "am is are"],
-      "explanation": "I ➔ am; He/She/It/Ít ➔ is; You/We/They/Nhiều ➔ are."
+      "prompt": "3. 'N, n' là [blank], chỉ tên người, vật, nơi chốn.",
+      "answers": ["danh từ", "danh tu"],
+      "explanation": "N = Noun (Danh từ)."
     },
     {
-      "id": "rec_ps_4",
+      "id": "rec_ps_sym_4",
       "type": "blank",
-      "prompt": "Động từ kết thúc bằng đuôi 's, x, z, ch, sh, o' khi đi với He/She/It ta thêm đuôi [blank].",
+      "prompt": "4. 'adj' là [blank] dùng để mô tả danh từ; 'adv' là [blank] dùng để bổ nghĩa cho động từ/tính từ.",
+      "answers": ["tính từ, trạng từ", "tính từ và trạng từ", "tinh tu, trang tu"],
+      "explanation": "Adj = Adjective (Tính từ), Adv = Adverb (Trạng từ)."
+    },
+    {
+      "id": "rec_ps_sym_5",
+      "type": "blank",
+      "prompt": "5. 'prep' là [blank], chỉ nơi chốn, thời gian hoặc cách thức.",
+      "answers": ["giới từ", "gioi tu"],
+      "explanation": "Prep = Preposition (Giới từ)."
+    },
+    {
+      "id": "rec_ps_form_1",
+      "type": "blank",
+      "prompt": "6. Công thức To Be: (+) S + [blank] + O | (–) S + [blank] + not + O | (?) [blank] + S + O?",
+      "answers": ["am/is/are, am/is/are, am/is/are", "am is are, am is are, am is are"],
+      "explanation": "To be hiện tại đơn gồm: am, is, are."
+    },
+    {
+      "id": "rec_ps_subj_1",
+      "type": "blank",
+      "prompt": "7. Chủ ngữ 'I' đi với to be là [blank]; He, she, it, danh từ số ít đi với [blank]; You, we, they, danh từ số nhiều đi với [blank].",
+      "answers": ["am, is, are", "am, is và are", "am is are"],
+      "explanation": "I ➔ am; số ít ➔ is; số nhiều ➔ are."
+    },
+    {
+      "id": "rec_ps_form_2",
+      "type": "blank",
+      "prompt": "8. Công thức Động từ thường: (+) S + [blank] + O | (–) S + [blank] + NOT + V0 + O | (?) [blank] + S + V0 + O?",
+      "answers": ["V(s/es), do/does, Do/Does", "V s/es, do/does, do/does"],
+      "explanation": "Khẳng định: V(s/es); Phủ định/Nghi vấn mượn trợ động từ do/does."
+    },
+    {
+      "id": "rec_ps_spelling_1",
+      "type": "blank",
+      "prompt": "9. Động từ tận cùng bằng các đuôi 's, x, z, ch, sh, o' khi chia với He/She/It phải thêm đuôi [blank].",
       "answers": ["-es", "es"],
-      "explanation": "Ví dụ: passes, fixes, watches, washes, goes, does."
+      "explanation": "Ví dụ: passes, fixes, buzzes, watches, pushes, goes, does."
     },
     {
-      "id": "rec_ps_5",
+      "id": "rec_ps_spelling_2",
       "type": "blank",
-      "prompt": "Động từ kết thúc bằng 'phụ âm + y' (như study, carry) ta đổi 'y' thành [blank].",
+      "prompt": "10. Động từ tận cùng là 'phụ âm + y' (như study, carry) ta đổi 'y' thành [blank].",
       "answers": ["-ies", "ies"],
-      "explanation": "Đổi y thành -ies: study ➔ studies, carry ➔ carries."
+      "explanation": "study ➔ studies, carry ➔ carries."
     },
     {
-      "id": "rec_ps_6",
+      "id": "rec_ps_spelling_3",
       "type": "blank",
-      "prompt": "Công thức phủ định động từ thường: S + [blank] + NOT + V0 + O.",
-      "answers": ["do/does", "do / does", "do, does"],
-      "explanation": "S + do/does + not + V nguyên mẫu (V0)."
+      "prompt": "11. Động từ tận cùng là 'nguyên âm (u,e,o,a,i) + y' (như play, buy) ta chỉ cần [blank].",
+      "answers": ["thêm s", "giữ nguyên y và thêm s", "giữ nguyên y thêm s"],
+      "explanation": "play ➔ plays, buy ➔ buys, enjoy ➔ enjoys."
     },
     {
-      "id": "rec_ps_7",
+      "id": "rec_ps_spelling_4",
       "type": "blank",
-      "prompt": "Trạng từ chỉ tần suất 100% là [blank], 0% là [blank].",
-      "answers": ["always, never", "always và never"],
-      "explanation": "Always = luôn luôn (100%), Never = không bao giờ (0%)."
+      "prompt": "12. Động từ bất quy tắc: 'have' chuyển thành [blank]; 'be' chuyển thành [blank].",
+      "answers": ["has, is", "has, is (am/are)", "has is"],
+      "explanation": "have ➔ has; be ➔ is (cho ngôi thứ 3 số ít)."
+    },
+    {
+      "id": "rec_ps_usage_1",
+      "type": "blank",
+      "prompt": "13. Cách dùng 1 của thì Hiện tại đơn là diễn tả một [blank] (Ví dụ: I play football everyday).",
+      "answers": ["thói quen", "thoi quen", "habit"],
+      "explanation": "Diễn tả thói quen hoặc hành động lặp đi lặp lại."
+    },
+    {
+      "id": "rec_ps_usage_2",
+      "type": "blank",
+      "prompt": "14. Cách dùng 2 của thì Hiện tại đơn là diễn tả một [blank] hoặc sự thật hiển nhiên (Ví dụ: Water boils at 100°C).",
+      "answers": ["chân lý", "chan ly", "sự thật hiển nhiên", "fact"],
+      "explanation": "Diễn tả chân lý khoa học hoặc quy luật tự nhiên."
+    },
+    {
+      "id": "rec_ps_usage_3",
+      "type": "blank",
+      "prompt": "15. Cách dùng 3 của thì Hiện tại đơn là diễn tả một [blank] hoặc lịch trình cố định của tàu xe (Ví dụ: The train leaves at 9:00).",
+      "answers": ["lịch trình", "kế hoạch tương lai", "lịch trình cố định", "lich trinh"],
+      "explanation": "Lịch trình tàu xe, máy bay, rạp phim đã lên lịch sẵn."
+    },
+    {
+      "id": "rec_ps_adv_1",
+      "type": "blank",
+      "prompt": "16. Trạng từ chỉ tần suất: Always ([blank]%), Usually ([blank]%), Never ([blank]%).",
+      "answers": ["100%, 90%, 0%", "100, 90, 0", "100%, 90, 0%"],
+      "explanation": "Always = 100%, Usually = 90%, Never = 0%."
+    },
+    {
+      "id": "rec_ps_adv_2",
+      "type": "blank",
+      "prompt": "17. Trạng từ chỉ tần suất: Frequently/Often ([blank]%), Sometimes ([blank]%), Rarely/Seldom ([blank]%).",
+      "answers": ["70-80%, 30-50%, 10-20%", "70-80, 30-50, 10-20", "70%-80%, 30%-50%, 10%-20%"],
+      "explanation": "Frequently/Often: 70-80%, Sometimes: 30-50%, Rarely/Seldom: 10-20%."
     }
   ]
 }
