@@ -1,18 +1,19 @@
 import { ExerciseEngine } from './exercise-engine-g.js';
 
 export class LessonRenderer {
-  // Nhận 2 file JSON riêng biệt: theoryData và exerciseData
   constructor(containerElement, theoryData, exerciseData) {
     this.container = containerElement;
     this.theoryData = theoryData;
     this.exerciseData = exerciseData;
     this.totalQuestions = 0;
+    this.totalRecallQuestions = 0;
   }
 
   renderAll() {
     this.renderHero();
     this.renderTabs();
     this.renderTheory();
+    this.renderTheoryRecall(); // TAB Ở GIỮA
     this.renderExercises();
     this.renderBottomBar();
   }
@@ -22,7 +23,7 @@ export class LessonRenderer {
     hero.className = 'hero-box-g';
     hero.innerHTML = `
       <h1>${this.theoryData.tense_name}</h1>
-      <p>Lý thuyết trực quan • Tự động chấm điểm bài tập & giải thích chi tiết</p>
+      <p>Học lý thuyết ➔ Khảo thuộc lòng công thức ➔ Làm bài tập áp dụng thực tế</p>
     `;
     this.container.appendChild(hero);
   }
@@ -31,44 +32,55 @@ export class LessonRenderer {
     const nav = document.createElement('div');
     nav.className = 'tab-nav-g';
     nav.innerHTML = `
-      <button type="button" class="tab-btn-g active" id="btnTabTheory">📖 Lý Thuyết & Quy Tắc</button>
-      <button type="button" class="tab-btn-g" id="btnTabExercise">✍️ Làm Bài Tập & Chấm Điểm</button>
+      <button type="button" class="tab-btn-g active" id="btnTabTheory">📖 1. Lý Thuyết</button>
+      <button type="button" class="tab-btn-g" id="btnTabRecall" style="background:#fffbeb; border-color:#fef08a; color:#854d0e;">📝 2. Khảo Lý Thuyết</button>
+      <button type="button" class="tab-btn-g" id="btnTabExercise">✍️ 3. Bài Tập Áp Dụng</button>
     `;
     this.container.appendChild(nav);
 
     nav.querySelector('#btnTabTheory').onclick = () => this.switchTab('theory');
+    nav.querySelector('#btnTabRecall').onclick = () => this.switchTab('recall');
     nav.querySelector('#btnTabExercise').onclick = () => this.switchTab('exercise');
   }
 
   switchTab(tab) {
     const theoryBox = document.getElementById('tabTheoryContent');
+    const recallBox = document.getElementById('tabRecallContent');
     const exerciseBox = document.getElementById('tabExerciseContent');
     const btnT = document.getElementById('btnTabTheory');
+    const btnR = document.getElementById('btnTabRecall');
     const btnE = document.getElementById('btnTabExercise');
     const bottomBar = document.getElementById('stickyBottomBar');
 
+    // Ẩn tất cả
+    theoryBox.style.display = 'none';
+    if (recallBox) recallBox.style.display = 'none';
+    exerciseBox.style.display = 'none';
+    btnT.classList.remove('active');
+    btnR.classList.remove('active');
+    btnE.classList.remove('active');
+    if (bottomBar) bottomBar.style.display = 'none';
+
+    // Hiện tab được chọn
     if (tab === 'theory') {
       theoryBox.style.display = 'block';
-      exerciseBox.style.display = 'none';
       btnT.classList.add('active');
-      btnE.classList.remove('active');
-      if (bottomBar) bottomBar.style.display = 'none';
+    } else if (tab === 'recall') {
+      if (recallBox) recallBox.style.display = 'block';
+      btnR.classList.add('active');
     } else {
-      theoryBox.style.display = 'none';
       exerciseBox.style.display = 'block';
-      btnT.classList.remove('active');
       btnE.classList.add('active');
       if (bottomBar) bottomBar.style.display = 'flex';
     }
   }
 
-renderTheory() {
+  renderTheory() {
     const box = document.createElement('div');
     box.id = 'tabTheoryContent';
 
     let html = '';
 
-    // 1. Bảng ký hiệu từ loại (nếu có)
     if (this.theoryData.word_symbols && this.theoryData.word_symbols.length > 0) {
       html += `
         <div class="theory-card-g">
@@ -97,7 +109,6 @@ renderTheory() {
       `;
     }
 
-    // 2. Các phần lý thuyết chi tiết
     this.theoryData.sections.forEach(sec => {
       html += `
         <div class="theory-card-g">
@@ -111,7 +122,6 @@ renderTheory() {
             </div>
           ` : ''}
 
-          <!-- BỔ SUNG ĐOẠN NÀY ĐỂ HIỂN THỊ sec.rules (54 TỪ & QUY TẮC) -->
           ${sec.rules ? `
             <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; margin: 12px 0;">
               ${sec.rules.map(r => `
@@ -160,6 +170,84 @@ renderTheory() {
 
     box.innerHTML = html;
     this.container.appendChild(box);
+  }
+
+  // =========================================================================
+  // HÀM HIỂN THỊ PHẦN KHẢO LÝ THUYẾT (TAB Ở GIỮA)
+  // =========================================================================
+  renderTheoryRecall() {
+    const box = document.createElement('div');
+    box.id = 'tabRecallContent';
+    box.style.display = 'none';
+
+    if (!this.theoryData.theory_recall || this.theoryData.theory_recall.length === 0) {
+      box.innerHTML = `<div class="theory-card-g"><p>Chuyên đề này hiện chưa có bài khảo lý thuyết.</p></div>`;
+      this.container.appendChild(box);
+      return;
+    }
+
+    let html = `
+      <div class="theory-card-g" style="background:#fefce8; border-color:#fef08a;">
+        <h3 style="color:#854d0e; border-bottom-color:#fde047;">🎯 BÀI KHẢO LÝ THUYẾT (ĐIỀN TỪ VÀO CHỖ TRỐNG ĐỂ THUỘC BÀI)</h3>
+        <p style="font-size:14px; color:#713f12; margin:0 0 15px 0;">Hãy điền đúng công thức, quy tắc và dấu hiệu đã học để kiểm tra xem bạn đã thực sự ghi nhớ bài chưa nhé!</p>
+      </div>
+    `;
+
+    this.totalRecallQuestions = this.theoryData.theory_recall.length;
+
+    this.theoryData.theory_recall.forEach((item, idx) => {
+      const parts = item.prompt.split('[blank]');
+      html += `
+        <div class="q-row-g" id="recall_row_${item.id}" style="background:#ffffff;">
+          <div class="q-text-g">
+            <span style="color:#b45309; font-weight:bold;">Câu ${idx + 1}:</span>
+            <span>${parts[0]}</span>
+            <input type="text" class="input-blank-g" data-recall-id="${item.id}" autocomplete="off" placeholder="Điền lý thuyết...">
+            <span>${parts[1] || ''}</span>
+          </div>
+          <div class="feedback-box-g" id="recall_fb_${item.id}"></div>
+        </div>
+      `;
+    });
+
+    html += `
+      <div style="margin-top:20px; text-align:center;">
+        <button type="button" class="btn-submit-g" id="btnGradeRecall" style="background:#d97706; padding:12px 32px;">
+          Chấm Bài Khảo Lý Thuyết
+        </button>
+      </div>
+    `;
+
+    box.innerHTML = html;
+    this.container.appendChild(box);
+
+    box.querySelector('#btnGradeRecall').onclick = () => this.gradeRecall();
+  }
+
+  gradeRecall() {
+    let correct = 0;
+    this.theoryData.theory_recall.forEach(item => {
+      const input = document.querySelector(`input[data-recall-id="${item.id}"]`);
+      const userVal = input ? input.value : '';
+      const result = ExerciseEngine.gradeQuestion(item, userVal);
+
+      const row = document.getElementById(`recall_row_${item.id}`);
+      const fb = document.getElementById(`recall_fb_${item.id}`);
+
+      fb.classList.add('show');
+      if (result.isCorrect) {
+        correct++;
+        row.className = 'q-row-g is-correct';
+        fb.className = 'feedback-box-g show correct';
+        fb.innerHTML = `✅ <b>Chính xác!</b> ${item.explanation || ''}`;
+      } else {
+        row.className = 'q-row-g is-wrong';
+        fb.className = 'feedback-box-g show wrong';
+        fb.innerHTML = `❌ <b>Chưa đúng!</b> Đáp án: <b>${result.correctDisplay}</b>. 💡 <i>${item.explanation || ''}</i>`;
+      }
+    });
+
+    alert(`🎉 Bạn đã thuộc: ${correct} / ${this.totalRecallQuestions} câu lý thuyết!`);
   }
 
   renderExercises() {
@@ -273,7 +361,7 @@ renderTheory() {
         } else {
           row.className = 'q-row-g is-wrong';
           fb.className = 'feedback-box-g show wrong';
-          fb.innerHTML = `❌ <b>Chưa đúng!</b> Đáp án đúng là: <b>${result.correctDisplay}</b>. <br>💡 <i>${q.explanation || ''}</i>`;
+          fb.innerHTML = `❌ <b>Chưa đúng!</b> Đáp án đúng: <b>${result.correctDisplay}</b>. <br>💡 <i>${q.explanation || ''}</i>`;
         }
       });
     });
