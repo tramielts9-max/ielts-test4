@@ -1,0 +1,437 @@
+{
+  "tense_id": "present-perfect",
+  "title": "BÀI TẬP THÌ HIỆN TẠI HOÀN THÀNH",
+  "exercise_groups": [
+    {
+      "group_id": "pp_auxiliary_drill_25",
+      "group_title": "1. Luyện Trợ Động Từ Have / Has (25 Câu)",
+      "instruction": "Điền 'have' hoặc 'has' thích hợp vào chỗ trống:",
+      "questions": [
+        { "id": "pp_aux_1", "type": "blank", "prompt": "I [blank] scored the top marks in my class.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với trợ động từ 'have'." },
+        { "id": "pp_aux_2", "type": "blank", "prompt": "I [blank] received surprising news.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_3", "type": "blank", "prompt": "I [blank] lived in a small village.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_4", "type": "blank", "prompt": "I [blank] completed my work recently.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_5", "type": "blank", "prompt": "I [blank] felt nervous many times.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_6", "type": "blank", "prompt": "He [blank] led the football team.", "answers": ["has"], "explanation": "Chủ ngữ 'He' số ít đi với 'has'." },
+        { "id": "pp_aux_7", "type": "blank", "prompt": "She [blank] produced many talented artworks.", "answers": ["has"], "explanation": "Chủ ngữ 'She' số ít đi với 'has'." },
+        { "id": "pp_aux_8", "type": "blank", "prompt": "It [blank] left an unforgettable impression.", "answers": ["has"], "explanation": "Chủ ngữ 'It' số ít đi với 'has'." },
+        { "id": "pp_aux_9", "type": "blank", "prompt": "He [blank] arrived late for the meeting.", "answers": ["has"], "explanation": "Chủ ngữ 'He' số ít đi với 'has'." },
+        { "id": "pp_aux_10", "type": "blank", "prompt": "She [blank] supported my decisions very well.", "answers": ["has"], "explanation": "Chủ ngữ 'She' số ít đi với 'has'." },
+        { "id": "pp_aux_11", "type": "blank", "prompt": "You [blank] performed amazingly in the play.", "answers": ["have"], "explanation": "Chủ ngữ 'You' đi với 'have'." },
+        { "id": "pp_aux_12", "type": "blank", "prompt": "We [blank] gone on vacation recently.", "answers": ["have"], "explanation": "Chủ ngữ 'We' số nhiều đi với 'have'." },
+        { "id": "pp_aux_13", "type": "blank", "prompt": "They [blank] studied at the library all afternoon.", "answers": ["have"], "explanation": "Chủ ngữ 'They' số nhiều đi với 'have'." },
+        { "id": "pp_aux_14", "type": "blank", "prompt": "You [blank] shown great confidence during the presentation.", "answers": ["have"], "explanation": "Chủ ngữ 'You' đi với 'have'." },
+        { "id": "pp_aux_15", "type": "blank", "prompt": "We [blank] planned the event for months.", "answers": ["have"], "explanation": "Chủ ngữ 'We' số nhiều đi với 'have'." },
+        { "id": "pp_aux_16", "type": "blank", "prompt": "I [blank] left the party recently.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_17", "type": "blank", "prompt": "He [blank] solved many puzzles quickly.", "answers": ["has"], "explanation": "Chủ ngữ 'He' đi với 'has'." },
+        { "id": "pp_aux_18", "type": "blank", "prompt": "We [blank] felt thrilled with the surprise.", "answers": ["have"], "explanation": "Chủ ngữ 'We' đi với 'have'." },
+        { "id": "pp_aux_19", "type": "blank", "prompt": "She [blank] called the first person I reached out to.", "answers": ["has"], "explanation": "Chủ ngữ 'She' đi với 'has'." },
+        { "id": "pp_aux_20", "type": "blank", "prompt": "You [blank] helped me generously.", "answers": ["have"], "explanation": "Chủ ngữ 'You' đi với 'have'." },
+        { "id": "pp_aux_21", "type": "blank", "prompt": "They [blank] expressed their feelings about the misunderstanding.", "answers": ["have"], "explanation": "Chủ ngữ 'They' đi với 'have'." },
+        { "id": "pp_aux_22", "type": "blank", "prompt": "It [blank] created such a peaceful evening.", "answers": ["has"], "explanation": "Chủ ngữ 'It' đi với 'has'." },
+        { "id": "pp_aux_23", "type": "blank", "prompt": "I [blank] felt completely exhausted after the hike.", "answers": ["have"], "explanation": "Chủ ngữ 'I' đi với 'have'." },
+        { "id": "pp_aux_24", "type": "blank", "prompt": "They [blank] celebrated their achievements proudly.", "answers": ["have"], "explanation": "Chủ ngữ 'They' đi với 'have'." },
+        { "id": "pp_aux_25", "type": "blank", "prompt": "She [blank] always shown loyalty and care as a friend.", "answers": ["has"], "explanation": "Chủ ngữ 'She' đi với 'has'." }
+      ]
+    },
+    {
+      "group_id": "pp_affirmative_10",
+      "group_title": "2. Dạng Khẳng Định (+) S + have/has + V3/ed (10 Câu)",
+      "instruction": "Chia động từ trong ngoặc ở thì Hiện tại hoàn thành:",
+      "questions": [
+        { "id": "pp_af_1", "type": "blank", "prompt": "The cake (be) [blank] delicious.", "answers": ["has been"], "explanation": "The cake là danh từ số ít ➔ has been." },
+        { "id": "pp_af_2", "type": "blank", "prompt": "She (just finish) [blank] her homework.", "answers": ["has just finished"], "explanation": "She là số ít, trạng từ 'just' đứng giữa: has just finished." },
+        { "id": "pp_af_3", "type": "blank", "prompt": "The weather (be) [blank] nice today.", "answers": ["has been"], "explanation": "The weather là danh từ không đếm được ➔ has been." },
+        { "id": "pp_af_4", "type": "blank", "prompt": "They (already start) [blank] their project.", "answers": ["have already started"], "explanation": "They là số nhiều, already đứng giữa: have already started." },
+        { "id": "pp_af_5", "type": "blank", "prompt": "He (not be) [blank] at work today.", "answers": ["has not been", "hasn't been"], "explanation": "He là số ít ở thể phủ định ➔ has not been / hasn't been." },
+        { "id": "pp_af_6", "type": "blank", "prompt": "The team has practiced a lot this month, and they (improve) [blank] their skills.", "answers": ["have improved"], "explanation": "Chủ ngữ 'they' số nhiều ➔ have improved." },
+        { "id": "pp_af_7", "type": "blank", "prompt": "The children have cleaned their rooms, and they (feel) [blank] proud of their work.", "answers": ["have felt"], "explanation": "Chủ ngữ 'they' số nhiều, V3 của feel là felt ➔ have felt." },
+        { "id": "pp_af_8", "type": "blank", "prompt": "The company (expand) [blank] rapidly, and it has opened new offices in other cities.", "answers": ["has expanded"], "explanation": "The company là danh từ số ít ➔ has expanded." },
+        { "id": "pp_af_9", "type": "blank", "prompt": "She (send) [blank] the email, and the manager has replied quickly.", "answers": ["has sent"], "explanation": "Chủ ngữ She là số ít, V3 của send là sent ➔ has sent." },
+        { "id": "pp_af_10", "type": "blank", "prompt": "The students have studied for the exam, and they (prepare) [blank] well.", "answers": ["have prepared"], "explanation": "Chủ ngữ 'they' số nhiều ➔ have prepared." }
+      ]
+    },
+    {
+      "group_id": "pp_negative_10",
+      "group_title": "3. Dạng Phủ Định (–) S + have/has + NOT + V3/ed (10 Câu)",
+      "instruction": "Chia động từ trong ngoặc ở thể phủ định của thì Hiện tại hoàn thành:",
+      "questions": [
+        { "id": "pp_neg_1", "type": "blank", "prompt": "The cake (be, not) [blank] delicious today.", "answers": ["has not been", "hasn't been"], "explanation": "The cake số ít ➔ has not been / hasn't been." },
+        { "id": "pp_neg_2", "type": "blank", "prompt": "She (not finish) [blank] her homework.", "answers": ["has not finished", "hasn't finished"], "explanation": "She số ít ➔ has not finished." },
+        { "id": "pp_neg_3", "type": "blank", "prompt": "The weather (not be) [blank] really nice this week.", "answers": ["has not been", "hasn't been"], "explanation": "The weather số ít ➔ has not been." },
+        { "id": "pp_neg_4", "type": "blank", "prompt": "They (not start) [blank] their project yet.", "answers": ["have not started", "haven't started"], "explanation": "They số nhiều ➔ have not started." },
+        { "id": "pp_neg_5", "type": "blank", "prompt": "The children (not clean) [blank] their rooms this morning.", "answers": ["have not cleaned", "haven't cleaned"], "explanation": "The children số nhiều ➔ have not cleaned." },
+        { "id": "pp_neg_6", "type": "blank", "prompt": "He (not be) [blank] at work today.", "answers": ["has not been", "hasn't been"], "explanation": "He số ít ➔ has not been." },
+        { "id": "pp_neg_7", "type": "blank", "prompt": "The lecture (not be) [blank] very interesting so far.", "answers": ["has not been", "hasn't been"], "explanation": "The lecture số ít ➔ has not been." },
+        { "id": "pp_neg_8", "type": "blank", "prompt": "The team (not practice) [blank] a lot this month.", "answers": ["has not practiced", "hasn't practiced", "have not practiced", "haven't practiced"], "explanation": "Chủ ngữ tập thể 'The team' đi với has not practiced (hoặc have not practiced)." },
+        { "id": "pp_neg_9", "type": "blank", "prompt": "The movie (not be) [blank] really entertaining.", "answers": ["has not been", "hasn't been"], "explanation": "The movie số ít ➔ has not been." },
+        { "id": "pp_neg_10", "type": "blank", "prompt": "She (not finish) [blank] her assignment yet.", "answers": ["has not finished", "hasn't finished"], "explanation": "She số ít đi với 'yet' cuối câu ➔ has not finished." }
+      ]
+    },
+    {
+      "group_id": "pp_advanced_pairs_10",
+      "group_title": "4. Bài Tập Phối Hợp Câu Phức Hiện Tại Hoàn Thành (10 Câu)",
+      "instruction": "Chia động từ trong ngoặc ở thì Hiện tại hoàn thành:",
+      "questions": [
+        { "id": "pp_adv_1", "type": "blank", "prompt": "The company has expanded rapidly in recent years, and their profits [blank] (increase) significantly.", "answers": ["have increased"], "explanation": "Chủ ngữ 'their profits' là danh từ số nhiều ➔ have increased." },
+        { "id": "pp_adv_2", "type": "blank", "prompt": "The students [blank] (not participate) in the competition this year, but they have prepared for next season.", "answers": ["have not participated", "haven't participated"], "explanation": "The students số nhiều ➔ have not participated." },
+        { "id": "pp_adv_3", "type": "blank", "prompt": "He [blank] (always be) so helpful, and his colleagues have appreciated his support.", "answers": ["has always been"], "explanation": "He số ít, always đứng giữa trợ động từ và V3: has always been." },
+        { "id": "pp_adv_4", "type": "blank", "prompt": "The team [blank] (not arrive) at the destination on time, but they have made great progress.", "answers": ["has not arrived", "hasn't arrived", "have not arrived", "haven't arrived"], "explanation": "The team ➔ has not arrived / have not arrived." },
+        { "id": "pp_adv_5", "type": "blank", "prompt": "We have seen many improvements in the program, yet there [blank] (be) a few areas that need attention.", "answers": ["have been"], "explanation": "Chủ ngữ sau 'there' là 'a few areas' số nhiều ➔ have been." },
+        { "id": "pp_adv_6", "type": "blank", "prompt": "The team [blank] (not perform) well in the last few games, but they have shown better results.", "answers": ["has not performed", "hasn't performed", "have not performed", "haven't performed"], "explanation": "The team ➔ has not performed / have not performed." },
+        { "id": "pp_adv_7", "type": "blank", "prompt": "She has already sent the email to the manager, and the reply [blank] (arrive) shortly after.", "answers": ["has arrived"], "explanation": "The reply là danh từ số ít ➔ has arrived." },
+        { "id": "pp_adv_8", "type": "blank", "prompt": "The book has been really helpful, though it [blank] (not cover) every aspect of the subject.", "answers": ["has not covered", "hasn't covered"], "explanation": "Chủ ngữ 'it' số ít ➔ has not covered." },
+        { "id": "pp_adv_9", "type": "blank", "prompt": "He [blank] (never be) late for a meeting before, but today he is delayed.", "answers": ["has never been"], "explanation": "He số ít, never đứng giữa: has never been." },
+        { "id": "pp_adv_10", "type": "blank", "prompt": "The teacher has already graded all assignments, and the students [blank] (receive) their feedback.", "answers": ["have received"], "explanation": "The students số nhiều ➔ have received." }
+      ]
+    },
+    {
+      "group_id": "pp_questions_15",
+      "group_title": "5. Dạng Câu Hỏi (?) Has / Have + S + V3/ed? (15 Câu)",
+      "instruction": "Điền từ thích hợp để hoàn thành câu hỏi ở thì Hiện tại hoàn thành:",
+      "questions": [
+        { "id": "pp_q_1", "type": "blank", "prompt": "[blank] the cake [blank] (be) delicious recently?", "answers": ["Has, been", "has, been", "Has been", "has been"], "explanation": "The cake là số ít: Has + the cake + been...?" },
+        { "id": "pp_q_2", "type": "blank", "prompt": "[blank] the weather [blank] (improve) over the past week?", "answers": ["Has, improved", "has, improved", "Has improved", "has improved"], "explanation": "The weather là số ít: Has the weather improved...?" },
+        { "id": "pp_q_3", "type": "blank", "prompt": "[blank] she [blank] (just finish) her assignment?", "answers": ["Has, just finished", "has, just finished", "Has just finished"], "explanation": "She là số ít: Has she just finished...?" },
+        { "id": "pp_q_4", "type": "blank", "prompt": "[blank] the lecture [blank] (be) very informative recently?", "answers": ["Has, been", "has, been", "Has been", "has been"], "explanation": "The lecture là số ít: Has the lecture been...?" },
+        { "id": "pp_q_5", "type": "blank", "prompt": "[blank] the children [blank] (already clean) their rooms this week?", "answers": ["Have, already cleaned", "have, already cleaned"], "explanation": "The children là số nhiều: Have the children already cleaned...?" },
+        { "id": "pp_q_6", "type": "blank", "prompt": "[blank] he [blank] (be) at the correct address recently?", "answers": ["Has, been", "has, been"], "explanation": "Chủ ngữ He: Has he been...?" },
+        { "id": "pp_q_7", "type": "blank", "prompt": "[blank] they [blank] (already prepare) the decorations for the party?", "answers": ["Have, already prepared", "have, already prepared"], "explanation": "Chủ ngữ They: Have they already prepared...?" },
+        { "id": "pp_q_8", "type": "blank", "prompt": "[blank] you [blank] (try) this dish before?", "answers": ["Have, tried", "have, tried"], "explanation": "Chủ ngữ You: Have you tried this dish before?" },
+        { "id": "pp_q_9", "type": "blank", "prompt": "[blank] she [blank] (never attend) a conference like this before?", "answers": ["Has, never attended", "has, never attended"], "explanation": "Chủ ngữ She: Has she never attended...?" },
+        { "id": "pp_q_10", "type": "blank", "prompt": "[blank] the team [blank] (complete) their work, or is there more to do?", "answers": ["Has, completed", "Have, completed", "has, completed", "have, completed"], "explanation": "Has/Have the team completed...?" },
+        { "id": "pp_q_11", "type": "blank", "prompt": "[blank] he [blank] (never fail) an exam before?", "answers": ["Has, never failed", "has, never failed"], "explanation": "Chủ ngữ He: Has he never failed...?" },
+        { "id": "pp_q_12", "type": "blank", "prompt": "[blank] they [blank] (practice) enough?", "answers": ["Have, practiced", "have, practiced"], "explanation": "Chủ ngữ They: Have they practiced enough?" },
+        { "id": "pp_q_13", "type": "blank", "prompt": "[blank] the lecture [blank] (recently be) updated?", "answers": ["Has, recently been", "has, recently been"], "explanation": "The lecture số ít: Has the lecture recently been updated?" },
+        { "id": "pp_q_14", "type": "blank", "prompt": "[blank] you ever [blank] (visit) Paris?", "answers": ["Have, visited", "have, visited"], "explanation": "Have you ever visited Paris?" },
+        { "id": "pp_q_15", "type": "blank", "prompt": "[blank] she [blank] (write) the report yet?", "answers": ["Has, written", "has, written"], "explanation": "Chủ ngữ She: Has she written the report yet?" }
+      ]
+    },
+    {
+      "group_id": "pp_rewrite_affirmative_to_others",
+      "group_title": "6. Viết Lại Câu: Chuyển Sang Câu Hỏi & Câu Phủ Định (+ ➔ ? / -)",
+      "instruction": "Chuyển các câu khẳng định sau sang câu hỏi và phủ định tương ứng:",
+      "questions": [
+        {
+          "id": "pp_rw_1a",
+          "type": "rewrite",
+          "prompt": "She has just cleaned her room. (Chuyển sang câu hỏi)",
+          "targetStart": "Has ",
+          "answers": ["she just cleaned her room?", "she just cleaned her room", "she cleaned her room yet?", "she cleaned her room yet"],
+          "explanation": "Đảo 'Has' lên đầu câu: Has she just cleaned her room?"
+        },
+        {
+          "id": "pp_rw_1b",
+          "type": "rewrite",
+          "prompt": "She has just cleaned her room. (Chuyển sang phủ định)",
+          "targetStart": "She ",
+          "answers": [
+            "has not cleaned her room yet.",
+            "has not cleaned her room yet",
+            "hasn't cleaned her room yet.",
+            "hasn't cleaned her room yet",
+            "has not just cleaned her room."
+          ],
+          "explanation": "Phủ định thì HTHT thường đổi trạng từ sang 'yet' ở cuối câu: She has not cleaned her room yet."
+        },
+        {
+          "id": "pp_rw_2a",
+          "type": "rewrite",
+          "prompt": "They have already watched a movie. (Chuyển sang câu hỏi)",
+          "targetStart": "Have ",
+          "answers": ["they already watched a movie?", "they watched a movie yet?", "they watched a movie yet"],
+          "explanation": "Đảo 'Have' lên trước chủ ngữ: Have they watched a movie yet? (hoặc Have they already watched a movie?)"
+        },
+        {
+          "id": "pp_rw_2b",
+          "type": "rewrite",
+          "prompt": "They have already watched a movie. (Chuyển sang phủ định)",
+          "targetStart": "They ",
+          "answers": [
+            "have not watched a movie yet.",
+            "have not watched a movie yet",
+            "haven't watched a movie yet.",
+            "haven't watched a movie yet"
+          ],
+          "explanation": "Phủ định đổi already thành yet ở cuối câu: They have not watched a movie yet."
+        },
+        {
+          "id": "pp_rw_3a",
+          "type": "rewrite",
+          "prompt": "We have recently visited the zoo. (Chuyển sang câu hỏi)",
+          "targetStart": "Have ",
+          "answers": ["we recently visited the zoo?", "we visited the zoo recently?", "we recently visited the zoo"],
+          "explanation": "Đảo 'Have' lên trước 'we': Have we recently visited the zoo?"
+        },
+        {
+          "id": "pp_rw_3b",
+          "type": "rewrite",
+          "prompt": "We have recently visited the zoo. (Chuyển sang phủ định)",
+          "targetStart": "We ",
+          "answers": [
+            "have not visited the zoo recently.",
+            "have not visited the zoo recently",
+            "haven't visited the zoo recently.",
+            "haven't visited the zoo recently"
+          ],
+          "explanation": "Thêm 'not' sau 'have': We have not visited the zoo recently."
+        }
+      ]
+    },
+    {
+      "group_id": "pp_categorize_usage_15",
+      "group_title": "7. Phân Loại Câu Theo 4 Cách Sử Dụng",
+      "instruction": "Chọn đúng cách sử dụng của câu: A (Đã xong không rõ thời gian), B (Nhiều lần QK ➔ HT), C (Kinh nghiệm), D (Xảy ra trong QK ảnh hưởng hiện tại):",
+      "questions": [
+        {
+          "id": "pp_cat_1",
+          "type": "choice",
+          "prompt": "1. 'I have finished my homework.' (Tôi đã hoàn thành bài tập về nhà.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hành động đã hoàn tất trọn vẹn và không đề cập thời điểm cụ thể ➔ Đã xong không biết lúc nào."
+        },
+        {
+          "id": "pp_cat_2",
+          "type": "choice",
+          "prompt": "2. 'I have lost my wallet.' (Tôi làm mất ví rồi - và giờ tôi không thể trả tiền ăn.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 3,
+          "explanation": "Mất ví trong quá khứ dẫn đến kết quả hiện tại là không có tiền ➔ Xảy ra trong QK để lại kết quả/ảnh hưởng ở hiện tại."
+        },
+        {
+          "id": "pp_cat_3",
+          "type": "choice",
+          "prompt": "3. 'She has read that book five times.' (Cô ấy đã đọc quyển sách đó 5 lần.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 1,
+          "explanation": "Có số lần lặp lại 'five times' tính từ quá khứ đến nay ➔ Nhiều lần (Quá khứ ➔ Hiện tại)."
+        },
+        {
+          "id": "pp_cat_4",
+          "type": "choice",
+          "prompt": "4. 'He has broken his phone.' (Anh ấy làm hỏng điện thoại - giờ không gọi được.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 3,
+          "explanation": "Hỏng điện thoại dẫn đến hậu quả hiện tại không liên lạc được ➔ Ảnh hưởng hiện tại."
+        },
+        {
+          "id": "pp_cat_5",
+          "type": "choice",
+          "prompt": "5. 'I have tried sushi before.' (Tôi đã thử ăn sushi trước đây.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nói về trải nghiệm cá nhân từng trải qua trong đời ➔ Kinh nghiệm (Hiện tại vẫn đúng)."
+        },
+        {
+          "id": "pp_cat_6",
+          "type": "choice",
+          "prompt": "6. 'They have visited Paris three times.' (Họ đã đến Paris ba lần.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 1,
+          "explanation": "Có số lần 'three times' ➔ Nhiều lần (Quá khứ ➔ Hiện tại)."
+        },
+        {
+          "id": "pp_cat_7",
+          "type": "choice",
+          "prompt": "7. 'They have missed the bus.' (Họ đã lỡ xe buýt - giờ họ phải đợi xe kế tiếp.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 3,
+          "explanation": "Lỡ xe buýt để lại kết quả hiện tại phải chờ đợi ➔ Ảnh hưởng đến hiện tại."
+        },
+        {
+          "id": "pp_cat_8",
+          "type": "choice",
+          "prompt": "8. 'I have traveled to Japan.' (Tôi đã từng đi du lịch Nhật Bản.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 2,
+          "explanation": "Nói về trải nghiệm du lịch trong đời ➔ Kinh nghiệm."
+        },
+        {
+          "id": "pp_cat_9",
+          "type": "choice",
+          "prompt": "9. 'We have cleaned the house.' (Chúng tôi đã dọn dẹp nhà cửa.)",
+          "options": [
+            "A. Đã xong không biết lúc nào",
+            "B. Nhiều lần (Quá khứ ➔ Hiện tại)",
+            "C. Kinh nghiệm (Hiện tại vẫn đúng)",
+            "D. Xảy ra trong QK để lại kết quả ở hiện tại"
+          ],
+          "correctIndex": 0,
+          "explanation": "Hành động dọn dẹp đã hoàn tất, không đề cập thời điểm cụ thể ➔ Đã xong không biết lúc nào."
+        }
+      ]
+    },
+    {
+      "group_id": "pp_identify_time_markers_15",
+      "group_title": "8. Nhận Diện Dấu Hiệu Thì Hiện Tại Hoàn Thành (15 Câu)",
+      "instruction": "Xác định từ/cụm từ là dấu hiệu nhận biết thì Hiện tại hoàn thành trong câu:",
+      "questions": [
+        {
+          "id": "pp_tm_1",
+          "type": "choice",
+          "prompt": "'She has graduated from university recently.' ➔ Dấu hiệu là:",
+          "options": ["recently", "graduated", "from university"],
+          "correctIndex": 0,
+          "explanation": "'recently' (gần đây) là dấu hiệu điển hình của thì Hiện tại hoàn thành."
+        },
+        {
+          "id": "pp_tm_2",
+          "type": "choice",
+          "prompt": "'They have gone to the beach twice this summer.' ➔ Dấu hiệu là:",
+          "options": ["to the beach", "twice this summer", "They have"],
+          "correctIndex": 1,
+          "explanation": "'twice this summer' chỉ số lần lặp lại trong khoảng thời gian chưa kết thúc."
+        },
+        {
+          "id": "pp_tm_3",
+          "type": "choice",
+          "prompt": "'I have seen him at the party three times.' ➔ Dấu hiệu là:",
+          "options": ["three times", "at the party", "seen him"],
+          "correctIndex": 0,
+          "explanation": "'three times' (ba lần) là số lần lặp lại."
+        },
+        {
+          "id": "pp_tm_4",
+          "type": "choice",
+          "prompt": "'We have traveled to Japan several times.' ➔ Dấu hiệu là:",
+          "options": ["several times", "to Japan", "traveled"],
+          "correctIndex": 0,
+          "explanation": "'several times' (vài lần) là dấu hiệu của HTHT."
+        },
+        {
+          "id": "pp_tm_5",
+          "type": "choice",
+          "prompt": "'He has finished his homework already.' ➔ Dấu hiệu là:",
+          "options": ["already", "his homework", "finished"],
+          "correctIndex": 0,
+          "explanation": "'already' (đã... rồi) là dấu hiệu của HTHT."
+        },
+        {
+          "id": "pp_tm_6",
+          "type": "choice",
+          "prompt": "'The concert has started just now.' ➔ Dấu hiệu là:",
+          "options": ["just now", "started", "The concert"],
+          "correctIndex": 0,
+          "explanation": "'just now' mang nghĩa vừa mới xong."
+        },
+        {
+          "id": "pp_tm_7",
+          "type": "choice",
+          "prompt": "'I have finished reading the article lately.' ➔ Dấu hiệu là:",
+          "options": ["lately", "reading", "the article"],
+          "correctIndex": 0,
+          "explanation": "'lately' (dạo gần đây) là dấu hiệu của HTHT."
+        }
+      ]
+    },
+    {
+      "group_id": "pp_sentence_ordering_5",
+      "group_title": "9. Sắp Xếp Từ Thành Câu Hoàn Chỉnh (5 Câu)",
+      "instruction": "Sắp xếp các từ cho sẵn thành câu hoàn chỉnh đúng thì Hiện tại hoàn thành:",
+      "questions": [
+        {
+          "id": "pp_so_1",
+          "type": "rewrite",
+          "prompt": "She / visit / her grandparents / recently.",
+          "targetStart": "",
+          "answers": [
+            "She has visited her grandparents recently.",
+            "She has visited her grandparents recently",
+            "Recently, she has visited her grandparents.",
+            "Recently she has visited her grandparents"
+          ],
+          "explanation": "Cấu trúc: S (She) + has + V3 (visited) + her grandparents + recently."
+        },
+        {
+          "id": "pp_so_2",
+          "type": "rewrite",
+          "prompt": "They / watch / that movie / many times.",
+          "targetStart": "",
+          "answers": [
+            "They have watched that movie many times.",
+            "They have watched that movie many times"
+          ],
+          "explanation": "Cấu trúc: S (They) + have + V3 (watched) + that movie + many times."
+        },
+        {
+          "id": "pp_so_3",
+          "type": "rewrite",
+          "prompt": "He / finish / his homework / already.",
+          "targetStart": "",
+          "answers": [
+            "He has finished his homework already.",
+            "He has finished his homework already",
+            "He has already finished his homework.",
+            "He has already finished his homework"
+          ],
+          "explanation": "Already có thể đứng giữa trợ động từ và V3 hoặc đứng cuối câu: He has already finished his homework."
+        },
+        {
+          "id": "pp_so_4",
+          "type": "rewrite",
+          "prompt": "We / go / to the concert / this month.",
+          "targetStart": "",
+          "answers": [
+            "We have gone to the concert this month.",
+            "We have gone to the concert this month",
+            "We have been to the concert this month.",
+            "We have been to the concert this month"
+          ],
+          "explanation": "Cấu trúc: We have gone/been to the concert this month."
+        },
+        {
+          "id": "pp_so_5",
+          "type": "rewrite",
+          "prompt": "You / see / that exhibition / yet?",
+          "targetStart": "",
+          "answers": [
+            "Have you seen that exhibition yet?",
+            "Have you seen that exhibition yet"
+          ],
+          "explanation": "Câu hỏi nghi vấn: Have + you + seen (V3) + that exhibition + yet?"
+        }
+      ]
+    }
+  ]
+}
