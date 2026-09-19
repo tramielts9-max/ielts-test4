@@ -53,5 +53,42 @@
         "Cấu trúc: was/were + V-ing + WHILE + was/were + V-ing (hai hành động song song)"
       ]
     }
+  ],
+  "theory_recall": [
+    {
+      "id": "rec_pcont_1",
+      "type": "blank",
+      "prompt": "Công thức khẳng định Quá khứ tiếp diễn: (+) S + [blank] + V-ing.",
+      "answers": ["was/were", "was, were", "was were"],
+      "explanation": "S + was/were + V-ing."
+    },
+    {
+      "id": "rec_pcont_2",
+      "type": "blank",
+      "prompt": "Hành động đang diễn ra (chia QKTD) thì một hành động ngắn khác xen vào chia thì [blank].",
+      "answers": ["quá khứ đơn", "qkđ", "past simple"],
+      "explanation": "Cấu trúc: was/were + V-ing WHEN + V2/ed."
+    },
+    {
+      "id": "rec_pcont_3",
+      "type": "blank",
+      "prompt": "Mệnh đề hành động xen vào (ngắn) thường đứng sau liên từ [blank].",
+      "answers": ["when"],
+      "explanation": "When + S + V2/ed (hành động cắt ngang)."
+    },
+    {
+      "id": "rec_pcont_4",
+      "type": "blank",
+      "prompt": "Hai hành động diễn ra song song cùng lúc trong quá khứ thường dùng liên từ [blank].",
+      "answers": ["while"],
+      "explanation": "S1 + was/were V-ing WHILE S2 + was/were V-ing."
+    },
+    {
+      "id": "rec_pcont_5",
+      "type": "blank",
+      "prompt": "Cấu trúc dấu hiệu giờ cụ thể: at + [blank] + thời gian quá khứ (Ví dụ: at 8 PM last night).",
+      "answers": ["giờ", "mốc giờ", "giờ cụ thể"],
+      "explanation": "At + mốc giờ + thời gian trong quá khứ."
+    }
   ]
 }
