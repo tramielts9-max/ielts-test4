@@ -175,53 +175,108 @@ export class LessonRenderer {
   // =========================================================================
   // HÀM HIỂN THỊ PHẦN KHẢO LÝ THUYẾT (TAB Ở GIỮA)
   // =========================================================================
-  renderTheoryRecall() {
+ renderTheoryRecall() {
     const box = document.createElement('div');
     box.id = 'tabRecallContent';
     box.style.display = 'none';
 
-    if (!this.theoryData.theory_recall || this.theoryData.theory_recall.length === 0) {
-      box.innerHTML = `<div class="theory-card-g"><p>Chuyên đề này hiện chưa có bài khảo lý thuyết.</p></div>`;
-      this.container.appendChild(box);
+    box.innerHTML = `
+      <div class="theory-card-g" style="background:#fefce8; border: 1.5px solid #fef08a; padding: 22px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h3 style="color:#854d0e; margin:0 0 6px 0;">📝 ĐỀ KIỂM TRA TỰ LUẬN KHẢO LÝ THUYẾT: ${this.theoryData.tense_name}</h3>
+            <p style="font-size:13.5px; color:#713f12; margin:0;">
+              Học sinh tự nhớ lại và trình bày đầy đủ: <b>Công thức 3 thể (+, -, ?), Tất cả các cách dùng, Tự đặt câu ví dụ</b> và <b>Dấu hiệu nhận biết</b>.
+            </p>
+          </div>
+          <span style="background:#f59e0b; color:white; font-size:11px; font-weight:800; padding:4px 10px; border-radius:12px;">
+            AI CHẤM TRỰC TIẾP
+          </span>
+        </div>
+      </div>
+
+      <div class="theory-card-g" style="background:#ffffff; margin-top:16px;">
+        <label style="font-weight:700; font-size:14.5px; display:block; margin-bottom:8px; color:#0f172a;">
+          ✍️ Nhập bài làm tự luận của Em vào đây (Trình bày chi tiết từng mục):
+        </label>
+        <textarea id="aiRecallInput" rows="12" style="width:100%; box-sizing:border-box; padding:14px; border:1.5px solid #cbd5e1; border-radius:8px; font-size:14px; line-height:1.6; font-family:inherit; outline:none;" placeholder="Em hãy gõ bài làm vào đây:
+1. Công thức (+, -, ? với to be và V thường):
+...
+2. Tất cả các cách sử dụng:
+- Cách 1: ... (Ví dụ: ...)
+- Cách 2: ... (Ví dụ: ...)
+3. Dấu hiệu nhận biết & Trạng từ:
+..."></textarea>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; flex-wrap:wrap; gap:10px;">
+          <div id="aiGradingStatus" style="font-size:13.5px; font-weight:600; color:#d97706;"></div>
+          <button type="button" class="btn-submit-g" id="btnSubmitToAI" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); padding:12px 28px; font-size:14.5px; box-shadow:0 4px 12px rgba(217, 119, 6, 0.25);">
+            🤖 GỬI BÀI CHO AI CHẤM ĐIỂM
+          </button>
+        </div>
+      </div>
+
+      <!-- KHUNG HIỂN THỊ KẾT QUẢ AI CHẤM TỰ ĐỘNG -->
+      <div id="aiReportContainer" class="theory-card-g" style="display:none; background:#ffffff; border:2px solid #0d9488; margin-top:20px; padding:24px;">
+        <div id="aiReportMarkdown" style="line-height:1.7; font-size:14.5px; color:#1e293b;"></div>
+      </div>
+    `;
+
+    this.container.appendChild(box);
+
+    // Gắn sự kiện gọi AI khi bấm nút
+    box.querySelector('#btnSubmitToAI').onclick = () => this.handleCallAIGrading();
+  }
+
+  async handleCallAIGrading() {
+    const text = document.getElementById('aiRecallInput').value.trim();
+    if (!text || text.length < 20) {
+      alert("⚠️ Em hãy viết đầy đủ bài tự luận (công thức, cách dùng, ví dụ...) trước khi gửi Anh chấm nhé!");
       return;
     }
 
-    let html = `
-      <div class="theory-card-g" style="background:#fefce8; border-color:#fef08a;">
-        <h3 style="color:#854d0e; border-bottom-color:#fde047;">🎯 BÀI KHẢO LÝ THUYẾT (ĐIỀN TỪ VÀO CHỖ TRỐNG ĐỂ THUỘC BÀI)</h3>
-        <p style="font-size:14px; color:#713f12; margin:0 0 15px 0;">Hãy điền đúng công thức, quy tắc và dấu hiệu đã học để kiểm tra xem bạn đã thực sự ghi nhớ bài chưa nhé!</p>
-      </div>
-    `;
+    const btn = document.getElementById('btnSubmitToAI');
+    const status = document.getElementById('aiGradingStatus');
+    const reportBox = document.getElementById('aiReportContainer');
+    const reportMd = document.getElementById('aiReportMarkdown');
 
-    this.totalRecallQuestions = this.theoryData.theory_recall.length;
+    btn.disabled = true;
+    reportBox.style.display = 'block';
+    reportMd.innerHTML = '';
+    status.innerHTML = "⏳ Anh đang phân tích bài tự luận, soi xét câu ví dụ và chấm điểm cho Em...";
 
-    this.theoryData.theory_recall.forEach((item, idx) => {
-      const parts = item.prompt.split('[blank]');
-      html += `
-        <div class="q-row-g" id="recall_row_${item.id}" style="background:#ffffff;">
-          <div class="q-text-g">
-            <span style="color:#b45309; font-weight:bold;">Câu ${idx + 1}:</span>
-            <span>${parts[0]}</span>
-            <input type="text" class="input-blank-g" data-recall-id="${item.id}" autocomplete="off" placeholder="Điền lý thuyết...">
-            <span>${parts[1] || ''}</span>
-          </div>
-          <div class="feedback-box-g" id="recall_fb_${item.id}"></div>
-        </div>
-      `;
-    });
+    // Cuộn nhẹ xuống khung kết quả
+    reportBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    html += `
-      <div style="margin-top:20px; text-align:center;">
-        <button type="button" class="btn-submit-g" id="btnGradeRecall" style="background:#d97706; padding:12px 32px;">
-          Chấm Bài Khảo Lý Thuyết
-        </button>
-      </div>
-    `;
+    let fullMarkdown = '';
 
-    box.innerHTML = html;
-    this.container.appendChild(box);
+    try {
+      // Import động hàm AI
+      const { gradeTheoryEssayWithAI } = await import('./ai-grader-g.js');
 
-    box.querySelector('#btnGradeRecall').onclick = () => this.gradeRecall();
+      await gradeTheoryEssayWithAI(
+        this.theoryData.tense_name,
+        this.theoryData.sections,
+        text,
+        (chunk) => {
+          fullMarkdown += chunk;
+          if (window.marked) {
+            reportMd.innerHTML = window.marked.parse(fullMarkdown);
+          } else {
+            reportMd.innerText = fullMarkdown;
+          }
+        }
+      );
+
+      status.innerHTML = "✅ Anh đã chấm xong bài tự luận cho Em! Em xem chi tiết bảng điểm bên dưới nhé.";
+      btn.disabled = false;
+      btn.innerText = "CHẤM LẠI BÀI KHÁC";
+    } catch (err) {
+      console.error(err);
+      status.innerHTML = "❌ Lỗi: " + err.message;
+      btn.disabled = false;
+      btn.innerText = "THỬ LẠI";
+    }
   }
 
   gradeRecall() {
