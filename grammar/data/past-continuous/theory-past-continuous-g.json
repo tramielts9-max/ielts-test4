@@ -1,15 +1,6 @@
 {
   "tense_id": "past-continuous",
   "tense_name": "THÌ QUÁ KHỨ TIẾP DIỄN (PAST CONTINUOUS)",
-  "word_symbols": [
-    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
-    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
-    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
-    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
-    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
-    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
-    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
-  ],
   "sections": [
     {
       "id": "pc_formulas",
@@ -20,115 +11,43 @@
         "interrogative": "(?) Was / Were + S + V-ing?"
       },
       "subject_rules": [
-        "I, He, She, It, Danh từ số ÍT ➔ đi với WAS (hoặc was not / wasn't)",
-        "You, We, They, Danh từ số NHIỀU ➔ đi với WERE (hoặc were not / weren't)"
-      ]
-    },
-    {
-      "id": "pc_spelling_rules",
-      "title": "2. Quy Tắc Thêm Đuôi -ing Vào Động Từ",
-      "spelling_rules": [
-        { "condition": "Động từ kết thúc bằng '-e'", "rule": "Bỏ '-e' trước khi thêm '-ing'", "examples": "take ➔ taking, drive ➔ driving" },
-        { "condition": "Trọng âm rơi vào âm cuối & tận cùng là 1 phụ âm trước là 1 nguyên âm", "rule": "Gấp đôi phụ âm cuối rồi thêm '-ing'", "examples": "begin ➔ beginning, win ➔ winning" },
-        { "condition": "Một nguyên âm kẹp giữa hai phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm '-ing'", "examples": "run ➔ running, swim ➔ swimming" },
-        { "condition": "Đặc biệt: Động từ kết thúc bằng '-ie'", "rule": "Đổi '-ie' thành '-y' rồi thêm '-ing'", "examples": "lie ➔ lying, die ➔ dying" }
+        "I, He, She, It, Danh từ số ít (ÍT) ➔ WAS + V-ing",
+        "You, We, They, Danh từ số nhiều (NHIỀU) ➔ WERE + V-ing"
       ]
     },
     {
       "id": "pc_usages",
-      "title": "3. Cách Sử Dụng Thì Quá Khứ Tiếp Diễn",
+      "title": "2. 3 Cách Sử Dụng Thì Quá Khứ Tiếp Diễn",
       "usages": [
         { "name": "Ở thời điểm nhất định trong quá khứ", "desc": "Hành động đang diễn ra tại một mốc thời gian cụ thể", "example": "At 9:00 pm yesterday, we were watching Avenger: Endgame." },
-        { "name": "Xảy ra đồng thời trong quá khứ", "desc": "Hai hành động diễn ra song song cùng lúc (thường đi với 'while')", "example": "At this time yesterday, I was playing PUBG while my brother was doing his homework." },
-        { "name": "Đang xảy ra thì bị xen vào", "desc": "Hành động đang diễn ra (chia QKTD) thì một hành động ngắn khác cắt ngang (chia QKĐ - V2)", "example": "I was reading Harry Potter when he knocked on the door." }
+        { "name": "Xảy ra đồng thời trong quá khứ", "desc": "Hai hành động diễn ra song song cùng một lúc", "example": "At this time yesterday, I was playing PUBG while my brother was doing homework." },
+        { "name": "Đang xảy ra thì bị xen vào", "desc": "Hành động đang diễn ra (QKTD) thì hành động khác cắt ngang (QKĐ - V2)", "example": "I was reading Harry Potter when he knocked on the door." }
+      ]
+    },
+    {
+      "id": "pc_clauses",
+      "title": "3. Cấu Trúc Phối Hợp Mệnh Đề Với When và While",
+      "rules": [
+        "Cấu trúc When: S + was/were + V-ing + WHEN + S + V2/ed (Hành động đang diễn ra thì hành động ngắn khác cắt ngang).",
+        "Cấu trúc While: S1 + was/were + V-ing + WHILE + S2 + was/were + V-ing (Hai hành động diễn ra song song đồng thời)."
       ]
     },
     {
       "id": "pc_markers",
       "title": "4. Dấu Hiệu Nhận Biết",
       "rules": [
-        "at + giờ + thời gian trong quá khứ (Ví dụ: at 12 o'clock last night, at 7 PM yesterday)",
-        "at this time + thời gian trong quá khứ (Ví dụ: at this time last month, at this moment last year)",
-        "Cấu trúc: was/were + V-ing (đang xảy ra) + WHEN + V2 (hành động xen vào)",
-        "Cấu trúc: was/were + V-ing + WHILE + was/were + V-ing (hai hành động song song)"
+        "at + giờ cụ thể + thời gian quá khứ (ví dụ: at 12 o'clock last night, at 7 PM yesterday)",
+        "at this time + thời gian quá khứ (ví dụ: at this time last month, at this moment last year)"
       ]
     }
   ],
-"theory_recall": [
-    {
-      "id": "rec_pcont_1",
-      "type": "blank",
-      "prompt": "1. Công thức khẳng định QKTD: (+) S + [blank] + [blank].",
-      "answers": ["was/were, V-ing", "was, were, Ving", "was were, V-ing"],
-      "explanation": "S + was/were + V-ing."
-    },
-    {
-      "id": "rec_pcont_2",
-      "type": "blank",
-      "prompt": "2. Công thức phủ định QKTD: (–) S + [blank] + NOT + [blank].",
-      "answers": ["was/were, V-ing", "was, were, Ving"],
-      "explanation": "S + was/were + not + V-ing."
-    },
-    {
-      "id": "rec_pcont_3",
-      "type": "blank",
-      "prompt": "3. Công thức nghi vấn QKTD: (?) [blank] + S + [blank]?",
-      "answers": ["Was/Were, V-ing", "was/were, V-ing", "was, were, Ving"],
-      "explanation": "Was/Were + S + V-ing?"
-    },
-    {
-      "id": "rec_pcont_4",
-      "type": "blank",
-      "prompt": "4. Cách dùng 1: Diễn tả hành động đang xảy ra tại một [blank] trong quá khứ (Ví dụ: At 9:00 pm yesterday, we were watching Avenger).",
-      "answers": ["thời điểm nhất định", "thời điểm xác định", "mốc thời gian cụ thể", "thoi diem nhat dinh"],
-      "explanation": "Xảy ra tại một thời điểm nhất định/mốc giờ cụ thể trong quá khứ."
-    },
-    {
-      "id": "rec_pcont_5",
-      "type": "blank",
-      "prompt": "5. Cách dùng 2: Diễn tả hai hay nhiều hành động xảy ra [blank] trong quá khứ (Ví dụ: I was playing PUBG while my brother was doing homework).",
-      "answers": ["đồng thời", "song song", "xảy ra đồng thời", "dong thoi"],
-      "explanation": "Xảy ra đồng thời/song song cùng lúc (thường dùng liên từ 'while')."
-    },
-    {
-      "id": "rec_pcont_6",
-      "type": "blank",
-      "prompt": "6. Cách dùng 3: Diễn tả một hành động [blank] thì một hành động khác [blank] (Ví dụ: I was reading Harry Potter when he knocked).",
-      "answers": [
-        "đang xảy ra, xen vào",
-        "đang diễn ra, cắt ngang",
-        "đang xảy ra, cắt ngang",
-        "dang xay ra, xen vao"
-      ],
-      "explanation": "Hành động đang xảy ra chia QKTD (was/were Ving), hành động xen vào chia QKĐ (V2/ed)."
-    },
-    {
-      "id": "rec_pcont_7",
-      "type": "blank",
-      "prompt": "7. Công thức phối hợp thì với WHEN: was/were + V-ing (hành động đang xảy ra) + WHEN + [blank] (hành động xen vào).",
-      "answers": ["V2/ed", "V2", "quá khứ đơn", "S + V2/ed"],
-      "explanation": "Sau when là mệnh đề chia ở thì Quá khứ đơn (V2/ed)."
-    },
-    {
-      "id": "rec_pcont_8",
-      "type": "blank",
-      "prompt": "8. Công thức phối hợp thì với WHILE: was/were + V-ing + WHILE + [blank].",
-      "answers": ["was/were + V-ing", "was/were V-ing", "was were Ving"],
-      "explanation": "Sau while là hành động kéo dài (tiếp diễn): was/were + V-ing."
-    },
-    {
-      "id": "rec_pcont_9",
-      "type": "blank",
-      "prompt": "9. Dấu hiệu giờ cụ thể: [blank] + giờ + thời gian trong quá khứ (Ví dụ: at 12 o'clock last night).",
-      "answers": ["at"],
-      "explanation": "Giới từ 'at' đi với mốc giờ cụ thể."
-    },
-    {
-      "id": "rec_pcont_10",
-      "type": "blank",
-      "prompt": "10. Dấu hiệu thời điểm: [blank] + thời gian trong quá khứ (Ví dụ: at this time last month).",
-      "answers": ["at this time", "at this moment"],
-      "explanation": "at this time / at this moment trong quá khứ."
-    }
-  ]
+  "essay_prompt": {
+    "instruction": "Học sinh tự nhớ lại và trình bày toàn bộ lý thuyết Quá khứ tiếp diễn theo từng mục dưới đây vào phần bài làm. Bắt buộc viết rõ công thức, 3 cách dùng kèm ví dụ tự đặt dịch nghĩa, cấu trúc kết hợp When/While và dấu hiệu nhận biết.",
+    "questions": [
+      "<b>A. Công thức (Form):</b> Viết công thức 3 thể (+, -, ?) của thì Quá khứ tiếp diễn với was/were.",
+      "<b>B. 3 Cách sử dụng chính & Ví dụ:</b> Trình bày đầy đủ 3 cách dùng của thì QKTD (Thời điểm nhất định trong quá khứ, Hai hành động xảy ra đồng thời, Đang xảy ra thì bị xen vào). <i>BẮT BUỘC: Tự đặt 01 câu ví dụ bằng tiếng Anh kèm dịch nghĩa tiếng Việt cho mỗi cách dùng.</i>",
+      "<b>C. Cấu trúc phối thì với When và While:</b> Viết rõ 2 công thức kết hợp mệnh đề khi dùng 'WHEN' (hành động cắt ngang) và 'WHILE' (hai hành động song song).",
+      "<b>D. Dấu hiệu nhận biết:</b> Liệt kê các mốc thời gian đặc trưng (at + giờ + quá khứ, at this time...)."
+    ]
+  }
 }
