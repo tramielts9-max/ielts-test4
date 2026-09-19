@@ -1,0 +1,72 @@
+{
+  "tense_id": "present-perfect",
+  "tense_name": "THÌ HIỆN TẠI HOÀN THÀNH (PRESENT PERFECT)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "pp_formula",
+      "title": "1. Công Thức Thì Hiện Tại Hoàn Thành",
+      "formulas": {
+        "affirmative": "(+) S + have / has + V3/ed + O",
+        "negative": "(–) S + have / has + NOT + V3/ed + O (have not = haven't, has not = hasn't)",
+        "interrogative": "(?) Have / Has + S + V3/ed + O?"
+      },
+      "subject_rules": [
+        "He, She, It, Danh từ số ÍT ➔ đi với HAS (has not / hasn't)",
+        "I, You, We, They, Danh từ số NHIỀU ➔ đi với HAVE (have not / haven't)"
+      ]
+    },
+    {
+      "id": "pp_transform_rules",
+      "title": "2. Quy Trình Chuyển Đổi Khẳng Định ⬄ Câu Hỏi ⬄ Phủ Định",
+      "rules": [
+        "Từ Khẳng định sang Câu hỏi: Đảo trợ động từ 'have/has' lên trước chủ ngữ, giữ nguyên V3/ed (Ví dụ: She has worked ➔ Has she worked?).",
+        "Từ Khẳng định sang Phủ định: Thêm 'not' sau have/has, giữ nguyên V3/ed (Ví dụ: She has worked ➔ She has not worked).",
+        "Lưu ý trạng từ: Đổi 'already/before' trong câu khẳng định thành 'yet' ở cuối câu phủ định và câu hỏi nghi vấn (Ví dụ: You have visited Paris before ➔ You have not visited Paris yet)."
+      ]
+    },
+    {
+      "id": "pp_usages",
+      "title": "3. 4 Cách Sử Dụng Cốt Lõi Của Hiện Tại Hoàn Thành",
+      "usages": [
+        { "name": "1. Hành động đã xong nhưng không rõ thời gian", "desc": "Hành động đã hoàn tất trong quá khứ mà người nói không quan tâm hoặc không đề cập thời điểm cụ thể", "example": "I've eaten my breakfast. (Tôi đã ăn xong bữa sáng rồi)" },
+        { "name": "2. Hành động lặp đi lặp lại nhiều lần (QK ➔ HT)", "desc": "Hành động đã xảy ra nhiều lần từ quá khứ đến hiện tại và có thể tiếp tục lặp lại", "example": "I have read that book four times. (Tôi đã đọc cuốn sách đó 4 lần rồi)" },
+        { "name": "3. Kinh nghiệm, trải nghiệm (Hiện tại vẫn đúng)", "desc": "Diễn tả trải nghiệm từng làm hoặc chưa bao giờ làm điều gì tính tới hiện tại", "example": "I have always fixed this before. / I have never tried sushi." },
+        { "name": "4. Xảy ra trong quá khứ kéo dài & để lại kết quả ở hiện tại", "desc": "Hành động quá khứ để lại ảnh hưởng hoặc hậu quả trực tiếp thấy được ở hiện tại", "example": "I have lost my wallet. (Tôi làm mất ví rồi ➔ hệ quả: bây giờ không có tiền trả ăn sáng)" }
+      ]
+    },
+    {
+      "id": "pp_markers",
+      "title": "4. Dấu Hiệu Nhận Biết Thì Hiện Tại Hoàn Thành",
+      "rules": [
+        "just: vừa mới (đứng sau have/has)",
+        "already: đã... rồi (đứng sau have/has hoặc cuối câu khẳng định)",
+        "yet: chưa (đứng cuối câu phủ định '-' và câu hỏi '?')",
+        "recently / lately: dạo gần đây, mới đây",
+        "ever: đã từng (thường dùng trong câu hỏi hoặc so sánh nhất)",
+        "never: chưa bao giờ, chưa từng",
+        "since + mốc thời gian: kể từ khi (Ví dụ: since 2010, since last week, since I was a child)",
+        "for + khoảng thời gian: trong vòng (Ví dụ: for 3 years, for a long time, for ages)",
+        "so far / up to now / until now: cho đến tận bây giờ",
+        "n times / several times / many times: số lần lặp lại (once, twice, three times...)"
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Học sinh tự viết bài khảo lý thuyết tổng quan về THÌ HIỆN TẠI HOÀN THÀNH. AI sẽ đối chiếu với đáp án chuẩn để chấm điểm thang 10 và nhận xét chi tiết.",
+    "questions": [
+      "1. Hãy nêu công thức tổng quát của thì Hiện tại hoàn thành ở 3 thể: Khẳng định (+), Phủ định (-), Nghi vấn (?). Phân biệt rõ chủ ngữ nào đi với 'have', chủ ngữ nào đi với 'has'.",
+      "2. Nêu quy trình từng bước khi chuyển một câu khẳng định sang câu hỏi nghi vấn và câu phủ định (chú ý sự thay đổi của các từ như 'before/already' thành 'yet').",
+      "3. Trình bày đầy đủ 4 cách sử dụng chính của thì Hiện tại hoàn thành. Với mỗi cách dùng, hãy tự đặt 1 câu ví dụ tiếng Anh kèm dịch nghĩa tiếng Việt.",
+      "4. Liệt kê ít nhất 8 dấu hiệu nhận biết (trạng từ/liên từ) của thì Hiện tại hoàn thành và nêu rõ vị trí hoặc cách dùng đặc trưng của từng từ (như yet, already, since, for...)."
+    ]
+  }
+}
