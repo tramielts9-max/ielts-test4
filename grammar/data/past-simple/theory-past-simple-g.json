@@ -1,0 +1,108 @@
+{
+  "tense_id": "past-simple",
+  "tense_name": "PAST SIMPLE (THÌ QUÁ KHỨ ĐƠN)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "tobe_past",
+      "title": "1. DẠNG ĐỘNG TỪ TO BE (WAS / WERE)",
+      "formulas": {
+        "affirmative": "(+) S + was/were + O",
+        "negative": "(–) S + was/were + NOT + O",
+        "interrogative": "(?) Was/were + S + O?"
+      },
+      "subject_rules": [
+        "I, He, She, It, danh từ số ÍT ➔ was",
+        "You, We, They, danh từ số NHIỀU ➔ were",
+        "Phủ định: was not (wasn't) / were not (weren't)",
+        "Nghi vấn: Đảo Was/Were lên trước chủ ngữ. Ví dụ: 'She was at the party.' ➔ 'Was she at the party?'"
+      ]
+    },
+    {
+      "id": "action_verb_past",
+      "title": "2. DẠNG ĐỘNG TỪ THƯỜNG (V)",
+      "formulas": {
+        "affirmative": "(+) S + V2/ed + O",
+        "negative": "(–) S + did + NOT + V0 + O (Tất cả ngôi dùng did not / didn't + V nguyên mẫu)",
+        "interrogative": "(?) Did + S + V0 + O? (Did + tất cả các ngôi + V nguyên mẫu)"
+      },
+      "rules": [
+        "Quy trình chuyển câu khẳng định sang câu hỏi: Bước 1: Xác định V2/ed ➔ dùng trợ động từ 'did' | Bước 2: Đảo 'did' ra trước chủ ngữ | Bước 3: Đưa động từ chính về nguyên mẫu (V0).",
+        "Ví dụ: 'She worked hard every day.' ➔ 'Did she work hard every day?'",
+        "Ví dụ: 'They liked to play football.' ➔ 'Did they like to play football?'"
+      ],
+      "spelling_rules": [
+        {
+          "condition": "1. Động từ kết thúc bằng một phụ âm (trừ y)",
+          "rule": "Chỉ cần thêm -ed vào cuối động từ",
+          "examples": "walk ➔ walked, talk ➔ talked"
+        },
+        {
+          "condition": "2. Động từ kết thúc bằng -e",
+          "rule": "Chỉ cần thêm -d vào cuối động từ",
+          "examples": "like ➔ liked, move ➔ moved"
+        },
+        {
+          "condition": "3. Động từ kết thúc bằng nguyên âm + y",
+          "rule": "Giữ nguyên y và thêm -ed",
+          "examples": "play ➔ played, enjoy ➔ enjoyed"
+        },
+        {
+          "condition": "4. Động từ kết thúc bằng phụ âm + y",
+          "rule": "Đổi y thành i rồi thêm -ed",
+          "examples": "carry ➔ carried, study ➔ studied"
+        },
+        {
+          "condition": "5. Động từ một âm tiết kết thúc bằng một nguyên âm + một phụ âm",
+          "rule": "Gấp đôi phụ âm cuối rồi thêm -ed",
+          "examples": "stop ➔ stopped, plan ➔ planned"
+        },
+        {
+          "condition": "6. Động từ kết thúc bằng -c",
+          "rule": "Thêm -ked vào cuối động từ",
+          "examples": "panic ➔ panicked, mimic ➔ mimicked"
+        }
+      ]
+    },
+    {
+      "id": "usage_past_simple",
+      "title": "3. CÁCH SỬ DỤNG (USAGE)",
+      "usages": [
+        {
+          "name": "Đã xong, không liên quan đến hiện tại",
+          "desc": "Hành động đã xảy ra và kết thúc hoàn toàn trong quá khứ.",
+          "example": "I went to Da Lat last year. (Tôi đã đi Đà Lạt vào năm ngoái)"
+        },
+        {
+          "name": "Thói quen trong quá khứ",
+          "desc": "Hành động hoặc tình huống diễn ra thường xuyên trong quá khứ nhưng nay không còn nữa.",
+          "example": "When I was young, I always went to school by myself."
+        },
+        {
+          "name": "Chuỗi hành động liên tiếp trong quá khứ",
+          "desc": "Các hành động xảy ra nối tiếp nhau theo trình tự thời gian.",
+          "example": "I went to a restaurant, sat down, and called the waiter."
+        }
+      ]
+    },
+    {
+      "id": "time_markers_past",
+      "title": "4. DẤU HIỆU NHẬN BIẾT",
+      "markers": [
+        { "word": "Khoảng thời gian + ago", "percent": "100%", "vn": "cách đây... (ví dụ: 2 years ago, 3 hours ago)" },
+        { "word": "In + năm trong quá khứ", "percent": "100%", "vn": "vào năm... (ví dụ: In 1999, In 2010)" },
+        { "word": "Yesterday", "percent": "100%", "vn": "ngày hôm qua (yesterday morning, yesterday afternoon...)" },
+        { "word": "Last night / week / month / year...", "percent": "100%", "vn": "tối qua, tuần trước, tháng trước..." },
+        { "word": "When I was a child / young...", "percent": "100%", "vn": "khi tôi còn nhỏ / khi còn trẻ..." }
+      ]
+    }
+  ]
+}
