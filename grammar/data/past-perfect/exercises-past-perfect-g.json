@@ -1,0 +1,468 @@
+{
+  "tense_id": "past-perfect",
+  "title": "BÀI TẬP THÌ QUÁ KHỨ HOÀN THÀNH",
+  "exercise_groups": [
+    {
+      "group_id": "past_perf_affirmative_10",
+      "group_title": "1. Dạng Khẳng Định (+) S + had + V3/ed (10 Câu)",
+      "instruction": "Chia động từ trong ngoặc ở thì Quá khứ hoàn thành:",
+      "questions": [
+        { "id": "past_p_af_1", "type": "blank", "prompt": "The guest (leave) [blank] the party before the cake was served.", "answers": ["had left"], "explanation": "V3 của 'leave' là 'left' ➔ had left." },
+        { "id": "past_p_af_2", "type": "blank", "prompt": "She (already read) [blank] the book before the teacher assigned it in class.", "answers": ["had already read"], "explanation": "Already đứng giữa had và V3; V3 của 'read' viết là 'read' ➔ had already read." },
+        { "id": "past_p_af_3", "type": "blank", "prompt": "The athlete (train) [blank] for months before the championship started.", "answers": ["had trained"], "explanation": "Động từ có quy tắc thêm -ed ➔ had trained." },
+        { "id": "past_p_af_4", "type": "blank", "prompt": "They (finish) [blank] their homework before their friends arrived to play.", "answers": ["had finished"], "explanation": "Finish có quy tắc ➔ had finished." },
+        { "id": "past_p_af_5", "type": "blank", "prompt": "He (visit) [blank] that museum before it was renovated.", "answers": ["had visited"], "explanation": "Visit có quy tắc ➔ had visited." },
+        { "id": "past_p_af_6", "type": "blank", "prompt": "The company (achieve) [blank] significant growth before the merger was announced.", "answers": ["had achieved"], "explanation": "Achieve kết thúc bằng -e chỉ thêm -d ➔ had achieved." },
+        { "id": "past_p_af_7", "type": "blank", "prompt": "The child (fall asleep) [blank] before the movie ended.", "answers": ["had fallen asleep"], "explanation": "V3 của 'fall' là 'fallen' ➔ had fallen asleep." },
+        { "id": "past_p_af_8", "type": "blank", "prompt": "The students (complete) [blank] their projects before the competition began.", "answers": ["had completed"], "explanation": "Complete kết thúc bằng -e chỉ thêm -d ➔ had completed." },
+        { "id": "past_p_af_9", "type": "blank", "prompt": "The manager (discuss) [blank] the plan with the team before presenting it to the board.", "answers": ["had discussed"], "explanation": "Discuss có quy tắc thêm -ed ➔ had discussed." },
+        { "id": "past_p_af_10", "type": "blank", "prompt": "The traveler (see) [blank] many famous landmarks before arriving in this city.", "answers": ["had seen"], "explanation": "V3 của 'see' là 'seen' ➔ had seen." }
+      ]
+    },
+    {
+      "group_id": "past_perf_negative_10",
+      "group_title": "2. Dạng Phủ Định (–) S + had + NOT + V3/ed (10 Câu)",
+      "instruction": "Chia động từ trong ngoặc ở thể phủ định của thì Quá khứ hoàn thành:",
+      "questions": [
+        { "id": "past_p_neg_1", "type": "blank", "prompt": "The guest (not leave) [blank] the venue before the speech began.", "answers": ["had not left", "hadn't left"], "explanation": "Phủ định: had not left / hadn't left." },
+        { "id": "past_p_neg_2", "type": "blank", "prompt": "She (not complete) [blank] her assignment before the submission deadline passed.", "answers": ["had not completed", "hadn't completed"], "explanation": "Phủ định: had not completed / hadn't completed." },
+        { "id": "past_p_neg_3", "type": "blank", "prompt": "The athlete (not recover) [blank] from his injury before the tournament started.", "answers": ["had not recovered", "hadn't recovered"], "explanation": "Phủ định: had not recovered / hadn't recovered." },
+        { "id": "past_p_neg_4", "type": "blank", "prompt": "They (not prepare) [blank] the decorations before the event coordinator arrived.", "answers": ["had not prepared", "hadn't prepared"], "explanation": "Phủ định: had not prepared / hadn't prepared." },
+        { "id": "past_p_neg_5", "type": "blank", "prompt": "The family (not move) [blank] to their new house before the school year began.", "answers": ["had not moved", "hadn't moved"], "explanation": "Phủ định: had not moved / hadn't moved." },
+        { "id": "past_p_neg_6", "type": "blank", "prompt": "The project (not start) [blank] before the funding was approved.", "answers": ["had not started", "hadn't started"], "explanation": "Phủ định: had not started / hadn't started." },
+        { "id": "past_p_neg_7", "type": "blank", "prompt": "He (not try) [blank] sushi before visiting Japan.", "answers": ["had not tried", "hadn't tried"], "explanation": "Phủ định: had not tried / hadn't tried (try đổi y thành i + ed)." },
+        { "id": "past_p_neg_8", "type": "blank", "prompt": "The students (not understand) [blank] the concept before the teacher explained it again.", "answers": ["had not understood", "hadn't understood"], "explanation": "V3 của 'understand' là 'understood' ➔ had not understood." },
+        { "id": "past_p_neg_9", "type": "blank", "prompt": "The pilot (not land) [blank] the plane before the storm intensified.", "answers": ["had not landed", "hadn't landed"], "explanation": "Phủ định: had not landed / hadn't landed." },
+        { "id": "past_p_neg_10", "type": "blank", "prompt": "The cat (not eat) [blank] all the food before the owner returned.", "answers": ["had not eaten", "hadn't eaten"], "explanation": "V3 của 'eat' là 'eaten' ➔ had not eaten / hadn't eaten." }
+      ]
+    },
+    {
+      "group_id": "past_perf_questions_10",
+      "group_title": "3. Dạng Câu Hỏi (?) Had + S + V3/ed? (10 Câu)",
+      "instruction": "Điền dạng đúng của động từ trong ngoặc để hoàn thành câu hỏi:",
+      "questions": [
+        { "id": "past_p_q_1", "type": "blank", "prompt": "Had the guest (arrive) [blank] before the host welcomed everyone?", "answers": ["arrived"], "explanation": "Arrive có quy tắc ➔ arrived." },
+        { "id": "past_p_q_2", "type": "blank", "prompt": "Had she (already finish) [blank] her report before the manager requested it?", "answers": ["already finished"], "explanation": "Already đứng giữa ➔ already finished." },
+        { "id": "past_p_q_3", "type": "blank", "prompt": "Had the athlete (win) [blank] a medal before participating in this competition?", "answers": ["won"], "explanation": "V3 của 'win' là 'won'." },
+        { "id": "past_p_q_4", "type": "blank", "prompt": "Had they (prepare) [blank] the meal before the guests arrived?", "answers": ["prepared"], "explanation": "Prepare có quy tắc ➔ prepared." },
+        { "id": "past_p_q_5", "type": "blank", "prompt": "Had the company (achieve) [blank] its goals before the fiscal year ended?", "answers": ["achieved"], "explanation": "Achieve có quy tắc ➔ achieved." },
+        { "id": "past_p_q_6", "type": "blank", "prompt": "Had the teacher (grade) [blank] all the papers before the meeting began?", "answers": ["graded"], "explanation": "Grade có quy tắc ➔ graded." },
+        { "id": "past_p_q_7", "type": "blank", "prompt": "Had the child (fall asleep) [blank] before the parents turned off the lights?", "answers": ["fallen asleep"], "explanation": "V3 của 'fall' là 'fallen' ➔ fallen asleep." },
+        { "id": "past_p_q_8", "type": "blank", "prompt": "Had the manager (explain) [blank] the strategy before the team implemented it?", "answers": ["explained"], "explanation": "Explain có quy tắc ➔ explained." },
+        { "id": "past_p_q_9", "type": "blank", "prompt": "Had the artist (complete) [blank] the painting before the exhibition?", "answers": ["completed"], "explanation": "Complete có quy tắc ➔ completed." },
+        { "id": "past_p_q_10", "type": "blank", "prompt": "Had the family (travel) [blank] to many countries before they settled down?", "answers": ["traveled", "travelled"], "explanation": "Traveled hoặc travelled." }
+      ]
+    },
+    {
+      "group_id": "past_perf_rewrite_drill",
+      "group_title": "4. Viết Lại Câu: Chuyển Sang Câu Hỏi & Câu Phủ Định (+ ➔ ? / -)",
+      "instruction": "Chuyển câu khẳng định sang câu hỏi và phủ định tương ứng:",
+      "questions": [
+        {
+          "id": "past_p_rw_1a",
+          "type": "rewrite",
+          "prompt": "She had just submitted her report. (Chuyển sang câu hỏi)",
+          "targetStart": "Had ",
+          "answers": ["she just submitted her report?", "she just submitted her report", "she submitted her report yet?", "she submitted her report yet"],
+          "explanation": "Đảo 'Had' lên trước chủ ngữ: Had she just submitted her report?"
+        },
+        {
+          "id": "past_p_rw_1b",
+          "type": "rewrite",
+          "prompt": "She had just submitted her report. (Chuyển sang phủ định)",
+          "targetStart": "She ",
+          "answers": [
+            "had not submitted her report yet.",
+            "had not submitted her report yet",
+            "hadn't submitted her report yet.",
+            "hadn't submitted her report yet",
+            "had not just submitted her report."
+          ],
+          "explanation": "Thêm 'not' sau had và đổi sang 'yet' ở cuối: She had not submitted her report yet."
+        },
+        {
+          "id": "past_p_rw_2a",
+          "type": "rewrite",
+          "prompt": "They had already finished their homework. (Chuyển sang câu hỏi)",
+          "targetStart": "Had ",
+          "answers": ["they already finished their homework?", "they finished their homework yet?", "they finished their homework yet"],
+          "explanation": "Đảo 'Had' lên đầu câu: Had they already finished their homework?"
+        },
+        {
+          "id": "past_p_rw_2b",
+          "type": "rewrite",
+          "prompt": "They had already finished their homework. (Chuyển sang phủ định)",
+          "targetStart": "They ",
+          "answers": [
+            "had not finished their homework yet.",
+            "had not finished their homework yet",
+            "hadn't finished their homework yet.",
+            "hadn't finished their homework yet"
+          ],
+          "explanation": "Phủ định đổi already thành yet: They had not finished their homework yet."
+        },
+        {
+          "id": "past_p_rw_3a",
+          "type": "rewrite",
+          "prompt": "We had recently moved to a new apartment. (Chuyển sang câu hỏi)",
+          "targetStart": "Had ",
+          "answers": ["we recently moved to a new apartment?", "we recently moved to a new apartment"],
+          "explanation": "Đảo 'Had' lên đầu câu: Had we recently moved to a new apartment?"
+        },
+        {
+          "id": "past_p_rw_3b",
+          "type": "rewrite",
+          "prompt": "We had recently moved to a new apartment. (Chuyển sang phủ định)",
+          "targetStart": "We ",
+          "answers": [
+            "had not moved to a new apartment recently.",
+            "had not moved to a new apartment recently",
+            "hadn't moved to a new apartment recently.",
+            "hadn't moved to a new apartment recently",
+            "had not recently moved to a new apartment."
+          ],
+          "explanation": "Thêm 'not' sau had: We had not moved to a new apartment recently."
+        },
+        {
+          "id": "past_p_rw_4a",
+          "type": "rewrite",
+          "prompt": "I had prepared breakfast for everyone. (Chuyển sang câu hỏi)",
+          "targetStart": "Had ",
+          "answers": ["I prepared breakfast for everyone?", "i prepared breakfast for everyone?"],
+          "explanation": "Đảo 'Had' lên trước 'I': Had I prepared breakfast for everyone?"
+        },
+        {
+          "id": "past_p_rw_4b",
+          "type": "rewrite",
+          "prompt": "I had prepared breakfast for everyone. (Chuyển sang phủ định)",
+          "targetStart": "I ",
+          "answers": [
+            "had not prepared breakfast for everyone.",
+            "had not prepared breakfast for everyone",
+            "hadn't prepared breakfast for everyone.",
+            "hadn't prepared breakfast for everyone"
+          ],
+          "explanation": "Thêm 'not' sau had: I had not prepared breakfast for everyone."
+        },
+        {
+          "id": "past_p_rw_5a",
+          "type": "rewrite",
+          "prompt": "He had repaired the car before we arrived. (Chuyển sang câu hỏi)",
+          "targetStart": "Had ",
+          "answers": ["he repaired the car before we arrived?", "he repaired the car before we arrived"],
+          "explanation": "Đảo 'Had' lên trước 'he': Had he repaired the car before we arrived?"
+        },
+        {
+          "id": "past_p_rw_5b",
+          "type": "rewrite",
+          "prompt": "He had repaired the car before we arrived. (Chuyển sang phủ định)",
+          "targetStart": "He ",
+          "answers": [
+            "had not repaired the car before we arrived.",
+            "had not repaired the car before we arrived",
+            "hadn't repaired the car before we arrived.",
+            "hadn't repaired the car before we arrived"
+          ],
+          "explanation": "Thêm 'not' sau had: He had not repaired the car before we arrived."
+        }
+      ]
+    },
+    {
+      "group_id": "past_perf_categorize_10",
+      "group_title": "5. Phân Loại Câu Theo 2 Cách Sử Dụng",
+      "instruction": "Chọn nhóm đúng: A (Đã xong trước một thời điểm trong quá khứ) hoặc B (Đã xảy ra trước một hành động khác trong quá khứ):",
+      "questions": [
+        {
+          "id": "past_p_cat_1",
+          "type": "choice",
+          "prompt": "1. 'I had finished my assignment by 10 p.m.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 0,
+          "explanation": "Có mốc thời gian cụ thể 'by 10 p.m.' ➔ Đã xong trước một thời điểm trong quá khứ."
+        },
+        {
+          "id": "past_p_cat_2",
+          "type": "choice",
+          "prompt": "2. 'They had already left before we arrived.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rời đi trước khi hành động khác xảy ra ('we arrived') ➔ Đã xảy ra trước một hành động khác."
+        },
+        {
+          "id": "past_p_cat_3",
+          "type": "choice",
+          "prompt": "3. 'She had packed her suitcase before the taxi came.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Đóng vali xong trước khi xe taxi tới ('taxi came') ➔ Xảy ra trước hành động khác."
+        },
+        {
+          "id": "past_p_cat_4",
+          "type": "choice",
+          "prompt": "4. 'He had never visited a foreign country before that trip.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 0,
+          "explanation": "'before that trip' là mốc thời gian/sự kiện ➔ Đã xong trước một thời điểm."
+        },
+        {
+          "id": "past_p_cat_5",
+          "type": "choice",
+          "prompt": "5. 'We had eaten lunch by the time the guests arrived.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Ăn trưa xong trước khi khách đến ('guests arrived') ➔ Xảy ra trước hành động khác."
+        },
+        {
+          "id": "past_p_cat_6",
+          "type": "choice",
+          "prompt": "6. 'The movie had ended before we reached the theater.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Phim kết thúc trước khi chúng tôi đến rạp ➔ Xảy ra trước hành động khác."
+        },
+        {
+          "id": "past_p_cat_7",
+          "type": "choice",
+          "prompt": "7. 'She had cleaned the room before her parents came home.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Dọn phòng trước khi bố mẹ về ➔ Xảy ra trước hành động khác."
+        },
+        {
+          "id": "past_p_cat_8",
+          "type": "choice",
+          "prompt": "8. 'I had read the letter before he explained it.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Đọc thư trước khi anh ấy giải thích ➔ Xảy ra trước hành động khác."
+        },
+        {
+          "id": "past_p_cat_9",
+          "type": "choice",
+          "prompt": "9. 'They had completed the project by the deadline.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 0,
+          "explanation": "'by the deadline' là mốc thời gian hạn chót ➔ Đã xong trước một thời điểm trong quá khứ."
+        },
+        {
+          "id": "past_p_cat_10",
+          "type": "choice",
+          "prompt": "10. 'He had studied Spanish before moving to Mexico.'",
+          "options": [
+            "A. Đã xong trước một thời điểm trong quá khứ",
+            "B. Đã xảy ra trước một hành động khác trong quá khứ"
+          ],
+          "correctIndex": 1,
+          "explanation": "Học tiếng Tây Ban Nha trước khi chuyển đi Mexico ➔ Xảy ra trước hành động khác."
+        }
+      ]
+    },
+    {
+      "group_id": "past_perf_time_markers_10",
+      "group_title": "6. Nhận Diện Dấu Hiệu Quá Khứ Hoàn Thành (10 Câu)",
+      "instruction": "Chọn dấu hiệu thời gian / liên từ nhận biết trong câu:",
+      "questions": [
+        {
+          "id": "past_p_tm_1",
+          "type": "choice",
+          "prompt": "'I had finished my homework before the teacher checked it.' ➔ Dấu hiệu là:",
+          "options": ["before the teacher checked it", "finished my homework", "I had"],
+          "correctIndex": 0,
+          "explanation": "'before + mệnh đề QKĐ' là dấu hiệu của Quá khứ hoàn thành."
+        },
+        {
+          "id": "past_p_tm_2",
+          "type": "choice",
+          "prompt": "'She had never seen a rainbow before that day.' ➔ Dấu hiệu là:",
+          "options": ["before that day", "seen a rainbow", "She had"],
+          "correctIndex": 0,
+          "explanation": "'before that day' là mốc thời gian trước đó."
+        },
+        {
+          "id": "past_p_tm_3",
+          "type": "choice",
+          "prompt": "'They had packed their bags by the time the bus arrived.' ➔ Dấu hiệu là:",
+          "options": ["by the time the bus arrived", "packed their bags", "They had"],
+          "correctIndex": 0,
+          "explanation": "'by the time + mệnh đề QKĐ' là dấu hiệu điển hình."
+        },
+        {
+          "id": "past_p_tm_4",
+          "type": "choice",
+          "prompt": "'He had called his friend before the meeting started.' ➔ Dấu hiệu là:",
+          "options": ["before the meeting started", "called his friend", "the meeting"],
+          "correctIndex": 0,
+          "explanation": "'before the meeting started' là mệnh đề quá khứ đứng sau before."
+        },
+        {
+          "id": "past_p_tm_5",
+          "type": "choice",
+          "prompt": "'She had written the essay by the time the deadline passed.' ➔ Dấu hiệu là:",
+          "options": ["by the time the deadline passed", "written the essay", "the deadline"],
+          "correctIndex": 0,
+          "explanation": "'by the time + mệnh đề QKĐ' diễn tả mốc trước khi thời hạn qua đi."
+        }
+      ]
+    },
+    {
+      "group_id": "past_perf_sentence_ordering_10",
+      "group_title": "7. Sắp Xếp Từ Thành Câu Hoàn Chỉnh (10 Câu)",
+      "instruction": "Sắp xếp các từ cho sẵn thành câu hoàn chỉnh đúng thì Quá khứ hoàn thành:",
+      "questions": [
+        {
+          "id": "past_p_so_1",
+          "type": "rewrite",
+          "prompt": "She / write / the report / before / the meeting / start.",
+          "targetStart": "",
+          "answers": [
+            "She had written the report before the meeting started.",
+            "She had written the report before the meeting started",
+            "Before the meeting started, she had written the report.",
+            "Before the meeting started she had written the report"
+          ],
+          "explanation": "Cấu trúc: She had written the report before the meeting started."
+        },
+        {
+          "id": "past_p_so_2",
+          "type": "rewrite",
+          "prompt": "They / finish / dinner / by the time / their friends / arrive.",
+          "targetStart": "",
+          "answers": [
+            "They had finished dinner by the time their friends arrived.",
+            "They had finished dinner by the time their friends arrived",
+            "By the time their friends arrived, they had finished dinner.",
+            "By the time their friends arrived they had finished dinner"
+          ],
+          "explanation": "Cấu trúc: They had finished dinner by the time their friends arrived."
+        },
+        {
+          "id": "past_p_so_3",
+          "type": "rewrite",
+          "prompt": "He / never / play / that game / before / yesterday.",
+          "targetStart": "",
+          "answers": [
+            "He had never played that game before yesterday.",
+            "He had never played that game before yesterday"
+          ],
+          "explanation": "Cấu trúc: He had never played that game before yesterday."
+        },
+        {
+          "id": "past_p_so_4",
+          "type": "rewrite",
+          "prompt": "We / clean / the house / before / our guests / come.",
+          "targetStart": "",
+          "answers": [
+            "We had cleaned the house before our guests came.",
+            "We had cleaned the house before our guests came",
+            "Before our guests came, we had cleaned the house.",
+            "Before our guests came we had cleaned the house"
+          ],
+          "explanation": "Cấu trúc: We had cleaned the house before our guests came."
+        },
+        {
+          "id": "past_p_so_5",
+          "type": "rewrite",
+          "prompt": "I / read / the book / before / it / become / famous.",
+          "targetStart": "",
+          "answers": [
+            "I had read the book before it became famous.",
+            "I had read the book before it became famous",
+            "Before it became famous, I had read the book.",
+            "Before it became famous I had read the book"
+          ],
+          "explanation": "Cấu trúc: I had read the book before it became famous."
+        },
+        {
+          "id": "past_p_so_6",
+          "type": "rewrite",
+          "prompt": "She / pack / her luggage / by the time / the taxi / arrive.",
+          "targetStart": "",
+          "answers": [
+            "She had packed her luggage by the time the taxi arrived.",
+            "She had packed her luggage by the time the taxi arrived",
+            "By the time the taxi arrived, she had packed her luggage.",
+            "By the time the taxi arrived she had packed her luggage"
+          ],
+          "explanation": "Cấu trúc: She had packed her luggage by the time the taxi arrived."
+        },
+        {
+          "id": "past_p_so_7",
+          "type": "rewrite",
+          "prompt": "He / study / English / before / he / move / to London.",
+          "targetStart": "",
+          "answers": [
+            "He had studied English before he moved to London.",
+            "He had studied English before he moved to London",
+            "Before he moved to London, he had studied English.",
+            "Before he moved to London he had studied English"
+          ],
+          "explanation": "Cấu trúc: He had studied English before he moved to London."
+        },
+        {
+          "id": "past_p_so_8",
+          "type": "rewrite",
+          "prompt": "We / never / hear / that story / before / last night.",
+          "targetStart": "",
+          "answers": [
+            "We had never heard that story before last night.",
+            "We had never heard that story before last night"
+          ],
+          "explanation": "Cấu trúc: We had never heard that story before last night."
+        },
+        {
+          "id": "past_p_so_9",
+          "type": "rewrite",
+          "prompt": "They / already / leave / before / we / get / to the party.",
+          "targetStart": "",
+          "answers": [
+            "They had already left before we got to the party.",
+            "They had already left before we got to the party",
+            "Before we got to the party, they had already left.",
+            "Before we got to the party they had already left"
+          ],
+          "explanation": "Cấu trúc: They had already left before we got to the party."
+        },
+        {
+          "id": "past_p_so_10",
+          "type": "rewrite",
+          "prompt": "I / finish / the assignment / before / the teacher / ask / for it.",
+          "targetStart": "",
+          "answers": [
+            "I had finished the assignment before the teacher asked for it.",
+            "I had finished the assignment before the teacher asked for it",
+            "Before the teacher asked for it, I had finished the assignment.",
+            "Before the teacher asked for it I had finished the assignment"
+          ],
+          "explanation": "Cấu trúc: I had finished the assignment before the teacher asked for it."
+        }
+      ]
+    }
+  ]
+}
