@@ -54,41 +54,81 @@
       ]
     }
   ],
-  "theory_recall": [
+"theory_recall": [
     {
       "id": "rec_pcont_1",
       "type": "blank",
-      "prompt": "Công thức khẳng định Quá khứ tiếp diễn: (+) S + [blank] + V-ing.",
-      "answers": ["was/were", "was, were", "was were"],
+      "prompt": "1. Công thức khẳng định QKTD: (+) S + [blank] + [blank].",
+      "answers": ["was/were, V-ing", "was, were, Ving", "was were, V-ing"],
       "explanation": "S + was/were + V-ing."
     },
     {
       "id": "rec_pcont_2",
       "type": "blank",
-      "prompt": "Hành động đang diễn ra (chia QKTD) thì một hành động ngắn khác xen vào chia thì [blank].",
-      "answers": ["quá khứ đơn", "qkđ", "past simple"],
-      "explanation": "Cấu trúc: was/were + V-ing WHEN + V2/ed."
+      "prompt": "2. Công thức phủ định QKTD: (–) S + [blank] + NOT + [blank].",
+      "answers": ["was/were, V-ing", "was, were, Ving"],
+      "explanation": "S + was/were + not + V-ing."
     },
     {
       "id": "rec_pcont_3",
       "type": "blank",
-      "prompt": "Mệnh đề hành động xen vào (ngắn) thường đứng sau liên từ [blank].",
-      "answers": ["when"],
-      "explanation": "When + S + V2/ed (hành động cắt ngang)."
+      "prompt": "3. Công thức nghi vấn QKTD: (?) [blank] + S + [blank]?",
+      "answers": ["Was/Were, V-ing", "was/were, V-ing", "was, were, Ving"],
+      "explanation": "Was/Were + S + V-ing?"
     },
     {
       "id": "rec_pcont_4",
       "type": "blank",
-      "prompt": "Hai hành động diễn ra song song cùng lúc trong quá khứ thường dùng liên từ [blank].",
-      "answers": ["while"],
-      "explanation": "S1 + was/were V-ing WHILE S2 + was/were V-ing."
+      "prompt": "4. Cách dùng 1: Diễn tả hành động đang xảy ra tại một [blank] trong quá khứ (Ví dụ: At 9:00 pm yesterday, we were watching Avenger).",
+      "answers": ["thời điểm nhất định", "thời điểm xác định", "mốc thời gian cụ thể", "thoi diem nhat dinh"],
+      "explanation": "Xảy ra tại một thời điểm nhất định/mốc giờ cụ thể trong quá khứ."
     },
     {
       "id": "rec_pcont_5",
       "type": "blank",
-      "prompt": "Cấu trúc dấu hiệu giờ cụ thể: at + [blank] + thời gian quá khứ (Ví dụ: at 8 PM last night).",
-      "answers": ["giờ", "mốc giờ", "giờ cụ thể"],
-      "explanation": "At + mốc giờ + thời gian trong quá khứ."
+      "prompt": "5. Cách dùng 2: Diễn tả hai hay nhiều hành động xảy ra [blank] trong quá khứ (Ví dụ: I was playing PUBG while my brother was doing homework).",
+      "answers": ["đồng thời", "song song", "xảy ra đồng thời", "dong thoi"],
+      "explanation": "Xảy ra đồng thời/song song cùng lúc (thường dùng liên từ 'while')."
+    },
+    {
+      "id": "rec_pcont_6",
+      "type": "blank",
+      "prompt": "6. Cách dùng 3: Diễn tả một hành động [blank] thì một hành động khác [blank] (Ví dụ: I was reading Harry Potter when he knocked).",
+      "answers": [
+        "đang xảy ra, xen vào",
+        "đang diễn ra, cắt ngang",
+        "đang xảy ra, cắt ngang",
+        "dang xay ra, xen vao"
+      ],
+      "explanation": "Hành động đang xảy ra chia QKTD (was/were Ving), hành động xen vào chia QKĐ (V2/ed)."
+    },
+    {
+      "id": "rec_pcont_7",
+      "type": "blank",
+      "prompt": "7. Công thức phối hợp thì với WHEN: was/were + V-ing (hành động đang xảy ra) + WHEN + [blank] (hành động xen vào).",
+      "answers": ["V2/ed", "V2", "quá khứ đơn", "S + V2/ed"],
+      "explanation": "Sau when là mệnh đề chia ở thì Quá khứ đơn (V2/ed)."
+    },
+    {
+      "id": "rec_pcont_8",
+      "type": "blank",
+      "prompt": "8. Công thức phối hợp thì với WHILE: was/were + V-ing + WHILE + [blank].",
+      "answers": ["was/were + V-ing", "was/were V-ing", "was were Ving"],
+      "explanation": "Sau while là hành động kéo dài (tiếp diễn): was/were + V-ing."
+    },
+    {
+      "id": "rec_pcont_9",
+      "type": "blank",
+      "prompt": "9. Dấu hiệu giờ cụ thể: [blank] + giờ + thời gian trong quá khứ (Ví dụ: at 12 o'clock last night).",
+      "answers": ["at"],
+      "explanation": "Giới từ 'at' đi với mốc giờ cụ thể."
+    },
+    {
+      "id": "rec_pcont_10",
+      "type": "blank",
+      "prompt": "10. Dấu hiệu thời điểm: [blank] + thời gian trong quá khứ (Ví dụ: at this time last month).",
+      "answers": ["at this time", "at this moment"],
+      "explanation": "at this time / at this moment trong quá khứ."
     }
   ]
 }
