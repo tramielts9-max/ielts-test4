@@ -2,190 +2,84 @@
   "tense_id": "present-simple",
   "tense_name": "THÌ HIỆN TẠI ĐƠN (SIMPLE PRESENT)",
   "word_symbols": [
-    { "symbol": "S", "meaning": "Chủ ngữ (Subject)", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
-    { "symbol": "O", "meaning": "Tân ngữ (Object)", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
-    { "symbol": "N, n", "meaning": "Danh từ (Noun)", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
-    { "symbol": "adj", "meaning": "Tính từ (Adjective)", "definition": "Mô tả đặc điểm danh từ", "example": "A red car - Chiếc xe màu đỏ" },
-    { "symbol": "V, v", "meaning": "Động từ (Verb)", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
-    { "symbol": "adv", "meaning": "Trạng từ (Adverb)", "definition": "Mô tả động từ, tính từ hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
-    { "symbol": "prep", "meaning": "Giới từ (Preposition)", "definition": "Chỉ nơi chốn, thời gian, cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
   ],
   "sections": [
     {
       "id": "ps_tobe",
-      "title": "1. Động Từ To Be (Am / Is / Are)",
+      "title": "1. Dạng Động Từ To Be (Am / Is / Are)",
       "formulas": {
-        "affirmative": "(+) S + am / is / are + O",
-        "negative": "(–) S + am / is / are + NOT + O",
-        "interrogative": "(?) Am / Is / Are + S + O?"
+        "affirmative": "(+) S + am/is/are + O",
+        "negative": "(–) S + am/is/are + NOT + O",
+        "interrogative": "(?) Am/Is/Are + S + O?"
       },
       "subject_rules": [
-        "I ➔ đi với AM",
-        "He, She, It, Danh từ số ÍT ➔ đi với IS",
-        "You, We, They, Danh từ số NHIỀU ➔ đi với ARE"
+        "I ➔ am",
+        "He, She, It, Danh từ số ít (ÍT) ➔ is",
+        "You, We, They, Danh từ số nhiều (NHIỀU) ➔ are"
       ]
     },
     {
-      "id": "ps_verbs",
-      "title": "2. Động Từ Thường (Action Verbs)",
+      "id": "ps_verb",
+      "title": "2. Dạng Động Từ Thường (Action Verbs)",
       "formulas": {
         "affirmative": "(+) S + V(s/es) + O",
-        "negative": "(–) S + do / does + NOT + V0 + O",
-        "interrogative": "(?) Do / Does + S + V0 + O?"
+        "negative": "(–) S + do/does + NOT + V0 + O",
+        "interrogative": "(?) Do/does + S + V0 + O?"
       },
       "subject_rules": [
-        "He, She, It, Danh từ số ÍT ➔ đi với V(s/es) | Mượn DOES trong phủ định & nghi vấn",
-        "I, You, We, They, Danh từ số NHIỀU ➔ đi với V nguyên mẫu (V0) | Mượn DO trong phủ định & nghi vấn"
-      ],
+        "He, She, It, Danh từ số ít (ÍT) ➔ V(s/es)",
+        "I, You, We, They, Danh từ số nhiều (NHIỀU) ➔ V nguyên mẫu (V0)"
+      ]
+    },
+    {
+      "id": "ps_spelling",
+      "title": "3. Quy Tắc Thêm s / es Vào Sau Động Từ",
       "spelling_rules": [
-        { "condition": "Động từ kết thúc bằng S, X, Z, CH, SH, O", "rule": "Thêm đuôi '-es'", "examples": "pass ➔ passes, fix ➔ fixes, buzz ➔ buzzes, watch ➔ watches, push ➔ pushes, go ➔ goes, do ➔ does" },
-        { "condition": "Động từ kết thúc bằng 'Phụ âm + Y'", "rule": "Đổi 'y' thành '-ies'", "examples": "carry ➔ carries, study ➔ studies, marry ➔ marries, worry ➔ worries, try ➔ tries" },
-        { "condition": "Động từ kết thúc bằng 'Nguyên âm + Y'", "rule": "Giữ nguyên 'y' và thêm '-s'", "examples": "play ➔ plays, enjoy ➔ enjoys, buy ➔ buys, say ➔ says, stay ➔ stays" },
-        { "condition": "Động từ bất quy tắc", "rule": "Biến đổi đặc biệt", "examples": "have ➔ has" }
+        { "condition": "Động từ kết thúc bằng S, X, Z, CH, SH, O", "rule": "Thêm -es", "examples": "pass ➔ passes, fix ➔ fixes, watch ➔ watches, wash ➔ washes, go ➔ goes, do ➔ does" },
+        { "condition": "Động từ kết thúc bằng 'Phụ âm + Y'", "rule": "Đổi Y thành IES", "examples": "carry ➔ carries, study ➔ studies, marry ➔ marries, worry ➔ worries, try ➔ tries" },
+        { "condition": "Động từ kết thúc bằng 'Nguyên âm (u,e,o,a,i) + Y'", "rule": "Giữ nguyên Y và thêm S", "examples": "play ➔ plays, enjoy ➔ enjoys, buy ➔ buys, say ➔ says, stay ➔ stays" },
+        { "condition": "Động từ bất quy tắc đặc biệt", "rule": "Biến đổi riêng", "examples": "have ➔ has; be ➔ is/am/are" }
       ]
     },
     {
       "id": "ps_usages",
-      "title": "3. Cách Sử Dụng Thì Hiện Tại Đơn",
+      "title": "4. Các Cách Sử Dụng Thì Hiện Tại Đơn",
       "usages": [
-        { "name": "Thói quen (Habit)", "desc": "Hành động lặp đi lặp lại hàng ngày", "example": "I play football everyday." },
-        { "name": "Chân lý (General truth)", "desc": "Sự thật hiển nhiên, quy luật tự nhiên", "example": "Water boils at 100°C." },
-        { "name": "Lịch trình cố định (Scheduled event)", "desc": "Thời gian biểu tàu xe, máy bay, lịch học", "example": "The train leaves at 9:00 this morning." }
+        { "name": "Thói quen (Habit)", "desc": "Hành động lặp đi lặp lại thường xuyên ở hiện tại", "example": "I play football everyday." },
+        { "name": "Chân lý (General truth / Fact)", "desc": "Sự thật hiển nhiên, quy luật tự nhiên, khoa học", "example": "Water boils at 100°C." },
+        { "name": "Lịch trình tương lai (Scheduled event)", "desc": "Lịch trình cố định của tàu xe, máy bay, rạp chiếu phim", "example": "The train leaves at 9:00 this morning." }
       ]
     },
     {
       "id": "ps_markers",
-      "title": "4. Dấu Hiệu Nhận Biết & Trạng Từ Tần Suất",
+      "title": "5. Dấu Hiệu Nhận Biết & Trạng Từ Tần Suất",
       "markers": [
-        { "word": "Always", "percent": "100%", "vn": "Luôn luôn" },
-        { "word": "Usually", "percent": "90%", "vn": "Thường xuyên" },
-        { "word": "Frequently / Often", "percent": "70-80%", "vn": "Thường thường" },
-        { "word": "Sometimes", "percent": "30-50%", "vn": "Thỉnh thoảng" },
-        { "word": "Rarely / Seldom", "percent": "10-20%", "vn": "Hiếm khi" },
-        { "word": "Never", "percent": "0%", "vn": "Không bao giờ" },
-        { "word": "Every + thời gian", "percent": "100%", "vn": "Mỗi (every day, every week...)" }
+        { "word": "Always", "vn": "luôn luôn", "percent": "100%" },
+        { "word": "Usually", "vn": "thường xuyên", "percent": "~90%" },
+        { "word": "Frequently / Often", "vn": "thường thường", "percent": "~70-80%" },
+        { "word": "Often / Generally", "vn": "thường thường", "percent": "~50-60%" },
+        { "word": "Sometimes", "vn": "thỉnh thoảng", "percent": "~30-50%" },
+        { "word": "Rarely / Seldom", "vn": "hiếm khi", "percent": "~10-20%" },
+        { "word": "Never", "vn": "không bao giờ", "percent": "0%" },
+        { "word": "Every + time", "vn": "mỗi ngày / tuần / tháng", "percent": "~100%" }
       ]
     }
   ],
-"theory_recall": [
-    {
-      "id": "rec_ps_sym_1",
-      "type": "blank",
-      "prompt": "1. 'S' viết tắt của [blank], là đối tượng thực hiện hành động.",
-      "answers": ["chủ ngữ", "chu ngu"],
-      "explanation": "S = Subject (Chủ ngữ)."
-    },
-    {
-      "id": "rec_ps_sym_2",
-      "type": "blank",
-      "prompt": "2. 'O' viết tắt của [blank], là đối tượng nhận hành động.",
-      "answers": ["tân ngữ", "tan ngu"],
-      "explanation": "O = Object (Tân ngữ)."
-    },
-    {
-      "id": "rec_ps_sym_3",
-      "type": "blank",
-      "prompt": "3. 'N, n' là [blank], chỉ tên người, vật, nơi chốn.",
-      "answers": ["danh từ", "danh tu"],
-      "explanation": "N = Noun (Danh từ)."
-    },
-    {
-      "id": "rec_ps_sym_4",
-      "type": "blank",
-      "prompt": "4. 'adj' là [blank] dùng để mô tả danh từ; 'adv' là [blank] dùng để bổ nghĩa cho động từ/tính từ.",
-      "answers": ["tính từ, trạng từ", "tính từ và trạng từ", "tinh tu, trang tu"],
-      "explanation": "Adj = Adjective (Tính từ), Adv = Adverb (Trạng từ)."
-    },
-    {
-      "id": "rec_ps_sym_5",
-      "type": "blank",
-      "prompt": "5. 'prep' là [blank], chỉ nơi chốn, thời gian hoặc cách thức.",
-      "answers": ["giới từ", "gioi tu"],
-      "explanation": "Prep = Preposition (Giới từ)."
-    },
-    {
-      "id": "rec_ps_form_1",
-      "type": "blank",
-      "prompt": "6. Công thức To Be: (+) S + [blank] + O | (–) S + [blank] + not + O | (?) [blank] + S + O?",
-      "answers": ["am/is/are, am/is/are, am/is/are", "am is are, am is are, am is are"],
-      "explanation": "To be hiện tại đơn gồm: am, is, are."
-    },
-    {
-      "id": "rec_ps_subj_1",
-      "type": "blank",
-      "prompt": "7. Chủ ngữ 'I' đi với to be là [blank]; He, she, it, danh từ số ít đi với [blank]; You, we, they, danh từ số nhiều đi với [blank].",
-      "answers": ["am, is, are", "am, is và are", "am is are"],
-      "explanation": "I ➔ am; số ít ➔ is; số nhiều ➔ are."
-    },
-    {
-      "id": "rec_ps_form_2",
-      "type": "blank",
-      "prompt": "8. Công thức Động từ thường: (+) S + [blank] + O | (–) S + [blank] + NOT + V0 + O | (?) [blank] + S + V0 + O?",
-      "answers": ["V(s/es), do/does, Do/Does", "V s/es, do/does, do/does"],
-      "explanation": "Khẳng định: V(s/es); Phủ định/Nghi vấn mượn trợ động từ do/does."
-    },
-    {
-      "id": "rec_ps_spelling_1",
-      "type": "blank",
-      "prompt": "9. Động từ tận cùng bằng các đuôi 's, x, z, ch, sh, o' khi chia với He/She/It phải thêm đuôi [blank].",
-      "answers": ["-es", "es"],
-      "explanation": "Ví dụ: passes, fixes, buzzes, watches, pushes, goes, does."
-    },
-    {
-      "id": "rec_ps_spelling_2",
-      "type": "blank",
-      "prompt": "10. Động từ tận cùng là 'phụ âm + y' (như study, carry) ta đổi 'y' thành [blank].",
-      "answers": ["-ies", "ies"],
-      "explanation": "study ➔ studies, carry ➔ carries."
-    },
-    {
-      "id": "rec_ps_spelling_3",
-      "type": "blank",
-      "prompt": "11. Động từ tận cùng là 'nguyên âm (u,e,o,a,i) + y' (như play, buy) ta chỉ cần [blank].",
-      "answers": ["thêm s", "giữ nguyên y và thêm s", "giữ nguyên y thêm s"],
-      "explanation": "play ➔ plays, buy ➔ buys, enjoy ➔ enjoys."
-    },
-    {
-      "id": "rec_ps_spelling_4",
-      "type": "blank",
-      "prompt": "12. Động từ bất quy tắc: 'have' chuyển thành [blank]; 'be' chuyển thành [blank].",
-      "answers": ["has, is", "has, is (am/are)", "has is"],
-      "explanation": "have ➔ has; be ➔ is (cho ngôi thứ 3 số ít)."
-    },
-    {
-      "id": "rec_ps_usage_1",
-      "type": "blank",
-      "prompt": "13. Cách dùng 1 của thì Hiện tại đơn là diễn tả một [blank] (Ví dụ: I play football everyday).",
-      "answers": ["thói quen", "thoi quen", "habit"],
-      "explanation": "Diễn tả thói quen hoặc hành động lặp đi lặp lại."
-    },
-    {
-      "id": "rec_ps_usage_2",
-      "type": "blank",
-      "prompt": "14. Cách dùng 2 của thì Hiện tại đơn là diễn tả một [blank] hoặc sự thật hiển nhiên (Ví dụ: Water boils at 100°C).",
-      "answers": ["chân lý", "chan ly", "sự thật hiển nhiên", "fact"],
-      "explanation": "Diễn tả chân lý khoa học hoặc quy luật tự nhiên."
-    },
-    {
-      "id": "rec_ps_usage_3",
-      "type": "blank",
-      "prompt": "15. Cách dùng 3 của thì Hiện tại đơn là diễn tả một [blank] hoặc lịch trình cố định của tàu xe (Ví dụ: The train leaves at 9:00).",
-      "answers": ["lịch trình", "kế hoạch tương lai", "lịch trình cố định", "lich trinh"],
-      "explanation": "Lịch trình tàu xe, máy bay, rạp phim đã lên lịch sẵn."
-    },
-    {
-      "id": "rec_ps_adv_1",
-      "type": "blank",
-      "prompt": "16. Trạng từ chỉ tần suất: Always ([blank]%), Usually ([blank]%), Never ([blank]%).",
-      "answers": ["100%, 90%, 0%", "100, 90, 0", "100%, 90, 0%"],
-      "explanation": "Always = 100%, Usually = 90%, Never = 0%."
-    },
-    {
-      "id": "rec_ps_adv_2",
-      "type": "blank",
-      "prompt": "17. Trạng từ chỉ tần suất: Frequently/Often ([blank]%), Sometimes ([blank]%), Rarely/Seldom ([blank]%).",
-      "answers": ["70-80%, 30-50%, 10-20%", "70-80, 30-50, 10-20", "70%-80%, 30%-50%, 10%-20%"],
-      "explanation": "Frequently/Often: 70-80%, Sometimes: 30-50%, Rarely/Seldom: 10-20%."
-    }
-  ]
+  "essay_prompt": {
+    "instruction": "Học sinh trình bày chi tiết và đầy đủ toàn bộ lý thuyết Hiện tại đơn theo từng mục dưới đây vào phần bài làm. Bắt buộc viết rõ dạng công thức, cách dùng kèm ví dụ tự đặt và liệt kê đầy đủ dấu hiệu nhận biết.",
+    "questions": [
+      "<b>A. Ký hiệu từ loại:</b> Nêu rõ ý nghĩa của 7 ký hiệu: S, O, N (n), adj, V (v), adv, prep.",
+      "<b>B. Công thức To Be:</b> Viết công thức 3 thể (+, -, ?) của To Be và chỉ rõ chủ ngữ nào đi với am, is, are.",
+      "<b>C. Công thức Động từ thường:</b> Viết công thức 3 thể (+, -, ?) của Động từ thường. Nêu chi tiết 4 quy tắc thêm đuôi -s/-es.",
+      "<b>D. Các cách sử dụng & Ví dụ:</b> Trình bày đủ 3 cách dùng chính (Thói quen, Chân lý, Lịch trình). <i>BẮT BUỘC: Tự đặt 01 câu ví dụ bằng tiếng Anh kèm dịch nghĩa tiếng Việt cho mỗi cách dùng.</i>",
+      "<b>E. Dấu hiệu nhận biết:</b> Liệt kê bảng trạng từ chỉ tần suất kèm mức độ % tương ứng (từ Always 100% đến Never 0%) và cụm từ đi với Every."
+    ]
+  }
 }
