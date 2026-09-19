@@ -1,0 +1,103 @@
+{
+  "tense_id": "irregular-v3",
+  "tense_name": "ĐỘNG TỪ BẤT QUY TẮC: DẠNG V3 (PAST PARTICIPLE / QUÁ KHỨ PHÂN TỪ)",
+  "sections": [
+    {
+      "id": "intro-v3",
+      "title": "1. Khái Niệm & Vai Trò Của Động Từ V3 (Past Participle)",
+      "rules": [
+        "V3 (Quá khứ phân từ - Past Participle) là dạng biến đổi của động từ dùng trong 2 trường hợp ngữ pháp trọng tâm:",
+        "1. Các thì hoàn thành (Perfect Tenses): Hiện tại hoàn thành (have/has + V3), Quá khứ hoàn thành (had + V3), Tương lai hoàn thành (will have + V3).",
+        "2. Thể bị động (Passive Voice): S + be + V3/ed (+ by O).",
+        "Động từ có quy tắc chỉ cần thêm đuôi '-ed' (V2 = V3). Động từ bất quy tắc có dạng V3 riêng cần học thuộc lòng."
+      ],
+      "note": "Nắm vững 54 động từ này là điều kiện bắt buộc để làm tốt các bài tập thì hoàn thành, câu bị động và câu điều kiện loại 3."
+    },
+    {
+      "id": "verbs-list-v3-54",
+      "title": "2. Bảng 54 Động Từ Bất Quy Tắc Thông Dụng (V0 ➔ V2 ➔ V3)",
+      "rules": [
+        "1. Be ➔ was/were ➔ been (thì, là, ở)",
+        "2. Become ➔ became ➔ become (trở thành)",
+        "3. Begin ➔ began ➔ begun (bắt đầu)",
+        "4. Break ➔ broke ➔ broken (làm vỡ, gãy)",
+        "5. Bring ➔ brought ➔ brought (mang đến)",
+        "6. Build ➔ built ➔ built (xây dựng)",
+        "7. Buy ➔ bought ➔ bought (mua)",
+        "8. Choose ➔ chose ➔ chosen (chọn lựa)",
+        "9. Come ➔ came ➔ come (đến)",
+        "10. Cost ➔ cost ➔ cost (trị giá, tốn tiền)",
+        "11. Cut ➔ cut ➔ cut (cắt)",
+        "12. Do ➔ did ➔ done (làm)",
+        "13. Dream ➔ dreamt/dreamed ➔ dreamt/dreamed (mơ)",
+        "14. Drink ➔ drank ➔ drunk (uống)",
+        "15. Eat ➔ ate ➔ eaten (ăn)",
+        "16. Feel ➔ felt ➔ felt (cảm thấy)",
+        "17. Find ➔ found ➔ found (tìm thấy)",
+        "18. Forget ➔ forgot ➔ forgotten (quên)",
+        "19. Get ➔ got ➔ got/gotten (nhận được)",
+        "20. Give ➔ gave ➔ given (cho, tặng)",
+        "21. Go ➔ went ➔ gone (đi)",
+        "22. Have ➔ had ➔ had (có)",
+        "23. Hear ➔ heard ➔ heard (nghe)",
+        "24. Hold ➔ held ➔ held (cầm, nắm, giữ)",
+        "25. Keep ➔ kept ➔ kept (giữ)",
+        "26. Know ➔ knew ➔ known (biết)",
+        "27. Learn ➔ learnt/learned ➔ learnt/learned (học)",
+        "28. Let ➔ let ➔ let (cho phép, để cho)",
+        "29. Make ➔ made ➔ made (làm, tạo ra)",
+        "30. Mean ➔ meant ➔ meant (có nghĩa là)",
+        "31. Meet ➔ met ➔ met (gặp)",
+        "32. Pay ➔ paid ➔ paid (trả tiền)",
+        "33. Put ➔ put ➔ put (đặt, để)",
+        "34. Read ➔ read /red/ ➔ read /red/ (đọc)",
+        "35. Rise ➔ rose ➔ risen (mọc lên, tăng lên)",
+        "36. Run ➔ ran ➔ run (chạy)",
+        "37. Say ➔ said ➔ said (nói)",
+        "38. See ➔ saw ➔ seen (nhìn thấy)",
+        "39. Send ➔ sent ➔ sent (gửi đi)",
+        "40. Set ➔ set ➔ set (thiết lập)",
+        "41. Shake ➔ shook ➔ shaken (rung, lắc)",
+        "42. Shut ➔ shut ➔ shut (đóng lại)",
+        "43. Sing ➔ sang ➔ sung (hát)",
+        "44. Sit ➔ sat ➔ sat (ngồi)",
+        "45. Sleep ➔ slept ➔ slept (ngủ)",
+        "46. Stand ➔ stood ➔ stood (đứng)",
+        "47. Swim ➔ swam ➔ swum (bơi lội)",
+        "48. Take ➔ took ➔ taken (lấy, mang theo)",
+        "49. Teach ➔ taught ➔ taught (dạy học)",
+        "50. Tell ➔ told ➔ told (bảo, kể)",
+        "51. Think ➔ thought ➔ thought (suy nghĩ)",
+        "52. Wear ➔ wore ➔ worn (mặc, đeo)",
+        "53. Win ➔ won ➔ won (chiến thắng)",
+        "54. Write ➔ wrote ➔ written (viết)"
+      ]
+    },
+    {
+      "id": "v3-grouping-patterns",
+      "title": "3. Mẹo Nhớ Nhanh V3 Theo Cụm Biến Đổi",
+      "rules": [
+        "Nhóm 3 cột giống nhau hoàn toàn (V0 = V2 = V3): cost ➔ cost ➔ cost; cut ➔ cut ➔ cut; let ➔ let ➔ let; put ➔ put ➔ put; set ➔ set ➔ set; shut ➔ shut ➔ shut; read ➔ read ➔ read.",
+        "Nhóm V2 giống V3 (V2 = V3): bring ➔ brought ➔ brought; buy ➔ bought ➔ bought; build ➔ built ➔ built; feel ➔ felt ➔ felt; find ➔ found ➔ found; have ➔ had ➔ had; keep ➔ kept ➔ kept; make ➔ made ➔ made; pay ➔ paid ➔ paid; send ➔ sent ➔ sent; teach ➔ taught ➔ taught; tell ➔ told ➔ told; think ➔ thought ➔ thought.",
+        "Nhóm V0 giống V3 (V0 = V3): become ➔ became ➔ become; come ➔ came ➔ come; run ➔ ran ➔ run.",
+        "Nhóm biến đổi i ➔ a ➔ u: begin ➔ began ➔ begun; drink ➔ drank ➔ drunk; sing ➔ sang ➔ sung; swim ➔ swam ➔ swum.",
+        "Nhóm V3 tận cùng bằng đuôi '-en' hoặc '-n': break ➔ broken; choose ➔ chosen; eat ➔ eaten; give ➔ given; see ➔ seen; take ➔ taken; rise ➔ risen; write ➔ written; know ➔ known."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Bài khảo lý thuyết tự luận: Hãy trình bày khái niệm, 2 cấu trúc lớn sử dụng V3 và phân loại các nhóm biến đổi V3 phổ biến (kèm ví dụ minh họa).",
+    "questions": [
+      {
+        "id": "q_v3_essay_1",
+        "title": "Câu 1: Vai trò và ngữ cảnh xuất hiện của V3",
+        "requirement": "Nêu 2 cấu trúc ngữ pháp bắt buộc phải dùng động từ ở dạng V3/ed (viết rõ công thức tổng quát)."
+      },
+      {
+        "id": "q_v3_essay_2",
+        "title": "Câu 2: Hệ thống các nhóm quy tắc nhớ V3",
+        "requirement": "Trình bày ít nhất 4 nhóm biến đổi từ V0 sang V3 (nhóm 3 cột bằng nhau, nhóm V2=V3, nhóm V0=V3, nhóm đuôi -en/-n, nhóm đổi i-a-u). Với mỗi nhóm, nêu ít nhất 3 động từ ví dụ kèm dạng V0, V2, V3."
+      }
+    ]
+  }
+}
