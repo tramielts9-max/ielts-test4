@@ -4,9 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luyện Tập Ngữ Pháp IELTS</title>
+  
+  <!-- Các file giao diện -->
   <link rel="stylesheet" href="css/base-g.css">
   <link rel="stylesheet" href="css/components-g.css">
   <link rel="stylesheet" href="css/exercise-g.css">
+
+  <!-- ================================================================= -->
+  <!-- ĐÂY CHÍNH LÀ DÒNG THƯ VIỆN MARKED MỚI ĐƯỢC THÊM VÀO NÈ BẠN:     -->
+  <!-- Dòng này giúp dịch kết quả từ AI thành bảng điểm đẹp mắt cho học sinh -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- ================================================================= -->
+
 </head>
 <body>
 
@@ -14,35 +23,31 @@
   <a href="index-g.html" class="nav-back-g">&larr; Trở về danh mục chuyên đề</a>
 </div>
 
-<!-- ========================================== -->
-<!-- ĐÂY CHÍNH LÀ CHỖ THÊM ĐOẠN CODE ĐÓ VÀO NÈ -->
-<!-- ========================================== -->
 <script type="module">
   import { LessonRenderer } from './js/lesson-renderer-g.js';
 
   async function initLesson() {
     const appContainer = document.getElementById('appContainer');
     
-    // 1. Lấy tên thì từ đường dẫn URL (ví dụ: lesson-g.html?tense=present-simple)
-    // Mặc định nếu không ghi gì sẽ tải thì hiện tại đơn
+    // Đọc tên thì từ thanh địa chỉ web (?tense=...)
     const urlParams = new URLSearchParams(window.location.search);
     const tense = urlParams.get('tense') || 'present-simple';
 
     try {
-      // 2. Tải đồng thời CẢ 2 FILE: lý thuyết và bài tập từ thư mục data
+      // Tải đồng thời 2 file JSON lý thuyết và bài tập
       const [theoryRes, exerciseRes] = await Promise.all([
         fetch(`data/${tense}/theory-${tense}-g.json`),
         fetch(`data/${tense}/exercises-${tense}-g.json`)
       ]);
 
       if (!theoryRes.ok || !exerciseRes.ok) {
-        throw new Error("Không thể tìm thấy file JSON lý thuyết hoặc bài tập.");
+        throw new Error("Không tìm thấy file JSON của bài này.");
       }
 
       const theoryData = await theoryRes.json();
       const exerciseData = await exerciseRes.json();
 
-      // 3. Gửi cả 2 dữ liệu vào LessonRenderer để tự vẽ giao diện và chấm điểm
+      // Gọi bộ vẽ giao diện và gắn tính năng AI chấm bài
       const renderer = new LessonRenderer(appContainer, theoryData, exerciseData);
       renderer.renderAll();
 
@@ -50,19 +55,14 @@
       console.error(err);
       appContainer.innerHTML += `
         <div style="background:#fee2e2; color:#991b1b; padding:20px; border-radius:8px; margin-top:20px;">
-          <h3>⚠️ Lỗi tải dữ liệu bài học</h3>
-          <p>Không thể tải dữ liệu cho thì: <b>${tense}</b>.</p>
-          <p>Hãy đảm bảo bạn đã tạo đủ 2 file:</p>
-          <ul>
-            <li><code>grammar/data/${tense}/theory-${tense}-g.json</code></li>
-            <li><code>grammar/data/${tense}/exercises-${tense}-g.json</code></li>
-          </ul>
+          <h3>⚠️ Chưa tìm thấy dữ liệu bài học!</h3>
+          <p>Hệ thống không tìm thấy file cho thì: <b>${tense}</b>.</p>
         </div>
       `;
     }
   }
 
-  // Khởi động chạy trang web
+  // Bắt đầu chạy
   initLesson();
 </script>
 
