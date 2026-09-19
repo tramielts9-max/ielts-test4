@@ -1,175 +1,59 @@
 {
   "tense_id": "present-continuous",
-  "tense_name": "PRESENT CONTINUOUS (HIỆN TẠI TIẾP DIỄN CƠ BẢN)",
-  "word_symbols": [
-    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
-    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
-    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
-    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
-    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
-    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
-    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
-  ],
+  "tense_name": "THÌ HIỆN TẠI TIẾP DIỄN (PRESENT CONTINUOUS)",
   "sections": [
     {
       "id": "pc_formulas",
-      "title": "1. CẤU TRÚC THÌ HIỆN TẠI TIẾP DIỄN (FORMULAS)",
+      "title": "1. Công Thức Thì Hiện Tại Tiếp Diễn",
       "formulas": {
         "affirmative": "(+) S + am/is/are + V-ing",
         "negative": "(–) S + am/is/are + NOT + V-ing",
-        "interrogative": "(?) Am/is/are + S + V-ing?"
+        "interrogative": "(?) Am/Is/Are + S + V-ing?"
       },
       "subject_rules": [
         "I ➔ am + V-ing",
-        "He, she, it, danh từ số ÍT ➔ is + V-ing",
-        "You, we, they, danh từ số NHIỀU ➔ are + V-ing"
+        "He, She, It, Danh từ số ít (ÍT) ➔ is + V-ing",
+        "You, We, They, Danh từ số nhiều (NHIỀU) ➔ are + V-ing"
       ]
     },
     {
-      "id": "pc_spelling_rules",
-      "title": "2. QUY TẮC THÊM ĐUÔI -ING VÀO ĐỘNG TỪ",
+      "id": "pc_spelling",
+      "title": "2. Quy Tắc Thêm Đuôi -ing Vào Động Từ",
       "spelling_rules": [
-        {
-          "condition": "Động từ kết thúc bằng -e",
-          "rule": "Bỏ -e trước khi thêm -ing",
-          "examples": "take → taking, drive → driving"
-        },
-        {
-          "condition": "Động từ kết thúc bằng phụ âm, trước nó là nguyên âm, trọng âm rơi vào âm tiết cuối",
-          "rule": "Gấp đôi phụ âm cuối rồi thêm -ing",
-          "examples": "begin → beginning, win → winning"
-        },
-        {
-          "condition": "Động từ có một nguyên âm kẹp giữa hai phụ âm",
-          "rule": "Gấp đôi phụ âm cuối rồi thêm -ing",
-          "examples": "run → running, swim → swimming"
-        },
-        {
-          "condition": "Trường hợp đặc biệt: Động từ kết thúc bằng -ie",
-          "rule": "Đổi -ie thành -y rồi thêm -ing",
-          "examples": "lie → lying, die → dying"
-        }
+        { "condition": "Động từ kết thúc bằng -e", "rule": "Bỏ -e trước khi thêm -ing", "examples": "take ➔ taking, drive ➔ driving" },
+        { "condition": "Trọng âm rơi vào âm cuối & 1 nguyên âm kẹp 2 phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm -ing", "examples": "begin ➔ beginning, win ➔ winning" },
+        { "condition": "Động từ 1 âm tiết có 1 nguyên âm kẹp giữa 2 phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm -ing", "examples": "run ➔ running, swim ➔ swimming" },
+        { "condition": "Trường hợp đặc biệt kết thúc bằng -ie", "rule": "Đổi -ie thành -y rồi thêm -ing", "examples": "lie ➔ lying, die ➔ dying" }
       ]
     },
     {
       "id": "pc_usages",
-      "title": "3. CÁCH SỬ DỤNG (USAGE)",
+      "title": "3. 4 Cách Sử Dụng Thì Hiện Tại Tiếp Diễn",
       "usages": [
-        {
-          "name": "Thời điểm nói",
-          "desc": "Hành động đang diễn ra ngay tại thời điểm nói",
-          "example": "We are doing homework now. (Bây giờ chúng tôi đang làm bài tập về nhà)"
-        },
-        {
-          "name": "Đang diễn ra nhưng không cần diễn ra ngay lúc nói",
-          "desc": "Một kế hoạch, dự án hoặc hành động đang trong quá trình thực hiện xung quanh thời điểm hiện tại",
-          "example": "He is writing an economic book."
-        },
-        {
-          "name": "Dự trù trước cho tương lai",
-          "desc": "Kế hoạch đã được chuẩn bị, sắp đặt trước",
-          "example": "He is attending the exhibition tomorrow."
-        },
-        {
-          "name": "Thường xuyên, gây khó chịu (có always)",
-          "desc": "Phàn nàn về một thói quen tiêu cực lặp đi lặp lại",
-          "example": "She is always talking in my class."
-        }
+        { "name": "Tại thời điểm nói", "desc": "Hành động đang diễn ra ngay lúc đang nói", "example": "We are doing homework now." },
+        { "name": "Đang diễn ra nhưng không cần ngay lúc nói", "desc": "Hành động có tính chất kéo dài xung quanh thời điểm hiện tại", "example": "He is writing an economic book." },
+        { "name": "Dự trù trước cho tương lai", "desc": "Kế hoạch hoặc lịch trình cá nhân đã chuẩn bị sẵn", "example": "He is attending the exhibition tomorrow." },
+        { "name": "Thường xuyên gây khó chịu (có always)", "desc": "Phàn nàn một thói quen xấu lặp đi lặp lại", "example": "She is always talking in my class." }
       ]
     },
     {
-      "id": "pc_time_markers",
-      "title": "4. DẤU HIỆU NHẬN BIẾT (TIME MARKERS)",
-      "markers": [
-        { "word": "now", "percent": "Hiện tại", "vn": "bây giờ" },
-        { "word": "right now", "percent": "Tức thì", "vn": "ngay bây giờ" },
-        { "word": "at the moment", "percent": "Hiện tại", "vn": "lúc này" },
-        { "word": "at present", "percent": "Hiện tại", "vn": "hiện tại" },
-        { "word": "at + giờ cụ thể", "percent": "Xác định", "vn": "vào lúc ... giờ (ví dụ: at 12 o'clock)" }
+      "id": "pc_markers",
+      "title": "4. Dấu Hiệu Nhận Biết",
+      "rules": [
+        "now (bây giờ), right now (ngay bây giờ)",
+        "at the moment (lúc này), at present (hiện tại)",
+        "at + giờ cụ thể (ví dụ: at 12 o'clock)",
+        "Các động từ gây chú ý: Look!, Listen!, Be quiet!..."
       ]
     }
   ],
-
-"theory_recall": [
-    {
-      "id": "rec_pc_form_1",
-      "type": "blank",
-      "prompt": "1. Công thức khẳng định: (+) S + [blank] + [blank].",
-      "answers": ["am/is/are, V-ing", "am, is, are, Ving", "am is are, V-ing"],
-      "explanation": "S + am/is/are + V-ing."
-    },
-    {
-      "id": "rec_pc_form_2",
-      "type": "blank",
-      "prompt": "2. Công thức phủ định: (–) S + [blank] + [blank] + V-ing.",
-      "answers": ["am/is/are, not", "am, is, are, not"],
-      "explanation": "S + am/is/are + not + V-ing."
-    },
-    {
-      "id": "rec_pc_form_3",
-      "type": "blank",
-      "prompt": "3. Công thức nghi vấn: (?) [blank] + S + [blank]?",
-      "answers": ["Am/Is/Are, V-ing", "am/is/are, V-ing", "am, is, are, Ving"],
-      "explanation": "Am/Is/Are + S + V-ing?"
-    },
-    {
-      "id": "rec_pc_sp_1",
-      "type": "blank",
-      "prompt": "4. Động từ tận cùng bằng '-e' (như take, drive): Quy tắc là [blank] rồi mới thêm '-ing'.",
-      "answers": ["bỏ e", "bỏ -e", "bo e"],
-      "explanation": "take ➔ taking, drive ➔ driving."
-    },
-    {
-      "id": "rec_pc_sp_2",
-      "type": "blank",
-      "prompt": "5. Động từ có trọng âm rơi vào âm cuối, có 1 nguyên âm kẹp giữa 2 phụ âm (như begin, win, run): Quy tắc là [blank] rồi thêm '-ing'.",
-      "answers": ["gấp đôi phụ âm cuối", "nhân đôi phụ âm cuối", "gấp đôi phụ âm"],
-      "explanation": "begin ➔ beginning, win ➔ winning, run ➔ running."
-    },
-    {
-      "id": "rec_pc_sp_3",
-      "type": "blank",
-      "prompt": "6. Động từ kết thúc bằng đuôi '-ie' (như lie, die): Quy tắc là [blank] rồi thêm '-ing'.",
-      "answers": ["đổi ie thành y", "đổi -ie thành -y", "doi ie thanh y"],
-      "explanation": "lie ➔ lying, die ➔ dying."
-    },
-    {
-      "id": "rec_pc_us_1",
-      "type": "blank",
-      "prompt": "7. Cách dùng 1: Diễn tả hành động đang diễn ra tại [blank] (Ví dụ: We are doing homework now).",
-      "answers": ["thời điểm nói", "thoi diem noi"],
-      "explanation": "Hành động đang xảy ra ngay lúc nói."
-    },
-    {
-      "id": "rec_pc_us_2",
-      "type": "blank",
-      "prompt": "8. Cách dùng 2: Diễn tả hành động đang diễn ra nhưng [blank] (Ví dụ: He is writing an economic book).",
-      "answers": ["không cần diễn ra ngay lúc nói", "không nhất thiết ngay lúc nói", "khong can dien ra ngay luc noi"],
-      "explanation": "Hành động kéo dài xung quanh thời điểm nói."
-    },
-    {
-      "id": "rec_pc_us_3",
-      "type": "blank",
-      "prompt": "9. Cách dùng 3: Diễn tả một kế hoạch đã được [blank] trong tương lai (Ví dụ: He is attending the exhibition tomorrow).",
-      "answers": ["dự trù trước", "lên kế hoạch trước", "dự trù trước cho tương lai", "du tru truoc"],
-      "explanation": "Kế hoạch đã chuẩn bị/dự trù trước cho tương lai."
-    },
-    {
-      "id": "rec_pc_us_4",
-      "type": "blank",
-      "prompt": "10. Cách dùng 4: Diễn tả hành động xảy ra thường xuyên gây [blank], bắt buộc đi kèm từ [blank] (Ví dụ: She is always talking in my class).",
-      "answers": ["khó chịu, always", "phiền toái, always", "kho chiu, always"],
-      "explanation": "Phàn nàn hành vi lặp lại gây khó chịu (đi với 'always')."
-    },
-    {
-      "id": "rec_pc_mark_1",
-      "type": "blank",
-      "prompt": "11. Kể tên 5 dấu hiệu nhận biết thì HTTD: [blank], [blank], [blank], [blank], và at + giờ cụ thể.",
-      "answers": [
-        "now, right now, at the moment, at present",
-        "now, right now, at present, at the moment"
-      ],
-      "explanation": "now, right now, at the moment, at present, at + giờ cụ thể."
-    }
-  ]
+  "essay_prompt": {
+    "instruction": "Học sinh tự nhớ lại và trình bày toàn bộ lý thuyết Hiện tại tiếp diễn theo từng mục dưới đây vào phần bài làm. Bắt buộc viết rõ công thức, 4 quy tắc thêm đuôi -ing, đủ 4 cách dùng kèm ví dụ tự đặt dịch nghĩa và dấu hiệu nhận biết.",
+    "questions": [
+      "<b>A. Công thức (Form):</b> Viết công thức 3 thể (+, -, ?) của thì Hiện tại tiếp diễn với am/is/are.",
+      "<b>B. Quy tắc thêm đuôi -ing:</b> Nêu rõ 4 quy tắc biến đổi chính tả khi thêm đuôi -ing (đuôi e, gấp đôi phụ âm cuối, đuôi -ie).",
+      "<b>C. 4 Cách sử dụng chính & Ví dụ:</b> Trình bày đầy đủ 4 cách dùng của thì HTTD (Thời điểm nói, Đang diễn ra nhưng không nhất thiết lúc nói, Kế hoạch dự trù tương lai, Phàn nàn gây khó chịu có always). <i>BẮT BUỘC: Tự đặt 01 câu ví dụ bằng tiếng Anh kèm dịch nghĩa tiếng Việt cho mỗi cách dùng.</i>",
+      "<b>D. Dấu hiệu nhận biết:</b> Liệt kê đầy đủ các trạng từ thời gian đặc trưng và câu lệnh gây chú ý đứng đầu câu."
+    ]
+  }
 }
