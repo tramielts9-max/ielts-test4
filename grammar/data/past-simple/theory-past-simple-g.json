@@ -20,149 +20,62 @@
         "interrogative": "(?) Was/were + S + O?"
       },
       "subject_rules": [
-        "I, He, She, It, Danh từ số ít (ÍT) ➔ đi với WAS (viết tắt phủ định: wasn't)",
-        "You, We, They, Danh từ số nhiều (NHIỀU) ➔ đi với WERE (viết tắt phủ định: weren't)"
+        "I, He, She, It, Danh từ số ít (ÍT) ➔ WAS (phủ định: wasn't)",
+        "You, We, They, Danh từ số nhiều (NHIỀU) ➔ WERE (phủ định: weren't)"
       ]
     },
     {
       "id": "ps_verb_sec",
-      "title": "2. Dạng Động Từ Thường (Regular & Irregular Verbs)",
+      "title": "2. Dạng Động Từ Thường (Action Verbs)",
       "formulas": {
         "affirmative": "(+) S + V2/ed + O",
         "negative": "(–) S + did + NOT + V0 + O (hoặc didn't)",
         "interrogative": "(?) Did + S + V0 + O?"
       },
       "rules": [
-        "Khẳng định: Thêm '-ed' vào động từ có quy tắc, hoặc tra cột V2 đối với động từ bất quy tắc.",
-        "Phủ định & Nghi vấn: Mượn trợ động từ DID ➔ Động từ chính bắt buộc trả về nguyên mẫu (V0)."
+        "Khẳng định dùng động từ dạng quá khứ: thêm -ed hoặc tra cột V2 bảng Bất quy tắc.",
+        "Phủ định & Nghi vấn mượn trợ động từ DID ➔ động từ chính trả về nguyên mẫu (V0)."
       ]
     },
     {
       "id": "ps_spelling_sec",
-      "title": "3. Hướng Dẫn Thêm Đuôi -ed Vào Động Từ Thường",
+      "title": "3. 6 Quy Tắc Thêm Đuôi -ed Vào Động Từ Có Quy Tắc",
       "spelling_rules": [
         { "condition": "Động từ kết thúc bằng một phụ âm (trừ y)", "rule": "Chỉ cần thêm -ed", "examples": "walk ➔ walked, talk ➔ talked, cook ➔ cooked" },
         { "condition": "Động từ kết thúc bằng -e", "rule": "Chỉ cần thêm -d", "examples": "like ➔ liked, move ➔ moved, dance ➔ danced" },
         { "condition": "Động từ kết thúc bằng nguyên âm + y", "rule": "Giữ nguyên y và thêm -ed", "examples": "play ➔ played, enjoy ➔ enjoyed, stay ➔ stayed" },
         { "condition": "Động từ kết thúc bằng phụ âm + y", "rule": "Đổi y thành i rồi thêm -ed", "examples": "carry ➔ carried, study ➔ studied, hurry ➔ hurried" },
-        { "condition": "Động từ 1 âm tiết kết thúc bằng 1 nguyên âm + 1 phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm -ed", "examples": "stop ➔ stopped, plan ➔ planned, beg ➔ begged" },
-        { "condition": "Động từ kết thúc bằng đuôi -c", "rule": "Thêm -ked vào cuối động từ", "examples": "panic ➔ panicked, mimic ➔ mimicked" }
+        { "condition": "Động từ 1 âm tiết kết thúc 1 nguyên âm + 1 phụ âm", "rule": "Gấp đôi phụ âm cuối rồi thêm -ed", "examples": "stop ➔ stopped, plan ➔ planned, beg ➔ begged" },
+        { "condition": "Động từ kết thúc bằng -c", "rule": "Thêm -ked", "examples": "panic ➔ panicked, mimic ➔ mimicked" }
       ]
     },
     {
       "id": "ps_usage_sec",
       "title": "4. 3 Cách Sử Dụng Thì Quá Khứ Đơn",
       "usages": [
-        { "name": "Đã xong, không liên quan đến hiện tại", "desc": "Hành động đã bắt đầu và kết thúc hoàn toàn trong quá khứ", "example": "I went to Da Lat last year." },
-        { "name": "Thói quen trong quá khứ", "desc": "Hành động diễn ra thường xuyên trong quá khứ nhưng nay không còn", "example": "When I was young, I always went to school by myself." },
-        { "name": "Chuỗi hành động", "desc": "Các hành động xảy ra kế tiếp nhau theo thứ tự thời gian", "example": "I went to a restaurant, sat down, and called the waiter." }
+        { "name": "Đã xong, không liên quan đến hiện tại", "desc": "Hành động đã bắt đầu và chấm dứt hẳn trong quá khứ", "example": "I went to Da Lat last year." },
+        { "name": "Thói quen trong quá khứ", "desc": "Hành động lặp đi lặp lại thường xuyên trong quá khứ", "example": "When I was young, I always went to school by myself." },
+        { "name": "Chuỗi hành động", "desc": "Một loạt các hành động xảy ra nối tiếp nhau trong quá khứ", "example": "I went to a restaurant, sat down, and called the waiter." }
       ]
     },
     {
       "id": "ps_signal_sec",
-      "title": "5. Dấu Hiệu Nhận Biết Thì Quá Khứ Đơn",
+      "title": "5. Dấu Hiệu Nhận Biết",
       "rules": [
+        "yesterday: ngày hôm qua (yesterday morning/afternoon)",
         "Khoảng thời gian + ago: cách đây... (vd: 2 years ago, 3 hours ago)",
-        "in + mốc năm quá khứ (vd: in 1999, in 2010)",
-        "yesterday: ngày hôm qua (yesterday morning, yesterday afternoon)",
-        "last night / last week / last month / last year: tối qua, tuần trước, tháng trước..."
+        "last night / last week / last month / last year: tối qua, tuần trước...",
+        "in + năm quá khứ: in 1999, in 2010"
       ]
     }
   ],
-  "theory_recall": [
-    {
-      "id": "rec_pst_sym",
-      "type": "blank",
-      "prompt": "1. Trong công thức, 'S' là [blank], 'O' là [blank], và 'V' là [blank].",
-      "answers": ["chủ ngữ, tân ngữ, động từ", "chủ ngữ tân ngữ động từ", "chủ ngữ, tân ngữ và động từ"],
-      "explanation": "S = Subject (Chủ ngữ), O = Object (Tân ngữ), V = Verb (Động từ)."
-    },
-    {
-      "id": "rec_pst_tobe_1",
-      "type": "blank",
-      "prompt": "2. Động từ To Be trong quá khứ gồm 2 dạng là [blank] và [blank].",
-      "answers": ["was, were", "was và were", "was were"],
-      "explanation": "To Be quá khứ gồm Was và Were."
-    },
-    {
-      "id": "rec_pst_tobe_2",
-      "type": "blank",
-      "prompt": "3. Ngôi I, He, She, It, Danh từ số ít đi với [blank]; You, We, They, Danh từ số nhiều đi với [blank].",
-      "answers": ["was, were", "was và were", "was were"],
-      "explanation": "Số ít + I ➔ was; Số nhiều ➔ were."
-    },
-    {
-      "id": "rec_pst_v_neg",
-      "type": "blank",
-      "prompt": "4. Công thức phủ định động từ thường: S + [blank] + [blank] + O.",
-      "answers": ["did not + V0", "did not, V0", "didn't, V0", "didn't + V0", "did not + V nguyên mẫu"],
-      "explanation": "S + did not (didn't) + V0 (nguyên mẫu)."
-    },
-    {
-      "id": "rec_pst_v_q",
-      "type": "blank",
-      "prompt": "5. Công thức nghi vấn động từ thường: [blank] + S + [blank] + O?",
-      "answers": ["Did, V0", "did, V0", "Did, V nguyên mẫu"],
-      "explanation": "Did + S + V0 + O?"
-    },
-    {
-      "id": "rec_pst_sp_1",
-      "type": "blank",
-      "prompt": "6. Động từ tận cùng bằng '-e' (như like, move) khi thêm -ed ta chỉ việc thêm [blank].",
-      "answers": ["-d", "d"],
-      "explanation": "like ➔ liked, move ➔ moved."
-    },
-    {
-      "id": "rec_pst_sp_2",
-      "type": "blank",
-      "prompt": "7. Động từ tận cùng là 'nguyên âm + y' (như play, enjoy) khi thêm -ed ta [blank].",
-      "answers": ["giữ nguyên y và thêm ed", "giữ nguyên y thêm ed", "thêm ed"],
-      "explanation": "play ➔ played, enjoy ➔ enjoyed."
-    },
-    {
-      "id": "rec_pst_sp_3",
-      "type": "blank",
-      "prompt": "8. Động từ tận cùng là 'phụ âm + y' (như carry, study) khi thêm -ed ta [blank].",
-      "answers": ["đổi y thành i rồi thêm ed", "đổi y thành i thêm ed", "doi y thanh i roi them ed"],
-      "explanation": "carry ➔ carried, study ➔ studied."
-    },
-    {
-      "id": "rec_pst_sp_4",
-      "type": "blank",
-      "prompt": "9. Động từ kết thúc bằng đuôi '-c' (như panic, mimic) khi thêm đuôi quá khứ ta thêm [blank].",
-      "answers": ["-ked", "ked"],
-      "explanation": "panic ➔ panicked, mimic ➔ mimicked."
-    },
-    {
-      "id": "rec_pst_us_1",
-      "type": "blank",
-      "prompt": "10. Cách dùng 1: Diễn tả hành động [blank], không liên quan đến hiện tại.",
-      "answers": ["đã xong", "đã kết thúc", "da xong"],
-      "explanation": "Hành động đã xảy ra và chấm dứt trong quá khứ."
-    },
-    {
-      "id": "rec_pst_us_2",
-      "type": "blank",
-      "prompt": "11. Cách dùng 2: Diễn tả một [blank] trong quá khứ.",
-      "answers": ["thói quen", "thói quen trong quá khứ", "thoi quen"],
-      "explanation": "Thói quen thường xuyên lặp lại khi còn nhỏ/trong quá khứ."
-    },
-    {
-      "id": "rec_pst_us_3",
-      "type": "blank",
-      "prompt": "12. Cách dùng 3: Diễn tả một [blank] hành động xảy ra kế tiếp nhau.",
-      "answers": ["chuỗi", "chuỗi hành động", "chuoi hanh dong"],
-      "explanation": "Chuỗi các hành động liên tiếp."
-    },
-    {
-      "id": "rec_pst_mark",
-      "type": "blank",
-      "prompt": "13. Liệt kê 4 dấu hiệu nhận biết thì quá khứ đơn: [blank], khoảng thời gian + [blank], [blank] (night/week), và in + [blank].",
-      "answers": [
-        "yesterday, ago, last, năm quá khứ",
-        "yesterday, ago, last, năm trong quá khứ"
-      ],
-      "explanation": "yesterday, ago, last..., in + năm quá khứ."
-    }
-  ]
+  "essay_prompt": {
+    "instruction": "Học sinh tự nhớ lại và trình bày toàn bộ lý thuyết Quá khứ đơn theo từng mục dưới đây vào phần bài làm. Bắt buộc viết rõ công thức, 6 quy tắc thêm đuôi -ed, 3 cách dùng kèm ví dụ tự đặt dịch nghĩa và dấu hiệu nhận biết.",
+    "questions": [
+      "<b>A. Công thức To Be:</b> Viết công thức 3 thể (+, -, ?) của To Be quá khứ (was/were) và phân chia ngôi chủ ngữ tương ứng.",
+      "<b>B. Công thức Động từ thường:</b> Viết công thức 3 thể (+, -, ?) với trợ động từ DID. Nêu chi tiết 6 quy tắc thêm đuôi -ed (kết thúc e, kết thúc y, gấp đôi phụ âm, tận cùng -c).",
+      "<b>C. 3 Cách sử dụng chính & Ví dụ:</b> Trình bày đầy đủ 3 cách dùng của thì Quá khứ đơn (Đã xong trong quá khứ, Thói quen trong quá khứ, Chuỗi hành động liên tiếp). <i>BẮT BUỘC: Tự đặt 01 câu ví dụ bằng tiếng Anh kèm dịch nghĩa tiếng Việt cho mỗi cách dùng.</i>",
+      "<b>D. Dấu hiệu nhận biết:</b> Liệt kê đầy đủ các cụm từ chỉ thời gian quá khứ đặc trưng (yesterday, ago, last, in + năm)."
+    ]
+  }
 }
