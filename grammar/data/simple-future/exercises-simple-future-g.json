@@ -1,0 +1,105 @@
+{
+  "tense_id": "simple-future",
+  "title": "BÀI TẬP THÌ TƯƠNG LAI ĐƠN",
+  "exercise_groups": [
+    {
+      "group_id": "sf_exercise_1",
+      "group_title": "1. Bài 1: Cho Dạng Đúng Của Động Từ Trong Ngoặc",
+      "instruction": "Chia động từ ở thì Tương lai đơn (will + V0):",
+      "questions": [
+        { "id": "sf_b1_1", "type": "blank", "prompt": "1. They (do) [blank] it for you tomorrow.", "answers": ["will do"], "explanation": "Có tomorrow ➔ will do." },
+        { "id": "sf_b1_2", "type": "blank", "prompt": "2. My father (call) [blank] you in 5 minutes.", "answers": ["will call"], "explanation": "Có in 5 minutes ➔ will call." },
+        { "id": "sf_b1_3", "type": "blank", "prompt": "3. We believe that she (recover) [blank] from her illness soon.", "answers": ["will recover"], "explanation": "Dự đoán tương lai ➔ will recover." },
+        { "id": "sf_b1_4", "type": "blank", "prompt": "4. I promise I (return) [blank] school on time.", "answers": ["will return"], "explanation": "Lời hứa (promise) ➔ will return." },
+        { "id": "sf_b1_5", "type": "blank", "prompt": "5. If it rains, he (stay) [blank] at home.", "answers": ["will stay"], "explanation": "Mệnh đề chính câu điều kiện loại 1 ➔ will stay." },
+        { "id": "sf_b1_6", "type": "blank", "prompt": "6. [blank] you (take) [blank] me to the zoo this weekend?", "answers": ["Will, take", "will, take"], "explanation": "Câu hỏi yêu cầu ➔ Will you take...?" },
+        { "id": "sf_b1_7", "type": "blank", "prompt": "7. I think he (not come) [blank] back to his hometown.", "answers": ["will not come", "won't come"], "explanation": "Phủ định tương lai đơn ➔ will not come / won't come." }
+      ]
+    },
+    {
+      "group_id": "sf_exercise_2",
+      "group_title": "2. Bài 2: Dùng Từ Gợi Ý Viết Thành Câu Hoàn Chỉnh",
+      "instruction": "Sắp xếp và chia động từ thành câu hoàn chỉnh:",
+      "questions": [
+        {
+          "id": "sf_b2_1",
+          "type": "rewrite",
+          "prompt": "She/ hope/ that/ Mary/ come/ party/ tonight.",
+          "targetStart": "",
+          "answers": [
+            "She hopes that Mary will come to the party tonight.",
+            "She hopes that Mary will come to the party tonight",
+            "She hopes that Mary will come party tonight.",
+            "She hopes that Mary will come party tonight"
+          ],
+          "explanation": "She hopes that Mary will come to the party tonight."
+        },
+        {
+          "id": "sf_b2_2",
+          "type": "rewrite",
+          "prompt": "I/ finish/ my report/ 2 days.",
+          "targetStart": "",
+          "answers": [
+            "I will finish my report in 2 days.",
+            "I will finish my report in 2 days",
+            "I'll finish my report in 2 days.",
+            "I will finish my report in two days."
+          ],
+          "explanation": "I will finish my report in 2 days."
+        },
+        {
+          "id": "sf_b2_3",
+          "type": "rewrite",
+          "prompt": "If/ you/ not/ study/ hard/,/ you/ not/ pass/ final/ exam.",
+          "targetStart": "",
+          "answers": [
+            "If you do not study hard, you will not pass the final exam.",
+            "If you don't study hard, you won't pass the final exam.",
+            "If you do not study hard, you will not pass final exam.",
+            "If you don't study hard, you won't pass final exam."
+          ],
+          "explanation": "If you don't study hard, you won't pass the final exam."
+        },
+        {
+          "id": "sf_b2_4",
+          "type": "rewrite",
+          "prompt": "You/ look/ tired,/ so/ I/ bring/ you/ something/ eat.",
+          "targetStart": "",
+          "answers": [
+            "You look tired, so I will bring you something to eat.",
+            "You look tired, so I'll bring you something to eat.",
+            "You look tired so I will bring you something to eat."
+          ],
+          "explanation": "You look tired, so I will bring you something to eat."
+        },
+        {
+          "id": "sf_b2_5",
+          "type": "rewrite",
+          "prompt": "you/ please/ give/ me/ lift/ station?",
+          "targetStart": "",
+          "answers": [
+            "Will you please give me a lift to the station?",
+            "Will you please give me a lift to the station",
+            "Could you please give me a lift to the station?"
+          ],
+          "explanation": "Will you please give me a lift to the station?"
+        }
+      ]
+    },
+    {
+      "group_id": "sf_exercise_3",
+      "group_title": "3. Bài 3: Chia Động Từ Ở Dạng Phủ Định (Will not / Won't)",
+      "instruction": "Điền dạng phủ định chính xác 'will not' hoặc 'won't' kèm động từ nguyên mẫu:",
+      "questions": [
+        { "id": "sf_b3_1", "type": "blank", "prompt": "1. Tomorrow it [blank] (not to rain) in the North.", "answers": ["will not rain", "won't rain"], "explanation": "will not rain / won't rain." },
+        { "id": "sf_b3_2", "type": "blank", "prompt": "2. Just a moment. I [blank] (not to help) you.", "answers": ["will not help", "won't help"], "explanation": "will not help / won't help." },
+        { "id": "sf_b3_3", "type": "blank", "prompt": "3. In 2030 there [blank] (not to be) more cars.", "answers": ["will not be", "won't be"], "explanation": "will not be / won't be." },
+        { "id": "sf_b3_4", "type": "blank", "prompt": "4. I think Dennis [blank] (not to like) this CD.", "answers": ["will not like", "won't like"], "explanation": "will not like / won't like." },
+        { "id": "sf_b3_5", "type": "blank", "prompt": "5. My friend [blank] (not to be) 12 next Wednesday.", "answers": ["will not be", "won't be"], "explanation": "will not be / won't be." },
+        { "id": "sf_b3_6", "type": "blank", "prompt": "6. I don't think the pupils [blank] (not to get) good marks in the test.", "answers": ["will get", "will not get", "won't get"], "explanation": "will not get / won't get (hoặc will get nếu tính phủ định ở don't think)." },
+        { "id": "sf_b3_7", "type": "blank", "prompt": "7. I [blank] (not to see) you tonight.", "answers": ["will not see", "won't see"], "explanation": "will not see / won't see." },
+        { "id": "sf_b3_8", "type": "blank", "prompt": "8. People [blank] (not to buy) lots of cheap clothes.", "answers": ["will not buy", "won't buy"], "explanation": "will not buy / won't buy." }
+      ]
+    }
+  ]
+}
