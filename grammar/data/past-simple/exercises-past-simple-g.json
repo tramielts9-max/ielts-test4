@@ -1,0 +1,384 @@
+{
+  "tense_id": "past-simple",
+  "title": "BÀI TẬP THÌ QUÁ KHỨ ĐƠN (PAST SIMPLE)",
+  "exercise_groups": [
+    {
+      "group_id": "ps_tobe_i",
+      "group_title": "1. Động Từ To Be Ở Quá Khứ: Nhóm I + was",
+      "instruction": "Điền dạng đúng của động từ to be (was):",
+      "questions": [
+        { "id": "pst_i_1", "type": "blank", "prompt": "I [blank] the top scorer in my class.", "answers": ["was"], "explanation": "Chủ ngữ I ở quá khứ đi với to be 'was'." },
+        { "id": "pst_i_2", "type": "blank", "prompt": "I [blank] surprised by the news.", "answers": ["was"], "explanation": "Chủ ngữ I đi với 'was'." },
+        { "id": "pst_i_3", "type": "blank", "prompt": "I [blank] born in a small village.", "answers": ["was"], "explanation": "Chủ ngữ I đi với 'was'." },
+        { "id": "pst_i_4", "type": "blank", "prompt": "I [blank] busy with work yesterday.", "answers": ["was"], "explanation": "Chủ ngữ I đi với 'was'." },
+        { "id": "pst_i_5", "type": "blank", "prompt": "I [blank] nervous before the interview.", "answers": ["was"], "explanation": "Chủ ngữ I đi với 'was'." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_he_she_it",
+      "group_title": "2. Động Từ To Be Ở Quá Khứ: Nhóm He/ She/ It + was",
+      "instruction": "Điền dạng đúng của to be (was):",
+      "questions": [
+        { "id": "pst_hsi_1", "type": "blank", "prompt": "He [blank] the captain of the football team.", "answers": ["was"], "explanation": "Chủ ngữ He đi với 'was'." },
+        { "id": "pst_hsi_2", "type": "blank", "prompt": "She [blank] a talented artist.", "answers": ["was"], "explanation": "Chủ ngữ She đi với 'was'." },
+        { "id": "pst_hsi_3", "type": "blank", "prompt": "It [blank] an unforgettable experience.", "answers": ["was"], "explanation": "Chủ ngữ It đi với 'was'." },
+        { "id": "pst_hsi_4", "type": "blank", "prompt": "He [blank] late for the meeting.", "answers": ["was"], "explanation": "Chủ ngữ He đi với 'was'." },
+        { "id": "pst_hsi_5", "type": "blank", "prompt": "She [blank] very supportive of my decisions.", "answers": ["was"], "explanation": "Chủ ngữ She đi với 'was'." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_you_we_they",
+      "group_title": "3. Động Từ To Be Ở Quá Khứ: Nhóm You/ We/ They + were",
+      "instruction": "Điền dạng đúng của to be (were):",
+      "questions": [
+        { "id": "pst_ywt_1", "type": "blank", "prompt": "You [blank] amazing in the play last night.", "answers": ["were"], "explanation": "Chủ ngữ You đi với 'were'." },
+        { "id": "pst_ywt_2", "type": "blank", "prompt": "We [blank] on vacation last summer.", "answers": ["were"], "explanation": "Chủ ngữ We đi với 'were'." },
+        { "id": "pst_ywt_3", "type": "blank", "prompt": "They [blank] at the library all afternoon.", "answers": ["were"], "explanation": "Chủ ngữ They đi với 'were'." },
+        { "id": "pst_ywt_4", "type": "blank", "prompt": "You [blank] very confident during the presentation.", "answers": ["were"], "explanation": "Chủ ngữ You đi với 'were'." },
+        { "id": "pst_ywt_5", "type": "blank", "prompt": "We [blank] planning the event for months.", "answers": ["were"], "explanation": "Chủ ngữ We đi với 'were'." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_mixed",
+      "group_title": "4. Động Từ To Be Quá Khứ: Luyện Tập Trộn (Mixed)",
+      "instruction": "Điền was hoặc were vào chỗ trống:",
+      "questions": [
+        { "id": "pst_mix_1", "type": "blank", "prompt": "I [blank] the last one to leave the party.", "answers": ["was"], "explanation": "I + was." },
+        { "id": "pst_mix_2", "type": "blank", "prompt": "He [blank] always good at solving puzzles.", "answers": ["was"], "explanation": "He + was." },
+        { "id": "pst_mix_3", "type": "blank", "prompt": "We [blank] thrilled with the surprise.", "answers": ["were"], "explanation": "We + were." },
+        { "id": "pst_mix_4", "type": "blank", "prompt": "She [blank] the first person I called.", "answers": ["was"], "explanation": "She + was." },
+        { "id": "pst_mix_5", "type": "blank", "prompt": "You [blank] so generous to help me.", "answers": ["were"], "explanation": "You + were." },
+        { "id": "pst_mix_6", "type": "blank", "prompt": "They [blank] upset about the misunderstanding.", "answers": ["were"], "explanation": "They + were." },
+        { "id": "pst_mix_7", "type": "blank", "prompt": "It [blank] such a peaceful evening.", "answers": ["was"], "explanation": "It + was." },
+        { "id": "pst_mix_8", "type": "blank", "prompt": "I [blank] completely exhausted after the hike.", "answers": ["was"], "explanation": "I + was." },
+        { "id": "pst_mix_9", "type": "blank", "prompt": "They [blank] proud of their achievements.", "answers": ["were"], "explanation": "They + were." },
+        { "id": "pst_mix_10", "type": "blank", "prompt": "She [blank] a loyal and caring friend.", "answers": ["was"], "explanation": "She + was." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_noun_affirmative",
+      "group_title": "5. Động Từ To Be Với Danh Từ Số Ít & Số Nhiều (Khẳng Định)",
+      "instruction": "Chia dạng khẳng định của động từ To Be (was/were):",
+      "questions": [
+        { "id": "pst_aff_1", "type": "blank", "prompt": "The cake (be) [blank] delicious at the party.", "answers": ["was"], "explanation": "The cake là danh từ số ít ➔ was." },
+        { "id": "pst_aff_2", "type": "blank", "prompt": "The kids (be) [blank] excited about the trip.", "answers": ["were"], "explanation": "The kids là danh từ số nhiều ➔ were." },
+        { "id": "pst_aff_3", "type": "blank", "prompt": "The teacher (be) [blank] patient during the lesson.", "answers": ["was"], "explanation": "The teacher là danh từ số ít ➔ was." },
+        { "id": "pst_aff_4", "type": "blank", "prompt": "The weather (be) [blank] rainy yesterday.", "answers": ["was"], "explanation": "The weather không đếm được (số ít) ➔ was." },
+        { "id": "pst_aff_5", "type": "blank", "prompt": "The concert (be) [blank] amazing last night.", "answers": ["was"], "explanation": "The concert là số ít ➔ was." },
+        { "id": "pst_aff_6", "type": "blank", "prompt": "The books (be) [blank] on the table when I arrived.", "answers": ["were"], "explanation": "The books là số nhiều ➔ were." },
+        { "id": "pst_aff_7", "type": "blank", "prompt": "The phone (be) [blank] silent during the meeting.", "answers": ["was"], "explanation": "The phone là số ít ➔ was." },
+        { "id": "pst_aff_8", "type": "blank", "prompt": "The presentation (be) [blank] successful at the conference.", "answers": ["was"], "explanation": "The presentation là số ít ➔ was." },
+        { "id": "pst_aff_9", "type": "blank", "prompt": "The movie (be) [blank] too long for me to enjoy.", "answers": ["was"], "explanation": "The movie là số ít ➔ was." },
+        { "id": "pst_aff_10", "type": "blank", "prompt": "The food (be) [blank] ready when we got home.", "answers": ["was"], "explanation": "The food là danh từ không đếm được ➔ was." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_negative_20",
+      "group_title": "6. Động Từ To Be: Dạng Khẳng Định và Phủ Định Quá Khứ (20 Câu)",
+      "instruction": "Điền dạng đúng của động từ to be ở quá khứ (khẳng định hoặc phủ định):",
+      "questions": [
+        { "id": "pst_neg_1", "type": "blank", "prompt": "This (be) [blank] your favorite movie last year.", "answers": ["was"], "explanation": "This movie là số ít ➔ was." },
+        { "id": "pst_neg_2a", "type": "blank", "prompt": "The milk (be) [blank] fresh.", "answers": ["was"], "explanation": "The milk ➔ was." },
+        { "id": "pst_neg_2b", "type": "blank", "prompt": "It (be, not) [blank] expired yesterday.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_neg_3", "type": "blank", "prompt": "They (be) [blank] at the party last night.", "answers": ["were"], "explanation": "They ➔ were." },
+        { "id": "pst_neg_4a", "type": "blank", "prompt": "Sarah and Emily (be) [blank] in the garden.", "answers": ["were"], "explanation": "Chủ ngữ 2 người ➔ were." },
+        { "id": "pst_neg_4b", "type": "blank", "prompt": "They (be, not) [blank] in the house.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_5", "type": "blank", "prompt": "I (be) [blank] in the right room yesterday.", "answers": ["was"], "explanation": "I + was." },
+        { "id": "pst_neg_6a", "type": "blank", "prompt": "The train (be) [blank] on time yesterday.", "answers": ["was"], "explanation": "The train ➔ was." },
+        { "id": "pst_neg_6b", "type": "blank", "prompt": "It (be, not) [blank] late.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_neg_7a", "type": "blank", "prompt": "My neighbors (be) [blank] friendly.", "answers": ["were"], "explanation": "My neighbors là số nhiều ➔ were." },
+        { "id": "pst_neg_7b", "type": "blank", "prompt": "They (be, not) [blank] rude last week.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_8", "type": "blank", "prompt": "You (be) [blank] at the market yesterday.", "answers": ["were"], "explanation": "You + were." },
+        { "id": "pst_neg_9a", "type": "blank", "prompt": "These chairs (be) [blank] comfortable.", "answers": ["were"], "explanation": "These chairs ➔ were." },
+        { "id": "pst_neg_9b", "type": "blank", "prompt": "They (be, not) [blank] hard.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_10", "type": "blank", "prompt": "We (be) [blank] allowed to use our phones in class yesterday.", "answers": ["were"], "explanation": "We + were." },
+        { "id": "pst_neg_11a", "type": "blank", "prompt": "The sky (be) [blank] clear this morning.", "answers": ["was"], "explanation": "The sky ➔ was." },
+        { "id": "pst_neg_11b", "type": "blank", "prompt": "It (be, not) [blank] cloudy earlier.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_neg_12a", "type": "blank", "prompt": "The coffee (be) [blank] hot.", "answers": ["was"], "explanation": "The coffee ➔ was." },
+        { "id": "pst_neg_12b", "type": "blank", "prompt": "It (be, not) [blank] cold yesterday.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_neg_13", "type": "blank", "prompt": "She (be) [blank] your sister last week.", "answers": ["was"], "explanation": "She + was." },
+        { "id": "pst_neg_14", "type": "blank", "prompt": "It (be) [blank] going to rain yesterday afternoon.", "answers": ["was"], "explanation": "It + was." },
+        { "id": "pst_neg_15a", "type": "blank", "prompt": "My parents (be) [blank] at work.", "answers": ["were"], "explanation": "My parents là số nhiều ➔ were." },
+        { "id": "pst_neg_15b", "type": "blank", "prompt": "They (be, not) [blank] at home last evening.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_16a", "type": "blank", "prompt": "The flowers (be) [blank] beautiful.", "answers": ["were"], "explanation": "The flowers là số nhiều ➔ were." },
+        { "id": "pst_neg_16b", "type": "blank", "prompt": "They (be, not) [blank] wilted last month.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_17", "type": "blank", "prompt": "He (be) [blank] your best friend last year.", "answers": ["was"], "explanation": "He + was." },
+        { "id": "pst_neg_18a", "type": "blank", "prompt": "The students (be) [blank] reading in the library.", "answers": ["were"], "explanation": "The students ➔ were." },
+        { "id": "pst_neg_18b", "type": "blank", "prompt": "They (be, not) [blank] playing outside yesterday.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_neg_19a", "type": "blank", "prompt": "This movie (be) [blank] interesting.", "answers": ["was"], "explanation": "This movie ➔ was." },
+        { "id": "pst_neg_19b", "type": "blank", "prompt": "It (be, not) [blank] boring last weekend.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_neg_20", "type": "blank", "prompt": "I (be) [blank] late for the meeting yesterday.", "answers": ["was"], "explanation": "I + was." }
+      ]
+    },
+    {
+      "group_id": "ps_tobe_questions_20",
+      "group_title": "7. Động Từ To Be: Dạng Câu Hỏi Quá Khứ (20 Câu)",
+      "instruction": "Điền dạng đúng của to be (was/were):",
+      "questions": [
+        { "id": "pst_q_1", "type": "blank", "prompt": "1. [blank] (be) this your favorite restaurant last weekend?", "answers": ["Was", "was"], "explanation": "This restaurant là số ít ➔ Was." },
+        { "id": "pst_q_2a", "type": "blank", "prompt": "2. The cake (be) [blank] delicious.", "answers": ["was"], "explanation": "The cake ➔ was." },
+        { "id": "pst_q_2b", "type": "blank", "prompt": "It (be, not) [blank] too sweet.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_q_3", "type": "blank", "prompt": "3. [blank] (be) they at the concert last night?", "answers": ["Were", "were"], "explanation": "They ➔ Were." },
+        { "id": "pst_q_4a", "type": "blank", "prompt": "4. John and Mark (be) [blank] in the kitchen.", "answers": ["were"], "explanation": "Chủ ngữ 2 người ➔ were." },
+        { "id": "pst_q_4b", "type": "blank", "prompt": "They (be, not) [blank] in the living room.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_5", "type": "blank", "prompt": "5. [blank] (be) I at the right address yesterday?", "answers": ["Was", "was"], "explanation": "I ➔ Was." },
+        { "id": "pst_q_6a", "type": "blank", "prompt": "6. The flight (be) [blank] on time last Friday.", "answers": ["was"], "explanation": "The flight ➔ was." },
+        { "id": "pst_q_6b", "type": "blank", "prompt": "It (be, not) [blank] delayed.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_q_7a", "type": "blank", "prompt": "7. My friends (be) [blank] supportive.", "answers": ["were"], "explanation": "My friends là số nhiều ➔ were." },
+        { "id": "pst_q_7b", "type": "blank", "prompt": "They (be, not) [blank] rude when I needed help.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_8", "type": "blank", "prompt": "8. [blank] (be) you at the park yesterday afternoon?", "answers": ["Were", "were"], "explanation": "You ➔ Were." },
+        { "id": "pst_q_9a", "type": "blank", "prompt": "9. The chairs (be) [blank] comfortable during the event.", "answers": ["were"], "explanation": "The chairs là số nhiều ➔ were." },
+        { "id": "pst_q_9b", "type": "blank", "prompt": "They (be, not) [blank] hard.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_10", "type": "blank", "prompt": "10. [blank] (be) we allowed to take photos at the museum?", "answers": ["Were", "were"], "explanation": "We ➔ Were." },
+        { "id": "pst_q_11a", "type": "blank", "prompt": "11. The weather (be) [blank] warm last Saturday.", "answers": ["was"], "explanation": "The weather ➔ was." },
+        { "id": "pst_q_11b", "type": "blank", "prompt": "It (be, not) [blank] rainy.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_q_12a", "type": "blank", "prompt": "12. The soup (be) [blank] hot.", "answers": ["was"], "explanation": "The soup ➔ was." },
+        { "id": "pst_q_12b", "type": "blank", "prompt": "It (be, not) [blank] cold when I served it.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_q_13", "type": "blank", "prompt": "13. [blank] (be) she your colleague when you worked together?", "answers": ["Was", "was"], "explanation": "She ➔ Was." },
+        { "id": "pst_q_14", "type": "blank", "prompt": "14. [blank] (be) it sunny when you went out yesterday?", "answers": ["Was", "was"], "explanation": "It ➔ Was." },
+        { "id": "pst_q_15a", "type": "blank", "prompt": "15. My friends (be) [blank] at the party.", "answers": ["were"], "explanation": "My friends ➔ were." },
+        { "id": "pst_q_15b", "type": "blank", "prompt": "They (be, not) [blank] at home last Saturday.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_16a", "type": "blank", "prompt": "16. The paintings (be) [blank] stunning at the gallery.", "answers": ["were"], "explanation": "The paintings là số nhiều ➔ were." },
+        { "id": "pst_q_16b", "type": "blank", "prompt": "They (be, not) [blank] damaged.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_17", "type": "blank", "prompt": "17. [blank] (be) he your mentor when you worked on the project?", "answers": ["Was", "was"], "explanation": "He ➔ Was." },
+        { "id": "pst_q_18a", "type": "blank", "prompt": "18. The team (be) [blank] practicing on the field.", "answers": ["was", "were"], "explanation": "The team đi với was (hoặc were tùy số nhiều tập thể) ➔ was." },
+        { "id": "pst_q_18b", "type": "blank", "prompt": "They (be, not) [blank] resting during the break.", "answers": ["were not", "weren't"], "explanation": "They + were not / weren't." },
+        { "id": "pst_q_19a", "type": "blank", "prompt": "19. The lecture (be) [blank] informative.", "answers": ["was"], "explanation": "The lecture ➔ was." },
+        { "id": "pst_q_19b", "type": "blank", "prompt": "It (be, not) [blank] boring at all.", "answers": ["was not", "wasn't"], "explanation": "It + was not / wasn't." },
+        { "id": "pst_q_20", "type": "blank", "prompt": "20. [blank] (be) I on time for the appointment yesterday?", "answers": ["Was", "was"], "explanation": "I ➔ Was." }
+      ]
+    },
+    {
+      "group_id": "ps_spelling_ed_rules",
+      "group_title": "8. Hướng Dẫn Thêm Đuôi -ed Vào Động Từ Thường",
+      "instruction": "Thực hành thêm đuôi -ed vào các động từ theo từng quy tắc:",
+      "questions": [
+        { "id": "ed_r1_1", "type": "blank", "prompt": "walk ➔ [blank]", "answers": ["walked"], "explanation": "Thêm -ed: walked." },
+        { "id": "ed_r1_2", "type": "blank", "prompt": "talk ➔ [blank]", "answers": ["talked"], "explanation": "Thêm -ed: talked." },
+        { "id": "ed_r1_3", "type": "blank", "prompt": "jump ➔ [blank]", "answers": ["jumped"], "explanation": "Thêm -ed: jumped." },
+        { "id": "ed_r1_4", "type": "blank", "prompt": "work ➔ [blank]", "answers": ["worked"], "explanation": "Thêm -ed: worked." },
+        { "id": "ed_r1_5", "type": "blank", "prompt": "cook ➔ [blank]", "answers": ["cooked"], "explanation": "Thêm -ed: cooked." },
+        { "id": "ed_r2_1", "type": "blank", "prompt": "like ➔ [blank]", "answers": ["liked"], "explanation": "Tận cùng là -e ➔ chỉ thêm -d: liked." },
+        { "id": "ed_r2_2", "type": "blank", "prompt": "move ➔ [blank]", "answers": ["moved"], "explanation": "Tận cùng là -e ➔ chỉ thêm -d: moved." },
+        { "id": "ed_r2_3", "type": "blank", "prompt": "hope ➔ [blank]", "answers": ["hoped"], "explanation": "Tận cùng là -e ➔ chỉ thêm -d: hoped." },
+        { "id": "ed_r2_4", "type": "blank", "prompt": "dance ➔ [blank]", "answers": ["danced"], "explanation": "Tận cùng là -e ➔ chỉ thêm -d: danced." },
+        { "id": "ed_r2_5", "type": "blank", "prompt": "close ➔ [blank]", "answers": ["closed"], "explanation": "Tận cùng là -e ➔ chỉ thêm -d: closed." },
+        { "id": "ed_r3_1", "type": "blank", "prompt": "play ➔ [blank]", "answers": ["played"], "explanation": "Nguyên âm + y ➔ giữ nguyên y thêm -ed: played." },
+        { "id": "ed_r3_2", "type": "blank", "prompt": "enjoy ➔ [blank]", "answers": ["enjoyed"], "explanation": "Nguyên âm + y ➔ enjoyed." },
+        { "id": "ed_r3_3", "type": "blank", "prompt": "stay ➔ [blank]", "answers": ["stayed"], "explanation": "Nguyên âm + y ➔ stayed." },
+        { "id": "ed_r3_4", "type": "blank", "prompt": "obey ➔ [blank]", "answers": ["obeyed"], "explanation": "Nguyên âm + y ➔ obeyed." },
+        { "id": "ed_r3_5", "type": "blank", "prompt": "employ ➔ [blank]", "answers": ["employed"], "explanation": "Nguyên âm + y ➔ employed." },
+        { "id": "ed_r4_1", "type": "blank", "prompt": "carry ➔ [blank]", "answers": ["carried"], "explanation": "Phụ âm + y ➔ đổi y thành i + ed: carried." },
+        { "id": "ed_r4_2", "type": "blank", "prompt": "study ➔ [blank]", "answers": ["studied"], "explanation": "Phụ âm + y ➔ studied." },
+        { "id": "ed_r4_3", "type": "blank", "prompt": "worry ➔ [blank]", "answers": ["worried"], "explanation": "Phụ âm + y ➔ worried." },
+        { "id": "ed_r4_4", "type": "blank", "prompt": "cry ➔ [blank]", "answers": ["cried"], "explanation": "Phụ âm + y ➔ cried." },
+        { "id": "ed_r4_5", "type": "blank", "prompt": "hurry ➔ [blank]", "answers": ["hurried"], "explanation": "Phụ âm + y ➔ hurried." },
+        { "id": "ed_r5_1", "type": "blank", "prompt": "stop ➔ [blank]", "answers": ["stopped"], "explanation": "Gấp đôi phụ âm cuối p: stopped." },
+        { "id": "ed_r5_2", "type": "blank", "prompt": "plan ➔ [blank]", "answers": ["planned"], "explanation": "Gấp đôi phụ âm cuối n: planned." },
+        { "id": "ed_r5_3", "type": "blank", "prompt": "beg ➔ [blank]", "answers": ["begged"], "explanation": "Gấp đôi phụ âm cuối g: begged." },
+        { "id": "ed_r5_4", "type": "blank", "prompt": "hop ➔ [blank]", "answers": ["hopped"], "explanation": "Gấp đôi phụ âm cuối p: hopped." },
+        { "id": "ed_r5_5", "type": "blank", "prompt": "rub ➔ [blank]", "answers": ["rubbed"], "explanation": "Gấp đôi phụ âm cuối b: rubbed." },
+        { "id": "ed_r6_1", "type": "blank", "prompt": "panic ➔ [blank]", "answers": ["panicked"], "explanation": "Tận cùng là -c ➔ thêm -ked: panicked." },
+        { "id": "ed_r6_2", "type": "blank", "prompt": "mimic ➔ [blank]", "answers": ["mimicked"], "explanation": "Tận cùng là -c ➔ thêm -ked: mimicked." },
+        { "id": "ed_r6_3", "type": "blank", "prompt": "trick ➔ [blank]", "answers": ["tricked"], "explanation": "Tận cùng là ck ➔ thêm -ed: tricked." },
+        { "id": "ed_r6_4", "type": "blank", "prompt": "attack ➔ [blank]", "answers": ["attacked"], "explanation": "Tận cùng là ck ➔ thêm -ed: attacked." },
+        { "id": "ed_r6_5", "type": "blank", "prompt": "picnic ➔ [blank]", "answers": ["picnicked"], "explanation": "Tận cùng là -c ➔ thêm -ked: picnicked." }
+      ]
+    },
+    {
+      "group_id": "ps_verb_affirmative_check",
+      "group_title": "9. Kiểm Tra Chia Động Từ Khẳng Định Có Quy Tắc (-ed)",
+      "instruction": "Chia động từ trong ngoặc ở thì quá khứ đơn:",
+      "questions": [
+        { "id": "ps_ck_1", "type": "blank", "prompt": "1. She (help) [blank] her mother clean the house.", "answers": ["helped"], "explanation": "help ➔ helped." },
+        { "id": "ps_ck_2", "type": "blank", "prompt": "2. We (paint) [blank] the walls of our new house.", "answers": ["painted"], "explanation": "paint ➔ painted." },
+        { "id": "ps_ck_3", "type": "blank", "prompt": "3. He (fix) [blank] the broken chair.", "answers": ["fixed"], "explanation": "fix ➔ fixed." },
+        { "id": "ps_ck_4", "type": "blank", "prompt": "4. They (watch) [blank] a documentary on TV.", "answers": ["watched"], "explanation": "watch ➔ watched." },
+        { "id": "ps_ck_5", "type": "blank", "prompt": "5. I (call) [blank] my friend to ask for advice.", "answers": ["called"], "explanation": "call ➔ called." },
+        { "id": "ps_ck_6", "type": "blank", "prompt": "6. The teacher (explain) [blank] the lesson clearly.", "answers": ["explained"], "explanation": "explain ➔ explained." },
+        { "id": "ps_ck_7", "type": "blank", "prompt": "7. You (wash) [blank] your car yesterday morning.", "answers": ["washed"], "explanation": "wash ➔ washed." },
+        { "id": "ps_ck_8", "type": "blank", "prompt": "8. The kids (play) [blank] football in the park.", "answers": ["played"], "explanation": "play ➔ played." },
+        { "id": "ps_ck_9", "type": "blank", "prompt": "9. My brother (open) [blank] the window to let in fresh air.", "answers": ["opened"], "explanation": "open ➔ opened." },
+        { "id": "ps_ck_10", "type": "blank", "prompt": "10. She (pack) [blank] her suitcase for the trip.", "answers": ["packed"], "explanation": "pack ➔ packed." }
+      ]
+    },
+    {
+      "group_id": "ps_verb_negative_10",
+      "group_title": "10. Động Từ Thường: Dạng Phủ Định Quá Khứ (did not + V0)",
+      "instruction": "Chia động từ trong ngoặc ở thể phủ định quá khứ (did not / didn't + V0):",
+      "questions": [
+        { "id": "ps_neg_1", "type": "blank", "prompt": "1. I (visit, not) [blank] my grandparents last weekend.", "answers": ["did not visit", "didn't visit"], "explanation": "did not + visit." },
+        { "id": "ps_neg_2", "type": "blank", "prompt": "2. She (cook, not) [blank] dinner yesterday.", "answers": ["did not cook", "didn't cook"], "explanation": "did not + cook." },
+        { "id": "ps_neg_3", "type": "blank", "prompt": "3. They (watch, not) [blank] the football match on TV.", "answers": ["did not watch", "didn't watch"], "explanation": "did not + watch." },
+        { "id": "ps_neg_4", "type": "blank", "prompt": "4. We (travel, not) [blank] to the countryside during the holiday.", "answers": ["did not travel", "didn't travel"], "explanation": "did not + travel." },
+        { "id": "ps_neg_5", "type": "blank", "prompt": "5. He (finish, not) [blank] his homework on time.", "answers": ["did not finish", "didn't finish"], "explanation": "did not + finish." },
+        { "id": "ps_neg_6", "type": "blank", "prompt": "6. The cat (catch, not) [blank] the mouse last night.", "answers": ["did not catch", "didn't catch"], "explanation": "did not + catch." },
+        { "id": "ps_neg_7", "type": "blank", "prompt": "7. You (answer, not) [blank] my phone call.", "answers": ["did not answer", "didn't answer"], "explanation": "did not + answer." },
+        { "id": "ps_neg_8", "type": "blank", "prompt": "8. The students (attend, not) [blank] the lecture yesterday.", "answers": ["did not attend", "didn't attend"], "explanation": "did not + attend." },
+        { "id": "ps_neg_9", "type": "blank", "prompt": "9. She (dance, not) [blank] at the party.", "answers": ["did not dance", "didn't dance"], "explanation": "did not + dance." },
+        { "id": "ps_neg_10", "type": "blank", "prompt": "10. He (buy, not) [blank] the gift for his friend.", "answers": ["did not buy", "didn't buy"], "explanation": "did not + buy." }
+      ]
+    },
+    {
+      "group_id": "ps_verb_questions_5",
+      "group_title": "11. Động Từ Thường: Dạng Câu Hỏi Quá Khứ (Did + S + V0)",
+      "instruction": "Điền từ 'Did' vào chỗ trống để tạo câu hỏi quá khứ đơn:",
+      "questions": [
+        { "id": "ps_q_1", "type": "blank", "prompt": "1. [blank] you go to the party last night?", "answers": ["Did", "did"], "explanation": "Trợ động từ quá khứ là 'Did'." },
+        { "id": "ps_q_2", "type": "blank", "prompt": "2. [blank] she enjoy the movie yesterday?", "answers": ["Did", "did"], "explanation": "Dùng 'Did'." },
+        { "id": "ps_q_3", "type": "blank", "prompt": "3. [blank] they visit their grandparents last weekend?", "answers": ["Did", "did"], "explanation": "Dùng 'Did'." },
+        { "id": "ps_q_4", "type": "blank", "prompt": "4. [blank] he play football last Saturday?", "answers": ["Did", "did"], "explanation": "Dùng 'Did'." },
+        { "id": "ps_q_5", "type": "blank", "prompt": "5. [blank] we go to the beach during the summer?", "answers": ["Did", "did"], "explanation": "Dùng 'Did'." }
+      ]
+    },
+    {
+      "group_id": "ps_rewrite_affirm_to_qn_neg",
+      "group_title": "12. Chuyển Đổi Câu: Khẳng Định ➔ Câu Hỏi & Phủ Định (+ => ?-)",
+      "instruction": "Viết lại câu sang câu hỏi và câu phủ định:",
+      "questions": [
+        { "id": "ps_rw_aq_1", "type": "rewrite", "prompt": "She cleaned her room yesterday. ➔ Câu hỏi:", "targetStart": "", "answers": ["Did she clean her room yesterday?", "Did she clean her room yesterday"], "explanation": "Did she clean her room yesterday?" },
+        { "id": "ps_rw_an_1", "type": "rewrite", "prompt": "She cleaned her room yesterday. ➔ Câu phủ định:", "targetStart": "", "answers": ["She did not clean her room yesterday.", "She didn't clean her room yesterday.", "She did not clean her room yesterday", "She didn't clean her room yesterday"], "explanation": "She did not / didn't clean her room yesterday." },
+        { "id": "ps_rw_aq_2", "type": "rewrite", "prompt": "They watched a movie last night. ➔ Câu hỏi:", "targetStart": "", "answers": ["Did they watch a movie last night?", "Did they watch a movie last night"], "explanation": "Did they watch a movie last night?" },
+        { "id": "ps_rw_an_2", "type": "rewrite", "prompt": "They watched a movie last night. ➔ Câu phủ định:", "targetStart": "", "answers": ["They did not watch a movie last night.", "They didn't watch a movie last night.", "They did not watch a movie last night", "They didn't watch a movie last night"], "explanation": "They did not / didn't watch a movie last night." },
+        { "id": "ps_rw_aq_3", "type": "rewrite", "prompt": "We visited the zoo on Sunday. ➔ Câu hỏi:", "targetStart": "", "answers": ["Did we visit the zoo on Sunday?", "Did we visit the zoo on Sunday"], "explanation": "Did we visit the zoo on Sunday?" },
+        { "id": "ps_rw_an_3", "type": "rewrite", "prompt": "We visited the zoo on Sunday. ➔ Câu phủ định:", "targetStart": "", "answers": ["We did not visit the zoo on Sunday.", "We didn't visit the zoo on Sunday.", "We did not visit the zoo on Sunday", "We didn't visit the zoo on Sunday"], "explanation": "We did not / didn't visit the zoo on Sunday." },
+        { "id": "ps_rw_aq_4", "type": "rewrite", "prompt": "I cooked dinner for my family. ➔ Câu hỏi:", "targetStart": "", "answers": ["Did you cook dinner for your family?", "Did I cook dinner for my family?", "Did you cook dinner for your family", "Did I cook dinner for my family"], "explanation": "Did you/I cook dinner for my/your family?" },
+        { "id": "ps_rw_an_4", "type": "rewrite", "prompt": "I cooked dinner for my family. ➔ Câu phủ định:", "targetStart": "", "answers": ["I did not cook dinner for my family.", "I didn't cook dinner for my family.", "I did not cook dinner for my family", "I didn't cook dinner for my family"], "explanation": "I did not / didn't cook dinner for my family." },
+        { "id": "ps_rw_aq_5", "type": "rewrite", "prompt": "He completed his project before the deadline. ➔ Câu hỏi:", "targetStart": "", "answers": ["Did he complete his project before the deadline?", "Did he complete his project before the deadline"], "explanation": "Did he complete his project before the deadline?" },
+        { "id": "ps_rw_an_5", "type": "rewrite", "prompt": "He completed his project before the deadline. ➔ Câu phủ định:", "targetStart": "", "answers": ["He did not complete his project before the deadline.", "He didn't complete his project before the deadline.", "He did not complete his project before the deadline", "He didn't complete his project before the deadline"], "explanation": "He did not / didn't complete his project before the deadline." }
+      ]
+    },
+    {
+      "group_id": "ps_rewrite_qn_to_aff_neg",
+      "group_title": "13. Chuyển Đổi Câu: Câu Hỏi ➔ Khẳng Định & Phủ Định (? => +-)",
+      "instruction": "Chuyển câu hỏi đã cho thành câu khẳng định và phủ định:",
+      "questions": [
+        { "id": "ps_rw_qa_1", "type": "rewrite", "prompt": "Did she clean her room yesterday? ➔ Câu khẳng định:", "targetStart": "", "answers": ["She cleaned her room yesterday.", "She cleaned her room yesterday"], "explanation": "She cleaned her room yesterday." },
+        { "id": "ps_rw_qn_1", "type": "rewrite", "prompt": "Did she clean her room yesterday? ➔ Câu phủ định:", "targetStart": "", "answers": ["She did not clean her room yesterday.", "She didn't clean her room yesterday.", "She did not clean her room yesterday", "She didn't clean her room yesterday"], "explanation": "She did not / didn't clean her room yesterday." },
+        { "id": "ps_rw_qa_2", "type": "rewrite", "prompt": "Did they play football in the park? ➔ Câu khẳng định:", "targetStart": "", "answers": ["They played football in the park.", "They played football in the park"], "explanation": "They played football in the park." },
+        { "id": "ps_rw_qn_2", "type": "rewrite", "prompt": "Did they play football in the park? ➔ Câu phủ định:", "targetStart": "", "answers": ["They did not play football in the park.", "They didn't play football in the park.", "They did not play football in the park", "They didn't play football in the park"], "explanation": "They did not / didn't play football in the park." },
+        { "id": "ps_rw_qa_3", "type": "rewrite", "prompt": "Did he visit his grandparents last weekend? ➔ Câu khẳng định:", "targetStart": "", "answers": ["He visited his grandparents last weekend.", "He visited his grandparents last weekend"], "explanation": "He visited his grandparents last weekend." },
+        { "id": "ps_rw_qn_3", "type": "rewrite", "prompt": "Did he visit his grandparents last weekend? ➔ Câu phủ định:", "targetStart": "", "answers": ["He did not visit his grandparents last weekend.", "He didn't visit his grandparents last weekend.", "He did not visit his grandparents last weekend", "He didn't visit his grandparents last weekend"], "explanation": "He did not / didn't visit his grandparents last weekend." },
+        { "id": "ps_rw_qa_4", "type": "rewrite", "prompt": "Did we watch a movie together last night? ➔ Câu khẳng định:", "targetStart": "", "answers": ["We watched a movie together last night.", "We watched a movie together last night"], "explanation": "We watched a movie together last night." },
+        { "id": "ps_rw_qn_4", "type": "rewrite", "prompt": "Did we watch a movie together last night? ➔ Câu phủ định:", "targetStart": "", "answers": ["We did not watch a movie together last night.", "We didn't watch a movie together last night.", "We did not watch a movie together last night", "We didn't watch a movie together last night"], "explanation": "We did not / didn't watch a movie together last night." },
+        { "id": "ps_rw_qa_5", "type": "rewrite", "prompt": "Did she finish her project before the deadline? ➔ Câu khẳng định:", "targetStart": "", "answers": ["She finished her project before the deadline.", "She finished her project before the deadline"], "explanation": "She finished her project before the deadline." },
+        { "id": "ps_rw_qn_5", "type": "rewrite", "prompt": "Did she finish her project before the deadline? ➔ Câu phủ định:", "targetStart": "", "answers": ["She did not finish her project before the deadline.", "She didn't finish her project before the deadline.", "She did not finish her project before the deadline", "She didn't finish her project before the deadline"], "explanation": "She did not / didn't finish her project before the deadline." }
+      ]
+    },
+    {
+      "group_id": "ps_categorize_usage_20",
+      "group_title": "14. Bài Tập Phân Loại Câu Theo Cách Sử Dụng (Categorize Sentences)",
+      "instruction": "Chọn nhóm phù hợp: 'Đã xong, không liên quan đến hiện tại', 'Thói quen trong quá khứ', hoặc 'Chuỗi hành động':",
+      "questions": [
+        { "id": "ps_cat_1", "type": "choice", "prompt": "1. I woke up, took a shower, and had breakfast. (Tôi thức dậy, tắm rửa, và ăn sáng.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi hành động diễn ra liên tiếp trong quá khứ." },
+        { "id": "ps_cat_2", "type": "choice", "prompt": "2. He visited his grandmother every Sunday when he was young. (Anh ấy thăm bà mỗi Chủ nhật khi còn nhỏ.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen diễn ra thường xuyên trong quá khứ (when he was young)." },
+        { "id": "ps_cat_3", "type": "choice", "prompt": "3. We arrived at the airport, checked in, and boarded the plane. (Chúng tôi đến sân bay, làm thủ tục và lên máy bay.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi các hành động liên tiếp." },
+        { "id": "ps_cat_4", "type": "choice", "prompt": "4. They watched the new movie last weekend. (Họ đã xem bộ phim mới vào cuối tuần qua.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Hành động đã xảy ra và kết thúc hoàn toàn trong quá khứ." },
+        { "id": "ps_cat_5", "type": "choice", "prompt": "5. I cleaned the house yesterday afternoon. (Tôi đã dọn dẹp nhà cửa vào chiều qua.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Hành động đã xảy ra và kết thúc trong quá khứ." },
+        { "id": "ps_cat_6", "type": "choice", "prompt": "6. We always went to the beach during summer vacations. (Chúng tôi luôn đi biển trong kỳ nghỉ hè.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen trong quá khứ với 'always'." },
+        { "id": "ps_cat_7", "type": "choice", "prompt": "7. I studied English every evening when I was in high school. (Tôi học tiếng Anh mỗi tối khi còn học trung học.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen lặp lại trong quá khứ." },
+        { "id": "ps_cat_8", "type": "choice", "prompt": "8. She drank tea every morning before work. (Cô ấy uống trà mỗi sáng trước khi đi làm.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen trong quá khứ." },
+        { "id": "ps_cat_9", "type": "choice", "prompt": "9. We ate pizza for dinner last night. (Chúng tôi đã ăn pizza cho bữa tối tối qua.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Sự việc đơn lẻ đã xong tối qua." },
+        { "id": "ps_cat_10", "type": "choice", "prompt": "10. When I was a child, I played outside every day. (Khi tôi còn nhỏ, tôi chơi ngoài trời mỗi ngày.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen thời thơ ấu (When I was a child)." },
+        { "id": "ps_cat_11", "type": "choice", "prompt": "11. I traveled to the beach last month. (Tôi đã đi biển vào tháng trước.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Hành động đã hoàn tất tháng trước." },
+        { "id": "ps_cat_12", "type": "choice", "prompt": "12. He went to the store, bought some milk, and returned home. (Anh ấy đi đến cửa hàng, mua ít sữa, và trở về nhà.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi hành động nối tiếp." },
+        { "id": "ps_cat_13", "type": "choice", "prompt": "13. They attended the conference last year. (Họ đã tham dự hội nghị năm ngoái.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Đã hoàn thành năm ngoái." },
+        { "id": "ps_cat_14", "type": "choice", "prompt": "14. I wrote an email to my colleague yesterday. (Tôi đã viết một email cho đồng nghiệp của mình hôm qua.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Đã xong hôm qua." },
+        { "id": "ps_cat_15", "type": "choice", "prompt": "15. She bought a new dress last week. (Cô ấy đã mua một chiếc váy mới vào tuần trước.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Đã hoàn tất tuần trước." },
+        { "id": "ps_cat_16", "type": "choice", "prompt": "16. We walked to school every day when we lived in the countryside. (Chúng tôi đi bộ đến trường mỗi ngày khi sống ở nông thôn.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 1, "explanation": "Thói quen trong quá khứ." },
+        { "id": "ps_cat_17", "type": "choice", "prompt": "17. She cooked dinner, set the table, and called everyone to eat. (Cô ấy nấu bữa tối, dọn bàn, và gọi mọi người ăn.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi hành động." },
+        { "id": "ps_cat_18", "type": "choice", "prompt": "18. I arrived at the office, turned on my computer, and started working. (Tôi đã đến văn phòng, bật máy tính, và bắt đầu làm việc.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi hành động." },
+        { "id": "ps_cat_19", "type": "choice", "prompt": "19. He called his friend this morning. (Anh ấy đã gọi điện cho bạn mình sáng nay.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 0, "explanation": "Đã xong sáng nay." },
+        { "id": "ps_cat_20", "type": "choice", "prompt": "20. We cleaned the house, decorated the room, and prepared for the party. (Chúng tôi đã dọn dẹp nhà cửa, trang trí phòng, và chuẩn bị cho bữa tiệc.)", "options": ["Đã xong, không liên quan đến hiện tại", "Thói quen trong quá khứ", "Chuỗi hành động"], "correctIndex": 2, "explanation": "Chuỗi hành động liên tiếp." }
+      ]
+    },
+    {
+      "group_id": "ps_identify_time_markers_20",
+      "group_title": "15. Bài Tập Nhận Diện Dấu Hiệu Quá Khứ Đơn (Identify Time Markers)",
+      "instruction": "Điền chính xác dấu hiệu thời gian nhận biết thì Quá khứ đơn có trong câu:",
+      "questions": [
+        { "id": "pstm_1", "type": "blank", "prompt": "1. She graduated from university last summer. ➔ Dấu hiệu:", "answers": ["last summer"], "explanation": "'last summer' (mùa hè năm ngoái) là dấu hiệu quá khứ đơn." },
+        { "id": "pstm_2", "type": "blank", "prompt": "2. They went to the beach two days ago. ➔ Dấu hiệu:", "answers": ["two days ago"], "explanation": "'two days ago' (hai ngày trước) là dấu hiệu quá khứ đơn." },
+        { "id": "pstm_3", "type": "blank", "prompt": "3. I saw him at the party last weekend. ➔ Dấu hiệu:", "answers": ["last weekend"], "explanation": "'last weekend' là dấu hiệu quá khứ." },
+        { "id": "pstm_4", "type": "blank", "prompt": "4. We traveled to Japan in 2010. ➔ Dấu hiệu:", "answers": ["in 2010"], "explanation": "'in 2010' là mốc thời gian quá khứ." },
+        { "id": "pstm_5", "type": "blank", "prompt": "5. He finished his homework yesterday afternoon. ➔ Dấu hiệu:", "answers": ["yesterday afternoon"], "explanation": "'yesterday afternoon' là dấu hiệu quá khứ." },
+        { "id": "pstm_6", "type": "blank", "prompt": "6. My brother got a new job last month. ➔ Dấu hiệu:", "answers": ["last month"], "explanation": "'last month' là dấu hiệu quá khứ." },
+        { "id": "pstm_7", "type": "blank", "prompt": "7. The concert started at 7 p.m. last night. ➔ Dấu hiệu:", "answers": ["last night", "at 7 p.m. last night", "at 7 pm last night"], "explanation": "'last night' là dấu hiệu quá khứ." },
+        { "id": "pstm_8", "type": "blank", "prompt": "8. She read the book in 2018. ➔ Dấu hiệu:", "answers": ["in 2018"], "explanation": "'in 2018' là mốc thời gian quá khứ." },
+        { "id": "pstm_9", "type": "blank", "prompt": "9. I met her for the first time three years ago. ➔ Dấu hiệu:", "answers": ["three years ago"], "explanation": "'three years ago' là dấu hiệu quá khứ." },
+        { "id": "pstm_10", "type": "blank", "prompt": "10. They visited their grandparents last weekend. ➔ Dấu hiệu:", "answers": ["last weekend"], "explanation": "'last weekend' là dấu hiệu quá khứ." },
+        { "id": "pstm_11", "type": "blank", "prompt": "11. He called me three hours ago. ➔ Dấu hiệu:", "answers": ["three hours ago"], "explanation": "'three hours ago' là dấu hiệu quá khứ." },
+        { "id": "pstm_12", "type": "blank", "prompt": "12. We had lunch at noon yesterday. ➔ Dấu hiệu:", "answers": ["yesterday", "at noon yesterday"], "explanation": "'yesterday' là dấu hiệu quá khứ." },
+        { "id": "pstm_13", "type": "blank", "prompt": "13. I watched a movie last night. ➔ Dấu hiệu:", "answers": ["last night"], "explanation": "'last night' là dấu hiệu quá khứ." },
+        { "id": "pstm_14", "type": "blank", "prompt": "14. They arrived in Hanoi two days ago. ➔ Dấu hiệu:", "answers": ["two days ago"], "explanation": "'two days ago' là dấu hiệu quá khứ." },
+        { "id": "pstm_15", "type": "blank", "prompt": "15. She studied hard for the exam last week. ➔ Dấu hiệu:", "answers": ["last week"], "explanation": "'last week' là dấu hiệu quá khứ." },
+        { "id": "pstm_16", "type": "blank", "prompt": "16. We stayed at a beautiful hotel in 2015. ➔ Dấu hiệu:", "answers": ["in 2015"], "explanation": "'in 2015' là mốc thời gian quá khứ." },
+        { "id": "pstm_17", "type": "blank", "prompt": "17. They came to the party last Thursday. ➔ Dấu hiệu:", "answers": ["last Thursday", "last thursday"], "explanation": "'last Thursday' là dấu hiệu quá khứ." },
+        { "id": "pstm_18", "type": "blank", "prompt": "18. I learned to play the guitar when I was a child. ➔ Dấu hiệu:", "answers": ["when I was a child", "when i was a child"], "explanation": "'when I was a child' là dấu hiệu quá khứ." },
+        { "id": "pstm_19", "type": "blank", "prompt": "19. He wrote a letter to his friend last month. ➔ Dấu hiệu:", "answers": ["last month"], "explanation": "'last month' là dấu hiệu quá khứ." },
+        { "id": "pstm_20", "type": "blank", "prompt": "20. We celebrated her birthday yesterday evening. ➔ Dấu hiệu:", "answers": ["yesterday evening"], "explanation": "'yesterday evening' là dấu hiệu quá khứ." }
+      ]
+    },
+    {
+      "group_id": "ps_sentence_ordering_5",
+      "group_title": "16. Bài Tập Sắp Xếp Câu (Sentence Ordering)",
+      "instruction": "Sắp xếp các từ thành câu hoàn chỉnh đúng thì Quá khứ đơn:",
+      "questions": [
+        {
+          "id": "pso_1",
+          "type": "rewrite",
+          "prompt": "1. I/ go swimming/ yesterday.",
+          "targetStart": "I ",
+          "answers": ["went swimming yesterday.", "went swimming yesterday"],
+          "explanation": "Chuyển go ➔ went: I went swimming yesterday."
+        },
+        {
+          "id": "pso_2",
+          "type": "rewrite",
+          "prompt": "2. Mrs. Nhung/ wash/ the dishes.",
+          "targetStart": "Mrs. Nhung ",
+          "answers": ["washed the dishes.", "washed the dishes"],
+          "explanation": "Chuyển wash ➔ washed: Mrs. Nhung washed the dishes."
+        },
+        {
+          "id": "pso_3",
+          "type": "rewrite",
+          "prompt": "3. my mother/ go shopping/ with/ friends/ in/ park.",
+          "targetStart": "My mother ",
+          "answers": [
+            "went shopping with friends in the park.",
+            "went shopping with her friends in the park.",
+            "went shopping with friends in park.",
+            "went shopping with friends in the park",
+            "went shopping with friends in park"
+          ],
+          "explanation": "My mother went shopping with friends in the park."
+        },
+        {
+          "id": "pso_4",
+          "type": "rewrite",
+          "prompt": "4. Lan/ cook/ chicken noodles/ dinner.",
+          "targetStart": "Lan ",
+          "answers": [
+            "cooked chicken noodles for dinner.",
+            "cooked chicken noodles dinner.",
+            "cooked chicken noodles for dinner",
+            "cooked chicken noodles dinner"
+          ],
+          "explanation": "Chuyển cook ➔ cooked: Lan cooked chicken noodles for dinner."
+        },
+        {
+          "id": "pso_5",
+          "type": "rewrite",
+          "prompt": "5. Nam/ I/ study/ hard/ last weekend.",
+          "targetStart": "Nam and I ",
+          "answers": [
+            "studied hard last weekend.",
+            "studied hard last weekend"
+          ],
+          "explanation": "Chuyển study ➔ studied: Nam and I studied hard last weekend."
+        }
+      ]
+    }
+  ]
+}
