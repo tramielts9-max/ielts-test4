@@ -6,14 +6,13 @@ export class LessonRenderer {
     this.theoryData = theoryData;
     this.exerciseData = exerciseData;
     this.totalQuestions = 0;
-    this.totalRecallQuestions = 0;
   }
 
   renderAll() {
     this.renderHero();
     this.renderTabs();
     this.renderTheory();
-    this.renderTheoryRecall(); // TAB Ở GIỮA
+    this.renderTheoryRecall(); // TAB 2: KHẢO LÝ THUYẾT TỰ LUẬN
     this.renderExercises();
     this.renderBottomBar();
   }
@@ -23,7 +22,7 @@ export class LessonRenderer {
     hero.className = 'hero-box-g';
     hero.innerHTML = `
       <h1>${this.theoryData.tense_name}</h1>
-      <p>Học lý thuyết ➔ Khảo thuộc lòng công thức ➔ Làm bài tập áp dụng thực tế</p>
+      <p>Học lý thuyết ➔ Khảo tự luận thuộc lòng ➔ Làm bài tập áp dụng thực tế</p>
     `;
     this.container.appendChild(hero);
   }
@@ -33,7 +32,7 @@ export class LessonRenderer {
     nav.className = 'tab-nav-g';
     nav.innerHTML = `
       <button type="button" class="tab-btn-g active" id="btnTabTheory">📖 1. Lý Thuyết</button>
-      <button type="button" class="tab-btn-g" id="btnTabRecall" style="background:#fffbeb; border-color:#fef08a; color:#854d0e;">📝 2. Khảo Lý Thuyết</button>
+      <button type="button" class="tab-btn-g" id="btnTabRecall" style="background:#fffbeb; border-color:#fef08a; color:#854d0e;">📝 2. Khảo Lý Thuyết (Tự Luận)</button>
       <button type="button" class="tab-btn-g" id="btnTabExercise">✍️ 3. Bài Tập Áp Dụng</button>
     `;
     this.container.appendChild(nav);
@@ -52,7 +51,6 @@ export class LessonRenderer {
     const btnE = document.getElementById('btnTabExercise');
     const bottomBar = document.getElementById('stickyBottomBar');
 
-    // Ẩn tất cả
     theoryBox.style.display = 'none';
     if (recallBox) recallBox.style.display = 'none';
     exerciseBox.style.display = 'none';
@@ -61,7 +59,6 @@ export class LessonRenderer {
     btnE.classList.remove('active');
     if (bottomBar) bottomBar.style.display = 'none';
 
-    // Hiện tab được chọn
     if (tab === 'theory') {
       theoryBox.style.display = 'block';
       btnT.classList.add('active');
@@ -173,12 +170,30 @@ export class LessonRenderer {
   }
 
   // =========================================================================
-  // HÀM HIỂN THỊ PHẦN KHẢO LÝ THUYẾT (TAB Ở GIỮA)
+  // TAB 2: HIỂN THỊ ĐỀ THI TỰ LUẬN ĐẦY ĐỦ & GỌI AI CHẤM
   // =========================================================================
- renderTheoryRecall() {
+  renderTheoryRecall() {
     const box = document.createElement('div');
     box.id = 'tabRecallContent';
     box.style.display = 'none';
+
+    // Đọc đề bài tự luận từ file JSON (nếu có)
+    const promptData = this.theoryData.essay_prompt || {
+      instruction: "Học sinh tự nhớ lại và trình bày toàn bộ lý thuyết vào phần bài làm.",
+      questions: []
+    };
+
+    let questionsHtml = '';
+    if (promptData.questions && promptData.questions.length > 0) {
+      questionsHtml = `
+        <div style="background:#ffffff; border:1.5px solid #fed7aa; border-radius:8px; padding:16px; margin: 15px 0;">
+          <h4 style="margin:0 0 10px 0; color:#9a3412;">📋 NỘI DUNG ĐỀ KIỂM TRA BẮT BUỘC TRÌNH BÀY:</h4>
+          <ol style="margin:0; padding-left:20px; line-height:1.7; font-size:14.5px; color:#1e293b;">
+            ${promptData.questions.map(q => `<li style="margin-bottom:8px;">${q}</li>`).join('')}
+          </ol>
+        </div>
+      `;
+    }
 
     box.innerHTML = `
       <div class="theory-card-g" style="background:#fefce8; border: 1.5px solid #fef08a; padding: 22px;">
@@ -186,26 +201,30 @@ export class LessonRenderer {
           <div>
             <h3 style="color:#854d0e; margin:0 0 6px 0;">📝 ĐỀ KIỂM TRA TỰ LUẬN KHẢO LÝ THUYẾT: ${this.theoryData.tense_name}</h3>
             <p style="font-size:13.5px; color:#713f12; margin:0;">
-              Học sinh tự nhớ lại và trình bày đầy đủ: <b>Công thức 3 thể (+, -, ?), Tất cả các cách dùng, Tự đặt câu ví dụ</b> và <b>Dấu hiệu nhận biết</b>.
+              ${promptData.instruction}
             </p>
           </div>
           <span style="background:#f59e0b; color:white; font-size:11px; font-weight:800; padding:4px 10px; border-radius:12px;">
             AI CHẤM TRỰC TIẾP
           </span>
         </div>
+        ${questionsHtml}
       </div>
 
       <div class="theory-card-g" style="background:#ffffff; margin-top:16px;">
         <label style="font-weight:700; font-size:14.5px; display:block; margin-bottom:8px; color:#0f172a;">
-          ✍️ Nhập bài làm tự luận của Em vào đây (Trình bày chi tiết từng mục):
+          ✍️ Nhập bài làm tự luận của Em vào đây (Trình bày chi tiết từng mục A, B, C, D...):
         </label>
-        <textarea id="aiRecallInput" rows="12" style="width:100%; box-sizing:border-box; padding:14px; border:1.5px solid #cbd5e1; border-radius:8px; font-size:14px; line-height:1.6; font-family:inherit; outline:none;" placeholder="Em hãy gõ bài làm vào đây:
-1. Công thức (+, -, ? với to be và V thường):
-...
-2. Tất cả các cách sử dụng:
-- Cách 1: ... (Ví dụ: ...)
-- Cách 2: ... (Ví dụ: ...)
-3. Dấu hiệu nhận biết & Trạng từ:
+        <textarea id="aiRecallInput" rows="15" style="width:100%; box-sizing:border-box; padding:14px; border:1.5px solid #cbd5e1; border-radius:8px; font-size:14.5px; line-height:1.6; font-family:inherit; outline:none;" placeholder="Em hãy gõ bài làm tự luận theo đúng các mục ở đề bài phía trên:
+A. Công thức (Form):
+- To be:
+- Động từ thường:
+
+B. Cách dùng (Uses) & Ví dụ:
+- Cách dùng 1: ... (Ví dụ tiếng Anh: ... - Dịch nghĩa: ...)
+- Cách dùng 2: ... (Ví dụ tiếng Anh: ... - Dịch nghĩa: ...)
+
+C. Dấu hiệu nhận biết (Signal Words):
 ..."></textarea>
 
         <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px; flex-wrap:wrap; gap:10px;">
@@ -224,14 +243,13 @@ export class LessonRenderer {
 
     this.container.appendChild(box);
 
-    // Gắn sự kiện gọi AI khi bấm nút
     box.querySelector('#btnSubmitToAI').onclick = () => this.handleCallAIGrading();
   }
 
   async handleCallAIGrading() {
     const text = document.getElementById('aiRecallInput').value.trim();
     if (!text || text.length < 20) {
-      alert("⚠️ Em hãy viết đầy đủ bài tự luận (công thức, cách dùng, ví dụ...) trước khi gửi Anh chấm nhé!");
+      alert("⚠️ Em hãy viết đầy đủ bài tự luận theo các mục đề bài trước khi gửi Anh chấm nhé!");
       return;
     }
 
@@ -243,15 +261,13 @@ export class LessonRenderer {
     btn.disabled = true;
     reportBox.style.display = 'block';
     reportMd.innerHTML = '';
-    status.innerHTML = "⏳ Anh đang phân tích bài tự luận, soi xét câu ví dụ và chấm điểm cho Em...";
+    status.innerHTML = "⏳ Anh đang đọc bài tự luận, soi xét công thức, câu ví dụ và chấm điểm cho Em...";
 
-    // Cuộn nhẹ xuống khung kết quả
     reportBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     let fullMarkdown = '';
 
     try {
-      // Import động hàm AI
       const { gradeTheoryEssayWithAI } = await import('./ai-grader-g.js');
 
       await gradeTheoryEssayWithAI(
@@ -277,32 +293,6 @@ export class LessonRenderer {
       btn.disabled = false;
       btn.innerText = "THỬ LẠI";
     }
-  }
-
-  gradeRecall() {
-    let correct = 0;
-    this.theoryData.theory_recall.forEach(item => {
-      const input = document.querySelector(`input[data-recall-id="${item.id}"]`);
-      const userVal = input ? input.value : '';
-      const result = ExerciseEngine.gradeQuestion(item, userVal);
-
-      const row = document.getElementById(`recall_row_${item.id}`);
-      const fb = document.getElementById(`recall_fb_${item.id}`);
-
-      fb.classList.add('show');
-      if (result.isCorrect) {
-        correct++;
-        row.className = 'q-row-g is-correct';
-        fb.className = 'feedback-box-g show correct';
-        fb.innerHTML = `✅ <b>Chính xác!</b> ${item.explanation || ''}`;
-      } else {
-        row.className = 'q-row-g is-wrong';
-        fb.className = 'feedback-box-g show wrong';
-        fb.innerHTML = `❌ <b>Chưa đúng!</b> Đáp án: <b>${result.correctDisplay}</b>. 💡 <i>${item.explanation || ''}</i>`;
-      }
-    });
-
-    alert(`🎉 Bạn đã thuộc: ${correct} / ${this.totalRecallQuestions} câu lý thuyết!`);
   }
 
   renderExercises() {
