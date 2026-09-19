@@ -1,0 +1,367 @@
+{
+  "tense_id": "past-continuous",
+  "title": "BÀI TẬP THÌ QUÁ KHỨ TIẾP DIỄN",
+  "exercise_groups": [
+    {
+      "group_id": "pc_was_were_subject_drill",
+      "group_title": "1. Luyện Phân Biệt Was / Were Theo Ngôi",
+      "instruction": "Điền 'was' hoặc 'were' vào chỗ trống:",
+      "questions": [
+        { "id": "pc_w_1", "type": "blank", "prompt": "I [blank] the top scorer in my class.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_w_2", "type": "blank", "prompt": "I [blank] surprised by the news.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_w_3", "type": "blank", "prompt": "I [blank] born in a small village.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_w_4", "type": "blank", "prompt": "I [blank] busy with work yesterday.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_w_5", "type": "blank", "prompt": "I [blank] nervous before the interview.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_w_6", "type": "blank", "prompt": "He [blank] the captain of the football team.", "answers": ["was"], "explanation": "Ngôi 'He' số ít đi với 'was'." },
+        { "id": "pc_w_7", "type": "blank", "prompt": "She [blank] a talented artist.", "answers": ["was"], "explanation": "Ngôi 'She' số ít đi với 'was'." },
+        { "id": "pc_w_8", "type": "blank", "prompt": "It [blank] an unforgettable experience.", "answers": ["was"], "explanation": "Ngôi 'It' số ít đi với 'was'." },
+        { "id": "pc_w_9", "type": "blank", "prompt": "He [blank] late for the meeting.", "answers": ["was"], "explanation": "Ngôi 'He' số ít đi với 'was'." },
+        { "id": "pc_w_10", "type": "blank", "prompt": "She [blank] very supportive of my decisions.", "answers": ["was"], "explanation": "Ngôi 'She' số ít đi với 'was'." },
+        { "id": "pc_w_11", "type": "blank", "prompt": "You [blank] amazing in the play last night.", "answers": ["were"], "explanation": "Ngôi 'You' đi với 'were'." },
+        { "id": "pc_w_12", "type": "blank", "prompt": "We [blank] on vacation last summer.", "answers": ["were"], "explanation": "Ngôi 'We' số nhiều đi với 'were'." },
+        { "id": "pc_w_13", "type": "blank", "prompt": "They [blank] at the library all afternoon.", "answers": ["were"], "explanation": "Ngôi 'They' số nhiều đi với 'were'." },
+        { "id": "pc_w_14", "type": "blank", "prompt": "You [blank] very confident during the presentation.", "answers": ["were"], "explanation": "Ngôi 'You' đi với 'were'." },
+        { "id": "pc_w_15", "type": "blank", "prompt": "We [blank] planning the event for months.", "answers": ["were"], "explanation": "Ngôi 'We' số nhiều đi với 'were'." }
+      ]
+    },
+    {
+      "group_id": "pc_was_were_mixed_10",
+      "group_title": "2. Mixed (Trộn): Điền Was / Were",
+      "instruction": "Xác định chủ ngữ và điền 'was' hoặc 'were':",
+      "questions": [
+        { "id": "pc_m_1", "type": "blank", "prompt": "I [blank] the last one to leave the party.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_m_2", "type": "blank", "prompt": "He [blank] always good at solving puzzles.", "answers": ["was"], "explanation": "Chủ ngữ 'He' đi với 'was'." },
+        { "id": "pc_m_3", "type": "blank", "prompt": "We [blank] thrilled with the surprise.", "answers": ["were"], "explanation": "Chủ ngữ 'We' đi với 'were'." },
+        { "id": "pc_m_4", "type": "blank", "prompt": "She [blank] the first person I called.", "answers": ["was"], "explanation": "Chủ ngữ 'She' đi với 'was'." },
+        { "id": "pc_m_5", "type": "blank", "prompt": "You [blank] so generous to help me.", "answers": ["were"], "explanation": "Chủ ngữ 'You' đi với 'were'." },
+        { "id": "pc_m_6", "type": "blank", "prompt": "They [blank] upset about the misunderstanding.", "answers": ["were"], "explanation": "Chủ ngữ 'They' đi với 'were'." },
+        { "id": "pc_m_7", "type": "blank", "prompt": "It [blank] such a peaceful evening.", "answers": ["was"], "explanation": "Chủ ngữ 'It' đi với 'was'." },
+        { "id": "pc_m_8", "type": "blank", "prompt": "I [blank] completely exhausted after the hike.", "answers": ["was"], "explanation": "Chủ ngữ 'I' đi với 'was'." },
+        { "id": "pc_m_9", "type": "blank", "prompt": "They [blank] proud of their achievements.", "answers": ["were"], "explanation": "Chủ ngữ 'They' đi với 'were'." },
+        { "id": "pc_m_10", "type": "blank", "prompt": "She [blank] a loyal and caring friend.", "answers": ["was"], "explanation": "Chủ ngữ 'She' đi với 'was'." }
+      ]
+    },
+    {
+      "group_id": "pc_affirmative_10",
+      "group_title": "3. Dạng Khẳng Định (+) S + was/were + V-ing",
+      "instruction": "Chia động từ ở thì Quá khứ tiếp diễn dạng khẳng định:",
+      "questions": [
+        { "id": "pc_af_1", "type": "blank", "prompt": "The children (be, play) [blank] in the park.", "answers": ["were playing"], "explanation": "The children là số nhiều ➔ were playing." },
+        { "id": "pc_af_2", "type": "blank", "prompt": "He (be, cook) [blank] dinner when I arrived.", "answers": ["was cooking"], "explanation": "Chủ ngữ He là số ít ➔ was cooking." },
+        { "id": "pc_af_3", "type": "blank", "prompt": "We (be, watch) [blank] a movie last night.", "answers": ["were watching"], "explanation": "Chủ ngữ We là số nhiều ➔ were watching." },
+        { "id": "pc_af_4", "type": "blank", "prompt": "The sun (be, shine) [blank] brightly all day.", "answers": ["was shining"], "explanation": "The sun là số ít; shine bỏ -e thêm -ing ➔ was shining." },
+        { "id": "pc_af_5", "type": "blank", "prompt": "They (be, discuss) [blank] the project in the meeting.", "answers": ["were discussing"], "explanation": "They là số nhiều ➔ were discussing." },
+        { "id": "pc_af_6", "type": "blank", "prompt": "She (be, draw) [blank] a picture while he was writing a story.", "answers": ["was drawing"], "explanation": "She là số ít ➔ was drawing." },
+        { "id": "pc_af_7", "type": "blank", "prompt": "The train (be, arrive) [blank] at the station when I got there.", "answers": ["was arriving"], "explanation": "The train là số ít; arrive bỏ -e thêm -ing ➔ was arriving." },
+        { "id": "pc_af_8", "type": "blank", "prompt": "I (be, listen) [blank] to music while studying.", "answers": ["was listening"], "explanation": "Chủ ngữ I đi với was ➔ was listening." },
+        { "id": "pc_af_9", "type": "blank", "prompt": "The cat (be, sleep) [blank] on the couch.", "answers": ["was sleeping"], "explanation": "The cat là số ít ➔ was sleeping." },
+        { "id": "pc_af_10", "type": "blank", "prompt": "We (be, enjoy) [blank] our vacation last summer.", "answers": ["were enjoying"], "explanation": "Chủ ngữ We đi với were ➔ were enjoying." }
+      ]
+    },
+    {
+      "group_id": "pc_negative_10",
+      "group_title": "4. Dạng Phủ Định (–) S + was/were + NOT + V-ing",
+      "instruction": "Chia động từ ở dạng phủ định của thì Quá khứ tiếp diễn:",
+      "questions": [
+        { "id": "pc_neg_1", "type": "blank", "prompt": "The children (be, not, play) [blank] video games at 12 o’clock last night.", "answers": ["were not playing", "weren't playing"], "explanation": "The children là số nhiều ➔ were not playing / weren't playing." },
+        { "id": "pc_neg_2", "type": "blank", "prompt": "He (be, not, cook) [blank] dinner yesterday when I called.", "answers": ["was not cooking", "wasn't cooking"], "explanation": "He là số ít ➔ was not cooking / wasn't cooking." },
+        { "id": "pc_neg_3", "type": "blank", "prompt": "We (be, not, watch) [blank] the news at this time last weekend.", "answers": ["were not watching", "weren't watching"], "explanation": "We là số nhiều ➔ were not watching / weren't watching." },
+        { "id": "pc_neg_4", "type": "blank", "prompt": "The sun (be, not, shine) [blank] during the storm at 7 o’clock this morning.", "answers": ["was not shining", "wasn't shining"], "explanation": "The sun là số ít ➔ was not shining / wasn't shining." },
+        { "id": "pc_neg_5", "type": "blank", "prompt": "They (be, not, discuss) [blank] anything important when I entered.", "answers": ["were not discussing", "weren't discussing"], "explanation": "They là số nhiều ➔ were not discussing / weren't discussing." },
+        { "id": "pc_neg_6", "type": "blank", "prompt": "She (be, not, draw) [blank] in her notebook while I was studying.", "answers": ["was not drawing", "wasn't drawing"], "explanation": "She là số ít ➔ was not drawing / wasn't drawing." },
+        { "id": "pc_neg_7", "type": "blank", "prompt": "The train (be, not, arrive) [blank] on time at 4 o’clock yesterday.", "answers": ["was not arriving", "wasn't arriving"], "explanation": "The train là số ít ➔ was not arriving / wasn't arriving." },
+        { "id": "pc_neg_8", "type": "blank", "prompt": "I (be, not, listen) [blank] to the radio while studying at this time last night.", "answers": ["was not listening", "wasn't listening"], "explanation": "I đi với was ➔ was not listening / wasn't listening." },
+        { "id": "pc_neg_9", "type": "blank", "prompt": "The cat (be, not, sleep) [blank] on the bed when I walked in.", "answers": ["was not sleeping", "wasn't sleeping"], "explanation": "The cat là số ít ➔ was not sleeping / wasn't sleeping." },
+        { "id": "pc_neg_10", "type": "blank", "prompt": "We (be, not, enjoy) [blank] the concert at this time last month.", "answers": ["were not enjoying", "weren't enjoying"], "explanation": "We là số nhiều ➔ were not enjoying / weren't enjoying." }
+      ]
+    },
+    {
+      "group_id": "pc_questions_20",
+      "group_title": "5. Dạng Câu Hỏi (?) Was / Were + S + V-ing?",
+      "instruction": "Điền từ đúng để hoàn thành câu hỏi ở quá khứ tiếp diễn / to be:",
+      "questions": [
+        { "id": "pc_q_1", "type": "blank", "prompt": "[blank] this your favorite book at 12 o’clock last night?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'this' số ít ➔ Was." },
+        { "id": "pc_q_2", "type": "blank", "prompt": "The milk smelled fresh. It [blank] (be, not, expire) when I checked.", "answers": ["was not expiring", "wasn't expiring", "had not expired"], "explanation": "Hành động tại thời điểm kiểm tra trong quá khứ ➔ wasn't expiring." },
+        { "id": "pc_q_3", "type": "blank", "prompt": "[blank] they coming to the party at this time last week?", "answers": ["Were", "were"], "explanation": "Chủ ngữ 'they' số nhiều ➔ Were." },
+        { "id": "pc_q_4", "type": "blank", "prompt": "[blank] I in the right room when the meeting started?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'I' ➔ Was." },
+        { "id": "pc_q_5", "type": "blank", "prompt": "The train was running on time today. It [blank] (be, not, be) late.", "answers": ["was not", "wasn't"], "explanation": "Động từ To Be trong quá khứ ➔ was not / wasn't." },
+        { "id": "pc_q_6", "type": "blank", "prompt": "[blank] you going to the market at this time yesterday?", "answers": ["Were", "were"], "explanation": "Chủ ngữ 'you' ➔ Were." },
+        { "id": "pc_q_7", "type": "blank", "prompt": "[blank] we allowed to use our phones in class last week?", "answers": ["Were", "were"], "explanation": "Chủ ngữ 'we' ➔ Were." },
+        { "id": "pc_q_8", "type": "blank", "prompt": "[blank] she your sister at this time last year?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'she' ➔ Was." },
+        { "id": "pc_q_9", "type": "blank", "prompt": "[blank] it going to rain this afternoon when I left?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'it' ➔ Was." },
+        { "id": "pc_q_10", "type": "blank", "prompt": "The flowers [blank] (bloom) beautifully at this time last year.", "answers": ["were blooming"], "explanation": "The flowers số nhiều ➔ were blooming." },
+        { "id": "pc_q_11", "type": "blank", "prompt": "[blank] he your best friend at that time?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'he' ➔ Was." },
+        { "id": "pc_q_12", "type": "blank", "prompt": "The students [blank] (read) in the library when the bell rang.", "answers": ["were reading"], "explanation": "The students số nhiều ➔ were reading." },
+        { "id": "pc_q_13", "type": "blank", "prompt": "[blank] I late for the meeting last week?", "answers": ["Was", "was"], "explanation": "Chủ ngữ 'I' ➔ Was." }
+      ]
+    },
+    {
+      "group_id": "pc_spelling_drill_15",
+      "group_title": "6. Bài 1: Viết Dạng -ing Của 15 Động Từ",
+      "instruction": "Áp dụng đúng các quy tắc để viết dạng đuôi -ing:",
+      "questions": [
+        { "id": "pc_sp_1", "type": "blank", "prompt": "take ➔ [blank]", "answers": ["taking"], "explanation": "Tận cùng là 'e' ➔ bỏ 'e' thêm -ing: taking." },
+        { "id": "pc_sp_2", "type": "blank", "prompt": "drive ➔ [blank]", "answers": ["driving"], "explanation": "Tận cùng là 'e' ➔ bỏ 'e' thêm -ing: driving." },
+        { "id": "pc_sp_3", "type": "blank", "prompt": "see ➔ [blank]", "answers": ["seeing"], "explanation": "Đuôi 'ee' giữ nguyên thêm -ing: seeing." },
+        { "id": "pc_sp_4", "type": "blank", "prompt": "agree ➔ [blank]", "answers": ["agreeing"], "explanation": "Đuôi 'ee' giữ nguyên thêm -ing: agreeing." },
+        { "id": "pc_sp_5", "type": "blank", "prompt": "open ➔ [blank]", "answers": ["opening"], "explanation": "Trọng âm âm tiết 1 ➔ không gấp đôi phụ âm: opening." },
+        { "id": "pc_sp_6", "type": "blank", "prompt": "enter ➔ [blank]", "answers": ["entering"], "explanation": "Trọng âm rơi vào âm 1 ➔ không gấp đôi: entering." },
+        { "id": "pc_sp_7", "type": "blank", "prompt": "happen ➔ [blank]", "answers": ["happening"], "explanation": "Trọng âm rơi vào âm 1 ➔ không gấp đôi: happening." },
+        { "id": "pc_sp_8", "type": "blank", "prompt": "try ➔ [blank]", "answers": ["trying"], "explanation": "Tận cùng là 'y' giữ nguyên thêm -ing: trying." },
+        { "id": "pc_sp_9", "type": "blank", "prompt": "play ➔ [blank]", "answers": ["playing"], "explanation": "Tận cùng là 'y' giữ nguyên thêm -ing: playing." },
+        { "id": "pc_sp_10", "type": "blank", "prompt": "work ➔ [blank]", "answers": ["working"], "explanation": "Động từ bình thường thêm -ing: working." },
+        { "id": "pc_sp_11", "type": "blank", "prompt": "speak ➔ [blank]", "answers": ["speaking"], "explanation": "Có 2 nguyên âm 'ea' ➔ không gấp đôi: speaking." },
+        { "id": "pc_sp_12", "type": "blank", "prompt": "get ➔ [blank]", "answers": ["getting"], "explanation": "1 nguyên âm kẹp giữa 2 phụ âm ➔ gấp đôi 't': getting." },
+        { "id": "pc_sp_13", "type": "blank", "prompt": "travel ➔ [blank]", "answers": ["traveling", "travelling"], "explanation": "Chấp nhận cả traveling (Mỹ) và travelling (Anh)." },
+        { "id": "pc_sp_14", "type": "blank", "prompt": "lie ➔ [blank]", "answers": ["lying"], "explanation": "Tận cùng là '-ie' ➔ đổi thành '-y' rồi thêm -ing: lying." },
+        { "id": "pc_sp_15", "type": "blank", "prompt": "win ➔ [blank]", "answers": ["winning"], "explanation": "1 nguyên âm kẹp giữa 2 phụ âm ➔ gấp đôi 'n': winning." }
+      ]
+    },
+    {
+      "group_id": "pc_rewrite_statements",
+      "group_title": "7. Viết Lại Câu: Chuyển Sang Câu Hỏi & Câu Phủ Định (+ ➔ ? / -)",
+      "instruction": "Chuyển câu khẳng định sau sang câu hỏi và phủ định tương ứng:",
+      "questions": [
+        {
+          "id": "pc_rw_1a",
+          "type": "rewrite",
+          "prompt": "She was reading a book. (Chuyển sang câu hỏi)",
+          "targetStart": "Was ",
+          "answers": ["she reading a book?", "she reading a book"],
+          "explanation": "Đưa 'Was' lên trước chủ ngữ 'she'."
+        },
+        {
+          "id": "pc_rw_1b",
+          "type": "rewrite",
+          "prompt": "She was reading a book. (Chuyển sang phủ định)",
+          "targetStart": "She ",
+          "answers": ["was not reading a book.", "was not reading a book", "wasn't reading a book.", "wasn't reading a book"],
+          "explanation": "Thêm 'not' sau 'was': was not / wasn't reading a book."
+        },
+        {
+          "id": "pc_rw_2a",
+          "type": "rewrite",
+          "prompt": "They were playing soccer in the park. (Chuyển sang câu hỏi)",
+          "targetStart": "Were ",
+          "answers": ["they playing soccer in the park?", "they playing soccer in the park"],
+          "explanation": "Đưa 'Were' lên trước chủ ngữ 'they'."
+        },
+        {
+          "id": "pc_rw_2b",
+          "type": "rewrite",
+          "prompt": "They were playing soccer in the park. (Chuyển sang phủ định)",
+          "targetStart": "They ",
+          "answers": ["were not playing soccer in the park.", "were not playing soccer in the park", "weren't playing soccer in the park.", "weren't playing soccer in the park"],
+          "explanation": "Thêm 'not' sau 'were': were not / weren't playing soccer in the park."
+        },
+        {
+          "id": "pc_rw_3a",
+          "type": "rewrite",
+          "prompt": "He was cooking dinner when the phone rang. (Chuyển sang câu hỏi)",
+          "targetStart": "Was ",
+          "answers": ["he cooking dinner when the phone rang?", "he cooking dinner when the phone rang"],
+          "explanation": "Đưa 'Was' lên trước chủ ngữ 'he'."
+        },
+        {
+          "id": "pc_rw_3b",
+          "type": "rewrite",
+          "prompt": "He was cooking dinner when the phone rang. (Chuyển sang phủ định)",
+          "targetStart": "He ",
+          "answers": ["was not cooking dinner when the phone rang.", "was not cooking dinner when the phone rang", "wasn't cooking dinner when the phone rang.", "wasn't cooking dinner when the phone rang"],
+          "explanation": "Thêm 'not' sau 'was': was not / wasn't cooking dinner..."
+        }
+      ]
+    },
+    {
+      "group_id": "pc_categorize_usage_15",
+      "group_title": "8. Phân Loại Câu Theo Cách Sử Dụng",
+      "instruction": "Chọn đúng cách sử dụng của câu: A (Thời điểm nhất định), B (Xảy ra đồng thời), C (Đang xảy ra thì bị xen vào):",
+      "questions": [
+        {
+          "id": "pc_cat_1",
+          "type": "choice",
+          "prompt": "1. At 8 PM last night, I was watching a movie. (Vào lúc 8 giờ tối qua, tôi đang xem một bộ phim.)",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 0,
+          "explanation": "Có mốc giờ cụ thể 'At 8 PM last night' ➔ Ở thời điểm nhất định."
+        },
+        {
+          "id": "pc_cat_2",
+          "type": "choice",
+          "prompt": "2. While she was cooking dinner, he was setting the table. (Trong khi cô ấy đang nấu bữa tối, anh ấy đang dọn bàn.)",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 1,
+          "explanation": "Hai hành động diễn ra song song (có 'while') ➔ Xảy ra đồng thời."
+        },
+        {
+          "id": "pc_cat_3",
+          "type": "choice",
+          "prompt": "3. They were playing soccer at 3 PM yesterday. (Họ đang chơi bóng đá lúc 3 giờ chiều qua.)",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 0,
+          "explanation": "Có mốc giờ rõ ràng 'at 3 PM yesterday' ➔ Ở thời điểm nhất định."
+        },
+        {
+          "id": "pc_cat_4",
+          "type": "choice",
+          "prompt": "4. I was studying for my exam while my friend was playing video games.",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 1,
+          "explanation": "Hai người làm hai việc cùng lúc nối bằng 'while' ➔ Xảy ra đồng thời."
+        },
+        {
+          "id": "pc_cat_5",
+          "type": "choice",
+          "prompt": "5. He was reading a book when the lights went out. (Anh ấy đang đọc sách khi đèn tắt.)",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 2,
+          "explanation": "Đang đọc sách thì hành động đèn tắt ('went out') xen vào ➔ Đang xảy ra thì bị xen vào."
+        },
+        {
+          "id": "pc_cat_6",
+          "type": "choice",
+          "prompt": "6. I was working on my project when my computer crashed.",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 2,
+          "explanation": "Đang làm việc thì máy tính sập nguồn xen vào ➔ Đang xảy ra thì bị xen vào."
+        },
+        {
+          "id": "pc_cat_7",
+          "type": "choice",
+          "prompt": "7. While they were watching a football match, it started to rain.",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 2,
+          "explanation": "Đang xem bóng đá thì trời đổ mưa cắt ngang ➔ Đang xảy ra thì bị xen vào."
+        },
+        {
+          "id": "pc_cat_8",
+          "type": "choice",
+          "prompt": "8. We were chatting on the phone while waiting for the bus.",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 1,
+          "explanation": "Vừa nói chuyện vừa chờ xe buýt song song ➔ Xảy ra đồng thời."
+        },
+        {
+          "id": "pc_cat_9",
+          "type": "choice",
+          "prompt": "9. He was playing the guitar when the power went out.",
+          "options": ["A. Ở thời điểm nhất định", "B. Xảy ra đồng thời", "C. Đang xảy ra thì bị xen vào"],
+          "correctIndex": 2,
+          "explanation": "Đang chơi đàn thì mất điện cắt ngang ➔ Đang xảy ra thì bị xen vào."
+        }
+      ]
+    },
+    {
+      "group_id": "pc_identify_time_markers_20",
+      "group_title": "9. Nhận Diện Dấu Hiệu Quá Khứ Tiếp Diễn",
+      "instruction": "Xác định dấu hiệu thời gian nhận biết thì Quá khứ tiếp diễn trong câu:",
+      "questions": [
+        {
+          "id": "pc_tm_1",
+          "type": "choice",
+          "prompt": "'At 7 PM last night, I was cooking dinner.' ➔ Dấu hiệu thời gian là:",
+          "options": ["At 7 PM last night", "cooking dinner", "I was"],
+          "correctIndex": 0,
+          "explanation": "Cụm 'At 7 PM last night' là mốc thời gian cụ thể trong quá khứ."
+        },
+        {
+          "id": "pc_tm_2",
+          "type": "choice",
+          "prompt": "'At this time last year, we were traveling to Japan.' ➔ Dấu hiệu là:",
+          "options": ["to Japan", "At this time last year", "traveling"],
+          "correctIndex": 1,
+          "explanation": "'At this time last year' là dấu hiệu điển hình của QKTD."
+        },
+        {
+          "id": "pc_tm_3",
+          "type": "choice",
+          "prompt": "'While they were playing tennis, it started to rain.' ➔ Dấu hiệu là:",
+          "options": ["While", "tennis", "started"],
+          "correctIndex": 0,
+          "explanation": "'While' diễn tả một hành động đang kéo dài."
+        },
+        {
+          "id": "pc_tm_4",
+          "type": "choice",
+          "prompt": "'I was studying for my exam when my phone rang.' ➔ Dấu hiệu liên từ là:",
+          "options": ["when", "for my exam", "studying"],
+          "correctIndex": 0,
+          "explanation": "'When' dẫn đầu mệnh đề hành động xen vào (my phone rang)."
+        },
+        {
+          "id": "pc_tm_5",
+          "type": "choice",
+          "prompt": "'At noon yesterday, she was having lunch with her colleagues.' ➔ Dấu hiệu là:",
+          "options": ["At noon yesterday", "having lunch", "with her colleagues"],
+          "correctIndex": 0,
+          "explanation": "'At noon yesterday' là mốc thời gian cụ thể (vào trưa hôm qua)."
+        }
+      ]
+    },
+    {
+      "group_id": "pc_sentence_ordering_5",
+      "group_title": "10. Sắp Xếp Từ Thành Câu Hoàn Chỉnh",
+      "instruction": "Sắp xếp các từ cho sẵn thành câu hoàn chỉnh đúng ngữ pháp:",
+      "questions": [
+        {
+          "id": "pc_so_1",
+          "type": "rewrite",
+          "prompt": "soccer / park / They / in / were / playing / the.",
+          "targetStart": "",
+          "answers": ["They were playing soccer in the park.", "They were playing soccer in the park"],
+          "explanation": "Cấu trúc: S (They) + were + V-ing (playing) + O (soccer) + nơi chốn (in the park)."
+        },
+        {
+          "id": "pc_so_2",
+          "type": "rewrite",
+          "prompt": "a / book / was / reading / when / He / I / called / him.",
+          "targetStart": "",
+          "answers": [
+            "He was reading a book when I called him.",
+            "He was reading a book when I called him",
+            "When I called him, he was reading a book.",
+            "When I called him, he was reading a book"
+          ],
+          "explanation": "Cấu trúc: Hành động đang xảy ra (He was reading a book) when hành động xen vào (I called him)."
+        },
+        {
+          "id": "pc_so_3",
+          "type": "rewrite",
+          "prompt": "dinner / We / at / 7 PM / were / having.",
+          "targetStart": "",
+          "answers": [
+            "We were having dinner at 7 PM.",
+            "We were having dinner at 7 PM",
+            "At 7 PM, we were having dinner.",
+            "At 7 PM we were having dinner"
+          ],
+          "explanation": "Cấu trúc: We were having dinner at 7 PM."
+        },
+        {
+          "id": "pc_so_4",
+          "type": "rewrite",
+          "prompt": "while / laughing / watching / were / The / children / a / cartoon.",
+          "targetStart": "",
+          "answers": [
+            "The children were laughing while watching a cartoon.",
+            "The children were laughing while watching a cartoon"
+          ],
+          "explanation": "The children were laughing while watching a cartoon."
+        },
+        {
+          "id": "pc_so_5",
+          "type": "rewrite",
+          "prompt": "studying / for / I / my / exam / was / while / outside / playing / my / friends / were.",
+          "targetStart": "",
+          "answers": [
+            "I was studying for my exam while my friends were playing outside.",
+            "I was studying for my exam while my friends were playing outside",
+            "While my friends were playing outside, I was studying for my exam.",
+            "While my friends were playing outside, I was studying for my exam"
+          ],
+          "explanation": "Hai hành động song song kết nối bằng while: I was studying for my exam while my friends were playing outside."
+        }
+      ]
+    }
+  ]
+}
