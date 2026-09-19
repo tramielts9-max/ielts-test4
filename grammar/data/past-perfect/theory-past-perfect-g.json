@@ -1,0 +1,71 @@
+{
+  "tense_id": "past-perfect",
+  "tense_name": "THÌ QUÁ KHỨ HOÀN THÀNH (PAST PERFECT)",
+  "word_symbols": [
+    { "symbol": "S", "meaning": "Chủ ngữ", "definition": "Là ai/cái gì thực hiện hành động", "example": "She runs fast - Cô ấy chạy nhanh" },
+    { "symbol": "O", "meaning": "Tân ngữ", "definition": "Là ai/cái gì nhận hành động", "example": "I see the dog - Tôi thấy con chó" },
+    { "symbol": "N, n", "meaning": "Danh từ", "definition": "Tên của người, vật, nơi chốn", "example": "City, teacher, happiness" },
+    { "symbol": "adj", "meaning": "Tính từ", "definition": "Mô tả danh từ", "example": "A red car - Chiếc xe màu đỏ" },
+    { "symbol": "V, v", "meaning": "Động từ", "definition": "Diễn tả hành động hoặc trạng thái", "example": "They play - Họ chơi" },
+    { "symbol": "adv", "meaning": "Trạng từ", "definition": "Mô tả động từ, tính từ, hoặc trạng từ khác", "example": "He runs quickly - Anh ấy chạy nhanh" },
+    { "symbol": "prep", "meaning": "Giới từ", "definition": "Chỉ nơi chốn, thời gian, hoặc cách thức", "example": "She is in the room - Cô ấy ở trong phòng" }
+  ],
+  "sections": [
+    {
+      "id": "past_perf_formulas",
+      "title": "1. Công Thức Thì Quá Khứ Hoàn Thành",
+      "formulas": {
+        "affirmative": "(+) S + had + V3/ed + O",
+        "negative": "(–) S + had + NOT + V3/ed + O (had not = hadn't)",
+        "interrogative": "(?) Had + S + V3/ed + O?"
+      },
+      "subject_rules": [
+        "Tất cả các ngôi (I, You, He, She, It, We, They, Danh từ số ít hay số nhiều) ĐỀU DÙNG CHUNG trợ động từ HAD / HADN'T."
+      ]
+    },
+    {
+      "id": "past_perf_transform",
+      "title": "2. Quy Trình Chuyển Đổi Khẳng Định ⬄ Câu Hỏi ⬄ Phủ Định",
+      "rules": [
+        "Khẳng định sang Câu hỏi: Đảo 'had' lên trước chủ ngữ, giữ nguyên V3/ed (Ví dụ: She had worked hard ➔ Had she worked hard?).",
+        "Khẳng định sang Phủ định: Thêm 'not' sau had (had not / hadn't), giữ nguyên V3/ed (Ví dụ: She had worked ➔ She had not worked).",
+        "Chuyển đổi trạng từ: Trong câu phủ định hoặc nghi vấn, đổi các từ như 'before/already' thành 'yet' ở cuối câu (Ví dụ: You had visited Paris before ➔ You had not visited Paris yet)."
+      ]
+    },
+    {
+      "id": "past_perf_usages",
+      "title": "3. 2 Cách Sử Dụng Cốt Lõi Của Quá Khứ Hoàn Thành",
+      "usages": [
+        {
+          "name": "1. Đã xong trước 1 thời điểm trong quá khứ",
+          "desc": "Hành động xảy ra và hoàn tất trước một mốc giờ hoặc mốc ngày cụ thể trong quá khứ",
+          "example": "I had finished Money Heist series by yesterday. / I had finished my assignment by 10 p.m."
+        },
+        {
+          "name": "2. Đã xảy ra trước 1 hành động khác trong quá khứ",
+          "desc": "Khi có 2 hành động cùng xảy ra trong quá khứ: Hành động xảy ra trước chia Quá khứ hoàn thành (had + V3/ed), hành động xảy ra sau chia Quá khứ đơn (V2/ed)",
+          "example": "I had turned off my computer before my mother arrived."
+        }
+      ]
+    },
+    {
+      "id": "past_perf_markers",
+      "title": "4. Dấu Hiệu Nhận Biết & Quy Tắc Phối Hợp Thì",
+      "rules": [
+        "BEFORE (trước khi): Trước 'before' dùng Quá khứ hoàn thành (had + V3), sau 'before' dùng Quá khứ đơn (V2). Công thức: [S + had + V3/ed] + BEFORE + [S + V2/ed].",
+        "AFTER (sau khi): Trước 'after' dùng Quá khứ đơn (V2), sau 'after' dùng Quá khứ hoàn thành (had + V3). Công thức: [S + V2/ed] + AFTER + [S + had + V3/ed].",
+        "BY THE TIME (vào thời điểm mà): BY THE TIME + [S + V2/ed], [S + had + V3/ed]. (Ví dụ: By the time the bus arrived, they had packed their bags).",
+        "WHEN (khi): When + [S + V2/ed], [S + had + V3/ed] (Khi hành động sau xảy ra thì hành động trước đã hoàn tất)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Học sinh tự viết bài khảo lý thuyết tổng quan về THÌ QUÁ KHỨ HOÀN THÀNH. AI sẽ đối chiếu với đáp án chuẩn để chấm điểm thang 10 và nhận xét chi tiết.",
+    "questions": [
+      "1. Hãy nêu công thức tổng quát của thì Quá khứ hoàn thành ở 3 thể: Khẳng định (+), Phủ định (-), Nghi vấn (?). Cho biết trợ động từ 'had' áp dụng cho những ngôi chủ ngữ nào.",
+      "2. Trình bày quy trình các bước chuyển đổi từ một câu khẳng định sang câu hỏi và sang câu phủ định (chú ý vị trí của trợ động từ và cách biến đổi trạng từ như already/before thành yet).",
+      "3. Nêu rõ 2 cách sử dụng chính của thì Quá khứ hoàn thành. Với mỗi cách dùng, hãy tự đặt 1 câu ví dụ tiếng Anh và dịch nghĩa tiếng Việt.",
+      "4. Trình bày chi tiết quy tắc phối hợp thì với 4 liên từ: BEFORE, AFTER, BY THE TIME, WHEN (nêu rõ mệnh đề nào dùng Quá khứ đơn V2/ed, mệnh đề nào dùng Quá khứ hoàn thành had + V3/ed)."
+    ]
+  }
+}
