@@ -62,13 +62,13 @@ export class LessonRenderer {
     }
   }
 
-  renderTheory() {
+renderTheory() {
     const box = document.createElement('div');
     box.id = 'tabTheoryContent';
 
     let html = '';
 
-    // Bảng ký hiệu từ loại (nếu có)
+    // 1. Bảng ký hiệu từ loại (nếu có)
     if (this.theoryData.word_symbols && this.theoryData.word_symbols.length > 0) {
       html += `
         <div class="theory-card-g">
@@ -97,7 +97,7 @@ export class LessonRenderer {
       `;
     }
 
-    // Các phần lý thuyết chi tiết
+    // 2. Các phần lý thuyết chi tiết
     this.theoryData.sections.forEach(sec => {
       html += `
         <div class="theory-card-g">
@@ -111,6 +111,17 @@ export class LessonRenderer {
             </div>
           ` : ''}
 
+          <!-- BỔ SUNG ĐOẠN NÀY ĐỂ HIỂN THỊ sec.rules (54 TỪ & QUY TẮC) -->
+          ${sec.rules ? `
+            <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; margin: 12px 0;">
+              ${sec.rules.map(r => `
+                <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:8px 12px; border-radius:6px; font-size:13.5px;">
+                  ${r}
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+
           ${sec.subject_rules ? `
             <ul>
               ${sec.subject_rules.map(r => `<li>${r}</li>`).join('')}
@@ -118,7 +129,7 @@ export class LessonRenderer {
           ` : ''}
 
           ${sec.spelling_rules ? `
-            <h4 style="margin: 12px 0 6px 0; color:#0f766e;">Quy tắc chính tả đuôi động từ:</h4>
+            <h4 style="margin: 12px 0 6px 0; color:#0f766e;">Quy tắc chính tả:</h4>
             <ul>
               ${sec.spelling_rules.map(sp => `
                 <li><b>${sp.condition}:</b> ${sp.rule} ➔ <i>(${sp.examples})</i></li>
