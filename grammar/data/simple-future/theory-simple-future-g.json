@@ -1,0 +1,55 @@
+{
+  "tense_id": "simple-future",
+  "tense_name": "THÌ TƯƠNG LAI ĐƠN (SIMPLE FUTURE)",
+  "word_symbols": [
+    { "symbol": "will / shall", "meaning": "Trợ động từ tình thái", "definition": "Đi kèm với động từ nguyên mẫu không 'to' (V0)", "example": "will go, will help" }
+  ],
+  "sections": [
+    {
+      "id": "sf_usages",
+      "title": "1. 3 Cách Sử Dụng Thì Tương Lai Đơn",
+      "usages": [
+        { "name": "Diễn tả một quyết định tại thời điểm nói", "desc": "Quyết định bột phát ngay lúc nói, không có sự chuẩn bị hay lên lịch trước", "example": "I want to study so much. I will surf Facebook for just 5 minutes. (Tớ muốn học quá. Tớ sẽ chỉ lướt Facebook 5 phút thôi)." },
+        { "name": "Đưa ra lời hứa hẹn", "desc": "Lời hứa sẽ làm hoặc không làm gì (thường đi với 'promise')", "example": "I promise I will never play games anymore. (Con hứa là con sẽ không bao giờ chơi game nữa)." },
+        { "name": "Đưa ra lời mời, yêu cầu, đề nghị", "desc": "Yêu cầu ai đó giúp đỡ hoặc đề nghị làm gì", "example": "Will you pay for me? (Bạn bao mình nha?)." }
+      ]
+    },
+    {
+      "id": "sf_formulas",
+      "title": "2. Cấu Trúc Thì Tương Lai Đơn",
+      "formulas": {
+        "affirmative": "(+) S + will / shall + V0 + O",
+        "negative": "(–) S + will not (won't) / shall not + V0 + O",
+        "interrogative": "(?) Will / Shall + S + V0 + O?"
+      },
+      "rules": [
+        "Động từ sau will/shall luôn giữ ở dạng nguyên mẫu không 'to' (V0).",
+        "Will not viết tắt là won't."
+      ]
+    },
+    {
+      "id": "sf_markers",
+      "title": "3. Dấu Hiệu Nhận Biết",
+      "rules": [
+        "in + khoảng thời gian: trong... nữa (Ví dụ: in 5 minutes, in 2 days)",
+        "tomorrow: ngày mai",
+        "next day / next week / next month / next year: ngày tiếp theo, tuần tới, tháng tới, năm tới"
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "title": "ĐỀ KHẢO LÝ THUYẾT: THÌ TƯƠNG LAI ĐƠN (TỰ LUẬN CHUYÊN SÂU)",
+    "instruction": "Hãy tự tay viết lại toàn bộ kiến thức thì Tương lai đơn theo các yêu cầu dưới đây:",
+    "questions": [
+      "1. Viết công thức 3 thể (+, -, ?) của thì Tương lai đơn (nêu rõ dạng phủ định viết tắt của 'will not').",
+      "2. Nêu chính xác 3 cách dùng của thì Tương lai đơn. Hãy tự đặt 3 câu ví dụ tương ứng bằng tiếng Anh kèm dịch nghĩa.",
+      "3. Liệt kê các trạng từ chỉ thời gian nhận biết thì Tương lai đơn (đặc biệt là cách dùng 'in + khoảng thời gian')."
+    ]
+  },
+  "theory_recall": [
+    { "id": "sf_rc_1", "type": "blank", "prompt": "1. Công thức khẳng định: (+) S + [blank] + V0.", "answers": ["will", "will/shall", "will shall"], "explanation": "S + will/shall + V0." },
+    { "id": "sf_rc_2", "type": "blank", "prompt": "2. 'will not' được viết tắt là [blank].", "answers": ["won't"], "explanation": "will not ➔ won't." },
+    { "id": "sf_rc_3", "type": "blank", "prompt": "3. 3 cách dùng chính của tương lai đơn: Quyết định tại [blank] nói, đưa ra lời [blank] hẹn, và đưa ra lời mời/yêu cầu.", "answers": ["thời điểm, hứa", "thời điểm nói, hứa"], "explanation": "Quyết định tại thời điểm nói, lời hứa hẹn." },
+    { "id": "sf_rc_4", "type": "blank", "prompt": "4. Cấu trúc 'in + thời gian' mang nghĩa là [blank] nữa (Ví dụ: in 5 minutes).", "answers": ["trong", "trong khoảng", "trong vòng"], "explanation": "in 5 minutes = trong 5 phút nữa." }
+  ]
+}
