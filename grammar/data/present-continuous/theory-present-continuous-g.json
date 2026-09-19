@@ -88,5 +88,50 @@
         { "word": "at + giờ cụ thể", "percent": "Xác định", "vn": "vào lúc ... giờ (ví dụ: at 12 o'clock)" }
       ]
     }
+  ],
+
+  "theory_recall": [
+    {
+      "id": "rec_pc_1",
+      "type": "blank",
+      "prompt": "Công thức khẳng định Hiện tại tiếp diễn: (+) S + [blank] + V-ing.",
+      "answers": ["am/is/are", "am, is, are", "am is are"],
+      "explanation": "Cấu trúc bắt buộc gồm to be (am/is/are) + động từ thêm đuôi -ing."
+    },
+    {
+      "id": "rec_pc_2",
+      "type": "blank",
+      "prompt": "Động từ kết thúc bằng chữ '-e' (như take, drive), trước khi thêm -ing ta phải [blank].",
+      "answers": ["bỏ e", "bỏ -e", "bỏ chữ e"],
+      "explanation": "Ví dụ: take ➔ taking, drive ➔ driving."
+    },
+    {
+      "id": "rec_pc_3",
+      "type": "blank",
+      "prompt": "Động từ kết thúc bằng '-ie' (như lie, die) đổi thành [blank] rồi thêm -ing.",
+      "answers": ["-y", "y"],
+      "explanation": "Ví dụ: lie ➔ lying, die ➔ dying."
+    },
+    {
+      "id": "rec_pc_4",
+      "type": "blank",
+      "prompt": "Động từ có 1 nguyên âm kẹp giữa 2 phụ âm (như run, swim) ta phải [blank] phụ âm cuối rồi thêm -ing.",
+      "answers": ["gấp đôi", "nhân đôi"],
+      "explanation": "Ví dụ: run ➔ running, swim ➔ swimming."
+    },
+    {
+      "id": "rec_pc_5",
+      "type": "blank",
+      "prompt": "Khi dùng để phàn nàn một thói quen gây bực mình, khó chịu, thì HTTD thường đi với từ [blank].",
+      "answers": ["always"],
+      "explanation": "Ví dụ: She is always talking in class! (Cô ấy cứ nói chuyện suốt trong lớp!)."
+    },
+    {
+      "id": "rec_pc_6",
+      "type": "blank",
+      "prompt": "4 dấu hiệu nhận biết thì HTTD: now, right now, at present, và [blank].",
+      "answers": ["at the moment", "at this moment"],
+      "explanation": "At the moment nghĩa là ngay lúc này."
+    }
   ]
 }
