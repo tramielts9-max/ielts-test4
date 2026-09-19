@@ -90,48 +90,86 @@
     }
   ],
 
-  "theory_recall": [
+"theory_recall": [
     {
-      "id": "rec_pc_1",
+      "id": "rec_pc_form_1",
       "type": "blank",
-      "prompt": "Công thức khẳng định Hiện tại tiếp diễn: (+) S + [blank] + V-ing.",
-      "answers": ["am/is/are", "am, is, are", "am is are"],
-      "explanation": "Cấu trúc bắt buộc gồm to be (am/is/are) + động từ thêm đuôi -ing."
+      "prompt": "1. Công thức khẳng định: (+) S + [blank] + [blank].",
+      "answers": ["am/is/are, V-ing", "am, is, are, Ving", "am is are, V-ing"],
+      "explanation": "S + am/is/are + V-ing."
     },
     {
-      "id": "rec_pc_2",
+      "id": "rec_pc_form_2",
       "type": "blank",
-      "prompt": "Động từ kết thúc bằng chữ '-e' (như take, drive), trước khi thêm -ing ta phải [blank].",
-      "answers": ["bỏ e", "bỏ -e", "bỏ chữ e"],
-      "explanation": "Ví dụ: take ➔ taking, drive ➔ driving."
+      "prompt": "2. Công thức phủ định: (–) S + [blank] + [blank] + V-ing.",
+      "answers": ["am/is/are, not", "am, is, are, not"],
+      "explanation": "S + am/is/are + not + V-ing."
     },
     {
-      "id": "rec_pc_3",
+      "id": "rec_pc_form_3",
       "type": "blank",
-      "prompt": "Động từ kết thúc bằng '-ie' (như lie, die) đổi thành [blank] rồi thêm -ing.",
-      "answers": ["-y", "y"],
-      "explanation": "Ví dụ: lie ➔ lying, die ➔ dying."
+      "prompt": "3. Công thức nghi vấn: (?) [blank] + S + [blank]?",
+      "answers": ["Am/Is/Are, V-ing", "am/is/are, V-ing", "am, is, are, Ving"],
+      "explanation": "Am/Is/Are + S + V-ing?"
     },
     {
-      "id": "rec_pc_4",
+      "id": "rec_pc_sp_1",
       "type": "blank",
-      "prompt": "Động từ có 1 nguyên âm kẹp giữa 2 phụ âm (như run, swim) ta phải [blank] phụ âm cuối rồi thêm -ing.",
-      "answers": ["gấp đôi", "nhân đôi"],
-      "explanation": "Ví dụ: run ➔ running, swim ➔ swimming."
+      "prompt": "4. Động từ tận cùng bằng '-e' (như take, drive): Quy tắc là [blank] rồi mới thêm '-ing'.",
+      "answers": ["bỏ e", "bỏ -e", "bo e"],
+      "explanation": "take ➔ taking, drive ➔ driving."
     },
     {
-      "id": "rec_pc_5",
+      "id": "rec_pc_sp_2",
       "type": "blank",
-      "prompt": "Khi dùng để phàn nàn một thói quen gây bực mình, khó chịu, thì HTTD thường đi với từ [blank].",
-      "answers": ["always"],
-      "explanation": "Ví dụ: She is always talking in class! (Cô ấy cứ nói chuyện suốt trong lớp!)."
+      "prompt": "5. Động từ có trọng âm rơi vào âm cuối, có 1 nguyên âm kẹp giữa 2 phụ âm (như begin, win, run): Quy tắc là [blank] rồi thêm '-ing'.",
+      "answers": ["gấp đôi phụ âm cuối", "nhân đôi phụ âm cuối", "gấp đôi phụ âm"],
+      "explanation": "begin ➔ beginning, win ➔ winning, run ➔ running."
     },
     {
-      "id": "rec_pc_6",
+      "id": "rec_pc_sp_3",
       "type": "blank",
-      "prompt": "4 dấu hiệu nhận biết thì HTTD: now, right now, at present, và [blank].",
-      "answers": ["at the moment", "at this moment"],
-      "explanation": "At the moment nghĩa là ngay lúc này."
+      "prompt": "6. Động từ kết thúc bằng đuôi '-ie' (như lie, die): Quy tắc là [blank] rồi thêm '-ing'.",
+      "answers": ["đổi ie thành y", "đổi -ie thành -y", "doi ie thanh y"],
+      "explanation": "lie ➔ lying, die ➔ dying."
+    },
+    {
+      "id": "rec_pc_us_1",
+      "type": "blank",
+      "prompt": "7. Cách dùng 1: Diễn tả hành động đang diễn ra tại [blank] (Ví dụ: We are doing homework now).",
+      "answers": ["thời điểm nói", "thoi diem noi"],
+      "explanation": "Hành động đang xảy ra ngay lúc nói."
+    },
+    {
+      "id": "rec_pc_us_2",
+      "type": "blank",
+      "prompt": "8. Cách dùng 2: Diễn tả hành động đang diễn ra nhưng [blank] (Ví dụ: He is writing an economic book).",
+      "answers": ["không cần diễn ra ngay lúc nói", "không nhất thiết ngay lúc nói", "khong can dien ra ngay luc noi"],
+      "explanation": "Hành động kéo dài xung quanh thời điểm nói."
+    },
+    {
+      "id": "rec_pc_us_3",
+      "type": "blank",
+      "prompt": "9. Cách dùng 3: Diễn tả một kế hoạch đã được [blank] trong tương lai (Ví dụ: He is attending the exhibition tomorrow).",
+      "answers": ["dự trù trước", "lên kế hoạch trước", "dự trù trước cho tương lai", "du tru truoc"],
+      "explanation": "Kế hoạch đã chuẩn bị/dự trù trước cho tương lai."
+    },
+    {
+      "id": "rec_pc_us_4",
+      "type": "blank",
+      "prompt": "10. Cách dùng 4: Diễn tả hành động xảy ra thường xuyên gây [blank], bắt buộc đi kèm từ [blank] (Ví dụ: She is always talking in my class).",
+      "answers": ["khó chịu, always", "phiền toái, always", "kho chiu, always"],
+      "explanation": "Phàn nàn hành vi lặp lại gây khó chịu (đi với 'always')."
+    },
+    {
+      "id": "rec_pc_mark_1",
+      "type": "blank",
+      "prompt": "11. Kể tên 5 dấu hiệu nhận biết thì HTTD: [blank], [blank], [blank], [blank], và at + giờ cụ thể.",
+      "answers": [
+        "now, right now, at the moment, at present",
+        "now, right now, at present, at the moment"
+      ],
+      "explanation": "now, right now, at the moment, at present, at + giờ cụ thể."
     }
   ]
 }
