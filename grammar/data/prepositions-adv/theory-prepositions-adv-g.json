@@ -1,0 +1,34 @@
+{
+  "tense_id": "prepositions-adv",
+  "tense_name": "GIỚI TỪ NÂNG CAO (VER IELTS)",
+  "sections": [
+    {
+      "id": "prep_adv_overview",
+      "title": "I. Sơ Lược & Vị Trí Của Giới Từ Trong Câu",
+      "rules": [
+        "1. Định nghĩa: Giới từ (Prepositions) liên kết danh từ/đại từ với các thành phần khác, giúp thể hiện vị trí không gian, thời gian, phương hướng, cách thức, mục đích hoặc so sánh.",
+        "2. Vị trí: Đứng trước một danh từ, cụm danh từ hoặc đại từ (The book is on the shelf; She lives in the city)."
+      ]
+    },
+    {
+      "id": "prep_adv_categories",
+      "title": "II. Bảng Tổng Hợp Các Loại Giới Từ Thông Dụng",
+      "rules": [
+        "1. Nơi chốn: on (trên), in (trong), under (dưới), next to (bên cạnh), between (ở giữa 2 vật), behind (phía sau).",
+        "2. Thời gian: at (lúc - giờ cụ thể), on (vào - ngày), in (trong - tháng/năm), before (trước), after (sau), during (trong suốt khoảng thời gian).",
+        "3. Phương hướng: to (đến), from (từ), into (vào trong), out of (ra khỏi), towards (hướng về phía).",
+        "4. Cách thức: with (cùng với/bằng công cụ), like (giống như), as (với tư cách là), by (bởi/bằng phương tiện).",
+        "5. Mục đích: for (cho/để), to / in order to / so as to (để + V0), with a view to (+ V-ing - với mục đích).",
+        "6. So sánh: than (hơn), as... as (bằng/như), like (như)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ hệ thống phân loại giới từ nâng cao theo 6 nhóm chức năng mà không nhìn tài liệu.",
+    "questions": [
+      "1. Nêu ít nhất 4 giới từ chỉ Nơi chốn và 4 giới từ chỉ Thời gian kèm theo câu ví dụ minh họa và dịch nghĩa.",
+      "2. Nêu 5 giới từ chỉ Phương hướng chuyển động kèm theo ví dụ minh họa và dịch nghĩa.",
+      "3. Liệt kê các giới từ hoặc cụm giới từ dùng để chỉ Mục đích và Cách thức (đặc biệt lưu ý cụm 'with a view to' đi với dạng động từ nào)."
+    ]
+  }
+}
