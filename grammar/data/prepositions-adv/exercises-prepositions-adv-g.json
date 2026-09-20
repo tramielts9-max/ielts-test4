@@ -1,0 +1,473 @@
+{
+  "tense_id": "prepositions-adv",
+  "exercise_groups": [
+    {
+      "group_id": "p_adv_secA_b1",
+      "group_title": "SECTION A - BÀI 1: ĐIỀN GIỚI TỪ THÍCH HỢP (20 CÂU)",
+      "instruction": "Điền các giới từ phù hợp vào các chỗ trống trong câu:",
+      "questions": [
+        {
+          "id": "pa_a1_1",
+          "type": "blank",
+          "prompt": "1. She lives [blank] a small apartment [blank] the heart of the city.",
+          "answers": ["in, in", "in - in"],
+          "explanation": "Sống trong căn hộ dùng 'in an apartment'; cụm thành ngữ 'in the heart of the city' (giữa lòng thành phố)."
+        },
+        {
+          "id": "pa_a1_2",
+          "type": "blank",
+          "prompt": "2. We usually have lunch [blank] the cafeteria [blank] our lunch break.",
+          "answers": ["in, during", "in - during"],
+          "explanation": "Bên trong nhà ăn dùng 'in'; trong suốt giờ nghỉ dùng 'during our lunch break'."
+        },
+        {
+          "id": "pa_a1_3",
+          "type": "blank",
+          "prompt": "3. The book was placed [blank] the shelf [blank] other novels.",
+          "answers": ["on, among", "on - among"],
+          "explanation": "Đặt trên giá sách dùng 'on the shelf'; ở giữa nhiều quyển sách khác dùng 'among'."
+        },
+        {
+          "id": "pa_a1_4",
+          "type": "blank",
+          "prompt": "4. The dog ran [blank] the park and disappeared [blank] the trees.",
+          "answers": ["through, among", "through, behind"],
+          "explanation": "Chạy xuyên qua công viên dùng 'through'; biến mất giữa/sau hàng cây dùng 'among / behind'."
+        },
+        {
+          "id": "pa_a1_5",
+          "type": "blank",
+          "prompt": "5. He prefers to travel [blank] train [blank] long distances.",
+          "answers": ["by, over", "by - over"],
+          "explanation": "Phương tiện di chuyển dùng 'by train'; trên những quãng đường dài dùng 'over long distances'."
+        },
+        {
+          "id": "pa_a1_6",
+          "type": "blank",
+          "prompt": "6. The painting hangs [blank] the wall [blank] the living room.",
+          "answers": ["on, in", "on - in"],
+          "explanation": "Treo trên bề mặt tường dùng 'on the wall'; trong phòng khách dùng 'in the living room'."
+        },
+        {
+          "id": "pa_a1_7",
+          "type": "blank",
+          "prompt": "7. The package was delivered [blank] our doorstep [blank] the morning.",
+          "answers": ["at, in", "at - in"],
+          "explanation": "Tại bậc cửa nhà dùng 'at our doorstep'; vào buổi sáng dùng 'in the morning'."
+        },
+        {
+          "id": "pa_a1_8",
+          "type": "blank",
+          "prompt": "8. They met [blank] the cafe [blank] a cup of coffee.",
+          "answers": ["at, for", "at - for"],
+          "explanation": "Gặp tại quán cà phê dùng 'at the cafe'; với mục đích uống cà phê dùng 'for a cup of coffee'."
+        },
+        {
+          "id": "pa_a1_9",
+          "type": "blank",
+          "prompt": "9. The children played [blank] the beach [blank] the sand and water.",
+          "answers": ["on, in", "on - in"],
+          "explanation": "Chơi trên bãi biển dùng 'on the beach'; nghịch trong cát nước dùng 'in the sand'."
+        },
+        {
+          "id": "pa_a1_10",
+          "type": "blank",
+          "prompt": "10. She stood [blank] the podium and delivered her speech [blank] confidence.",
+          "answers": ["at, with", "on, with"],
+          "explanation": "Đứng tại/trên bục phát biểu dùng 'at / on the podium'; với sự tự tin dùng 'with confidence'."
+        },
+        {
+          "id": "pa_a1_11",
+          "type": "blank",
+          "prompt": "11. He found his lost keys [blank] the bottom [blank] his backpack.",
+          "answers": ["at, of", "at - of"],
+          "explanation": "Dưới đáy của vật thể dùng cụm cố định 'at the bottom of'."
+        },
+        {
+          "id": "pa_a1_12",
+          "type": "blank",
+          "prompt": "12. The cat jumped [blank] the table and knocked [blank] the vase.",
+          "answers": ["onto, over", "onto - over"],
+          "explanation": "Nhảy lên bề mặt bàn dùng 'onto'; làm đổ ngã bình hoa dùng cụm 'knock over'."
+        },
+        {
+          "id": "pa_a1_13",
+          "type": "blank",
+          "prompt": "13. We walked [blank] the street [blank] the heavy rain.",
+          "answers": ["along, in", "down, in"],
+          "explanation": "Đi dọc theo con phố dùng 'along / down the street'; dưới trời mưa dùng 'in the rain'."
+        },
+        {
+          "id": "pa_a1_14",
+          "type": "blank",
+          "prompt": "14. The restaurant is located [blank] the corner [blank] the main street.",
+          "answers": ["at, of", "at - of"],
+          "explanation": "Tại góc đường dùng 'at the corner of the main street'."
+        },
+        {
+          "id": "pa_a1_15",
+          "type": "blank",
+          "prompt": "15. The photo was taken [blank] my family [blank] our vacation [blank] the beach.",
+          "answers": ["of, during, at", "of, during, on"],
+          "explanation": "Ảnh của gia đình dùng 'photo of'; trong kỳ nghỉ dùng 'during'; tại biển dùng 'at / on the beach'."
+        },
+        {
+          "id": "pa_a1_16",
+          "type": "blank",
+          "prompt": "16. The athletes competed [blank] each other [blank] the race.",
+          "answers": ["against, in", "with, in"],
+          "explanation": "Cạnh tranh với ai dùng 'compete with / against sb'; trong cuộc đua dùng 'in the race'."
+        },
+        {
+          "id": "pa_a1_17",
+          "type": "blank",
+          "prompt": "17. He jumped [blank] the river [blank] the bridge and swam to the other side.",
+          "answers": ["into, from", "into - from"],
+          "explanation": "Nhảy xuống nước dùng 'jump into'; xuất phát từ cây cầu dùng 'from the bridge'."
+        },
+        {
+          "id": "pa_a1_18",
+          "type": "blank",
+          "prompt": "18. The bird flew [blank] the sky and disappeared [blank] the horizon.",
+          "answers": ["across, below", "in, behind"],
+          "explanation": "Bay ngang qua bầu trời dùng 'across / in'; biến mất dưới/sau đường chân trời dùng 'below / behind'."
+        },
+        {
+          "id": "pa_a1_19",
+          "type": "blank",
+          "prompt": "19. She stood [blank] the stage and performed [blank] front [blank] a large audience.",
+          "answers": ["on, in, of", "on - in - of"],
+          "explanation": "Đứng trên sân khấu dùng 'on the stage'; cụm 'in front of' nghĩa là trước mặt ai."
+        },
+        {
+          "id": "pa_a1_20",
+          "type": "blank",
+          "prompt": "20. The car crashed [blank] the tree [blank] the side [blank] the road.",
+          "answers": ["into, by, of", "into, on, of"],
+          "explanation": "Đâm sầm vào vật dùng 'crash into'; bên lề đường dùng 'by / on the side of the road'."
+        }
+      ]
+    },
+    {
+      "group_id": "p_adv_secA_b2",
+      "group_title": "SECTION A - BÀI 2: TRẮC NGHIỆM GIỚI TỪ (20 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D):",
+      "questions": [
+        {
+          "id": "pa_a2_1",
+          "type": "choice",
+          "prompt": "1. She walked ______ the street to get to the grocery store.",
+          "options": ["A. across", "B. between", "C. along", "D. onto"],
+          "correctIndex": 0,
+          "explanation": "'walk across the street' nghĩa là đi băng qua đường sang phía bên kia."
+        },
+        {
+          "id": "pa_a2_2",
+          "type": "choice",
+          "prompt": "2. The keys are ______ the table.",
+          "options": ["A. on", "B. at", "C. in", "D. under"],
+          "correctIndex": 0,
+          "explanation": "Vật nằm trên bề mặt phẳng của bàn dùng 'on the table'."
+        },
+        {
+          "id": "pa_a2_3",
+          "type": "choice",
+          "prompt": "3. They met ______ the library to study for their exams.",
+          "options": ["A. at", "B. on", "C. in", "D. by"],
+          "correctIndex": 0,
+          "explanation": "Gặp nhau tại một địa điểm xác định dùng 'at the library'."
+        },
+        {
+          "id": "pa_a2_4",
+          "type": "choice",
+          "prompt": "4. The cat jumped ______ the fence and ran into the garden.",
+          "options": ["A. over", "B. through", "C. onto", "D. between"],
+          "correctIndex": 0,
+          "explanation": "'jump over' nghĩa là nhảy vượt qua hàng rào."
+        },
+        {
+          "id": "pa_a2_5",
+          "type": "choice",
+          "prompt": "5. We usually have dinner ______ 7 o'clock.",
+          "options": ["A. in", "B. at", "C. on", "D. by"],
+          "correctIndex": 1,
+          "explanation": "Mốc giờ chính xác luôn dùng giới từ 'at'."
+        },
+        {
+          "id": "pa_a2_6",
+          "type": "choice",
+          "prompt": "6. The package was delivered ______ our house ______ the mail carrier.",
+          "options": ["A. at - by", "B. to - with", "C. to - by", "D. by - during"],
+          "correctIndex": 2,
+          "explanation": "'deliver to somewhere' (giao đến nơi nào) và 'by someone' (bởi ai trong câu bị động)."
+        },
+        {
+          "id": "pa_a2_7",
+          "type": "choice",
+          "prompt": "7. They gathered ______ the park for a picnic.",
+          "options": ["A. at", "B. on", "C. in", "D. by"],
+          "correctIndex": 2,
+          "explanation": "Tụ họp bên trong không gian công viên dùng 'in the park' (hoặc 'at the park')."
+        },
+        {
+          "id": "pa_a2_8",
+          "type": "choice",
+          "prompt": "8. The concert takes place ______ the main auditorium ______ the university.",
+          "options": ["A. in - of", "B. at - on", "C. on - at", "D. in - at"],
+          "correctIndex": 0,
+          "explanation": "'in the auditorium' (trong hội trường) và 'of the university' (thuộc trường đại học)."
+        },
+        {
+          "id": "pa_a2_9",
+          "type": "choice",
+          "prompt": "9. She sat ______ her desk and studied ______ the night.",
+          "options": ["A. at - through", "B. on - during", "C. in - throughout", "D. by - for"],
+          "correctIndex": 0,
+          "explanation": "'sit at her desk' (ngồi tại bàn làm việc) và 'through the night' (suốt cả đêm)."
+        },
+        {
+          "id": "pa_a2_10",
+          "type": "choice",
+          "prompt": "10. The meeting starts ______ 9 a.m. and will continue ______ lunchtime.",
+          "options": ["A. at - to", "B. by - until", "C. at - until", "D. from - at"],
+          "correctIndex": 2,
+          "explanation": "Bắt đầu lúc giờ giấc dùng 'at 9 a.m.'; kéo dài cho đến lúc nào dùng 'until lunchtime'."
+        },
+        {
+          "id": "pa_a2_11",
+          "type": "choice",
+          "prompt": "11. They sat ______ the beach and watched ______ the sunset.",
+          "options": ["A. on - through", "B. at - with", "C. on - (no prep)", "D. by - for"],
+          "correctIndex": 2,
+          "explanation": "Ngồi trên bãi biển dùng 'on the beach'; động từ 'watch' là ngoại động từ nên không cần giới từ."
+        },
+        {
+          "id": "pa_a2_12",
+          "type": "choice",
+          "prompt": "12. The plane flew ______ the clouds ______ a clear blue sky.",
+          "options": ["A. above - under", "B. below - above", "C. through - in", "D. between - beneath"],
+          "correctIndex": 2,
+          "explanation": "Bay xuyên qua mây dùng 'through the clouds'; trên nền trời xanh dùng 'in a clear blue sky'."
+        },
+        {
+          "id": "pa_a2_13",
+          "type": "choice",
+          "prompt": "13. He walked ______ his friend ______ the park.",
+          "options": ["A. with - in", "B. beside - through", "C. alongside - towards", "D. between - under"],
+          "correctIndex": 0,
+          "explanation": "Đi cùng bạn dùng 'with his friend'; đi dạo trong công viên dùng 'in the park'."
+        },
+        {
+          "id": "pa_a2_14",
+          "type": "choice",
+          "prompt": "14. She climbed ______ the ladder and reached ______ the top.",
+          "options": ["A. up - to", "B. down - over", "C. onto - above", "D. across - through"],
+          "correctIndex": 0,
+          "explanation": "Trèo lên thang dùng 'climb up'; vươn tới đỉnh dùng 'reach to'."
+        },
+        {
+          "id": "pa_a2_15",
+          "type": "choice",
+          "prompt": "15. They ran ______ the field and kicked ______ the ball.",
+          "options": ["A. across - (no prep)", "B. over - onto", "C. around - towards", "D. between - beside"],
+          "correctIndex": 0,
+          "explanation": "Chạy băng qua cánh đồng dùng 'across the field'; 'kick the ball' không dùng giới từ."
+        },
+        {
+          "id": "pa_a2_16",
+          "type": "choice",
+          "prompt": "16. The event will take place ______ the conference hall ______ the hotel.",
+          "options": ["A. in - at", "B. at - in", "C. on - by", "D. within - towards"],
+          "correctIndex": 0,
+          "explanation": "Trong hội trường dùng 'in the hall'; tại khách sạn dùng 'at the hotel'."
+        },
+        {
+          "id": "pa_a2_17",
+          "type": "choice",
+          "prompt": "17. She was surrounded ______ many flowers in that picture.",
+          "options": ["A. with", "B. in", "C. by", "D. to"],
+          "correctIndex": 2,
+          "explanation": "Cấu trúc bị động 'be surrounded by' nghĩa là được bao quanh bởi cái gì."
+        },
+        {
+          "id": "pa_a2_18",
+          "type": "choice",
+          "prompt": "18. She walked ______ the door and entered the room.",
+          "options": ["A. through", "B. towards", "C. into", "D. under"],
+          "correctIndex": 0,
+          "explanation": "Đi xuyên qua cánh cửa dùng 'walk through the door'."
+        },
+        {
+          "id": "pa_a2_19",
+          "type": "choice",
+          "prompt": "19. She is interested ______ playing the piano.",
+          "options": ["A. in", "B. with", "C. to", "D. on"],
+          "correctIndex": 0,
+          "explanation": "Tính từ đi kèm giới từ cố định: 'interested in' (hứng thú với)."
+        },
+        {
+          "id": "pa_a2_20",
+          "type": "choice",
+          "prompt": "20. They agreed ______ participate ______ the tournament.",
+          "options": ["A. on - in", "B. to - at", "C. along - with", "D. to - in"],
+          "correctIndex": 3,
+          "explanation": "'agree to V' (đồng ý làm gì) và 'participate in' (tham gia vào việc gì)."
+        }
+      ]
+    },
+    {
+      "group_id": "p_adv_secB_time",
+      "group_title": "SECTION B - CHUYÊN ĐỀ 1: GIỚI TỪ CHỈ THỜI GIAN",
+      "instruction": "Luyện tập điền giới từ chỉ thời gian chính xác:",
+      "questions": [
+        {
+          "id": "pa_b_t_1",
+          "type": "blank",
+          "prompt": "1. The meeting is scheduled [blank] 9:30 AM tomorrow.",
+          "answers": ["at"],
+          "explanation": "Giờ cụ thể (9:30 AM) dùng 'at'."
+        },
+        {
+          "id": "pa_b_t_2",
+          "type": "blank",
+          "prompt": "2. I've been working on this project [blank] Monday.",
+          "answers": ["since"],
+          "explanation": "Mốc thời gian bắt đầu trong thì hoàn thành dùng 'since Monday'."
+        },
+        {
+          "id": "pa_b_t_3",
+          "type": "blank",
+          "prompt": "3. We need to submit the report [blank] the end of the month.",
+          "answers": ["by"],
+          "explanation": "'by' nghĩa là trước hoặc muộn nhất vào cuối tháng."
+        },
+        {
+          "id": "pa_b_t_4",
+          "type": "blank",
+          "prompt": "4. The store opens [blank] 8 AM and closes [blank] 10 PM.",
+          "answers": ["at, at", "at - at"],
+          "explanation": "Các mốc giờ mở và đóng cửa đều dùng 'at'."
+        },
+        {
+          "id": "pa_b_t_5",
+          "type": "blank",
+          "prompt": "5. She has lived in this neighborhood [blank] 2015.",
+          "answers": ["since"],
+          "explanation": "Từ năm 2015 đến nay (thì hoàn thành) dùng 'since 2015'."
+        },
+        {
+          "id": "pa_b_t_6",
+          "type": "blank",
+          "prompt": "6. The festival takes place [blank] summer every year.",
+          "answers": ["in"],
+          "explanation": "Mùa trong năm dùng giới từ 'in summer'."
+        },
+        {
+          "id": "pa_b_t_7",
+          "type": "blank",
+          "prompt": "7. We'll go to the beach [blank] the weekend.",
+          "answers": ["at", "on"],
+          "explanation": "Cuối tuần dùng 'at / on the weekend'."
+        },
+        {
+          "id": "pa_b_t_8",
+          "type": "blank",
+          "prompt": "8. The train will arrive [blank] 10 minutes.",
+          "answers": ["in"],
+          "explanation": "'in 10 minutes' nghĩa là trong vòng 10 phút nữa."
+        },
+        {
+          "id": "pa_b_t_9",
+          "type": "blank",
+          "prompt": "9. I can't talk right now. I'll call you back [blank] an hour.",
+          "answers": ["in"],
+          "explanation": "'in an hour' có nghĩa là một tiếng đồng hồ nữa."
+        },
+        {
+          "id": "pa_b_t_10",
+          "type": "blank",
+          "prompt": "10. Classes begin [blank] September.",
+          "answers": ["in"],
+          "explanation": "Tháng trong năm luôn đi với giới từ 'in'."
+        }
+      ]
+    },
+    {
+      "group_id": "p_adv_secB_verbs_adj",
+      "group_title": "SECTION B - CHUYÊN ĐỀ 5: GIỚI TỪ KẾT HỢP ĐỘNG TỪ & TÍNH TỪ",
+      "instruction": "Điền giới từ thích hợp đi cùng động từ/tính từ:",
+      "questions": [
+        {
+          "id": "pa_b_va_1",
+          "type": "blank",
+          "prompt": "1. I'm sorry, but I don't agree [blank] your opinion.",
+          "answers": ["with"],
+          "explanation": "'agree with sb / opinion' có nghĩa là đồng ý với ai/ý kiến nào."
+        },
+        {
+          "id": "pa_b_va_2",
+          "type": "blank",
+          "prompt": "2. She always listens [blank] her mother's advice.",
+          "answers": ["to"],
+          "explanation": "Động từ 'listen' luôn đi kèm giới từ 'to' (listen to)."
+        },
+        {
+          "id": "pa_b_va_3",
+          "type": "blank",
+          "prompt": "3. We need to focus [blank] finishing this project by Friday.",
+          "answers": ["on"],
+          "explanation": "'focus on' có nghĩa là tập trung vào việc gì."
+        },
+        {
+          "id": "pa_b_va_4",
+          "type": "blank",
+          "prompt": "4. Do you believe [blank] ghosts?",
+          "answers": ["in"],
+          "explanation": "'believe in' có nghĩa là tin vào sự tồn tại của cái gì."
+        },
+        {
+          "id": "pa_b_va_5",
+          "type": "blank",
+          "prompt": "5. The restaurant specializes [blank] seafood dishes.",
+          "answers": ["in"],
+          "explanation": "'specialize in' có nghĩa là chuyên về lĩnh vực/món gì."
+        },
+        {
+          "id": "pa_b_va_6",
+          "type": "blank",
+          "prompt": "6. She's very good [blank] solving mathematical problems.",
+          "answers": ["at"],
+          "explanation": "'be good at' có nghĩa là giỏi về việc gì."
+        },
+        {
+          "id": "pa_b_va_7",
+          "type": "blank",
+          "prompt": "7. I'm still waiting [blank] your response to my email.",
+          "answers": ["for"],
+          "explanation": "'wait for' có nghĩa là chờ đợi cái gì/ai đó."
+        },
+        {
+          "id": "pa_b_va_8",
+          "type": "blank",
+          "prompt": "8. He succeeded [blank] passing all his exams.",
+          "answers": ["in"],
+          "explanation": "'succeed in doing sth' có nghĩa là thành công trong việc gì."
+        },
+        {
+          "id": "pa_b_va_9",
+          "type": "blank",
+          "prompt": "9. The color of the wall doesn't match [blank] the furniture. (Gõ 'none' nếu không cần giới từ)",
+          "answers": ["none", "không", "(không)", "no prep"],
+          "explanation": "'match sth' là ngoại động từ chỉ sự phù hợp, không đi kèm giới từ."
+        },
+        {
+          "id": "pa_b_va_10",
+          "type": "blank",
+          "prompt": "10. We depend [blank] each other for support.",
+          "answers": ["on"],
+          "explanation": "'depend on' có nghĩa là phụ thuộc hoặc trông cậy vào ai."
+        }
+      ]
+    }
+  ]
+}
