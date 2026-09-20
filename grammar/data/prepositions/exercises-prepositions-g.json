@@ -1,0 +1,341 @@
+{
+  "tense_id": "prepositions",
+  "exercise_groups": [
+    {
+      "group_id": "prep_basic_ex1",
+      "group_title": "EXERCISE 1: ĐIỀN GIỚI TỪ IN / ON / AT THÍCH HỢP (25 CÂU)",
+      "instruction": "Điền giới từ 'in', 'on' hoặc 'at' vào chỗ trống thích hợp:",
+      "questions": [
+        {
+          "id": "p_b_1_1",
+          "type": "blank",
+          "prompt": "1. Columbus discovered America [blank] 1492.",
+          "answers": ["in"],
+          "explanation": "Dùng 'in' trước năm mốc lịch sử (in 1492)."
+        },
+        {
+          "id": "p_b_1_2",
+          "type": "blank",
+          "prompt": "2. You can see the stars [blank] night if the sky is clear.",
+          "answers": ["at"],
+          "explanation": "Cụm cố định chỉ ban đêm là 'at night'."
+        },
+        {
+          "id": "p_b_1_3",
+          "type": "blank",
+          "prompt": "3. Tom isn't here [blank] the moment. He'll be back [blank] five minutes.",
+          "answers": ["at, in", "at - in"],
+          "explanation": "Cụm 'at the moment' (ngay lúc này) và 'in + khoảng thời gian' (trong vòng ... nữa)."
+        },
+        {
+          "id": "p_b_1_4",
+          "type": "blank",
+          "prompt": "4. The course begins [blank] 7 January and ends [blank] 10 March.",
+          "answers": ["on, on", "on - on"],
+          "explanation": "Ngày tháng cụ thể dùng giới từ 'on'."
+        },
+        {
+          "id": "p_b_1_5",
+          "type": "blank",
+          "prompt": "5. Tom's grandmother died [blank] 1977 [blank] the age of 79.",
+          "answers": ["in, at", "in - at"],
+          "explanation": "Trước năm dùng 'in 1977'; cụm chỉ độ tuổi dùng 'at the age of'."
+        },
+        {
+          "id": "p_b_1_6",
+          "type": "blank",
+          "prompt": "6. The price of electricity is going up [blank] October.",
+          "answers": ["in"],
+          "explanation": "Trước tháng trong năm dùng giới từ 'in'."
+        },
+        {
+          "id": "p_b_1_7",
+          "type": "blank",
+          "prompt": "7. Ann works hard during the week, so she likes to relax [blank] weekends.",
+          "answers": ["at", "on"],
+          "explanation": "Cuối tuần dùng 'at weekends' (Anh-Anh) hoặc 'on weekends' (Anh-Mỹ)."
+        },
+        {
+          "id": "p_b_1_8",
+          "type": "blank",
+          "prompt": "8. I can't be at home [blank] the morning. Can you phone me [blank] the afternoon instead?",
+          "answers": ["in, in", "in - in"],
+          "explanation": "Các buổi lớn trong ngày dùng 'in the morning / in the afternoon'."
+        },
+        {
+          "id": "p_b_1_9",
+          "type": "blank",
+          "prompt": "9. Jack's brother is an engineer but he's out of work [blank] the moment.",
+          "answers": ["at"],
+          "explanation": "Cụm thành ngữ thời gian 'at the moment' có nghĩa là hiện tại."
+        },
+        {
+          "id": "p_b_1_10",
+          "type": "blank",
+          "prompt": "10. [blank] Sunday afternoons I usually go for a walk in the country.",
+          "answers": ["On", "on"],
+          "explanation": "Buổi đi kèm với thứ cụ thể trong tuần dùng 'on' (On Sunday afternoons)."
+        },
+        {
+          "id": "p_b_1_11",
+          "type": "blank",
+          "prompt": "11. Tom doesn't see his parents very often these days - usually only [blank] Christmas and sometimes [blank] the summer for a few days.",
+          "answers": ["at, in", "at - in"],
+          "explanation": "Dịp lễ hội không có từ 'Day' dùng 'at Christmas'; mùa dùng 'in the summer'."
+        },
+        {
+          "id": "p_b_1_12",
+          "type": "blank",
+          "prompt": "12. The telephone and the doorbell rang [blank] the same time.",
+          "answers": ["at"],
+          "explanation": "Cụm từ cố định 'at the same time' có nghĩa là cùng một lúc."
+        },
+        {
+          "id": "p_b_1_13",
+          "type": "blank",
+          "prompt": "13. I walk up a lot of stairs everyday. My flat is [blank] the third floor and there is no lift.",
+          "answers": ["on"],
+          "explanation": "Tầng của tòa nhà dùng 'on the third floor'."
+        },
+        {
+          "id": "p_b_1_14",
+          "type": "blank",
+          "prompt": "14. We went to the theatre last night. We had seats [blank] the front row.",
+          "answers": ["in"],
+          "explanation": "Hàng ghế / dãy dùng 'in the front row'."
+        },
+        {
+          "id": "p_b_1_15",
+          "type": "blank",
+          "prompt": "15. It can be dangerous when children play football [blank] the street.",
+          "answers": ["in", "on"],
+          "explanation": "Chơi bóng dưới lòng đường dùng 'in the street' (hoặc 'on the street')."
+        },
+        {
+          "id": "p_b_1_16",
+          "type": "blank",
+          "prompt": "16. I can't find Tom [blank] this photograph.",
+          "answers": ["in"],
+          "explanation": "Bên trong một bức ảnh, tranh vẽ dùng 'in this photograph'."
+        },
+        {
+          "id": "p_b_1_17",
+          "type": "blank",
+          "prompt": "17. Do you take sugar [blank] your coffee?",
+          "answers": ["in"],
+          "explanation": "Đường cho vào bên trong chất lỏng cà phê dùng 'in your coffee'."
+        },
+        {
+          "id": "p_b_1_18",
+          "type": "blank",
+          "prompt": "18. You can find the sports results [blank] the back page of the newspaper.",
+          "answers": ["on"],
+          "explanation": "Trang báo, bề mặt trang giấy dùng 'on the back page'."
+        },
+        {
+          "id": "p_b_1_19",
+          "type": "blank",
+          "prompt": "19. Sue and Dave got married [blank] Manchester four years ago.",
+          "answers": ["in"],
+          "explanation": "Trước tên thành phố lớn dùng 'in Manchester'."
+        },
+        {
+          "id": "p_b_1_20",
+          "type": "blank",
+          "prompt": "20. Paris is [blank] the river Seine.",
+          "answers": ["on"],
+          "explanation": "Nằm bên bờ sông dùng 'on the river Seine'."
+        },
+        {
+          "id": "p_b_1_21",
+          "type": "blank",
+          "prompt": "21. Mr. Boyle's office is [blank] the first floor. When you come out of the lift, it's [blank] your left.",
+          "answers": ["on, on", "on - on"],
+          "explanation": "Tầng nhà dùng 'on the first floor'; chỉ phương hướng dùng 'on your left'."
+        },
+        {
+          "id": "p_b_1_22",
+          "type": "blank",
+          "prompt": "22. Turn left [blank] the traffic lights.",
+          "answers": ["at"],
+          "explanation": "Tại cột đèn giao thông (địa điểm cụ thể) dùng 'at the traffic lights'."
+        },
+        {
+          "id": "p_b_1_23",
+          "type": "blank",
+          "prompt": "23. In most countries people drive [blank] the right.",
+          "answers": ["on"],
+          "explanation": "Chỉ làn đường bên phải/trái dùng 'on the right'."
+        },
+        {
+          "id": "p_b_1_24",
+          "type": "blank",
+          "prompt": "24. Last year we had a lovely skiing holiday [blank] the Swiss Alps.",
+          "answers": ["in"],
+          "explanation": "Khu vực địa lý / dãy núi lớn dùng 'in the Swiss Alps'."
+        },
+        {
+          "id": "p_b_1_25",
+          "type": "blank",
+          "prompt": "25. She spends all day sitting [blank] the window and watching what is happening outside.",
+          "answers": ["by", "at"],
+          "explanation": "Ngồi bên cạnh / ngay cửa sổ dùng 'at the window' hoặc 'by the window'."
+        }
+      ]
+    },
+    {
+      "group_id": "prep_basic_ex2",
+      "group_title": "EXERCISE 2: ĐIỀN GIỚI TỪ THỜI GIAN (10 CÂU)",
+      "instruction": "Điền giới từ chỉ thời gian thích hợp vào chỗ trống:",
+      "questions": [
+        {
+          "id": "p_b_2_1",
+          "type": "blank",
+          "prompt": "1. Aurora's birthday is [blank] May, but I don't know which date.",
+          "answers": ["in"],
+          "explanation": "Chỉ có tháng mà không có ngày cụ thể dùng 'in May'."
+        },
+        {
+          "id": "p_b_2_2",
+          "type": "blank",
+          "prompt": "2. She hasn't seen Kate for a few days. She said that she had last seen her [blank] Tuesday.",
+          "answers": ["on"],
+          "explanation": "Thứ trong tuần dùng giới từ 'on Tuesday'."
+        },
+        {
+          "id": "p_b_2_3",
+          "type": "blank",
+          "prompt": "3. Steve is 65. He'll be retiring from his job [blank] two years.",
+          "answers": ["in"],
+          "explanation": "'in two years' nghĩa là trong vòng 2 năm nữa tính từ hiện tại."
+        },
+        {
+          "id": "p_b_2_4",
+          "type": "blank",
+          "prompt": "4. Sam isn't here [blank] the moment, but he'll be there this afternoon.",
+          "answers": ["at"],
+          "explanation": "Thành ngữ chỉ thời điểm hiện tại: 'at the moment'."
+        },
+        {
+          "id": "p_b_2_5",
+          "type": "blank",
+          "prompt": "5. I don't like dark. I try to avoid going out [blank] night.",
+          "answers": ["at"],
+          "explanation": "Cụm từ chỉ ban đêm luôn đi với 'at night'."
+        },
+        {
+          "id": "p_b_2_6",
+          "type": "blank",
+          "prompt": "6. It rained very hard [blank] the night. Did you hear it?",
+          "answers": ["during", "in"],
+          "explanation": "Diễn tả sự việc diễn ra trong suốt buổi đêm dùng 'during the night' hoặc 'in the night'."
+        },
+        {
+          "id": "p_b_2_7",
+          "type": "blank",
+          "prompt": "7. My car is being repaired at the garage. It will be ready [blank] two hours.",
+          "answers": ["in"],
+          "explanation": "'in two hours' nghĩa là trong vòng 2 tiếng đồng hồ nữa."
+        },
+        {
+          "id": "p_b_2_8",
+          "type": "blank",
+          "prompt": "8. The bus station was busy. A lot of buses were leaving [blank] the same time.",
+          "answers": ["at"],
+          "explanation": "Thành ngữ 'at the same time' có nghĩa là cùng một thời điểm."
+        },
+        {
+          "id": "p_b_2_9",
+          "type": "blank",
+          "prompt": "9. Helen and David always go out for dinner [blank] their wedding anniversary.",
+          "answers": ["on"],
+          "explanation": "Ngày kỷ niệm / ngày đặc biệt dùng giới từ 'on'."
+        },
+        {
+          "id": "p_b_2_10",
+          "type": "blank",
+          "prompt": "10. It was a short book and an easy read. I read it [blank] a day.",
+          "answers": ["in"],
+          "explanation": "Hoàn thành một việc trong vòng một khoảng thời gian dùng 'in a day'."
+        }
+      ]
+    },
+    {
+      "group_id": "prep_basic_ex3",
+      "group_title": "EXERCISE 3: ĐIỀN GIỚI TỪ NƠI CHỐN (10 CÂU)",
+      "instruction": "Điền giới từ chỉ nơi chốn thích hợp vào chỗ trống:",
+      "questions": [
+        {
+          "id": "p_b_3_1",
+          "type": "blank",
+          "prompt": "1. There was a long queue of people [blank] the bus stop.",
+          "answers": ["at"],
+          "explanation": "Trạm dừng xe buýt là địa điểm cụ thể ➔ dùng 'at the bus stop'."
+        },
+        {
+          "id": "p_b_3_2",
+          "type": "blank",
+          "prompt": "2. Nicola was wearing a silver ring [blank] her little finger.",
+          "answers": ["on"],
+          "explanation": "Đeo nhẫn trên ngón tay dùng 'on her finger'."
+        },
+        {
+          "id": "p_b_3_3",
+          "type": "blank",
+          "prompt": "3. There was a security guard standing [blank] the entrance to the building.",
+          "answers": ["at"],
+          "explanation": "Lối vào tòa nhà là vị trí xác định ➔ dùng 'at the entrance'."
+        },
+        {
+          "id": "p_b_3_4",
+          "type": "blank",
+          "prompt": "4. I wasn't sure whether I had come to the right office. There was no name [blank] the door.",
+          "answers": ["on"],
+          "explanation": "Biển tên gắn trên bề mặt cánh cửa dùng 'on the door'."
+        },
+        {
+          "id": "p_b_3_5",
+          "type": "blank",
+          "prompt": "5. There are plenty of shops and restaurants [blank] the town center.",
+          "answers": ["in"],
+          "explanation": "Nằm trong khu vực trung tâm thị trấn dùng 'in the town center'."
+        },
+        {
+          "id": "p_b_3_6",
+          "type": "blank",
+          "prompt": "6. You'll find the weather forecast [blank] the back page of the newspaper.",
+          "answers": ["on"],
+          "explanation": "Thông tin in trên trang báo dùng 'on the back page'."
+        },
+        {
+          "id": "p_b_3_7",
+          "type": "blank",
+          "prompt": "7. The headquarters of the company are [blank] California.",
+          "answers": ["in"],
+          "explanation": "Trước tên bang hoặc vùng lãnh thổ lớn dùng 'in California'."
+        },
+        {
+          "id": "p_b_3_8",
+          "type": "blank",
+          "prompt": "8. I wouldn't like an office job. I couldn't spend the whole day sitting [blank] a desk.",
+          "answers": ["at"],
+          "explanation": "Ngồi tại bàn làm việc dùng cụm 'sitting at a desk'."
+        },
+        {
+          "id": "p_b_3_9",
+          "type": "blank",
+          "prompt": "9. The man the police are looking for has a scar [blank] his right cheek.",
+          "answers": ["on"],
+          "explanation": "Vết sẹo trên bề mặt da má dùng 'on his cheek'."
+        },
+        {
+          "id": "p_b_3_10",
+          "type": "blank",
+          "prompt": "10. Have you ever been camping? Have you ever slept [blank] a tent?",
+          "answers": ["in"],
+          "explanation": "Ngủ bên trong không gian kín của lều dùng 'in a tent'."
+        }
+      ]
+    }
+  ]
+}
