@@ -1,0 +1,62 @@
+{
+  "tense_id": "13-comparison",
+  "tense_name": "CHUYÊN ĐỀ 13: CẤU TRÚC SO SÁNH (COMPARISON)",
+  "sections": [
+    {
+      "id": "comp_adj_adv_types",
+      "title": "I. Phân Biệt Tính Từ & Trạng Từ Ngắn / Dài",
+      "rules": [
+        "1. Tính từ ngắn (Short adj): Có 1 âm tiết (nice, thick, new). Ngoại lệ: Tính từ 2 âm tiết có đuôi tận cùng là -y, -le, -ow, -er, -et vẫn được xem là tính từ ngắn (simple, easy, happy, narrow, clever, quiet).",
+        "2. Tính từ dài (Long adj): Có 2 âm tiết trở lên không thuộc các đuôi ngoại lệ trên (comfortable, generous, difficult).",
+        "3. Trạng từ ngắn: Có 1 âm tiết (fast, hard, late).",
+        "4. Trạng từ dài: Có 2 âm tiết trở lên hoặc trạng từ có đuôi -ly (more quickly, more beautifully)."
+      ]
+    },
+    {
+      "id": "comp_formulas",
+      "title": "II. Công Thức So Sánh Hơn, So Sánh Nhất & So Sánh Kém Nhất",
+      "rules": [
+        "1. So sánh hơn (Comparative):",
+        "• Ngắn: S + V + Adj/Adv + -er + than (Ví dụ: She runs faster than her friend).",
+        "• Dài: S + V + more + Adj/Adv + than (Ví dụ: She is more beautiful than any other woman).",
+        "2. So sánh nhất (Superlative):",
+        "• Ngắn: S + V + the + Adj/Adv + -est (Ví dụ: Jack is the tallest person in his class).",
+        "• Dài: S + V + the most + Adj/Adv (Ví dụ: This is the most delicious meal I have ever had).",
+        "3. So sánh kém nhất: S + V + the least + Adj/Adv + N (Ví dụ: Her singing was the least captivating among all performers)."
+      ]
+    },
+    {
+      "id": "comp_irregular_table",
+      "title": "III. Bảng Biến Đổi Bất Quy Tắc Thông Dụng",
+      "rules": [
+        "• Good / Well ➔ Better ➔ Best",
+        "• Bad ➔ Worse ➔ Worst",
+        "• Much / Many ➔ More ➔ Most",
+        "• Far ➔ Farther / Further ➔ The Farthest / The Furthest",
+        "• Old ➔ Older / Elder ➔ Oldest / Eldest",
+        "• Little ➔ Less ➔ Least"
+      ]
+    },
+    {
+      "id": "comp_double",
+      "title": "IV. Cấu Trúc So Sánh Kép (Double Comparison)",
+      "rules": [
+        "1. Dạng 'Càng ngày càng...':",
+        "• Ngắn: Adj/Adv-er + and + Adj/Adv-er (harder and harder, colder and colder).",
+        "• Dài: more and more + Adj/Adv (more and more difficult, more and more expensive).",
+        "2. Dạng 'Càng... thì càng...':",
+        "• The + so sánh hơn (S + V), the + so sánh hơn (S + V).",
+        "• Ví dụ: The harder you study, the better you will do; The faster we finish, the sooner we can leave."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ hệ thống lý thuyết so sánh trong tiếng Anh mà không nhìn tài liệu:",
+    "questions": [
+      "1. Nêu rõ tiêu chuẩn phân biệt tính từ ngắn và tính từ dài. Liệt kê ít nhất 5 tính từ 2 âm tiết nhưng vẫn được xem là tính từ ngắn.",
+      "2. Viết công thức so sánh hơn và so sánh nhất cho cả từ ngắn lẫn từ dài. Nêu công thức của cấu trúc so sánh kém nhất.",
+      "3. Lập bảng biến đổi dạng so sánh hơn và so sánh nhất của 6 từ bất quy tắc: good/well, bad, much/many, far, old, little.",
+      "4. Trình bày công thức và cho ví dụ của 2 dạng so sánh kép: 'Càng ngày càng...' và 'Càng... thì càng...'."
+    ]
+  }
+}
