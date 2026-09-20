@@ -1,0 +1,649 @@
+{
+  "tense_id": "13-comparison",
+  "exercise_groups": [
+    {
+      "group_id": "comp_ex1_form",
+      "group_title": "EXERCISE 1: CHO DẠNG ĐÚNG CỦA TÍNH TỪ HOẶC TRẠNG TỪ (20 CÂU)",
+      "instruction": "Chia dạng so sánh thích hợp của từ trong ngoặc:",
+      "questions": [
+        {
+          "id": "c1_1",
+          "type": "blank",
+          "prompt": "1. This chair is [blank] than that one. (comfortable)",
+          "answers": ["more comfortable"],
+          "explanation": "'comfortable' là tính từ dài, so sánh hơn đi với than dùng 'more comfortable'."
+        },
+        {
+          "id": "c1_2",
+          "type": "blank",
+          "prompt": "2. Your flat is [blank] than mine. (large)",
+          "answers": ["larger"],
+          "explanation": "'large' là tính từ ngắn tận cùng bằng 'e', so sánh hơn chỉ cần thêm 'r' ➔ larger."
+        },
+        {
+          "id": "c1_3",
+          "type": "blank",
+          "prompt": "3. The weather today is [blank] than it was yesterday. (hot)",
+          "answers": ["hotter"],
+          "explanation": "'hot' kết thúc 1 nguyên âm + 1 phụ âm, gấp đôi phụ âm cuối ➔ hotter."
+        },
+        {
+          "id": "c1_4",
+          "type": "blank",
+          "prompt": "4. The Nile is the [blank] river in the world. (long)",
+          "answers": ["longest"],
+          "explanation": "Có 'the' và phạm vi 'in the world' ➔ so sánh nhất từ ngắn: the longest."
+        },
+        {
+          "id": "c1_5",
+          "type": "blank",
+          "prompt": "5. Chinese bicycles are [blank] than Japanese ones. (bad)",
+          "answers": ["worse"],
+          "explanation": "'bad' là tính từ bất quy tắc, so sánh hơn đổi thành 'worse'."
+        },
+        {
+          "id": "c1_6",
+          "type": "blank",
+          "prompt": "6. Mathematics is [blank] than English. (difficult)",
+          "answers": ["more difficult"],
+          "explanation": "'difficult' là tính từ dài ➔ more difficult than."
+        },
+        {
+          "id": "c1_7",
+          "type": "blank",
+          "prompt": "7. Ho Chi Minh is the [blank] city in Vietnam. (big)",
+          "answers": ["biggest"],
+          "explanation": "So sánh nhất với từ ngắn 'big', gấp đôi phụ âm g ➔ the biggest."
+        },
+        {
+          "id": "c1_8",
+          "type": "blank",
+          "prompt": "8. He drives [blank] than his friend. (careful)",
+          "answers": ["more carefully"],
+          "explanation": "Bổ nghĩa cho động từ 'drives' phải dùng trạng từ 'carefully' ➔ more carefully than."
+        },
+        {
+          "id": "c1_9",
+          "type": "blank",
+          "prompt": "9. She sings [blank] in this school. (beautiful)",
+          "answers": ["the most beautifully", "most beautifully"],
+          "explanation": "Bổ nghĩa cho động từ 'sings' trong phạm vi cả trường ➔ the most beautifully."
+        },
+        {
+          "id": "c1_10",
+          "type": "blank",
+          "prompt": "10. I read [blank] than my sister. (slow)",
+          "answers": ["more slowly", "slower"],
+          "explanation": "Bổ nghĩa cho động từ 'read' dùng trạng từ: more slowly than (hoặc slower)."
+        },
+        {
+          "id": "c1_11",
+          "type": "blank",
+          "prompt": "11. Grace is the [blank] girl in our class. (old)",
+          "answers": ["oldest"],
+          "explanation": "So sánh nhất trong phạm vi lớp học 'in our class' ➔ the oldest."
+        },
+        {
+          "id": "c1_12",
+          "type": "blank",
+          "prompt": "12. This exercise is [blank] than that one. (easy)",
+          "answers": ["easier"],
+          "explanation": "'easy' kết thúc bằng 'y' được tính là tính từ ngắn ➔ đổi y thành i + er ➔ easier."
+        },
+        {
+          "id": "c1_13",
+          "type": "blank",
+          "prompt": "13. He is twice as [blank] as you. (fat)",
+          "answers": ["fat"],
+          "explanation": "Cấu trúc so sánh bằng 'as... as' giữ nguyên dạng gốc của tính từ ➔ fat."
+        },
+        {
+          "id": "c1_14",
+          "type": "blank",
+          "prompt": "14. Nam is the [blank] student of all. (noisy)",
+          "answers": ["noisiest"],
+          "explanation": "'noisy' kết thúc bằng 'y' ➔ so sánh nhất tính từ ngắn: the noisiest."
+        },
+        {
+          "id": "c1_15",
+          "type": "blank",
+          "prompt": "15. My cold is [blank] today than it was yesterday. (good)",
+          "answers": ["better"],
+          "explanation": "'good' dạng so sánh hơn đổi thành 'better'."
+        },
+        {
+          "id": "c1_16",
+          "type": "blank",
+          "prompt": "16. This exercise is the [blank] of all. (easy)",
+          "answers": ["easiest"],
+          "explanation": "So sánh nhất của 'easy' ➔ the easiest."
+        },
+        {
+          "id": "c1_17",
+          "type": "blank",
+          "prompt": "17. This flower is [blank] than that one. (beautiful)",
+          "answers": ["more beautiful"],
+          "explanation": "'beautiful' là tính từ dài ➔ more beautiful than."
+        },
+        {
+          "id": "c1_18",
+          "type": "blank",
+          "prompt": "18. He has twice as [blank] books as his sister. (many)",
+          "answers": ["many"],
+          "explanation": "So sánh gấp bội đi với cấu trúc 'as many... as'."
+        },
+        {
+          "id": "c1_19",
+          "type": "blank",
+          "prompt": "19. Which is the [blank] animal in the world? (dangerous)",
+          "answers": ["most dangerous"],
+          "explanation": "Đã có sẵn 'the', tính từ dài 'dangerous' ➔ the most dangerous."
+        },
+        {
+          "id": "c1_20",
+          "type": "blank",
+          "prompt": "20. English is not so [blank] as Chinese. (difficult)",
+          "answers": ["difficult"],
+          "explanation": "So sánh không bằng 'not so/as... as' giữ nguyên dạng tính từ nguyên mẫu."
+        }
+      ]
+    },
+    {
+      "group_id": "comp_ex2_double",
+      "group_title": "EXERCISE 2: SO SÁNH KÉP 'COMPARATIVE + AND + COMPARATIVE' (10 CÂU)",
+      "instruction": "Hoàn thành câu diễn tả mức độ 'càng ngày càng...':",
+      "questions": [
+        {
+          "id": "c2_1",
+          "type": "blank",
+          "prompt": "1. This subject gets [blank] all the time. (hard)",
+          "answers": ["harder and harder"],
+          "explanation": "'hard' là tính từ ngắn ➔ harder and harder (ngày càng khó)."
+        },
+        {
+          "id": "c2_2",
+          "type": "blank",
+          "prompt": "2. I'm just getting [blank]. (confused)",
+          "answers": ["more and more confused"],
+          "explanation": "'confused' là tính từ dài ➔ more and more confused."
+        },
+        {
+          "id": "c2_3",
+          "type": "blank",
+          "prompt": "3. It's becoming [blank] for me to keep up. (difficult)",
+          "answers": ["more and more difficult"],
+          "explanation": "'difficult' là tính từ dài ➔ more and more difficult."
+        },
+        {
+          "id": "c2_4",
+          "type": "blank",
+          "prompt": "4. The textbook just gets [blank]. (complicated)",
+          "answers": ["more and more complicated"],
+          "explanation": "'complicated' là tính từ dài ➔ more and more complicated."
+        },
+        {
+          "id": "c2_5",
+          "type": "blank",
+          "prompt": "5. I spend [blank] time on my work. (much)",
+          "answers": ["more and more"],
+          "explanation": "Dạng so sánh hơn của 'much' ➔ more and more time."
+        },
+        {
+          "id": "c2_6",
+          "type": "blank",
+          "prompt": "6. My list of things to do gets [blank]. (long)",
+          "answers": ["longer and longer"],
+          "explanation": "'long' là tính từ ngắn ➔ longer and longer."
+        },
+        {
+          "id": "c2_7",
+          "type": "blank",
+          "prompt": "7. My problems are just getting [blank]. (bad)",
+          "answers": ["worse and worse"],
+          "explanation": "Dạng so sánh hơn của 'bad' ➔ worse and worse (ngày càng tệ)."
+        },
+        {
+          "id": "c2_8",
+          "type": "blank",
+          "prompt": "8. I feel happy as my holiday is coming [blank]. (close)",
+          "answers": ["closer and closer"],
+          "explanation": "'close' kết thúc bằng 'e' ➔ closer and closer (ngày càng đến gần)."
+        },
+        {
+          "id": "c2_9",
+          "type": "blank",
+          "prompt": "9. Eating and traveling in this city is getting [blank]. (expensive)",
+          "answers": ["more and more expensive"],
+          "explanation": "'expensive' là tính từ dài ➔ more and more expensive."
+        },
+        {
+          "id": "c2_10",
+          "type": "blank",
+          "prompt": "10. Your English is OK now. Your pronunciation has got [blank]. (good)",
+          "answers": ["better and better"],
+          "explanation": "Dạng so sánh hơn của 'good' ➔ better and better (ngày càng tốt)."
+        }
+      ]
+    },
+    {
+      "group_id": "comp_ex3_mcq",
+      "group_title": "EXERCISE 3: TRẮC NGHIỆM TỔNG HỢP SO SÁNH (30 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D):",
+      "questions": [
+        {
+          "id": "c3_1",
+          "type": "choice",
+          "prompt": "1. In Vietnam, it is normally __________ in the South than in the North.",
+          "options": ["A. hot", "B. hotter", "C. hottest", "D. hoter"],
+          "correctIndex": 1,
+          "explanation": "So sánh hơn có than, 'hot' gấp đôi chữ t ➔ hotter."
+        },
+        {
+          "id": "c3_2",
+          "type": "choice",
+          "prompt": "2. The food is __________ than the last time I ate it.",
+          "options": ["A. badder", "B. bad", "C. worse", "D. worst"],
+          "correctIndex": 2,
+          "explanation": "So sánh hơn của 'bad' là 'worse'."
+        },
+        {
+          "id": "c3_3",
+          "type": "choice",
+          "prompt": "3. Ho Chi Minh City is __________ than Hanoi.",
+          "options": ["A. big", "B. bigger", "C. biggest", "D. biger"],
+          "correctIndex": 1,
+          "explanation": "'big' gấp đôi phụ âm g ➔ bigger than."
+        },
+        {
+          "id": "c3_4",
+          "type": "choice",
+          "prompt": "4. Her voice is __________ than her sister’s.",
+          "options": ["A. beautiful", "B. more beautiful", "C. more beautifully", "D. most beautiful"],
+          "correctIndex": 1,
+          "explanation": "Sau động từ to be 'is' cần một tính từ ➔ more beautiful."
+        },
+        {
+          "id": "c3_5",
+          "type": "choice",
+          "prompt": "5. Her literature result is much __________ than it was last year.",
+          "options": ["A. good", "B. well", "C. better", "D. more well"],
+          "correctIndex": 2,
+          "explanation": "'much' dùng để nhấn mạnh cho so sánh hơn ➔ much better."
+        },
+        {
+          "id": "c3_6",
+          "type": "choice",
+          "prompt": "6. Cinderella danced __________ than any other girl at the ball.",
+          "options": ["A. more graceful", "B. gracefuler", "C. gracefully", "D. more gracefully"],
+          "correctIndex": 3,
+          "explanation": "Bổ nghĩa cho động từ thường 'danced' cần trạng từ ➔ more gracefully."
+        },
+        {
+          "id": "c3_7",
+          "type": "choice",
+          "prompt": "7. This book is the __________ of all.",
+          "options": ["A. bored", "B. boring", "C. more boring", "D. most boring"],
+          "correctIndex": 3,
+          "explanation": "Có 'the' và 'of all' (trong tất cả) ➔ so sánh nhất: the most boring."
+        },
+        {
+          "id": "c3_8",
+          "type": "choice",
+          "prompt": "8. Mary speaks English very __________.",
+          "options": ["A. fluent", "B. fluently", "C. more fluently", "D. most fluently"],
+          "correctIndex": 1,
+          "explanation": "Bổ nghĩa cho 'speaks' sau 'very' dùng trạng từ nguyên mẫu 'fluently'."
+        },
+        {
+          "id": "c3_9",
+          "type": "choice",
+          "prompt": "9. Tom runs faster than John, and David runs the __________ in the group.",
+          "options": ["A. fast", "B. most fast", "C. fastest", "D. most fastly"],
+          "correctIndex": 2,
+          "explanation": "'the' + so sánh nhất từ ngắn 'fast' ➔ the fastest."
+        },
+        {
+          "id": "c3_10",
+          "type": "choice",
+          "prompt": "10. There is nothing __________ than going swimming in hot weather.",
+          "options": ["A. gooder", "B. good", "C. better", "D. best"],
+          "correctIndex": 2,
+          "explanation": "So sánh hơn có than ➔ better than."
+        },
+        {
+          "id": "c3_11",
+          "type": "choice",
+          "prompt": "11. Mary is __________ responsible as Peter.",
+          "options": ["A. more", "B. much", "C. as", "D. the most"],
+          "correctIndex": 2,
+          "explanation": "Cấu trúc so sánh bằng: as + adj + as."
+        },
+        {
+          "id": "c3_12",
+          "type": "choice",
+          "prompt": "12. She is __________ student in my class.",
+          "options": ["A. most hard-working", "B. more hard-working", "C. the most hard-working", "D. as hard-working"],
+          "correctIndex": 2,
+          "explanation": "So sánh nhất trong lớp học ➔ the most hard-working."
+        },
+        {
+          "id": "c3_13",
+          "type": "choice",
+          "prompt": "13. He drives __________ his brother.",
+          "options": ["A. more careful than", "B. more carefully than", "C. more carefully", "D. as careful as"],
+          "correctIndex": 1,
+          "explanation": "Bổ nghĩa cho động từ 'drives' cần trạng từ và có đối tượng so sánh ➔ more carefully than."
+        },
+        {
+          "id": "c3_14",
+          "type": "choice",
+          "prompt": "14. Tuan writes more __________ with fewer mistakes than before.",
+          "options": ["A. careless", "B. careful", "C. carefully", "D. carelessly"],
+          "correctIndex": 2,
+          "explanation": "Đã có sẵn 'more', bổ nghĩa cho 'writes' cần trạng từ chỉ sự cẩn thận ➔ more carefully."
+        },
+        {
+          "id": "c3_15",
+          "type": "choice",
+          "prompt": "15. My father is happy because I get __________ results at school.",
+          "options": ["A. bad", "B. good", "C. intelligent", "D. well"],
+          "correctIndex": 1,
+          "explanation": "Bổ nghĩa cho danh từ 'results' cần tính từ 'good' (kết quả tốt)."
+        },
+        {
+          "id": "c3_16",
+          "type": "choice",
+          "prompt": "16. Peter does better at school because he works __________.",
+          "options": ["A. harder", "B. more carelessly", "C. more lazily", "D. fastly"],
+          "correctIndex": 0,
+          "explanation": "Học tốt hơn vì làm việc/học tập chăm chỉ hơn ➔ harder."
+        },
+        {
+          "id": "c3_17",
+          "type": "choice",
+          "prompt": "17. He can do sums more __________ and read faster.",
+          "options": ["A. badly", "B. quickly", "C. difficultly", "D. worse"],
+          "correctIndex": 1,
+          "explanation": "Làm toán nhanh hơn: more quickly (song song với read faster)."
+        },
+        {
+          "id": "c3_18",
+          "type": "choice",
+          "prompt": "18. Jane is not __________ her brother.",
+          "options": ["A. more intelligent as", "B. intelligent as", "C. so intelligent as", "D. so intelligent that"],
+          "correctIndex": 2,
+          "explanation": "So sánh không bằng thể phủ định: not so/as + adj + as."
+        },
+        {
+          "id": "c3_19",
+          "type": "choice",
+          "prompt": "19. She is a very __________ pupil.",
+          "options": ["A. hard-working", "B. difficult", "C. hard", "D. easy"],
+          "correctIndex": 0,
+          "explanation": "Học sinh rất chăm chỉ ➔ a very hard-working pupil."
+        },
+        {
+          "id": "c3_20",
+          "type": "choice",
+          "prompt": "20. My English this term is __________ than that of last year.",
+          "options": ["A. good", "B. gooder", "C. better", "D. best"],
+          "correctIndex": 2,
+          "explanation": "So sánh hơn có than ➔ better than."
+        },
+        {
+          "id": "c3_21",
+          "type": "choice",
+          "prompt": "21. __________ you study for these exams, __________ you will do.",
+          "options": ["A. The harder / the better", "B. The more / the much", "C. The hardest / the best", "D. The more hard / the more good"],
+          "correctIndex": 0,
+          "explanation": "So sánh kép 'The + comparative, the + comparative': The harder ..., the better ..."
+        },
+        {
+          "id": "c3_22",
+          "type": "choice",
+          "prompt": "22. My neighbor is driving me mad! It seems that the __________ it is at night, the __________ he plays music!",
+          "options": ["A. less / more loud", "B. less / less", "C. more late / more loudlier", "D. later / louder"],
+          "correctIndex": 3,
+          "explanation": "The later ... the louder (Càng về khuya, anh ta càng mở nhạc to)."
+        },
+        {
+          "id": "c3_23",
+          "type": "choice",
+          "prompt": "23. Thanks to science and technology, our lives have become __________.",
+          "options": ["A. more and more good", "B. better and better", "C. the more and more good", "D. gooder and gooder"],
+          "correctIndex": 1,
+          "explanation": "Dạng ngày càng tốt hơn của 'good' ➔ better and better."
+        },
+        {
+          "id": "c3_24",
+          "type": "choice",
+          "prompt": "24. The Sears Tower is __________ building in Chicago.",
+          "options": ["A. taller", "B. the more tall", "C. the tallest", "D. taller and taller"],
+          "correctIndex": 2,
+          "explanation": "Tòa nhà cao nhất ở Chicago ➔ the tallest."
+        },
+        {
+          "id": "c3_25",
+          "type": "choice",
+          "prompt": "25. Peter is __________ John.",
+          "options": ["A. younger and more intelligent than", "B. more young and intelligent than", "C. more intelligent and younger than", "D. the more intelligent and younger than"],
+          "correctIndex": 0,
+          "explanation": "'young' là tính từ ngắn (younger), 'intelligent' là tính từ dài (more intelligent than)."
+        },
+        {
+          "id": "c3_26",
+          "type": "choice",
+          "prompt": "26. San Diego is the __________ town in Southern California.",
+          "options": ["A. more nice and nice", "B. the nicer", "C. the nicest", "D. nicer and nicer"],
+          "correctIndex": 2,
+          "explanation": "So sánh nhất có 'the' ➔ the nicest."
+        },
+        {
+          "id": "c3_27",
+          "type": "choice",
+          "prompt": "27. It gets __________ when the winter is coming.",
+          "options": ["A. cold and cold", "B. the coldest and coldest", "C. colder and colder", "D. more and more cold"],
+          "correctIndex": 2,
+          "explanation": "Thời tiết ngày càng lạnh hơn với từ ngắn: colder and colder."
+        },
+        {
+          "id": "c3_28",
+          "type": "choice",
+          "prompt": "28. The faster we finish, __________.",
+          "options": ["A. the sooner we can leave", "B. we can leave sooner and sooner", "C. the sooner can we leave", "D. we can leave the sooner"],
+          "correctIndex": 0,
+          "explanation": "So sánh kép: The faster ..., the sooner we can leave."
+        },
+        {
+          "id": "c3_29",
+          "type": "choice",
+          "prompt": "29. Of all athletes, Alex is __________.",
+          "options": ["A. the less qualified", "B. the less and less qualified", "C. the more and more qualified", "D. the least qualified"],
+          "correctIndex": 3,
+          "explanation": "Trong tất cả các vận động viên ➔ so sánh kém nhất: the least qualified."
+        },
+        {
+          "id": "c3_30",
+          "type": "choice",
+          "prompt": "30. The faster Thanh walks, __________.",
+          "options": ["A. more tired", "B. the more tired he gets", "C. he gets tired", "D. he gets more tired"],
+          "correctIndex": 1,
+          "explanation": "Vế thứ hai của so sánh kép: the more tired he gets."
+        }
+      ]
+    },
+    {
+      "group_id": "comp_ex4_rewrite",
+      "group_title": "EXERCISE 4: VIẾT LẠI CÂU GIỮ NGUYÊN NGHĨA (15 CÂU)",
+      "instruction": "Chuyển đổi giữa so sánh hơn, so sánh nhất và so sánh bằng:",
+      "questions": [
+        {
+          "id": "c4_1",
+          "type": "rewrite",
+          "prompt": "1. No one in my class is taller than Peter.",
+          "targetStart": "Peter is the ",
+          "answers": [
+            "tallest student in my class.",
+            "tallest person in my class.",
+            "tallest in my class."
+          ],
+          "explanation": "Không ai cao hơn Peter ➔ Peter cao nhất lớp (the tallest student in my class)."
+        },
+        {
+          "id": "c4_2",
+          "type": "rewrite",
+          "prompt": "2. According to me, English is easier than Maths.",
+          "targetStart": "According to me, Maths is ",
+          "answers": [
+            "more difficult than English.",
+            "harder than English."
+          ],
+          "explanation": "Tiếng Anh dễ hơn Toán ➔ Toán khó hơn Tiếng Anh (more difficult than English)."
+        },
+        {
+          "id": "c4_3",
+          "type": "rewrite",
+          "prompt": "3. No one in my group is more intelligent than Mary.",
+          "targetStart": "Mary is the ",
+          "answers": [
+            "most intelligent person in my group.",
+            "most intelligent student in my group.",
+            "most intelligent in my group."
+          ],
+          "explanation": "Không ai thông minh hơn Mary ➔ Mary thông minh nhất nhóm (the most intelligent in my group)."
+        },
+        {
+          "id": "c4_4",
+          "type": "rewrite",
+          "prompt": "4. No river in the world is longer than the Nile.",
+          "targetStart": "The Nile is the ",
+          "answers": [
+            "longest river in the world."
+          ],
+          "explanation": "Không con sông nào dài hơn sông Nile ➔ Sông Nile dài nhất thế giới (the longest river in the world)."
+        },
+        {
+          "id": "c4_5",
+          "type": "rewrite",
+          "prompt": "5. Mount Everest is the highest mountain in the world.",
+          "targetStart": "No mountain in the world is ",
+          "answers": [
+            "higher than Mount Everest.",
+            "as high as Mount Everest."
+          ],
+          "explanation": "Everest cao nhất ➔ Không ngọn núi nào cao hơn Everest (higher than Mount Everest)."
+        },
+        {
+          "id": "c4_6",
+          "type": "rewrite",
+          "prompt": "6. This is the first time I have ever met such a pretty girl.",
+          "targetStart": "She is the ",
+          "answers": [
+            "prettiest girl I have ever met."
+          ],
+          "explanation": "Lần đầu gặp cô gái xinh như vậy ➔ Cô ấy là cô gái xinh đẹp nhất tôi từng gặp (the prettiest girl I have ever met)."
+        },
+        {
+          "id": "c4_7",
+          "type": "rewrite",
+          "prompt": "7. There isn't anybody as kind-hearted as your mother.",
+          "targetStart": "Your mother is the ",
+          "answers": [
+            "most kind-hearted person I know.",
+            "most kind-hearted person."
+          ],
+          "explanation": "Không ai tốt bụng bằng mẹ bạn ➔ Mẹ bạn là người tốt bụng nhất (the most kind-hearted person I know)."
+        },
+        {
+          "id": "c4_8",
+          "type": "rewrite",
+          "prompt": "8. The black car is cheaper than the red car.",
+          "targetStart": "The red car is ",
+          "answers": [
+            "more expensive than the black one.",
+            "more expensive than the black car."
+          ],
+          "explanation": "Xe đen rẻ hơn xe đỏ ➔ Xe đỏ đắt hơn xe đen (more expensive than the black one)."
+        },
+        {
+          "id": "c4_9",
+          "type": "rewrite",
+          "prompt": "9. This film is more interesting than that one.",
+          "targetStart": "That film is ",
+          "answers": [
+            "less interesting than this one.",
+            "more boring than this one.",
+            "not as interesting as this one."
+          ],
+          "explanation": "Phim này thú vị hơn phim kia ➔ Phim kia kém thú vị hơn phim này (less interesting than this one)."
+        },
+        {
+          "id": "c4_10",
+          "type": "rewrite",
+          "prompt": "10. This is the most interesting film of all.",
+          "targetStart": "No other film is ",
+          "answers": [
+            "more interesting than this one.",
+            "as interesting as this one."
+          ],
+          "explanation": "Đây là phim hay nhất trong tất cả ➔ Không bộ phim nào hay hơn phim này (more interesting than this one)."
+        },
+        {
+          "id": "c4_11",
+          "type": "rewrite",
+          "prompt": "11. No cars in the world are more expensive than Japanese ones.",
+          "targetStart": "Japanese cars are the ",
+          "answers": [
+            "most expensive in the world.",
+            "most expensive cars in the world."
+          ],
+          "explanation": "Không xe nào đắt hơn xe Nhật ➔ Xe Nhật đắt nhất thế giới (the most expensive cars in the world)."
+        },
+        {
+          "id": "c4_12",
+          "type": "rewrite",
+          "prompt": "12. Other oceans in the world aren't as large as the Pacific one.",
+          "targetStart": "The Pacific Ocean is the ",
+          "answers": [
+            "largest in the world.",
+            "largest ocean in the world."
+          ],
+          "explanation": "Các đại dương khác không rộng bằng Thái Bình Dương ➔ Thái Bình Dương rộng nhất (the largest ocean in the world)."
+        },
+        {
+          "id": "c4_13",
+          "type": "rewrite",
+          "prompt": "13. No hotel in the city is as comfortable as this.",
+          "targetStart": "This hotel is the ",
+          "answers": [
+            "most comfortable in the city.",
+            "most comfortable hotel in the city."
+          ],
+          "explanation": "Không khách sạn nào tiện nghi bằng nơi này ➔ Khách sạn này tiện nghi nhất (the most comfortable in the city)."
+        },
+        {
+          "id": "c4_14",
+          "type": "rewrite",
+          "prompt": "14. She works harder than anyone else in her office.",
+          "targetStart": "She is the ",
+          "answers": [
+            "hardest worker in her office.",
+            "most hard-working person in her office.",
+            "most hard-working in her office."
+          ],
+          "explanation": "Làm việc chăm hơn bất kỳ ai ➔ Cô ấy là người chăm chỉ nhất văn phòng (the most hard-working in her office)."
+        },
+        {
+          "id": "c4_15",
+          "type": "rewrite",
+          "prompt": "15. This dress is cheaper than all the others in the shop.",
+          "targetStart": "This is the ",
+          "answers": [
+            "cheapest dress in the shop."
+          ],
+          "explanation": "Váy này rẻ hơn tất cả chiếc khác ➔ Đây là chiếc váy rẻ nhất cửa hàng (the cheapest dress in the shop)."
+        }
+      ]
+    }
+  ]
+}
