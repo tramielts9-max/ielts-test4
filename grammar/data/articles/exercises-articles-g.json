@@ -1,0 +1,466 @@
+{
+  "tense_id": "articles",
+  "exercise_groups": [
+    {
+      "group_id": "art_ex1",
+      "group_title": "EXERCISE 1: TRẮC NGHIỆM MẠO TỪ CƠ BẢN (20 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (a, b, c hoặc d):",
+      "questions": [
+        {
+          "id": "a1_1",
+          "type": "choice",
+          "prompt": "1. I would like to live by _____ sea",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "Cụm từ cố định 'by the sea' (bên bờ biển)."
+        },
+        {
+          "id": "a1_2",
+          "type": "choice",
+          "prompt": "2. Harry is a sailor. He spends most of his life at______ sea.",
+          "options": ["a. a", "b. an", "c. the", "d. φ"],
+          "correctIndex": 3,
+          "explanation": "Cụm 'at sea' nghĩa là đang lênh đênh đi biển làm nhiệm vụ, không dùng mạo từ."
+        },
+        {
+          "id": "a1_3",
+          "type": "choice",
+          "prompt": "3. There are billions of stars in ______ space.",
+          "options": ["a. a", "b. an", "c. φ", "d. the"],
+          "correctIndex": 2,
+          "explanation": "'space' mang nghĩa vũ trụ không gian nói chung thì không có 'the'."
+        },
+        {
+          "id": "a1_4",
+          "type": "choice",
+          "prompt": "4. He tried to park his car but______ space wasn't big enough.",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "'the space' ở đây là chỗ trống để đậu xe cụ thể đã xác định."
+        },
+        {
+          "id": "a1_5",
+          "type": "choice",
+          "prompt": "5. We often watch______ television",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 3,
+          "explanation": "Cụm từ 'watch television' (xem truyền hình) không dùng mạo từ."
+        },
+        {
+          "id": "a1_6",
+          "type": "choice",
+          "prompt": "6. Can you turn off______ television, please?",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "Chỉ chiếc máy thu hình tivi cụ thể trong phòng nên dùng 'the television'."
+        },
+        {
+          "id": "a1_7",
+          "type": "choice",
+          "prompt": "7. We had______ dinner in a restaurant.",
+          "options": ["a. a", "b. an", "c. φ", "d. the"],
+          "correctIndex": 2,
+          "explanation": "Tên bữa ăn nói chung (have dinner/lunch/breakfast) không dùng mạo từ."
+        },
+        {
+          "id": "a1_8",
+          "type": "choice",
+          "prompt": "8. We had______ meal in a restaurant.",
+          "options": ["a. a", "b. an", "c. the", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "'meal' là danh từ đếm được số ít nhắc đến lần đầu ➔ dùng 'a meal'."
+        },
+        {
+          "id": "a1_9",
+          "type": "choice",
+          "prompt": "9. Thank you. That was______ very nice lunch.",
+          "options": ["a. a", "b. an", "c. the", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "Khi bữa ăn có tính từ đứng trước miêu tả tính chất ('very nice lunch') thì dùng 'a'."
+        },
+        {
+          "id": "a1_10",
+          "type": "choice",
+          "prompt": "10. Where can______ people buy everything they need?",
+          "options": ["a. the", "b. a", "c. an", "d. no article is needed"],
+          "correctIndex": 3,
+          "explanation": "'people' chỉ con người nói chung không cần mạo từ."
+        },
+        {
+          "id": "a1_11",
+          "type": "choice",
+          "prompt": "11. Her parents are now working in ______ Europe.",
+          "options": ["a. the", "b. a", "c. an", "d. no article is needed"],
+          "correctIndex": 3,
+          "explanation": "Tên châu lục (Europe) không dùng mạo từ."
+        },
+        {
+          "id": "a1_12",
+          "type": "choice",
+          "prompt": "12. He majors______ in English.",
+          "options": ["a. a", "b. an", "c. the", "d. no article is needed"],
+          "correctIndex": 3,
+          "explanation": "Tên môn học / ngôn ngữ (English) không dùng mạo từ."
+        },
+        {
+          "id": "a1_13",
+          "type": "choice",
+          "prompt": "13. Mark Twain, ______ American writer, wrote 'Life on the Mississippi River'.",
+          "options": ["a. an", "b. a", "c. the", "d. no article"],
+          "correctIndex": 0,
+          "explanation": "Giới thiệu nghề nghiệp bắt đầu bằng nguyên âm ➔ 'an American writer'."
+        },
+        {
+          "id": "a1_14",
+          "type": "choice",
+          "prompt": "14. Paris is splendid by ______ night.",
+          "options": ["a. a", "b. an", "c. the", "d. no article"],
+          "correctIndex": 3,
+          "explanation": "Thành ngữ 'by night' (về đêm) không dùng mạo từ."
+        },
+        {
+          "id": "a1_15",
+          "type": "choice",
+          "prompt": "15. We might be able to catch______ last train if we hurried.",
+          "options": ["a. a", "b. an", "c. the", "d. no article"],
+          "correctIndex": 2,
+          "explanation": "Trước từ chỉ thứ tự 'last' bắt buộc dùng 'the last train'."
+        },
+        {
+          "id": "a1_16",
+          "type": "choice",
+          "prompt": "16. ______ used razor blade is______ useless thing.",
+          "options": ["a. The/ the", "b. A/ a", "c. An/ an", "d. no article"],
+          "correctIndex": 1,
+          "explanation": "Cả 'used' và 'useless' đều có phiên âm bắt đầu bằng phụ âm /ju:/ nên đều dùng 'A / a'."
+        },
+        {
+          "id": "a1_17",
+          "type": "choice",
+          "prompt": "17. We live at______ third house from the church.",
+          "options": ["a. the", "b. a", "c. an", "d. no article"],
+          "correctIndex": 0,
+          "explanation": "Trước số thứ tự 'third' dùng 'the third house'."
+        },
+        {
+          "id": "a1_18",
+          "type": "choice",
+          "prompt": "18. My aunt has______ interesting novel.",
+          "options": ["a. the", "b. an", "c. a", "d. no article"],
+          "correctIndex": 1,
+          "explanation": "'interesting' bắt đầu bằng nguyên âm /ɪ/ ➔ dùng 'an interesting novel'."
+        },
+        {
+          "id": "a1_19",
+          "type": "choice",
+          "prompt": "19. It was______ best film I had ever seen.",
+          "options": ["a. the", "b. an", "c. a", "d. no article"],
+          "correctIndex": 0,
+          "explanation": "So sánh nhất (best) bắt buộc dùng 'the best film'."
+        },
+        {
+          "id": "a1_20",
+          "type": "choice",
+          "prompt": "20. A video lab is______ useful means for language learning.",
+          "options": ["a. the", "b. an", "c. a", "d. no article"],
+          "correctIndex": 2,
+          "explanation": "'useful' bắt đầu bằng âm bán nguyên âm /ju:/ nên dùng 'a useful means'."
+        }
+      ]
+    },
+    {
+      "group_id": "art_ex2",
+      "group_title": "EXERCISE 2: PHÂN BIỆT THE / A / AN / Ø THEO NGỮ CẢNH (20 CÂU)",
+      "instruction": "Chọn phương án đúng nhất:",
+      "questions": [
+        {
+          "id": "a2_1",
+          "type": "choice",
+          "prompt": "1. Mrs. Lan went to ______ school to meet her son's teacher.",
+          "options": ["a. φ", "b. a", "c. an", "d. the"],
+          "correctIndex": 3,
+          "explanation": "Đến trường với mục đích gặp giáo viên chứ không phải để đi học ➔ dùng 'the school'."
+        },
+        {
+          "id": "a2_2",
+          "type": "choice",
+          "prompt": "2. The workmen went to ______ church to repair the roof.",
+          "options": ["a. φ", "b. the", "c. a", "d. an"],
+          "correctIndex": 1,
+          "explanation": "Đến nhà thờ để sửa mái chứ không phải để hành lễ ➔ dùng 'the church'."
+        },
+        {
+          "id": "a2_3",
+          "type": "choice",
+          "prompt": "3. Carol went to ______ prison to meet her brother.",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "Đến nhà tù với tư cách người thăm nuôi chứ không phải tù nhân ➔ dùng 'the prison'."
+        },
+        {
+          "id": "a2_4",
+          "type": "choice",
+          "prompt": "4. This morning I bought a newspaper and a magazine. ______ newspaper is in my bag but I don't know where ______ magazine is.",
+          "options": ["a. a/ a", "b. a/ the", "c. the/ the", "d. the/ a"],
+          "correctIndex": 2,
+          "explanation": "Cả hai đồ vật đều đã được nhắc đến ở câu trước ➔ dùng 'the/ the'."
+        },
+        {
+          "id": "a2_5",
+          "type": "choice",
+          "prompt": "5. My parents have ______ cat and ______ dog. The dog never bites the cat.",
+          "options": ["a. a/ a", "b. a/ the", "c. the/ the", "d. the/ a"],
+          "correctIndex": 0,
+          "explanation": "Nhắc đến lần đầu tiên dùng 'a cat and a dog'."
+        },
+        {
+          "id": "a2_6",
+          "type": "choice",
+          "prompt": "6. We live in______ big house in ______ middle of the village.",
+          "options": ["a. a/ a", "b. a/ the", "c. the/ the", "d. the/ a"],
+          "correctIndex": 1,
+          "explanation": "'a big house' (nhắc lần đầu) và 'in the middle of' (cụm phương hướng/vị trí cố định có the)."
+        },
+        {
+          "id": "a2_7",
+          "type": "choice",
+          "prompt": "7. I'm looking for ____ job. Did Mary get_____ job she applied for?",
+          "options": ["a. a/ the", "b. the/ a", "c. a/ a", "d. the/ the"],
+          "correctIndex": 0,
+          "explanation": "Vế đầu tìm một việc chung chung (a job); vế sau có mệnh đề bổ nghĩa 'she applied for' ➔ dùng 'the job'."
+        },
+        {
+          "id": "a2_8",
+          "type": "choice",
+          "prompt": "8. Did______ police find ______ person who stole your bicycle?",
+          "options": ["a. a/ a", "b. the/ the", "c. a/ the", "d. the/ a"],
+          "correctIndex": 1,
+          "explanation": "'the police' (lực lượng cảnh sát luôn có the) và 'the person who stole' (người được mệnh đề quan hệ bổ nghĩa)."
+        },
+        {
+          "id": "a2_9",
+          "type": "choice",
+          "prompt": "9. We went out for ______ meal last night. ______ restaurant we went was excellent.",
+          "options": ["a. a/ a", "b. the/ the", "c. a/ the", "d. the/ a"],
+          "correctIndex": 2,
+          "explanation": "'a meal' (nhắc lần đầu) và 'the restaurant we went' (đã xác định cụ thể bởi mệnh đề phía sau)."
+        },
+        {
+          "id": "a2_10",
+          "type": "choice",
+          "prompt": "10. As I was walking along the street, I saw ______ $10 note on ______ pavement.",
+          "options": ["a. a/ a", "b. the/ the", "c. a/ the", "d. the/ a"],
+          "correctIndex": 2,
+          "explanation": "'a $10 note' (tờ tiền nhắc lần đầu) trên vỉa hè con đường đang đi 'on the pavement'."
+        },
+        {
+          "id": "a2_11",
+          "type": "choice",
+          "prompt": "11. The Soviet Union was______ first country to send a man into ______ space.",
+          "options": ["a. the/ the", "b. φ/ φ", "c. φ/ the", "d. the/ φ"],
+          "correctIndex": 3,
+          "explanation": "Trước số thứ tự dùng 'the first country', còn 'space' (vũ trụ) không dùng mạo từ."
+        },
+        {
+          "id": "a2_12",
+          "type": "choice",
+          "prompt": "12. Did you watch 'Titanic' on ______ television or at______ cinema?",
+          "options": ["a. the/ the", "b. φ/ φ", "c. φ/ the", "d. the/ φ"],
+          "correctIndex": 2,
+          "explanation": "Cụm 'on television' (không mạo từ) nhưng 'at the cinema' (luôn có the)."
+        },
+        {
+          "id": "a2_13",
+          "type": "choice",
+          "prompt": "13. After______ lunch, we went for a walk by ______ sea.",
+          "options": ["a. the/ the", "b. φ/ φ", "c. φ/ the", "d. the/ φ"],
+          "correctIndex": 2,
+          "explanation": "Bữa ăn 'after lunch' (không có mạo từ), nhưng bên bờ biển 'by the sea' (có the)."
+        },
+        {
+          "id": "a2_14",
+          "type": "choice",
+          "prompt": "14. Peru is______ country in South America. ______ capital is Lima.",
+          "options": ["a. a/ a", "b. a/ the", "c. the/ the", "d. the/ a"],
+          "correctIndex": 1,
+          "explanation": "'a country' (nhắc lần đầu) và thủ đô của Peru là duy nhất ➔ 'The capital'."
+        },
+        {
+          "id": "a2_15",
+          "type": "choice",
+          "prompt": "15. I never listen to ______ radio. In fact I haven't got______ radio.",
+          "options": ["a. a/ a", "b. the/ a", "c. the/ the", "d. the/ a"],
+          "correctIndex": 1,
+          "explanation": "Nghe đài phát thanh dùng 'listen to the radio', còn máy radio là vật thể đếm được ➔ 'a radio'."
+        },
+        {
+          "id": "a2_16",
+          "type": "choice",
+          "prompt": "16. It was a beautiful day. ______ sun shone brightly in ______ sky.",
+          "options": ["a. a/ a", "b. the/ the", "c. the/ a", "d. the/ the"],
+          "correctIndex": 1,
+          "explanation": "Mặt trời và bầu trời đều là vật thể duy nhất ➔ 'the sun / the sky'."
+        },
+        {
+          "id": "a2_17",
+          "type": "choice",
+          "prompt": "17. It is said that Robin Hood robbed______ rich and gave the money to ______ poor.",
+          "options": ["a. a/ a", "b. a/ the", "c. the/ the", "d. the/ a"],
+          "correctIndex": 2,
+          "explanation": "'the + tính từ' chỉ tập hợp người: 'the rich' (người giàu) và 'the poor' (người nghèo)."
+        },
+        {
+          "id": "a2_18",
+          "type": "choice",
+          "prompt": "18. Life is not so easy for______ unemployed.",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "'the unemployed' nghĩa là những người thất nghiệp (the + adj)."
+        },
+        {
+          "id": "a2_19",
+          "type": "choice",
+          "prompt": "19. Many people were killed in the accident. The bodies of ______ dead were taken away.",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "'the dead' chỉ những người đã khuất."
+        },
+        {
+          "id": "a2_20",
+          "type": "choice",
+          "prompt": "20. Lan has been a nurse all her life. She has spent her life caring for ______ sick.",
+          "options": ["a. the", "b. a", "c. an", "d. φ"],
+          "correctIndex": 0,
+          "explanation": "'the sick' chỉ những người bệnh nhân/người ốm yếu."
+        }
+      ]
+    },
+    {
+      "group_id": "art_ex3",
+      "group_title": "EXERCISE 3: BÀI TẬP MẠO TỪ NÂNG CAO (15 CÂU)",
+      "instruction": "Chọn phương án đúng nhất điền vào hai vế câu:",
+      "questions": [
+        {
+          "id": "a3_1",
+          "type": "choice",
+          "prompt": "1. ______________ train times are different on ______________Sundays.",
+          "options": ["A. A - the", "B. The - the", "C. Ø - Ø", "D. The - Ø"],
+          "correctIndex": 3,
+          "explanation": "'The train times' (giờ tàu chạy đã xác định) và các ngày Chủ nhật nói chung 'on Sundays' (không mạo từ)."
+        },
+        {
+          "id": "a3_2",
+          "type": "choice",
+          "prompt": "2. You can use______________ railcard in most of ______________ countries in Europe.",
+          "options": ["A. the - the", "B. a - Ø", "C. a - the", "D. the - Ø"],
+          "correctIndex": 2,
+          "explanation": "'a railcard' (một thẻ tàu) và 'most of the countries' (sau most of có the)."
+        },
+        {
+          "id": "a3_3",
+          "type": "choice",
+          "prompt": "3. Our plane arrives in Ha Noi at______________ two o’clock in ______________ afternoon.",
+          "options": ["A. Ø - the", "B. the - the", "C. a - a", "D. the - an"],
+          "correctIndex": 0,
+          "explanation": "Trước giờ 'two o'clock' không có mạo từ; buổi trong ngày 'in the afternoon'."
+        },
+        {
+          "id": "a3_4",
+          "type": "choice",
+          "prompt": "4. My uncle and aunt live in______________small town in______________United States.",
+          "options": ["A. a - a", "B. a - the", "C. the - the", "D. a - Ø"],
+          "correctIndex": 1,
+          "explanation": "'a small town' (nhắc lần đầu) và nước Mỹ dạng liên bang 'the United States'."
+        },
+        {
+          "id": "a3_5",
+          "type": "choice",
+          "prompt": "5. ______________ happiness means ______________ different things to different people.",
+          "options": ["A. Some - these", "B. The - Ø", "C. Ø - Ø", "D. The - the"],
+          "correctIndex": 2,
+          "explanation": "'Happiness' (hạnh phúc là danh từ trừu tượng) và 'different things' (danh từ số nhiều chung chung) đều không dùng mạo từ."
+        },
+        {
+          "id": "a3_6",
+          "type": "choice",
+          "prompt": "6. I lay down on______________ground and looked up at ______________ sky.",
+          "options": ["A. a - a", "B. a - the", "C. the - a", "D. the - the"],
+          "correctIndex": 3,
+          "explanation": "Mặt đất 'the ground' và bầu trời 'the sky' đều là vật thể duy nhất xác định."
+        },
+        {
+          "id": "a3_7",
+          "type": "choice",
+          "prompt": "7. “I watch a film in Spanish. I understood______________ story, but ______________ actors spoke very fast so it was hard to understand.”",
+          "options": ["A. the - the", "B. a - Ø", "C. a - the", "D. the - Ø"],
+          "correctIndex": 0,
+          "explanation": "Cả cốt truyện 'the story' và diễn viên 'the actors' của bộ phim vừa xem đều đã xác định."
+        },
+        {
+          "id": "a3_8",
+          "type": "choice",
+          "prompt": "8. “Did you have______________nice holiday?” - “Yes, it was ______________best holiday I’ve ever had.”",
+          "options": ["A. a - a", "B. a - the", "C. the - a", "D. the - the"],
+          "correctIndex": 1,
+          "explanation": "'a nice holiday' (kỳ nghỉ nhắc lần đầu) và so sánh nhất 'the best holiday'."
+        },
+        {
+          "id": "a3_9",
+          "type": "choice",
+          "prompt": "9. He spent part of______________afternoon telling them ______________ news he could not tell them by telephone.",
+          "options": ["A. the - the - Ø", "B. an - Ø - the", "C. an - the - the", "D. the - Ø - the"],
+          "correctIndex": 0,
+          "explanation": "'part of the afternoon', tin tức cụ thể 'the news', và phương tiện 'by telephone' (không có mạo từ)."
+        },
+        {
+          "id": "a3_10",
+          "type": "choice",
+          "prompt": "10. Eight o’clock is______________good time to phone Nick: he’s always at home in ______________ evening.",
+          "options": ["A. Ø - the", "B. a - the", "C. a - Ø", "D. a - an"],
+          "correctIndex": 1,
+          "explanation": "'a good time' (một thời điểm thích hợp) và buổi trong ngày 'in the evening'."
+        },
+        {
+          "id": "a3_11",
+          "type": "choice",
+          "prompt": "11. Does it take______________long time to get to______________city centre?",
+          "options": ["A. Ø - the", "B. a - a", "C. a - the", "D. the - the"],
+          "correctIndex": 2,
+          "explanation": "Cụm 'take a long time' (tốn nhiều thời gian) và trung tâm thành phố 'the city centre'."
+        },
+        {
+          "id": "a3_12",
+          "type": "choice",
+          "prompt": "12. What do you think of______________public transport in______________Ha Noi?",
+          "options": ["A. Ø - Ø", "B. a - a", "C. a - Ø", "D. the - Ø"],
+          "correctIndex": 0,
+          "explanation": "Giao thông công cộng nói chung 'public transport' và tên thành phố 'Ha Noi' đều không dùng mạo từ."
+        },
+        {
+          "id": "a3_13",
+          "type": "choice",
+          "prompt": "13. Parking is very difficult in______________city centre, so my father always goes there by ______________ bus.",
+          "options": ["A. the – Ø", "B. the - the", "C. a - a", "D. a - Ø"],
+          "correctIndex": 0,
+          "explanation": "'in the city centre' (trung tâm thành phố) và phương tiện 'by bus' (không dùng mạo từ)."
+        },
+        {
+          "id": "a3_14",
+          "type": "choice",
+          "prompt": "14. There isn’t ______________airport near where I live.______________nearest airport is 70 miles away.",
+          "options": ["A. an - A", "B. an - The", "C. the - A", "D. the - The"],
+          "correctIndex": 1,
+          "explanation": "'an airport' (sân bay bắt đầu bằng nguyên âm nhắc lần đầu) và so sánh nhất 'The nearest airport'."
+        },
+        {
+          "id": "a3_15",
+          "type": "choice",
+          "prompt": "15. David is______________sailor. He spends most of his life at ______________sea.",
+          "options": ["A. Ø - a", "B. a - Ø", "C. a - a", "D. a - the"],
+          "correctIndex": 1,
+          "explanation": "Chỉ nghề nghiệp 'a sailor' và cụm từ cố định 'at sea' (đi biển lênh đênh không dùng mạo từ)."
+        }
+      ]
+    }
+  ]
+}
