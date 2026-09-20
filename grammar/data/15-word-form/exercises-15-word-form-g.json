@@ -1,0 +1,460 @@
+{
+  "tense_id": "15-word-form",
+  "exercise_groups": [
+    {
+      "group_id": "wf_part1",
+      "group_title": "PHẦN 1: BÀI TẬP WORD FORM CƠ BẢN (CÂU 1 - 25)",
+      "instruction": "Dựa vào bảng họ từ và vị trí ngữ pháp trong câu, điền dạng từ thích hợp vào chỗ trống:",
+      "questions": [
+        {
+          "id": "wf_1",
+          "type": "blank",
+          "prompt": "1. [succeed / success / successful / successfully] - She hopes to achieve great [blank] in her future career.",
+          "answers": ["success"],
+          "explanation": "Sau tính từ 'great' cần một danh từ ➔ success."
+        },
+        {
+          "id": "wf_2",
+          "type": "blank",
+          "prompt": "2. [educate / education / educational / educationally] - The government is focusing on [blank] reform in rural areas.",
+          "answers": ["education", "educational"],
+          "explanation": "Đứng trước danh từ 'reform' để tạo cụm danh từ ghép hoặc tính từ bổ nghĩa ➔ education / educational reform."
+        },
+        {
+          "id": "wf_3",
+          "type": "blank",
+          "prompt": "3. [beauty / beautiful / beautifully] - The sunset over the mountains was [blank].",
+          "answers": ["beautiful"],
+          "explanation": "Sau to be 'was' cần một tính từ ➔ beautiful."
+        },
+        {
+          "id": "wf_4",
+          "type": "blank",
+          "prompt": "4. [impress / impression / impressive / impressively] - Her speech was so [blank] that everyone clapped at the end.",
+          "answers": ["impressive"],
+          "explanation": "Cấu trúc 'so + adj + that', sau to be 'was' cần tính từ ➔ impressive."
+        },
+        {
+          "id": "wf_5",
+          "type": "blank",
+          "prompt": "5. [friend / friendship / friendly] - He is very [blank] and easy to talk to.",
+          "answers": ["friendly"],
+          "explanation": "Sau 'is very' cần tính từ song song với 'easy to talk to' ➔ friendly."
+        },
+        {
+          "id": "wf_6",
+          "type": "blank",
+          "prompt": "6. [pollute / pollution / polluted] - The river is [blank] due to the waste from factories.",
+          "answers": ["polluted"],
+          "explanation": "Sau to be 'is' chỉ trạng thái bị ô nhiễm ➔ polluted."
+        },
+        {
+          "id": "wf_7",
+          "type": "blank",
+          "prompt": "7. [tradition / traditional / traditionally] - The Mid-Autumn Festival is a [blank] event in Vietnam.",
+          "answers": ["traditional"],
+          "explanation": "Đứng trước danh từ 'event' cần một tính từ ➔ traditional."
+        },
+        {
+          "id": "wf_8",
+          "type": "blank",
+          "prompt": "8. [act / action / active / actively] - Children should be [blank] in outdoor activities.",
+          "answers": ["active"],
+          "explanation": "Sau 'should be' cần tính từ chỉ tính chất năng động ➔ active."
+        },
+        {
+          "id": "wf_9",
+          "type": "blank",
+          "prompt": "9. [danger / dangerous / dangerously] - It is [blank] to climb the mountain during a storm.",
+          "answers": ["dangerous"],
+          "explanation": "Cấu trúc 'It is + adj + to V' ➔ dangerous."
+        },
+        {
+          "id": "wf_10",
+          "type": "blank",
+          "prompt": "10. [nation / national / nationally] - The flag represents our [blank] identity.",
+          "answers": ["national"],
+          "explanation": "Sau tính từ sở hữu 'our' và trước danh từ 'identity' cần tính từ ➔ national."
+        },
+        {
+          "id": "wf_11",
+          "type": "blank",
+          "prompt": "11. [create / creation / creative / creatively] - The children came up with a [blank] idea for their science project.",
+          "answers": ["creative"],
+          "explanation": "Đứng trước danh từ 'idea' cần một tính từ ➔ creative."
+        },
+        {
+          "id": "wf_12",
+          "type": "blank",
+          "prompt": "12. [decide / decision / decisive / decisively] - She made a quick and [blank] move during the match.",
+          "answers": ["decisive"],
+          "explanation": "Đứng trước danh từ 'move' và song song với tính từ 'quick' ➔ decisive (dứt khoát)."
+        },
+        {
+          "id": "wf_13",
+          "type": "blank",
+          "prompt": "13. [economy / economic / economical / economically] - Using solar energy is an [blank] way to reduce electricity bills.",
+          "answers": ["economical", "economic"],
+          "explanation": "Trước danh từ 'way' chỉ phương thức tiết kiệm ➔ economical (hoặc economic)."
+        },
+        {
+          "id": "wf_14",
+          "type": "blank",
+          "prompt": "14. [differ / difference / different / differently] - The twins may look alike, but they behave quite [blank].",
+          "answers": ["differently"],
+          "explanation": "Bổ nghĩa cho động từ 'behave' cần một trạng từ ➔ differently."
+        },
+        {
+          "id": "wf_15",
+          "type": "blank",
+          "prompt": "15. [instruct / instruction / instructive] - The book is full of [blank] lessons for young readers.",
+          "answers": ["instructive"],
+          "explanation": "Trước danh từ 'lessons' cần tính từ mang nghĩa mang tính giáo dục/bổ ích ➔ instructive."
+        },
+        {
+          "id": "wf_16",
+          "type": "blank",
+          "prompt": "16. [qualify / qualification / qualified] - She is not [blank] to teach at the university level.",
+          "answers": ["qualified"],
+          "explanation": "Sau to be 'is not' cần tính từ chỉ đủ trình độ/chuyên môn ➔ qualified."
+        },
+        {
+          "id": "wf_17",
+          "type": "blank",
+          "prompt": "17. [explain / explanation / explainable] - Can you give me a clear [blank] for your absence?",
+          "answers": ["explanation"],
+          "explanation": "Sau tính từ 'clear' cần một danh từ ➔ explanation."
+        },
+        {
+          "id": "wf_18",
+          "type": "blank",
+          "prompt": "18. [disappoint / disappointment / disappointed / disappointingly] - He was [blank] with the test result.",
+          "answers": ["disappointed"],
+          "explanation": "Cảm xúc của con người sau to be 'was' ➔ disappointed with."
+        },
+        {
+          "id": "wf_19",
+          "type": "blank",
+          "prompt": "19. [attend / attendance] - Her [blank] at school is excellent this semester.",
+          "answers": ["attendance"],
+          "explanation": "Sau tính từ sở hữu 'Her' cần một danh từ làm chủ ngữ ➔ attendance (sự chuyên cần)."
+        },
+        {
+          "id": "wf_20",
+          "type": "blank",
+          "prompt": "20. [enjoy / enjoyment / enjoyable / enjoyably] - The picnic was [blank] and full of laughter.",
+          "answers": ["enjoyable"],
+          "explanation": "Sau to be 'was' cần tính từ miêu tả tính chất buổi dã ngoại ➔ enjoyable."
+        },
+        {
+          "id": "wf_21",
+          "type": "blank",
+          "prompt": "21. [celebrate / celebration / celebratory] - Tet is the most important [blank] in Vietnam.",
+          "answers": ["celebration"],
+          "explanation": "Sau so sánh nhất 'the most important' cần một danh từ ➔ celebration."
+        },
+        {
+          "id": "wf_22",
+          "type": "blank",
+          "prompt": "22. [industrialize / industry / industrial / industrially] - The city has become more [blank] over the last decade.",
+          "answers": ["industrial"],
+          "explanation": "Sau linking verb 'become more' cần một tính từ ➔ industrial."
+        },
+        {
+          "id": "wf_23",
+          "type": "blank",
+          "prompt": "23. [communicate / communication / communicative / communicatively] - Good leaders need to be [blank] with their team.",
+          "answers": ["communicative"],
+          "explanation": "Sau 'need to be' cần tính từ mang tính giao tiếp cởi mở ➔ communicative."
+        },
+        {
+          "id": "wf_24",
+          "type": "blank",
+          "prompt": "24. [relate / relation / relationship / related] - I don’t think her story is [blank] to our discussion.",
+          "answers": ["related"],
+          "explanation": "Cụm tính từ đi kèm giới từ 'be related to' (liên quan đến)."
+        },
+        {
+          "id": "wf_25",
+          "type": "blank",
+          "prompt": "25. [volunteer / voluntary / voluntarily] - Many students join [blank] work during summer vacation.",
+          "answers": ["voluntary", "volunteer"],
+          "explanation": "Đứng trước danh từ 'work' ➔ voluntary work (hoặc volunteer work)."
+        }
+      ]
+    },
+    {
+      "group_id": "wf_part2",
+      "group_title": "PHẦN 2: BÀI TẬP WORD FORM MỞ RỘNG (CÂU 26 - 50)",
+      "instruction": "Xác định đúng từ loại điền vào chỗ trống:",
+      "questions": [
+        {
+          "id": "wf_26",
+          "type": "blank",
+          "prompt": "26. [vary / variety / various / variably] - There is a wide [blank] of food at the buffet.",
+          "answers": ["variety"],
+          "explanation": "Cụm cố định 'a wide variety of' (đa dạng cái gì)."
+        },
+        {
+          "id": "wf_27",
+          "type": "blank",
+          "prompt": "27. [storm / stormy] - Because of the [blank] weather, all flights were delayed.",
+          "answers": ["stormy"],
+          "explanation": "Đứng trước danh từ 'weather' cần tính từ ➔ stormy weather."
+        },
+        {
+          "id": "wf_28",
+          "type": "blank",
+          "prompt": "28. [fame / famous / famously] - She became [blank] after winning the singing contest.",
+          "answers": ["famous"],
+          "explanation": "Sau động từ nối 'became' cần tính từ ➔ famous."
+        },
+        {
+          "id": "wf_29",
+          "type": "blank",
+          "prompt": "29. [innovate / innovation / innovative / innovatively] - His ideas are very [blank] and useful for our project.",
+          "answers": ["innovative"],
+          "explanation": "Sau 'are very' cần tính từ song song với 'useful' ➔ innovative."
+        },
+        {
+          "id": "wf_30",
+          "type": "blank",
+          "prompt": "30. [inspire / inspiration / inspirational] - The teacher gave an [blank] speech.",
+          "answers": ["inspirational", "inspiring"],
+          "explanation": "Trước danh từ 'speech' cần tính từ mang nghĩa truyền cảm hứng ➔ inspirational."
+        },
+        {
+          "id": "wf_31",
+          "type": "blank",
+          "prompt": "31. [compete / competition / competitive / competitively] - She is very [blank] and always wants to win.",
+          "answers": ["competitive"],
+          "explanation": "Sau 'is very' cần tính từ chỉ tính cạnh tranh/ganh đua ➔ competitive."
+        },
+        {
+          "id": "wf_32",
+          "type": "blank",
+          "prompt": "32. [humor / humorous / humorously] - The film is [blank] and made us laugh a lot.",
+          "answers": ["humorous"],
+          "explanation": "Sau 'is' cần tính từ chỉ tính chất hài hước ➔ humorous."
+        },
+        {
+          "id": "wf_33",
+          "type": "blank",
+          "prompt": "33. [succeed / success / successful / successfully] - He was [blank] in passing the entrance exam.",
+          "answers": ["successful"],
+          "explanation": "Cấu trúc 'be successful in doing sth' ➔ successful."
+        },
+        {
+          "id": "wf_34",
+          "type": "blank",
+          "prompt": "34. [respond / response / responsive / responsively] - The teacher gave a quick and [blank] answer.",
+          "answers": ["responsive"],
+          "explanation": "Trước danh từ 'answer' song song với tính từ 'quick' ➔ responsive."
+        },
+        {
+          "id": "wf_35",
+          "type": "blank",
+          "prompt": "35. [speak / speech / speechless] - She was so shocked that she stood [blank].",
+          "answers": ["speechless"],
+          "explanation": "Sau linking verb 'stood' chỉ trạng thái không nói nên lời ➔ speechless."
+        },
+        {
+          "id": "wf_36",
+          "type": "blank",
+          "prompt": "36. [excite / excitement / excited / excitedly] - The children waited [blank] for the trip to begin.",
+          "answers": ["excitedly"],
+          "explanation": "Bổ nghĩa cho động từ 'waited' cần một trạng từ ➔ excitedly."
+        },
+        {
+          "id": "wf_37",
+          "type": "blank",
+          "prompt": "37. [danger / dangerous / dangerously] - He drove [blank] and caused an accident.",
+          "answers": ["dangerously"],
+          "explanation": "Bổ nghĩa cho động từ 'drove' cần một trạng từ ➔ dangerously."
+        },
+        {
+          "id": "wf_38",
+          "type": "blank",
+          "prompt": "38. [attract / attraction / attractive / attractively] - That place is really [blank] to tourists.",
+          "answers": ["attractive"],
+          "explanation": "Sau 'is really' cần tính từ cuốn hút ➔ attractive to."
+        },
+        {
+          "id": "wf_39",
+          "type": "blank",
+          "prompt": "39. [prepare / preparation / prepared] - The students are [blank] for the upcoming exam.",
+          "answers": ["prepared"],
+          "explanation": "Cụm 'be prepared for' (đã chuẩn bị sẵn sàng)."
+        },
+        {
+          "id": "wf_40",
+          "type": "blank",
+          "prompt": "40. [please / pleasure / pleasant / pleasantly] - We had a [blank] time at the beach.",
+          "answers": ["pleasant"],
+          "explanation": "Trước danh từ 'time' cần tính từ dễ chịu/thú vị ➔ pleasant."
+        },
+        {
+          "id": "wf_41",
+          "type": "blank",
+          "prompt": "41. [destroy / destruction / destructive / destructively] - The earthquake was [blank], leaving thousands homeless.",
+          "answers": ["destructive"],
+          "explanation": "Sau to be 'was' cần tính từ chỉ tính tàn phá nặng nề ➔ destructive."
+        },
+        {
+          "id": "wf_42",
+          "type": "blank",
+          "prompt": "42. [develop / developer / developed] - He works as a software [blank] in a tech company.",
+          "answers": ["developer"],
+          "explanation": "Chỉ nghề nghiệp lập trình viên phần mềm ➔ software developer."
+        },
+        {
+          "id": "wf_43",
+          "type": "blank",
+          "prompt": "43. [comfort / comfortable / comfortably] - The new shoes are very [blank] to wear all day.",
+          "answers": ["comfortable"],
+          "explanation": "Sau 'are very' cần tính từ thoải mái ➔ comfortable."
+        },
+        {
+          "id": "wf_44",
+          "type": "blank",
+          "prompt": "44. [history / historical / historic] - That building is of great [blank] value.",
+          "answers": ["historical", "historic"],
+          "explanation": "Trước danh từ 'value' cần tính từ ➔ historical value."
+        },
+        {
+          "id": "wf_45",
+          "type": "blank",
+          "prompt": "45. [succeed / success / successful / successfully] - He was [blank] in convincing the board.",
+          "answers": ["successful"],
+          "explanation": "'be successful in doing sth' ➔ successful."
+        },
+        {
+          "id": "wf_46",
+          "type": "blank",
+          "prompt": "46. [introduce / introduction / introductory] - The teacher gave an [blank] lesson on photosynthesis.",
+          "answers": ["introductory"],
+          "explanation": "Trước danh từ 'lesson' cần tính từ mang tính mở đầu/giới thiệu ➔ introductory."
+        },
+        {
+          "id": "wf_47",
+          "type": "blank",
+          "prompt": "47. [assist / assistance / assistant] - The teacher’s [blank] helped me understand the topic better.",
+          "answers": ["assistance"],
+          "explanation": "Sau sở hữu cách 'teacher’s' cần danh từ chỉ sự trợ giúp ➔ assistance."
+        },
+        {
+          "id": "wf_48",
+          "type": "blank",
+          "prompt": "48. [appear / appearance / apparent / apparently] - It was [blank] that she was not ready for the test.",
+          "answers": ["apparent"],
+          "explanation": "Cấu trúc 'It was + adj + that' (rõ ràng là) ➔ apparent."
+        },
+        {
+          "id": "wf_49",
+          "type": "blank",
+          "prompt": "49. [explain / explanation / explanatory] - The professor gave an [blank] note on the topic.",
+          "answers": ["explanatory"],
+          "explanation": "Trước danh từ 'note' cần tính từ mang tính giải thích ➔ explanatory."
+        },
+        {
+          "id": "wf_50",
+          "type": "blank",
+          "prompt": "50. [behave / behavior / behavioral / behaviorally] - His [blank] in class was inappropriate.",
+          "answers": ["behavior", "behaviour"],
+          "explanation": "Sau tính từ sở hữu 'His' cần một danh từ làm chủ ngữ ➔ behavior."
+        }
+      ]
+    },
+    {
+      "group_id": "wf_part3",
+      "group_title": "PHẦN 3: BÀI TẬP WORD FORM TIỀN TỐ PHỦ ĐỊNH & NÂNG CAO",
+      "instruction": "Chú ý ngữ cảnh để dùng đúng dạng khẳng định hoặc phủ định của từ:",
+      "questions": [
+        {
+          "id": "wf_90",
+          "type": "blank",
+          "prompt": "90. [employ / employment / unemployed] - He has been [blank] for over a year.",
+          "answers": ["unemployed"],
+          "explanation": "Sau to be 'has been' cần tính từ chỉ tình trạng thất nghiệp ➔ unemployed."
+        },
+        {
+          "id": "wf_91",
+          "type": "blank",
+          "prompt": "91. [decorate / decoration / decorated] - The room was beautifully [blank] for the wedding.",
+          "answers": ["decorated"],
+          "explanation": "Bị động sau trạng từ: was beautifully decorated."
+        },
+        {
+          "id": "wf_92",
+          "type": "blank",
+          "prompt": "92. [believe / belief / believable / believably] - Her story was not [blank] at all.",
+          "answers": ["believable"],
+          "explanation": "Sau to be 'was not' cần tính từ đáng tin ➔ believable."
+        },
+        {
+          "id": "wf_98",
+          "type": "blank",
+          "prompt": "98. [culture / cultural / culturally] - Wearing 'áo dài' on special occasions is a [blank] tradition.",
+          "answers": ["cultural"],
+          "explanation": "Trước danh từ 'tradition' cần tính từ thuộc về văn hóa ➔ cultural."
+        },
+        {
+          "id": "wf_105",
+          "type": "blank",
+          "prompt": "105. [pollute / pollution / polluted] - Many lakes are now heavily [blank].",
+          "answers": ["polluted"],
+          "explanation": "Sau to be và trạng từ 'heavily' ➔ heavily polluted."
+        },
+        {
+          "id": "wf_109",
+          "type": "blank",
+          "prompt": "109. [develop / development / developing] - Vietnam is still a [blank] country.",
+          "answers": ["developing"],
+          "explanation": "Cụm từ quen thuộc: a developing country (quốc gia đang phát triển)."
+        },
+        {
+          "id": "wf_118",
+          "type": "blank",
+          "prompt": "118. [care / careful / carefully] - Please read the instructions [blank].",
+          "answers": ["carefully"],
+          "explanation": "Bổ nghĩa cho động từ 'read' cần trạng từ ➔ carefully."
+        },
+        {
+          "id": "wf_148",
+          "type": "blank",
+          "prompt": "148. [comfort / uncomfortable / uncomfortably] - The chair is [blank] to sit on for long.",
+          "answers": ["uncomfortable", "comfortable"],
+          "explanation": "Sau to be 'is' chỉ tính chất không thoải mái khi ngồi lâu ➔ uncomfortable."
+        },
+        {
+          "id": "wf_151",
+          "type": "blank",
+          "prompt": "151. [succeed / success / unsuccessful / unsuccessfully] - He tried to open the door but was [blank].",
+          "answers": ["unsuccessful"],
+          "explanation": "Có liên từ 'but' chỉ sự đối lập (thử mở nhưng không thành công) ➔ was unsuccessful."
+        },
+        {
+          "id": "wf_152",
+          "type": "blank",
+          "prompt": "152. [danger / dangerous / endangered] - The panda is an [blank] species.",
+          "answers": ["endangered"],
+          "explanation": "Cụm danh từ chỉ loài có nguy cơ tuyệt chủng ➔ an endangered species."
+        },
+        {
+          "id": "wf_199",
+          "type": "blank",
+          "prompt": "199. [expect / expectation / unexpected / unexpectedly] - The result was totally [blank].",
+          "answers": ["unexpected"],
+          "explanation": "Sau to be và trạng từ 'totally' mang nghĩa bất ngờ/ngoài dự kiến ➔ unexpected."
+        },
+        {
+          "id": "wf_200",
+          "type": "blank",
+          "prompt": "200. [imagine / imagination / unimaginable] - The damage caused by the storm was [blank].",
+          "answers": ["unimaginable"],
+          "explanation": "Sau to be 'was' miêu tả thiệt hại không thể tưởng tượng nổi ➔ unimaginable."
+        }
+      ]
+    }
+  ]
+}
