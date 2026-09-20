@@ -1,0 +1,29 @@
+{
+  "tense_id": "prepositions",
+  "tense_name": "GIỚI TỪ CƠ BẢN (IN - ON - AT)",
+  "sections": [
+    {
+      "id": "prep_triangle_rule",
+      "title": "Quy Tắc Tam Giác Giới Từ (In - On - At)",
+      "rules": [
+        "1. IN (Biggest - Rộng nhất / Bên trong):",
+        "• Thời gian: Buổi trong ngày (in the morning), Mùa (in summer), Tháng (in May), Năm (in 1995), Thế kỷ.",
+        "• Nơi chốn: Quốc gia (in Vietnam), Thành phố trở lên (in Hanoi), Không gian khép kín (in the room, in a box).",
+        "2. ON (Smaller - Trung bình / Bề mặt, phía trên):",
+        "• Thời gian: Ngày trong tuần (on Monday), Ngày tháng cụ thể (on 7 January), Ngày lễ có chữ 'Day' (on Christmas Day), Ngày kỷ niệm.",
+        "• Nơi chốn: Tên đường (on Nguyen Hue street), Bề mặt (on the table, on the wall), Tầng nhà (on the 1st floor), Bến bãi / Bờ sông (on the river).",
+        "3. AT (Smallest - Nhỏ nhất / Điểm cụ thể, tại chỗ đó):",
+        "• Thời gian: Giờ phút chính xác (at 7 PM, at 7:30), Thời điểm cụ thể (at the moment, at noon, at midnight, at night, at Christmas).",
+        "• Nơi chốn: Địa chỉ nhà có số cụ thể (at 123 Main St), Vị trí / Địa điểm xác định (at the bus stop, at school, at the airport, at the door)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ quy tắc sử dụng bộ ba giới từ IN - ON - AT chỉ thời gian và nơi chốn theo mô hình tam giác từ lớn đến nhỏ mà không nhìn tài liệu.",
+    "questions": [
+      "1. Trình bày phạm vi sử dụng của giới từ IN về cả Thời gian (Time) và Nơi chốn (Place). Cho ít nhất 2 ví dụ minh họa kèm dịch nghĩa.",
+      "2. Trình bày phạm vi sử dụng của giới từ ON về cả Thời gian (Time) và Nơi chốn (Place). Cho ít nhất 2 ví dụ minh họa kèm dịch nghĩa.",
+      "3. Trình bày phạm vi sử dụng của giới từ AT về cả Thời gian (Time) và Nơi chốn (Place). Cho ít nhất 2 ví dụ minh họa kèm dịch nghĩa."
+    ]
+  }
+}
