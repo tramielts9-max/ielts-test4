@@ -647,17 +647,34 @@
     return sHtml;
   }
 
-  // RENDER LỜI GIẢI CHI TIẾT
+ // RENDER LỜI GIẢI CHI TIẾT KÈM KHUNG TRỢ GIẢNG AI STREAMING
   function renderExplanationHtml(qId, q) {
-    if (!q.explanation || !q.explanation.steps) return '';
-    let expSteps = q.explanation.steps.map(s => `<p style="margin:4px 0;">${s}</p>`).join('');
+    let expSteps = (q.explanation && q.explanation.steps) 
+      ? q.explanation.steps.map(s => `<p style="margin:4px 0;">${s}</p>`).join('') 
+      : '';
     let hlBtn = q.highlightId ? `<button type="button" class="btn-header" style="background:#0284c7; margin-top:8px;" onclick="window.highlightText('${q.highlightId}')">📍 Xem dẫn chứng bài đọc</button>` : '';
 
     return `
-      <div class="explanation" style="display:none;">
+      <div class="explanation" style="display:none; margin-top: 14px;">
         <div class="kw-exp">🎯 LỜI GIẢI CHI TIẾT:</div>
         ${expSteps}
         ${hlBtn}
+        
+        <!-- KHUNG HỎI ĐÁP TRỢ GIẢNG AI STREAMING TRỰC TIẾP -->
+        <div class="ai-assistant-box" style="margin-top: 14px; padding: 12px; background: var(--bg-card); border: 1.5px solid #cbd5e1; border-radius: 8px;">
+          <div style="font-weight: 700; font-size: 13.5px; color: var(--primary-blue); margin-bottom: 6px;">
+            🤖 Hỏi Trợ Giảng AI về câu này (Stream Real-time):
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <input type="text" id="ai_ask_${qId}" placeholder="Hỏi tại sao sai, giải nghĩa từ, tìm vị trí bài đọc..." 
+                   style="flex: 1; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13.5px;"
+                   onkeydown="if(event.key==='Enter') window.askGeminiAI('${qId}')">
+            <button type="button" id="ai_btn_${qId}" class="ai-btn" onclick="window.askGeminiAI('${qId}')" style="cursor:pointer; white-space:nowrap;">
+              Gửi AI
+            </button>
+          </div>
+          <div class="ai-response" id="ai_response_${qId}" style="display:none; margin-top:10px; max-height: 400px; overflow-y: auto;"></div>
+        </div>
       </div>
     `;
   }
