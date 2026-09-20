@@ -2,747 +2,1144 @@
   "tense_id": "conditionals",
   "exercise_groups": [
     {
-      "group_id": "cond_form_verbs_20",
-      "group_title": "DẠNG 1: CHIA ĐỘNG TỪ TRONG NGOẶC (20 CÂU)",
-      "instruction": "Cho dạng đúng của động từ trong ngoặc để hoàn thành các câu điều kiện sau:",
+      "group_id": "if1_form_verbs_10",
+      "group_title": "PHẦN 1: CÂU ĐIỀU KIỆN LOẠI 1 (IF TYPE 1) - DẠNG 1: CHIA ĐỘNG TỪ TRONG NGOẶC (10 CÂU)",
+      "instruction": "Cho dạng đúng của động từ trong ngoặc để hoàn thành các câu điều kiện loại 1:",
       "questions": [
         {
-          "id": "c_v_1",
+          "id": "if1_v_1",
           "type": "blank",
-          "prompt": "1. If it (rain) [blank] tomorrow, we will cancel the outdoor picnic.",
+          "prompt": "1. If it (rain) [blank] tomorrow, we will stay at home.",
           "answers": ["rains"],
-          "explanation": "Câu điều kiện loại 1: Mệnh đề If chia hiện tại đơn (it rains), mệnh đề chính dùng will + V0."
+          "explanation": "If loại 1: Mệnh đề If chia hiện tại đơn (it rains)."
         },
         {
-          "id": "c_v_2",
+          "id": "if1_v_2",
           "type": "blank",
-          "prompt": "2. If I (be) [blank] you, I would take that opportunity immediately.",
-          "answers": ["were", "was"],
-          "explanation": "Câu điều kiện loại 2: Mệnh đề If dùng 'were' (hoặc was) cho giả định trái ngược hiện tại."
-        },
-        {
-          "id": "c_v_3",
-          "type": "blank",
-          "prompt": "3. If they had checked the map, they (not / get) [blank] lost in the mountains yesterday.",
-          "answers": ["would not have got", "wouldn't have got", "would not have gotten", "wouldn't have gotten"],
-          "explanation": "Câu điều kiện loại 3: Mệnh đề chính chia would not have + V3 (got/gotten)."
-        },
-        {
-          "id": "c_v_4",
-          "type": "blank",
-          "prompt": "4. If she (study) [blank] harder, she will pass the entrance exam.",
+          "prompt": "2. If she (study) [blank] harder, she will pass the entrance exam.",
           "answers": ["studies"],
-          "explanation": "Câu điều kiện loại 1: Mệnh đề chính có 'will pass', mệnh đề If chia hiện tại đơn (studies)."
+          "explanation": "If loại 1: Mệnh đề If chia hiện tại đơn với ngôi she (studies)."
         },
         {
-          "id": "c_v_5",
+          "id": "if1_v_3",
           "type": "blank",
-          "prompt": "5. If he (have) [blank] free time this weekend, he would go fishing with us.",
-          "answers": ["had"],
-          "explanation": "Câu điều kiện loại 2: Mệnh đề chính có 'would go', mệnh đề If chia quá khứ đơn (had)."
-        },
-        {
-          "id": "c_v_6",
-          "type": "blank",
-          "prompt": "6. If you (not / leave) [blank] now, you will be late for the flight.",
+          "prompt": "3. If you (not / leave) [blank] now, you will be late for the flight.",
           "answers": ["do not leave", "don't leave"],
-          "explanation": "Câu điều kiện loại 1: Phủ định hiện tại đơn với 'you' dùng don't / do not leave."
+          "explanation": "If loại 1: Phủ định hiện tại đơn đi với you dùng don't leave."
         },
         {
-          "id": "c_v_7",
+          "id": "if1_v_4",
           "type": "blank",
-          "prompt": "7. If we (know) [blank] about your situation earlier, we could have helped you.",
-          "answers": ["had known"],
-          "explanation": "Câu điều kiện loại 3: Mệnh đề chính có 'could have helped', mệnh đề If chia quá khứ hoàn thành (had known)."
-        },
-        {
-          "id": "c_v_8",
-          "type": "blank",
-          "prompt": "8. What would you do if you (find) [blank] a wallet full of money on the street?",
-          "answers": ["found"],
-          "explanation": "Câu điều kiện loại 2: Mệnh đề chính có 'would you do', mệnh đề If chia quá khứ đơn (found)."
-        },
-        {
-          "id": "c_v_9",
-          "type": "blank",
-          "prompt": "9. If the weather (be) [blank] fine yesterday, we would have gone hiking.",
-          "answers": ["had been"],
-          "explanation": "Câu điều kiện loại 3: Trái ngược quá khứ (yesterday), mệnh đề If chia had been."
-        },
-        {
-          "id": "c_v_10",
-          "type": "blank",
-          "prompt": "10. If people (use) [blank] public transport more, air pollution will decrease.",
+          "prompt": "4. If people (use) [blank] public transport more, air pollution will decrease.",
           "answers": ["use"],
-          "explanation": "Câu điều kiện loại 1: Chủ ngữ 'people' số nhiều đi với V0 (use)."
+          "explanation": "If loại 1: Chủ ngữ people số nhiều đi với động từ nguyên mẫu (use)."
         },
         {
-          "id": "c_v_11",
+          "id": "if1_v_5",
           "type": "blank",
-          "prompt": "11. If I had enough money right now, I (buy) [blank] a new laptop.",
-          "answers": ["would buy", "could buy"],
-          "explanation": "Câu điều kiện loại 2: Giả định trái với hiện tại (right now), mệnh đề chính dùng would buy."
-        },
-        {
-          "id": "c_v_12",
-          "type": "blank",
-          "prompt": "12. If she had listened to her parents' advice, she (not / make) [blank] that mistake last night.",
-          "answers": ["would not have made", "wouldn't have made"],
-          "explanation": "Câu điều kiện loại 3: Mệnh đề If chia had listened, mệnh đề chính dùng wouldn't have made."
-        },
-        {
-          "id": "c_v_13",
-          "type": "blank",
-          "prompt": "13. If you mix red and white, you (get) [blank] pink.",
+          "prompt": "5. If you mix red and white, you (get) [blank] pink.",
           "answers": ["get", "will get"],
-          "explanation": "Sự thật hiển nhiên / quy luật khoa học (Câu điều kiện loại 0 hoặc loại 1): dùng get hoặc will get."
+          "explanation": "Chân lý/quy luật tự nhiên hoặc If loại 1: dùng get hoặc will get."
         },
         {
-          "id": "c_v_14",
+          "id": "if1_v_6",
           "type": "blank",
-          "prompt": "14. If he (drive) [blank] more carefully, he wouldn't have had an accident two days ago.",
-          "answers": ["had driven"],
-          "explanation": "Câu điều kiện loại 3: Trái ngược quá khứ (two days ago), mệnh đề If chia had driven."
-        },
-        {
-          "id": "c_v_15",
-          "type": "blank",
-          "prompt": "15. If I (know) [blank] his phone number, I would call him to ask for help.",
-          "answers": ["knew"],
-          "explanation": "Câu điều kiện loại 2: Mệnh đề chính có 'would call', mệnh đề If chia quá khứ đơn (knew)."
-        },
-        {
-          "id": "c_v_16",
-          "type": "blank",
-          "prompt": "16. If you don't water these flowers, they (die) [blank] in a few days.",
+          "prompt": "6. If you don't water these flowers, they (die) [blank] in a few days.",
           "answers": ["will die", "die"],
-          "explanation": "Câu điều kiện loại 1: Mệnh đề If chia hiện tại đơn (don't water), mệnh đề chính chia will die."
+          "explanation": "If loại 1: Mệnh đề chính dùng will die."
         },
         {
-          "id": "c_v_17",
+          "id": "if1_v_7",
           "type": "blank",
-          "prompt": "17. If they (start) [blank] the project earlier, they would have finished it on time last week.",
-          "answers": ["had started"],
-          "explanation": "Câu điều kiện loại 3: Mệnh đề If chia quá khứ hoàn thành (had started)."
-        },
-        {
-          "id": "c_v_18",
-          "type": "blank",
-          "prompt": "18. If she (speak) [blank] English fluently, she could get a better job now.",
-          "answers": ["spoke"],
-          "explanation": "Câu điều kiện loại 2: Trái với hiện tại (now), mệnh đề If chia quá khứ đơn (spoke)."
-        },
-        {
-          "id": "c_v_19",
-          "type": "blank",
-          "prompt": "19. If you (touch) [blank] that hot stove, you will burn your hand.",
+          "prompt": "7. If you (touch) [blank] that hot stove, you will burn your hand.",
           "answers": ["touch"],
-          "explanation": "Câu điều kiện loại 1: Mệnh đề If chia hiện tại đơn (touch)."
+          "explanation": "If loại 1: Mệnh đề If chia hiện tại đơn (touch)."
         },
         {
-          "id": "c_v_20",
+          "id": "if1_v_8",
           "type": "blank",
-          "prompt": "20. If we had arrived at the cinema 10 minutes earlier, we (not / miss) [blank] the beginning of the movie.",
-          "answers": ["would not have missed", "wouldn't have missed"],
-          "explanation": "Câu điều kiện loại 3: Mệnh đề chính chia would not have missed."
+          "prompt": "8. We (cancel) [blank] the picnic if the weather is bad tomorrow.",
+          "answers": ["will cancel", "can cancel"],
+          "explanation": "If loại 1: Mệnh đề chính dùng will + V0 (will cancel)."
+        },
+        {
+          "id": "if1_v_9",
+          "type": "blank",
+          "prompt": "9. If he (not / hurry) [blank], he will miss the last train.",
+          "answers": ["does not hurry", "doesn't hurry"],
+          "explanation": "If loại 1: Phủ định hiện tại đơn ngôi he dùng doesn't hurry."
+        },
+        {
+          "id": "if1_v_10",
+          "type": "blank",
+          "prompt": "10. You will get wet if you (not / bring) [blank] an umbrella.",
+          "answers": ["do not bring", "don't bring"],
+          "explanation": "If loại 1: Mệnh đề If chia phủ định hiện tại đơn (don't bring)."
         }
       ]
     },
     {
-      "group_id": "cond_mcq_20",
-      "group_title": "DẠNG 2: TRẮC NGHIỆM CHỌN ĐÁP ÁN ĐÚNG (20 CÂU)",
-      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D) để hoàn thành mỗi câu sau:",
+      "group_id": "if1_mcq_10",
+      "group_title": "PHẦN 1: CÂU ĐIỀU KIỆN LOẠI 1 (IF TYPE 1) - DẠNG 2: TRẮC NGHIỆM CHỌN ĐÁP ÁN ĐÚNG (10 CÂU)",
+      "instruction": "Chọn đáp án chính xác nhất (A, B, C hoặc D) cho câu điều kiện loại 1:",
       "questions": [
         {
-          "id": "c_mcq_1",
+          "id": "if1_mcq_1",
+          "type": "choice",
+          "prompt": "1. If you ________ hard, you will pass the upcoming exam.",
+          "options": ["A. study", "B. studied", "C. had studied", "D. studies"],
+          "correctIndex": 0,
+          "explanation": "Mệnh đề chính dùng will pass ➔ Mệnh đề If dùng hiện tại đơn (study)."
+        },
+        {
+          "id": "if1_mcq_2",
+          "type": "choice",
+          "prompt": "2. Unless you ________ quiet, the baby will wake up.",
+          "options": ["A. keep", "B. don't keep", "C. kept", "D. didn't keep"],
+          "correctIndex": 0,
+          "explanation": "Unless = If not nên mệnh đề sau unless dùng khẳng định (keep)."
+        },
+        {
+          "id": "if1_mcq_3",
+          "type": "choice",
+          "prompt": "3. What will happen if we ________ taking care of the environment?",
+          "options": ["A. don't start", "B. didn't start", "C. hadn't started", "D. won't start"],
+          "correctIndex": 0,
+          "explanation": "If loại 1: Mệnh đề If chia hiện tại đơn phủ định (don't start)."
+        },
+        {
+          "id": "if1_mcq_4",
+          "type": "choice",
+          "prompt": "4. You can't enter the room unless you ________ a password.",
+          "options": ["A. have", "B. don't have", "C. had", "D. will have"],
+          "correctIndex": 0,
+          "explanation": "Sau Unless ở hiện tại dùng thể khẳng định (have)."
+        },
+        {
+          "id": "if1_mcq_5",
+          "type": "choice",
+          "prompt": "5. If I have free time this afternoon, I ________ you with your homework.",
+          "options": ["A. help", "B. will help", "C. would help", "D. helped"],
+          "correctIndex": 1,
+          "explanation": "If loại 1: Mệnh đề chính dùng will + V0 (will help)."
+        },
+        {
+          "id": "if1_mcq_6",
+          "type": "choice",
+          "prompt": "6. If the sun ________, we will go for a walk in the park.",
+          "options": ["A. shines", "B. shone", "C. had shone", "D. will shine"],
+          "correctIndex": 0,
+          "explanation": "Chủ ngữ the sun số ít đi với động từ thêm s (shines)."
+        },
+        {
+          "id": "if1_mcq_7",
+          "type": "choice",
+          "prompt": "7. If you press this button, the machine ________ working.",
+          "options": ["A. starts", "B. started", "C. would start", "D. had started"],
+          "correctIndex": 0,
+          "explanation": "Sự thật hiển nhiên/vận hành máy móc: dùng hiện tại đơn (starts)."
+        },
+        {
+          "id": "if1_mcq_8",
+          "type": "choice",
+          "prompt": "8. Unless he ________ hard, he won't get a promotion.",
+          "options": ["A. works", "B. doesn't work", "C. worked", "D. didn't work"],
+          "correctIndex": 0,
+          "explanation": "Sau Unless dùng khẳng định ngôi he thêm s (works)."
+        },
+        {
+          "id": "if1_mcq_9",
+          "type": "choice",
+          "prompt": "9. Unless it ________, we will play football in the yard.",
+          "options": ["A. rains", "B. doesn't rain", "C. rained", "D. didn't rain"],
+          "correctIndex": 0,
+          "explanation": "Sau Unless dùng khẳng định (rains)."
+        },
+        {
+          "id": "if1_mcq_10",
+          "type": "choice",
+          "prompt": "10. If the flight arrives on time, we ________ our friends at 8 PM.",
+          "options": ["A. meet", "B. will meet", "C. would meet", "D. met"],
+          "correctIndex": 1,
+          "explanation": "Mệnh đề chính If loại 1 dùng will meet."
+        }
+      ]
+    },
+    {
+      "group_id": "if1_rewrite_10",
+      "group_title": "PHẦN 1: CÂU ĐIỀU KIỆN LOẠI 1 (IF TYPE 1) - DẠNG 3: VIẾT LẠI CÂU (10 CÂU)",
+      "instruction": "Viết lại các câu sau sang câu điều kiện loại 1 hoặc dùng Unless:",
+      "questions": [
+        {
+          "id": "if1_rw_1",
+          "type": "rewrite",
+          "prompt": "1. Hurry up or you will miss the morning train.",
+          "targetStart": "If you don't ",
+          "answers": ["hurry up, you will miss the morning train.", "hurry up, you will miss the morning train"],
+          "explanation": "If you don't hurry up, you will miss the morning train."
+        },
+        {
+          "id": "if1_rw_2",
+          "type": "rewrite",
+          "prompt": "2. Practice speaking English every day, and your fluency will improve.",
+          "targetStart": "If you ",
+          "answers": [
+            "practice speaking English every day, your fluency will improve.",
+            "practice speaking English every day, your fluency will improve",
+            "practise speaking English every day, your fluency will improve."
+          ],
+          "explanation": "If you practice speaking English every day, your fluency will improve."
+        },
+        {
+          "id": "if1_rw_3",
+          "type": "rewrite",
+          "prompt": "3. If you don't water these plants, they will die.",
+          "targetStart": "Unless you ",
+          "answers": ["water these plants, they will die.", "water these plants, they will die"],
+          "explanation": "Unless = If ... not: Unless you water these plants, they will die."
+        },
+        {
+          "id": "if1_rw_4",
+          "type": "rewrite",
+          "prompt": "4. If he doesn't hurry, he will miss the train.",
+          "targetStart": "Unless he ",
+          "answers": ["hurries, he will miss the train.", "hurries, he will miss the train"],
+          "explanation": "Bỏ doesn't, chia động từ thêm -es: Unless he hurries, he will miss the train."
+        },
+        {
+          "id": "if1_rw_5",
+          "type": "rewrite",
+          "prompt": "5. I won't go to the party if she doesn't invite me.",
+          "targetStart": "Unless she ",
+          "answers": [
+            "invites me, I won't go to the party.",
+            "invites me, I won't go to the party",
+            "invites me, I will not go to the party."
+          ],
+          "explanation": "Unless she invites me, I won't go to the party."
+        },
+        {
+          "id": "if1_rw_6",
+          "type": "rewrite",
+          "prompt": "6. If you don't study hard, you won't pass the final test.",
+          "targetStart": "Unless you ",
+          "answers": [
+            "study hard, you won't pass the final test.",
+            "study hard, you won't pass the final test",
+            "study hard, you will not pass the final test."
+          ],
+          "explanation": "Unless you study hard, you won't pass the final test."
+        },
+        {
+          "id": "if1_rw_7",
+          "type": "rewrite",
+          "prompt": "7. If it doesn't stop raining, we can't go for a walk.",
+          "targetStart": "Unless it ",
+          "answers": [
+            "stops raining, we can't go for a walk.",
+            "stops raining, we can't go for a walk",
+            "stops raining, we cannot go for a walk."
+          ],
+          "explanation": "Unless it stops raining, we can't go for a walk."
+        },
+        {
+          "id": "if1_rw_8",
+          "type": "rewrite",
+          "prompt": "8. Keep silent or the teacher will get angry.",
+          "targetStart": "If you don't ",
+          "answers": ["keep silent, the teacher will get angry.", "keep silent, the teacher will get angry"],
+          "explanation": "If you don't keep silent, the teacher will get angry."
+        },
+        {
+          "id": "if1_rw_9",
+          "type": "rewrite",
+          "prompt": "9. Don't eat so much fast food, or you will gain weight.",
+          "targetStart": "If you ",
+          "answers": ["eat so much fast food, you will gain weight.", "eat so much fast food, you will gain weight"],
+          "explanation": "If you eat so much fast food, you will gain weight."
+        },
+        {
+          "id": "if1_rw_10",
+          "type": "rewrite",
+          "prompt": "10. Save your pocket money, and you can buy that bicycle.",
+          "targetStart": "If you ",
+          "answers": [
+            "save your pocket money, you can buy that bicycle.",
+            "save your pocket money, you can buy that bicycle",
+            "save your pocket money, you will be able to buy that bicycle."
+          ],
+          "explanation": "If you save your pocket money, you can buy that bicycle."
+        }
+      ]
+    },
+    {
+      "group_id": "if2_form_verbs_10",
+      "group_title": "PHẦN 2: CÂU ĐIỀU KIỆN LOẠI 2 (IF TYPE 2) - DẠNG 1: CHIA ĐỘNG TỪ TRONG NGOẶC (10 CÂU)",
+      "instruction": "Cho dạng đúng của động từ trong ngoặc để hoàn thành các câu điều kiện loại 2:",
+      "questions": [
+        {
+          "id": "if2_v_1",
+          "type": "blank",
+          "prompt": "1. If I (be) [blank] you, I would take that opportunity immediately.",
+          "answers": ["were", "was"],
+          "explanation": "If loại 2: Mệnh đề If dùng were (hoặc was) cho giả định trái ngược hiện tại."
+        },
+        {
+          "id": "if2_v_2",
+          "type": "blank",
+          "prompt": "2. If he (have) [blank] free time this weekend, he would go fishing with us.",
+          "answers": ["had"],
+          "explanation": "If loại 2: Mệnh đề chính có would go ➔ Mệnh đề If chia quá khứ đơn (had)."
+        },
+        {
+          "id": "if2_v_3",
+          "type": "blank",
+          "prompt": "3. What would you do if you (find) [blank] a wallet full of money on the street?",
+          "answers": ["found"],
+          "explanation": "If loại 2: Mệnh đề If chia quá khứ đơn (found)."
+        },
+        {
+          "id": "if2_v_4",
+          "type": "blank",
+          "prompt": "4. If I had enough money right now, I (buy) [blank] a new laptop.",
+          "answers": ["would buy", "could buy"],
+          "explanation": "If loại 2: Trái ngược hiện tại (right now), mệnh đề chính dùng would buy."
+        },
+        {
+          "id": "if2_v_5",
+          "type": "blank",
+          "prompt": "5. If I (know) [blank] his phone number, I would call him to ask for help.",
+          "answers": ["knew"],
+          "explanation": "If loại 2: Mệnh đề chính có would call ➔ Mệnh đề If chia quá khứ đơn (knew)."
+        },
+        {
+          "id": "if2_v_6",
+          "type": "blank",
+          "prompt": "6. If she (speak) [blank] English fluently, she could get a better job now.",
+          "answers": ["spoke"],
+          "explanation": "If loại 2: Mệnh đề If chia quá khứ đơn (spoke)."
+        },
+        {
+          "id": "if2_v_7",
+          "type": "blank",
+          "prompt": "7. If they (not / live) [blank] so far away, we would visit them every weekend.",
+          "answers": ["did not live", "didn't live"],
+          "explanation": "If loại 2: Phủ định quá khứ đơn dùng didn't live."
+        },
+        {
+          "id": "if2_v_8",
+          "type": "blank",
+          "prompt": "8. If today were Sunday, we (go) [blank] camping in the forest.",
+          "answers": ["would go", "could go"],
+          "explanation": "If loại 2: Mệnh đề chính dùng would go."
+        },
+        {
+          "id": "if2_v_9",
+          "type": "blank",
+          "prompt": "9. If I had wings, I (fly) [blank] around the world.",
+          "answers": ["would fly", "could fly"],
+          "explanation": "If loại 2: Giả định không có thật ở hiện tại ➔ would fly."
+        },
+        {
+          "id": "if2_v_10",
+          "type": "blank",
+          "prompt": "10. She (buy) [blank] that luxury car if she were rich.",
+          "answers": ["would buy"],
+          "explanation": "If loại 2: Mệnh đề chính dùng would buy."
+        }
+      ]
+    },
+    {
+      "group_id": "if2_mcq_10",
+      "group_title": "PHẦN 2: CÂU ĐIỀU KIỆN LOẠI 2 (IF TYPE 2) - DẠNG 2: TRẮC NGHIỆM CHỌN ĐÁP ÁN ĐÚNG (10 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D) cho câu điều kiện loại 2:",
+      "questions": [
+        {
+          "id": "if2_mcq_1",
           "type": "choice",
           "prompt": "1. If I ________ enough money, I would buy a new car.",
           "options": ["A. have", "B. had", "C. had had", "D. will have"],
           "correctIndex": 1,
-          "explanation": "Mệnh đề chính dùng 'would buy' (Loại 2) ➔ Mệnh đề If dùng quá khứ đơn 'had'."
+          "explanation": "Mệnh đề chính dùng would buy (If 2) ➔ Mệnh đề If dùng had."
         },
         {
-          "id": "c_mcq_2",
+          "id": "if2_mcq_2",
           "type": "choice",
-          "prompt": "2. If you ________ hard, you will pass the upcoming exam.",
-          "options": ["A. study", "B. studied", "C. had studied", "D. studies"],
-          "correctIndex": 0,
-          "explanation": "Mệnh đề chính dùng 'will pass' (Loại 1) ➔ Mệnh đề If dùng hiện tại đơn với 'you' là 'study'."
-        },
-        {
-          "id": "c_mcq_3",
-          "type": "choice",
-          "prompt": "3. If they had checked the engine carefully, the car ________ down on the highway.",
-          "options": ["A. won't break", "B. wouldn't break", "C. wouldn't have broken", "D. hadn't broken"],
-          "correctIndex": 2,
-          "explanation": "Mệnh đề If dùng 'had checked' (Loại 3) ➔ Mệnh đề chính dùng 'wouldn't have broken'."
-        },
-        {
-          "id": "c_mcq_4",
-          "type": "choice",
-          "prompt": "4. Unless you ________ quiet, the baby will wake up.",
-          "options": ["A. keep", "B. don't keep", "C. kept", "D. didn't keep"],
-          "correctIndex": 0,
-          "explanation": "Unless = If ... not (đã mang nghĩa phủ định) nên mệnh đề sau unless dùng thể khẳng định 'keep'."
-        },
-        {
-          "id": "c_mcq_5",
-          "type": "choice",
-          "prompt": "5. If I ________ you, I would tell the truth to the teacher.",
+          "prompt": "2. If I ________ you, I would tell the truth to the teacher.",
           "options": ["A. am", "B. was", "C. were", "D. had been"],
           "correctIndex": 2,
-          "explanation": "Cấu trúc khuyên nhủ ở câu điều kiện loại 2: 'If I were you'."
+          "explanation": "Cấu trúc khuyên nhủ If 2: If I were you."
         },
         {
-          "id": "c_mcq_6",
+          "id": "if2_mcq_3",
           "type": "choice",
-          "prompt": "6. What will happen if we ________ taking care of the environment?",
-          "options": ["A. don't start", "B. didn't start", "C. hadn't started", "D. won't start"],
-          "correctIndex": 0,
-          "explanation": "Câu điều kiện loại 1 với 'What will happen' ➔ Mệnh đề If chia hiện tại đơn phủ định 'don't start'."
-        },
-        {
-          "id": "c_mcq_7",
-          "type": "choice",
-          "prompt": "7. If she ________ her keys yesterday, she wouldn't have been locked out.",
-          "options": ["A. doesn't lose", "B. didn't lose", "C. hasn't lost", "D. hadn't lost"],
-          "correctIndex": 3,
-          "explanation": "Dấu hiệu 'yesterday' và mệnh đề chính loại 3 ➔ Mệnh đề If chia quá khứ hoàn thành 'hadn't lost'."
-        },
-        {
-          "id": "c_mcq_8",
-          "type": "choice",
-          "prompt": "8. You can't enter the room unless you ________ a password.",
-          "options": ["A. have", "B. don't have", "C. had", "D. will have"],
-          "correctIndex": 0,
-          "explanation": "Sau Unless ở hiện tại dùng thể khẳng định V0 'have'."
-        },
-        {
-          "id": "c_mcq_9",
-          "type": "choice",
-          "prompt": "9. If he ________ so fast, he wouldn't have crashed into the tree.",
-          "options": ["A. doesn't drive", "B. didn't drive", "C. hadn't driven", "D. wouldn't drive"],
-          "correctIndex": 2,
-          "explanation": "Mệnh đề chính loại 3 'wouldn't have crashed' ➔ Mệnh đề If dùng quá khứ hoàn thành 'hadn't driven'."
-        },
-        {
-          "id": "c_mcq_10",
-          "type": "choice",
-          "prompt": "10. If I have free time this afternoon, I ________ you with your homework.",
-          "options": ["A. help", "B. will help", "C. would help", "D. helped"],
-          "correctIndex": 1,
-          "explanation": "Câu điều kiện loại 1: Mệnh đề If chia hiện tại đơn (have) ➔ Mệnh đề chính chia 'will help'."
-        },
-        {
-          "id": "c_mcq_11",
-          "type": "choice",
-          "prompt": "11. If the sun ________, we will go for a walk in the park.",
-          "options": ["A. shines", "B. shone", "C. had shone", "D. will shine"],
-          "correctIndex": 0,
-          "explanation": "Câu điều kiện loại 1: Chủ ngữ 'the sun' số ít đi với động từ thêm -s 'shines'."
-        },
-        {
-          "id": "c_mcq_12",
-          "type": "choice",
-          "prompt": "12. If she had studied for the quiz, she ________ it easily.",
-          "options": ["A. will pass", "B. would pass", "C. would have passed", "D. passed"],
-          "correctIndex": 2,
-          "explanation": "Câu điều kiện loại 3: Mệnh đề If chia had studied ➔ Mệnh đề chính dùng 'would have passed'."
-        },
-        {
-          "id": "c_mcq_13",
-          "type": "choice",
-          "prompt": "13. I ________ to the party if I had been invited.",
-          "options": ["A. will go", "B. would go", "C. would have gone", "D. went"],
-          "correctIndex": 2,
-          "explanation": "Mệnh đề If chia 'had been invited' (Loại 3) ➔ Mệnh đề chính dùng 'would have gone'."
-        },
-        {
-          "id": "c_mcq_14",
-          "type": "choice",
-          "prompt": "14. If you press this button, the machine ________ working.",
-          "options": ["A. starts", "B. started", "C. would start", "D. had started"],
-          "correctIndex": 0,
-          "explanation": "Sự thật hiển nhiên / quy luật máy móc (Zero conditional): If + hiện tại đơn, hiện tại đơn ('starts')."
-        },
-        {
-          "id": "c_mcq_15",
-          "type": "choice",
-          "prompt": "15. Unless he ________ hard, he won't get a promotion.",
-          "options": ["A. works", "B. doesn't work", "C. worked", "D. didn't work"],
-          "correctIndex": 0,
-          "explanation": "Sau Unless ở hiện tại dùng thể khẳng định: 'he works'."
-        },
-        {
-          "id": "c_mcq_16",
-          "type": "choice",
-          "prompt": "16. If I lived near the sea, I ________ swimming every morning.",
+          "prompt": "3. If I lived near the sea, I ________ swimming every morning.",
           "options": ["A. will go", "B. would go", "C. went", "D. would have gone"],
           "correctIndex": 1,
-          "explanation": "Câu điều kiện loại 2: Mệnh đề If chia lived ➔ Mệnh đề chính chia 'would go'."
+          "explanation": "Mệnh đề If chia lived ➔ Mệnh đề chính chia would go."
         },
         {
-          "id": "c_mcq_17",
+          "id": "if2_mcq_4",
           "type": "choice",
-          "prompt": "17. If the flight ________ delayed, we would have reached the hotel before midnight.",
-          "options": ["A. isn't", "B. wasn't", "C. hadn't been", "D. wouldn't be"],
-          "correctIndex": 2,
-          "explanation": "Mệnh đề chính dùng 'would have reached' (Loại 3) ➔ Mệnh đề If dùng 'hadn't been'."
-        },
-        {
-          "id": "c_mcq_18",
-          "type": "choice",
-          "prompt": "18. What ________ you do if you won a million dollars today?",
+          "prompt": "4. What ________ you do if you won a million dollars today?",
           "options": ["A. will", "B. would", "C. can", "D. did"],
           "correctIndex": 1,
-          "explanation": "Mệnh đề If chia quá khứ đơn 'won' (Loại 2) ➔ Câu hỏi dùng 'What would you do'."
+          "explanation": "Mệnh đề If chia quá khứ won ➔ Câu hỏi dùng What would you do."
         },
         {
-          "id": "c_mcq_19",
+          "id": "if2_mcq_5",
           "type": "choice",
-          "prompt": "19. She wouldn't have been late for work if her alarm clock ________ off.",
-          "options": ["A. goes", "B. went", "C. had gone", "D. would go"],
-          "correctIndex": 2,
-          "explanation": "Câu điều kiện loại 3: Mệnh đề If chia quá khứ hoàn thành 'had gone'."
+          "prompt": "5. If he ________ his address, we would send him a postcard.",
+          "options": ["A. gives", "B. gave", "C. had given", "D. will give"],
+          "correctIndex": 1,
+          "explanation": "Mệnh đề chính dùng would send ➔ Mệnh đề If chia quá khứ đơn (gave)."
         },
         {
-          "id": "c_mcq_20",
+          "id": "if2_mcq_6",
           "type": "choice",
-          "prompt": "20. Unless it ________, we will play football in the yard.",
-          "options": ["A. rains", "B. doesn't rain", "C. rained", "D. didn't rain"],
-          "correctIndex": 0,
-          "explanation": "Sau Unless dùng khẳng định: 'Unless it rains'."
+          "prompt": "6. If we ________ a car, we wouldn't have to take the crowded bus.",
+          "options": ["A. have", "B. had", "C. had had", "D. would have"],
+          "correctIndex": 1,
+          "explanation": "Mệnh đề If chia quá khứ đơn had."
+        },
+        {
+          "id": "if2_mcq_7",
+          "type": "choice",
+          "prompt": "7. If she studied harder, she ________ such low marks.",
+          "options": ["A. won't get", "B. wouldn't get", "C. didn't get", "D. wouldn't have got"],
+          "correctIndex": 1,
+          "explanation": "Mệnh đề chính If loại 2 dùng wouldn't get."
+        },
+        {
+          "id": "if2_mcq_8",
+          "type": "choice",
+          "prompt": "8. I could go out tonight if I ________ so much homework.",
+          "options": ["A. don't have", "B. didn't have", "C. hadn't had", "D. haven't"],
+          "correctIndex": 1,
+          "explanation": "If loại 2: Mệnh đề If chia quá khứ phủ định (didn't have)."
+        },
+        {
+          "id": "if2_mcq_9",
+          "type": "choice",
+          "prompt": "9. If this room ________ bigger, we could put a larger desk in here.",
+          "options": ["A. is", "B. were", "C. had been", "D. would be"],
+          "correctIndex": 1,
+          "explanation": "To-be ở If loại 2 chuẩn dùng were."
+        },
+        {
+          "id": "if2_mcq_10",
+          "type": "choice",
+          "prompt": "10. If they didn't live in the city center, they ________ cleaner air.",
+          "options": ["A. will breathe", "B. would breathe", "C. breathed", "D. would have breathed"],
+          "correctIndex": 1,
+          "explanation": "Mệnh đề chính If loại 2 dùng would breathe."
         }
       ]
     },
     {
-      "group_id": "cond_rewrite_if_30",
-      "group_title": "DẠNG 3: VIẾT LẠI CÂU - NHÓM A: DÙNG 'IF' (30 CÂU)",
-      "instruction": "Dựa trên tình huống thực tế cho trước, viết lại thành câu điều kiện bắt đầu bằng 'If':",
+      "group_id": "if2_rewrite_10",
+      "group_title": "PHẦN 2: CÂU ĐIỀU KIỆN LOẠI 2 (IF TYPE 2) - DẠNG 3: VIẾT LẠI CÂU (10 CÂU)",
+      "instruction": "Dựa trên tình huống thực tế ở hiện tại, viết lại thành câu điều kiện loại 2 bắt đầu bằng 'If':",
       "questions": [
         {
-          "id": "c_rw_1",
+          "id": "if2_rw_1",
           "type": "rewrite",
           "prompt": "1. Factories dump waste into rivers, so a lot of fish die.",
           "targetStart": "If factories ",
           "answers": [
-            "didn't dump waste into rivers, a lot of fish wouldn't die",
             "didn't dump waste into rivers, a lot of fish wouldn't die.",
+            "didn't dump waste into rivers, a lot of fish wouldn't die",
             "did not dump waste into rivers, a lot of fish would not die."
           ],
-          "explanation": "Tình huống hiện tại ➔ Viết câu điều kiện loại 2, lùi thì và đổi sang phủ định."
+          "explanation": "If factories didn't dump waste into rivers, a lot of fish wouldn't die."
         },
         {
-          "id": "c_rw_2",
+          "id": "if2_rw_2",
           "type": "rewrite",
           "prompt": "2. People use plastic bags, so oceans are full of plastic garbage.",
           "targetStart": "If people ",
           "answers": [
-            "didn't use plastic bags, oceans wouldn't be full of plastic garbage",
             "didn't use plastic bags, oceans wouldn't be full of plastic garbage.",
+            "didn't use plastic bags, oceans wouldn't be full of plastic garbage",
             "did not use plastic bags, oceans would not be full of plastic garbage."
           ],
-          "explanation": "Hiện tại ➔ Loại 2: If people didn't use plastic bags, oceans wouldn't be full of plastic garbage."
+          "explanation": "If people didn't use plastic bags, oceans wouldn't be full of plastic garbage."
         },
         {
-          "id": "c_rw_3",
+          "id": "if2_rw_3",
           "type": "rewrite",
           "prompt": "3. I don't walk to school, so I don't save a lot of money.",
           "targetStart": "If I ",
           "answers": [
-            "walked to school, I would save a lot of money",
-            "walked to school, I would save a lot of money."
+            "walked to school, I would save a lot of money.",
+            "walked to school, I would save a lot of money"
           ],
-          "explanation": "Phủ định hiện tại (don't walk, don't save) ➔ Khẳng định loại 2: If I walked to school, I would save a lot of money."
+          "explanation": "If I walked to school, I would save a lot of money."
         },
         {
-          "id": "c_rw_4",
+          "id": "if2_rw_4",
           "type": "rewrite",
           "prompt": "4. People build too many houses, so land for farming decreases.",
           "targetStart": "If people ",
           "answers": [
-            "didn't build too many houses, land for farming wouldn't decrease",
             "didn't build too many houses, land for farming wouldn't decrease.",
+            "didn't build too many houses, land for farming wouldn't decrease",
             "did not build too many houses, land for farming would not decrease."
           ],
-          "explanation": "Loại 2: If people didn't build too many houses, land for farming wouldn't decrease."
+          "explanation": "If people didn't build too many houses, land for farming wouldn't decrease."
         },
         {
-          "id": "c_rw_5",
+          "id": "if2_rw_5",
           "type": "rewrite",
           "prompt": "5. The Earth becomes hotter, so the polar ice cap melts.",
           "targetStart": "If the Earth ",
           "answers": [
-            "didn't become hotter, the polar ice cap wouldn't melt",
             "didn't become hotter, the polar ice cap wouldn't melt.",
+            "didn't become hotter, the polar ice cap wouldn't melt",
             "did not become hotter, the polar ice cap would not melt."
           ],
-          "explanation": "Loại 2: If the Earth didn't become hotter, the polar ice cap wouldn't melt."
+          "explanation": "If the Earth didn't become hotter, the polar ice cap wouldn't melt."
         },
         {
-          "id": "c_rw_6",
+          "id": "if2_rw_6",
           "type": "rewrite",
-          "prompt": "6. The polar ice cap melts, so sea level rises.",
-          "targetStart": "If the polar ice cap ",
-          "answers": [
-            "didn't melt, sea level wouldn't rise",
-            "didn't melt, sea level wouldn't rise.",
-            "did not melt, sea level would not rise."
-          ],
-          "explanation": "Loại 2: If the polar ice cap didn't melt, sea level wouldn't rise."
-        },
-        {
-          "id": "c_rw_7",
-          "type": "rewrite",
-          "prompt": "7. We don't use recycled products, so we don't help the environment.",
+          "prompt": "6. We don't use recycled products, so we don't help the environment.",
           "targetStart": "If we ",
           "answers": [
-            "used recycled products, we would help the environment",
-            "used recycled products, we would help the environment."
+            "used recycled products, we would help the environment.",
+            "used recycled products, we would help the environment"
           ],
-          "explanation": "Loại 2: If we used recycled products, we would help the environment."
+          "explanation": "If we used recycled products, we would help the environment."
         },
         {
-          "id": "c_rw_8",
+          "id": "if2_rw_7",
           "type": "rewrite",
-          "prompt": "8. We breathe polluted air, so we suffer from lung diseases.",
+          "prompt": "7. We breathe polluted air, so we suffer from lung diseases.",
           "targetStart": "If we ",
           "answers": [
-            "didn't breathe polluted air, we wouldn't suffer from lung diseases",
             "didn't breathe polluted air, we wouldn't suffer from lung diseases.",
+            "didn't breathe polluted air, we wouldn't suffer from lung diseases",
             "did not breathe polluted air, we would not suffer from lung diseases."
           ],
-          "explanation": "Loại 2: If we didn't breathe polluted air, we wouldn't suffer from lung diseases."
+          "explanation": "If we didn't breathe polluted air, we wouldn't suffer from lung diseases."
         },
         {
-          "id": "c_rw_9",
+          "id": "if2_rw_8",
           "type": "rewrite",
-          "prompt": "9. People don't often cycle, so there is a lot of air pollution.",
-          "targetStart": "If people ",
-          "answers": [
-            "often cycled, there wouldn't be a lot of air pollution",
-            "often cycled, there wouldn't be a lot of air pollution.",
-            "often cycled, there would not be a lot of air pollution."
-          ],
-          "explanation": "Loại 2: If people often cycled, there wouldn't be a lot of air pollution."
-        },
-        {
-          "id": "c_rw_10",
-          "type": "rewrite",
-          "prompt": "10. You don't write on both sides, so you waste your paper.",
-          "targetStart": "If you ",
-          "answers": [
-            "wrote on both sides, you wouldn't waste your paper",
-            "wrote on both sides, you wouldn't waste your paper.",
-            "wrote on both sides, you would not waste your paper."
-          ],
-          "explanation": "Loại 2: If you wrote on both sides, you wouldn't waste your paper."
-        },
-        {
-          "id": "c_rw_11",
-          "type": "rewrite",
-          "prompt": "11. I can't call her because I don't have her number.",
+          "prompt": "8. I can't call her because I don't have her number.",
           "targetStart": "If I ",
           "answers": [
-            "had her number, I could call her",
             "had her number, I could call her.",
+            "had her number, I could call her",
             "had her number, I would be able to call her."
           ],
-          "explanation": "Có 'because' ➔ Viết mệnh đề sau 'because' trước: If I had her number, I could call her."
+          "explanation": "If I had her number, I could call her."
         },
         {
-          "id": "c_rw_12",
+          "id": "if2_rw_9",
           "type": "rewrite",
-          "prompt": "12. He doesn't like sweet food, so he didn't try the dessert.",
-          "targetStart": "If he ",
-          "answers": [
-            "liked sweet food, he would have tried the dessert",
-            "liked sweet food, he would have tried the dessert.",
-            "had liked sweet food, he would have tried the dessert."
-          ],
-          "explanation": "Câu điều kiện hỗn hợp (hiện tại ➔ quá khứ) hoặc loại 3: If he liked sweet food, he would have tried the dessert."
-        },
-        {
-          "id": "c_rw_13",
-          "type": "rewrite",
-          "prompt": "13. She doesn't practice enough, so she can't play the violin well.",
+          "prompt": "9. She doesn't practice enough, so she can't play the violin well.",
           "targetStart": "If she ",
           "answers": [
-            "practiced enough, she could play the violin well",
             "practiced enough, she could play the violin well.",
+            "practiced enough, she could play the violin well",
             "practised enough, she could play the violin well."
           ],
-          "explanation": "Loại 2: If she practiced enough, she could play the violin well."
+          "explanation": "If she practiced enough, she could play the violin well."
         },
         {
-          "id": "c_rw_14",
+          "id": "if2_rw_10",
           "type": "rewrite",
-          "prompt": "14. She doesn't know the way to the concert, so she's not going.",
-          "targetStart": "If she ",
-          "answers": [
-            "knew the way to the concert, she would go",
-            "knew the way to the concert, she would go."
-          ],
-          "explanation": "Loại 2: If she knew the way to the concert, she would go."
-        },
-        {
-          "id": "c_rw_15",
-          "type": "rewrite",
-          "prompt": "15. We don't have enough time, so we can't travel to Europe.",
+          "prompt": "10. We don't have enough time, so we can't travel to Europe.",
           "targetStart": "If we ",
           "answers": [
-            "had enough time, we could travel to Europe",
             "had enough time, we could travel to Europe.",
+            "had enough time, we could travel to Europe",
             "had enough time, we would be able to travel to Europe."
           ],
-          "explanation": "Loại 2: If we had enough time, we could travel to Europe."
-        },
-        {
-          "id": "c_rw_16",
-          "type": "rewrite",
-          "prompt": "16. They don't have enough skills, so they can't finish the project.",
-          "targetStart": "If they ",
-          "answers": [
-            "had enough skills, they could finish the project",
-            "had enough skills, they could finish the project.",
-            "had enough skills, they would be able to finish the project."
-          ],
-          "explanation": "Loại 2: If they had enough skills, they could finish the project."
-        },
-        {
-          "id": "c_rw_17",
-          "type": "rewrite",
-          "prompt": "17. He doesn't live close to his gym, so he always arrives late.",
-          "targetStart": "If he ",
-          "answers": [
-            "lived close to his gym, he wouldn't always arrive late",
-            "lived close to his gym, he wouldn't always arrive late.",
-            "lived close to his gym, he would not always arrive late."
-          ],
-          "explanation": "Loại 2: If he lived close to his gym, he wouldn't always arrive late."
-        },
-        {
-          "id": "c_rw_18",
-          "type": "rewrite",
-          "prompt": "18. I don't have my bike today, so I'm walking.",
-          "targetStart": "If I ",
-          "answers": [
-            "had my bike today, I wouldn't walk",
-            "had my bike today, I wouldn't walk.",
-            "had my bike today, I wouldn't be walking.",
-            "had my bike today, I would not walk."
-          ],
-          "explanation": "Loại 2: If I had my bike today, I wouldn't walk (hoặc wouldn't be walking)."
-        },
-        {
-          "id": "c_rw_19",
-          "type": "rewrite",
-          "prompt": "19. She didn't bring her coat, so she got cold.",
-          "targetStart": "If she ",
-          "answers": [
-            "had brought her coat, she wouldn't have got cold",
-            "had brought her coat, she wouldn't have got cold.",
-            "had brought her coat, she wouldn't have gotten cold.",
-            "had brought her coat, she would not have got cold."
-          ],
-          "explanation": "Quá khứ ➔ Loại 3: If she had brought her coat, she wouldn't have got cold."
-        },
-        {
-          "id": "c_rw_20",
-          "type": "rewrite",
-          "prompt": "20. They didn't read the manual, so they made a mistake.",
-          "targetStart": "If they ",
-          "answers": [
-            "had read the manual, they wouldn't have made a mistake",
-            "had read the manual, they wouldn't have made a mistake.",
-            "had read the manual, they would not have made a mistake."
-          ],
-          "explanation": "Loại 3: If they had read the manual, they wouldn't have made a mistake."
-        },
-        {
-          "id": "c_rw_21",
-          "type": "rewrite",
-          "prompt": "21. He wasn't at the workshop, so he missed the practical session.",
-          "targetStart": "If he ",
-          "answers": [
-            "had been at the workshop, he wouldn't have missed the practical session",
-            "had been at the workshop, he wouldn't have missed the practical session.",
-            "had been at the workshop, he would not have missed the practical session."
-          ],
-          "explanation": "wasn't ➔ had been (Loại 3): If he had been at the workshop, he wouldn't have missed the practical session."
-        },
-        {
-          "id": "c_rw_22",
-          "type": "rewrite",
-          "prompt": "22. He didn't take the bus, so he was late.",
-          "targetStart": "If he ",
-          "answers": [
-            "had taken the bus, he wouldn't have been late",
-            "had taken the bus, he wouldn't have been late.",
-            "had taken the bus, he would not have been late."
-          ],
-          "explanation": "Loại 3: If he had taken the bus, he wouldn't have been late."
-        },
-        {
-          "id": "c_rw_23",
-          "type": "rewrite",
-          "prompt": "23. The weather was rainy, so we didn't go hiking.",
-          "targetStart": "If the weather ",
-          "answers": [
-            "hadn't been rainy, we would have gone hiking",
-            "hadn't been rainy, we would have gone hiking.",
-            "had not been rainy, we would have gone hiking."
-          ],
-          "explanation": "was ➔ hadn't been (Loại 3): If the weather hadn't been rainy, we would have gone hiking."
-        },
-        {
-          "id": "c_rw_24",
-          "type": "rewrite",
-          "prompt": "24. She didn't study for the quiz, so she failed.",
-          "targetStart": "If she ",
-          "answers": [
-            "had studied for the quiz, she wouldn't have failed",
-            "had studied for the quiz, she wouldn't have failed.",
-            "had studied for the quiz, she would not have failed."
-          ],
-          "explanation": "Loại 3: If she had studied for the quiz, she wouldn't have failed."
-        },
-        {
-          "id": "c_rw_25",
-          "type": "rewrite",
-          "prompt": "25. The supervisor didn't approve the plan, so we can't begin the task.",
-          "targetStart": "If the supervisor ",
-          "answers": [
-            "had approved the plan, we could begin the task",
-            "had approved the plan, we could begin the task.",
-            "had approved the plan, we would be able to begin the task."
-          ],
-          "explanation": "Điều kiện hỗn hợp (Quá khứ ➔ Hiện tại): If the supervisor had approved the plan, we could begin the task."
-        },
-        {
-          "id": "c_rw_26",
-          "type": "rewrite",
-          "prompt": "26. I didn't understand the guidelines, so I couldn't complete the project.",
-          "targetStart": "If I ",
-          "answers": [
-            "had understood the guidelines, I could have completed the project",
-            "had understood the guidelines, I could have completed the project.",
-            "had understood the guidelines, I would have been able to complete the project."
-          ],
-          "explanation": "Loại 3: If I had understood the guidelines, I could have completed the project."
-        },
-        {
-          "id": "c_rw_27",
-          "type": "rewrite",
-          "prompt": "27. She forgot her keys, so she was locked out.",
-          "targetStart": "If she ",
-          "answers": [
-            "hadn't forgotten her keys, she wouldn't have been locked out",
-            "hadn't forgotten her keys, she wouldn't have been locked out.",
-            "had not forgotten her keys, she would not have been locked out."
-          ],
-          "explanation": "Loại 3: If she hadn't forgotten her keys, she wouldn't have been locked out."
-        },
-        {
-          "id": "c_rw_28",
-          "type": "rewrite",
-          "prompt": "28. We didn't make reservations, so we couldn't dine at the restaurant.",
-          "targetStart": "If we ",
-          "answers": [
-            "had made reservations, we could have dined at the restaurant",
-            "had made reservations, we could have dined at the restaurant.",
-            "had made reservations, we would have been able to dine at the restaurant."
-          ],
-          "explanation": "Loại 3: If we had made reservations, we could have dined at the restaurant."
-        },
-        {
-          "id": "c_rw_29",
-          "type": "rewrite",
-          "prompt": "29. He didn't bring his sketchbook, so he couldn't draw at the event.",
-          "targetStart": "If he ",
-          "answers": [
-            "had brought his sketchbook, he could have drawn at the event",
-            "had brought his sketchbook, he could have drawn at the event.",
-            "had brought his sketchbook, he would have been able to draw at the event."
-          ],
-          "explanation": "Loại 3: If he had brought his sketchbook, he could have drawn at the event."
-        },
-        {
-          "id": "c_rw_30",
-          "type": "rewrite",
-          "prompt": "30. He didn't study for the test, so he failed.",
-          "targetStart": "If he ",
-          "answers": [
-            "had studied for the test, he wouldn't have failed",
-            "had studied for the test, he wouldn't have failed.",
-            "had studied for the test, he would not have failed."
-          ],
-          "explanation": "Loại 3: If he had studied for the test, he wouldn't have failed."
+          "explanation": "If we had enough time, we could travel to Europe."
         }
       ]
     },
     {
-      "group_id": "cond_rewrite_unless_5",
-      "group_title": "DẠNG 3: VIẾT LẠI CÂU - NHÓM B: DÙNG 'UNLESS' (5 CÂU)",
-      "instruction": "Viết lại các câu sau bằng cách sử dụng 'Unless' (Unless = If ... not):",
+      "group_id": "if3_form_verbs_10",
+      "group_title": "PHẦN 3: CÂU ĐIỀU KIỆN LOẠI 3 (IF TYPE 3) - DẠNG 1: CHIA ĐỘNG TỪ TRONG NGOẶC (10 CÂU)",
+      "instruction": "Cho dạng đúng của động từ trong ngoặc để hoàn thành các câu điều kiện loại 3:",
       "questions": [
         {
-          "id": "c_rw_31",
+          "id": "if3_v_1",
+          "type": "blank",
+          "prompt": "1. If they had checked the map, they (not / get) [blank] lost in the mountains yesterday.",
+          "answers": ["would not have got", "wouldn't have got", "would not have gotten", "wouldn't have gotten"],
+          "explanation": "If loại 3: Mệnh đề chính dùng would not have + V3 (got/gotten)."
+        },
+        {
+          "id": "if3_v_2",
+          "type": "blank",
+          "prompt": "2. If the weather (be) [blank] fine yesterday, we would have gone hiking.",
+          "answers": ["had been"],
+          "explanation": "If loại 3: Mệnh đề If chia quá khứ hoàn thành (had been)."
+        },
+        {
+          "id": "if3_v_3",
+          "type": "blank",
+          "prompt": "3. If she had listened to her parents' advice, she (not / make) [blank] that mistake last night.",
+          "answers": ["would not have made", "wouldn't have made"],
+          "explanation": "If loại 3: Mệnh đề chính dùng wouldn't have made."
+        },
+        {
+          "id": "if3_v_4",
+          "type": "blank",
+          "prompt": "4. If he (drive) [blank] more carefully, he wouldn't have had an accident two days ago.",
+          "answers": ["had driven"],
+          "explanation": "If loại 3: Mệnh đề If chia quá khứ hoàn thành (had driven)."
+        },
+        {
+          "id": "if3_v_5",
+          "type": "blank",
+          "prompt": "5. If they (start) [blank] the project earlier, they would have finished it on time last week.",
+          "answers": ["had started"],
+          "explanation": "If loại 3: Mệnh đề If chia quá khứ hoàn thành (had started)."
+        },
+        {
+          "id": "if3_v_6",
+          "type": "blank",
+          "prompt": "6. If we had arrived at the cinema 10 minutes earlier, we (not / miss) [blank] the beginning of the movie.",
+          "answers": ["would not have missed", "wouldn't have missed"],
+          "explanation": "If loại 3: Mệnh đề chính dùng would not have missed."
+        },
+        {
+          "id": "if3_v_7",
+          "type": "blank",
+          "prompt": "7. She (pass) [blank] the entrance exam if she had studied harder last semester.",
+          "answers": ["would have passed", "could have passed"],
+          "explanation": "If loại 3: Mệnh đề chính dùng would have passed."
+        },
+        {
+          "id": "if3_v_8",
+          "type": "blank",
+          "prompt": "8. If I (know) [blank] you were in the hospital, I would have visited you.",
+          "answers": ["had known"],
+          "explanation": "If loại 3: Mệnh đề If chia had known."
+        },
+        {
+          "id": "if3_v_9",
+          "type": "blank",
+          "prompt": "9. If the alarm clock had gone off, he (not / be) [blank] late for work this morning.",
+          "answers": ["would not have been", "wouldn't have been"],
+          "explanation": "If loại 3: Mệnh đề chính dùng wouldn't have been."
+        },
+        {
+          "id": "if3_v_10",
+          "type": "blank",
+          "prompt": "10. We (reach) [blank] the airport on time if the taxi hadn't broken down.",
+          "answers": ["would have reached", "could have reached"],
+          "explanation": "If loại 3: Mệnh đề chính dùng would have reached."
+        }
+      ]
+    },
+    {
+      "group_id": "if3_mcq_10",
+      "group_title": "PHẦN 3: CÂU ĐIỀU KIỆN LOẠI 3 (IF TYPE 3) - DẠNG 2: TRẮC NGHIỆM CHỌN ĐÁP ÁN ĐÚNG (10 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D) cho câu điều kiện loại 3:",
+      "questions": [
+        {
+          "id": "if3_mcq_1",
+          "type": "choice",
+          "prompt": "1. If they had checked the engine carefully, the car ________ down on the highway.",
+          "options": ["A. won't break", "B. wouldn't break", "C. wouldn't have broken", "D. hadn't broken"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề chính dùng wouldn't have broken."
+        },
+        {
+          "id": "if3_mcq_2",
+          "type": "choice",
+          "prompt": "2. If she ________ her keys yesterday, she wouldn't have been locked out.",
+          "options": ["A. doesn't lose", "B. didn't lose", "C. hasn't lost", "D. hadn't lost"],
+          "correctIndex": 3,
+          "explanation": "If loại 3: Mệnh đề If dùng quá khứ hoàn thành hadn't lost."
+        },
+        {
+          "id": "if3_mcq_3",
+          "type": "choice",
+          "prompt": "3. If he ________ so fast, he wouldn't have crashed into the tree.",
+          "options": ["A. doesn't drive", "B. didn't drive", "C. hadn't driven", "D. wouldn't drive"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề If chia had + V3 (hadn't driven)."
+        },
+        {
+          "id": "if3_mcq_4",
+          "type": "choice",
+          "prompt": "4. If she had studied for the quiz, she ________ it easily.",
+          "options": ["A. will pass", "B. would pass", "C. would have passed", "D. passed"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề chính dùng would have passed."
+        },
+        {
+          "id": "if3_mcq_5",
+          "type": "choice",
+          "prompt": "5. I ________ to the party if I had been invited.",
+          "options": ["A. will go", "B. would go", "C. would have gone", "D. went"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề chính dùng would have gone."
+        },
+        {
+          "id": "if3_mcq_6",
+          "type": "choice",
+          "prompt": "6. If the flight ________ delayed, we would have reached the hotel before midnight.",
+          "options": ["A. isn't", "B. wasn't", "C. hadn't been", "D. wouldn't be"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề If chia hadn't been."
+        },
+        {
+          "id": "if3_mcq_7",
+          "type": "choice",
+          "prompt": "7. She wouldn't have been late for work if her alarm clock ________ off.",
+          "options": ["A. goes", "B. went", "C. had gone", "D. would go"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề If chia quá khứ hoàn thành had gone."
+        },
+        {
+          "id": "if3_mcq_8",
+          "type": "choice",
+          "prompt": "8. If you had told me about the meeting, I ________ it.",
+          "options": ["A. will attend", "B. would attend", "C. would have attended", "D. attended"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề chính dùng would have attended."
+        },
+        {
+          "id": "if3_mcq_9",
+          "type": "choice",
+          "prompt": "9. If we ________ an umbrella yesterday, we wouldn't have caught a cold.",
+          "options": ["A. brought", "B. have brought", "C. had brought", "D. would bring"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề If chia had brought."
+        },
+        {
+          "id": "if3_mcq_10",
+          "type": "choice",
+          "prompt": "10. They would have won the match if their captain ________ injured.",
+          "options": ["A. isn't", "B. weren't", "C. hadn't been", "D. hasn't been"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: Mệnh đề If chia quá khứ hoàn thành hadn't been."
+        }
+      ]
+    },
+    {
+      "group_id": "if3_rewrite_10",
+      "group_title": "PHẦN 3: CÂU ĐIỀU KIỆN LOẠI 3 (IF TYPE 3) - DẠNG 3: VIẾT LẠI CÂU (10 CÂU)",
+      "instruction": "Dựa trên tình huống thực tế trong quá khứ, viết lại thành câu điều kiện loại 3 bắt đầu bằng 'If':",
+      "questions": [
+        {
+          "id": "if3_rw_1",
           "type": "rewrite",
-          "prompt": "31. If you don't water these plants, they will die.",
+          "prompt": "1. She didn't bring her coat, so she got cold.",
+          "targetStart": "If she ",
+          "answers": [
+            "had brought her coat, she wouldn't have got cold.",
+            "had brought her coat, she wouldn't have got cold",
+            "had brought her coat, she wouldn't have gotten cold.",
+            "had brought her coat, she would not have got cold."
+          ],
+          "explanation": "If she had brought her coat, she wouldn't have got cold."
+        },
+        {
+          "id": "if3_rw_2",
+          "type": "rewrite",
+          "prompt": "2. They didn't read the manual, so they made a mistake.",
+          "targetStart": "If they ",
+          "answers": [
+            "had read the manual, they wouldn't have made a mistake.",
+            "had read the manual, they wouldn't have made a mistake",
+            "had read the manual, they would not have made a mistake."
+          ],
+          "explanation": "If they had read the manual, they wouldn't have made a mistake."
+        },
+        {
+          "id": "if3_rw_3",
+          "type": "rewrite",
+          "prompt": "3. He wasn't at the workshop, so he missed the practical session.",
+          "targetStart": "If he ",
+          "answers": [
+            "had been at the workshop, he wouldn't have missed the practical session.",
+            "had been at the workshop, he wouldn't have missed the practical session",
+            "had been at the workshop, he would not have missed the practical session."
+          ],
+          "explanation": "If he had been at the workshop, he wouldn't have missed the practical session."
+        },
+        {
+          "id": "if3_rw_4",
+          "type": "rewrite",
+          "prompt": "4. He didn't take the bus, so he was late.",
+          "targetStart": "If he ",
+          "answers": [
+            "had taken the bus, he wouldn't have been late.",
+            "had taken the bus, he wouldn't have been late",
+            "had taken the bus, he would not have been late."
+          ],
+          "explanation": "If he had taken the bus, he wouldn't have been late."
+        },
+        {
+          "id": "if3_rw_5",
+          "type": "rewrite",
+          "prompt": "5. The weather was rainy, so we didn't go hiking.",
+          "targetStart": "If the weather ",
+          "answers": [
+            "hadn't been rainy, we would have gone hiking.",
+            "hadn't been rainy, we would have gone hiking",
+            "had not been rainy, we would have gone hiking."
+          ],
+          "explanation": "If the weather hadn't been rainy, we would have gone hiking."
+        },
+        {
+          "id": "if3_rw_6",
+          "type": "rewrite",
+          "prompt": "6. She didn't study for the quiz, so she failed.",
+          "targetStart": "If she ",
+          "answers": [
+            "had studied for the quiz, she wouldn't have failed.",
+            "had studied for the quiz, she wouldn't have failed",
+            "had studied for the quiz, she would not have failed."
+          ],
+          "explanation": "If she had studied for the quiz, she wouldn't have failed."
+        },
+        {
+          "id": "if3_rw_7",
+          "type": "rewrite",
+          "prompt": "7. I didn't understand the guidelines, so I couldn't complete the project.",
+          "targetStart": "If I ",
+          "answers": [
+            "had understood the guidelines, I could have completed the project.",
+            "had understood the guidelines, I could have completed the project",
+            "had understood the guidelines, I would have been able to complete the project."
+          ],
+          "explanation": "If I had understood the guidelines, I could have completed the project."
+        },
+        {
+          "id": "if3_rw_8",
+          "type": "rewrite",
+          "prompt": "8. She forgot her keys, so she was locked out.",
+          "targetStart": "If she ",
+          "answers": [
+            "hadn't forgotten her keys, she wouldn't have been locked out.",
+            "hadn't forgotten her keys, she wouldn't have been locked out",
+            "had not forgotten her keys, she would not have been locked out."
+          ],
+          "explanation": "If she hadn't forgotten her keys, she wouldn't have been locked out."
+        },
+        {
+          "id": "if3_rw_9",
+          "type": "rewrite",
+          "prompt": "9. We didn't make reservations, so we couldn't dine at the restaurant.",
+          "targetStart": "If we ",
+          "answers": [
+            "had made reservations, we could have dined at the restaurant.",
+            "had made reservations, we could have dined at the restaurant",
+            "had made reservations, we would have been able to dine at the restaurant."
+          ],
+          "explanation": "If we had made reservations, we could have dined at the restaurant."
+        },
+        {
+          "id": "if3_rw_10",
+          "type": "rewrite",
+          "prompt": "10. He didn't bring his sketchbook, so he couldn't draw at the event.",
+          "targetStart": "If he ",
+          "answers": [
+            "had brought his sketchbook, he could have drawn at the event.",
+            "had brought his sketchbook, he could have drawn at the event",
+            "had brought his sketchbook, he would have been able to draw at the event."
+          ],
+          "explanation": "If he had brought his sketchbook, he could have drawn at the event."
+        }
+      ]
+    },
+    {
+      "group_id": "mix_form_verbs_10",
+      "group_title": "PHẦN 4: BÀI TẬP TỔNG HỢP (MIXED CONDITIONALS) - DẠNG 1: CHIA ĐỘNG TỪ TRONG NGOẶC (10 CÂU)",
+      "instruction": "Xác định loại câu điều kiện thích hợp (Loại 1, 2, 3 hoặc Hỗn hợp) và chia động từ trong ngoặc:",
+      "questions": [
+        {
+          "id": "mix_v_1",
+          "type": "blank",
+          "prompt": "1. If we (know) [blank] about your situation earlier yesterday, we could have helped you.",
+          "answers": ["had known"],
+          "explanation": "Trái ngược quá khứ (yesterday) ➔ If loại 3: had known."
+        },
+        {
+          "id": "mix_v_2",
+          "type": "blank",
+          "prompt": "2. If he (have) [blank] a bicycle now, he wouldn't walk to work.",
+          "answers": ["had"],
+          "explanation": "Trái ngược hiện tại (now) ➔ If loại 2: had."
+        },
+        {
+          "id": "mix_v_3",
+          "type": "blank",
+          "prompt": "3. If she finishes her report early, she (join) [blank] us for dinner tonight.",
+          "answers": ["will join", "can join"],
+          "explanation": "Có thể xảy ra tối nay ➔ If loại 1: will join."
+        },
+        {
+          "id": "mix_v_4",
+          "type": "blank",
+          "prompt": "4. If they had trained harder, they (win) [blank] the championship last month.",
+          "answers": ["would have won", "could have won"],
+          "explanation": "If loại 3: would have won."
+        },
+        {
+          "id": "mix_v_5",
+          "type": "blank",
+          "prompt": "5. What would you do if you (see) [blank] an alien right now?",
+          "answers": ["saw"],
+          "explanation": "Giả định tưởng tượng hiện tại ➔ If loại 2: saw."
+        },
+        {
+          "id": "mix_v_6",
+          "type": "blank",
+          "prompt": "6. If it (snow) [blank] this weekend, the children will build a snowman.",
+          "answers": ["snows"],
+          "explanation": "If loại 1: snows."
+        },
+        {
+          "id": "mix_v_7",
+          "type": "blank",
+          "prompt": "7. If I had gone to bed earlier last night, I (not / be) [blank] so exhausted right now.",
+          "answers": ["would not be", "wouldn't be"],
+          "explanation": "Điều kiện hỗn hợp (If 3 sang If 2): nguyên nhân quá khứ (last night) ➔ kết quả hiện tại (right now: wouldn't be)."
+        },
+        {
+          "id": "mix_v_8",
+          "type": "blank",
+          "prompt": "8. Unless he (apologize) [blank], I will never speak to him again.",
+          "answers": ["apologizes"],
+          "explanation": "Sau Unless ở hiện tại với ngôi he: apologizes."
+        },
+        {
+          "id": "mix_v_9",
+          "type": "blank",
+          "prompt": "9. If she had taken the medicine yesterday, she (feel) [blank] much better now.",
+          "answers": ["would feel", "could feel"],
+          "explanation": "Điều kiện hỗn hợp (If 3 sang If 2): yesterday ➔ now: would feel."
+        },
+        {
+          "id": "mix_v_10",
+          "type": "blank",
+          "prompt": "10. If I (be) [blank] you, I wouldn't lend him any more money.",
+          "answers": ["were", "was"],
+          "explanation": "Lời khuyên ở hiện tại (If 2): were."
+        }
+      ]
+    },
+    {
+      "group_id": "mix_mcq_10",
+      "group_title": "PHẦN 4: BÀI TẬP TỔNG HỢP (MIXED CONDITIONALS) - DẠNG 2: TRẮC NGHIỆM CHỌN ĐÁP ÁN ĐÚNG (10 CÂU)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D) trong các bài tập xáo trộn nhiều loại câu điều kiện:",
+      "questions": [
+        {
+          "id": "mix_mcq_1",
+          "type": "choice",
+          "prompt": "1. If the sun ________, we will go for a walk in the park.",
+          "options": ["A. shines", "B. shone", "C. had shone", "D. will shine"],
+          "correctIndex": 0,
+          "explanation": "If loại 1: the sun shines."
+        },
+        {
+          "id": "mix_mcq_2",
+          "type": "choice",
+          "prompt": "2. If I were an astronaut, I ________ to Mars.",
+          "options": ["A. will travel", "B. would travel", "C. traveled", "D. had traveled"],
+          "correctIndex": 1,
+          "explanation": "If loại 2: would travel."
+        },
+        {
+          "id": "mix_mcq_3",
+          "type": "choice",
+          "prompt": "3. If he ________ so fast yesterday, he wouldn't have crashed into the tree.",
+          "options": ["A. doesn't drive", "B. didn't drive", "C. hadn't driven", "D. wouldn't drive"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: hadn't driven."
+        },
+        {
+          "id": "mix_mcq_4",
+          "type": "choice",
+          "prompt": "4. You can't enter the room unless you ________ a valid password.",
+          "options": ["A. have", "B. don't have", "C. had", "D. will have"],
+          "correctIndex": 0,
+          "explanation": "Unless dùng khẳng định: unless you have."
+        },
+        {
+          "id": "mix_mcq_5",
+          "type": "choice",
+          "prompt": "5. If I had known you were coming, I ________ a bigger cake yesterday.",
+          "options": ["A. will bake", "B. would bake", "C. would have baked", "D. baked"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: would have baked."
+        },
+        {
+          "id": "mix_mcq_6",
+          "type": "choice",
+          "prompt": "6. If she had studied for the quiz yesterday, she ________ happy right now.",
+          "options": ["A. will be", "B. would be", "C. would have been", "D. had been"],
+          "correctIndex": 1,
+          "explanation": "Điều kiện hỗn hợp (If 3 sang If 2): kết quả ở hiện tại (right now) dùng would be."
+        },
+        {
+          "id": "mix_mcq_7",
+          "type": "choice",
+          "prompt": "7. What will happen if we ________ taking care of the environment?",
+          "options": ["A. don't start", "B. didn't start", "C. hadn't started", "D. won't start"],
+          "correctIndex": 0,
+          "explanation": "If loại 1: don't start."
+        },
+        {
+          "id": "mix_mcq_8",
+          "type": "choice",
+          "prompt": "8. If we ________ a car right now, we wouldn't have to take the crowded bus.",
+          "options": ["A. have", "B. had", "C. had had", "D. would have"],
+          "correctIndex": 1,
+          "explanation": "Trái ngược hiện tại (If 2): had."
+        },
+        {
+          "id": "mix_mcq_9",
+          "type": "choice",
+          "prompt": "9. If they had checked the engine carefully, the car ________ down on the highway.",
+          "options": ["A. won't break", "B. wouldn't break", "C. wouldn't have broken", "D. hadn't broken"],
+          "correctIndex": 2,
+          "explanation": "If loại 3: wouldn't have broken."
+        },
+        {
+          "id": "mix_mcq_10",
+          "type": "choice",
+          "prompt": "10. Unless it ________, we will play football in the yard this afternoon.",
+          "options": ["A. rains", "B. doesn't rain", "C. rained", "D. didn't rain"],
+          "correctIndex": 0,
+          "explanation": "Unless dùng khẳng định: rains."
+        }
+      ]
+    },
+    {
+      "group_id": "mix_rewrite_10",
+      "group_title": "PHẦN 4: BÀI TẬP TỔNG HỢP (MIXED CONDITIONALS) - DẠNG 3: VIẾT LẠI CÂU (10 CÂU)",
+      "instruction": "Xác định thì của câu gốc để viết lại câu điều kiện tương ứng (Loại 1, Loại 2, Loại 3 hoặc Hỗn hợp):",
+      "questions": [
+        {
+          "id": "mix_rw_1",
+          "type": "rewrite",
+          "prompt": "1. You don't write on both sides, so you waste your paper.",
+          "targetStart": "If you ",
+          "answers": [
+            "wrote on both sides, you wouldn't waste your paper.",
+            "wrote on both sides, you wouldn't waste your paper",
+            "wrote on both sides, you would not waste your paper."
+          ],
+          "explanation": "Hiện tại ➔ If loại 2: If you wrote on both sides, you wouldn't waste your paper."
+        },
+        {
+          "id": "mix_rw_2",
+          "type": "rewrite",
+          "prompt": "2. People don't often cycle, so there is a lot of air pollution.",
+          "targetStart": "If people ",
+          "answers": [
+            "often cycled, there wouldn't be a lot of air pollution.",
+            "often cycled, there wouldn't be a lot of air pollution",
+            "often cycled, there would not be a lot of air pollution."
+          ],
+          "explanation": "Hiện tại ➔ If loại 2: If people often cycled, there wouldn't be a lot of air pollution."
+        },
+        {
+          "id": "mix_rw_3",
+          "type": "rewrite",
+          "prompt": "3. The polar ice cap melts, so sea level rises.",
+          "targetStart": "If the polar ice cap ",
+          "answers": [
+            "didn't melt, sea level wouldn't rise.",
+            "didn't melt, sea level wouldn't rise",
+            "did not melt, sea level would not rise."
+          ],
+          "explanation": "Hiện tại ➔ If loại 2: If the polar ice cap didn't melt, sea level wouldn't rise."
+        },
+        {
+          "id": "mix_rw_4",
+          "type": "rewrite",
+          "prompt": "4. He didn't study for the test, so he failed.",
+          "targetStart": "If he ",
+          "answers": [
+            "had studied for the test, he wouldn't have failed.",
+            "had studied for the test, he wouldn't have failed",
+            "had studied for the test, he would not have failed."
+          ],
+          "explanation": "Quá khứ ➔ If loại 3: If he had studied for the test, he wouldn't have failed."
+        },
+        {
+          "id": "mix_rw_5",
+          "type": "rewrite",
+          "prompt": "5. If you don't wear a warm coat, you will catch a cold.",
           "targetStart": "Unless you ",
           "answers": [
-            "water these plants, they will die",
-            "water these plants, they will die."
+            "wear a warm coat, you will catch a cold.",
+            "wear a warm coat, you will catch a cold"
           ],
-          "explanation": "Unless = If ... not ➔ Bỏ don't, giữ nguyên động từ water: Unless you water these plants, they will die."
+          "explanation": "Unless loại 1: Unless you wear a warm coat, you will catch a cold."
         },
         {
-          "id": "c_rw_32",
+          "id": "mix_rw_6",
           "type": "rewrite",
-          "prompt": "32. If he doesn't hurry, he will miss the train.",
-          "targetStart": "Unless he ",
+          "prompt": "6. He doesn't live close to his gym, so he always arrives late.",
+          "targetStart": "If he ",
           "answers": [
-            "hurries, he will miss the train",
-            "hurries, he will miss the train."
+            "lived close to his gym, he wouldn't always arrive late.",
+            "lived close to his gym, he wouldn't always arrive late",
+            "lived close to his gym, he would not always arrive late."
           ],
-          "explanation": "Bỏ doesn't, động từ chia theo ngôi số ít (hurry ➔ hurries): Unless he hurries, he will miss the train."
+          "explanation": "Hiện tại ➔ If loại 2: If he lived close to his gym, he wouldn't always arrive late."
         },
         {
-          "id": "c_rw_33",
+          "id": "mix_rw_7",
           "type": "rewrite",
-          "prompt": "33. I won't go to the party if she doesn't invite me.",
-          "targetStart": "Unless she ",
+          "prompt": "7. She was tired because she worked all night.",
+          "targetStart": "If she ",
           "answers": [
-            "invites me, I won't go to the party",
-            "invites me, I won't go to the party.",
-            "invites me, I will not go to the party."
+            "hadn't worked all night, she wouldn't have been tired.",
+            "hadn't worked all night, she wouldn't have been tired",
+            "had not worked all night, she would not have been tired."
           ],
-          "explanation": "Đảo mệnh đề Unless lên đầu: Unless she invites me, I won't go to the party."
+          "explanation": "Quá khứ ➔ If loại 3: If she hadn't worked all night, she wouldn't have been tired."
         },
         {
-          "id": "c_rw_34",
+          "id": "mix_rw_8",
           "type": "rewrite",
-          "prompt": "34. If you don't study hard, you won't pass the final test.",
-          "targetStart": "Unless you ",
+          "prompt": "8. Unless she invites me, I won't go to her birthday party.",
+          "targetStart": "If she ",
           "answers": [
-            "study hard, you won't pass the final test",
-            "study hard, you won't pass the final test.",
-            "study hard, you will not pass the final test."
+            "doesn't invite me, I won't go to her birthday party.",
+            "doesn't invite me, I won't go to her birthday party",
+            "does not invite me, I will not go to her birthday party."
           ],
-          "explanation": "Bỏ don't: Unless you study hard, you won't pass the final test."
+          "explanation": "Đổi từ Unless sang If not: If she doesn't invite me, I won't go to her birthday party."
         },
         {
-          "id": "c_rw_35",
+          "id": "mix_rw_9",
           "type": "rewrite",
-          "prompt": "35. If it doesn't stop raining, we can't go for a walk.",
-          "targetStart": "Unless it ",
+          "prompt": "9. The supervisor didn't approve the plan, so we can't begin the task now.",
+          "targetStart": "If the supervisor ",
           "answers": [
-            "stops raining, we can't go for a walk",
-            "stops raining, we can't go for a walk.",
-            "stops raining, we cannot go for a walk."
+            "had approved the plan, we could begin the task now.",
+            "had approved the plan, we could begin the task now",
+            "had approved the plan, we would be able to begin the task now."
           ],
-          "explanation": "Bỏ doesn't, động từ chia thêm -s: Unless it stops raining, we can't go for a walk."
+          "explanation": "Điều kiện hỗn hợp (Quá khứ sang Hiện tại): If the supervisor had approved the plan, we could begin the task now."
+        },
+        {
+          "id": "mix_rw_10",
+          "type": "rewrite",
+          "prompt": "10. I didn't set my alarm, so I missed my morning train.",
+          "targetStart": "If I ",
+          "answers": [
+            "had set my alarm, I wouldn't have missed my morning train.",
+            "had set my alarm, I wouldn't have missed my morning train",
+            "had set my alarm, I would not have missed my morning train."
+          ],
+          "explanation": "Quá khứ ➔ If loại 3: If I had set my alarm, I wouldn't have missed my morning train."
         }
       ]
     }
