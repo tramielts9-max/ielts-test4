@@ -1,0 +1,535 @@
+{
+  "tense_id": "passive-voice",
+  "exercise_groups": [
+    {
+      "group_id": "pv_ex1_rewrite",
+      "group_title": "BÀI TẬP CÂU BỊ ĐỘNG 1: CHUYỂN CÁC CÂU SAU SANG BỊ ĐỘNG (25 CÂU)",
+      "instruction": "Viết lại các câu sau sang thể bị động:",
+      "questions": [
+        {
+          "id": "pv1_1",
+          "type": "rewrite",
+          "prompt": "1. My father waters this flower every morning.",
+          "targetStart": "This flower ",
+          "answers": [
+            "is watered by my father every morning.",
+            "is watered every morning by my father."
+          ],
+          "explanation": "Hiện tại đơn: S số ít + is + V3/ed (watered) + by O + Time."
+        },
+        {
+          "id": "pv1_2",
+          "type": "rewrite",
+          "prompt": "2. John invited Fiona to his birthday party last night.",
+          "targetStart": "Fiona ",
+          "answers": [
+            "was invited to John's birthday party last night.",
+            "was invited to his birthday party last night by John.",
+            "was invited to his birthday party last night."
+          ],
+          "explanation": "Quá khứ đơn: was invited + cụm nơi chốn + thời gian."
+        },
+        {
+          "id": "pv1_3",
+          "type": "rewrite",
+          "prompt": "3. Her mother is preparing the dinner in the kitchen.",
+          "targetStart": "The dinner ",
+          "answers": [
+            "is being prepared in the kitchen by her mother.",
+            "is being prepared by her mother in the kitchen."
+          ],
+          "explanation": "Hiện tại tiếp diễn: is being + V3/ed (prepared). Trật tự: Place (in the kitchen) + by O."
+        },
+        {
+          "id": "pv1_4",
+          "type": "rewrite",
+          "prompt": "4. We should clean our teeth twice a day.",
+          "targetStart": "Our teeth ",
+          "answers": [
+            "should be cleaned twice a day."
+          ],
+          "explanation": "Modal verb: should + be + V3/ed (cleaned). 'by us' được lược bỏ."
+        },
+        {
+          "id": "pv1_5",
+          "type": "rewrite",
+          "prompt": "5. Our teachers have explained English grammar.",
+          "targetStart": "English grammar ",
+          "answers": [
+            "has been explained by our teachers."
+          ],
+          "explanation": "Hiện tại hoàn thành: English grammar là danh từ không đếm được ➔ has been explained."
+        },
+        {
+          "id": "pv1_6",
+          "type": "rewrite",
+          "prompt": "6. Some drunk drivers caused the accident in this city.",
+          "targetStart": "The accident ",
+          "answers": [
+            "was caused in this city by some drunk drivers.",
+            "was caused by some drunk drivers in this city."
+          ],
+          "explanation": "Quá khứ đơn: was caused + Place (in this city) + by O."
+        },
+        {
+          "id": "pv1_7",
+          "type": "rewrite",
+          "prompt": "7. Tom will visit his parents next month.",
+          "targetStart": "Tom's parents ",
+          "answers": [
+            "will be visited by Tom next month.",
+            "will be visited next month by Tom."
+          ],
+          "explanation": "Tương lai đơn: will be visited + by O + Time (next month)."
+        },
+        {
+          "id": "pv1_8",
+          "type": "rewrite",
+          "prompt": "8. The manager didn’t phone the secretary this morning.",
+          "targetStart": "The secretary ",
+          "answers": [
+            "wasn't phoned by the manager this morning.",
+            "was not phoned by the manager this morning."
+          ],
+          "explanation": "Phủ định quá khứ đơn: wasn't / was not phoned + by O."
+        },
+        {
+          "id": "pv1_9",
+          "type": "rewrite",
+          "prompt": "9. Did Mary buy this beautiful dress?",
+          "targetStart": "Was ",
+          "answers": [
+            "this beautiful dress bought by Mary?"
+          ],
+          "explanation": "Nghi vấn quá khứ đơn: Was + S + V3/ed (bought) + by Mary?"
+        },
+        {
+          "id": "pv1_10",
+          "type": "rewrite",
+          "prompt": "10. I won’t hang these old pictures in the living room.",
+          "targetStart": "These old pictures ",
+          "answers": [
+            "won't be hung in the living room.",
+            "will not be hung in the living room."
+          ],
+          "explanation": "Tương lai đơn: won't be + V3 (hung). Lược bỏ 'by me'."
+        },
+        {
+          "id": "pv1_11",
+          "type": "rewrite",
+          "prompt": "11. The German didn’t build this factory during the Second World War.",
+          "targetStart": "This factory ",
+          "answers": [
+            "wasn't built by the German during the Second World War.",
+            "was not built by the German during the Second World War."
+          ],
+          "explanation": "Quá khứ đơn: wasn't built + by the German + thời gian."
+        },
+        {
+          "id": "pv1_12",
+          "type": "rewrite",
+          "prompt": "12. The Greens are going to paint this house and these cars for Christmas Day.",
+          "targetStart": "This house and these cars ",
+          "answers": [
+            "are going to be painted by the Greens for Christmas Day.",
+            "are going to be painted for Christmas Day by the Greens."
+          ],
+          "explanation": "Tương lai gần: are going to be painted (chủ ngữ số nhiều)."
+        },
+        {
+          "id": "pv1_13",
+          "type": "rewrite",
+          "prompt": "13. Ann had fed the cats before she went to the cinema.",
+          "targetStart": "The cats ",
+          "answers": [
+            "had been fed by Ann before she went to the cinema."
+          ],
+          "explanation": "Quá khứ hoàn thành: had been + V3 (fed)."
+        },
+        {
+          "id": "pv1_14",
+          "type": "rewrite",
+          "prompt": "14. The students have discussed the pollution problems since last week.",
+          "targetStart": "The pollution problems ",
+          "answers": [
+            "have been discussed by the students since last week."
+          ],
+          "explanation": "Hiện tại hoàn thành số nhiều: have been discussed."
+        },
+        {
+          "id": "pv1_15",
+          "type": "rewrite",
+          "prompt": "15. Have the thieves stolen the most valuable painting in the national museum?",
+          "targetStart": "Has ",
+          "answers": [
+            "the most valuable painting in the national museum been stolen by the thieves?"
+          ],
+          "explanation": "Nghi vấn HTHT: Has + S (painting) + been stolen + by the thieves?"
+        },
+        {
+          "id": "pv1_16",
+          "type": "rewrite",
+          "prompt": "16. Some people will interview the new president on TV.",
+          "targetStart": "The new president ",
+          "answers": [
+            "will be interviewed on TV."
+          ],
+          "explanation": "Tương lai đơn: will be interviewed. Bỏ 'by some people' vì không xác định."
+        },
+        {
+          "id": "pv1_17",
+          "type": "rewrite",
+          "prompt": "17. How many languages do they speak in Canada?",
+          "targetStart": "How many languages ",
+          "answers": [
+            "are spoken in Canada?"
+          ],
+          "explanation": "Câu hỏi thì HTĐ: are spoken in Canada? Lược bỏ 'by them'."
+        },
+        {
+          "id": "pv1_18",
+          "type": "rewrite",
+          "prompt": "18. Are you going to repair those shoes?",
+          "targetStart": "Are ",
+          "answers": [
+            "those shoes going to be repaired?"
+          ],
+          "explanation": "Nghi vấn tương lai gần: Are those shoes going to be repaired?"
+        },
+        {
+          "id": "pv1_19",
+          "type": "rewrite",
+          "prompt": "19. He has broken his nose in a football match.",
+          "targetStart": "His nose ",
+          "answers": [
+            "has been broken in a football match."
+          ],
+          "explanation": "Hiện tại hoàn thành: has been broken. Lược bỏ 'by him'."
+        },
+        {
+          "id": "pv1_20",
+          "type": "rewrite",
+          "prompt": "20. Have you finished the above sentences?",
+          "targetStart": "Have ",
+          "answers": [
+            "the above sentences been finished?"
+          ],
+          "explanation": "Nghi vấn HTHT: Have the above sentences been finished?"
+        },
+        {
+          "id": "pv1_21",
+          "type": "rewrite",
+          "prompt": "21. When will you do the work?",
+          "targetStart": "When will ",
+          "answers": [
+            "the work be done?"
+          ],
+          "explanation": "Wh- question tương lai: When will + S (the work) + be done?"
+        },
+        {
+          "id": "pv1_22",
+          "type": "rewrite",
+          "prompt": "22. How are you going to deal with this problem?",
+          "targetStart": "How is ",
+          "answers": [
+            "this problem going to be dealt with?"
+          ],
+          "explanation": "Tương lai gần: How is this problem going to be dealt with?"
+        },
+        {
+          "id": "pv1_23",
+          "type": "rewrite",
+          "prompt": "23. How do you spend this amount of money?",
+          "targetStart": "How is ",
+          "answers": [
+            "this amount of money spent?"
+          ],
+          "explanation": "Hiện tại đơn: How is + S (this amount of money) + spent?"
+        },
+        {
+          "id": "pv1_24",
+          "type": "rewrite",
+          "prompt": "24. I wonder whether the board of directors will choose Susan or Jane for the position.",
+          "targetStart": "I wonder whether ",
+          "answers": [
+            "Susan or Jane will be chosen for the position by the board of directors.",
+            "Susan or Jane will be chosen by the board of directors for the position."
+          ],
+          "explanation": "Chuyển vế sau whether sang bị động: will be chosen by the board of directors."
+        },
+        {
+          "id": "pv1_25",
+          "type": "rewrite",
+          "prompt": "25. How did the police find the lost man?",
+          "targetStart": "How was ",
+          "answers": [
+            "the lost man found by the police?"
+          ],
+          "explanation": "Nghi vấn quá khứ đơn: How was + S (the lost man) + found by the police?"
+        }
+      ]
+    },
+    {
+      "group_id": "pv_ex1_fill_verb",
+      "group_title": "BÀI TẬP CÂU BỊ ĐỘNG 1: CHIA DẠNG ĐÚNG Ở THỂ BỊ ĐỘNG (CÂU 26 - 30)",
+      "instruction": "Điền dạng đúng của động từ trong ngoặc ở thể bị động:",
+      "questions": [
+        {
+          "id": "pv1_26",
+          "type": "blank",
+          "prompt": "26. A bottle was [blank] (throw) outsides last night by him.",
+          "answers": ["thrown"],
+          "explanation": "Đã có sẵn 'was' (quá khứ) ➔ cần V3 của throw là 'thrown'."
+        },
+        {
+          "id": "pv1_27",
+          "type": "blank",
+          "prompt": "27. This fan has already [blank] (fix) by my father.",
+          "answers": ["been fixed"],
+          "explanation": "Hiện tại hoàn thành bị động: has already + been fixed."
+        },
+        {
+          "id": "pv1_28",
+          "type": "blank",
+          "prompt": "28. Now, a test [blank] (do) by him to prepare for his exam.",
+          "answers": ["is being done"],
+          "explanation": "Có dấu hiệu 'Now' ➔ Hiện tại tiếp diễn bị động: is being done."
+        },
+        {
+          "id": "pv1_29",
+          "type": "blank",
+          "prompt": "29. Finally, the key [blank] (find).",
+          "answers": ["was found", "has been found"],
+          "explanation": "Diễn tả hành động đã xảy ra xong: was found (hoặc has been found)."
+        },
+        {
+          "id": "pv1_30",
+          "type": "blank",
+          "prompt": "30. They were very worried that the work would not [blank] (finish).",
+          "answers": ["be finished"],
+          "explanation": "Sau 'would not' là dạng nguyên mẫu bị động: be finished."
+        }
+      ]
+    },
+    {
+      "group_id": "pv_ex2_rewrite",
+      "group_title": "BÀI TẬP CÂU BỊ ĐỘNG 2: CÂU 2 TÂN NGỮ & CẤU TRÚC ĐẶC BIỆT (20 CÂU)",
+      "instruction": "Chuyển các câu sau sang bị động (lưu ý câu có 2 tân ngữ):",
+      "questions": [
+        {
+          "id": "pv2_1",
+          "type": "rewrite",
+          "prompt": "1. The waiter brings me this dish.",
+          "targetStart": "This dish ",
+          "answers": [
+            "is brought to me by the waiter.",
+            "is brought to me."
+          ],
+          "explanation": "HTĐ: This dish is brought to me by the waiter."
+        },
+        {
+          "id": "pv2_2",
+          "type": "rewrite",
+          "prompt": "2. Our friends send these postcards to us.",
+          "targetStart": "These postcards ",
+          "answers": [
+            "are sent to us by our friends."
+          ],
+          "explanation": "HTĐ số nhiều: These postcards are sent to us by our friends."
+        },
+        {
+          "id": "pv2_3",
+          "type": "rewrite",
+          "prompt": "3. Their grandmother told them this story when they visited her last week.",
+          "targetStart": "They were ",
+          "answers": [
+            "told this story by their grandmother when they visited her last week.",
+            "told this story when they visited her last week by their grandmother."
+          ],
+          "explanation": "Chuyển tân ngữ chỉ người 'them' ➔ They were told this story by their grandmother..."
+        },
+        {
+          "id": "pv2_4",
+          "type": "rewrite",
+          "prompt": "4. Tim ordered this train ticket for his mother.",
+          "targetStart": "This train ticket ",
+          "answers": [
+            "was ordered for his mother by Tim.",
+            "was ordered by Tim for his mother."
+          ],
+          "explanation": "QKĐ: was ordered for his mother by Tim."
+        },
+        {
+          "id": "pv2_5",
+          "type": "rewrite",
+          "prompt": "5. You didn’t show me the special cameras.",
+          "targetStart": "I wasn't ",
+          "answers": [
+            "shown the special cameras.",
+            "shown the special cameras by you."
+          ],
+          "explanation": "Phủ định QKĐ: I wasn't shown the special cameras."
+        },
+        {
+          "id": "pv2_6",
+          "type": "rewrite",
+          "prompt": "6. She showed her ticket to the airline agent.",
+          "targetStart": "Her ticket ",
+          "answers": [
+            "was shown to the airline agent.",
+            "was shown to the airline agent by her."
+          ],
+          "explanation": "QKĐ: Her ticket was shown to the airline agent."
+        },
+        {
+          "id": "pv2_7",
+          "type": "rewrite",
+          "prompt": "7. He lends his friend his new shoes.",
+          "targetStart": "His friend ",
+          "answers": [
+            "is lent his new shoes by him.",
+            "is lent his new shoes."
+          ],
+          "explanation": "HTĐ: His friend is lent his new shoes."
+        },
+        {
+          "id": "pv2_8",
+          "type": "rewrite",
+          "prompt": "8. She left her relatives five million pounds.",
+          "targetStart": "Five million pounds ",
+          "answers": [
+            "was left to her relatives.",
+            "was left to her relatives by her.",
+            "were left to her relatives."
+          ],
+          "explanation": "QKĐ: Five million pounds was left to her relatives."
+        },
+        {
+          "id": "pv2_9",
+          "type": "rewrite",
+          "prompt": "9. The shop assistant handed these boxes to the customer.",
+          "targetStart": "These boxes ",
+          "answers": [
+            "were handed to the customer by the shop assistant."
+          ],
+          "explanation": "QKĐ số nhiều: were handed to the customer by the shop assistant."
+        },
+        {
+          "id": "pv2_10",
+          "type": "rewrite",
+          "prompt": "10. The board awarded the first prize to the reporter.",
+          "targetStart": "The first prize ",
+          "answers": [
+            "was awarded to the reporter by the board."
+          ],
+          "explanation": "QKĐ: was awarded to the reporter by the board."
+        },
+        {
+          "id": "pv2_11",
+          "type": "rewrite",
+          "prompt": "11. Have you sent the Christmas cards to your family?",
+          "targetStart": "Have the Christmas cards ",
+          "answers": [
+            "been sent to your family?"
+          ],
+          "explanation": "Nghi vấn HTHT: Have the Christmas cards been sent to your family?"
+        },
+        {
+          "id": "pv2_12",
+          "type": "rewrite",
+          "prompt": "12. The committee appointed Alice as secretary for the meeting.",
+          "targetStart": "Alice ",
+          "answers": [
+            "was appointed as secretary for the meeting by the committee."
+          ],
+          "explanation": "QKĐ: Alice was appointed as secretary for the meeting by the committee."
+        },
+        {
+          "id": "pv2_13",
+          "type": "rewrite",
+          "prompt": "13. He hides the broken cup in the drawer.",
+          "targetStart": "The broken cup ",
+          "answers": [
+            "is hidden in the drawer.",
+            "is hidden in the drawer by him."
+          ],
+          "explanation": "HTĐ: The broken cup is hidden in the drawer."
+        },
+        {
+          "id": "pv2_14",
+          "type": "rewrite",
+          "prompt": "14. They keep this room tidy all the time.",
+          "targetStart": "This room ",
+          "answers": [
+            "is kept tidy all the time."
+          ],
+          "explanation": "HTĐ giữ nguyên tính từ bổ nghĩa: is kept tidy all the time."
+        },
+        {
+          "id": "pv2_15",
+          "type": "rewrite",
+          "prompt": "15. They all voted the party a great success.",
+          "targetStart": "The party ",
+          "answers": [
+            "was voted a great success by all of them.",
+            "was voted a great success."
+          ],
+          "explanation": "QKĐ: The party was voted a great success."
+        },
+        {
+          "id": "pv2_16",
+          "type": "rewrite",
+          "prompt": "16. We gave Ann some bananas and some flowers.",
+          "targetStart": "Ann ",
+          "answers": [
+            "was given some bananas and some flowers.",
+            "was given some bananas and some flowers by us."
+          ],
+          "explanation": "QKĐ: Ann was given some bananas and some flowers."
+        },
+        {
+          "id": "pv2_17",
+          "type": "rewrite",
+          "prompt": "17. They moved the fridge into the living room.",
+          "targetStart": "The fridge ",
+          "answers": [
+            "was moved into the living room."
+          ],
+          "explanation": "QKĐ: The fridge was moved into the living room. (Lược bỏ by them)."
+        },
+        {
+          "id": "pv2_18",
+          "type": "rewrite",
+          "prompt": "18. She bought some cups of tea for the visitors in the next room.",
+          "targetStart": "Some cups of tea ",
+          "answers": [
+            "were bought for the visitors in the next room.",
+            "were bought for the visitors in the next room by her."
+          ],
+          "explanation": "QKĐ số nhiều: were bought for the visitors in the next room."
+        },
+        {
+          "id": "pv2_19",
+          "type": "rewrite",
+          "prompt": "19. They find the new project worthless.",
+          "targetStart": "The new project ",
+          "answers": [
+            "is found worthless."
+          ],
+          "explanation": "HTĐ: The new project is found worthless."
+        },
+        {
+          "id": "pv2_20",
+          "type": "rewrite",
+          "prompt": "20. The secretary didn’t take the notebook to the manager.",
+          "targetStart": "The notebook ",
+          "answers": [
+            "wasn't taken to the manager by the secretary.",
+            "was not taken to the manager by the secretary."
+          ],
+          "explanation": "Phủ định QKĐ: The notebook wasn't taken to the manager by the secretary."
+        }
+      ]
+    }
+  ]
+}
