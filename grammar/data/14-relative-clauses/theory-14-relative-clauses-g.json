@@ -1,0 +1,42 @@
+{
+  "tense_id": "14-relative-clauses",
+  "tense_name": "CHUYÊN ĐỀ 14: MỆNH ĐỀ QUAN HỆ (RELATIVE CLAUSES)",
+  "sections": [
+    {
+      "id": "rel_pronouns",
+      "title": "I. Đại Từ Quan Hệ (Relative Pronouns)",
+      "rules": [
+        "1. Who: Thay thế cho danh từ chỉ người đóng vai trò chủ ngữ. Công thức: [N (Person)] + who + V + O (The girl who is wearing a red dress is my friend).",
+        "2. Whom: Thay thế cho danh từ chỉ người đóng vai trò tân ngữ. Công thức: [N (Person)] + whom + S + V + O (The boy whom I met yesterday is very kind).",
+        "3. Which: Thay thế cho danh từ chỉ đồ vật hoặc con vật. Công thức: [N (Thing/Animal)] + which + V/S + V + O (The book which I borrowed is very interesting).",
+        "4. That: Có thể thay thế cho who, whom, which trong mệnh đề quan hệ xác định. Bắt buộc dùng sau tiền từ hỗn hợp người + vật, so sánh nhất, đại từ bất định.",
+        "5. Whose: Chỉ sự sở hữu của người hoặc vật. Công thức: [N (Person/Thing)] + whose + N + V + O (The girl whose mother is a teacher is my friend)."
+      ]
+    },
+    {
+      "id": "rel_adverbs",
+      "title": "II. Trạng Từ Quan Hệ (Relative Adverbs)",
+      "rules": [
+        "1. Why: Thay thế cho 'the reason' chỉ lý do. Công thức: N (the reason) + why + S + V + O (The reason why she was late is that her car broke down).",
+        "2. When: Thay thế cho từ chỉ thời gian (time, day, year). Công thức: N (time) + when + S + V + O (I remember the day when we first met).",
+        "3. Where: Thay thế cho từ chỉ địa điểm (place, house, city). Công thức: N (place) + where + S + V + O (This is the house where I was born)."
+      ]
+    },
+    {
+      "id": "rel_prepositions",
+      "title": "III. Giới Từ Trong Mệnh Đề Quan Hệ",
+      "rules": [
+        "• Khi đưa giới từ lên trước đại từ quan hệ, chỉ được dùng: Giới từ + WHOM (với người) hoặc Giới từ + WHICH (với vật).",
+        "• Tuyệt đối KHÔNG dùng giới từ đi trước THAT hoặc WHO (Ví dụ: with whom, in which, about which; không được viết 'with that' hay 'to who')."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ hệ thống đại từ và trạng từ quan hệ mà không nhìn tài liệu:",
+    "questions": [
+      "1. Trình bày công thức và cách dùng của 5 đại từ quan hệ: Who, Whom, Which, That, Whose. Cho 1 ví dụ minh họa cho từng từ.",
+      "2. Trình bày công thức và cách dùng của 3 trạng từ quan hệ: Where, When, Why. Cho 1 ví dụ minh họa cho từng từ.",
+      "3. Nêu quy tắc về vị trí của giới từ khi đứng trước đại từ quan hệ (được đi với từ nào và tuyệt đối cấm đi với từ nào)."
+    ]
+  }
+}
