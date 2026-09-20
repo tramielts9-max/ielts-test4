@@ -1,0 +1,412 @@
+{
+  "tense_id": "quantifiers",
+  "exercise_groups": [
+    {
+      "group_id": "quantifiers_50_mcq",
+      "group_title": "BÀI TẬP LƯỢNG TỪ TỔNG HỢP (50 CÂU TRẮC NGHIỆM)",
+      "instruction": "Chọn phương án đúng nhất (A, B, C hoặc D) cho mỗi câu hỏi sau:",
+      "questions": [
+        {
+          "id": "q_1",
+          "type": "choice",
+          "prompt": "Bài 1. There wasn't …............. snow last night.",
+          "options": ["A. many", "B. much", "C. few", "D. a large number of"],
+          "correctIndex": 1,
+          "explanation": "'snow' là danh từ không đếm được, câu phủ định dùng 'much'."
+        },
+        {
+          "id": "q_2",
+          "type": "choice",
+          "prompt": "Bài 2. …............the students in my class enjoy taking part in social activities.",
+          "options": ["A. Most of", "B. Most", "C. Many", "D. The number of"],
+          "correctIndex": 0,
+          "explanation": "Phía sau có mạo từ xác định 'the students' nên bắt buộc dùng 'Most of'."
+        },
+        {
+          "id": "q_3",
+          "type": "choice",
+          "prompt": "Bài 3. He's always busy. He has …......... time to relax.",
+          "options": ["A. much", "B. little", "C. a little", "D. plenty of"],
+          "correctIndex": 1,
+          "explanation": "Luôn bận rộn nghĩa là 'gần như không có thời gian' (mang nghĩa phủ định) ➔ dùng 'little' cho danh từ không đếm được 'time'."
+        },
+        {
+          "id": "q_4",
+          "type": "choice",
+          "prompt": "Bài 4. She put so …......... salt in the soup that she couldn't have it. It was too salty.",
+          "options": ["A. many", "B. little", "C. much", "D. a little"],
+          "correctIndex": 2,
+          "explanation": "'salt' là danh từ không đếm được, quá mặn đến mức không ăn được ➔ 'so much salt'."
+        },
+        {
+          "id": "q_5",
+          "type": "choice",
+          "prompt": "Bài 5. He made too …........... mistakes in his writing.",
+          "options": ["A. a few", "B. much", "C. many", "D. a number of"],
+          "correctIndex": 2,
+          "explanation": "'mistakes' là danh từ đếm được số nhiều, đi sau 'too' dùng 'too many'."
+        },
+        {
+          "id": "q_6",
+          "type": "choice",
+          "prompt": "Bài 6. How …........... students are there in your class?",
+          "options": ["A. little", "B. few", "C. much", "D. many"],
+          "correctIndex": 3,
+          "explanation": "Hỏi số lượng danh từ đếm được số nhiều 'students' dùng 'How many'."
+        },
+        {
+          "id": "q_7",
+          "type": "choice",
+          "prompt": "Bài 7. I feel sorry for her. She has …............. friends.",
+          "options": ["A. many", "B. a few", "C. few", "D. a great deal of"],
+          "correctIndex": 2,
+          "explanation": "Thấy tội cho cô ấy vì cô ấy 'rất ít / gần như không có bạn' (mang nghĩa tiêu cực) ➔ dùng 'few friends'."
+        },
+        {
+          "id": "q_8",
+          "type": "choice",
+          "prompt": "Bài 8. I spent …............ my spare time gardening last year.",
+          "options": ["A. most of", "B. most", "C. many of", "D. a large number of"],
+          "correctIndex": 0,
+          "explanation": "Có tính từ sở hữu 'my spare time' nên phải dùng 'most of'."
+        },
+        {
+          "id": "q_9",
+          "type": "choice",
+          "prompt": "Bài 9. He doesn't have so …........... friends as I think.",
+          "options": ["A. much", "B. a great deal of", "C. many", "D. a large number of"],
+          "correctIndex": 2,
+          "explanation": "'friends' là danh từ số nhiều, đi với cụm so...as dùng 'so many friends'."
+        },
+        {
+          "id": "q_10",
+          "type": "choice",
+          "prompt": "Bài 10. There was so …............ traffic that it took me an hour to get home.",
+          "options": ["A. a lot of", "B. little", "C. much", "D. many"],
+          "correctIndex": 2,
+          "explanation": "'traffic' (giao thông) là danh từ không đếm được ➔ dùng 'so much traffic'."
+        },
+        {
+          "id": "q_11",
+          "type": "choice",
+          "prompt": "Bài 11. Learning a language needs …........... patience.",
+          "options": ["A. a few", "B. much", "C. many", "D. little"],
+          "correctIndex": 1,
+          "explanation": "'patience' (sự kiên nhẫn) là danh từ trừu tượng không đếm được ➔ dùng 'much'."
+        },
+        {
+          "id": "q_12",
+          "type": "choice",
+          "prompt": "Bài 12. …............ the shops in the city center close at 5.30.",
+          "options": ["A. Many", "B. Much of", "C. Some", "D. Most of"],
+          "correctIndex": 3,
+          "explanation": "Đứng trước 'the shops' (có the) phải dùng 'Most of'."
+        },
+        {
+          "id": "q_13",
+          "type": "choice",
+          "prompt": "Bài 13. We had a boring holiday. .........................the time we lay on the beach.",
+          "options": ["A. Most", "B. Much", "C. Most of", "D. Many of"],
+          "correctIndex": 2,
+          "explanation": "Đứng trước 'the time' dùng cụm 'Most of the time' (phần lớn thời gian)."
+        },
+        {
+          "id": "q_14",
+          "type": "choice",
+          "prompt": "Bài 14. With only............ hope, Harry didn't know how to keep going another day.",
+          "options": ["A. little", "B. a little", "C. few", "D. a few"],
+          "correctIndex": 1,
+          "explanation": "'hope' không đếm được, sau 'only' luôn đi với mạo từ 'a' (only a little = chỉ còn một chút hy vọng)."
+        },
+        {
+          "id": "q_15",
+          "type": "choice",
+          "prompt": "Bài 15. How ….......... money have you got?",
+          "options": ["A. many", "B. much", "C. a lot of", "D. a great deal of"],
+          "correctIndex": 1,
+          "explanation": "'money' là danh từ không đếm được, câu hỏi số lượng dùng 'How much'."
+        },
+        {
+          "id": "q_16",
+          "type": "choice",
+          "prompt": "Bài 16. There was very …........... food at the party but I didn't eat anything.",
+          "options": ["A. little", "B. much", "C. many", "D. a lot of"],
+          "correctIndex": 0,
+          "explanation": "'food' không đếm được, đi với 'very' mang nghĩa tiêu cực (rất ít đồ ăn) dùng 'very little'."
+        },
+        {
+          "id": "q_17",
+          "type": "choice",
+          "prompt": "Bài 17. I think................ you are very tired after your long journey.",
+          "options": ["A. many", "B. much", "C. many of", "D. much of"],
+          "correctIndex": 2,
+          "explanation": "Đứng trước đại từ nhân xưng 'you' phải dùng 'many of you' (nhiều người trong số các bạn)."
+        },
+        {
+          "id": "q_18",
+          "type": "choice",
+          "prompt": "Bài 18. We didn't take …............ photographs when we were on holiday.",
+          "options": ["A. much", "B. a lot of", "C. many of", "D. a great deal of"],
+          "correctIndex": 1,
+          "explanation": "'photographs' là danh từ đếm được số nhiều, trong các phương án thì 'a lot of' phù hợp đứng trước N số nhiều không có 'the'."
+        },
+        {
+          "id": "q_19",
+          "type": "choice",
+          "prompt": "Bài 19. There isn't …........... shampoo in the bathroom.",
+          "options": ["A. any", "B. some", "C. little", "D. few"],
+          "correctIndex": 0,
+          "explanation": "Câu phủ định (isn't) dùng 'any' trước danh từ không đếm được 'shampoo'."
+        },
+        {
+          "id": "q_20",
+          "type": "choice",
+          "prompt": "Bài 20. Would you like ….......... tea?",
+          "options": ["A. some", "B. many", "C. a few", "D. any"],
+          "correctIndex": 0,
+          "explanation": "Câu lời mời lịch sự 'Would you like...?' dùng 'some' chứ không dùng 'any'."
+        },
+        {
+          "id": "q_21",
+          "type": "choice",
+          "prompt": "Bài 21. He had so …............. things to do",
+          "options": ["A. many", "B. a lot of", "C. much", "D. little"],
+          "correctIndex": 0,
+          "explanation": "'things' là danh từ đếm được số nhiều, sau 'so' dùng 'so many'."
+        },
+        {
+          "id": "q_22",
+          "type": "choice",
+          "prompt": "Bài 22. The mixture looks rather dry. Maybe you should add …........... water.",
+          "options": ["A. a few", "B. few", "C. a little", "D. little"],
+          "correctIndex": 2,
+          "explanation": "'water' không đếm được, khuyên thêm một chút nước (mang nghĩa tích cực) dùng 'a little'."
+        },
+        {
+          "id": "q_23",
+          "type": "choice",
+          "prompt": "Bài 23. We're having a big party. We've invited …........ friends.",
+          "options": ["A. a lot of", "B. much", "C. many of", "D. no"],
+          "correctIndex": 0,
+          "explanation": "'friends' là danh từ đếm được số nhiều, không có 'the' nên dùng 'a lot of friends'."
+        },
+        {
+          "id": "q_24",
+          "type": "choice",
+          "prompt": "Bài 24. Could I try ….......... wine?",
+          "options": ["A. a little", "B. a few", "C. little", "D. Few"],
+          "correctIndex": 0,
+          "explanation": "'wine' là chất lỏng không đếm được, lời đề nghị xin thử một chút dùng 'a little'."
+        },
+        {
+          "id": "q_25",
+          "type": "choice",
+          "prompt": "Bài 25. Could I try ….......... wine?",
+          "options": ["A. a little", "B. a few", "C. little", "D. Few"],
+          "correctIndex": 0,
+          "explanation": "Tương tự câu 24, dùng 'a little' với danh từ không đếm được 'wine'."
+        },
+        {
+          "id": "q_26",
+          "type": "choice",
+          "prompt": "Bài 26. …............. my students are familiar with this kind of school activities",
+          "options": ["A. Most", "B. Most of", "C. A few", "D. few"],
+          "correctIndex": 1,
+          "explanation": "Trước tính từ sở hữu 'my students' bắt buộc phải dùng 'Most of'."
+        },
+        {
+          "id": "q_27",
+          "type": "choice",
+          "prompt": "Bài 27. He had spent …........... time writing an essay about his childhood.",
+          "options": ["A. a large number of", "B. a great deal of", "C. a few", "D. many"],
+          "correctIndex": 1,
+          "explanation": "'time' là danh từ không đếm được ➔ dùng 'a great deal of time'."
+        },
+        {
+          "id": "q_28",
+          "type": "choice",
+          "prompt": "Bài 28. Peter has spent …........ time and money on stamp collecting.",
+          "options": ["A. a few of", "B. many of", "C. a great deal of", "D. a large number of"],
+          "correctIndex": 2,
+          "explanation": "Cả 'time' và 'money' đều không đếm được ➔ dùng 'a great deal of'."
+        },
+        {
+          "id": "q_29",
+          "type": "choice",
+          "prompt": "Bài 29. Peter has spent …........ time and money on stamp collecting.",
+          "options": ["A. a few of", "B. many of", "C. a great deal of", "D. a large number of"],
+          "correctIndex": 2,
+          "explanation": "Tương tự câu 28, dùng 'a great deal of' trước danh từ không đếm được."
+        },
+        {
+          "id": "q_30",
+          "type": "choice",
+          "prompt": "Bài 30. How............ furniture do you think there is?",
+          "options": ["A. many", "B. much", "C. few", "D. a lot of"],
+          "correctIndex": 1,
+          "explanation": "'furniture' (đồ nội thất) là danh từ không đếm được ➔ dùng 'How much'."
+        },
+        {
+          "id": "q_31",
+          "type": "choice",
+          "prompt": "Bài 31. Why don't you take a break? Would you like ….......... coffee?",
+          "options": ["A. few", "B. some", "C. many", "D. much"],
+          "correctIndex": 1,
+          "explanation": "Lời mời 'Would you like...?' dùng 'some'."
+        },
+        {
+          "id": "q_32",
+          "type": "choice",
+          "prompt": "Bài 32. He drank................ wine last night and gets sick now.",
+          "options": ["A. too many", "B. too much", "C. few of", "D. a large number of"],
+          "correctIndex": 1,
+          "explanation": "'wine' không đếm được ➔ dùng 'too much wine' (quá nhiều rượu)."
+        },
+        {
+          "id": "q_33",
+          "type": "choice",
+          "prompt": "Bài 33. Give me …............ examples, please!",
+          "options": ["A. a few", "B. a little", "C. few", "D. little"],
+          "correctIndex": 0,
+          "explanation": "'examples' là danh từ đếm được số nhiều ➔ dùng 'a few'."
+        },
+        {
+          "id": "q_34",
+          "type": "choice",
+          "prompt": "Bài 34. Is there …........... water in the glass",
+          "options": ["A. any", "B. some", "C. many", "D. lots of"],
+          "correctIndex": 0,
+          "explanation": "Câu nghi vấn thông thường dùng 'any' trước danh từ không đếm được."
+        },
+        {
+          "id": "q_35",
+          "type": "choice",
+          "prompt": "Bài 35. Peter doesn't want …............ to do.",
+          "options": ["A. something", "B. anything", "C. nothing", "D. everything"],
+          "correctIndex": 1,
+          "explanation": "Câu phủ định (doesn't want) đi với đại từ bất định 'anything'."
+        },
+        {
+          "id": "q_36",
+          "type": "choice",
+          "prompt": "Bài 36. Can you speak French? - Yes, ...................",
+          "options": ["A. a few", "B. few", "C. a little", "D. little"],
+          "correctIndex": 2,
+          "explanation": "Nói một chút ngôn ngữ (không đếm được, mang nghĩa tích cực) dùng 'a little'."
+        },
+        {
+          "id": "q_37",
+          "type": "choice",
+          "prompt": "Bài 37. Thank you very …............. for your help.",
+          "options": ["A. many", "B. much", "C. a lot of", "D. little"],
+          "correctIndex": 1,
+          "explanation": "Cụm cố định quen thuộc: 'Thank you very much'."
+        },
+        {
+          "id": "q_38",
+          "type": "choice",
+          "prompt": "Bài 38. He is very rich. He has ….......... money in the bank.",
+          "options": ["A. a great deal of", "B. many", "C. a large number of", "D. few"],
+          "correctIndex": 0,
+          "explanation": "'money' là danh từ không đếm được ➔ dùng 'a great deal of'."
+        },
+        {
+          "id": "q_39",
+          "type": "choice",
+          "prompt": "Bài 39. She put too …......... sugar in the coffee. It became so sweet that I couldn't drink it.",
+          "options": ["A. many", "B. much", "C. few", "D. little"],
+          "correctIndex": 1,
+          "explanation": "'sugar' không đếm được ➔ dùng 'too much sugar'."
+        },
+        {
+          "id": "q_40",
+          "type": "choice",
+          "prompt": "Bài 40. I have got …............. homework to do.",
+          "options": ["A. many", "B. few", "C. a lot of", "D. a large number of"],
+          "correctIndex": 2,
+          "explanation": "'homework' là danh từ không đếm được ➔ dùng 'a lot of homework'."
+        },
+        {
+          "id": "q_41",
+          "type": "choice",
+          "prompt": "Bài 41. She has talked too …................",
+          "options": ["A. much", "B. many", "C. few", "D. a great deal"],
+          "correctIndex": 0,
+          "explanation": "Đóng vai trò trạng từ bổ nghĩa cho động từ 'talked' ➔ dùng 'talked too much'."
+        },
+        {
+          "id": "q_42",
+          "type": "choice",
+          "prompt": "Bài 42. He made very …........... mistakes.",
+          "options": ["A. much", "B. few", "C. little", "D. a number of"],
+          "correctIndex": 1,
+          "explanation": "'mistakes' đếm được số nhiều, kết hợp với 'very' chỉ số lượng rất ít ➔ 'very few mistakes'."
+        },
+        {
+          "id": "q_43",
+          "type": "choice",
+          "prompt": "Bài 43. They know ….......... about what to do.",
+          "options": ["A. many", "B. few", "C. little", "D. the number of"],
+          "correctIndex": 2,
+          "explanation": "Bổ nghĩa cho động từ 'know', mang nghĩa gần như không biết gì ➔ 'know little about'."
+        },
+        {
+          "id": "q_44",
+          "type": "choice",
+          "prompt": "Bài 44. …...... children are ill-prepared for employment.",
+          "options": ["A. Much", "B. Most", "C. A little", "D. Most of"],
+          "correctIndex": 1,
+          "explanation": "Đứng trước danh từ số nhiều không có từ hạn định 'children' ➔ dùng 'Most children'."
+        },
+        {
+          "id": "q_45",
+          "type": "choice",
+          "prompt": "Bài 45. Would you like ….......... champagne to drink?",
+          "options": ["A. some", "B. few", "C. a few", "D. many"],
+          "correctIndex": 0,
+          "explanation": "Lời mời dùng 'some champagne'."
+        },
+        {
+          "id": "q_46",
+          "type": "choice",
+          "prompt": "Bài 46. When I studied Shakespeare, I thought his plays were …........... boring.",
+          "options": ["A. a little", "B. much", "C. few", "D. a few"],
+          "correctIndex": 0,
+          "explanation": "Bổ nghĩa cho tính từ 'boring' mang nghĩa hơi buồn ngủ một chút ➔ dùng 'a little boring'."
+        },
+        {
+          "id": "q_47",
+          "type": "choice",
+          "prompt": "Bài 47. …............. of the students are good today.",
+          "options": ["A. Most", "B. Much", "C. A little", "D. Very"],
+          "correctIndex": 0,
+          "explanation": "Đi trước 'of the students' dùng 'Most of'."
+        },
+        {
+          "id": "q_48",
+          "type": "choice",
+          "prompt": "Bài 48. There were too ….........different nationalities in my class and we had to speak English.",
+          "options": ["A. a lot of", "B. much", "C. some", "D. many"],
+          "correctIndex": 3,
+          "explanation": "'nationalities' đếm được số nhiều, sau 'too' dùng 'too many'."
+        },
+        {
+          "id": "q_49",
+          "type": "choice",
+          "prompt": "Bài 49. I don't know …............ about English literature.",
+          "options": ["A. many", "B. much", "C. a few", "D. little"],
+          "correctIndex": 1,
+          "explanation": "Trong câu phủ định 'don't know', bổ nghĩa cho động từ dùng 'much'."
+        },
+        {
+          "id": "q_50",
+          "type": "choice",
+          "prompt": "Bài 50. At the beginning, everybody spoke English very quickly, and I couldn't understand …........., but now things are easier.",
+          "options": ["A. much", "B. many", "C. a great deal of", "D. a lot of"],
+          "correctIndex": 0,
+          "explanation": "Câu phủ định 'couldn't understand', đóng vai trò đại từ dùng 'much' (không hiểu được nhiều)."
+        }
+      ]
+    }
+  ]
+}
