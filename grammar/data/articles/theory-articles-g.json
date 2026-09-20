@@ -1,0 +1,56 @@
+{
+  "tense_id": "articles",
+  "tense_name": "MẠO TỪ (ARTICLES: A / AN / THE / Ø)",
+  "sections": [
+    {
+      "id": "article_definition",
+      "title": "I. Định Nghĩa & Phân Loại",
+      "rules": [
+        "1. Định nghĩa: Mạo từ là từ đứng trước danh từ, cho biết danh từ đó xác định (người nghe đã biết) hay không xác định (người nghe chưa biết).",
+        "2. Phân loại: Gồm Mạo từ không xác định (A / AN), Mạo từ xác định (THE), và Mạo từ rỗng (Ø - Không dùng mạo từ)."
+      ]
+    },
+    {
+      "id": "article_a_an",
+      "title": "II. Mạo Từ Không Xác Định (A / AN)",
+      "rules": [
+        "• Dùng trước danh từ đếm được, số ít, khi đối tượng chưa được biết đến hoặc được nhắc đến lần đầu tiên.",
+        "• 'a': Đứng trước danh từ bắt đầu bằng một PHỤ ÂM theo phiên âm (a house, a student, a university /ju:/, a European /ju:/).",
+        "• 'an': Đứng trước danh từ bắt đầu bằng một NGUYÊN ÂM theo phiên âm (u, e, o, a, i) hoặc âm 'h' câm (an apple, an hour, an honest man)."
+      ]
+    },
+    {
+      "id": "article_the",
+      "title": "III. Mạo Từ Xác Định (THE)",
+      "rules": [
+        "Dùng khi đối tượng đã được xác định rõ hoặc cả người nói và người nghe đều biết:",
+        "1. Danh từ đã được nhắc đến trước đó (I bought a cat. The cat is white).",
+        "2. Có cụm từ hoặc mệnh đề quan hệ bổ nghĩa phía sau (I know the girl who is standing there).",
+        "3. Danh từ chỉ vật duy nhất (The sun, the earth, the moon, the president of the USA).",
+        "4. 'The + tính từ' chỉ một tập hợp nhóm người (the rich, the poor, the deaf, the unemployed).",
+        "5. Trước tên họ ở số nhiều để chỉ cả gia đình (The Browns are traveling).",
+        "6. Cụm chỉ phương hướng / vị trí xác định (in the North, in the middle of the room).",
+        "7. Trước tên các loại nhạc cụ (play the piano, play the violin).",
+        "8. Trong cấu trúc so sánh nhất và số thứ tự (the most beautiful girl, the first country)."
+      ]
+    },
+    {
+      "id": "article_zero",
+      "title": "IV. Trường Hợp Không Dùng Mạo Từ (Zero Article - Ø)",
+      "rules": [
+        "1. Trước tên riêng quốc gia, thành phố, châu lục: Vietnam, Hanoi, Europe (ngoại trừ các quốc gia dạng quần đảo hoặc liên bang như: the USA, the UK, the Philippines).",
+        "2. Trước thứ, ngày, tháng, năm thông thường: on Monday, in June.",
+        "3. Trước các môn thể thao: play football, play badminton.",
+        "4. Trong một số cụm từ cố định: at night, at school, at home, at sea, go to work/school/market."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ hệ thống lý thuyết về Mạo từ (A, An, The, Ø) mà không nhìn tài liệu:",
+    "questions": [
+      "1. Nêu quy tắc phân biệt khi nào dùng 'a' và khi nào dùng 'an'. Nêu ít nhất 2 trường hợp ngoại lệ về cách phát âm (nguyên âm/phụ âm và h câm).",
+      "2. Liệt kê ít nhất 6 trường hợp bắt buộc phải sử dụng mạo từ xác định 'The' kèm ví dụ minh họa.",
+      "3. Liệt kê 4 trường hợp không được dùng mạo từ (Zero article - Ø) kèm ví dụ minh họa."
+    ]
+  }
+}
