@@ -1,0 +1,64 @@
+{
+  "tense_id": "conditionals",
+  "tense_name": "CÂU ĐIỀU KIỆN (CONDITIONAL SENTENCES)",
+  "sections": [
+    {
+      "id": "cond_type_1",
+      "title": "A. Câu điều kiện loại 1 (Conditional sentences type I)",
+      "formulas": {
+        "affirmative": "If + S + V1, S + will / can / may + V0",
+        "negative": "If + S + don't/doesn't + V0, S + won't / can't + V0",
+        "interrogative": "Will + S + V0 + if + S + V1...?"
+      },
+      "rules": [
+        "Cách dùng: Diễn tả một điều kiện có thể xảy ra trong hiện tại hoặc tương lai nếu điều kiện được đáp ứng.",
+        "Ví dụ: If you work hard, you will pass the exam."
+      ]
+    },
+    {
+      "id": "cond_type_2",
+      "title": "B. Câu điều kiện loại 2 (Conditional sentences type II)",
+      "formulas": {
+        "affirmative": "If + S + V2/ed, S + would / could / might + V0",
+        "negative": "If + S + didn't + V0, S + wouldn't / couldn't + V0",
+        "interrogative": "Would + S + V0 + if + S + V2/ed...?"
+      },
+      "rules": [
+        "Cách dùng: Diễn tả một điều kiện không có thật ở hiện tại hoặc tương lai (giả định trái ngược thực tế).",
+        "Lưu ý To-Be: Trong câu điều kiện loại 2, 'were' được dùng cho tất cả các ngôi (If I were you...).",
+        "Ví dụ: If I were you, I would go to the party."
+      ]
+    },
+    {
+      "id": "cond_type_3",
+      "title": "C. Câu điều kiện loại 3 (Conditional sentences type III)",
+      "formulas": {
+        "affirmative": "If + S + had + V3/ed, S + would / could / might + have + V3/ed",
+        "negative": "If + S + hadn't + V3/ed, S + wouldn't / couldn't + have + V3/ed",
+        "interrogative": "Would + S + have + V3/ed + if + S + had + V3/ed...?"
+      },
+      "rules": [
+        "Cách dùng: Diễn tả một điều kiện không có thật trong quá khứ và kết quả đã không xảy ra.",
+        "Ví dụ: If you had studied harder, you would have passed the exam."
+      ]
+    },
+    {
+      "id": "cond_tips_rules",
+      "title": "Mẹo Làm Câu Điều Kiện (Viết Lại Câu)",
+      "rules": [
+        "R1 - Quy tắc trật tự mệnh đề: Có 'so' ➔ viết bắt đầu bằng mệnh đề trước 'so'; Có 'because' ➔ viết bắt đầu bằng mệnh đề sau 'because'; Có dấu chấm (.), phẩy (;), gạch ngang (-) ➔ viết từ trái qua phải.",
+        "R2 - Quy tắc lùi thì: Hiện tại (am/is/are ➔ weren't; V0/V-s-es ➔ didn't V0; don't/doesn't V0 ➔ V2/ed) ➔ Vế chính: S + would/could + V0.",
+        "R2 - Quy tắc lùi thì: Quá khứ (was/were ➔ hadn't been; V2/ed ➔ hadn't V3/ed; didn't V0 ➔ had V3/ed) ➔ Vế chính: S + would/could + have + V3/ed.",
+        "R3 - Quy tắc đảo khẳng định/phủ định (Chỉ dùng cho If 2 và If 3): Vế trên khẳng định (+) ➔ Vế dưới phủ định (-); Vế trên phủ định (-) ➔ Vế dưới khẳng định (+)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Hãy trình bày lại toàn bộ hệ thống lý thuyết cốt lõi của 3 loại câu điều kiện (Loại 1, Loại 2, Loại 3) mà không cần nhìn tài liệu.",
+    "questions": [
+      "1. Trình bày công thức tổng quát của Câu điều kiện loại 1, nêu rõ cách dùng chính và tự đặt 1 ví dụ minh họa kèm dịch nghĩa.",
+      "2. Trình bày công thức tổng quát của Câu điều kiện loại 2, lưu ý đặc biệt về động từ 'to be' với các ngôi, nêu rõ cách dùng và tự đặt 1 ví dụ minh họa kèm dịch nghĩa.",
+      "3. Trình bày công thức tổng quát của Câu điều kiện loại 3, nêu rõ cách dùng và tự đặt 1 ví dụ minh họa kèm dịch nghĩa."
+    ]
+  }
+}
