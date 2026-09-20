@@ -1,0 +1,55 @@
+{
+  "tense_id": "15-word-form",
+  "tense_name": "CHUYÊN ĐỀ 15: CẤU TẠO TỪ LOẠI (WORD FORM)",
+  "sections": [
+    {
+      "id": "wf_definitions",
+      "title": "I. Định Nghĩa 4 Loại Từ Cơ Bản",
+      "rules": [
+        "1. Danh từ (Noun - N): Là từ/cụm từ dùng để chỉ người, vật, địa điểm, nơi chốn (Ví dụ: Tom, doctor, book, capital,...).",
+        "2. Động từ (Verb - V): Là từ/cụm từ được dùng để diễn tả hành động (action) hoặc trạng thái (state) (Ví dụ: eat, learn, play,...).",
+        "3. Tính từ (Adjective - Adj): Là từ chỉ tính chất, đặc điểm của người, vật hoặc sự việc (Ví dụ: careful, hard-working, beautiful,...).",
+        "4. Trạng từ (Adverb - Adv): Là từ/cụm từ dùng để cung cấp thêm thông tin về nơi chốn, thời gian, cách thức, nguyên nhân, mức độ cho động từ, tính từ hoặc trạng từ khác (Ví dụ: happily, badly, carefully,...)."
+      ]
+    },
+    {
+      "id": "wf_15_positions",
+      "title": "II. 15 Vị Trí Vàng Của Từ Loại Trong Câu (Bắt Buộc Học Thuộc)",
+      "rules": [
+        "1. Sau tobe (am/is/are/was/were) là ➔ ADJ",
+        "2. Sau động từ thường là ➔ ADV",
+        "3. Sau V tri giác (hear, see, smell, taste, feel,...) là ➔ ADJ",
+        "4. Sau look, seem, get, become, find, make,... là ➔ ADJ",
+        "5. Sau mạo từ (a/an/the) là ➔ NOUN",
+        "6. Sau tính từ sở hữu (my/your/our/their/his/her/its) là ➔ NOUN",
+        "7. Sau sở hữu cách ('s) là ➔ NOUN",
+        "8. Sau đại từ chỉ định (this/that/these/those) là ➔ NOUN",
+        "9. Sau từ chỉ số lượng (some/any/many/much/a lot of,...) là ➔ NOUN",
+        "10. Sau giới từ (in/on/at/of/for/with,...) là ➔ NOUN (hoặc V-ing)",
+        "11. Đứng trước danh từ để bổ nghĩa là ➔ ADJ",
+        "12. Đứng trước tính từ để bổ nghĩa mức độ là ➔ ADV",
+        "13. Đứng đầu câu và ngăn cách bằng dấu phẩy là ➔ ADV",
+        "14. Sau danh từ tạo thành danh từ ghép là ➔ NOUN",
+        "15. Sau các ngoại động từ (bring/have/take/buy/sell,...) là ➔ NOUN (tân ngữ)"
+      ]
+    },
+    {
+      "id": "wf_suffixes",
+      "title": "III. Các Đuôi (Hậu Tố) Nhận Diện Từ Loại Thông Dụng",
+      "rules": [
+        "1. Đuôi Danh từ (Noun): -tion/-ation (invention), -ment (development), -ence/-ance (difference, importance), -ness (happiness), -er/-or (teacher, actor), -ist (chemist), -ar/-ant/-ee (beggar, employee), -ing (teaching), -age (marriage), -ship (friendship), -ism (tourism), -(i)ty (reality), (verb)-al (approval, arrival), -th (warmth, strength).",
+        "2. Đuôi Động từ (Verb): -fy (classify, beautify), -ize/-ise (modernize, industrialize), -en (widen, frighten), -ate (translate).",
+        "3. Đuôi Tính từ (Adj): -ful (helpful, successful), -less (homeless, careless), (noun)-y (rainy, snowy), -ish (selfish), (noun)-al (natural, cultural), -ous (dangerous, famous), -ive (active, attractive), -ic (electric, economic), -able (comfortable).",
+        "4. Đuôi Trạng từ (Adv): Tính từ + -ly ➔ Trạng từ (successful + -ly ➔ successfully)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ bảng lý thuyết loại từ (Word Form) theo đúng form khảo bài mà không nhìn tài liệu:",
+    "questions": [
+      "1. Nêu định nghĩa và chức năng của 4 từ loại cốt lõi: Danh từ (N), Động từ (V), Tính từ (Adj), Trạng từ (Adv).",
+      "2. Trình bày đầy đủ 15 vị trí của các từ loại trong câu (ví dụ: sau tobe là gì, trước danh từ là gì, sau giới từ là gì,...).",
+      "3. Liệt kê ít nhất 10 đuôi nhận diện Danh từ, 4 đuôi nhận diện Động từ, 8 đuôi nhận diện Tính từ và quy tắc tạo Trạng từ."
+    ]
+  }
+}
