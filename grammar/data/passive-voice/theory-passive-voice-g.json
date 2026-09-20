@@ -1,0 +1,52 @@
+{
+  "tense_id": "passive-voice",
+  "tense_name": "CÂU BỊ ĐỘNG (PASSIVE VOICE)",
+  "sections": [
+    {
+      "id": "pv_5_steps",
+      "title": "I. 5 Bước Chuyển Từ Câu Chủ Động Sang Bị Động",
+      "rules": [
+        "Bước 1: Xác định 3 thành phần S, V, O trong câu chủ động (Ví dụ: Someone [S] stole [V] my phone [O] yesterday).",
+        "Bước 2: Chuyển O lên làm S của câu bị động (➔ My phone...).",
+        "Bước 3: Chia động từ to be tương ứng với thì trong câu chủ động + chia theo số ít/số nhiều của S mới (➔ My phone was...).",
+        "Bước 4: Chuyển động từ chính sang dạng quá khứ phân từ V3/ed (➔ My phone was stolen...).",
+        "Bước 5: Chuyển chủ ngữ trong câu chủ động thành tân ngữ trong câu bị động và đặt sau 'by' (➔ My phone was stolen by someone yesterday)."
+      ],
+      "note": "Muốn đề cập tới người/vật gây ra hành động thì dùng 'by O', không quan trọng thì có thể lược bỏ."
+    },
+    {
+      "id": "pv_by_rules",
+      "title": "II. Quy Tắc Dùng & Lược Bỏ 'BY O' và Trật Tự Từ",
+      "rules": [
+        "1. Trật tự sắp xếp chuẩn: [Place] + by O + [Time] (Nơi chốn ➔ by O ➔ Thời gian).",
+        "• Ví dụ: Long Bien Bridge was constructed in Ha Noi [Place] by the French [by O] in 1899 [Time].",
+        "2. Các trường hợp phổ biến dùng 'by': Tên riêng (by David, by Nick), người/tác nhân trực tiếp tạo ra sự vật (by the French).",
+        "3. Các trường hợp có thể lược bỏ 'by': Khi chủ ngữ là chung chung, không xác định (by me, by you, by us, by them, by him, by her, by it).",
+        "4. BẮT BUỘC BỎ: by someone, by somebody, by people, by anyone."
+      ]
+    },
+    {
+      "id": "pv_tense_formulas",
+      "title": "III. Bảng Công Thức Bị Động Các Thì & Modal Verbs (Ví dụ: LEGO model)",
+      "rules": [
+        "1. Hiện tại đơn: Vs/es ➔ am/is/are + V3/ed (A LEGO model is built by my brother).",
+        "2. Hiện tại tiếp diễn: am/is/are + V-ing ➔ am/is/are being + V3/ed (A LEGO model is being built by my brother).",
+        "3. Hiện tại hoàn thành: have/has + V3/ed ➔ have/has been + V3/ed (A LEGO model has been built by my brother).",
+        "4. Quá khứ đơn: V2/ed ➔ was/were + V3/ed (A LEGO model was built by my brother).",
+        "5. Quá khứ tiếp diễn: was/were + V-ing ➔ was/were being + V3/ed (A LEGO model was being built by my brother).",
+        "6. Quá khứ hoàn thành: had + V3/ed ➔ had been + V3/ed (A LEGO model had been built by my brother).",
+        "7. Tương lai đơn: will + V0 ➔ will be + V3/ed (A LEGO model will be built by my brother).",
+        "8. Động từ khuyết thiếu (can, could, should, may, might, must): Modal V + V0 ➔ Modal V + be + V3/ed (A LEGO model can be built by my brother)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ lý thuyết về câu bị động mà không nhìn tài liệu:",
+    "questions": [
+      "1. Trình bày rõ ràng 5 bước chuyển một câu từ chủ động sang bị động.",
+      "2. Nêu quy tắc về trật tự vị trí giữa Nơi chốn (Place), Thời gian (Time) và tác nhân (by O). Cho 1 ví dụ minh họa.",
+      "3. Khi nào được phép và khi nào BẮT BUỘC lược bỏ 'by O' trong câu bị động?",
+      "4. Viết công thức thể bị động của 4 thì: Hiện tại đơn, Hiện tại tiếp diễn, Hiện tại hoàn thành và Quá khứ đơn."
+    ]
+  }
+}
