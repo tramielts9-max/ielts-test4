@@ -1,0 +1,34 @@
+{
+  "tense_id": "quantifiers",
+  "tense_name": "LƯỢNG TỪ (QUANTIFIERS)",
+  "sections": [
+    {
+      "id": "quantifiers_table",
+      "title": "I. Bảng Phân Loại Lượng Từ Theo Loại Danh Từ",
+      "rules": [
+        "1. Đi với danh từ đếm được số nhiều: many (nhiều), a few (một vài - đủ dùng), few (rất ít / gần như không có - mang nghĩa phủ định), a large number of / a great number of (một lượng lớn).",
+        "2. Đi với danh từ không đếm được: much (nhiều), a little (một chút - đủ dùng), little (rất ít / gần như không có - mang nghĩa phủ định), a large amount of / a great deal of (một lượng lớn).",
+        "3. Đi với CẢ HAI loại danh từ: plenty of (nhiều / đủ đầy), a lot of / lots of (rất nhiều).",
+        "4. Cặp đối lập nghĩa quan trọng: 'a few / a little' mang nghĩa tích cực (còn một ít để dùng), còn 'few / little' mang nghĩa tiêu cực (quá ít, gần như không có)."
+      ]
+    },
+    {
+      "id": "quantifiers_structures",
+      "title": "II. Cấu Trúc Đi Kèm 'OF' và Từ Hạn Định",
+      "rules": [
+        "1. all, most, some, no + (adj) + N: Đứng trực tiếp trước danh từ nói chung (Ví dụ: Most students like games; Some people are late).",
+        "2. all of, most of, some of, none of + the / my, his, her... / this, that, these, those: Bắt buộc dùng 'OF' khi phía sau có mạo từ 'the', tính từ sở hữu hoặc từ chỉ định (Ví dụ: Most of the students in my class; Some of these books).",
+        "3. Every, each + danh từ số ít + V số ít (Ví dụ: Every student has a book; Each day is a gift)."
+      ]
+    }
+  ],
+  "essay_prompt": {
+    "instruction": "Trình bày lại toàn bộ hệ thống lượng từ trong tiếng Anh mà không nhìn tài liệu:",
+    "questions": [
+      "1. Lập bảng phân loại các lượng từ: Lượng từ chỉ dùng cho danh từ đếm được số nhiều, lượng từ chỉ dùng cho danh từ không đếm được, và lượng từ dùng cho cả hai.",
+      "2. Phân biệt sự khác nhau về sắc thái ngữ nghĩa giữa 'a few' vs 'few' và 'a little' vs 'little'. Cho ví dụ minh họa.",
+      "3. Khi nào dùng 'most' và khi nào bắt buộc dùng 'most of'? Cho ví dụ cụ thể cho từng trường hợp.",
+      "4. Nêu quy tắc chia động từ và danh từ đi kèm với 'Every' và 'Each'."
+    ]
+  }
+}
