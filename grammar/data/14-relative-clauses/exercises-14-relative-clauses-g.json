@@ -1,0 +1,622 @@
+{
+  "tense_id": "14-relative-clauses",
+  "exercise_groups": [
+    {
+      "group_id": "rel_task1",
+      "group_title": "TASK 1: NỐI CÂU DÙNG ĐẠI TỪ / TRẠNG TỪ QUAN HỆ (10 CÂU)",
+      "instruction": "Nối hai câu sau thành một câu có nghĩa tương đương:",
+      "questions": [
+        {
+          "id": "r1_1",
+          "type": "rewrite",
+          "prompt": "1. She is the most intelligent woman. I’ve never met this woman.",
+          "targetStart": "She is ",
+          "answers": [
+            "the most intelligent woman that I've ever met.",
+            "the most intelligent woman that I have ever met.",
+            "the most intelligent woman I've ever met."
+          ],
+          "explanation": "Có so sánh nhất 'the most intelligent' nên đại từ quan hệ ưu tiên dùng 'that' (hoặc lược bỏ)."
+        },
+        {
+          "id": "r1_2",
+          "type": "rewrite",
+          "prompt": "2. This doctor is famous. You visited him yesterday.",
+          "targetStart": "This doctor ",
+          "answers": [
+            "whom you visited yesterday is famous.",
+            "that you visited yesterday is famous.",
+            "you visited yesterday is famous."
+          ],
+          "explanation": "'him' là tân ngữ chỉ người ➔ dùng 'whom' hoặc 'that'."
+        },
+        {
+          "id": "r1_3",
+          "type": "rewrite",
+          "prompt": "3. These children are orphans. She is taking care of these children.",
+          "targetStart": "These children ",
+          "answers": [
+            "whom she is taking care of are orphans.",
+            "of whom she is taking care are orphans.",
+            "that she is taking care of are orphans."
+          ],
+          "explanation": "'these children' là tân ngữ chỉ người ➔ whom she is taking care of."
+        },
+        {
+          "id": "r1_4",
+          "type": "rewrite",
+          "prompt": "4. The two young men are not good persons. You are acquainted with them.",
+          "targetStart": "The two young men ",
+          "answers": [
+            "with whom you are acquainted are not good persons.",
+            "whom you are acquainted with are not good persons."
+          ],
+          "explanation": "Thay thế cho 'them' sau giới từ 'with' ➔ with whom (hoặc whom... with)."
+        },
+        {
+          "id": "r1_5",
+          "type": "rewrite",
+          "prompt": "5. My father goes swimming every day. You met him this morning.",
+          "targetStart": "My father, ",
+          "answers": [
+            "whom you met this morning, goes swimming every day."
+          ],
+          "explanation": "'My father' là danh từ xác định ➔ mệnh đề quan hệ không xác định có dấu phẩy dùng 'whom'."
+        },
+        {
+          "id": "r1_6",
+          "type": "rewrite",
+          "prompt": "6. The man is my father. I respect this man most.",
+          "targetStart": "The man ",
+          "answers": [
+            "whom I respect most is my father.",
+            "that I respect most is my father.",
+            "I respect most is my father."
+          ],
+          "explanation": "Thay thế cho tân ngữ chỉ người 'this man' ➔ whom / that I respect most."
+        },
+        {
+          "id": "r1_7",
+          "type": "rewrite",
+          "prompt": "7. The man is my father. I respect his opinion most.",
+          "targetStart": "The man ",
+          "answers": [
+            "whose opinion I respect most is my father."
+          ],
+          "explanation": "'his opinion' chỉ sở hữu ➔ dùng 'whose opinion'."
+        },
+        {
+          "id": "r1_8",
+          "type": "rewrite",
+          "prompt": "8. Mary and Margaret are twins. You met them yesterday.",
+          "targetStart": "Mary and Margaret, ",
+          "answers": [
+            "whom you met yesterday, are twins."
+          ],
+          "explanation": "Tên riêng có dấu phẩy, thay thế cho tân ngữ 'them' ➔ whom you met yesterday."
+        },
+        {
+          "id": "r1_9",
+          "type": "rewrite",
+          "prompt": "9. I’ll introduce you to the man. His support is necessary for your project.",
+          "targetStart": "I’ll introduce you to the man ",
+          "answers": [
+            "whose support is necessary for your project."
+          ],
+          "explanation": "'His support' chỉ sở hữu ➔ whose support."
+        },
+        {
+          "id": "r1_10",
+          "type": "rewrite",
+          "prompt": "10. The middle-aged man is the director. My father is talking to him.",
+          "targetStart": "The middle-aged man ",
+          "answers": [
+            "to whom my father is talking is the director.",
+            "whom my father is talking to is the director."
+          ],
+          "explanation": "Thay thế cho 'him' đi với giới từ to ➔ to whom my father is talking."
+        }
+      ]
+    },
+    {
+      "group_id": "rel_task2",
+      "group_title": "TASK 2: LUYỆN TẬP NỐI CÂU MỞ RỘNG (10 CÂU)",
+      "instruction": "Nối hai câu sau sử dụng đại từ hoặc trạng từ quan hệ:",
+      "questions": [
+        {
+          "id": "r2_1",
+          "type": "rewrite",
+          "prompt": "1. The boy is my cousin. You make fun of him.",
+          "targetStart": "The boy ",
+          "answers": [
+            "whom you make fun of is my cousin.",
+            "of whom you make fun is my cousin."
+          ],
+          "explanation": "Thay thế cho 'him' ➔ whom you make fun of."
+        },
+        {
+          "id": "r2_2",
+          "type": "rewrite",
+          "prompt": "2. The student is from China. He sits next to me.",
+          "targetStart": "The student ",
+          "answers": [
+            "who sits next to me is from China.",
+            "that sits next to me is from China."
+          ],
+          "explanation": "'He' là chủ ngữ chỉ người ➔ who sits next to me."
+        },
+        {
+          "id": "r2_3",
+          "type": "rewrite",
+          "prompt": "3. I thanked the woman. This woman had helped me.",
+          "targetStart": "I thanked the woman ",
+          "answers": [
+            "who had helped me.",
+            "that had helped me."
+          ],
+          "explanation": "'This woman' là chủ ngữ chỉ người ➔ who had helped me."
+        },
+        {
+          "id": "r2_4",
+          "type": "rewrite",
+          "prompt": "4. The professor is excellent. I am taking his course.",
+          "targetStart": "The professor ",
+          "answers": [
+            "whose course I am taking is excellent."
+          ],
+          "explanation": "'his course' chỉ sở hữu ➔ whose course I am taking."
+        },
+        {
+          "id": "r2_5",
+          "type": "rewrite",
+          "prompt": "5. Mr. Smith said he was too busy to speak to me. I had come to see him.",
+          "targetStart": "Mr. Smith, ",
+          "answers": [
+            "whom I had come to see, said he was too busy to speak to me."
+          ],
+          "explanation": "Tên riêng có dấu phẩy, thay thế cho tân ngữ 'him' ➔ whom I had come to see."
+        },
+        {
+          "id": "r2_6",
+          "type": "rewrite",
+          "prompt": "6. I saw a lot of people and horses. They went to market.",
+          "targetStart": "I saw a lot of people and horses ",
+          "answers": [
+            "that went to market."
+          ],
+          "explanation": "Tiền từ gồm cả người và động vật ('people and horses') bắt buộc dùng 'that'."
+        },
+        {
+          "id": "r2_7",
+          "type": "rewrite",
+          "prompt": "7. Tom has three sisters. All of them are married.",
+          "targetStart": "Tom has three sisters, ",
+          "answers": [
+            "all of whom are married."
+          ],
+          "explanation": "Sau từ chỉ số lượng có giới từ 'all of' thay thế cho người ➔ all of whom."
+        },
+        {
+          "id": "r2_8",
+          "type": "rewrite",
+          "prompt": "8. I recently went back to Paris. It is still as beautiful as a pearl.",
+          "targetStart": "I recently went back to Paris, ",
+          "answers": [
+            "which is still as beautiful as a pearl."
+          ],
+          "explanation": "Thay thế cho 'It' (chủ ngữ chỉ thành phố Paris) ➔ which is still as beautiful..."
+        },
+        {
+          "id": "r2_9",
+          "type": "rewrite",
+          "prompt": "9. I recently went back to Paris. I was born in Paris nearly 50 years ago.",
+          "targetStart": "I recently went back to Paris, ",
+          "answers": [
+            "where I was born nearly 50 years ago."
+          ],
+          "explanation": "Thay thế cho cụm trạng từ chỉ nơi chốn 'in Paris' ➔ where I was born..."
+        },
+        {
+          "id": "r2_10",
+          "type": "rewrite",
+          "prompt": "10. Do you know the music? It is being played on the radio.",
+          "targetStart": "Do you know the music ",
+          "answers": [
+            "which is being played on the radio?",
+            "that is being played on the radio?"
+          ],
+          "explanation": "'the music' là danh từ chỉ vật ➔ which / that is being played on the radio."
+        }
+      ]
+    },
+    {
+      "group_id": "rel_task3",
+      "group_title": "TASK 3: NỐI CÂU NÂNG CAO (10 CÂU)",
+      "instruction": "Nối hai câu sau sử dụng đại từ hoặc trạng từ quan hệ:",
+      "questions": [
+        {
+          "id": "r3_1",
+          "type": "rewrite",
+          "prompt": "1. You didn’t tell us the reason. We have to cut down our daily expenses for that reason.",
+          "targetStart": "You didn’t tell us the reason ",
+          "answers": [
+            "why we have to cut down our daily expenses."
+          ],
+          "explanation": "'the reason' chỉ lý do ➔ dùng trạng từ 'why'."
+        },
+        {
+          "id": "r3_2",
+          "type": "rewrite",
+          "prompt": "2. The day was rainy. She left on that day.",
+          "targetStart": "The day ",
+          "answers": [
+            "when she left was rainy.",
+            "on which she left was rainy."
+          ],
+          "explanation": "'The day' chỉ thời gian ➔ when she left (hoặc on which she left)."
+        },
+        {
+          "id": "r3_3",
+          "type": "rewrite",
+          "prompt": "3. I’ve sent him two letters. He has received neither of them.",
+          "targetStart": "I’ve sent him two letters, ",
+          "answers": [
+            "neither of which he has received."
+          ],
+          "explanation": "Sau 'neither of' thay thế cho đồ vật 'letters' ➔ neither of which."
+        },
+        {
+          "id": "r3_4",
+          "type": "rewrite",
+          "prompt": "4. That man is an artist. I don’t remember the man’s name.",
+          "targetStart": "That man, ",
+          "answers": [
+            "whose name I don't remember, is an artist."
+          ],
+          "explanation": "'the man's name' chỉ sở hữu ➔ whose name I don't remember."
+        },
+        {
+          "id": "r3_5",
+          "type": "rewrite",
+          "prompt": "5. One of the elephants had only one tusk. We saw these elephants at the zoo.",
+          "targetStart": "One of the elephants ",
+          "answers": [
+            "which we saw at the zoo had only one tusk.",
+            "that we saw at the zoo had only one tusk."
+          ],
+          "explanation": "Thay thế cho tân ngữ chỉ động vật 'these elephants' ➔ which/that we saw at the zoo."
+        },
+        {
+          "id": "r3_6",
+          "type": "rewrite",
+          "prompt": "6. That car belongs to Dr. Clark. Its engine is very good.",
+          "targetStart": "That car, ",
+          "answers": [
+            "whose engine is very good, belongs to Dr. Clark."
+          ],
+          "explanation": "'Its engine' chỉ sở hữu đồ vật ➔ whose engine is very good."
+        },
+        {
+          "id": "r3_7",
+          "type": "rewrite",
+          "prompt": "7. You sent me a present. Thank you very much for it.",
+          "targetStart": "Thank you very much for the present ",
+          "answers": [
+            "which you sent me.",
+            "that you sent me.",
+            "you sent me."
+          ],
+          "explanation": "Thay thế cho 'the present' chỉ vật ➔ which you sent me."
+        },
+        {
+          "id": "r3_8",
+          "type": "rewrite",
+          "prompt": "8. This is Mrs. Jones. Her son won the championship last year.",
+          "targetStart": "This is Mrs. Jones, ",
+          "answers": [
+            "whose son won the championship last year."
+          ],
+          "explanation": "'Her son' chỉ sở hữu ➔ whose son won the championship last year."
+        },
+        {
+          "id": "r3_9",
+          "type": "rewrite",
+          "prompt": "9. Rod Lee has won an Oscar. I know his sister.",
+          "targetStart": "Rod Lee, ",
+          "answers": [
+            "whose sister I know, has won an Oscar."
+          ],
+          "explanation": "'his sister' chỉ sở hữu ➔ whose sister I know."
+        },
+        {
+          "id": "r3_10",
+          "type": "rewrite",
+          "prompt": "10. Is this the style of hair? Your wife wants to have it.",
+          "targetStart": "Is this the style of hair ",
+          "answers": [
+            "which your wife wants to have?",
+            "that your wife wants to have?"
+          ],
+          "explanation": "'style of hair' chỉ vật ➔ which / that your wife wants to have?"
+        }
+      ]
+    },
+    {
+      "group_id": "rel_task4",
+      "group_title": "TASK 4: NỐI CÂU ĐẶC BIỆT & THAY THẾ CẢ MỆNH ĐỀ (5 CÂU)",
+      "instruction": "Nối hai câu sau sử dụng đại từ hoặc trạng từ quan hệ:",
+      "questions": [
+        {
+          "id": "r4_1",
+          "type": "rewrite",
+          "prompt": "1. A man answered the phone. He said Tom was out.",
+          "targetStart": "The man ",
+          "answers": [
+            "who answered the phone said Tom was out.",
+            "that answered the phone said Tom was out."
+          ],
+          "explanation": "'He' là chủ ngữ chỉ người ➔ who answered the phone."
+        },
+        {
+          "id": "r4_2",
+          "type": "rewrite",
+          "prompt": "2. 7.05 is the time. My plane arrives then.",
+          "targetStart": "7.05 is the time ",
+          "answers": [
+            "when my plane arrives."
+          ],
+          "explanation": "'the time' chỉ thời gian ➔ when my plane arrives."
+        },
+        {
+          "id": "r4_3",
+          "type": "rewrite",
+          "prompt": "3. Max isn’t home yet. That worries me.",
+          "targetStart": "Max isn’t home yet, ",
+          "answers": [
+            "which worries me."
+          ],
+          "explanation": "Dùng 'which' sau dấu phẩy để thay thế cho cả một mệnh đề đứng trước ('Max isn't home yet')."
+        },
+        {
+          "id": "r4_4",
+          "type": "rewrite",
+          "prompt": "4. Do you know the building? The windows of the building are painted green.",
+          "targetStart": "Do you know the building ",
+          "answers": [
+            "whose windows are painted green?",
+            "the windows of which are painted green?"
+          ],
+          "explanation": "'The windows of the building' chỉ sở hữu ➔ whose windows are painted green?"
+        },
+        {
+          "id": "r4_5",
+          "type": "rewrite",
+          "prompt": "5. Last week I went to see the house. I used to live in it.",
+          "targetStart": "Last week I went to see the house ",
+          "answers": [
+            "where I used to live.",
+            "in which I used to live."
+          ],
+          "explanation": "'in it' chỉ nơi chốn ➔ where I used to live (hoặc in which I used to live)."
+        }
+      ]
+    },
+    {
+      "group_id": "rel_task5",
+      "group_title": "TASK 5: SỬ DỤNG TRẠNG TỪ QUAN HỆ (WHERE / WHEN / WHY) (10 CÂU)",
+      "instruction": "Sử dụng trạng từ quan hệ thích hợp để nối câu:",
+      "questions": [
+        {
+          "id": "r5_1",
+          "type": "rewrite",
+          "prompt": "1. This is the house. We often stay in this house in summer.",
+          "targetStart": "This is the house ",
+          "answers": [
+            "where we often stay in summer."
+          ],
+          "explanation": "'in this house' chỉ nơi chốn ➔ where we often stay in summer."
+        },
+        {
+          "id": "r5_2",
+          "type": "rewrite",
+          "prompt": "2. I’ll show you the second-hand bookshop. You can find valuable books in this shop.",
+          "targetStart": "I’ll show you the second-hand bookshop ",
+          "answers": [
+            "where you can find valuable books."
+          ],
+          "explanation": "'in this shop' chỉ nơi chốn ➔ where you can find valuable books."
+        },
+        {
+          "id": "r5_3",
+          "type": "rewrite",
+          "prompt": "3. I have not decided the day. I’ll go to London on that day.",
+          "targetStart": "I have not decided the day ",
+          "answers": [
+            "when I'll go to London."
+          ],
+          "explanation": "'on that day' chỉ thời gian ➔ when I'll go to London."
+        },
+        {
+          "id": "r5_4",
+          "type": "rewrite",
+          "prompt": "4. He was born on the day. His father was away on that day.",
+          "targetStart": "He was born on the day ",
+          "answers": [
+            "when his father was away."
+          ],
+          "explanation": "'on that day' chỉ thời gian ➔ when his father was away."
+        },
+        {
+          "id": "r5_5",
+          "type": "rewrite",
+          "prompt": "5. The book is a telephone directory. We can look up telephone numbers in this book.",
+          "targetStart": "The book ",
+          "answers": [
+            "where we can look up telephone numbers is a telephone directory.",
+            "in which we can look up telephone numbers is a telephone directory."
+          ],
+          "explanation": "'in this book' được xem như vị trí tra cứu ➔ where we can look up telephone numbers."
+        },
+        {
+          "id": "r5_6",
+          "type": "rewrite",
+          "prompt": "6. Mrs. Brown rang Dr. Brown. He was going to carry out an urgent operation at that moment.",
+          "targetStart": "Mrs. Brown rang Dr. Brown ",
+          "answers": [
+            "when he was going to carry out an urgent operation."
+          ],
+          "explanation": "'at that moment' chỉ thời điểm ➔ when he was going to carry out..."
+        },
+        {
+          "id": "r5_7",
+          "type": "rewrite",
+          "prompt": "7. The airport is the most modern one. We’re going to arrive at this airport.",
+          "targetStart": "The airport ",
+          "answers": [
+            "where we're going to arrive is the most modern one."
+          ],
+          "explanation": "'at this airport' chỉ nơi chốn ➔ where we're going to arrive."
+        },
+        {
+          "id": "r5_8",
+          "type": "rewrite",
+          "prompt": "8. She doesn’t want to speak of the cause. She divorced her husband of this cause.",
+          "targetStart": "She doesn’t want to speak of the cause ",
+          "answers": [
+            "why she divorced her husband."
+          ],
+          "explanation": "'the cause' chỉ nguyên nhân lý do ➔ why she divorced her husband."
+        },
+        {
+          "id": "r5_9",
+          "type": "rewrite",
+          "prompt": "9. The days were the saddest ones. I lived far from home on those days.",
+          "targetStart": "The days ",
+          "answers": [
+            "when I lived far from home were the saddest ones."
+          ],
+          "explanation": "'on those days' chỉ thời gian ➔ when I lived far from home."
+        },
+        {
+          "id": "r5_10",
+          "type": "rewrite",
+          "prompt": "10. I never forget the park. We met each other for the first time at this park.",
+          "targetStart": "I never forget the park ",
+          "answers": [
+            "where we met each other for the first time."
+          ],
+          "explanation": "'at this park' chỉ nơi chốn ➔ where we met each other for the first time."
+        }
+      ]
+    },
+    {
+      "group_id": "rel_task6",
+      "group_title": "TASK 6: GIỚI TỪ ĐỨNG TRƯỚC ĐẠI TỪ QUAN HỆ (PREPOSITION + WHOM / WHICH) (10 CÂU)",
+      "instruction": "Đưa giới từ lên trước đại từ quan hệ (whom / which):",
+      "questions": [
+        {
+          "id": "r6_1",
+          "type": "rewrite",
+          "prompt": "1. This is a rare opportunity. You should take advantage of it to get a better job.",
+          "targetStart": "This is a rare opportunity ",
+          "answers": [
+            "of which you should take advantage to get a better job."
+          ],
+          "explanation": "'take advantage of it' ➔ of which you should take advantage..."
+        },
+        {
+          "id": "r6_2",
+          "type": "rewrite",
+          "prompt": "2. The boy is my cousin. You made fun of him.",
+          "targetStart": "The boy ",
+          "answers": [
+            "of whom you made fun is my cousin."
+          ],
+          "explanation": "'make fun of him' ➔ of whom you made fun is my cousin."
+        },
+        {
+          "id": "r6_3",
+          "type": "rewrite",
+          "prompt": "3. This matter is of great importance. You should pay attention to it.",
+          "targetStart": "This matter ",
+          "answers": [
+            "to which you should pay attention is of great importance."
+          ],
+          "explanation": "'pay attention to it' ➔ to which you should pay attention..."
+        },
+        {
+          "id": "r6_4",
+          "type": "rewrite",
+          "prompt": "4. The woman lives next door to me. You gave place to her on the bus.",
+          "targetStart": "The woman ",
+          "answers": [
+            "to whom you gave place on the bus lives next door to me."
+          ],
+          "explanation": "'gave place to her' ➔ to whom you gave place on the bus..."
+        },
+        {
+          "id": "r6_5",
+          "type": "rewrite",
+          "prompt": "5. The examination lasted two days. I was successful in this examination.",
+          "targetStart": "The examination ",
+          "answers": [
+            "in which I was successful lasted two days."
+          ],
+          "explanation": "'successful in this examination' ➔ in which I was successful..."
+        },
+        {
+          "id": "r6_6",
+          "type": "rewrite",
+          "prompt": "6. This is the result of our work. I’m pleased with it.",
+          "targetStart": "This is the result of our work ",
+          "answers": [
+            "with which I'm pleased.",
+            "with which I am pleased."
+          ],
+          "explanation": "'pleased with it' ➔ with which I'm pleased."
+        },
+        {
+          "id": "r6_7",
+          "type": "rewrite",
+          "prompt": "7. There is a No Parking sign. I do not take notice of it.",
+          "targetStart": "There is a No Parking sign ",
+          "answers": [
+            "of which I do not take notice.",
+            "of which I don't take notice."
+          ],
+          "explanation": "'take notice of it' ➔ of which I do not take notice."
+        },
+        {
+          "id": "r6_8",
+          "type": "rewrite",
+          "prompt": "8. Mr. Brown is the man. I am responsible to him for my work.",
+          "targetStart": "Mr. Brown is the man ",
+          "answers": [
+            "to whom I am responsible for my work."
+          ],
+          "explanation": "'responsible to him' ➔ to whom I am responsible for my work."
+        },
+        {
+          "id": "r6_9",
+          "type": "rewrite",
+          "prompt": "9. Do you see my pen? I have just written the lesson with it.",
+          "targetStart": "Do you see my pen ",
+          "answers": [
+            "with which I have just written the lesson?"
+          ],
+          "explanation": "'written with it' ➔ with which I have just written the lesson?"
+        },
+        {
+          "id": "r6_10",
+          "type": "rewrite",
+          "prompt": "10. We are crossing the meadow. We flew kites over it in our childhood.",
+          "targetStart": "We are crossing the meadow ",
+          "answers": [
+            "over which we flew kites in our childhood."
+          ],
+          "explanation": "'flew kites over it' ➔ over which we flew kites in our childhood."
+        }
+      ]
+    }
+  ]
+}
