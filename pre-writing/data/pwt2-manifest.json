@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01-opinion",
+    "title": "[Opinion] Đại học có nên miễn học phí toàn phần cho sinh viên?",
+    "file": "data/t2/01-opinion-education-pwt2.json"
+  },
+  {
+    "id": "02-discussion",
+    "title": "[Discussion] Trí tuệ nhân tạo (AI): Cơ hội đột phá hay mối đe dọa việc làm?",
+    "file": "data/t2/02-discussion-technology-pwt2.json"
+  },
+  {
+    "id": "03-problem-solution",
+    "title": "[Problem & Solution] Vấn nạn ô nhiễm rác thải nhựa đại dương",
+    "file": "data/t2/03-problem-solution-environment-pwt2.json"
+  },
+  {
+    "id": "04-two-part",
+    "title": "[Two-Part Question] Sự suy giảm cân bằng giữa công việc và cuộc sống",
+    "file": "data/t2/04-two-part-work-life-balance-pwt2.json"
+  }
+]
