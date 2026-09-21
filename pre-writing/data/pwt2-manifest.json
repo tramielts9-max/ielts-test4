@@ -1,22 +1,12 @@
 [
-  {
-    "id": "01-opinion",
-    "title": "[Opinion] Đại học có nên miễn học phí toàn phần cho sinh viên?",
-    "file": "data/t2/01-opinion-education-pwt2.json"
-  },
-  {
-    "id": "02-discussion",
-    "title": "[Discussion] Trí tuệ nhân tạo (AI): Cơ hội đột phá hay mối đe dọa việc làm?",
-    "file": "data/t2/02-discussion-technology-pwt2.json"
-  },
-  {
-    "id": "03-problem-solution",
-    "title": "[Problem & Solution] Vấn nạn ô nhiễm rác thải nhựa đại dương",
-    "file": "data/t2/03-problem-solution-environment-pwt2.json"
-  },
-  {
-    "id": "04-two-part",
-    "title": "[Two-Part Question] Sự suy giảm cân bằng giữa công việc và cuộc sống",
-    "file": "data/t2/04-two-part-work-life-balance-pwt2.json"
-  }
+  { "id": "01", "title": "Chủ đề 1: Education (Đại học dạy nghề hay truyền thụ tri thức)", "file": "data/t2/01-education-pwt2.json" },
+  { "id": "02", "title": "Chủ đề 2: Technology & Media (Mạng xã hội: Gần gũi hay cô lập)", "file": "data/t2/02-technology-pwt2.json" },
+  { "id": "03", "title": "Chủ đề 3: Environment & Energy (Trách nhiệm cá nhân vs Chính phủ)", "file": "data/t2/03-environment-pwt2.json" },
+  { "id": "04", "title": "Chủ đề 4: Government & Spending (Ngân sách y tế/giáo dục vs nghệ thuật/thể thao)", "file": "data/t2/04-government-pwt2.json" },
+  { "id": "05", "title": "Chủ đề 5: Work & Career (Làm việc lâu dài vs Nhảy việc thường xuyên)", "file": "data/t2/05-work-career-pwt2.json" },
+  { "id": "06", "title": "Chủ đề 6: Globalization & Culture (Mất văn hóa truyền thống vs Làm phong phú)", "file": "data/t2/06-globalization-pwt2.json" },
+  { "id": "07", "title": "Chủ đề 7: Society & Social Issues (Vấn nạn già hóa dân số & Giải pháp)", "file": "data/t2/07-society-pwt2.json" },
+  { "id": "08", "title": "Chủ đề 8: Crime & Punishment (Phạt tù nghiêm khắc vs Giáo dục dạy nghề)", "file": "data/t2/08-crime-pwt2.json" },
+  { "id": "09", "title": "Chủ đề 9: Health & Lifestyle (Đánh thuế đồ ăn không lành mạnh vs Quyền tự do)", "file": "data/t2/09-health-pwt2.json" },
+  { "id": "10", "title": "Chủ đề 10: Family & Children (Kiểm soát nghiêm khắc vs Trao quyền tự do cho con)", "file": "data/t2/10-family-pwt2.json" }
 ]
