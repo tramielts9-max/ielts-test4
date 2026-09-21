@@ -1,2 +1,19 @@
 .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+/* Vùng dán ảnh Paste Zone */
+.paste-zone {
+  border: 2px dashed #cbd5e1;
+  background-color: #f8fafc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.paste-zone:hover {
+  border-color: #0891b2;
+  background-color: #ecfeff;
+}
+.paste-zone.active-paste {
+  border-color: #0891b2;
+  background-color: #ecfeff;
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.2);
+}
