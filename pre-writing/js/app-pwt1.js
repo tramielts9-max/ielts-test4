@@ -59,12 +59,17 @@ function updateExerciseView() {
   const promptText = `📌 ĐỀ BÀI (ENGLISH PROMPT):\n${currentExercise.prompt}\n\n--- BẢN MẪU TIẾNG VIỆT ĐỐI ỨNG (${targetBand.toUpperCase()}): ---\n\n${currentExercise[targetBand] || currentExercise.band8}`;
   document.getElementById('vietnameseSourceText').innerText = promptText;
 
-  // Tự động gán và tải ảnh biểu đồ
+  // Tự động gán và tải ảnh biểu đồ từ thư mục prewt12images
   const imgElement = document.getElementById('chartImage');
   const fallback = document.getElementById('imageFallback');
   const pathDisplay = document.getElementById('expectedImgName');
 
-  const relativeImagePath = currentExercise.image;
+  // ==============================================================
+  // ĐÂY LÀ CHỖ ĐÃ ĐƯỢC SỬA TỰ ĐỘNG LẤY ẢNH TỪ THƯ MỤC prewt12images:
+  const fileName = currentExercise.image.split('/').pop();
+  const relativeImagePath = `prewt12images/${fileName}`;
+  // ==============================================================
+
   pathDisplay.innerText = relativeImagePath;
 
   imgElement.style.display = 'none';
