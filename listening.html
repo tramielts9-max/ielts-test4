@@ -125,6 +125,7 @@
 
 <script type="module">
   import { stateManager } from './js/state.js';
+import { renderTagsHtml } from './js/taxonomy-registry.js';
 
   let listeningData = [];
   let currentSeries = 'cam';
@@ -181,12 +182,19 @@
           <div class="test-grid">
         `;
         test.parts.forEach(part => {
+          const standardId = `LIS_CAM${item.cam}_T${test.testNum}_P${part.p}`;
+          const tagsHtml = renderTagsHtml(standardId);
           const testUrl = `runner-listening.html?test=${part.file}`;
+
           html += `
             <div class="test-card">
               <div>
                 <span class="badge-lis">🎧 Part ${part.p}</span>
                 <h4 class="card-title">${part.title}</h4>
+                
+                <!-- DÒNG MỚI: HIỆN THẺ ĐỊNH DANH & TAG Ở ĐÂY -->
+                ${tagsHtml}
+
                 <div class="card-desc">${part.desc}</div>
               </div>
               <a href="${testUrl}" class="btn-play">
