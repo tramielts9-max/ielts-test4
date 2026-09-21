@@ -50,7 +50,7 @@
     <div id="lessonList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
   </main>
 
-  <!-- MODAL NỘP BÀI -->
+  <!-- MODAL NỘP BÀI VỚI PASTE ẢNH (CTRL + V) -->
   <div id="submitModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
     <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
       <div class="bg-slate-50 border-b border-slate-200 px-6 py-4 flex items-center justify-between">
@@ -80,21 +80,39 @@
 
         <hr class="border-slate-100 my-2">
 
+        <!-- 1. VÙNG DÁN ẢNH CÂU SAI -->
         <div>
           <label class="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center justify-between">
             <span>1. Ảnh chụp chi tiết các câu sai <i class="fa-solid fa-camera text-slate-400"></i></span>
-            <span class="text-slate-400 font-normal lowercase">(chọn được nhiều ảnh)</span>
+            <span class="text-slate-400 font-normal lowercase">(dán được nhiều ảnh)</span>
           </label>
+
+          <div id="pasteZoneWrong" class="paste-zone p-3 rounded-lg text-center select-none mb-2">
+            <p class="text-xs font-bold text-slate-600 mb-0.5">
+              <i class="fa-regular fa-paste text-amber-600"></i> Nhấp vào đây rồi bấm <kbd class="px-1.5 py-0.5 bg-slate-200 border rounded text-[11px] font-sans">Ctrl + V</kbd> để dán ảnh
+            </p>
+            <p class="text-[11px] text-slate-400">hoặc tải ảnh từ máy tính bên dưới</p>
+          </div>
+
           <input type="file" id="mWrongImgs" multiple accept="image/*" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-50 file:text-amber-800 hover:file:bg-amber-100 cursor-pointer">
           <div id="previewWrong" class="flex flex-wrap gap-2 mt-2"></div>
         </div>
 
+        <!-- 2. VÙNG DÁN ẢNH FULL BÀI LÀM -->
         <div>
           <label class="block text-xs font-bold text-slate-700 uppercase mb-1">
             2. Ảnh chụp FULL màn hình đã làm xong bài <span class="text-rose-500">*</span>
           </label>
+
+          <div id="pasteZoneFull" class="paste-zone active-paste p-3 rounded-lg text-center select-none mb-2">
+            <p class="text-xs font-bold text-slate-600 mb-0.5">
+              <i class="fa-regular fa-paste text-amber-600"></i> Nhấp vào đây rồi bấm <kbd class="px-1.5 py-0.5 bg-slate-200 border rounded text-[11px] font-sans">Ctrl + V</kbd> để dán ảnh
+            </p>
+            <p class="text-[11px] text-slate-400">hoặc tải ảnh từ máy tính bên dưới</p>
+          </div>
+
           <input type="file" id="mFullImg" accept="image/*" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-amber-50 file:text-amber-800 hover:file:bg-amber-100 cursor-pointer">
-          <div id="previewFull" class="mt-2"></div>
+          <div id="previewFull"></div>
         </div>
       </div>
 
