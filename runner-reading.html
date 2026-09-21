@@ -743,8 +743,24 @@
         return;
       }
 
-      document.title = data.title;
+    document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
+
+      // ================= BẮT ĐẦU ĐOẠN CHÈN THÊM =================
+      try {
+        const { renderTagsHtml } = await import('./js/taxonomy-registry.js');
+        const matchCam = fileName.match(/cam(\d+)-test(\d+)-p(\d+)/i);
+        if (matchCam) {
+          const autoId = `READ_CAM${matchCam[1]}_T${matchCam[2]}_P${matchCam[3]}`;
+          const tagDiv = document.createElement('div');
+          tagDiv.innerHTML = renderTagsHtml(autoId);
+          document.getElementById('testTitleHeader').appendChild(tagDiv);
+        }
+      } catch (err) {
+        console.warn("Chưa tải được tag:", err);
+      }
+      // ================= KẾT THÚC ĐOẠN CHÈN THÊM =================
+
       document.getElementById('passageBox').innerHTML = data.passageHtml || "";
 
       // DỰNG GIAO DIỆN CÂU HỎI
