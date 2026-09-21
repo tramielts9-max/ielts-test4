@@ -1,74 +1,75 @@
 import { streamGeminiPWT2 } from './api-pwt2.js';
 
-let manifest = [];
-let currentExerciseData = null;
+let manifestData = [];
+let currentEssay = null;
 
 window.addEventListener('DOMContentLoaded', async () => {
-  await loadManifest();
-  document.getElementById('essaySelect').addEventListener('change', handleEssayChange);
-  document.getElementById('bandTargetSelect').addEventListener('change', renderContent);
+  await initEssayList();
+  document.getElementById('essaySelect').addEventListener('change', onEssaySelected);
+  document.getElementById('bandTargetSelect').addEventListener('change', updateEssayView);
   document.getElementById('studentEssayInput').addEventListener('input', updateWordCount);
-  document.getElementById('btnGrading').addEventListener('click', startEvaluation);
+  document.getElementById('btnGrading').addEventListener('click', runEvaluation);
 });
 
-async function loadManifest() {
+async function initEssayList() {
   try {
     const res = await fetch('data/pwt2-manifest.json');
-    manifest = await res.json();
-    const select = document.getElementById('essaySelect');
-    select.innerHTML = '';
-    manifest.forEach((item, index) => {
+    manifestData = await res.json();
+    const selectBox = document.getElementById('essaySelect');
+    selectBox.innerHTML = '';
+    manifestData.forEach((item, idx) => {
       const opt = document.createElement('option');
-      opt.value = index;
+      opt.value = idx;
       opt.innerText = item.title;
-      select.appendChild(opt);
+      selectBox.appendChild(opt);
     });
-    if (manifest.length > 0) {
-      await loadEssayFile(manifest[0].file);
+    if (manifestData.length > 0) {
+      await loadEssayDetail(manifestData[0].file);
     }
   } catch (err) {
-    console.error("Lỗi manifest Task 2:", err);
+    console.error("Lỗi đọc danh mục Task 2:", err);
   }
 }
 
-async function handleEssayChange(e) {
-  const item = manifest[e.target.value];
+async function onEssaySelected(e) {
+  const item = manifestData[e.target.value];
   if (item) {
-    await loadEssayFile(item.file);
+    await loadEssayDetail(item.file);
   }
 }
 
-async function loadEssayFile(file) {
+async function loadEssayDetail(filePath) {
   try {
-    const res = await fetch(file);
-    currentExerciseData = await res.json();
-    renderContent();
+    const res = await fetch(filePath);
+    currentEssay = await res.json();
+    updateEssayView();
   } catch (err) {
-    console.error("Lỗi nạp bài luận:", err);
+    console.error("Lỗi tải chi tiết bài Task 2:", err);
   }
 }
 
-function renderContent() {
-  if (!currentExerciseData) return;
-  const band = document.getElementById('bandTargetSelect').value;
-  document.getElementById('essayTypeBadge').innerText = currentExerciseData.type || "Task 2";
+function updateEssayView() {
+  if (!currentEssay) return;
+  const targetBand = document.getElementById('bandTargetSelect').value;
 
-  const text = `📌 TOPIC:\n${currentExerciseData.prompt}\n\n--- DÀN Ý & BẢN DỊCH GỢI Ý (${band.toUpperCase()}): ---\n\n${currentExerciseData[band] || currentExerciseData.band8}`;
-  document.getElementById('vietnameseSourceText').innerText = text;
+  document.getElementById('essayTypeBadge').innerText = currentEssay.type || 'Task 2 Essay';
+
+  const promptText = `📌 TOPIC:\n${currentEssay.prompt}\n\n--- BẢN MẪU DỊCH Ý TƯỞNG (${targetBand.toUpperCase()}): ---\n\n${currentEssay[targetBand] || currentEssay.band8}`;
+  document.getElementById('vietnameseSourceText').innerText = promptText;
 }
 
 function updateWordCount() {
   const text = document.getElementById('studentEssayInput').value.trim();
-  const count = text ? text.split(/\s+/).length : 0;
-  document.getElementById('wordCountDisplay').innerText = `${count} từ`;
+  const words = text ? text.split(/\s+/).length : 0;
+  document.getElementById('wordCountDisplay').innerText = `${words} từ`;
 }
 
-async function startEvaluation() {
+async function runEvaluation() {
   const studentText = document.getElementById('studentEssayInput').value.trim();
   const sourceVN = document.getElementById('vietnameseSourceText').innerText.trim();
 
   if (!studentText) {
-    alert("⚠️ Em hãy viết hoặc dịch bài luận tiếng Anh của mình trước khi chấm nhé!");
+    alert("⚠️ Em hãy viết câu hoặc bài luận trước khi bấm chấm nhé!");
     return;
   }
 
@@ -82,37 +83,40 @@ async function startEvaluation() {
   resultContent.innerHTML = '';
   statusBar.innerHTML = "⏳ Thầy đang phân tích lập luận & nâng cấp từ vựng C1-C2 cho bài luận Task 2 của em...";
 
-  const systemPrompt = `
+  const systemInstruction = `
 Bạn là Chuyên gia IELTS Writing Task 2 khắt khe nhưng tận tình.
-QUY TẮC XƯNG HÔ: Bắt buộc xưng "Anh" và gọi học sinh là "Em".
-QUY TẮC FORMAT: Dùng Markdown chuẩn, dùng inline tags: <del class="err">, <ins class="fix">, <mark class="vocab">, <span class="teacher-note">.
+QUY TẮC BẮT BUỘC: Xưng "Anh" và gọi học sinh là "Em".
+QUY TẮC ĐỊNH DẠNG: Dùng cú pháp Markdown chuẩn (#, ##, ###, ####). Dùng thẻ inline:
+<del class="err">từ sai/gượng</del>
+<ins class="fix">từ sửa chuẩn</ins>
+<mark class="vocab">Collocation C1-C2 Task 2</mark>
+<span class="teacher-note">💬 (lời dặn của Anh)</span>
 
-CẤU TRÚC PHẢN HỒI:
+XUẤT THEO CẤU TRÚC:
 # PHẦN 1: SỬA TỪNG CÂU THEO NGUYÊN LÝ 2 TẦNG (TASK 2 ESSAY)
 ---
 ### 📌 Câu [Số]: "[Câu học sinh]"
 *Đối chiếu ý tưởng: "[Ý tưởng tiếng Việt]"*
 #### 🛠️ TẦNG 1: SỬA LỖI NGỮ PHÁP, VĂN PHONG VÀ CHINGLISH (Band 6.5 - 7.0)
-- **Anh sửa trực tiếp:** [Câu sửa có <del class="err">, <ins class="fix">, <span class="teacher-note">]
-- **🔄 Giải thích lỗi sai:** [Nguyên nhân dịch word-by-word, collocation gượng, sai mệnh đề quan hệ...]
+- **Anh sửa trực tiếp:** [Câu sửa]
+- **🔄 Giải thích lỗi sai:** [Word-by-word, collocation chưa tự nhiên, sai mệnh đề quan hệ...]
 - **👉 Bản sạch lỗi:** "[Câu chuẩn xác]"
 
 #### ✨ TẦNG 2: NÂNG TẦM ACADEMIC BAND 8.0+
-- **Biến hóa với lập luận đanh thép & Collocations C1-C2:** [Câu Band 8.0+ có <mark class="vocab">]
-- **🚀 Từ vựng & Idiomatic Structures ăn điểm:**
-  * [Cụm tầng 1] ➔ <mark class="vocab">[Cách dùng từ bản xứ đỉnh cao]</mark>
-- **👉 Bản nâng cấp:** "[Câu hoàn chỉnh Band 8.5]"
+- **Biến hóa với lập luận đanh thép & Collocations C1-C2:** [Câu Band 8.0+]
+- **🚀 Từ vựng & Cấu trúc ăn điểm:** [Cụm tầng 1 ➔ Cụm Band 8]
+- **👉 Bản nâng cấp:** "[Câu đỉnh cao]"
 ---
 
 # PHẦN 2: BẢNG ĐÁNH GIÁ 4 TIÊU CHÍ TASK 2
-| Task Response (Trả lời đề & Lập luận) | Coherence & Cohesion (Mạch lạc & Liên kết) | Lexical Resource (Từ vựng học thuật) | Grammatical Range & Accuracy (Ngữ pháp) |
+| Task Response | Coherence & Cohesion | Lexical Resource | Grammatical Range & Accuracy |
 |---|---|---|---|
 | Band [X] | Band [X] | Band [X] | Band [X] |
 
 > ### 🎯 OVERALL BAND DỰ KIẾN: [X]/9.0
 
-# PHẦN 3: NHẬN XÉT CHIẾN LƯỢC & TƯ DUY PHẢN BIỆN (CRITICAL THINKING)
-[Chỉ ra cách em phát triển ý tưởng: dẫn chứng (examples), phân tích nguyên nhân - kết quả (cause-effect)]
+# PHẦN 3: NHẬN XÉT TƯ DUY PHẢN BIỆN (CRITICAL THINKING)
+[Chỉ rõ cách triển khai luận điểm, dẫn chứng, phân tích nguyên nhân - kết quả]
 
 # PHẦN 4: BÀI LUẬN HOÀN CHỈNH SẠCH LỖI (BAND 7.0)
 > [Tổng hợp các câu sửa tầng 1]
@@ -121,30 +125,20 @@ CẤU TRÚC PHẢN HỒI:
 > [Tổng hợp các câu nâng cấp tầng 2]
 `;
 
-  const userPayload = `
-Đề bài: ${currentExerciseData.prompt}
-Dạng bài: ${currentExerciseData.type}
-Bản tiếng Việt / Dàn ý:
-${sourceVN}
+  const payload = [
+    { text: systemInstruction + `\n\nĐề bài: ${currentEssay.prompt}\nThể loại: ${currentEssay.type}\nDàn ý tiếng Việt:\n${sourceVN}\n\nBài học sinh:\n${studentText}` }
+  ];
 
-Bản dịch / Bài viết của học sinh:
-${studentText}
-`;
-
-  let fullResponse = "";
+  let fullText = "";
   try {
-    const usedModel = await streamGeminiPWT2([
-      { text: systemPrompt + "\n\n" + userPayload }
-    ], (chunk) => {
-      fullResponse += chunk;
-      resultContent.innerHTML = marked.parse(fullResponse);
+    const usedModel = await streamGeminiPWT2(payload, (chunk) => {
+      fullText += chunk;
+      resultContent.innerHTML = marked.parse(fullText);
     });
-
-    statusBar.innerHTML = `✅ Thầy đã chấm xong bằng model [${usedModel}]. Em hãy nghiền ngẫm các Collocations Tầng 2 nhé!`;
+    statusBar.innerHTML = `✅ Thầy đã chấm xong bằng model [${usedModel}]. Em nghiền ngẫm các Collocations Tầng 2 nhé!`;
     btn.disabled = false;
-    btn.innerHTML = "<span>⚡ Chấm lại / Đề khác</span>";
-  } catch (err) {
-    statusBar.innerHTML = `❌ Lỗi kết nối: ${err.message}. Em bấm thử lại nhé!`;
+  } catch (e) {
+    statusBar.innerHTML = `❌ Lỗi: ${e.message}. Em bấm thử lại nhé!`;
     btn.disabled = false;
   }
 }
