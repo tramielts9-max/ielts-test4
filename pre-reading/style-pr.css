@@ -1,2 +1,19 @@
 .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
 .custom-scrollbar::-webkit-scrollbar-thumb { background: #fed7aa; border-radius: 4px; }
+
+/* Vùng dán ảnh Paste Zone tông màu cam */
+.paste-zone {
+  border: 2px dashed #fed7aa;
+  background-color: #fffbeb;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.paste-zone:hover {
+  border-color: #d97706;
+  background-color: #fef3c7;
+}
+.paste-zone.active-paste {
+  border-color: #d97706;
+  background-color: #fef3c7;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+}
