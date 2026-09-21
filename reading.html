@@ -51,18 +51,18 @@
     }
     .test-card {
       background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 16px;
-      display: flex; flex-direction: column; justify-content: space-between; min-height: 150px;
+      display: flex; flex-direction: column; justify-content: space-between; min-height: 160px;
       transition: transform 0.15s, box-shadow 0.15s;
     }
     .test-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
     .badge-reading {
       display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 12px;
-      font-size: 12px; font-weight: 700; background: #fee2e2; color: #8B1518; margin-bottom: 8px; width: fit-content;
+      font-size: 12px; font-weight: 700; background: #fee2e2; color: #8B1518; margin-bottom: 6px; width: fit-content;
     }
     .badge-reading.badge-vol {
       background: #e0e7ff; color: #4338ca;
     }
-    .card-title { color: #8B1518; font-size: 15px; font-weight: 800; margin: 0 0 6px 0; line-height: 1.4; }
+    .card-title { color: #8B1518; font-size: 15px; font-weight: 800; margin: 0 0 4px 0; line-height: 1.4; }
     .card-title.vol-title { color: #4338ca; }
     .card-desc { font-size: 13px; color: #64748b; margin: 0 0 14px 0; line-height: 1.4; }
     .btn-play {
@@ -78,7 +78,6 @@
 <body>
 
 <div style="max-width: 1200px; margin: auto; padding: 15px;">
-  <!-- HEADER -->
   <div class="reading-hero">
     <h1 style="margin: 0 0 6px 0; font-size: 24px;">📖 PHÒNG LUYỆN THI IELTS READING</h1>
     <p style="margin: 0; opacity: 0.9; font-size: 14px;">Trọn bộ Cambridge 17-21 & IELTS Recent Actual Tests (Vol 8 đến Vol 1) • Chấm điểm tức thì</p>
@@ -91,9 +90,7 @@
     <span id="userStatusTag" style="font-size: 13px; color: var(--text-muted); font-weight: 600;"></span>
   </div>
 
-  <!-- BỘ 2 THANH TABS RIÊNG BIỆT: CAMBRIDGE & VOL -->
   <div class="series-tabs-container">
-    <!-- THANH 1: CAMBRIDGE -->
     <div class="tabs-bar">
       <span class="tab-label" style="color: #8B1518;">📚 Cambridge IELTS:</span>
       <button type="button" class="tab-btn active-cam" data-series="cam" data-val="21" onclick="switchSeries('cam', 21)">Cambridge 21</button>
@@ -103,7 +100,6 @@
       <button type="button" class="tab-btn" data-series="cam" data-val="17" onclick="switchSeries('cam', 17)">Cambridge 17</button>
     </div>
 
-    <!-- THANH 2: RECENT ACTUAL TESTS (VOL 8 -> VOL 1) -->
     <div class="tabs-bar">
       <span class="tab-label" style="color: #4338ca;">⚡ Đề Vol (1-8):</span>
       <button type="button" class="tab-btn" data-series="vol" data-val="8" onclick="switchSeries('vol', 8)">Vol 8</button>
@@ -117,15 +113,13 @@
     </div>
   </div>
 
-  <!-- CONTAINER DANH SÁCH BÀI THI -->
   <div id="readingCatalogContainer"></div>
 </div>
 
 <script type="module">
   import { stateManager } from './js/state.js';
-import { renderTagsHtml } from './js/taxonomy-registry.js';
+  import { renderTagsHtml } from './js/taxonomy-registry.js';
 
-  // DỮ LIỆU CAMBRIDGE
   const CAM_DATA = [
     {
       cam: 21,
@@ -177,16 +171,17 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
   let currentSeries = 'cam';
   let currentVal = 21;
 
-  const user = stateManager.getUser();
-  if (user && user.email) {
-    document.getElementById('userStatusTag').innerText = `👤 Học viên: ${user.name || user.email}`;
-  }
+  try {
+    const user = stateManager.getUser();
+    if (user && user.email) {
+      document.getElementById('userStatusTag').innerText = `👤 Học viên: ${user.name || user.email}`;
+    }
+  } catch(e) {}
 
   window.switchSeries = (series, val) => {
     currentSeries = series;
     currentVal = val;
 
-    // Cập nhật trạng thái nút bấm
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.classList.remove('active-cam', 'active-vol');
       if (btn.dataset.series === series && parseInt(btn.dataset.val) === val) {
@@ -201,7 +196,6 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
     const container = document.getElementById('readingCatalogContainer');
     let html = '';
 
-    // NẾU CHỌN CAMBRIDGE
     if (currentSeries === 'cam') {
       const camItem = CAM_DATA.find(item => item.cam === currentVal);
       if (!camItem) return;
@@ -214,7 +208,6 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
           <div class="test-grid">
         `;
         test.passages.forEach(psg => {
-          // Mã định danh chuẩn của bài
           const standardId = `READ_CAM${camItem.cam}_T${test.testNum}_P${psg.p}`;
           const tagsHtml = renderTagsHtml(standardId);
           const testUrl = `runner-reading.html?test=data/cam${camItem.cam}-test${test.testNum}/cam${camItem.cam}-test${test.testNum}-p${psg.p}.json`;
@@ -224,10 +217,7 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
               <div>
                 <span class="badge-reading">📖 Passage ${psg.p}</span>
                 <h4 class="card-title">${psg.title}</h4>
-                
-                <!-- DÒNG MỚI: HIỆN THẺ ĐỊNH DANH & TAG Ở ĐÂY -->
                 ${tagsHtml}
-
                 <div class="card-desc">${psg.desc}</div>
               </div>
               <a href="${testUrl}" class="btn-play">
@@ -238,9 +228,7 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
         });
         html += `</div>`;
       });
-    } 
-    // NẾU CHỌN BỘ ĐỀ VOL (1 ĐẾN 8 - MỖI VOL CÓ 10 TEST)
-    else if (currentSeries === 'vol') {
+    } else if (currentSeries === 'vol') {
       const volNum = currentVal;
       for (let t = 1; t <= 10; t++) {
         html += `
@@ -250,12 +238,15 @@ import { renderTagsHtml } from './js/taxonomy-registry.js';
           <div class="test-grid">
         `;
         for (let p = 1; p <= 3; p++) {
+          const standardId = `READ_VOL${volNum}_T${t}_P${p}`;
+          const tagsHtml = renderTagsHtml(standardId);
           const testUrl = `runner-reading.html?test=vol${volNum}-test${t}-p${p}`;
           html += `
             <div class="test-card">
               <div>
                 <span class="badge-reading badge-vol">📄 Passage ${p}</span>
                 <h4 class="card-title vol-title">Vol ${volNum} Test ${t} - Passage ${p}</h4>
+                ${tagsHtml}
                 <div class="card-desc">IELTS Reading Practice Passage ${p}</div>
               </div>
               <a href="${testUrl}" class="btn-play btn-vol">
