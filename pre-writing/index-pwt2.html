@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Writing Task 2 - AI Essay Coach & Sửa bài 2 tầng</title>
+  <link rel="stylesheet" href="css/style-pwt2.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <a href="../index.html" class="btn-back">⬅️ Trang chủ</a>
+    <h1>✍️ IELTS Pre-Writing Task 2 Coach</h1>
+    <p>Rèn luyện tư duy viết luận • Dịch ý tưởng song ngữ • AI Nâng cấp Collocation C1-C2</p>
+  </header>
+
+  <div class="control-panel">
+    <div class="control-group" style="flex: 2;">
+      <label for="essaySelect">📁 Chọn chủ đề bài luận (Opinion, Discussion, Problem-Solution):</label>
+      <select id="essaySelect"></select>
+    </div>
+    <div class="control-group" style="flex: 1;">
+      <label for="bandTargetSelect">🎯 Mục tiêu dàn ý đối chiếu:</label>
+      <select id="bandTargetSelect">
+        <option value="band8">Dàn ý & Bài mẫu Band 8.0 (Lập luận sắc bén)</option>
+        <option value="band7">Dàn ý & Bài mẫu Band 7.0 (Rõ ràng, chặt chẽ)</option>
+        <option value="band6">Dàn ý & Bài mẫu Band 6.0 (Cơ bản)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="workspace">
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">📖 Đề bài & Dàn ý ý tưởng tiếng Việt</span>
+        <span id="essayTypeBadge" style="font-size: 0.8rem; background: #ffe4e6; color: #9f1239; padding: 2px 8px; border-radius: 12px; font-weight: 600;">Opinion Essay</span>
+      </div>
+      <div id="vietnameseSourceText" class="vietnamese-box">Đang tải đề bài...</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">🇬🇧 Bài viết / Đoạn văn tiếng Anh của em</span>
+        <span id="wordCountDisplay" style="font-size: 0.85rem; color: var(--text-muted);">0 từ</span>
+      </div>
+      <textarea id="studentEssayInput" placeholder="Viết câu mở bài, từng luận điểm Body hoặc toàn bộ bài viết bằng tiếng Anh vào đây..."></textarea>
+      
+      <div class="action-bar">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">💡 Tập trung liên kết logic giữa Topic Sentence và ví dụ dẫn chứng.</span>
+        <button id="btnGrading" class="btn-submit">⚡ Chấm & Sửa bài 2 tầng</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-box">
+    <div id="status-bar">⏳ Sẵn sàng hỗ trợ học sinh...</div>
+    <div id="result-content"></div>
+  </div>
+</div>
+
+<script type="module" src="js/app-pwt2.js"></script>
+</body>
+</html>
