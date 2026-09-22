@@ -120,26 +120,34 @@ select {
   font-size: 1rem;
 }
 
+/* ============ BẢN MỚI: ẢNH TRÀN KHUNG, NÉT VÀ CHUẨN TỶ LỆ ============ */
 .image-preview-container {
-  background: #f8fafc;
-  border: 1px dashed var(--border);
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 8px;
-  text-align: center;
-  margin-bottom: 12px;
-  min-height: 220px;
+  padding: 6px;
+  margin-bottom: 14px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
 .image-preview-container img {
-  max-width: 100%;
-  max-height: 280px;
+  width: 100%;             /* Tràn đầy 100% bề ngang cột bên trái */
+  height: auto;            /* Tự động tính chiều cao theo đúng tỷ lệ ảnh */
+  max-height: 550px;       /* Cho phép bung cao đến 550px để đọc rõ từng số liệu, trục tọa độ */
+  object-fit: contain;     /* Giữ nguyên vẹn hình không bị méo */
+  display: block;
   border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   cursor: zoom-in;
   background: white;
+  transition: transform 0.2s ease;
+}
+
+.image-preview-container img:hover {
+  filter: brightness(0.98);
 }
 
 .vietnamese-box {
