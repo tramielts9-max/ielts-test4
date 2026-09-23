@@ -3,18 +3,42 @@
     "id": "course_ielts_300",
     "title": "300 TỪ HỌC THUẬT IELTS CỐT LÕI",
     "totalWords": 300,
-    "dataFile": "words-v.json",
     "lessons": [
-      {"unit": 1, "title": "Positive Attitude & Impact", "subTitle": "1. Thái độ & Tác động tích cực", "icon": "🌱", "count": 30},
-      {"unit": 2, "title": "Negative Attitude & Impact", "subTitle": "2. Thái độ & Tác động tiêu cực", "icon": "⚠️", "count": 30},
-      {"unit": 3, "title": "Negative Actions & Harm", "subTitle": "3. Tác động & Hành động tiêu cực", "icon": "🌪️", "count": 30},
-      {"unit": 4, "title": "Research & Evidence", "subTitle": "4. Chức năng nghiên cứu & Bằng chứng", "icon": "🔬", "count": 30},
-      {"unit": 5, "title": "Transformation & Adaptation", "subTitle": "5. Biến đổi, Tác động & Điều chỉnh", "icon": "🔄", "count": 30},
-      {"unit": 6, "title": "Conservation & Solutions", "subTitle": "6. Bảo vệ, Bảo tồn & Giải quyết", "icon": "🛡️", "count": 30},
-      {"unit": 7, "title": "Significance & Speed", "subTitle": "7. Tính chất mức độ & Tốc độ", "icon": "⚡", "count": 30},
-      {"unit": 8, "title": "Nature & Relationships", "subTitle": "8. Bản chất, Mối quan hệ & Cấu trúc", "icon": "🧩", "count": 30},
-      {"unit": 9, "title": "Shift & Demographics", "subTitle": "9. Đối chiếu, Dịch chuyển & Dân số", "icon": "📊", "count": 30},
-      {"unit": 10, "title": "Society & Environment", "subTitle": "10. Xã hội, Thương mại & Môi trường", "icon": "🌍", "count": 30}
+      {"unit": 1, "title": "Positive Attitude & Impact", "subTitle": "Thái độ & Tác động tích cực", "icon": "🌱", "count": 30, "file": "ielts300_unit01.json"},
+      {"unit": 2, "title": "Negative Attitude & Impact", "subTitle": "Thái độ & Tác động tiêu cực", "icon": "⚠️", "count": 30, "file": "ielts300_unit02.json"},
+      {"unit": 3, "title": "Negative Actions & Harm", "subTitle": "Tác động & Hành động tiêu cực", "icon": "🌪️", "count": 30, "file": "ielts300_unit03.json"},
+      {"unit": 4, "title": "Research & Evidence", "subTitle": "Chức năng nghiên cứu & Bằng chứng", "icon": "🔬", "count": 30, "file": "ielts300_unit04.json"},
+      {"unit": 5, "title": "Transformation & Adaptation", "subTitle": "Biến đổi, Tác động & Điều chỉnh", "icon": "🔄", "count": 30, "file": "ielts300_unit05.json"},
+      {"unit": 6, "title": "Conservation & Solutions", "subTitle": "Bảo vệ, Bảo tồn & Giải quyết", "icon": "🛡️", "count": 30, "file": "ielts300_unit06.json"},
+      {"unit": 7, "title": "Significance & Speed", "subTitle": "Tính chất mức độ & Tốc độ", "icon": "⚡", "count": 30, "file": "ielts300_unit07.json"},
+      {"unit": 8, "title": "Nature & Relationships", "subTitle": "Bản chất, Mối quan hệ & Cấu trúc", "icon": "🧩", "count": 30, "file": "ielts300_unit08.json"},
+      {"unit": 9, "title": "Shift & Demographics", "subTitle": "Đối chiếu, Dịch chuyển & Dân số", "icon": "📊", "count": 30, "file": "ielts300_unit09.json"},
+      {"unit": 10, "title": "Society & Environment", "subTitle": "Xã hội, Thương mại & Môi trường", "icon": "🌍", "count": 30, "file": "ielts300_unit10.json"}
+    ]
+  },
+  {
+    "id": "course_ielts_540",
+    "title": "540 TỪ VỰNG IELTS THEO CHỦ ĐỀ CHUYÊN SÂU",
+    "totalWords": 540,
+    "lessons": [
+      {"unit": 1, "title": "Artifacts & Excavation", "subTitle": "Chủ đề 1.1: Hiện vật, Khai quật & Di tích", "icon": "🏺", "count": 30, "file": "ielts540_unit01.json"},
+      {"unit": 2, "title": "Settlement & Civilizations", "subTitle": "Chủ đề 1.2: Định cư, Bộ tộc & Nền văn minh", "icon": "🏛️", "count": 30, "file": "ielts540_unit02.json"},
+      {"unit": 3, "title": "Species & Habitats", "subTitle": "Chủ đề 2.1: Chủng loại & Môi trường sống", "icon": "🌿", "count": 30, "file": "ielts540_unit03.json"},
+      {"unit": 4, "title": "Breeding & Behaviors", "subTitle": "Chủ đề 2.2: Sinh sản & Tập tính động thực vật", "icon": "🦁", "count": 30, "file": "ielts540_unit04.json"},
+      {"unit": 5, "title": "Climate & Geography", "subTitle": "Chủ đề 3.1: Khí hậu, Địa hình & Thiên tai", "icon": "🌋", "count": 30, "file": "ielts540_unit05.json"},
+      {"unit": 6, "title": "Pollution & Energy", "subTitle": "Chủ đề 3.2: Ô nhiễm, Năng lượng & Bảo tồn", "icon": "♻️", "count": 30, "file": "ielts540_unit06.json"},
+      {"unit": 7, "title": "Market & Commerce", "subTitle": "Chủ đề 4.1: Thị trường & Thương mại", "icon": "📈", "count": 30, "file": "ielts540_unit07.json"},
+      {"unit": 8, "title": "Management & Human Resources", "subTitle": "Chủ đề 4.2: Quản trị & Nhân sự", "icon": "👔", "count": 30, "file": "ielts540_unit08.json"},
+      {"unit": 9, "title": "Cognition & Mind", "subTitle": "Chủ đề 5.1: Nhận thức & Trí não", "icon": "🧠", "count": 30, "file": "ielts540_unit09.json"},
+      {"unit": 10, "title": "Thinking & Evaluation", "subTitle": "Chủ đề 5.2: Tư duy & Đánh giá", "icon": "💡", "count": 30, "file": "ielts540_unit10.json"},
+      {"unit": 11, "title": "Education & Schooling", "subTitle": "Chủ đề 6.1: Giáo dục & Trường học", "icon": "🎓", "count": 30, "file": "ielts540_unit11.json"},
+      {"unit": 12, "title": "Language & Expression", "subTitle": "Chủ đề 6.2: Ngôn ngữ & Diễn đạt", "icon": "🗣️", "count": 30, "file": "ielts540_unit12.json"},
+      {"unit": 13, "title": "Digital Tech & Automation", "subTitle": "Chủ đề 7.1: Công nghệ số & Kỹ thuật", "icon": "💻", "count": 30, "file": "ielts540_unit13.json"},
+      {"unit": 14, "title": "Astronomy & Cosmos", "subTitle": "Chủ đề 7.2: Thiên văn & Vũ trụ", "icon": "🔭", "count": 30, "file": "ielts540_unit14.json"},
+      {"unit": 15, "title": "Pathology & Symptoms", "subTitle": "Chủ đề 8.1: Bệnh lý & Triệu chứng", "icon": "🩺", "count": 30, "file": "ielts540_unit15.json"},
+      {"unit": 16, "title": "Medical Treatment & Clinic", "subTitle": "Chủ đề 8.2: Điều trị & Y tế cộng đồng", "icon": "🏥", "count": 30, "file": "ielts540_unit16.json"},
+      {"unit": 17, "title": "Urbanization & Planning", "subTitle": "Chủ đề 9.1: Đô thị hóa & Quy hoạch", "icon": "🏙️", "count": 30, "file": "ielts540_unit17.json"},
+      {"unit": 18, "title": "Transit & Construction", "subTitle": "Chủ đề 9.2: Giao thông & Xây dựng", "icon": "🏗️", "count": 30, "file": "ielts540_unit18.json"}
     ]
   }
 ]
