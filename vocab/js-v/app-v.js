@@ -6,26 +6,26 @@ import { UIController } from './ui-v.js';
 
 class App {
   constructor() {
-    this.words = [];
     this.courses = [];
     this.currentCourse = null;
-    this.activeTab = 'ontap'; // 'ontap', 'roadmap', 'sotay', 'rank'
+    this.currentCourseId = localStorage.getItem('sv_active_course_id') || 'course_ielts_300';
+    this.activeTab = 'ontap';
     this.user = StorageManager.getUser();
-    this.progress = StorageManager.getWordProgress();
+    this.progress = StorageManager.getWordProgress(this.user.email);
     this.leaderboard = StorageManager.getLeaderboard();
+    this.currentWordsPool = [];
   }
 
   async init() {
     try {
-      const [resWords, resCourses] = await Promise.all([
-        fetch('data-v/words-v.json'),
-        fetch('data-v/courses-v.json')
-      ]);
-      this.words = await resWords.json();
+      const resCourses = await fetch('data-v/courses-v.json');
       this.courses = await resCourses.json();
-      this.currentCourse = this.courses[0];
+      this.currentCourse = this.courses.find(c => c.id === this.currentCourseId) || this.courses[0];
+      
+      // Mặc định nạp toàn bộ từ của khóa học hiện tại để tính toán tháp trí nhớ
+      await this.loadAllWordsForCurrentCourse();
     } catch (e) {
-      alert("Không thể tải dữ liệu khóa học!");
+      alert("Không thể tải danh sách khóa học!");
       return;
     }
 
@@ -39,13 +39,26 @@ class App {
     this.renderWeeklyStreak();
     this.refreshDashboard();
 
-    document.getElementById('btnStartReview').onclick = () => this.startReviewSession(this.words);
+    document.getElementById('btnStartReview').onclick = () => this.startReviewSession(this.currentWordsPool);
 
     setInterval(() => {
       this.leaderboard = BotsSimulation.simulateBotProgress(this.leaderboard, this.user.xp);
       StorageManager.saveLeaderboard(this.leaderboard);
       UIController.renderLeaderboard(this.leaderboard, 'me');
     }, 15000);
+  }
+
+  async loadAllWordsForCurrentCourse() {
+    const promises = this.currentCourse.lessons.map(async (lesson) => {
+      try {
+        const res = await fetch(`data-v/${lesson.file}`);
+        return await res.json();
+      } catch (err) {
+        return [];
+      }
+    });
+    const results = await Promise.all(promises);
+    this.currentWordsPool = results.flat();
   }
 
   initNavigationTabs() {
@@ -73,7 +86,7 @@ class App {
     container.innerHTML = this.currentCourse.lessons.map((lesson, idx) => {
       const isStart = idx === 0;
       return `
-        <div class="lesson-card ${isStart ? 'active-start' : ''}" onclick="window.startLesson(${lesson.unit})">
+        <div class="lesson-card ${isStart ? 'active-start' : ''}" onclick="window.startUnitLesson('${lesson.file}')">
           ${isStart ? '<div class="badge-start-here">START HERE</div>' : ''}
           <div class="lesson-avatar">${lesson.icon}</div>
           <div class="lesson-info">
@@ -85,22 +98,26 @@ class App {
       `;
     }).join('');
 
-    window.startLesson = (unitNum) => {
-      const unitWords = this.words.filter(w => w.unit === unitNum);
-      this.startReviewSession(unitWords);
+    window.startUnitLesson = async (fileName) => {
+      try {
+        const res = await fetch(`data-v/${fileName}`);
+        const unitWords = await res.json();
+        this.startReviewSession(unitWords);
+      } catch (e) {
+        alert("Không thể tải bài học: " + fileName);
+      }
     };
   }
 
   renderSotay() {
-    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
-      const wordsInTier = this.words.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
+    UIController.renderMemoryTower(this.currentWordsPool, this.progress, (tierLevel) => {
+      const wordsInTier = this.currentWordsPool.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
       UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
     });
   }
 
   renderWeeklyStreak() {
-    const checkedDays = StorageManager.getWeekCheckin();
-    // 1: T2, 2: T3, 3: T4, 4: T5, 5: T6, 6: T7, 0: CN
+    const checkedDays = StorageManager.getWeekCheckin(this.user.email);
     const daysMap = [
       { day: 1, label: "T2" }, { day: 2, label: "T3" }, { day: 3, label: "T4" },
       { day: 4, label: "T5" }, { day: 5, label: "T6" }, { day: 6, label: "T7" }, { day: 0, label: "CN" }
@@ -128,13 +145,14 @@ class App {
   }
 
   refreshDashboard() {
-    UIController.renderMemoryTower(this.words, this.progress, (tierLevel) => {
-      const wordsInTier = this.words.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
+    this.progress = StorageManager.getWordProgress(this.user.email);
+    UIController.renderMemoryTower(this.currentWordsPool, this.progress, (tierLevel) => {
+      const wordsInTier = this.currentWordsPool.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
       UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
     });
 
-    const queueData = SRSEngine.getReviewQueue(this.words, this.progress);
-    const nextTime = SRSEngine.getNextReviewCountdown(this.words, this.progress);
+    const queueData = SRSEngine.getReviewQueue(this.currentWordsPool, this.progress);
+    const nextTime = SRSEngine.getNextReviewCountdown(this.currentWordsPool, this.progress);
     UIController.startGoldenTimer(nextTime, queueData.isGoldenTime);
   }
 
@@ -153,23 +171,24 @@ class App {
     sessionResults.forEach(res => {
       if (res.isCorrect) correctCount++;
       const currentProg = this.progress[res.wordId];
-      this.progress[res.wordId] = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
+      const nextLvl = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
+      
+      // Ghi log chi tiết ngày, giờ, số lần bấm theo từng email
+      this.progress = StorageManager.recordWordReview(this.user.email, res.wordId, res.isCorrect, nextLvl);
     });
-
-    StorageManager.saveWordProgress(this.progress);
 
     const earnedXP = correctCount * (isGoldenTime ? 15 : 10);
     this.user.xp += earnedXP;
     StorageManager.saveUser(this.user);
-    StorageManager.recordTodayCheckin();
+    StorageManager.recordTodayCheckin(this.user.email);
     this.renderWeeklyStreak();
 
-    const sessionCount = StorageManager.incrementSessionCount();
+    const sessionCount = StorageManager.incrementSessionCount(this.user.email);
     const mm = String(Math.floor(totalSecs / 60)).padStart(2, '0');
     const ss = String(totalSecs % 60).padStart(2, '0');
     const speedStr = `${mm}:${ss}`;
 
-    // Lưu đám mây Drive
+    // Lưu đám mây Drive chi tiết kèm lịch sử học
     StorageManager.sendSessionToCloud({
       studentName: this.user.name,
       studentEmail: this.user.email,
@@ -186,7 +205,6 @@ class App {
     document.getElementById('quizContainer').classList.add('hidden');
     document.getElementById('dashboardView').classList.remove('hidden');
 
-    // HIỂN THỊ POP-UP KẾT QUẢ 3 CHỈ SỐ LỚN (ĐÃ LƯU, ĐIỂM KN, TỐC ĐỘ)
     this.showResultPopup(correctCount, sessionResults.length, earnedXP, speedStr);
     this.refreshDashboard();
   }
