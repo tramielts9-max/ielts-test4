@@ -480,30 +480,55 @@
     }
   };
 
-  // =========================================================================
-  // ADMIN TAB 1: DANH SÁCH HỌC SINH (CHỈ HIỆN TÊN & MAIL -> BẤM XỔ RA THEO NGÀY)
+// =========================================================================
+  // ADMIN TAB 1: DANH SÁCH HỌC SINH (LOAD LOCAL TRƯỚC + ĐỒNG BỘ CLOUD)
   // =========================================================================
   async function loadAdminData() {
     const user = stateManager.getUser();
     const container = document.getElementById('adminStudentsContainer');
 
+    // 1. Luôn lấy dữ liệu cục bộ trong máy ra trước (chứa 62 bài của bạn)
+    let localAttempts = [];
     try {
-      const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
-        method: "POST",
-        body: JSON.stringify({ action: "admin_get_all", adminEmail: user.email })
-      });
-      const data = await res.json();
-      rawAdminAttempts = data.attempts || [];
-    } catch (e) {
-      rawAdminAttempts = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
+      localAttempts = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
+    } catch(e) {}
+
+    let cloudAttempts = [];
+
+    // 2. Thử gọi lên Google Apps Script lấy thêm bài của các máy khác
+    if (CONFIG.DRIVE_STORAGE_URL) {
+      try {
+        const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "admin_get_all", adminEmail: user.email })
+        });
+        const data = await res.json();
+        
+        if (data && data.success && Array.isArray(data.attempts)) {
+          cloudAttempts = data.attempts;
+        } else if (data && data.error) {
+          console.warn("⚠️ Google Apps Script phản hồi:", data.error);
+        }
+      } catch (err) {
+        console.warn("⚠️ Không thể kết nối Cloud Apps Script, dùng dữ liệu trên máy:", err);
+      }
     }
+
+    // 3. Hợp nhất dữ liệu từ máy và từ Cloud (chống trùng lặp bài)
+    const combinedMap = new Map();
+    [...localAttempts, ...cloudAttempts].forEach(item => {
+      if (item && item.id) combinedMap.set(item.id, item);
+    });
+
+    rawAdminAttempts = Array.from(combinedMap.values()).sort((a, b) => (b.id || '').localeCompare(a.id || ''));
 
     if (rawAdminAttempts.length === 0) {
       container.innerHTML = `<div style="text-align:center; padding:25px; color:var(--text-muted);">Chưa có học sinh nào nộp bài tập trong hệ thống.</div>`;
       return;
     }
 
-    // Nhóm các lần nộp bài theo từng Học Sinh (qua Email)
+    // 4. Nhóm các bài nộp theo từng Email học sinh
     studentsMap = {};
     rawAdminAttempts.forEach(att => {
       const email = (att.studentEmail || "no_email").toLowerCase().trim();
@@ -517,6 +542,7 @@
       studentsMap[email].attempts.push(att);
     });
 
+    // 5. Hiển thị danh sách học viên
     renderAdminStudentsList(Object.values(studentsMap));
   }
 
