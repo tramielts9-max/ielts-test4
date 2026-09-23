@@ -53,7 +53,7 @@
     }
 
     /* =========================================================
-       GIAO DIỆN PHÂN QUYỀN ADMIN MỚI
+       GIAO DIỆN PHÂN QUYỀN ADMIN
        ========================================================= */
     .admin-switch-bar {
       background: #fffbeb; border: 1.5px solid #f59e0b; border-radius: 10px; padding: 12px 18px;
@@ -154,7 +154,7 @@
         <button type="button" class="admin-tab-btn" id="btnAdminTabModules" onclick="switchAdminTab('modules')">⚙️ Bật / Tắt Tạm Thời Phân Hệ</button>
       </div>
 
-      <!-- TAB 1: DANH SÁCH HỌC SINH (BẤM VÀO MỚI HIỆN BÀI THEO NGÀY) -->
+      <!-- TAB 1: DANH SÁCH HỌC SINH -->
       <div id="adminTabContentStudents">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
           <div>
@@ -177,9 +177,53 @@
     </div>
 
     <!-- ================================================================= -->
-    <!-- VIEW HỌC VIÊN: LỊCH SỬ CỦA BẢN THÂN + CÁC MODULE GỐC             -->
+    <!-- VIEW HỌC VIÊN: LỘ TRÌNH ĐỐT SỐNG + LỊCH SỬ + CÁC MODULE          -->
     <!-- ================================================================= -->
     <div id="studentViewSection">
+      
+      <!-- ========================================================= -->
+      <!-- BẮT ĐẦU: KHỐI LỘ TRÌNH & LỊCH HỌC MỖI NGÀY CÁ NHÂN HÓA   -->
+      <!-- ========================================================= -->
+      <div id="roadmapSection" style="background: var(--bg-card); border: 2px solid #0284c7; border-radius: 12px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.08);">
+        
+        <!-- TRƯỜNG HỢP 1: CHƯA CÓ LỘ TRÌNH (HIỆN NÚT CHỌN ĐIỂM XUẤT PHÁT) -->
+        <div id="noRoadmapBox" style="text-align: center; padding: 15px 10px;">
+          <h3 style="margin: 0 0 6px 0; font-size: 19px; color: #0284c7;">🎯 EM CHƯA CÓ LỘ TRÌNH HỌC TẬP CÁ NHÂN HÓA</h3>
+          <p style="margin: 0 0 16px 0; font-size: 13.5px; color: var(--text-muted);">
+            Hệ thống sẽ tự động gọt bỏ các đốt sống em đã thành thạo và tính toán lịch học từng ngày phù hợp với tốc độ của em:
+          </p>
+          <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+            <button type="button" class="btn-submit" onclick="window.triggerQuickRoadmapSetup('beginner')" style="width: auto; padding: 10px 20px; font-size: 14px; background: #0284c7; margin: 0;">
+              🌱 Mất gốc hoàn toàn (Học từ Đốt N0010)
+            </button>
+            <button type="button" class="btn-submit" onclick="window.triggerQuickRoadmapSetup('intermediate')" style="width: auto; padding: 10px 20px; font-size: 14px; background: #16a34a; margin: 0;">
+              ⚡ Đã vững ngữ pháp (Gọt bỏ 40% đốt căn bản)
+            </button>
+          </div>
+        </div>
+
+        <!-- TRƯỜNG HỢP 2: ĐÃ CÓ LỘ TRÌNH (HIỆN BẢNG NHIỆM VỤ HÔM NAY) -->
+        <div id="activeRoadmapBox" style="display: none;">
+          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid var(--border-color); padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <span id="roadmapSpeedBadge" style="font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 12px; background: #dcfce7; color: #166534;">HỌC BÌNH THƯỜNG</span>
+              <h3 style="margin: 4px 0 0 0; font-size: 18px; color: #0284c7;" id="roadmapDayTitle">📅 NHIỆM VỤ HỌC HÔM NAY (NGÀY 1)</h3>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+              <span style="font-size: 13px; color: var(--text-muted);" id="roadmapStatsSummary">Tiến độ: 0/0 đốt</span>
+              <button type="button" onclick="window.resetStudentRoadmap()" style="background: none; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; color: #64748b; cursor: pointer;">🔄 Đặt lại</button>
+            </div>
+          </div>
+
+          <!-- Danh sách các bài cần làm trong ngày hôm nay -->
+          <div id="todayTasksList" style="display: flex; flex-direction: column; gap: 10px;"></div>
+        </div>
+
+      </div>
+      <!-- ========================================================= -->
+      <!-- KẾT THÚC: KHỐI LỘ TRÌNH & LỊCH HỌC MỖI NGÀY               -->
+      <!-- ========================================================= -->
+
       <!-- KHUNG LỊCH SỬ BÀI LÀM TỔNG HỢP CỦA CHÍNH MÌNH -->
       <div class="history-section">
         <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
@@ -377,9 +421,10 @@
 <script type="module">
   import { CONFIG } from './js/config.js';
   import { stateManager } from './js/state.js';
+  import { curriculumEngine } from './js/curriculum-engine.js';
 
   let rawAdminAttempts = [];
-  let studentsMap = {}; // { email: { name, email, attempts: [] } }
+  let studentsMap = {};
   let systemSettings = { modules: {} };
 
   function checkIsAdmin(email) {
@@ -427,14 +472,134 @@
         adminSwitch.style.display = "none";
       }
 
-      // Tải cài đặt bảo trì module
       loadModuleSettings();
-      // Tải lịch sử cá nhân học sinh
       syncAndRenderHistory(user.email);
+      renderRoadmapUI(user.email);
     } else {
       document.getElementById('authGateBox').style.display = 'flex';
       document.getElementById('unlockedContentBox').style.display = 'none';
     }
+  }
+
+  // =========================================================================
+  // LOGIC ĐIỀU HÀNH LỘ TRÌNH ĐỐT SỐNG & LỊCH HỌC HÀNG NGÀY
+  // =========================================================================
+  function getStudentRoadmapStorageKey(email) {
+    return 'ielts_roadmap_' + (email || 'guest').toLowerCase().trim();
+  }
+
+  window.triggerQuickRoadmapSetup = (level) => {
+    const user = stateManager.getUser();
+    if (!user.email) return;
+
+    let masteredTags = [];
+    let speed = 'normal';
+
+    if (level === 'intermediate') {
+      masteredTags = ['G_NOUNS', 'G_PRES_SIMPLE', 'G_PRES_CONT', 'G_PAST_SIMPLE', 'G_FUTURE_SIMPLE', 'G_ARTICLES', 'G_PREPOSITIONS_BASIC'];
+      speed = 'fast';
+    }
+
+    const retainedNodes = curriculumEngine.pruneCurriculum(masteredTags);
+    const totals = curriculumEngine.calculateTotals(retainedNodes, speed);
+    const scheduleData = curriculumEngine.generateDailyCalendar(retainedNodes, speed, 1.5);
+
+    const roadmapPayload = {
+      createdAt: new Date().toISOString(),
+      studentEmail: user.email,
+      speedProfile: speed,
+      currentDay: 1,
+      totals: totals,
+      schedule: scheduleData.dailySchedule,
+      completedNodeIds: []
+    };
+
+    localStorage.setItem(getStudentRoadmapStorageKey(user.email), JSON.stringify(roadmapPayload));
+    renderRoadmapUI(user.email);
+  };
+
+  window.resetStudentRoadmap = () => {
+    const user = stateManager.getUser();
+    if (confirm("Em có chắc muốn xóa lộ trình hiện tại để thiết lập lại từ đầu không?")) {
+      localStorage.removeItem(getStudentRoadmapStorageKey(user.email));
+      renderRoadmapUI(user.email);
+    }
+  };
+
+  window.completeNodeTask = (nodeId) => {
+    const user = stateManager.getUser();
+    const raw = localStorage.getItem(getStudentRoadmapStorageKey(user.email));
+    if (!raw) return;
+
+    const data = JSON.parse(raw);
+    if (!data.completedNodeIds.includes(nodeId)) {
+      data.completedNodeIds.push(nodeId);
+    }
+
+    const currentDaySchedule = data.schedule.find(s => s.dayNumber === data.currentDay);
+    if (currentDaySchedule) {
+      const isAllDone = currentDaySchedule.nodes.every(n => data.completedNodeIds.includes(n.id));
+      if (isAllDone && data.currentDay < data.schedule.length) {
+        data.currentDay += 1;
+        alert("🎉 Chúc mừng em đã hoàn thành toàn bộ bài tập của ngày hôm nay! Ngày tiếp theo đã được mở khóa.");
+      }
+    }
+
+    localStorage.setItem(getStudentRoadmapStorageKey(user.email), JSON.stringify(data));
+    renderRoadmapUI(user.email);
+  };
+
+  function renderRoadmapUI(email) {
+    const raw = localStorage.getItem(getStudentRoadmapStorageKey(email));
+    const noRoadmapBox = document.getElementById('noRoadmapBox');
+    const activeRoadmapBox = document.getElementById('activeRoadmapBox');
+
+    if (!raw) {
+      noRoadmapBox.style.display = 'block';
+      activeRoadmapBox.style.display = 'none';
+      return;
+    }
+
+    const data = JSON.parse(raw);
+    noRoadmapBox.style.display = 'none';
+    activeRoadmapBox.style.display = 'block';
+
+    const speedLabels = { fast: "HỌC NHANH ⚡", normal: "HỌC BÌNH THƯỜNG 🌱", slow: "HỌC CHẬM & KỸ 🐢" };
+    document.getElementById('roadmapSpeedBadge').innerText = speedLabels[data.speedProfile] || data.speedProfile.toUpperCase();
+    document.getElementById('roadmapDayTitle').innerText = `📅 NHIỆM VỤ HỌC HÔM NAY (NGÀY ${data.currentDay}/${data.schedule.length})`;
+    document.getElementById('roadmapStatsSummary').innerText = `Đã xong: ${data.completedNodeIds.length}/${data.totals.nodeCount} đốt (${data.totals.totalCoachHours}h giáo viên)`;
+
+    const todayPlan = data.schedule.find(s => s.dayNumber === data.currentDay) || data.schedule[0];
+    const container = document.getElementById('todayTasksList');
+
+    if (!todayPlan || !todayPlan.nodes) {
+      container.innerHTML = `<div style="text-align:center; padding:15px; color:#16a34a; font-weight:bold;">🎉 Em đã hoàn thành toàn bộ lộ trình khóa học!</div>`;
+      return;
+    }
+
+    container.innerHTML = todayPlan.nodes.map(node => {
+      const isDone = data.completedNodeIds.includes(node.id);
+      return `
+        <div style="display:flex; justify-content:space-between; align-items:center; background:${isDone ? '#f0fdf4' : 'var(--bg-subcard)'}; border:1.5px solid ${isDone ? '#16a34a' : 'var(--border-color)'}; padding:12px 16px; border-radius:8px; flex-wrap:wrap; gap:10px;">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-family:monospace; font-weight:800; font-size:11px; background:#1e293b; color:white; padding:2px 6px; border-radius:4px;">${node.id}</span>
+              <span style="font-size:11px; font-weight:700; color:#0284c7; background:#e0f2fe; padding:2px 8px; border-radius:10px;">${node.domain}</span>
+              <span style="font-size:12px; color:var(--text-muted);">⏱️ Dự kiến: <b>${node.assignedDurationMinutes} phút</b></span>
+            </div>
+            <div style="font-size:14.5px; font-weight:700; color:${isDone ? '#166534' : 'var(--text-main)'}; margin-top:4px;">
+              ${isDone ? '✓ ' : ''}${node.title}
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <a href="${node.url}" target="_blank" onclick="window.completeNodeTask('${node.id}')" style="background:#0284c7; color:white; text-decoration:none; padding:7px 14px; border-radius:6px; font-weight:700; font-size:13px; display:inline-block;">
+              🚀 Làm Bài &rarr;
+            </a>
+            ${isDone ? '<span style="color:#16a34a; font-weight:800; font-size:13px;">Đã xong</span>' : ''}
+          </div>
+        </div>
+      `;
+    }).join('');
   }
 
   // =========================================================================
@@ -480,14 +645,13 @@
     }
   };
 
-// =========================================================================
-  // ADMIN TAB 1: DANH SÁCH HỌC SINH (LOAD LOCAL TRƯỚC + ĐỒNG BỘ CLOUD)
+  // =========================================================================
+  // ADMIN TAB 1: DANH SÁCH HỌC SINH
   // =========================================================================
   async function loadAdminData() {
     const user = stateManager.getUser();
     const container = document.getElementById('adminStudentsContainer');
 
-    // 1. Luôn lấy dữ liệu cục bộ trong máy ra trước (chứa 62 bài của bạn)
     let localAttempts = [];
     try {
       localAttempts = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
@@ -495,7 +659,6 @@
 
     let cloudAttempts = [];
 
-    // 2. Thử gọi lên Google Apps Script lấy thêm bài của các máy khác
     if (CONFIG.DRIVE_STORAGE_URL) {
       try {
         const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
@@ -507,15 +670,12 @@
         
         if (data && data.success && Array.isArray(data.attempts)) {
           cloudAttempts = data.attempts;
-        } else if (data && data.error) {
-          console.warn("⚠️ Google Apps Script phản hồi:", data.error);
         }
       } catch (err) {
         console.warn("⚠️ Không thể kết nối Cloud Apps Script, dùng dữ liệu trên máy:", err);
       }
     }
 
-    // 3. Hợp nhất dữ liệu từ máy và từ Cloud (chống trùng lặp bài)
     const combinedMap = new Map();
     [...localAttempts, ...cloudAttempts].forEach(item => {
       if (item && item.id) combinedMap.set(item.id, item);
@@ -528,7 +688,6 @@
       return;
     }
 
-    // 4. Nhóm các bài nộp theo từng Email học sinh
     studentsMap = {};
     rawAdminAttempts.forEach(att => {
       const email = (att.studentEmail || "no_email").toLowerCase().trim();
@@ -542,7 +701,6 @@
       studentsMap[email].attempts.push(att);
     });
 
-    // 5. Hiển thị danh sách học viên
     renderAdminStudentsList(Object.values(studentsMap));
   }
 
@@ -558,12 +716,10 @@
       const safeEmailKey = st.email.replace(/[^a-zA-Z0-9]/g, '_');
       const initial = (st.name || 'H').charAt(0).toUpperCase();
 
-      // Dựng cây bài tập phân theo ngày cho riêng học sinh này
       const dateTreeHtml = renderStudentDateTreeHtml(st.attempts, st.email, safeEmailKey);
 
       html += `
         <div class="student-card">
-          <!-- Accordion Cấp 1: Chỉ hiện Tên và Email -->
           <div class="student-card-header" onclick="window.toggleStudentAccordion('${safeEmailKey}')">
             <div class="student-info-left">
               <div class="student-avatar-badge">${initial}</div>
@@ -580,7 +736,6 @@
             </div>
           </div>
 
-          <!-- Accordion Cấp 2: Xổ ra các bài làm chia theo từng ngày -->
           <div id="st_body_${safeEmailKey}" style="display: none; padding: 14px; border-top: 1px solid var(--border-color); background: #ffffff;">
             ${dateTreeHtml}
           </div>
@@ -591,7 +746,6 @@
     container.innerHTML = html;
   }
 
-  // DỰNG BÀI LÀM PHÂN CHIA THEO NGÀY Y HỆT NHƯ FILE INDEX GỐC
   function renderStudentDateTreeHtml(attempts, email, safeEmailKey) {
     const groups = {};
     attempts.forEach(att => {
@@ -651,7 +805,6 @@
     return html;
   }
 
-  // Bật tắt Accordion Cấp 1 (Học sinh)
   window.toggleStudentAccordion = (safeEmailKey) => {
     const body = document.getElementById(`st_body_${safeEmailKey}`);
     const icon = document.getElementById(`st_icon_${safeEmailKey}`);
@@ -661,7 +814,6 @@
     if (icon) icon.innerText = isHidden ? '▲' : '▼';
   };
 
-  // Bật tắt Accordion Cấp 2 (Ngày tháng của học sinh)
   window.toggleStudentDateGroup = (safeDateId) => {
     const content = document.getElementById(`content_${safeDateId}`);
     const icon = document.getElementById(`icon_${safeDateId}`);
@@ -688,7 +840,6 @@
       if (saved) systemSettings = JSON.parse(saved);
     } catch(e) {}
 
-    // Đồng bộ từ Drive nếu có
     if (CONFIG.DRIVE_STORAGE_URL) {
       try {
         const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
@@ -711,7 +862,7 @@
     if (!systemSettings.modules) systemSettings.modules = {};
 
     container.innerHTML = Object.entries(CONFIG.MODULES).map(([key, info]) => {
-      const isEnabled = systemSettings.modules[key] !== false; // Mặc định mở
+      const isEnabled = systemSettings.modules[key] !== false;
       return `
         <div style="display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border:1px solid var(--border-color); padding:12px 16px; border-radius:8px;">
           <div>
@@ -776,7 +927,7 @@
   }
 
   // =========================================================================
-  // GIAO DIỆN HỌC VIÊN: HIỂN THỊ LỊCH SỬ CHÍNH MÌNH (NGUYÊN BẢN CỦA BẠN)
+  // GIAO DIỆN HỌC VIÊN: HIỂN THỊ LỊCH SỬ CHÍNH MÌNH
   // =========================================================================
   window.toggleDateGroup = (safeId) => {
     const content = document.getElementById('content_' + safeId);
