@@ -1,24 +1,18 @@
 export const StorageManager = {
   GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbyNErQQFdciAQM0k9KUrACtpX7rxKkopjChYAC2Ubwj5MGzFOeekDEGs8C1n7P9cNR6vg/exec",
 
-  KEYS: {
-    USER: 'sv_user_data_v',
-    PROGRESS: 'sv_word_progress_v',
-    LEADERBOARD: 'sv_weekly_league_v',
-    SESSION_COUNT: 'sv_total_sessions_count_v',
-    WEEK_CHECKIN: 'sv_week_checkin_history_v'
-  },
-
   getUser() {
-    const raw = localStorage.getItem(this.KEYS.USER);
+    const studentEmail = (localStorage.getItem('ielts_student_email') || '').toLowerCase().trim();
     const studentName = localStorage.getItem('ielts_student_name') || 'Học viên';
-    const studentEmail = localStorage.getItem('ielts_student_email') || '';
+
+    const userKey = studentEmail ? `sv_user_${studentEmail}` : 'sv_user_default';
+    const raw = localStorage.getItem(userKey);
 
     if (raw) {
       const u = JSON.parse(raw);
-      if (!u.email && studentEmail) u.email = studentEmail;
-      if (u.name === 'Bạn (Học viên)' && studentName) u.name = studentName;
-      u.currentLeague = this.calculateRankTier(u.xp);
+      u.name = studentName || u.name;
+      u.email = studentEmail || u.email;
+      u.currentLeague = this.calculateRankTier(u.xp || 0);
       return u;
     }
 
@@ -28,10 +22,16 @@ export const StorageManager = {
       xp: 0,
       streak: 1,
       freezeCards: 1,
-      streakGoal: 7, // Mục tiêu 7 ngày
+      streakGoal: 7,
       lastActiveDate: new Date().toISOString().slice(0, 10),
-      currentLeague: 'Đồng'
+      currentLeague: 'Đồng 🥉'
     };
+  },
+
+  saveUser(user) {
+    user.currentLeague = this.calculateRankTier(user.xp || 0);
+    const userKey = user.email ? `sv_user_${user.email.toLowerCase().trim()}` : 'sv_user_default';
+    localStorage.setItem(userKey, JSON.stringify(user));
   },
 
   calculateRankTier(xp) {
@@ -42,51 +42,90 @@ export const StorageManager = {
     return 'Đồng 🥉';
   },
 
-  saveUser(user) {
-    user.currentLeague = this.calculateRankTier(user.xp);
-    localStorage.setItem(this.KEYS.USER, JSON.stringify(user));
+  // LƯU TIẾN TRÌNH THEO TỪNG EMAIL CỤ THỂ
+  getProgressKey(email) {
+    const cleanEmail = (email || localStorage.getItem('ielts_student_email') || 'default').toLowerCase().trim();
+    return `sv_progress_${cleanEmail}`;
   },
 
-  getWeekCheckin() {
-    const raw = localStorage.getItem(this.KEYS.WEEK_CHECKIN);
-    return raw ? JSON.parse(raw) : [];
-  },
-
-  recordTodayCheckin() {
-    const today = new Date().getDay(); // 0 = CN, 1 = T2, ..., 6 = T7
-    const list = this.getWeekCheckin();
-    if (!list.includes(today)) {
-      list.push(today);
-      localStorage.setItem(this.KEYS.WEEK_CHECKIN, JSON.stringify(list));
-    }
-  },
-
-  getSessionCount() {
-    return parseInt(localStorage.getItem(this.KEYS.SESSION_COUNT) || '0', 10);
-  },
-
-  incrementSessionCount() {
-    const count = this.getSessionCount() + 1;
-    localStorage.setItem(this.KEYS.SESSION_COUNT, count.toString());
-    return count;
-  },
-
-  getWordProgress() {
-    const raw = localStorage.getItem(this.KEYS.PROGRESS);
+  getWordProgress(email) {
+    const raw = localStorage.getItem(this.getProgressKey(email));
     return raw ? JSON.parse(raw) : {};
   },
 
-  saveWordProgress(progress) {
-    localStorage.setItem(this.KEYS.PROGRESS, JSON.stringify(progress));
+  /**
+   * Lưu lại chi tiết từ: Cấp độ hũ trí nhớ, số lần đã bấm, mốc ngày giờ bấm chính xác
+   */
+  recordWordReview(email, wordId, isCorrect, levelInfo) {
+    const progress = this.getWordProgress(email);
+    const now = new Date();
+    const dateStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} - ${String(now.getDate()).padStart(2,'0')}/${String(now.getMonth()+1).padStart(2,'0')}/${now.getFullYear()}`;
+
+    if (!progress[wordId]) {
+      progress[wordId] = {
+        level: 1,
+        totalReviews: 0,
+        reviewHistory: []
+      };
+    }
+
+    progress[wordId].level = levelInfo.level;
+    progress[wordId].intervalHours = levelInfo.intervalHours;
+    progress[wordId].lastReviewedAt = levelInfo.lastReviewedAt;
+    progress[wordId].nextReviewAt = levelInfo.nextReviewAt;
+    progress[wordId].totalReviews = (progress[wordId].totalReviews || 0) + 1;
+    
+    if (!progress[wordId].reviewHistory) progress[wordId].reviewHistory = [];
+    progress[wordId].reviewHistory.push({
+      reviewedAt: dateStr,
+      timestamp: Date.now(),
+      action: isCorrect ? "Đã nhớ (✓)" : "Chưa nhớ (✕)",
+      toLevel: levelInfo.level
+    });
+
+    localStorage.setItem(this.getProgressKey(email), JSON.stringify(progress));
+    return progress;
+  },
+
+  saveWordProgress(email, progress) {
+    localStorage.setItem(this.getProgressKey(email), JSON.stringify(progress));
+  },
+
+  getWeekCheckin(email) {
+    const cleanEmail = (email || localStorage.getItem('ielts_student_email') || 'default').toLowerCase().trim();
+    const raw = localStorage.getItem(`sv_week_checkin_${cleanEmail}`);
+    return raw ? JSON.parse(raw) : [];
+  },
+
+  recordTodayCheckin(email) {
+    const cleanEmail = (email || localStorage.getItem('ielts_student_email') || 'default').toLowerCase().trim();
+    const today = new Date().getDay();
+    const list = this.getWeekCheckin(cleanEmail);
+    if (!list.includes(today)) {
+      list.push(today);
+      localStorage.setItem(`sv_week_checkin_${cleanEmail}`, JSON.stringify(list));
+    }
+  },
+
+  getSessionCount(email) {
+    const cleanEmail = (email || localStorage.getItem('ielts_student_email') || 'default').toLowerCase().trim();
+    return parseInt(localStorage.getItem(`sv_session_count_${cleanEmail}`) || '0', 10);
+  },
+
+  incrementSessionCount(email) {
+    const count = this.getSessionCount(email) + 1;
+    const cleanEmail = (email || localStorage.getItem('ielts_student_email') || 'default').toLowerCase().trim();
+    localStorage.setItem(`sv_session_count_${cleanEmail}`, count.toString());
+    return count;
   },
 
   getLeaderboard() {
-    const raw = localStorage.getItem(this.KEYS.LEADERBOARD);
+    const raw = localStorage.getItem('sv_weekly_league_v');
     return raw ? JSON.parse(raw) : null;
   },
 
   saveLeaderboard(data) {
-    localStorage.setItem(this.KEYS.LEADERBOARD, JSON.stringify(data));
+    localStorage.setItem('sv_weekly_league_v', JSON.stringify(data));
   },
 
   sendSessionToCloud(payload) {
@@ -99,7 +138,7 @@ export const StorageManager = {
         body: JSON.stringify({ action: "save_vocab_session", ...payload })
       });
     } catch (e) {
-      console.warn("Lỗi gửi dữ liệu lên Google Drive:", e);
+      console.warn("Lỗi gửi dữ liệu lên Google Cloud:", e);
     }
   }
 };
