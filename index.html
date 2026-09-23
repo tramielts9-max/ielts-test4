@@ -9,66 +9,97 @@
   <style>
     .portal-hero {
       background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-      color: white; padding: 28px 20px; text-align: center; border-radius: 12px; margin-bottom: 20px;
+      color: white; padding: 32px 20px; text-align: center; border-radius: 12px; margin-bottom: 24px;
     }
     .user-dashboard-bar {
-      background: var(--bg-card); border: 1px solid var(--border-color); padding: 14px 20px; border-radius: 10px;
-      margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      background: var(--bg-card); border: 1px solid var(--border-color); padding: 16px 20px; border-radius: 10px;
+      margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
     }
-    .admin-switch-bar {
-      background: #fef3c7; border: 1.5px solid #f59e0b; border-radius: 8px; padding: 10px 16px;
-      margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; gap: 10px;
+    .history-section {
+      background: var(--bg-card); border: 1.5px solid var(--border-color); border-radius: 10px; padding: 18px; margin-bottom: 25px;
     }
-    .role-btn {
-      padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 13px; cursor: pointer; border: 1px solid transparent;
+    .score-pill { background: #16a34a; color: white; padding: 3px 10px; border-radius: 20px; font-weight: 700; font-size: 13px; }
+    .btn-review { background: #0284c7; color: white; text-decoration: none; padding: 5px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; }
+    
+    .date-accordion-header {
+      padding: 10px 14px; background: var(--bg-subcard); font-weight: bold; font-size: 14px;
+      display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;
     }
-    .role-btn.active { background: #d97706; color: white; }
-    .role-btn:not(.active) { background: white; border-color: #f59e0b; color: #b45309; }
 
-    /* Bảng Module */
+    /* TIÊU CHUẨN CARD BANNER HỌC TẬP GỐC */
     .module-banner {
-      border-radius: 12px; padding: 18px 22px; margin-bottom: 16px;
+      border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.06);
       display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; color: white;
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .module-banner.disabled {
-      filter: grayscale(1); opacity: 0.6; pointer-events: none;
-    }
+    .module-banner h3 { color: #ffffff !important; }
+    .module-banner:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.12); }
     .module-icon-box {
       font-size: 34px; background: rgba(255,255,255,0.18); border-radius: 10px;
       width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
+    .module-badge { font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px; }
     .module-btn {
       background: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 8px;
       font-weight: 800; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-      display: inline-block; white-space: nowrap;
+      display: inline-block; white-space: nowrap; transition: opacity 0.2s;
+    }
+    .module-btn:hover { opacity: 0.92; }
+
+    /* Khi module bị Admin tạm khóa */
+    .module-banner.is-locked {
+      filter: grayscale(0.85); opacity: 0.65;
     }
 
-    /* Admin Panel */
+    /* =========================================================
+       GIAO DIỆN PHÂN QUYỀN ADMIN MỚI
+       ========================================================= */
+    .admin-switch-bar {
+      background: #fffbeb; border: 1.5px solid #f59e0b; border-radius: 10px; padding: 12px 18px;
+      margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .role-btn {
+      padding: 7px 16px; border-radius: 6px; font-weight: 700; font-size: 13.5px; cursor: pointer; border: 1.5px solid transparent; transition: all 0.2s;
+    }
+    .role-btn.active { background: #d97706; color: white; border-color: #d97706; }
+    .role-btn:not(.active) { background: white; border-color: #f59e0b; color: #b45309; }
+
     .admin-panel {
-      background: var(--bg-card); border: 2px solid #d97706; border-radius: 12px; padding: 22px; margin-bottom: 30px;
+      background: var(--bg-card); border: 2px solid #f59e0b; border-radius: 12px; padding: 22px; margin-bottom: 28px;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.1);
     }
     .admin-tab-nav {
-      display: flex; gap: 10px; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 18px;
+      display: flex; gap: 10px; border-bottom: 2px solid var(--border-color); padding-bottom: 12px; margin-bottom: 18px;
     }
     .admin-tab-btn {
-      background: var(--bg-subcard); border: 1px solid var(--border-color); padding: 8px 16px;
+      background: var(--bg-subcard); border: 1px solid var(--border-color); padding: 8px 18px;
       border-radius: 6px; font-weight: 700; font-size: 13.5px; cursor: pointer;
     }
     .admin-tab-btn.active { background: #0284c7; color: white; border-color: #0284c7; }
 
-    /* Switch toggle */
+    /* Card từng học sinh (Accordion Cấp 1) */
+    .student-card {
+      border: 1.5px solid var(--border-color); border-radius: 8px; margin-bottom: 12px; overflow: hidden; background: var(--bg-card);
+    }
+    .student-card-header {
+      padding: 12px 16px; background: #f8fafc; display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; user-select: none; transition: background 0.15s;
+    }
+    .student-card-header:hover { background: #f1f5f9; }
+    .student-info-left { display: flex; align-items: center; gap: 12px; }
+    .student-avatar-badge {
+      width: 36px; height: 36px; border-radius: 50%; background: #e0f2fe; color: #0284c7;
+      display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px;
+    }
+
+    /* Switch toggle bật/tắt module */
     .switch { position: relative; display: inline-block; width: 44px; height: 24px; }
     .switch input { opacity: 0; width: 0; height: 0; }
-    .slider { position: absolute; cursor: pointer; inset: 0; background-color: #cbd5e1; transition: .3s; border-radius: 24px; }
-    .slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .3s; border-radius: 50%; }
+    .slider { position: absolute; cursor: pointer; inset: 0; background-color: #cbd5e1; transition: .25s; border-radius: 24px; }
+    .slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .25s; border-radius: 50%; }
     input:checked + .slider { background-color: #16a34a; }
     input:checked + .slider:before { transform: translateX(20px); }
-
-    table.admin-table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-top: 10px; }
-    table.admin-table th, table.admin-table td { border: 1px solid var(--border-color); padding: 10px 12px; text-align: left; }
-    table.admin-table th { background: var(--bg-subcard); color: var(--text-main); font-weight: 700; }
   </style>
 </head>
 <body>
@@ -76,182 +107,268 @@
 <div style="max-width: 1200px; margin: auto; padding: 15px;">
   <div class="portal-hero">
     <h1 style="margin:0 0 8px 0; font-size: 26px;">📚 CỔNG LUYỆN THI IELTS TOÀN DIỆN</h1>
-    <p style="margin:0; opacity: 0.9;">Từ Vựng • Ngữ Pháp • Luyện Đề Cambridge 17-21 • AI Sửa Lỗi Chi Tiết</p>
+    <p style="margin:0; opacity: 0.9;">Từ Vựng • Ngữ Pháp • Nền Tảng (Pre) • Luyện Đề Cambridge 17-21 • AI Sửa Lỗi Chi Tiết</p>
   </div>
 
-  <!-- 1. KHUNG ĐĂNG NHẬP HỌC VIÊN -->
-  <div id="authGateBox" class="user-info-box" style="max-width: 500px; margin: 0 auto 30px auto; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
-    <h3 style="margin: 0; text-align: center;">👤 Đăng Nhập Tài Khoản</h3>
-    <input type="text" id="loginNameInput" placeholder="Họ và tên học viên..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
-    <input type="email" id="loginEmailInput" placeholder="Email Google của bạn..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
-    <button type="button" class="btn-submit" onclick="handleStudentLogin()" style="margin-top: 5px; padding: 11px;">🚀 Đăng Nhập Vào Hệ Thống</button>
+  <!-- 1. CỔNG ĐĂNG NHẬP -->
+  <div id="authGateBox" class="user-info-box" style="max-width: 520px; margin: 0 auto 30px auto; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+    <h3 style="margin: 0; text-align: center;">👤 Đăng Nhập Học Viên</h3>
+    <p style="margin: 0; font-size: 13.5px; color: var(--text-muted); text-align: center;">Nhập thông tin 1 lần để mở khóa hệ thống và tự động lưu bảng điểm:</p>
+    <input type="text" id="loginNameInput" placeholder="Họ và tên..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
+    <input type="email" id="loginEmailInput" placeholder="Email Google..." style="padding: 10px; border: 1px solid var(--border-color); border-radius: 6px;">
+    <button type="button" class="btn-submit" onclick="handleStudentLogin()" style="margin-top: 5px; padding: 10px;">🚀 Bắt Đầu Học Ngay</button>
   </div>
 
   <!-- 2. KHU VỰC ĐÃ ĐĂNG NHẬP -->
   <div id="unlockedContentBox" style="display: none;">
-    <!-- Thanh trạng thái người dùng -->
+    <!-- Thanh thông tin học viên -->
     <div class="user-dashboard-bar">
       <div>
         <h4 style="margin: 0; font-size: 16px;" id="userNameDisplay">Học viên</h4>
         <p style="margin: 2px 0 0 0; font-size: 13px; color: var(--text-muted);" id="userEmailDisplay">email@gmail.com</p>
       </div>
-      <div style="display:flex; align-items:center; gap: 10px;">
-        <span id="roleBadge" style="font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 20px; background: #e0f2fe; color: #0369a1;">HỌC SINH</span>
-        <button type="button" class="btn-header" style="background:#fee2e2; color:#dc2626; border-color:#fca5a5;" onclick="handleStudentLogout()">🚪 Đăng xuất</button>
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span id="roleBadge" style="font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 20px; background: #e0f2fe; color: #0284c7;">HỌC SINH</span>
+        <button type="button" class="btn-header" style="background:#fee2e2; color:#dc2626; border-color:#fca5a5;" onclick="handleStudentLogout()">🚪 Đổi tài khoản</button>
       </div>
     </div>
 
-    <!-- THANH CHUYỂN VIEW DÀNH RIÊNG CHO ADMIN -->
+    <!-- THANH ĐIỀU KHIỂN CHỈ HIỆN KHI EMAIL LÀ ADMIN -->
     <div id="adminSwitchBar" class="admin-switch-bar" style="display: none;">
-      <span style="font-weight: 800; color: #92400e; font-size: 14px;">👑 BẢNG ĐIỀU KHIỂN QUẢN TRỊ VIÊN</span>
+      <div>
+        <b style="color: #92400e; font-size: 14.5px;">👑 BẢNG ĐIỀU KHIỂN QUẢN TRỊ VIÊN (ADMIN)</b>
+        <div style="font-size: 12px; color: #b45309; margin-top: 2px;">Em đang đăng nhập bằng tài khoản Quản trị toàn hệ thống</div>
+      </div>
       <div style="display: flex; gap: 8px;">
-        <button type="button" class="role-btn active" id="btnViewStudent" onclick="switchView('student')">👨‍🎓 Chế độ Học sinh</button>
-        <button type="button" class="role-btn" id="btnViewAdmin" onclick="switchView('admin')">🛠️ Quản lý Toàn bộ (Admin)</button>
+        <button type="button" class="role-btn active" id="btnViewStudent" onclick="switchMainView('student')">👨‍🎓 Chế độ Học viên</button>
+        <button type="button" class="role-btn" id="btnViewAdmin" onclick="switchMainView('admin')">🛠️ Chế độ Quản trị (Admin)</button>
       </div>
     </div>
 
-    <!-- ================================================================ -->
-    <!-- VIEW ADMIN: QUẢN LÝ TẤT CẢ HỌC VIÊN & BẬT TẮT CHỨC NĂNG          -->
-    <!-- ================================================================ -->
+    <!-- ================================================================= -->
+    <!-- VIEW ADMIN: DANH SÁCH TẤT CẢ HỌC SINH & BẬT TẮT PHÂN HỆ           -->
+    <!-- ================================================================= -->
     <div id="adminPanelSection" class="admin-panel" style="display: none;">
       <div class="admin-tab-nav">
-        <button type="button" class="admin-tab-btn active" id="btnAdminTabStudents" onclick="switchAdminTab('students')">👥 Tất Cả Học Viên & Bài Nộp</button>
-        <button type="button" class="admin-tab-btn" id="btnAdminTabModules" onclick="switchAdminTab('modules')">⚙️ Bật / Tắt Tạm Thời Các Bài Tập</button>
+        <button type="button" class="admin-tab-btn active" id="btnAdminTabStudents" onclick="switchAdminTab('students')">👥 Danh Sách Học Sinh & Bài Làm</button>
+        <button type="button" class="admin-tab-btn" id="btnAdminTabModules" onclick="switchAdminTab('modules')">⚙️ Bật / Tắt Tạm Thời Phân Hệ</button>
       </div>
 
-      <!-- TAB 1 ADMIN: XEM DANH SÁCH TOÀN BỘ HỌC VIÊN -->
+      <!-- TAB 1: DANH SÁCH HỌC SINH (BẤM VÀO MỚI HIỆN BÀI THEO NGÀY) -->
       <div id="adminTabContentStudents">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-          <h4 style="margin:0; font-size:16px;">📋 Danh Sách Bài Tập Của Tất Cả Học Sinh Trong Hệ Thống:</h4>
-          <input type="text" id="adminSearchInput" oninput="filterAdminStudents()" placeholder="🔍 Tìm theo Tên hoặc Email..." style="padding:6px 12px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; width:250px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <h4 style="margin: 0; font-size: 15.5px;">📋 Danh sách học viên đã làm bài trong hệ thống:</h4>
+            <span style="font-size: 12px; color: var(--text-muted);">Nhấp vào học sinh để xem các bài đã nộp chia theo từng ngày</span>
+          </div>
+          <input type="text" id="adminStudentSearch" oninput="filterAdminStudents()" placeholder="🔍 Tìm theo Tên hoặc Email..." style="padding: 7px 12px; border: 1px solid var(--border-color); border-radius: 6px; font-size: 13.5px; width: 260px;">
         </div>
-        <div style="max-height: 480px; overflow-y: auto;">
-          <table class="admin-table">
-            <thead>
-              <tr>
-                <th>Học Viên</th>
-                <th>Email</th>
-                <th>Bài Làm</th>
-                <th>Điểm Số</th>
-                <th>Thời Gian Nộp</th>
-                <th>Hành Động</th>
-              </tr>
-            </thead>
-            <tbody id="adminStudentsTableBody">
-              <tr><td colspan="6" style="text-align:center; color:#64748b;">⏳ Đang tải dữ liệu học viên từ hệ thống...</td></tr>
-            </tbody>
-          </table>
+
+        <div id="adminStudentsContainer">
+          <div style="text-align: center; padding: 25px; color: var(--text-muted);">⏳ Đang đồng bộ toàn bộ học sinh từ Google Drive...</div>
         </div>
       </div>
 
-      <!-- TAB 2 ADMIN: BẬT / TẮT TẠM THỜI TỪNG MODULE -->
+      <!-- TAB 2: BẬT / TẮT MODULE BẢO TRÌ -->
       <div id="adminTabContentModules" style="display: none;">
-        <h4 style="margin:0 0 10px 0; font-size:16px;">⚙️ Trạng Thái Hoạt Động Của Các Phân Hệ (Gạt tắt để khóa tạm thời):</h4>
-        <div id="moduleToggleList" style="display:flex; flex-direction:column; gap:10px;"></div>
+        <h4 style="margin: 0 0 12px 0; font-size: 15.5px;">⚙️ Bật / Tắt trạng thái hoạt động (Tắt công tắc để khóa tạm thời):</h4>
+        <div id="adminModuleToggleList" style="display: flex; flex-direction: column; gap: 10px;"></div>
       </div>
     </div>
 
-    <!-- ================================================================ -->
-    <!-- VIEW HỌC VIÊN: LỊCH SỬ CỦA BẢN THÂN + LỘ TRÌNH LUYỆN TẬP       -->
-    <!-- ================================================================ -->
+    <!-- ================================================================= -->
+    <!-- VIEW HỌC VIÊN: LỊCH SỬ CỦA BẢN THÂN + CÁC MODULE GỐC             -->
+    <!-- ================================================================= -->
     <div id="studentViewSection">
-      <!-- Lịch sử bài làm cá nhân -->
+      <!-- KHUNG LỊCH SỬ BÀI LÀM TỔNG HỢP CỦA CHÍNH MÌNH -->
       <div class="history-section">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 12px;">
-          <h3 style="margin: 0; font-size: 16.5px;">📜 Lịch sử bài làm của em <span id="myTotalBadge" style="font-size:12px; background:#e0f2fe; color:#0284c7; padding:2px 8px; border-radius:12px;">0 bài</span></h3>
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+          <h3 style="margin: 0; font-size: 17px;">
+            📜 Lịch sử các lần làm bài 
+            <span id="totalAttemptsBadge" style="font-size: 12px; background: #e0f2fe; color: #0284c7; padding: 2px 8px; border-radius: 12px;">0 bài</span>
+          </h3>
+          <button type="button" id="btnToggleAllDates" onclick="window.toggleAllDateGroups && window.toggleAllDateGroups()" style="background: var(--bg-subcard); color: var(--text-main); border: 1px solid var(--border-color); padding: 5px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer;">
+            🔼 Thu gọn tất cả
+          </button>
         </div>
-        <div id="myHistoryList"><div style="text-align:center; padding:12px; color:var(--text-muted);">⏳ Đang tải lịch sử...</div></div>
+        
+        <div id="historyResultsList">
+          <div style="text-align:center; padding:12px; color:var(--text-muted);">⏳ Đang đồng bộ lịch sử từ Google Drive...</div>
+        </div>
       </div>
 
-      <!-- Lộ trình các Module -->
-      <div style="margin: 25px 0 14px 0; font-size: 18px; font-weight: 800; color: #0f172a; border-left: 5px solid #0284c7; padding-left: 10px;">
-        🗺️ LỘ TRÌNH LUYỆN THI (CHỌN ĐỂ VÀO HỌC)
+      <!-- TIÊU ĐỀ LỘ TRÌNH -->
+      <div style="margin: 30px 0 16px 0; font-size: 19px; font-weight: 800; color: #0f172a; border-left: 5px solid #0284c7; padding-left: 10px;">
+        🗺️ LỘ TRÌNH LUYỆN THI TOÀN DIỆN (CHỌN PHÂN HỆ ĐỂ VÀO HỌC)
       </div>
 
-      <div id="modulesContainer">
-        <!-- Module 1: Từ Vựng -->
-        <div class="module-banner" id="mod_vocab" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">🧠</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">1. LUYỆN TỪ VỰNG THÔNG MINH (SPACED REPETITION)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">5 Hũ Trí Nhớ • Lặp lại ngắt quãng • Bảng xếp hạng</p>
+      <!-- 1. TỪ VỰNG (VOCABULARY) -->
+      <div class="module-banner" id="mod_vocab" style="background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">🧠</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">1. LUYỆN TỪ VỰNG THÔNG MINH (SPACED REPETITION)</h3>
+              <span class="module-badge" style="background: #f59e0b; color: #78350f;">CORE</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">5 Hũ Trí Nhớ Lặp Lại Ngắt Quãng • Bảng xếp hạng thi đua • Giữ chuỗi Streak 🔥</p>
           </div>
-          <a href="vocab/index-v.html" class="module-btn" style="color:#4f46e5;">🚀 VÀO HỌC TỪ VỰNG &rarr;</a>
         </div>
+        <a href="vocab/index-v.html" class="module-btn" style="color: #4f46e5;">🚀 VÀO HỌC TỪ VỰNG &rarr;</a>
+      </div>
 
-        <!-- Module 2: Ngữ Pháp -->
-        <div class="module-banner" id="mod_grammar" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">📐</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">2. NGỮ PHÁP TRỌNG TÂM IELTS</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Các cấu trúc câu phức, thì, câu điều kiện, bị động</p>
+      <!-- 2. NGỮ PHÁP (GRAMMAR) -->
+      <div class="module-banner" id="mod_grammar" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">📐</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">2. NGỮ PHÁP TRỌNG TÂM IELTS (GRAMMAR MASTERY)</h3>
+              <span class="module-badge" style="background: #ecfdf5; color: #065f46;">NỀN TẢNG</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Các cấu trúc câu phức, mệnh đề quan hệ, đảo ngữ & bẫy ngữ pháp thường gặp</p>
           </div>
-          <a href="grammar/index-g.html" class="module-btn" style="color:#059669;">🚀 VÀO HỌC NGỮ PHÁP &rarr;</a>
         </div>
+        <a href="grammar/index-g.html" class="module-btn" style="color: #059669;">🚀 VÀO HỌC NGỮ PHÁP &rarr;</a>
+      </div>
 
-        <!-- Module 3: Pre-Listening -->
-        <div class="module-banner" id="mod_pre_listening" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">👂</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">3. PRE-LISTENING (LUYỆN NGHE PHẢN XẠ)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Luyện nghe nối âm, nuốt âm, chính tả theo chuẩn ELLLO</p>
+      <!-- 3. PRE-LISTENING -->
+      <div class="module-banner" id="mod_pre_listening" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">👂</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">3. PRE-LISTENING (LUYỆN NGHE CHÉP CHÍNH TẢ & PHẢN XẠ)</h3>
+              <span class="module-badge" style="background: #e0f2fe; color: #0369a1;">PREPARATION</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Tập nghe nối âm, nuốt âm, số liệu, tên riêng & Dictation từng câu trước khi vào đề</p>
           </div>
-          <a href="pre-listening/index-pl.html" class="module-btn" style="color:#0891b2;">🚀 VÀO PRE-LISTENING &rarr;</a>
         </div>
+        <a href="pre-listening/index-pl.html" class="module-btn" style="color: #0891b2;">🚀 VÀO PRE-LISTENING &rarr;</a>
+      </div>
 
-        <!-- Module 4: IELTS Listening -->
-        <div class="module-banner" id="mod_listening" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">🎧</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">4. PHÒNG THI IELTS LISTENING (CAM 17 - 21)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Audio đồng bộ transcript, bấm câu nghe ngay, tự động chấm</p>
+      <!-- 4. IELTS LISTENING -->
+      <div class="module-banner" id="mod_listening" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">🎧</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">4. PHÒNG THI IELTS LISTENING (AUDIO-SYNC)</h3>
+              <span class="module-badge" style="background: #fef08a; color: #854d0e;">CAM 17 - 21</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Audio chạy đồng bộ Transcript • Nhấp câu nghe ngay • Tự động chấm điểm</p>
           </div>
-          <a href="listening.html" class="module-btn" style="color:#0284c7;">🚀 VÀO PHÒNG NGHE &rarr;</a>
         </div>
+        <a href="listening.html" class="module-btn" style="color: #0284c7;">🚀 VÀO PHÒNG NGHE &rarr;</a>
+      </div>
 
-        <!-- Module 5: IELTS Reading -->
-        <div class="module-banner" id="mod_reading" style="background: linear-gradient(135deg, #8B1518 0%, #b91c1c 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">📖</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">5. PHÒNG THI IELTS READING (CAM 17 - 21)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Chấm điểm tức thì • AI giải thích chi tiết từng câu sai</p>
+      <!-- 5. PRE-READING -->
+      <div class="module-banner" id="mod_pre_reading" style="background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">🔍</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">5. PRE-READING (KỸ NĂNG ĐỌC QUÉT SKIMMING & SCANNING)</h3>
+              <span class="module-badge" style="background: #fef3c7; color: #92400e;">KỸ NĂNG</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Phương pháp định vị từ khóa (Keywords), đọc lướt nắm ý chính và xử lý bài đọc dài</p>
           </div>
-          <a href="reading.html" class="module-btn" style="color:#8B1518;">🚀 VÀO PHÒNG ĐỌC &rarr;</a>
         </div>
+        <a href="pre-reading/index-pr.html" class="module-btn" style="color: #d97706;">🚀 VÀO PRE-READING &rarr;</a>
+      </div>
 
-        <!-- Module 6: Writing -->
-        <div class="module-banner" id="mod_writing" style="background: linear-gradient(135deg, #881337 0%, #4c0519 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">✍️</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">6. SỬA BÀI IELTS WRITING 2 TẦNG (TASK 1 & 2)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Sửa sạch ngữ pháp ➔ Nâng cấp C1-C2 chuẩn Band 8.0+</p>
+      <!-- 6. IELTS READING -->
+      <div class="module-banner" id="mod_reading" style="background: linear-gradient(135deg, #8B1518 0%, #b91c1c 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">📖</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">6. PHÒNG THI IELTS READING (CAMBRIDGE 17 - 21)</h3>
+              <span class="module-badge" style="background: #fee2e2; color: #991b1b;">FULL TESTS</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Tự động chấm điểm • AI Trợ giảng giải thích câu sai • Lưu tiến độ Google Drive</p>
           </div>
-          <a href="writing/index-w.html" class="module-btn" style="color:#881337;">🚀 VÀO PHÒNG VIẾT &rarr;</a>
         </div>
+        <a href="reading.html" class="module-btn" style="color: #8B1518;">🚀 VÀO PHÒNG ĐỌC &rarr;</a>
+      </div>
 
-        <!-- Module 7: Speaking -->
-        <div class="module-banner" id="mod_speaking" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <div class="module-icon-box">🎙️</div>
-            <div>
-              <h3 style="margin:0; font-size:18px; font-weight:800;">7. PHÒNG LUYỆN NÓI SPEAKING 2 TẦNG (AI COACH)</h3>
-              <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Ký âm giọng nói tức thì • Chấm theo 4 tiêu chí giám khảo</p>
+      <!-- 7A. PRE-WRITING TASK 1 -->
+      <div class="module-banner" id="mod_pre_writing_t1" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">📊</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">7A. PRE-WRITING TASK 1 (DỊCH SONG NGỮ & MÔ TẢ BIỂU ĐỒ)</h3>
+              <span class="module-badge" style="background: #e0f2fe; color: #0369a1;">TASK 1 NỀN TẢNG</span>
             </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">21 Dạng biểu đồ Line, Bar, Pie, Table, Map, Process • Đối chiếu mẫu Band 6-7-8 • AI Sửa 2 tầng</p>
           </div>
-          <a href="speaking/index-s.html" class="module-btn" style="color:#047857;">🚀 VÀO PHÒNG NÓI &rarr;</a>
         </div>
+        <a href="pre-writing/index-pwt1.html" class="module-btn" style="color: #0284c7;">🚀 VÀO PRE-WRITING T1 &rarr;</a>
+      </div>
+
+      <!-- 7B. PRE-WRITING TASK 2 -->
+      <div class="module-banner" id="mod_pre_writing_t2" style="background: linear-gradient(135deg, #be123c 0%, #9f1239 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">📝</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">7B. PRE-WRITING TASK 2 (DỊCH LUẬN & PHÁT TRIỂN Ý TƯỞNG)</h3>
+              <span class="module-badge" style="background: #ffe4e6; color: #9f1239;">TASK 2 ESSAY</span>
+            </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Opinion, Discussion, Problem-Solution, Two-part • Rèn tư duy phản biện & Paraphrase học thuật</p>
+          </div>
+        </div>
+        <a href="pre-writing/index-pwt2.html" class="module-btn" style="color: #be123c;">🚀 VÀO PRE-WRITING T2 &rarr;</a>
+      </div>
+
+      <!-- 8. IELTS WRITING -->
+      <div class="module-banner" id="mod_writing" style="background: linear-gradient(135deg, #881337 0%, #4c0519 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">✍️</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">8. PHÒNG SỬA BÀI IELTS WRITING 2 TẦNG (TASK 1 & 2)</h3>
+              <span class="module-badge" style="background: #fef08a; color: #854d0e;">AI MASTER</span>
+            </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Sửa sạch ngữ pháp ➔ Nâng cấp C1-C2 chuẩn Band 8.0+ • Chấm theo 4 tiêu chí giám khảo</p>
+          </div>
+        </div>
+        <a href="writing/index-w.html" class="module-btn" style="color: #881337;">🚀 VÀO PHÒNG VIẾT &rarr;</a>
+      </div>
+
+      <!-- 9. PRE-SPEAKING -->
+      <div class="module-banner" id="mod_pre_speaking" style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">🗣️</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 18px; font-weight: 800;">9. PRE-SPEAKING (PHÁT ÂM IPA & SHADOWING NÓI ĐUỔI)</h3>
+              <span class="module-badge" style="background: #ede9fe; color: #5b21b6;">PRONUNCIATION</span>
+            </div>
+            <p style="margin: 4px 0 0 0; font-size: 13px; opacity: 0.92;">Chuẩn hóa 44 âm IPA, trọng âm từ, ngữ điệu câu và phản xạ kéo dài câu trả lời</p>
+          </div>
+        </div>
+        <a href="pre-speaking/index.html" class="module-btn" style="color: #7c3aed;">🚀 VÀO PRE-SPEAKING &rarr;</a>
+      </div>
+
+      <!-- BANNER PHÒNG LUYỆN NÓI IELTS SPEAKING 2 TẦNG -->
+      <div class="module-banner" id="mod_speaking" style="background: linear-gradient(135deg, #059669 0%, #047857 100%); margin-bottom: 30px; box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.3);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div class="module-icon-box">🎙️</div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <h3 style="margin: 0; font-size: 19px; color: white; font-weight: 800;">PHÒNG LUYỆN NÓI IELTS SPEAKING 2 TẦNG</h3>
+              <span style="background: #fef08a; color: #854d0e; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 20px;">AI EXAMINER</span>
+            </div>
+            <p style="margin: 4px 0 0 0; font-size: 13.5px; opacity: 0.95;">
+              Ký âm giọng nói tức thì (Speech-to-Text) • Sửa sạch lỗi phát âm & ngữ pháp ➔ Nâng cấp Idiom / Collocation tự nhiên Band 8.0+
+            </p>
+          </div>
+        </div>
+        <a href="speaking/index-s.html" style="background: #ffffff; color: #047857; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 800; font-size: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: inline-block; white-space: nowrap;">
+          🚀 VÀO PHÒNG NÓI &rarr;
+        </a>
       </div>
     </div>
   </div>
@@ -261,31 +378,69 @@
   import { CONFIG } from './js/config.js';
   import { stateManager } from './js/state.js';
 
-  let allAdminAttempts = [];
+  let rawAdminAttempts = [];
+  let studentsMap = {}; // { email: { name, email, attempts: [] } }
   let systemSettings = { modules: {} };
+
+  function checkIsAdmin(email) {
+    if (!email) return false;
+    return (CONFIG.ADMIN_EMAILS || []).map(e => e.toLowerCase().trim()).includes(email.toLowerCase().trim());
+  }
 
   window.handleStudentLogin = () => {
     const name = document.getElementById('loginNameInput').value.trim();
     const email = document.getElementById('loginEmailInput').value.trim().toLowerCase();
-    if (!email) { alert("⚠️ Vui lòng nhập Email!"); return; }
+    if (!email) { alert("⚠️ Vui lòng nhập Email để hệ thống lưu bảng điểm!"); return; }
     stateManager.saveUser(name || 'Học viên', email);
-    initApp();
+    checkAuthStatus();
   };
 
   window.handleStudentLogout = () => {
-    if (confirm("Em có muốn đổi tài khoản không?")) {
+    if (confirm("Em có muốn đổi tài khoản học viên khác không?")) {
       localStorage.removeItem(CONFIG.STORAGE_KEYS.STUDENT_NAME);
       localStorage.removeItem(CONFIG.STORAGE_KEYS.STUDENT_EMAIL);
-      initApp();
+      checkAuthStatus();
     }
   };
 
-  function isAdmin(email) {
-    if (!email) return false;
-    return CONFIG.ADMIN_EMAILS.map(e => e.toLowerCase()).includes(email.toLowerCase());
+  function checkAuthStatus() {
+    const user = stateManager.getUser();
+    if (user.email) {
+      document.getElementById('authGateBox').style.display = 'none';
+      document.getElementById('unlockedContentBox').style.display = 'block';
+      document.getElementById('userNameDisplay').innerText = user.name || 'Học viên';
+      document.getElementById('userEmailDisplay').innerText = user.email;
+
+      const isAdmin = checkIsAdmin(user.email);
+      const roleBadge = document.getElementById('roleBadge');
+      const adminSwitch = document.getElementById('adminSwitchBar');
+
+      if (isAdmin) {
+        roleBadge.innerText = "👑 QUẢN TRỊ VIÊN (ADMIN)";
+        roleBadge.style.background = "#fef3c7";
+        roleBadge.style.color = "#b45309";
+        adminSwitch.style.display = "flex";
+      } else {
+        roleBadge.innerText = "HỌC SINH";
+        roleBadge.style.background = "#e0f2fe";
+        roleBadge.style.color = "#0369a1";
+        adminSwitch.style.display = "none";
+      }
+
+      // Tải cài đặt bảo trì module
+      loadModuleSettings();
+      // Tải lịch sử cá nhân học sinh
+      syncAndRenderHistory(user.email);
+    } else {
+      document.getElementById('authGateBox').style.display = 'flex';
+      document.getElementById('unlockedContentBox').style.display = 'none';
+    }
   }
 
-  window.switchView = (view) => {
+  // =========================================================================
+  // ĐIỀU HƯỚNG VIEW ADMIN <-> HỌC VIÊN
+  // =========================================================================
+  window.switchMainView = (view) => {
     const studentSec = document.getElementById('studentViewSection');
     const adminSec = document.getElementById('adminPanelSection');
     const btnS = document.getElementById('btnViewStudent');
@@ -296,7 +451,7 @@
       adminSec.style.display = 'block';
       btnA.classList.add('active');
       btnS.classList.remove('active');
-      loadAdminDashboard();
+      loadAdminData();
     } else {
       studentSec.style.display = 'block';
       adminSec.style.display = 'none';
@@ -316,7 +471,7 @@
       tabModules.style.display = 'block';
       btnM.classList.add('active');
       btnS.classList.remove('active');
-      renderModuleToggles();
+      renderAdminModuleToggles();
     } else {
       tabStudents.style.display = 'block';
       tabModules.style.display = 'none';
@@ -325,49 +480,12 @@
     }
   };
 
-  async function initApp() {
-    const user = stateManager.getUser();
-    if (!user.email) {
-      document.getElementById('authGateBox').style.display = 'flex';
-      document.getElementById('unlockedContentBox').style.display = 'none';
-      return;
-    }
-
-    document.getElementById('authGateBox').style.display = 'none';
-    document.getElementById('unlockedContentBox').style.display = 'block';
-    document.getElementById('userNameDisplay').innerText = user.name || 'Học viên';
-    document.getElementById('userEmailDisplay').innerText = user.email;
-
-    const userIsAdmin = isAdmin(user.email);
-    const roleBadge = document.getElementById('roleBadge');
-    const adminSwitch = document.getElementById('adminSwitchBar');
-
-    if (userIsAdmin) {
-      roleBadge.innerText = "👑 QUẢN TRỊ VIÊN (ADMIN)";
-      roleBadge.style.background = "#fef3c7";
-      roleBadge.style.color = "#b45309";
-      adminSwitch.style.display = "flex";
-    } else {
-      roleBadge.innerText = "HỌC SINH";
-      roleBadge.style.background = "#e0f2fe";
-      roleBadge.style.color = "#0369a1";
-      adminSwitch.style.display = "none";
-    }
-
-    // Tải cấu hình bật/tắt module
-    await loadSettings();
-    applyModuleSettings();
-
-    // Tải lịch sử cá nhân học sinh
-    loadMyHistory(user.email);
-  }
-
   // =========================================================================
-  // LOGIC ADMIN: TẢI TOÀN BỘ HỌC VIÊN & BÀI NỘP
+  // ADMIN TAB 1: DANH SÁCH HỌC SINH (CHỈ HIỆN TÊN & MAIL -> BẤM XỔ RA THEO NGÀY)
   // =========================================================================
-  async function loadAdminDashboard() {
+  async function loadAdminData() {
     const user = stateManager.getUser();
-    const tableBody = document.getElementById('adminStudentsTableBody');
+    const container = document.getElementById('adminStudentsContainer');
 
     try {
       const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
@@ -375,82 +493,209 @@
         body: JSON.stringify({ action: "admin_get_all", adminEmail: user.email })
       });
       const data = await res.json();
-      allAdminAttempts = data.attempts || [];
-
-      // Nếu không có mạng hoặc Drive trống, lấy tạm từ local history
-      if (allAdminAttempts.length === 0) {
-        allAdminAttempts = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
-      }
-
-      renderAdminStudentsTable(allAdminAttempts);
-    } catch(err) {
-      const local = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
-      renderAdminStudentsTable(local);
+      rawAdminAttempts = data.attempts || [];
+    } catch (e) {
+      rawAdminAttempts = JSON.parse(localStorage.getItem('ielts_local_history') || '[]');
     }
-  }
 
-  function renderAdminStudentsTable(list) {
-    const tableBody = document.getElementById('adminStudentsTableBody');
-    if (!list || list.length === 0) {
-      tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:15px; color:#64748b;">Chưa có bài tập nào được nộp trong hệ thống.</td></tr>`;
+    if (rawAdminAttempts.length === 0) {
+      container.innerHTML = `<div style="text-align:center; padding:25px; color:var(--text-muted);">Chưa có học sinh nào nộp bài tập trong hệ thống.</div>`;
       return;
     }
 
-    tableBody.innerHTML = list.map(item => {
-      const separator = (item.pageUrl || '').includes('?') ? '&' : '?';
-      const reviewLink = `${item.pageUrl || 'runner-reading.html'}${separator}attemptId=${item.id}&email=${encodeURIComponent(item.studentEmail || '')}`;
+    // Nhóm các lần nộp bài theo từng Học Sinh (qua Email)
+    studentsMap = {};
+    rawAdminAttempts.forEach(att => {
+      const email = (att.studentEmail || "no_email").toLowerCase().trim();
+      if (!studentsMap[email]) {
+        studentsMap[email] = {
+          name: att.studentName || "Học viên",
+          email: email,
+          attempts: []
+        };
+      }
+      studentsMap[email].attempts.push(att);
+    });
 
-      return `
-        <tr>
-          <td><b>${item.studentName || 'Học viên'}</b></td>
-          <td style="color:#0284c7;">${item.studentEmail || 'N/A'}</td>
-          <td><b>${item.testTitle || 'Bài kiểm tra'}</b></td>
-          <td><span style="background:#dcfce7; color:#166534; padding:2px 8px; border-radius:12px; font-weight:bold;">${item.score || 'N/A'}</span></td>
-          <td style="font-size:12.5px; color:#64748b;">${item.timestamp || ''}</td>
-          <td>
-            <a href="${reviewLink}" target="_blank" style="background:#0284c7; color:white; padding:4px 10px; border-radius:4px; text-decoration:none; font-size:12px; font-weight:bold;">
-              👁️ Xem bài làm
-            </a>
-          </td>
-        </tr>
-      `;
-    }).join('');
+    renderAdminStudentsList(Object.values(studentsMap));
   }
 
+  function renderAdminStudentsList(studentsList) {
+    const container = document.getElementById('adminStudentsContainer');
+    if (studentsList.length === 0) {
+      container.innerHTML = `<div style="text-align:center; padding:20px; color:var(--text-muted);">Không tìm thấy học sinh nào phù hợp!</div>`;
+      return;
+    }
+
+    let html = '';
+    studentsList.forEach(st => {
+      const safeEmailKey = st.email.replace(/[^a-zA-Z0-9]/g, '_');
+      const initial = (st.name || 'H').charAt(0).toUpperCase();
+
+      // Dựng cây bài tập phân theo ngày cho riêng học sinh này
+      const dateTreeHtml = renderStudentDateTreeHtml(st.attempts, st.email, safeEmailKey);
+
+      html += `
+        <div class="student-card">
+          <!-- Accordion Cấp 1: Chỉ hiện Tên và Email -->
+          <div class="student-card-header" onclick="window.toggleStudentAccordion('${safeEmailKey}')">
+            <div class="student-info-left">
+              <div class="student-avatar-badge">${initial}</div>
+              <div>
+                <b style="font-size: 15px; color: var(--text-main);">${st.name}</b>
+                <div style="font-size: 12.5px; color: #0284c7; margin-top: 2px;">✉️ ${st.email}</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap: 10px;">
+              <span style="font-size: 12px; background: #e0f2fe; color: #0369a1; padding: 3px 10px; border-radius: 12px; font-weight: 700;">
+                ${st.attempts.length} bài đã nộp
+              </span>
+              <span id="st_icon_${safeEmailKey}" style="font-size: 12px; color: #64748b;">▼</span>
+            </div>
+          </div>
+
+          <!-- Accordion Cấp 2: Xổ ra các bài làm chia theo từng ngày -->
+          <div id="st_body_${safeEmailKey}" style="display: none; padding: 14px; border-top: 1px solid var(--border-color); background: #ffffff;">
+            ${dateTreeHtml}
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  // DỰNG BÀI LÀM PHÂN CHIA THEO NGÀY Y HỆT NHƯ FILE INDEX GỐC
+  function renderStudentDateTreeHtml(attempts, email, safeEmailKey) {
+    const groups = {};
+    attempts.forEach(att => {
+      let datePart = "Gần đây";
+      const m = att.timestamp?.match(/(\d{2}\/\d{2}\/\d{4})/);
+      if (m) datePart = m[1];
+      if (!groups[datePart]) groups[datePart] = [];
+      groups[datePart].push(att);
+    });
+
+    let html = '';
+    let isFirstDate = true;
+
+    for (const date in groups) {
+      const safeDateId = safeEmailKey + '_' + date.replace(/[^a-zA-Z0-9]/g, '_');
+      const displayStyle = isFirstDate ? 'block' : 'none';
+      const arrowIcon = isFirstDate ? '▼' : '▶';
+
+      html += `
+        <div style="margin-bottom: 8px; border: 1px solid var(--border-color); border-radius: 6px; overflow: hidden;">
+          <div class="date-accordion-header" onclick="window.toggleStudentDateGroup('${safeDateId}')">
+            <span style="display: flex; align-items: center; gap: 8px;">
+              <span id="icon_${safeDateId}" style="color: var(--primary-blue); font-size: 11px;">${arrowIcon}</span>
+              <span style="font-size: 13.5px;">📅 Ngày ${date}</span>
+            </span>
+            <span style="font-size: 11.5px; background: #e2e8f0; color: #334155; padding: 1px 7px; border-radius: 10px;">
+              ${groups[date].length} bài
+            </span>
+          </div>
+          <div id="content_${safeDateId}" style="display: ${displayStyle}; padding: 6px 14px; border-top: 1px solid var(--border-color);">
+      `;
+
+      groups[date].forEach(att => {
+        const separator = (att.pageUrl || '').includes('?') ? '&' : '?';
+        const reviewLink = `${att.pageUrl || 'runner-reading.html'}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
+
+        html += `
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 9px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
+            <div>
+              <b style="color: var(--text-main); font-size: 13.5px;">📝 ${att.testTitle}</b>
+              <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
+                ⏱️ Nộp lúc: <b>${att.timestamp}</b> • Làm trong: <b>${att.timeSpent || 'N/A'}</b>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="score-pill" style="font-size: 12px; padding: 2px 8px;">Điểm: ${att.score}</span>
+              <a href="${reviewLink}" target="_blank" class="btn-review" style="font-size: 12px; padding: 4px 10px;">👁️ Xem bài làm</a>
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div></div>`;
+      isFirstDate = false;
+    }
+
+    return html;
+  }
+
+  // Bật tắt Accordion Cấp 1 (Học sinh)
+  window.toggleStudentAccordion = (safeEmailKey) => {
+    const body = document.getElementById(`st_body_${safeEmailKey}`);
+    const icon = document.getElementById(`st_icon_${safeEmailKey}`);
+    if (!body) return;
+    const isHidden = body.style.display === 'none';
+    body.style.display = isHidden ? 'block' : 'none';
+    if (icon) icon.innerText = isHidden ? '▲' : '▼';
+  };
+
+  // Bật tắt Accordion Cấp 2 (Ngày tháng của học sinh)
+  window.toggleStudentDateGroup = (safeDateId) => {
+    const content = document.getElementById(`content_${safeDateId}`);
+    const icon = document.getElementById(`icon_${safeDateId}`);
+    if (!content) return;
+    const isHidden = content.style.display === 'none';
+    content.style.display = isHidden ? 'block' : 'none';
+    if (icon) icon.innerText = isHidden ? '▼' : '▶';
+  };
+
   window.filterAdminStudents = () => {
-    const q = document.getElementById('adminSearchInput').value.toLowerCase();
-    const filtered = allAdminAttempts.filter(a => 
-      (a.studentName || '').toLowerCase().includes(q) || 
-      (a.studentEmail || '').toLowerCase().includes(q) ||
-      (a.testTitle || '').toLowerCase().includes(q)
+    const q = document.getElementById('adminStudentSearch').value.toLowerCase().trim();
+    const filtered = Object.values(studentsMap).filter(st => 
+      st.name.toLowerCase().includes(q) || st.email.toLowerCase().includes(q)
     );
-    renderAdminStudentsTable(filtered);
+    renderAdminStudentsList(filtered);
   };
 
   // =========================================================================
-  // LOGIC ADMIN: BẬT / TẮT MODULE (BẢO TRÌ)
+  // ADMIN TAB 2: BẬT / TẮT TẠM THỜI TỪNG PHÂN HỆ
   // =========================================================================
-  async function loadSettings() {
+  async function loadModuleSettings() {
     try {
       const saved = localStorage.getItem(CONFIG.STORAGE_KEYS.SYSTEM_SETTINGS);
       if (saved) systemSettings = JSON.parse(saved);
     } catch(e) {}
+
+    // Đồng bộ từ Drive nếu có
+    if (CONFIG.DRIVE_STORAGE_URL) {
+      try {
+        const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
+          method: "POST",
+          body: JSON.stringify({ action: "get_settings" })
+        });
+        const d = await res.json();
+        if (d && d.settings) {
+          systemSettings = d.settings;
+          localStorage.setItem(CONFIG.STORAGE_KEYS.SYSTEM_SETTINGS, JSON.stringify(systemSettings));
+        }
+      } catch(e) {}
+    }
+
+    applyModuleLockUI();
   }
 
-  function renderModuleToggles() {
-    const container = document.getElementById('moduleToggleList');
+  function renderAdminModuleToggles() {
+    const container = document.getElementById('adminModuleToggleList');
+    if (!systemSettings.modules) systemSettings.modules = {};
+
     container.innerHTML = Object.entries(CONFIG.MODULES).map(([key, info]) => {
       const isEnabled = systemSettings.modules[key] !== false; // Mặc định mở
       return `
-        <div style="display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border:1px solid #e2e8f0; padding:12px 16px; border-radius:8px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; background:#f8fafc; border:1px solid var(--border-color); padding:12px 16px; border-radius:8px;">
           <div>
-            <b style="font-size:14.5px; color:#1e293b;">${info.name}</b>
-            <div style="font-size:12px; color:${isEnabled ? '#16a34a' : '#dc2626'}; font-weight:600;">
-              ${isEnabled ? '● Đang mở cho học sinh học' : '🔒 ĐANG TẠM KHÓA (BẢO TRÌ/SỬA BÀI)'}
+            <b style="font-size:14px; color:#1e293b;">${info.name}</b>
+            <div style="font-size:12px; color:${isEnabled ? '#16a34a' : '#dc2626'}; font-weight:700; margin-top:2px;">
+              ${isEnabled ? '● Đang mở cho học sinh học' : '🔒 ĐANG TẠM KHÓA (BẢO TRÌ/SỬA ĐỀ)'}
             </div>
           </div>
           <label class="switch">
-            <input type="checkbox" ${isEnabled ? 'checked' : ''} onchange="toggleModuleStatus('${key}', this.checked)">
+            <input type="checkbox" ${isEnabled ? 'checked' : ''} onchange="window.toggleModule('${key}', this.checked)">
             <span class="slider"></span>
           </label>
         </div>
@@ -458,12 +703,11 @@
     }).join('');
   }
 
-  window.toggleModuleStatus = async (moduleKey, isChecked) => {
+  window.toggleModule = async (key, isChecked) => {
     if (!systemSettings.modules) systemSettings.modules = {};
-    systemSettings.modules[moduleKey] = isChecked;
+    systemSettings.modules[key] = isChecked;
     localStorage.setItem(CONFIG.STORAGE_KEYS.SYSTEM_SETTINGS, JSON.stringify(systemSettings));
 
-    // Đồng bộ lên Google Drive để tất cả học sinh đều bị ảnh hưởng
     if (CONFIG.DRIVE_STORAGE_URL) {
       fetch(CONFIG.DRIVE_STORAGE_URL, {
         method: "POST",
@@ -471,13 +715,14 @@
       }).catch(() => {});
     }
 
-    applyModuleSettings();
-    renderModuleToggles();
+    applyModuleLockUI();
+    renderAdminModuleToggles();
   };
 
-  function applyModuleSettings() {
+  function applyModuleLockUI() {
     const user = stateManager.getUser();
-    const userIsAdmin = isAdmin(user.email);
+    const isAdmin = checkIsAdmin(user.email);
+    if (!systemSettings.modules) return;
 
     Object.entries(CONFIG.MODULES).forEach(([key, info]) => {
       const banner = document.getElementById(`mod_${key}`);
@@ -485,27 +730,52 @@
       const isEnabled = systemSettings.modules[key] !== false;
 
       if (!isEnabled) {
-        if (!userIsAdmin) {
-          banner.classList.add('disabled');
+        if (!isAdmin) {
+          banner.classList.add('is-locked');
           const btn = banner.querySelector('.module-btn');
           if (btn) {
             btn.innerText = "🔒 Đang bảo trì";
             btn.style.background = "#cbd5e1";
             btn.style.color = "#64748b";
-            btn.onclick = (e) => { e.preventDefault(); alert("⚠️ Bài tập này đang được Admin tạm khóa để cập nhật dữ liệu. Bạn quay lại sau nhé!"); };
+            btn.onclick = (e) => {
+              e.preventDefault();
+              alert("⚠️ Phân hệ này đang được Admin tạm khóa để cập nhật dữ liệu. Em quay lại sau nhé!");
+            };
           }
         }
       } else {
-        banner.classList.remove('disabled');
+        banner.classList.remove('is-locked');
       }
     });
   }
 
   // =========================================================================
-  // LOGIC HỌC VIÊN: HIỂN THỊ BÀI LÀM CỦA CHÍNH MÌNH
+  // GIAO DIỆN HỌC VIÊN: HIỂN THỊ LỊCH SỬ CHÍNH MÌNH (NGUYÊN BẢN CỦA BẠN)
   // =========================================================================
-  function loadMyHistory(email) {
-    const resultsBox = document.getElementById('myHistoryList');
+  window.toggleDateGroup = (safeId) => {
+    const content = document.getElementById('content_' + safeId);
+    const icon = document.getElementById('icon_' + safeId);
+    if (!content) return;
+    const isHidden = content.style.display === 'none';
+    content.style.display = isHidden ? 'block' : 'none';
+    if (icon) icon.innerText = isHidden ? '▼' : '▶';
+  };
+
+  window.toggleAllDateGroups = () => {
+    const groups = document.querySelectorAll('#historyResultsList .date-group-content');
+    const icons = document.querySelectorAll('#historyResultsList .date-group-icon');
+    const btn = document.getElementById('btnToggleAllDates');
+    if (groups.length === 0) return;
+    const isFirstOpen = groups[0].style.display !== 'none';
+    const nextDisplay = isFirstOpen ? 'none' : 'block';
+    const nextIcon = isFirstOpen ? '▶' : '▼';
+    groups.forEach(g => g.style.display = nextDisplay);
+    icons.forEach(ic => ic.innerText = nextIcon);
+    if (btn) btn.innerText = isFirstOpen ? '🔽 Mở rộng tất cả' : '🔼 Thu gọn tất cả';
+  };
+
+  async function syncAndRenderHistory(email) {
+    const resultsBox = document.getElementById('historyResultsList');
     let localAttempts = [];
     try {
       const raw = localStorage.getItem('ielts_local_history');
@@ -514,35 +784,105 @@
       }
     } catch(e) {}
 
-    document.getElementById('myTotalBadge').innerText = `${localAttempts.length} bài`;
+    if (localAttempts.length > 0) {
+      renderHistoryUI(localAttempts, email);
+    } else {
+      resultsBox.innerHTML = `<div style="text-align:center; padding:15px; color:var(--text-muted);">⏳ Đang đồng bộ lịch sử từ Google Drive...</div>`;
+    }
 
-    if (localAttempts.length === 0) {
-      resultsBox.innerHTML = `<div style="text-align:center; padding:15px; color:var(--text-muted);">Em chưa làm bài nào. Hãy chọn một phân hệ bên dưới để bắt đầu luyện thi nhé!</div>`;
+    if (!CONFIG.DRIVE_STORAGE_URL) return;
+
+    try {
+      const res = await fetch(CONFIG.DRIVE_STORAGE_URL, {
+        method: "POST",
+        body: JSON.stringify({ action: "get_history", email: email })
+      });
+      const data = await res.json();
+      if (data?.attempts) {
+        const map = new Map();
+        [...localAttempts, ...data.attempts].forEach(item => {
+          if (item && item.id) map.set(item.id, item);
+        });
+        const merged = Array.from(map.values()).sort((a, b) => (b.id || '').localeCompare(a.id || ''));
+        localStorage.setItem('ielts_local_history', JSON.stringify(merged));
+        renderHistoryUI(merged, email);
+      }
+    } catch (e) {
+      if (localAttempts.length === 0) {
+        resultsBox.innerHTML = `<div style="text-align:center; padding:14px; color:var(--text-muted);">ℹ️ Em chưa có bài làm nào trên thiết bị này.</div>`;
+      }
+    }
+  }
+
+  function renderHistoryUI(attempts, email) {
+    const resultsBox = document.getElementById('historyResultsList');
+    document.getElementById('totalAttemptsBadge').innerText = `${attempts.length} bài`;
+
+    if (attempts.length === 0) {
+      resultsBox.innerHTML = `<div style="text-align:center; padding:14px; color:var(--text-muted);">ℹ️ Em chưa có bài làm nào. Hãy chọn kỹ năng bên dưới để bắt đầu luyện tập nhé!</div>`;
       return;
     }
 
-    resultsBox.innerHTML = localAttempts.map(att => {
-      const separator = (att.pageUrl || '').includes('?') ? '&' : '?';
-      const reviewLink = `${att.pageUrl || 'runner-reading.html'}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
-      return `
-        <div style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px dashed var(--border-color); flex-wrap:wrap; gap:8px;">
-          <div>
-            <b style="font-size:14px; color:var(--text-main);">📝 ${att.testTitle}</b>
-            <div style="font-size:12.5px; color:var(--text-muted); margin-top:2px;">
-              ⏱️ Lúc: <b>${att.timestamp}</b> • Thời gian: <b>${att.timeSpent || 'N/A'}</b>
+    const groups = {};
+    attempts.forEach(att => {
+      let datePart = "Gần đây";
+      const m = att.timestamp?.match(/(\d{2}\/\d{2}\/\d{4})/);
+      if (m) datePart = m[1];
+      if (!groups[datePart]) groups[datePart] = [];
+      groups[datePart].push(att);
+    });
+
+    let html = '';
+    let isFirstGroup = true;
+
+    for (const date in groups) {
+      const safeId = date.replace(/[^a-zA-Z0-9]/g, '_');
+      const displayStyle = isFirstGroup ? 'block' : 'none';
+      const arrowIcon = isFirstGroup ? '▼' : '▶';
+
+      html += `
+        <div style="margin-bottom: 10px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: var(--bg-card);">
+          <div class="date-accordion-header" onclick="window.toggleDateGroup('${safeId}')">
+            <span style="display: flex; align-items: center; gap: 8px;">
+              <span id="icon_${safeId}" class="date-group-icon" style="color: var(--primary-blue);">${arrowIcon}</span>
+              <span>📅 Ngày ${date}</span>
+            </span>
+            <span style="font-size: 12px; background: #e2e8f0; color: #334155; padding: 2px 8px; border-radius: 10px;">
+              ${groups[date].length} bài
+            </span>
+          </div>
+          <div id="content_${safeId}" class="date-group-content" style="display: ${displayStyle}; padding: 6px 14px; border-top: 1px solid var(--border-color);">
+      `;
+
+      groups[date].forEach(att => {
+        const separator = (att.pageUrl || '').includes('?') ? '&' : '?';
+        const reviewLink = `${att.pageUrl || 'runner-reading.html'}${separator}attemptId=${att.id}&email=${encodeURIComponent(email)}`;
+
+        html += `
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px dashed var(--border-color); flex-wrap: wrap; gap: 8px;">
+            <div>
+              <b style="color: var(--text-main); font-size: 14px;">📝 ${att.testTitle}</b>
+              <div style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">
+                ⏱️ Nộp lúc: <b>${att.timestamp}</b> • Làm trong: <b>${att.timeSpent || 'N/A'}</b>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span class="score-pill">Điểm: ${att.score}</span>
+              <a href="${reviewLink}" class="btn-review">👁️ Xem lại bài</a>
             </div>
           </div>
-          <div style="display:flex; align-items:center; gap:10px;">
-            <span class="score-pill" style="background:#16a34a; color:white; padding:3px 10px; border-radius:20px; font-weight:bold; font-size:13px;">Điểm: ${att.score}</span>
-            <a href="${reviewLink}" class="btn-review" style="background:#0284c7; color:white; padding:5px 12px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600;">👁️ Xem lại</a>
-          </div>
-        </div>
-      `;
-    }).join('');
+        `;
+      });
+
+      html += `</div></div>`;
+      isFirstGroup = false;
+    }
+
+    resultsBox.innerHTML = html;
   }
 
-  // Khởi động
-  initApp();
+  // Khởi chạy kiểm tra đăng nhập
+  checkAuthStatus();
 </script>
 </body>
 </html>
