@@ -93,17 +93,58 @@
       </div>
     </div>
 
-    <!-- TAB 3: SỔ TAY TỪ VỰNG -->
+<!-- TAB 3: SỔ TAY TỪ VỰNG & BẢNG THEO DÕI ĐÃ HỌC / CHƯA HỌC -->
     <div id="view_sotay" class="hidden">
-      <div class="card" style="max-width: 700px; margin: 0 auto;">
-        <h2>Sổ Tay Phân Cấp Trí Nhớ (Bấm vào từng tầng để xem từ)</h2>
-        <div class="memory-tower" style="margin-top: 15px;">
-          <div class="tower-tier tier-1"><span>Tầng 1: Mới gặp (Cần ôn gấp)</span><span id="towerT1">0 từ 👉</span></div>
-          <div class="tower-tier tier-2"><span>Tầng 2: Nhớ mang máng</span><span id="towerT2">0 từ 👉</span></div>
-          <div class="tower-tier tier-3"><span>Tầng 3: Tạm nhớ</span><span id="towerT3">0 từ 👉</span></div>
-          <div class="tower-tier tier-4"><span>Tầng 4: Ghi nhớ tốt</span><span id="towerT4">0 từ 👉</span></div>
-          <div class="tower-tier tier-5"><span>Tầng 5: Dài hạn (Master)</span><span id="towerT5">0 từ 👉</span></div>
+      <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+        
+        <!-- 1. BẢNG THỐNG KÊ TỔNG QUÁT -->
+        <div style="background: white; border: 1.5px solid var(--border-color); border-radius: 14px; padding: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+          <div style="font-weight: 800; font-size: 16px; margin-bottom: 12px; color: var(--text-main);">
+            📊 TIẾN ĐỘ HỌC TỪ VỰNG CỦA EM
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; text-align: center;">
+            <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 10px; padding: 12px;">
+              <div style="font-size: 22px; font-weight: 800; color: var(--primary);" id="statTotalWords">0</div>
+              <div style="font-size: 12px; font-weight: 700; color: var(--text-muted);">TỔNG SỐ TỪ</div>
+            </div>
+            <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 12px;">
+              <div style="font-size: 22px; font-weight: 800; color: #16a34a;" id="statLearnedWords">0</div>
+              <div style="font-size: 12px; font-weight: 700; color: #15803d;">ĐÃ HỌC (<span id="statLearnedPercent">0%</span>)</div>
+            </div>
+            <div style="background: #fff7ed; border: 1px solid #fed7aa; border-radius: 10px; padding: 12px;">
+              <div style="font-size: 22px; font-weight: 800; color: #ea580c;" id="statUnlearnedWords">0</div>
+              <div style="font-size: 12px; font-weight: 700; color: #c2410c;">CHƯA HỌC</div>
+            </div>
+          </div>
         </div>
+
+        <!-- 2. BỘ LỌC & TÌM KIẾM TỪ -->
+        <div style="background: white; border: 1.5px solid var(--border-color); border-radius: 14px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 15px;">
+            <div style="display: flex; gap: 8px;">
+              <button type="button" class="btn-filter active" id="btnFilterAll" onclick="window.filterWordTable('all')">Tất cả</button>
+              <button type="button" class="btn-filter" id="btnFilterLearned" onclick="window.filterWordTable('learned')">✅ Đã học</button>
+              <button type="button" class="btn-filter" id="btnFilterUnlearned" onclick="window.filterWordTable('unlearned')">⏳ Chưa học</button>
+            </div>
+            <input type="text" id="inputSearchWordTable" placeholder="🔍 Tìm kiếm từ vựng hoặc nghĩa..." oninput="window.searchWordTable(this.value)" style="padding: 8px 14px; border: 1.5px solid var(--border-color); border-radius: 20px; font-size: 13.5px; width: 260px; outline: none;">
+          </div>
+
+          <!-- DANH SÁCH TỪ KÈM TAG -->
+          <div id="wordStatusTableContainer" style="display: flex; flex-direction: column; gap: 10px; max-height: 520px; overflow-y: auto; padding-right: 5px;"></div>
+        </div>
+
+        <!-- 3. THÁP TRÍ NHỚ PHÂN TẦNG CŨ (VẪN GIỮ ĐỂ BẤM XEM TỪNG TẦNG) -->
+        <div class="card">
+          <h2>Tháp Phân Cấp 5 Tầng Trí Nhớ (Bấm để xem chi tiết)</h2>
+          <div class="memory-tower" style="margin-top: 15px;">
+            <div class="tower-tier tier-1"><span>Tầng 1: Mới gặp (Cần ôn gấp)</span><span id="towerT1_st">0 từ 👉</span></div>
+            <div class="tower-tier tier-2"><span>Tầng 2: Nhớ mang máng</span><span id="towerT2_st">0 từ 👉</span></div>
+            <div class="tower-tier tier-3"><span>Tầng 3: Tạm nhớ</span><span id="towerT3_st">0 từ 👉</span></div>
+            <div class="tower-tier tier-4"><span>Tầng 4: Ghi nhớ tốt</span><span id="towerT4_st">0 từ 👉</span></div>
+            <div class="tower-tier tier-5"><span>Tầng 5: Dài hạn (Master)</span><span id="towerT5_st">0 từ 👉</span></div>
+          </div>
+        </div>
+
       </div>
     </div>
 
