@@ -72,9 +72,20 @@
       </div>
     </div>
 
-    <!-- TAB 2: LỘ TRÌNH BÀI HỌC (CHUẨN ẢNH MOCHIVOCAB) -->
+<!-- TAB 2: LỘ TRÌNH BÀI HỌC (CHỌN KHÓA HỌC DỄ DÀNG) -->
     <div id="view_roadmap" class="hidden">
       <div class="roadmap-container">
+        <!-- Khối chọn khóa học -->
+        <div style="background: white; border: 1.5px solid var(--border-color); border-radius: 14px; padding: 14px 18px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <div>
+            <b style="font-size: 14px; color: var(--text-muted); text-transform: uppercase;">📚 CHỌN BỘ TỪ ĐANG HỌC:</b>
+          </div>
+          <select id="courseSelectorDropdown" style="padding: 8px 14px; border-radius: 8px; border: 1.5px solid var(--primary); font-weight: 700; color: var(--primary); background: #f8fafc; cursor: pointer; outline: none;">
+            <option value="course_ielts_300">300 Từ Học Thuật IELTS Cốt Lõi (10 Bài)</option>
+            <option value="course_ielts_540">540 Từ Vựng IELTS Theo Chủ Đề (18 Bài)</option>
+          </select>
+        </div>
+
         <div class="course-banner-header" id="courseHeaderTitle">
           300 TỪ HỌC THUẬT IELTS CỐT LÕI
         </div>
