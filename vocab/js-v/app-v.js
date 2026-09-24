@@ -16,13 +16,13 @@ class App {
     this.currentWordsPool = [];
   }
 
-  async init() {
+async init() {
     try {
       const resCourses = await fetch('data-v/courses-v.json');
       this.courses = await resCourses.json();
       this.currentCourse = this.courses.find(c => c.id === this.currentCourseId) || this.courses[0];
       
-      // Mặc định nạp toàn bộ từ của khóa học hiện tại để tính toán tháp trí nhớ
+      // Mặc định nạp toàn bộ từ của khóa học hiện tại
       await this.loadAllWordsForCurrentCourse();
     } catch (e) {
       alert("Không thể tải danh sách khóa học!");
@@ -38,6 +38,20 @@ class App {
     this.updateUserStatsUI();
     this.renderWeeklyStreak();
     this.refreshDashboard();
+
+    // 🌟 SỰ KIỆN ĐỔI KHÓA HỌC (300 TỪ <-> 540 TỪ) NẰM Ở ĐÂY:
+    const courseDropdown = document.getElementById('courseSelectorDropdown');
+    if (courseDropdown) {
+      courseDropdown.value = this.currentCourse.id;
+      courseDropdown.onchange = async (e) => {
+        const selectedId = e.target.value;
+        this.currentCourse = this.courses.find(c => c.id === selectedId) || this.courses[0];
+        localStorage.setItem('sv_active_course_id', this.currentCourse.id);
+        await this.loadAllWordsForCurrentCourse();
+        this.renderRoadmap();
+        this.refreshDashboard();
+      };
+    }
 
     document.getElementById('btnStartReview').onclick = () => this.startReviewSession(this.currentWordsPool);
 
