@@ -14,15 +14,16 @@ class App {
     this.progress = StorageManager.getWordProgress(this.user.email);
     this.leaderboard = StorageManager.getLeaderboard();
     this.currentWordsPool = [];
+    this.currentFilter = 'all';
+    this.currentSearchTerm = '';
   }
 
-async init() {
+  async init() {
     try {
       const resCourses = await fetch('data-v/courses-v.json');
       this.courses = await resCourses.json();
       this.currentCourse = this.courses.find(c => c.id === this.currentCourseId) || this.courses[0];
       
-      // Mặc định nạp toàn bộ từ của khóa học hiện tại
       await this.loadAllWordsForCurrentCourse();
     } catch (e) {
       alert("Không thể tải danh sách khóa học!");
@@ -39,7 +40,7 @@ async init() {
     this.renderWeeklyStreak();
     this.refreshDashboard();
 
-    // 🌟 SỰ KIỆN ĐỔI KHÓA HỌC (300 TỪ <-> 540 TỪ) NẰM Ở ĐÂY:
+    // Lắng nghe chọn khóa học
     const courseDropdown = document.getElementById('courseSelectorDropdown');
     if (courseDropdown) {
       courseDropdown.value = this.currentCourse.id;
@@ -124,10 +125,109 @@ async init() {
   }
 
   renderSotay() {
-    UIController.renderMemoryTower(this.currentWordsPool, this.progress, (tierLevel) => {
-      const wordsInTier = this.currentWordsPool.filter(w => (this.progress[w.id]?.level || 1) === tierLevel);
-      UIController.showTierWordsModal(tierLevel, wordsInTier, this.progress);
+    const totalWords = this.currentWordsPool.length;
+    let learnedCount = 0;
+
+    this.currentWordsPool.forEach(w => {
+      const prog = this.progress[w.id];
+      if (prog && prog.totalReviews > 0) {
+        learnedCount++;
+      }
     });
+
+    const unlearnedCount = totalWords - learnedCount;
+    const learnedPercent = totalWords > 0 ? Math.round((learnedCount / totalWords) * 100) : 0;
+
+    document.getElementById('statTotalWords').innerText = totalWords;
+    document.getElementById('statLearnedWords').innerText = learnedCount;
+    document.getElementById('statLearnedPercent').innerText = `${learnedPercent}%`;
+    document.getElementById('statUnlearnedWords').innerText = unlearnedCount;
+
+    this.currentFilter = 'all';
+    this.currentSearchTerm = '';
+    this.renderWordStatusList();
+
+    for (let i = 1; i <= 5; i++) {
+      const countTier = this.currentWordsPool.filter(w => (this.progress[w.id]?.level || 1) === i).length;
+      const el = document.getElementById(`towerT${i}_st`);
+      if (el) el.innerText = `${countTier} từ 👉`;
+    }
+
+    window.filterWordTable = (filterType) => {
+      this.currentFilter = filterType;
+      ['all', 'learned', 'unlearned'].forEach(f => {
+        const btn = document.getElementById(`btnFilter${f.charAt(0).toUpperCase() + f.slice(1)}`);
+        if (btn) btn.classList.toggle('active', f === filterType);
+      });
+      this.renderWordStatusList();
+    };
+
+    window.searchWordTable = (term) => {
+      this.currentSearchTerm = (term || '').toLowerCase().trim();
+      this.renderWordStatusList();
+    };
+  }
+
+  renderWordStatusList() {
+    const container = document.getElementById('wordStatusTableContainer');
+    if (!container) return;
+
+    const filteredWords = this.currentWordsPool.filter(w => {
+      const prog = this.progress[w.id];
+      const isLearned = prog && prog.totalReviews > 0;
+
+      if (this.currentFilter === 'learned' && !isLearned) return false;
+      if (this.currentFilter === 'unlearned' && isLearned) return false;
+
+      if (this.currentSearchTerm) {
+        const matchTerm = (w.word || '').toLowerCase().includes(this.currentSearchTerm);
+        const matchMeaning = (w.meaning || '').toLowerCase().includes(this.currentSearchTerm);
+        return matchTerm || matchMeaning;
+      }
+      return true;
+    });
+
+    if (filteredWords.length === 0) {
+      container.innerHTML = `<div style="text-align:center; padding:30px; color:var(--text-muted); font-size:14px;">Không tìm thấy từ vựng nào phù hợp!</div>`;
+      return;
+    }
+
+    container.innerHTML = filteredWords.map(w => {
+      const prog = this.progress[w.id];
+      const isLearned = prog && prog.totalReviews > 0;
+      
+      let badgeHtml = '';
+      let reviewInfo = '';
+
+      if (isLearned) {
+        const lastDate = prog.reviewHistory && prog.reviewHistory.length > 0
+          ? prog.reviewHistory[prog.reviewHistory.length - 1].reviewedAt.split(' - ')[0]
+          : 'Gần đây';
+        badgeHtml = `<span class="badge-status badge-learned">✅ ĐÃ HỌC (${prog.totalReviews} lần)</span>`;
+        reviewInfo = `<span style="font-size:11px; color:#64748b; margin-top:3px; display:block;">Gần nhất: ${lastDate} • Tầng ${prog.level}</span>`;
+      } else {
+        badgeHtml = `<span class="badge-status badge-unlearned">⏳ CHƯA HỌC</span>`;
+        reviewInfo = `<span style="font-size:11px; color:#94a3b8; margin-top:3px; display:block;">Chưa ôn lần nào</span>`;
+      }
+
+      return `
+        <div class="word-status-row">
+          <div>
+            <div style="font-weight: 800; font-size: 15.5px; color: var(--primary);">
+              ${w.word}
+            </div>
+            <div style="font-size: 13.5px; color: var(--text-main); margin-top: 2px;">
+              ${w.meaning}
+            </div>
+            ${w.example ? `<div style="font-size: 12.5px; color: var(--text-muted); font-style: italic; margin-top: 3px;">"${w.example}"</div>` : ''}
+          </div>
+          <div style="text-align: right; flex-shrink: 0; margin-left: 12px;">
+            ${badgeHtml}
+            ${reviewInfo}
+          </div>
+        </div>
+      `;
+    }).join('');
   }
 
   renderWeeklyStreak() {
@@ -186,8 +286,6 @@ async init() {
       if (res.isCorrect) correctCount++;
       const currentProg = this.progress[res.wordId];
       const nextLvl = SRSEngine.calculateNextReview(currentProg, res.isCorrect);
-      
-      // Ghi log chi tiết ngày, giờ, số lần bấm theo từng email
       this.progress = StorageManager.recordWordReview(this.user.email, res.wordId, res.isCorrect, nextLvl);
     });
 
@@ -202,7 +300,6 @@ async init() {
     const ss = String(totalSecs % 60).padStart(2, '0');
     const speedStr = `${mm}:${ss}`;
 
-    // Lưu đám mây Drive chi tiết kèm lịch sử học
     StorageManager.sendSessionToCloud({
       studentName: this.user.name,
       studentEmail: this.user.email,
