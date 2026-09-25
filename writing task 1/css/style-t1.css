@@ -143,33 +143,31 @@ select:focus, input[type="text"]:focus, textarea:focus {
   font-weight: 700;
 }
 
-/* KHUNG HÌNH ẢNH BIỂU ĐỒ (Y HỆT HÌNH PRE CỦA MÀY) */
+/* KHUNG HÌNH ẢNH BIỂU ĐỒ (AUTO FIT FULL RỘNG NHƯ BẢN GỐC) */
 .image-box {
-  background: #f8fafc;
+  background: #ffffff;
   border: 1.5px solid #cbd5e1;
   border-radius: 8px;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 280px;
+  padding: 8px;
   margin-bottom: 14px;
+  width: 100%;
+  box-sizing: border-box;
 }
+
 #imageWrapper {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
+
 #chartImage {
-  max-width: 100%;
-  max-height: 380px;
+  width: 100%;
+  height: auto;
+  max-height: 650px; /* Cho phép bung to thoải mái theo chiều dọc */
   object-fit: contain;
   border-radius: 6px;
   cursor: zoom-in;
-  border: 1px solid #e2e8f0;
-  background: white;
+  display: block;
+  margin: 0 auto;
 }
 #imageFallback {
   text-align: center;
