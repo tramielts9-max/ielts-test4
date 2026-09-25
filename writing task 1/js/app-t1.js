@@ -31,6 +31,17 @@ function setupEventListeners() {
     });
   });
 
+  // Khi tự gõ đề riêng -> Tự động đồng bộ đề bài lên khung hiển thị trên ảnh
+  const customPromptInput = document.getElementById('customPromptInput');
+  if (customPromptInput) {
+    customPromptInput.addEventListener('input', (e) => {
+      const promptDisplay = document.getElementById('promptDisplayText');
+      if (promptDisplay) {
+        promptDisplay.innerText = e.target.value.trim() || "Vui lòng nhập đề bài vào ô bên trên...";
+      }
+    });
+  }
+
   // Khi chọn Dạng bài -> Lọc danh sách Đề bài tương ứng
   document.getElementById('categorySelect').addEventListener('change', () => {
     populateExercisesForCategory();
@@ -117,10 +128,16 @@ async function loadSelectedExercise() {
     const res = await fetch(filePath);
     currentItemJson = await res.json();
 
-    // 1. Cập nhật Badge
+    // 1. Cập nhật Badge loại biểu đồ
     document.getElementById('chartTypeBadge').innerText = currentItemJson.type || "Biểu đồ";
 
-    // 2. Tải và hiển thị ảnh
+    // 2. HIỂN THỊ ĐỀ BÀI LÊN KHUNG PHÍA TRÊN ẢNH
+    const promptDisplay = document.getElementById('promptDisplayText');
+    if (promptDisplay) {
+      promptDisplay.innerText = currentItemJson.prompt || "The graph below shows...";
+    }
+
+    // 3. Tải và hiển thị ảnh
     if (currentItemJson.image) {
       showImage(currentItemJson.image);
       loadRemoteImageToBase64(currentItemJson.image);
@@ -128,10 +145,10 @@ async function loadSelectedExercise() {
       removeImage();
     }
 
-    // 3. Đổ nội dung hướng dẫn chi tiết vào hộp bên dưới ảnh
+    // 4. Đổ nội dung hướng dẫn chi tiết vào hộp bên dưới ảnh
     renderGuideContent(currentItemJson.guide);
 
-    // 4. Reset bộ đếm thời gian xem hướng dẫn cho bài mới
+    // 5. Reset bộ đếm thời gian xem hướng dẫn cho bài mới
     resetGuideTimer();
 
   } catch (err) {
@@ -152,6 +169,12 @@ function clearForCustomPrompt() {
   currentItemJson = null;
   removeImage();
   document.getElementById('chartTypeBadge').innerText = "Đề tự nhập";
+  
+  const promptDisplay = document.getElementById('promptDisplayText');
+  if (promptDisplay) {
+    promptDisplay.innerText = document.getElementById('customPromptInput')?.value || "Vui lòng nhập đề bài vào ô bên trên...";
+  }
+
   document.getElementById('guideContentBox').innerHTML = `
     <p>💡 <b>Lưu ý khi tự làm đề riêng:</b></p>
     <ul>
@@ -218,6 +241,7 @@ function updateTimerBadge() {
   }
 }
 
+// ==================== HIỂN THỊ ẢNH (TỰ ĐỘNG THỬ ĐUÔI .JPEG VÀ .JPG) ====================
 function showImage(src) {
   const img = document.getElementById('chartImage');
   const fallback = document.getElementById('imageFallback');
