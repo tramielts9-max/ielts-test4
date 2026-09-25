@@ -3,101 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IELTS Writing Task 1 Master - Trạm Hướng Dẫn & Sửa Bài 2 Tầng</title>
+  <title>IELTS Writing Task 1 Master - Phòng Luyện Viết & Sửa Bài 2 Tầng</title>
   <link rel="stylesheet" href="css/style-t1.css">
-  <!-- Thư viện hiển thị Markdown chuẩn đẹp -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
 <div class="container-t1">
+  <!-- HEADER -->
   <header class="header-t1">
-    <div class="header-title">
-      <h1>📊 IELTS WRITING TASK 1 COACH</h1>
-      <p>Hệ thống hướng dẫn viết chi tiết từng câu • Sửa bài 2 tầng chuẩn Band 8.0+</p>
+    <div class="header-left">
+      <a href="../index.html" class="btn-back">⬅️ Trang chủ</a>
+      <div>
+        <h1>📊 8A. IELTS WRITING TASK 1 COACH</h1>
+        <p>Kho đề thi thật • Hướng dẫn viết chi tiết từng câu • AI Sửa bài 2 tầng</p>
+      </div>
     </div>
-    <a href="../index.html" class="btn-home">🏠 Về Trang Chủ</a>
   </header>
 
-  <!-- THANH ĐIỀU KHIỂN CHỌN NGUỒN ĐỀ -->
+  <!-- THANH CHỌN DẠNG BÀI & ĐỀ BÀI (2 DROPDOWN LIÊN HOÀN) -->
   <div class="control-panel-t1">
     <div class="source-toggle">
-      <span class="label-bold">Nguồn đề bài:</span>
-      <label><input type="radio" name="promptSource" value="catalog" checked> 📚 Chọn từ kho 171 đề có sẵn</label>
-      <label><input type="radio" name="promptSource" value="custom"> ✍️ Tự dán đề riêng của em</label>
+      <label><input type="radio" name="promptSource" value="catalog" checked> 📚 Chọn từ kho đề</label>
+      <label><input type="radio" name="promptSource" value="custom"> ✍️ Tự dán đề riêng</label>
     </div>
 
-    <!-- Dropdown khi chọn đề có sẵn -->
-    <div class="control-group" id="groupCatalogSelect">
-      <label for="exerciseSelect">📁 Danh sách đề thi Task 1:</label>
-      <select id="exerciseSelect"></select>
+    <!-- Hàng chọn bài: Dạng bài -> Đề bài -->
+    <div class="dropdown-row" id="catalogDropdowns">
+      <div class="control-group flex-1">
+        <label for="categorySelect">📂 1. Chọn Dạng bài biểu đồ:</label>
+        <select id="categorySelect">
+          <option value="Line Graph">1. Line Graph (Biểu đồ đường)</option>
+          <option value="Bar Chart">2. Bar Chart (Biểu đồ cột)</option>
+          <option value="Pie Chart">3. Pie Chart (Biểu đồ tròn)</option>
+          <option value="Table">4. Table (Bảng số liệu)</option>
+          <option value="Mixed Charts">5. Mixed Charts (Biểu đồ kết hợp)</option>
+          <option value="Map">6. Map (Bản đồ quy hoạch)</option>
+          <option value="Floor Plan">7. Floor Plan (Sơ đồ mặt bằng)</option>
+          <option value="Process">8. Process (Quy trình sản xuất)</option>
+        </select>
+      </div>
+
+      <div class="control-group flex-2">
+        <label for="exerciseSelect">📁 2. Chọn Đề bài thuộc dạng này:</label>
+        <select id="exerciseSelect"></select>
+      </div>
     </div>
 
-    <!-- Input khi tự dán đề -->
-    <div class="control-group" id="groupCustomPrompt" style="display: none;">
+    <!-- Hàng tự nhập đề nếu chọn Custom -->
+    <div class="control-group" id="customPromptBox" style="display: none;">
       <label for="customPromptInput">📝 Nhập đề bài Task 1 của em:</label>
-      <input type="text" id="customPromptInput" placeholder="Ví dụ: The chart below shows the percentage of...">
+      <input type="text" id="customPromptInput" placeholder="Ví dụ: The graph below shows changes in...">
     </div>
   </div>
 
-  <!-- VÙNG KHÔNG GIAN LÀM BÀI (HAI CỘT) -->
+  <!-- WORKSPACE 2 CỘT -->
   <div class="workspace-t1">
     
-    <!-- CỘT TRÁI: ẢNH BIỂU ĐỒ & HƯỚNG DẪN THU PHÓNG -->
-    <div class="card-t1 left-pane">
+    <!-- CỘT TRÁI: ẢNH BIỂU ĐỒ & HƯỚNG DẪN Ở DƯỚI (Y HỆT BẢN MẪU PRE) -->
+    <div class="card-t1 left-column">
       <div class="card-header">
-        <span class="card-title">🖼️ Biểu Đồ & Hướng Dẫn Chi Tiết</span>
-        <span id="chartTypeBadge" class="badge">Biểu đồ</span>
+        <span class="card-title">🖼️ Biểu đồ gốc & Hướng dẫn viết</span>
+        <span id="chartTypeBadge" class="badge">Line Graph</span>
       </div>
 
-      <!-- Khu vực ảnh: Xem ảnh, kéo thả, Ctrl+V -->
-      <div class="image-dropzone" id="dropzoneBox">
-        <span id="dropzoneNotice">📸 Click chọn ảnh hoặc <b>bấm Ctrl + V dán trực tiếp ảnh vào đây</b></span>
-        <input type="file" id="chartFileInput" accept="image/*" style="display: none;">
-        <img id="chartImagePreview" src="" alt="Biểu đồ Task 1">
-        <button type="button" id="btnRemoveImage" class="btn-sm-danger">❌ Đổi ảnh khác</button>
-      </div>
-
-      <!-- THANH TRẠNG THÁI THEO DÕI THỜI GIAN MỞ HƯỚNG DẪN -->
-      <div class="guide-tracker-bar">
-        <button type="button" id="btnToggleGuide" class="btn-toggle-guide">
-          📖 <span id="toggleText">MỞ HƯỚNG DẪN VIẾT CHI TIẾT</span>
-        </button>
-        <div id="guideStatusTag" class="tag-status independent">
-          🛡️ Chế độ: Tự lực hoàn toàn (0s)
+      <!-- KHUNG HIỂN THỊ HÌNH ẢNH BIỂU ĐỒ (FIT TỶ LỆ) -->
+      <div class="image-box" id="imageBox">
+        <div id="imageWrapper" title="Click vào ảnh để phóng to xem chi tiết">
+          <img id="chartImage" src="" alt="Biểu đồ Task 1" style="display:none;" onclick="openImageModal(this.src)">
+          <div id="imageFallback">
+            <p>📷 Chưa có ảnh sẵn cho bài này</p>
+            <button type="button" class="btn-picker" onclick="document.getElementById('chartFileInput').click()">📂 Chọn ảnh từ máy</button>
+            <span class="paste-hint">Hoặc bấm <b>Ctrl + V</b> để dán ảnh trực tiếp</span>
+          </div>
         </div>
+        <input type="file" id="chartFileInput" accept="image/*" style="display: none;">
+        <button type="button" id="btnRemoveImage" class="btn-remove-img" style="display:none;">❌ Đổi ảnh khác</button>
       </div>
 
-      <!-- HỘP NỘI DUNG HƯỚNG DẪN (MẶC ĐỊNH THU GỌN) -->
-      <div id="guideBox" class="guide-collapsible-content" style="display: none;">
-        <div class="guide-inner" id="guideContentDisplay">
-          <p class="guide-placeholder">Đang tải hướng dẫn viết chi tiết cho đề này...</p>
+      <!-- THANH TRẠNG THÁI VÀ NÚT MỞ / THU GỌN HƯỚNG DẪN -->
+      <div class="guide-control-bar">
+        <button type="button" id="btnToggleGuide" class="btn-guide-toggle">
+          <span id="guideIcon">📖</span> <span id="guideToggleText">MỞ HƯỚNG DẪN CHI TIẾT (TRẠM IELTS)</span>
+        </button>
+        <span id="guideTimerBadge" class="timer-tag independent">🛡️ Tự lực (0s)</span>
+      </div>
+
+      <!-- VÙNG HƯỚNG DẪN CHI TIẾT (NẰM DƯỚI ẢNH, CÙNG VỊ TRÍ HỘP TIẾNG VIỆT) -->
+      <div id="guideCollapsibleBox" class="guide-collapsible" style="display: none;">
+        <div id="guideContentBox" class="guide-content">
+          Đang tải hướng dẫn...
         </div>
       </div>
     </div>
 
-    <!-- CỘT PHẢI: BÀI VIẾT HỌC SINH -->
-    <div class="card-t1 right-pane">
+    <!-- CỘT PHẢI: BÀI VIẾT TIẾNG ANH CỦA HỌC SINH -->
+    <div class="card-t1 right-column">
       <div class="card-header">
-        <span class="card-title">✍️ Bài Viết Của Học Sinh</span>
-        <span id="wordCounter" class="word-count">0 từ</span>
+        <span class="card-title">🇬🇧 Bài viết Task 1 của em</span>
+        <span id="wordCounter" class="word-counter">0 từ</span>
       </div>
 
-      <textarea id="studentEssayInput" placeholder="Nhìn biểu đồ và viết bài Task 1 của em vào đây (viết từng câu, từng đoạn hoặc hoàn chỉnh cả bài)..."></textarea>
+      <textarea id="studentEssayInput" placeholder="Nhìn biểu đồ bên trái rồi gõ bài viết tiếng Anh của em vào đây (viết từng câu, từng đoạn hoặc cả bài)..."></textarea>
       
-      <div class="action-bar-t1">
-        <span class="hint-text">💡 Mẹo: Viết đủ 4 phần (Intro, Overview, Body 1, Body 2).</span>
-        <button type="button" id="btnSubmitGrading" class="btn-grade">⚡ Nộp Bài & Sửa 2 Tầng</button>
+      <div class="action-footer">
+        <span class="tip-text">💡 Click vào ảnh bên trái để phóng to xem chi tiết số liệu.</span>
+        <button type="button" id="btnSubmitGrading" class="btn-submit-grading">⚡ Chấm & Sửa bài 2 tầng</button>
       </div>
     </div>
 
   </div>
 
-  <!-- KHU VỰC KẾT QUẢ CHẤM ĐIỂM CỦA AI -->
-  <div id="result-box-t1" style="display: none;">
-    <div id="status-bar-t1">⏳ Sẵn sàng hỗ trợ học sinh...</div>
+  <!-- VÙNG KẾT QUẢ SỬA BÀI 2 TẦNG CỦA AI -->
+  <div id="resultBox" class="result-box" style="display: none;">
+    <div id="statusBar" class="status-bar">⏳ Sẵn sàng hỗ trợ học sinh...</div>
     
-    <div class="color-legend-t1">
+    <div class="color-legend">
       <div class="legend-item"><span class="dot normal"></span> Chữ thường: Câu em viết</div>
       <div class="legend-item"><span class="dot err"></span> <del class="err">Gạch đỏ:</del> Lỗi sai cần bỏ</div>
       <div class="legend-item"><span class="dot fix"></span> <ins class="fix">Xanh lá:</ins> Sửa sạch lỗi cơ bản (Band 6)</div>
@@ -105,9 +126,9 @@
       <div class="legend-item"><span class="dot note"></span> <span class="teacher-note">💬 Tím: Lời dặn dò</span></div>
     </div>
 
-    <div id="result-content-t1"></div>
+    <div id="resultMarkdown" class="result-markdown"></div>
     <center>
-      <button type="button" id="btnPrintReport" class="btn-print" onclick="window.print()">📥 Xuất Báo Cáo PDF</button>
+      <button type="button" class="btn-print" onclick="window.print()">📥 Xuất Báo Cáo PDF</button>
     </center>
   </div>
 </div>
