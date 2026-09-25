@@ -3,567 +3,567 @@
     "id": "01.01",
     "type": "Line Graph",
     "title": "[01.01] Line - Giá nhà trung bình tại 3 quốc gia (1997–2014)",
-    "file": "data/t1/01-1-line-house-prices-t1.json",
-    "image": "images_task1/task1_img_2.jpg"
+    "file": "data/line-t1/01-1-line-house-prices-t1.json",
+    "image": "images_task1/task1_img_2.jpeg"
   },
   {
     "id": "01.02",
     "type": "Line Graph",
     "title": "[01.02] Line - Khách đi tàu & tỉ lệ chạy đúng giờ (2000–2009)",
-    "file": "data/t1/01-2-line-train-passengers-t1.json",
-    "image": "images_task1/task1_img_28.jpg"
+    "file": "data/line-t1/01-2-line-train-passengers-t1.json",
+    "image": "images_task1/task1_img_28.jpeg"
   },
   {
     "id": "01.03",
     "type": "Line Graph",
     "title": "[01.03] Line - Thuê bao điện thoại ở châu Phi (1994–2004)",
-    "file": "data/t1/01-3-line-phone-africa-t1.json",
-    "image": "images_task1/task1_img_29.jpg"
+    "file": "data/line-t1/01-3-line-phone-africa-t1.json",
+    "image": "images_task1/task1_img_29.jpeg"
   },
   {
     "id": "01.04",
     "type": "Line Graph",
     "title": "[01.04] Line - Giá chuối tại 4 quốc gia (1994–2004)",
-    "file": "data/t1/01-4-line-banana-prices-t1.json",
-    "image": "images_task1/task1_img_31.jpg"
+    "file": "data/line-t1/01-4-line-banana-prices-t1.json",
+    "image": "images_task1/task1_img_31.jpeg"
   },
   {
     "id": "01.05",
     "type": "Line Graph",
     "title": "[01.05] Line - Khán giả bóng đá tại Ý, Anh, Đức (1980–2004)",
-    "file": "data/t1/01-5-line-football-attendance-t1.json",
-    "image": "images_task1/task1_img_33.jpg"
+    "file": "data/line-t1/01-5-line-football-attendance-t1.json",
+    "image": "images_task1/task1_img_33.jpeg"
   },
   {
     "id": "01.06",
     "type": "Line Graph",
     "title": "[01.06] Line - Các nguồn ô nhiễm không khí tại Anh (1990–2005)",
-    "file": "data/t1/01-6-line-air-pollutants-t1.json",
-    "image": "images_task1/task1_img_34.jpg"
+    "file": "data/line-t1/01-6-line-air-pollutants-t1.json",
+    "image": "images_task1/task1_img_34.jpeg"
   },
   {
     "id": "01.07",
     "type": "Line Graph",
     "title": "[01.07] Line - Xe công cộng & xe cá nhân ở 5 thành phố Úc",
-    "file": "data/t1/01-7-line-transport-australia-t1.json",
-    "image": "images_task1/task1_img_35.jpg"
+    "file": "data/line-t1/01-7-line-transport-australia-t1.json",
+    "image": "images_task1/task1_img_35.jpeg"
   },
   {
     "id": "01.08",
     "type": "Line Graph",
     "title": "[01.08] Line - Lương tại Nhật so với giá TV màu & trắng đen",
-    "file": "data/t1/01-8-line-japan-salary-tv-t1.json",
-    "image": "images_task1/task1_img_38.jpg"
+    "file": "data/line-t1/01-8-line-japan-salary-tv-t1.json",
+    "image": "images_task1/task1_img_38.jpeg"
   },
   {
     "id": "01.09",
     "type": "Line Graph",
     "title": "[01.09] Line - Dân số theo nhóm tuổi & dự báo (1960–2040)",
-    "file": "data/t1/01-9-line-population-age-t1.json",
-    "image": "images_task1/task1_img_47.jpg"
+    "file": "data/line-t1/01-9-line-population-age-t1.json",
+    "image": "images_task1/task1_img_47.jpeg"
   },
   {
     "id": "01.10",
     "type": "Line Graph",
     "title": "[01.10] Line - Tội phạm trộm xe, đột nhập & cướp giật (1970–2005)",
-    "file": "data/t1/01-10-line-crime-incidents-t1.json",
-    "image": "images_task1/task1_img_48.jpg"
+    "file": "data/line-t1/01-10-line-crime-incidents-t1.json",
+    "image": "images_task1/task1_img_48.jpeg"
   },
 
   {
     "id": "02.01",
     "type": "Bar Chart",
     "title": "[02.01] Bar - Tỉ lệ phim phát hành & vé bán ra (1996 & 2000)",
-    "file": "data/t1/02-1-bar-films-released-t1.json",
-    "image": "images_task1/task1_img_16.jpg"
+    "file": "data/bar-t1/02-1-bar-films-released-t1.json",
+    "image": "images_task1/task1_img_16.jpeg"
   },
   {
     "id": "02.02",
     "type": "Bar Chart",
     "title": "[02.02] Bar - Khối lượng rác chôn lấp, đốt & đổ biển (2005–2008)",
-    "file": "data/t1/02-2-bar-waste-disposal-t1.json",
-    "image": "images_task1/task1_img_19.jpg"
+    "file": "data/bar-t1/02-2-bar-waste-disposal-t1.json",
+    "image": "images_task1/task1_img_19.jpeg"
   },
   {
     "id": "02.03",
     "type": "Bar Chart",
     "title": "[02.03] Bar - Khảo sát ô tô: Tần suất đổi xe & loại xe mua",
-    "file": "data/t1/02-3-bar-car-ownership-survey-t1.json",
-    "image": "images_task1/task1_img_24.jpg"
+    "file": "data/bar-t1/02-3-bar-car-ownership-survey-t1.json",
+    "image": "images_task1/task1_img_24.jpeg"
   },
   {
     "id": "02.04",
     "type": "Bar Chart",
     "title": "[02.04] Bar - Lao động tay nghề nhập cư vào Úc (2009–2012)",
-    "file": "data/t1/02-4-bar-skilled-migrants-t1.json",
-    "image": "images_task1/task1_img_26.jpg"
+    "file": "data/bar-t1/02-4-bar-skilled-migrants-t1.json",
+    "image": "images_task1/task1_img_26.jpeg"
   },
   {
     "id": "02.05",
     "type": "Bar Chart",
     "title": "[02.05] Bar - Người có bằng lái & tài xế trẻ (17–20 tuổi) tại Anh",
-    "file": "data/t1/02-5-bar-uk-driving-license-t1.json",
-    "image": "images_task1/task1_img_37.jpg"
+    "file": "data/bar-t1/02-5-bar-uk-driving-license-t1.json",
+    "image": "images_task1/task1_img_37.jpeg"
   },
   {
     "id": "02.06",
     "type": "Bar Chart",
     "title": "[02.06] Bar - Người sống độc thân theo nhóm tuổi ở Mỹ (1850–2000)",
-    "file": "data/t1/02-6-bar-living-alone-usa-t1.json",
-    "image": "images_task1/task1_img_46.jpg"
+    "file": "data/bar-t1/02-6-bar-living-alone-usa-t1.json",
+    "image": "images_task1/task1_img_46.jpeg"
   },
   {
     "id": "02.07",
     "type": "Bar Chart",
     "title": "[02.07] Bar - Phương tiện đi làm của người dân (1960, 1980, 2000)",
-    "file": "data/t1/02-7-bar-transport-modes-t1.json",
-    "image": "images_task1/task1_img_67.jpg"
+    "file": "data/bar-t1/02-7-bar-transport-modes-t1.json",
+    "image": "images_task1/task1_img_67.jpeg"
   },
   {
     "id": "02.08",
     "type": "Bar Chart",
     "title": "[02.08] Bar - Chi tiêu hàng tuần của hộ gia đình (1968 vs 2018)",
-    "file": "data/t1/02-8-bar-household-spending-t1.json",
-    "image": "images_task1/task1_img_71.jpg"
+    "file": "data/bar-t1/02-8-bar-household-spending-t1.json",
+    "image": "images_task1/task1_img_71.jpeg"
   },
   {
     "id": "02.09",
     "type": "Bar Chart",
     "title": "[02.09] Bar - Phương tiện đi học của trẻ 5–12 tuổi (1990 vs 2010)",
-    "file": "data/t1/02-9-bar-school-trips-t1.json",
-    "image": "images_task1/task1_img_76.jpg"
+    "file": "data/bar-t1/02-9-bar-school-trips-t1.json",
+    "image": "images_task1/task1_img_76.jpeg"
   },
   {
     "id": "02.10",
     "type": "Bar Chart",
     "title": "[02.10] Bar - Tỉ lệ bằng lái chung & tài xế trẻ theo giới tính",
-    "file": "data/t1/02-10-bar-driving-gender-t1.json",
-    "image": "images_task1/task1_img_80.jpg"
+    "file": "data/bar-t1/02-10-bar-driving-gender-t1.json",
+    "image": "images_task1/task1_img_80.jpeg"
   },
 
   {
     "id": "03.01",
     "type": "Pie Chart",
     "title": "[03.01] Pie - Đánh giá cơ sở vật chất của sinh viên ĐH (2007)",
-    "file": "data/t1/03-1-pie-university-facilities-t1.json",
-    "image": "images_task1/task1_img_25.jpg"
+    "file": "data/pie-t1/03-1-pie-university-facilities-t1.json",
+    "image": "images_task1/task1_img_25.jpeg"
   },
   {
     "id": "03.02",
     "type": "Pie Chart",
     "title": "[03.02] Pie - Độ tuổi người dùng YouTube, Facebook & Twitter",
-    "file": "data/t1/03-2-pie-social-media-users-t1.json",
-    "image": "images_task1/task1_img_30.jpg"
+    "file": "data/pie-t1/03-2-pie-social-media-users-t1.json",
+    "image": "images_task1/task1_img_30.jpeg"
   },
   {
     "id": "03.03",
     "type": "Pie Chart",
     "title": "[03.03] Pie - Đặt khóa học tiếng Anh trực tuyến ở Úc, Mỹ, Canada",
-    "file": "data/t1/03-3-pie-online-courses-booking-t1.json",
-    "image": "images_task1/task1_img_32.jpg"
+    "file": "data/pie-t1/03-3-pie-online-courses-booking-t1.json",
+    "image": "images_task1/task1_img_32.jpeg"
   },
   {
     "id": "03.04",
     "type": "Pie Chart",
     "title": "[03.04] Pie - Học viên chọn các khóa học thường xuyên (1985 & Nay)",
-    "file": "data/t1/03-4-pie-adult-education-1985-t1.json",
-    "image": "images_task1/task1_img_42.jpg"
+    "file": "data/pie-t1/03-4-pie-adult-education-1985-t1.json",
+    "image": "images_task1/task1_img_42.jpeg"
   },
   {
     "id": "03.05",
     "type": "Pie Chart",
     "title": "[03.05] Pie - Cơ cấu nguồn năng lượng tại Úc năm 2008 & 2030",
-    "file": "data/t1/03-5-pie-australia-energy-sources-t1.json",
-    "image": "images_task1/task1_img_56.jpg"
+    "file": "data/pie-t1/03-5-pie-australia-energy-sources-t1.json",
+    "image": "images_task1/task1_img_56.jpeg"
   },
   {
     "id": "03.06",
     "type": "Pie Chart",
     "title": "[03.06] Pie - Thể loại sách bán ra tại một hiệu sách (1972 & 2012)",
-    "file": "data/t1/03-6-pie-books-sales-t1.json",
-    "image": "images_task1/task1_img_72.jpg"
+    "file": "data/pie-t1/03-6-pie-books-sales-t1.json",
+    "image": "images_task1/task1_img_72.jpeg"
   },
   {
     "id": "03.07",
     "type": "Pie Chart",
     "title": "[03.07] Pie - Trình độ bằng cấp nhân viên công ty quảng cáo (1990/2010)",
-    "file": "data/t1/03-7-pie-staff-qualifications-1990-t1.json",
-    "image": "images_task1/task1_img_85.jpg"
+    "file": "data/pie-t1/03-7-pie-staff-qualifications-1990-t1.json",
+    "image": "images_task1/task1_img_85.jpeg"
   },
   {
     "id": "03.08",
     "type": "Pie Chart",
     "title": "[03.08] Pie - Tỉ lệ nguồn năng lượng sản xuất (1985 & 2003)",
-    "file": "data/t1/03-8-pie-energy-production-1985-t1.json",
-    "image": "images_task1/task1_img_87.jpg"
+    "file": "data/pie-t1/03-8-pie-energy-production-1985-t1.json",
+    "image": "images_task1/task1_img_87.jpeg"
   },
   {
     "id": "03.09",
     "type": "Pie Chart",
     "title": "[03.09] Pie - Trình độ học vấn nhân viên công ty quảng cáo",
-    "file": "data/t1/03-9-pie-advertising-staff-2010-t1.json",
-    "image": "images_task1/task1_img_98.jpg"
+    "file": "data/pie-t1/03-9-pie-advertising-staff-2010-t1.json",
+    "image": "images_task1/task1_img_98.jpeg"
   },
   {
     "id": "03.10",
     "type": "Pie Chart",
     "title": "[03.10] Pie - Hình thức học của sinh viên (1984, 1994, 2004)",
-    "file": "data/t1/03-10-pie-study-modes-t1.json",
-    "image": "images_task1/task1_img_103.jpg"
+    "file": "data/pie-t1/03-10-pie-study-modes-t1.json",
+    "image": "images_task1/task1_img_103.jpeg"
   },
 
   {
     "id": "04.01",
     "type": "Table",
     "title": "[04.01] Table - Sinh viên quốc tế đến Canada và Mỹ (2002–2003)",
-    "file": "data/t1/04-1-table-students-canada-usa-t1.json",
-    "image": "images_task1/task1_img_1.jpg"
+    "file": "data/table-t1/04-1-table-students-canada-usa-t1.json",
+    "image": "images_task1/task1_img_1.jpeg"
   },
   {
     "id": "04.02",
     "type": "Table",
     "title": "[04.02] Table - Cư dân sống trong 4 kiểu nhà tại các vùng ở Anh",
-    "file": "data/t1/04-2-table-housing-types-uk-t1.json",
-    "image": "images_task1/task1_img_12.jpg"
+    "file": "data/table-t1/04-2-table-housing-types-uk-t1.json",
+    "image": "images_task1/task1_img_12.jpeg"
   },
   {
     "id": "04.03",
     "type": "Table",
     "title": "[04.03] Table - Khách du lịch quốc tế theo khu vực (1990–2005)",
-    "file": "data/t1/04-3-table-international-travel-t1.json",
-    "image": "images_task1/task1_img_15.jpg"
+    "file": "data/table-t1/04-3-table-international-travel-t1.json",
+    "image": "images_task1/task1_img_15.jpeg"
   },
   {
     "id": "04.04",
     "type": "Table",
     "title": "[04.04] Table - Tiền viện trợ cho nước đang phát triển (2006–2010)",
-    "file": "data/t1/04-4-table-aid-developing-countries-t1.json",
-    "image": "images_task1/task1_img_17.jpg"
+    "file": "data/table-t1/04-4-table-aid-developing-countries-t1.json",
+    "image": "images_task1/task1_img_17.jpeg"
   },
   {
     "id": "04.05",
     "type": "Table",
     "title": "[04.05] Table - Số trường ĐH top 200 thế giới ở 3 ngành học (2011)",
-    "file": "data/t1/04-5-table-top-universities-subjects-t1.json",
-    "image": "images_task1/task1_img_18.jpg"
+    "file": "data/table-t1/04-5-table-top-universities-subjects-t1.json",
+    "image": "images_task1/task1_img_18.jpeg"
   },
   {
     "id": "04.06",
     "type": "Table",
     "title": "[04.06] Table - Chỉ số chăm sóc y tế tại 3 nước châu Âu (1980–2000)",
-    "file": "data/t1/04-6-table-medical-care-europe-t1.json",
-    "image": "images_task1/task1_img_21.jpg"
+    "file": "data/table-t1/04-6-table-medical-care-europe-t1.json",
+    "image": "images_task1/task1_img_21.jpeg"
   },
   {
     "id": "04.07",
     "type": "Table",
     "title": "[04.07] Table - Tỉ lệ thất nghiệp tại 9 quốc gia (1994 & 2004)",
-    "file": "data/t1/04-7-table-unemployment-9-countries-t1.json",
-    "image": "images_task1/task1_img_22.jpg"
+    "file": "data/table-t1/04-7-table-unemployment-9-countries-t1.json",
+    "image": "images_task1/task1_img_22.jpeg"
   },
   {
     "id": "04.08",
     "type": "Table",
     "title": "[04.08] Table - Học phí chương trình Thạc sĩ tại 3 quốc gia (2007)",
-    "file": "data/t1/04-8-table-masters-program-costs-t1.json",
-    "image": "images_task1/task1_img_23.jpg"
+    "file": "data/table-t1/04-8-table-masters-program-costs-t1.json",
+    "image": "images_task1/task1_img_23.jpeg"
   },
   {
     "id": "04.09",
     "type": "Table",
     "title": "[04.09] Table - Giờ làm việc của lao động full-time & part-time (2002)",
-    "file": "data/t1/04-9-table-working-hours-europe-t1.json",
-    "image": "images_task1/task1_img_27.jpg"
+    "file": "data/table-t1/04-9-table-working-hours-europe-t1.json",
+    "image": "images_task1/task1_img_27.jpeg"
   },
   {
     "id": "04.10",
     "type": "Table",
     "title": "[04.10] Table - Khối lượng rác thải ở 6 nước qua 20 năm",
-    "file": "data/t1/04-10-table-waste-production-6-countries-t1.json",
-    "image": "images_task1/task1_img_39.jpg"
+    "file": "data/table-t1/04-10-table-waste-production-6-countries-t1.json",
+    "image": "images_task1/task1_img_39.jpeg"
   },
 
   {
     "id": "05.01",
     "type": "Mixed Charts",
     "title": "[05.01] Đường + Cột: Nhiệt độ & số ngày mưa tại 2 thành phố Úc",
-    "file": "data/t1/05-1-mixed-temp-rain-australia-t1.json",
-    "image": "images_task1/task1_img_3.jpg"
+    "file": "data/mixed-t1/05-1-mixed-temp-rain-australia-t1.json",
+    "image": "images_task1/task1_img_3.jpeg"
   },
   {
     "id": "05.02",
     "type": "Mixed Charts",
     "title": "[05.02] Bảng + Cột: Chi phí & cơ cấu tiêu tiền du học sinh",
-    "file": "data/t1/05-2-mixed-study-abroad-expenditure-t1.json",
-    "image": "images_task1/task1_img_8.jpg"
+    "file": "data/mixed-t1/05-2-mixed-study-abroad-expenditure-t1.json",
+    "image": "images_task1/task1_img_8.jpeg"
   },
   {
     "id": "05.03",
     "type": "Mixed Charts",
     "title": "[05.03] Tròn + Cột: Thời gian đi làm & phương tiện ở Anh",
-    "file": "data/t1/05-3-mixed-commute-transport-uk-t1.json",
-    "image": "images_task1/task1_img_9.jpg"
+    "file": "data/mixed-t1/05-3-mixed-commute-transport-uk-t1.json",
+    "image": "images_task1/task1_img_9.jpeg"
   },
   {
     "id": "05.04",
     "type": "Mixed Charts",
     "title": "[05.04] Tròn + Cột: Phân bố nước thế giới & sử dụng nước 3 nước",
-    "file": "data/t1/05-4-mixed-water-distribution-usage-t1.json",
-    "image": "images_task1/task1_img_14.jpg"
+    "file": "data/mixed-t1/05-4-mixed-water-distribution-usage-t1.json",
+    "image": "images_task1/task1_img_14.jpeg"
   },
   {
     "id": "05.05",
     "type": "Mixed Charts",
     "title": "[05.05] Cột + Bảng: Tuổi thọ năm 2018 & mức tăng 1953–2008",
-    "file": "data/t1/05-5-mixed-life-expectancy-t1.json",
-    "image": "images_task1/task1_img_58.jpg"
+    "file": "data/mixed-t1/05-5-mixed-life-expectancy-t1.json",
+    "image": "images_task1/task1_img_58.jpeg"
   },
   {
     "id": "05.06",
     "type": "Mixed Charts",
     "title": "[05.06] Cột + Bảng: Thu nhập theo ngành & mức lương trung bình",
-    "file": "data/t1/05-6-mixed-salary-sectors-t1.json",
-    "image": "images_task1/task1_img_77.jpg"
+    "file": "data/mixed-t1/05-6-mixed-salary-sectors-t1.json",
+    "image": "images_task1/task1_img_77.jpeg"
   },
   {
     "id": "05.07",
     "type": "Mixed Charts",
     "title": "[05.07] Bảng + Đường: Khán giả xem phim rạp chia theo độ tuổi",
-    "file": "data/t1/05-7-mixed-cinema-attendance-age-t1.json",
-    "image": "images_task1/task1_img_116.jpg"
+    "file": "data/mixed-t1/05-7-mixed-cinema-attendance-age-t1.json",
+    "image": "images_task1/task1_img_116.jpeg"
   },
   {
     "id": "05.08",
     "type": "Mixed Charts",
     "title": "[05.08] Đường + Tròn: Xuất khẩu dệt may Bangladesh & thị trường",
-    "file": "data/t1/05-8-mixed-clothing-export-bangladesh-t1.json",
-    "image": "images_task1/task1_img_136.jpg"
+    "file": "data/mixed-t1/05-8-mixed-clothing-export-bangladesh-t1.json",
+    "image": "images_task1/task1_img_136.jpeg"
   },
   {
     "id": "05.09",
     "type": "Mixed Charts",
     "title": "[05.09] Bảng + Đường: Tìm kiếm internet tại Mỹ & thị phần công cụ",
-    "file": "data/t1/05-9-mixed-us-search-engines-t1.json",
-    "image": "images_task1/task1_img_142.jpg"
+    "file": "data/mixed-t1/05-9-mixed-us-search-engines-t1.json",
+    "image": "images_task1/task1_img_142.jpeg"
   },
   {
     "id": "05.10",
     "type": "Mixed Charts",
     "title": "[05.10] Bảng + Cột: Bác sĩ tại Úc theo giới tính & nơi sinh",
-    "file": "data/t1/05-10-mixed-doctors-australia-t1.json",
-    "image": "images_task1/task1_img_159.jpg"
+    "file": "data/mixed-t1/05-10-mixed-doctors-australia-t1.json",
+    "image": "images_task1/task1_img_159.jpeg"
   },
 
   {
     "id": "06.01",
     "type": "Map",
     "title": "[06.01] Map - Khu vực bờ biển tại Úc năm 1950 và ngày nay",
-    "file": "data/t1/06-1-map-beachfront-australia-t1.json",
-    "image": "images_task1/task1_img_4.jpg"
+    "file": "data/map-t1/06-1-map-beachfront-australia-t1.json",
+    "image": "images_task1/task1_img_4.jpeg"
   },
   {
     "id": "06.02",
     "type": "Map",
     "title": "[06.02] Map - Sự thay đổi làng Shalton năm 1910 và 2010",
-    "file": "data/t1/06-2-map-shalton-village-1910-t1.json",
-    "image": "images_task1/task1_img_11.jpg"
+    "file": "data/map-t1/06-2-map-shalton-village-1910-t1.json",
+    "image": "images_task1/task1_img_11.jpeg"
   },
   {
     "id": "06.03",
     "type": "Map",
     "title": "[06.03] Map - Trung tâm thương mại Happy Valley (1982 vs 2012)",
-    "file": "data/t1/06-3-map-happy-valley-mall-t1.json",
-    "image": "images_task1/task1_img_13.jpg"
+    "file": "data/map-t1/06-3-map-happy-valley-mall-t1.json",
+    "image": "images_task1/task1_img_13.jpeg"
   },
   {
     "id": "06.04",
     "type": "Map",
     "title": "[06.04] Map - Quá trình phát triển thị trấn Brindell (1800–2000)",
-    "file": "data/t1/06-4-map-brindell-development-t1.json",
-    "image": "images_task1/task1_img_52.jpg"
+    "file": "data/map-t1/06-4-map-brindell-development-t1.json",
+    "image": "images_task1/task1_img_52.jpeg"
   },
   {
     "id": "06.05",
     "type": "Map",
     "title": "[06.05] Map - Vị trí núi lửa & ngôi làng trước/sau phun trào",
-    "file": "data/t1/06-5-map-volcano-eruption-t1.json",
-    "image": "images_task1/task1_img_53.jpg"
+    "file": "data/map-t1/06-5-map-volcano-eruption-t1.json",
+    "image": "images_task1/task1_img_53.jpeg"
   },
   {
     "id": "06.06",
     "type": "Map",
     "title": "[06.06] Map - Bảo tàng nhỏ và khuôn viên bao quanh (1990 & 2010)",
-    "file": "data/t1/06-6-map-small-museum-1990-t1.json",
-    "image": "images_task1/task1_img_55.jpg"
+    "file": "data/map-t1/06-6-map-small-museum-1990-t1.json",
+    "image": "images_task1/task1_img_55.jpeg"
   },
   {
     "id": "06.07",
     "type": "Map",
     "title": "[06.07] Map - Làng nông thôn Shalton qua 100 năm",
-    "file": "data/t1/06-7-map-shalton-village-century-t1.json",
-    "image": "images_task1/task1_img_65.jpg"
+    "file": "data/map-t1/06-7-map-shalton-village-century-t1.json",
+    "image": "images_task1/task1_img_65.jpeg"
   },
   {
     "id": "06.08",
     "type": "Map",
     "title": "[06.08] Map - Đảo núi lửa và tác động của đợt dung nham",
-    "file": "data/t1/06-8-map-volcano-island-t1.json",
-    "image": "images_task1/task1_img_74.jpg"
+    "file": "data/map-t1/06-8-map-volcano-island-t1.json",
+    "image": "images_task1/task1_img_74.jpeg"
   },
   {
     "id": "06.09",
     "type": "Map",
     "title": "[06.09] Map - Bảo tàng và quy hoạch bãi đỗ xe (1990 vs 2010)",
-    "file": "data/t1/06-9-map-museum-parking-t1.json",
-    "image": "images_task1/task1_img_84.jpg"
+    "file": "data/map-t1/06-9-map-museum-parking-t1.json",
+    "image": "images_task1/task1_img_84.jpeg"
   },
   {
     "id": "06.10",
     "type": "Map",
     "title": "[06.10] Map - Bản đồ địa hình đảo núi lửa trước và sau",
-    "file": "data/t1/06-10-map-volcano-topography-t1.json",
-    "image": "images_task1/task1_img_94.jpg"
+    "file": "data/map-t1/06-10-map-volcano-topography-t1.json",
+    "image": "images_task1/task1_img_94.jpeg"
   },
 
   {
     "id": "07.01",
     "type": "Floor Plan",
     "title": "[07.01] Floor - Phòng sinh hoạt chung sinh viên (5 năm trước & Nay)",
-    "file": "data/t1/07-1-floor-student-common-room-t1.json",
-    "image": "images_task1/task1_img_10.jpg"
+    "file": "data/floor-t1/07-1-floor-student-common-room-t1.json",
+    "image": "images_task1/task1_img_10.jpeg"
   },
   {
     "id": "07.02",
     "type": "Floor Plan",
     "title": "[07.02] Floor - Bố trí phòng ký túc xá cho 2 người và 1 người",
-    "file": "data/t1/07-2-floor-student-rooms-t1.json",
-    "image": "images_task1/task1_img_36.jpg"
+    "file": "data/floor-t1/07-2-floor-student-rooms-t1.json",
+    "image": "images_task1/task1_img_36.jpeg"
   },
   {
     "id": "07.03",
     "type": "Floor Plan",
     "title": "[07.03] Floor - Sơ đồ rạp hát Newtown Theater (2000 vs Hiện tại)",
-    "file": "data/t1/07-3-floor-newtown-theater-t1.json",
-    "image": "images_task1/task1_img_49.jpg"
+    "file": "data/floor-t1/07-3-floor-newtown-theater-t1.json",
+    "image": "images_task1/task1_img_49.jpeg"
   },
   {
     "id": "07.04",
     "type": "Floor Plan",
     "title": "[07.04] Floor - Sơ đồ thoát hiểm tầng 2 khu ký túc xá cao đẳng",
-    "file": "data/t1/07-4-floor-fire-exit-college-t1.json",
-    "image": "images_task1/task1_img_63.jpg"
+    "file": "data/floor-t1/07-4-floor-fire-exit-college-t1.json",
+    "image": "images_task1/task1_img_63.jpeg"
   },
   {
     "id": "07.05",
     "type": "Floor Plan",
     "title": "[07.05] Floor - Mặt bằng rạp hát năm 2010 và năm 2012",
-    "file": "data/t1/07-5-floor-theatre-renovation-t1.json",
-    "image": "images_task1/task1_img_81.jpg"
+    "file": "data/floor-t1/07-5-floor-theatre-renovation-t1.json",
+    "image": "images_task1/task1_img_81.jpeg"
   },
   {
     "id": "07.06",
     "type": "Floor Plan",
     "title": "[07.06] Floor - Phòng tập huấn: Dưới 10 người & Trên 10 người",
-    "file": "data/t1/07-6-floor-training-room-layouts-t1.json",
-    "image": "images_task1/task1_img_92.jpg"
+    "file": "data/floor-t1/07-6-floor-training-room-layouts-t1.json",
+    "image": "images_task1/task1_img_92.jpeg"
   },
   {
     "id": "07.07",
     "type": "Floor Plan",
     "title": "[07.07] Floor - Mặt bằng tòa nhà văn phòng hiện tại và tương lai",
-    "file": "data/t1/07-7-floor-office-building-t1.json",
-    "image": "images_task1/task1_img_99.jpg"
+    "file": "data/floor-t1/07-7-floor-office-building-t1.json",
+    "image": "images_task1/task1_img_99.jpeg"
   },
   {
     "id": "07.08",
     "type": "Floor Plan",
     "title": "[07.08] Floor - Mặt bằng tổng thể trường học (1985 và Hiện tại)",
-    "file": "data/t1/07-8-floor-school-layout-1985-t1.json",
-    "image": "images_task1/task1_img_143.jpg"
+    "file": "data/floor-t1/07-8-floor-school-layout-1985-t1.json",
+    "image": "images_task1/task1_img_143.jpeg"
   },
   {
     "id": "07.09",
     "type": "Floor Plan",
     "title": "[07.09] Floor - Phương án sắp xếp bàn ghế phòng hội nghị A & B",
-    "file": "data/t1/07-9-floor-conference-room-t1.json",
-    "image": "images_task1/task1_img_153.jpg"
+    "file": "data/floor-t1/07-9-floor-conference-room-t1.json",
+    "image": "images_task1/task1_img_153.jpeg"
   },
   {
     "id": "07.10",
     "type": "Floor Plan",
     "title": "[07.10] Floor - Cải tạo cấu trúc thư viện năm 1975 và Hiện nay",
-    "file": "data/t1/07-10-floor-library-1975-now-t1.json",
-    "image": "images_task1/task1_img_167.jpg"
+    "file": "data/floor-t1/07-10-floor-library-1975-now-t1.json",
+    "image": "images_task1/task1_img_167.jpeg"
   },
 
   {
     "id": "08.01",
     "type": "Process",
     "title": "[08.01] Process - Quy trình sản xuất dây kim loại (How wire is made)",
-    "file": "data/t1/08-1-process-wire-making-t1.json",
-    "image": "images_task1/task1_img_5.jpg"
+    "file": "data/process-t1/08-1-process-wire-making-t1.json",
+    "image": "images_task1/task1_img_5.jpeg"
   },
   {
     "id": "08.02",
     "type": "Process",
     "title": "[08.02] Process - Quy trình thu gom & tái chế lon nhôm đồ uống",
-    "file": "data/t1/08-2-process-aluminum-recycling-t1.json",
-    "image": "images_task1/task1_img_6.jpg"
+    "file": "data/process-t1/08-2-process-aluminum-recycling-t1.json",
+    "image": "images_task1/task1_img_6.jpeg"
   },
   {
     "id": "08.03",
     "type": "Process",
     "title": "[08.03] Process - Các bước xây dựng lều tuyết (How an igloo is made)",
-    "file": "data/t1/08-3-process-igloo-construction-t1.json",
-    "image": "images_task1/task1_img_7.jpg"
+    "file": "data/process-t1/08-3-process-igloo-construction-t1.json",
+    "image": "images_task1/task1_img_7.jpeg"
   },
   {
     "id": "08.04",
     "type": "Process",
     "title": "[08.04] Process - Quy trình trồng, thu hoạch & chế biến quả dứa",
-    "file": "data/t1/08-4-process-pineapple-production-t1.json",
-    "image": "images_task1/task1_img_20.jpg"
+    "file": "data/process-t1/08-4-process-pineapple-production-t1.json",
+    "image": "images_task1/task1_img_20.jpeg"
   },
   {
     "id": "08.05",
     "type": "Process",
     "title": "[08.05] Process - Cấu tạo & nguyên lý lò xông khói gia đình",
-    "file": "data/t1/08-5-process-home-smokery-structure-t1.json",
-    "image": "images_task1/task1_img_41.jpg"
+    "file": "data/process-t1/08-5-process-home-smokery-structure-t1.json",
+    "image": "images_task1/task1_img_41.jpeg"
   },
   {
     "id": "08.06",
     "type": "Process",
-    "title": "[08.06] Process - Chi tiết vận hành lò hun khói thực phẩm",
-    "file": "data/t1/08-6-process-home-smokery-used-t1.json",
-    "image": "images_task1/task1_img_43.jpg"
+    "title": "[08.06] Process - Chi tiết vận hành lò xông khói thực phẩm",
+    "file": "data/process-t1/08-6-process-home-smokery-used-t1.json",
+    "image": "images_task1/task1_img_43.jpeg"
   },
   {
     "id": "08.07",
     "type": "Process",
     "title": "[08.07] Process - Quy trình sản xuất gỗ ép ván dăm (chipboard)",
-    "file": "data/t1/08-7-process-chipboard-production-t1.json",
-    "image": "images_task1/task1_img_57.jpg"
+    "file": "data/process-t1/08-7-process-chipboard-production-t1.json",
+    "image": "images_task1/task1_img_57.jpeg"
   },
   {
     "id": "08.08",
     "type": "Process",
     "title": "[08.08] Process - Quy trình sản xuất nước ngọt có gas",
-    "file": "data/t1/08-8-process-carbonated-drinks-t1.json",
-    "image": "images_task1/task1_img_60.jpg"
+    "file": "data/process-t1/08-8-process-carbonated-drinks-t1.json",
+    "image": "images_task1/task1_img_60.jpeg"
   },
   {
     "id": "08.09",
     "type": "Process",
     "title": "[08.09] Process - Quy trình sản xuất điện từ khí hóa than đá",
-    "file": "data/t1/08-9-process-electricity-production-coal-t1.json",
-    "image": "images_task1/task1_img_70.jpg"
+    "file": "data/process-t1/08-9-process-electricity-production-coal-t1.json",
+    "image": "images_task1/task1_img_70.jpeg"
   },
   {
     "id": "08.10",
     "type": "Process",
     "title": "[08.10] Process - Cấu tạo & nguyên lý hoạt động của đèn pin LED",
-    "file": "data/t1/08-10-process-led-flashlight-t1.json",
-    "image": "images_task1/task1_img_93.jpg"
+    "file": "data/process-t1/08-10-process-led-flashlight-t1.json",
+    "image": "images_task1/task1_img_93.jpeg"
   }
 ]
