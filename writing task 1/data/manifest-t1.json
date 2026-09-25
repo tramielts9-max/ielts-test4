@@ -1,8 +1,8 @@
 [
   {
-    "id": "sample-01",
-    "title": "[Demo] Table - Tính năng điện thoại di động (2006 - 2010)",
-    "type": "Table",
-    "file": "data/t1/sample-guide-t1.json"
+    "id": "01.01",
+    "title": "[01.01] Line Graph - Giá nhà trung bình tại 3 quốc gia (1997-2014)",
+    "type": "Line Graph",
+    "file": "data/t1/01-line-house-prices-t1.json"
   }
 ]
