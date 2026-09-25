@@ -143,31 +143,26 @@ select:focus, input[type="text"]:focus, textarea:focus {
   font-weight: 700;
 }
 
-/* KHUNG HÌNH ẢNH BIỂU ĐỒ (AUTO FIT FULL RỘNG NHƯ BẢN GỐC) */
+/* KHUNG HÌNH ẢNH BIỂU ĐỒ CHUẨN PWT1 (TRÀN KHUNG 100%, KHÔNG KHOẢNG TRỐNG) */
 .image-box {
   background: #ffffff;
-  border: 1.5px solid #cbd5e1;
+  border: 1px solid #cbd5e1;
   border-radius: 8px;
-  padding: 8px;
+  padding: 6px;
   margin-bottom: 14px;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
-
 #imageWrapper {
   width: 100%;
-  display: block;
 }
-
 #chartImage {
   width: 100%;
   height: auto;
-  max-height: 650px; /* Cho phép bung to thoải mái theo chiều dọc */
-  object-fit: contain;
+  display: block;
   border-radius: 6px;
   cursor: zoom-in;
-  display: block;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 #imageFallback {
   text-align: center;
