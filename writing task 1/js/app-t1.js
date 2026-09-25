@@ -218,13 +218,29 @@ function updateTimerBadge() {
   }
 }
 
-// ==================== XỬ LÝ ẢNH ====================
 function showImage(src) {
   const img = document.getElementById('chartImage');
+  const fallback = document.getElementById('imageFallback');
+  const removeBtn = document.getElementById('btnRemoveImage');
+
+  img.onerror = () => {
+    if (src.endsWith('.jpg')) {
+      img.src = src.replace('.jpg', '.jpeg');
+    } else if (src.endsWith('.jpeg')) {
+      img.src = src.replace('.jpeg', '.jpg');
+    } else {
+      img.style.display = 'none';
+      fallback.style.display = 'block';
+    }
+  };
+
+  img.onload = () => {
+    img.style.display = 'block';
+    fallback.style.display = 'none';
+    removeBtn.style.display = 'inline-block';
+  };
+
   img.src = src;
-  img.style.display = 'block';
-  document.getElementById('imageFallback').style.display = 'none';
-  document.getElementById('btnRemoveImage').style.display = 'inline-block';
 }
 
 function removeImage() {
