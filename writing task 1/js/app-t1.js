@@ -4,7 +4,6 @@ let manifestData = [];
 let currentItemJson = null;
 let currentBase64Image = null;
 
-// Quản lý Timer 30s khi mở hướng dẫn
 let guideTimerInterval = null;
 let guideTotalOpenSeconds = 0;
 let isGuideOpen = false;
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setupEventListeners() {
-  // Toggle nguồn đề (Kho đề vs Tự dán)
   document.querySelectorAll('input[name="promptSource"]').forEach(radio => {
     radio.addEventListener('change', (e) => {
       const isCustom = e.target.value === 'custom';
@@ -31,7 +29,6 @@ function setupEventListeners() {
     });
   });
 
-  // Khi tự gõ đề riêng -> Tự động đồng bộ đề bài lên khung hiển thị trên ảnh
   const customPromptInput = document.getElementById('customPromptInput');
   if (customPromptInput) {
     customPromptInput.addEventListener('input', (e) => {
@@ -42,17 +39,9 @@ function setupEventListeners() {
     });
   }
 
-  // Khi chọn Dạng bài -> Lọc danh sách Đề bài tương ứng
-  document.getElementById('categorySelect').addEventListener('change', () => {
-    populateExercisesForCategory();
-  });
+  document.getElementById('categorySelect').addEventListener('change', populateExercisesForCategory);
+  document.getElementById('exerciseSelect').addEventListener('change', loadSelectedExercise);
 
-  // Khi chọn Đề bài cụ thể
-  document.getElementById('exerciseSelect').addEventListener('change', () => {
-    loadSelectedExercise();
-  });
-
-  // Bộ đếm từ
   const essayInput = document.getElementById('studentEssayInput');
   essayInput.addEventListener('input', () => {
     const text = essayInput.value.trim();
@@ -60,15 +49,12 @@ function setupEventListeners() {
     document.getElementById('wordCounter').innerText = `${count} từ`;
   });
 
-  // Nút mở / thu gọn hướng dẫn + Đếm thời gian 30s
   document.getElementById('btnToggleGuide').addEventListener('click', toggleGuide);
 
-  // Kéo thả và chọn file ảnh
   const fileInput = document.getElementById('chartFileInput');
   fileInput.addEventListener('change', (e) => handleImageUpload(e.target.files[0]));
   document.getElementById('btnRemoveImage').addEventListener('click', removeImage);
 
-  // Paste ảnh từ clipboard (Ctrl + V)
   window.addEventListener('paste', (e) => {
     const items = (e.clipboardData || window.clipboardData).items;
     for (let item of items) {
@@ -79,18 +65,18 @@ function setupEventListeners() {
     }
   });
 
-  // Nút nộp bài
   document.getElementById('btnSubmitGrading').addEventListener('click', submitEssay);
 }
 
-// ==================== TẢI MANIFEST & 2 DROPDOWN LIÊN HOÀN ====================
+// ==================== NẠP DỮ LIỆU TỪ MANIFEST ====================
 async function loadManifest() {
   try {
     const res = await fetch('data/manifest-t1.json');
+    if (!res.ok) throw new Error("Không thể tải data/manifest-t1.json");
     manifestData = await res.json();
     populateExercisesForCategory();
   } catch (err) {
-    console.warn("Lỗi tải manifest-t1.json:", err);
+    console.error("Lỗi manifest:", err);
   }
 }
 
@@ -99,12 +85,11 @@ function populateExercisesForCategory() {
   const exerciseSelect = document.getElementById('exerciseSelect');
   exerciseSelect.innerHTML = '';
 
-  // Lọc các bài thuộc dạng đã chọn
   const filtered = manifestData.filter(item => item.type === currentCategory);
 
   if (filtered.length === 0) {
     const opt = document.createElement('option');
-    opt.innerText = `Chưa có bài cho dạng ${currentCategory}`;
+    opt.innerText = `Chưa có bài nào cho dạng ${currentCategory}`;
     exerciseSelect.appendChild(opt);
     return;
   }
@@ -113,46 +98,61 @@ function populateExercisesForCategory() {
     const opt = document.createElement('option');
     opt.value = item.file;
     opt.innerText = item.title;
+    opt.setAttribute('data-image', item.image || '');
     exerciseSelect.appendChild(opt);
   });
 
   loadSelectedExercise();
 }
 
-// ==================== TẢI FILE JSON CỦA ĐỀ ĐƯỢC CHỌN ====================
+// ==================== TẢI CHI TIẾT ĐỀ BÀI ====================
 async function loadSelectedExercise() {
-  const filePath = document.getElementById('exerciseSelect').value;
+  const exerciseSelect = document.getElementById('exerciseSelect');
+  const filePath = exerciseSelect.value;
   if (!filePath || filePath.startsWith('Chưa')) return;
+
+  const currentCategory = document.getElementById('categorySelect').value;
+  document.getElementById('chartTypeBadge').innerText = currentCategory;
+
+  const selectedOpt = exerciseSelect.options[exerciseSelect.selectedIndex];
+  const manifestImg = selectedOpt?.getAttribute('data-image') || '';
 
   try {
     const res = await fetch(filePath);
+    if (!res.ok) throw new Error(`Chưa tạo file ${filePath} trên GitHub`);
     currentItemJson = await res.json();
 
-    // 1. Cập nhật Badge loại biểu đồ
-    document.getElementById('chartTypeBadge').innerText = currentItemJson.type || "Biểu đồ";
+    // 1. Hiển thị đề bài
+    document.getElementById('promptDisplayText').innerText = currentItemJson.prompt || "The graph below shows...";
 
-    // 2. HIỂN THỊ ĐỀ BÀI LÊN KHUNG PHÍA TRÊN ẢNH
-    const promptDisplay = document.getElementById('promptDisplayText');
-    if (promptDisplay) {
-      promptDisplay.innerText = currentItemJson.prompt || "The graph below shows...";
-    }
-
-    // 3. Tải và hiển thị ảnh
-    if (currentItemJson.image) {
-      showImage(currentItemJson.image);
-      loadRemoteImageToBase64(currentItemJson.image);
+    // 2. Hiển thị ảnh (ưu tiên ảnh trong file JSON, nếu không có lấy từ manifest)
+    const finalImg = currentItemJson.image || manifestImg;
+    if (finalImg) {
+      showImage(finalImg);
+      loadRemoteImageToBase64(finalImg);
     } else {
       removeImage();
     }
 
-    // 4. Đổ nội dung hướng dẫn chi tiết vào hộp bên dưới ảnh
+    // 3. Đổ hướng dẫn chi tiết
     renderGuideContent(currentItemJson.guide);
 
-    // 5. Reset bộ đếm thời gian xem hướng dẫn cho bài mới
+    // 4. Reset Timer 30s
     resetGuideTimer();
 
   } catch (err) {
-    console.error("Lỗi tải file JSON của bài:", err);
+    console.warn("Thông báo:", err.message);
+    document.getElementById('promptDisplayText').innerText = `⚠️ Bài này chưa có file JSON (${filePath}). Em có thể bấm "Tự dán đề riêng" để làm ngay nhé!`;
+    
+    // Nếu chưa có file JSON nhưng manifest đã có đường dẫn ảnh thì vẫn hiện ảnh cho học sinh viết
+    if (manifestImg) {
+      showImage(manifestImg);
+      loadRemoteImageToBase64(manifestImg);
+    } else {
+      removeImage();
+    }
+    
+    renderGuideContent(null);
   }
 }
 
@@ -161,7 +161,7 @@ function renderGuideContent(guideMarkdown) {
   if (guideMarkdown) {
     box.innerHTML = marked.parse(guideMarkdown);
   } else {
-    box.innerHTML = `<p>Đề bài này chưa có phần hướng dẫn chi tiết. Em hãy chủ động viết bài nhé!</p>`;
+    box.innerHTML = `<p>Đề bài này chưa có phần hướng dẫn chi tiết. Em hãy chủ động quan sát hình và viết bài nhé!</p>`;
   }
 }
 
@@ -169,20 +169,11 @@ function clearForCustomPrompt() {
   currentItemJson = null;
   removeImage();
   document.getElementById('chartTypeBadge').innerText = "Đề tự nhập";
-  
   const promptDisplay = document.getElementById('promptDisplayText');
   if (promptDisplay) {
     promptDisplay.innerText = document.getElementById('customPromptInput')?.value || "Vui lòng nhập đề bài vào ô bên trên...";
   }
-
-  document.getElementById('guideContentBox').innerHTML = `
-    <p>💡 <b>Lưu ý khi tự làm đề riêng:</b></p>
-    <ul>
-      <li><b>Intro (1 câu):</b> Paraphrase loại biểu đồ, nội dung chính, địa điểm, thời gian.</li>
-      <li><b>Overview (2 câu):</b> 1 câu xu hướng chung + 1 câu đối tượng cao nhất/nổi bật nhất.</li>
-      <li><b>Body 1 & 2:</b> Chia nhóm đối tượng logic, chọn điểm dữ liệu nổi bật (đầu, cuối, đỉnh, đáy, vượt mặt).</li>
-    </ul>
-  `;
+  document.getElementById('guideContentBox').innerHTML = `<p>💡 Em đang làm đề tự nhập. Hãy phân tích kỹ đề và lập dàn ý 4 phần nhé!</p>`;
 }
 
 // ==================== TIMER 30S & MỞ/THU GỌN HƯỚNG DẪN ====================
@@ -241,7 +232,7 @@ function updateTimerBadge() {
   }
 }
 
-// ==================== HIỂN THỊ ẢNH (TỰ ĐỘNG THỬ ĐUÔI .JPEG VÀ .JPG) ====================
+// ==================== HIỂN THỊ ẢNH (AUTO FALLBACK .JPEG / .JPG) ====================
 function showImage(src) {
   const img = document.getElementById('chartImage');
   const fallback = document.getElementById('imageFallback');
@@ -309,7 +300,7 @@ window.openImageModal = (src) => {
   window.open(src, '_blank');
 };
 
-// ==================== CHẤM BÀI 2 TẦNG VỚI AI ====================
+// ==================== CHẤM BÀI 2 TẦNG AI ====================
 async function submitEssay() {
   const essay = document.getElementById('studentEssayInput').value.trim();
   if (!essay) {
@@ -327,7 +318,7 @@ async function submitEssay() {
   const isCustom = document.querySelector('input[name="promptSource"]:checked').value === 'custom';
   const prompt = isCustom 
     ? document.getElementById('customPromptInput').value.trim()
-    : (currentItemJson?.prompt || "Task 1 Prompt");
+    : (currentItemJson?.prompt || document.getElementById('promptDisplayText').innerText);
 
   const submitBtn = document.getElementById('btnSubmitGrading');
   const resultBox = document.getElementById('resultBox');
@@ -345,7 +336,7 @@ async function submitEssay() {
 Bạn là Giám khảo IELTS & Giáo viên dạy viết cự phách.
 QUY TẮC XƯNG HÔ: Bắt buộc xưng "Thầy" và gọi học sinh là "Em".
 THÔNG TIN LÀM BÀI CỦA HỌC SINH:
-- Trạng thái: ${modeStatus}. (Nếu em tự lực, hãy khen ngợi; nếu em mở xem quá 30s, hãy động viên em luyện tập để tự lực dần).
+- Trạng thái: ${modeStatus}.
 
 HÃY XUẤT BÀI CHẤM THEO ĐÚNG CẤU TRÚC 6 PHẦN SAU (DÙNG 100% MARKDOWN, KHÔNG DÙNG THẺ DIV):
 
@@ -365,7 +356,6 @@ HÃY XUẤT BÀI CHẤM THEO ĐÚNG CẤU TRÚC 6 PHẦN SAU (DÙNG 100% MARKDOW
   * [Từ ở bước 1] ➔ <mark class="vocab">[Từ C1-C2 xịn (dịch nghĩa)]</mark>
 - **👉 Chốt câu hoàn mỹ Band 8.0+:** "[Câu xuất sắc nhất]"
 ---
-*(Lặp lại cho tất cả các câu trong bài viết của em)*
 
 # PHẦN 2: BẢNG TỔNG HỢP ĐIỂM TỪNG CÂU
 | Câu số | Vị trí | Điểm gốc (/9) | Điểm sau sửa lỗi (/9) | Điểm hoàn mỹ (/9) | Lỗi cốt lõi cần nhớ |
