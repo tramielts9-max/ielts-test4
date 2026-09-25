@@ -3,6 +3,6 @@
     "id": "01.01",
     "title": "[01.01] Line Graph - Giá nhà trung bình tại 3 quốc gia (1997-2014)",
     "type": "Line Graph",
-    "file": "writing task 1/data/t1/01-line-house-prices-t1.json"
+    "file": "data/t1/01-line-house-prices-t1.json"
   }
 ]
