@@ -8,11 +8,14 @@ export function getApiKey() {
 
 export async function streamGeminiTask1(promptPayload, onChunk) {
   const apiKey = getApiKey();
+
+  // Danh sách model ưu tiên theo đúng yêu cầu
   const modelsQueue = [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
     "gemini-2.5-flash",
     "gemini-2.0-flash",
-    "gemini-1.5-flash",
-    "gemini-2.0-flash-lite"
+    "gemini-1.5-flash"
   ];
 
   let lastError = null;
@@ -53,14 +56,14 @@ export async function streamGeminiTask1(promptPayload, onChunk) {
               const textChunk = parsed.candidates?.[0]?.content?.parts?.[0]?.text || "";
               onChunk(textChunk);
             } catch (err) {
-              // Bỏ qua dòng rỗng hoặc heartbeat
+              // Bỏ qua heartbeat / ký tự thừa
             }
           }
         }
       }
-      return model; // Thành công
+      return model; // Chạy thành công thì dừng
     } catch (err) {
-      console.warn(`Model ${model} gặp sự cố (${err.message}). Đang chuyển model kế tiếp...`);
+      console.warn(`Model ${model} báo lỗi (${err.message}). Đang tự động chuyển sang model kế tiếp...`);
       lastError = err;
     }
   }
