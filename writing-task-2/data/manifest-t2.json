@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01.01",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.01] Kinh tế vs Môi trường: Phát triển có luôn tàn phá tự nhiên?",
+    "file": "data/opinion-t2/01-opinion-economic-environment-t2.json"
+  },
+  {
+    "id": "02.01",
+    "type": "Discuss Both Views",
+    "title": "[02.01] Mạng xã hội: Xói mòn quan hệ đời thực hay kết nối toàn cầu?",
+    "file": "data/discussion-t2/02-discussion-social-media-t2.json"
+  },
+  {
+    "id": "03.01",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.01] Du lịch đại trà: Lợi ích kinh tế có vượt trội tổn hại môi trường?",
+    "file": "data/advantage-disadvantage-t2/03-adv-disadv-tourism-t2.json"
+  },
+  {
+    "id": "04.01",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.01] Tội phạm gia tăng dù luật nghiêm khắc hơn: Nguyên nhân & Hệ quả",
+    "file": "data/cause-solution-t2/04-cause-effect-crime-rate-t2.json"
+  },
+  {
+    "id": "05.01",
+    "type": "Two-part Questions",
+    "title": "[05.01] Kẹt xe đô thị: Vì sao chuộng xe riêng & Chính phủ nên làm gì?",
+    "file": "data/two-part-t2/05-two-part-traffic-congestion-t2.json"
+  }
+]
