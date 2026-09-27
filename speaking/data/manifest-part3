@@ -1,0 +1,548 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "part": 3,
+  "title": "IELTS Speaking Part 3 Discussion Manifest (Q3/2026)",
+  "dataSource": "speaking-part3.json",
+  "targetExamQuarter": "2026-Q3",
+  "totalTopics": 36,
+  "config": {
+    "speakingMode": "full_set_continuous_discussion",
+    "recommendedDurationSeconds": 240,
+    "selfRelianceThresholdSeconds": 20,
+    "answeringStrategy": "P-E-E-L (Point - Explanation - Real-world Evidence - Nuanced Counter-argument / Link)"
+  },
+  "thematicPillars": [
+    {
+      "name": "Technology, Media & Modern Life",
+      "topicIds": [
+        "p3_time_management",
+        "p3_memory_history_tech",
+        "p3_photography_ethics_tourism",
+        "p3_digital_messaging_etiquette",
+        "p3_advertising_power_celebrity",
+        "p3_artificial_intelligence_future",
+        "p3_foreign_languages_technology",
+        "p3_video_learning_vs_reading",
+        "p3_planning_habits_technology"
+      ]
+    },
+    {
+      "name": "Society, Ethics & Human Relations",
+      "topicIds": [
+        "p3_losing_things",
+        "p3_first_impressions_friendship",
+        "p3_gift_giving_culture",
+        "p3_parties_social_celebrations",
+        "p3_family_harmony_arts",
+        "p3_communication_conversation_skills",
+        "p3_ambition_corporate_superstars",
+        "p3_animals_pets_ethics",
+        "p3_childhood_friendship_social_media",
+        "p3_event_preparation_organization"
+      ]
+    },
+    {
+      "name": "Education, Psychology & Personal Growth",
+      "topicIds": [
+        "p3_reading_literature_movies",
+        "p3_health_wellness_stress",
+        "p3_learning_skills_discipline",
+        "p3_history_education_heritage",
+        "p3_early_childhood_education_skills",
+        "p3_financial_literacy_charity",
+        "p3_happiness_emotions_teachers",
+        "p3_decision_making_autonomy",
+        "p3_popularity_influence_teaching",
+        "p3_intergenerational_gap_elderly",
+        "p3_opinions_school_rules",
+        "p3_medical_profession_biology",
+        "p3_education_boredom_solutions",
+        "p3_corporate_ethics_gap_year"
+      ]
+    },
+    {
+      "name": "Economy, Business & Workplace",
+      "topicIds": [
+        "p3_organization_management_skills",
+        "p3_job_interviews_recruitment",
+        "p3_corporate_responsibility_success",
+        "p3_retail_ecommerce_economy",
+        "p3_work_life_balance_rules",
+        "p3_routine_career_changes",
+        "p3_teamwork_leadership_school",
+        "p3_entrepreneurship_corporate_failure"
+      ]
+    },
+    {
+      "name": "Environment, Urban Planning & Infrastructure",
+      "topicIds": [
+        "p3_nature_urban_environment",
+        "p3_historic_buildings_urban_renewal",
+        "p3_cinema_culture_creativity",
+        "p3_urbanization_rural_safety",
+        "p3_overcrowding_urban_planning",
+        "p3_travel_abroad_perspective",
+        "p3_noise_pollution_public_spaces",
+        "p3_food_culture_festivals",
+        "p3_sports_events_online_viewing",
+        "p3_home_gardening_organic_food",
+        "p3_tall_buildings_urban_architecture",
+        "p3_law_compliance_ethics",
+        "p3_traffic_management_solutions",
+        "p3_leisure_technology_holidays",
+        "p3_water_resources_river_tourism"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "p3_time_management",
+      "topic": "Time Management & Success",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Time-blocking", "Digital automation vs distraction", "Correlation with success"]
+    },
+    {
+      "id": "p3_losing_things",
+      "topic": "Possessions & Human Psychology",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Absent-mindedness", "Monetary incentives for return", "Tracking devices"]
+    },
+    {
+      "id": "p3_first_impressions_friendship",
+      "topic": "Social Psychology & Making Friends",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["First impressions", "Taboo conversational topics", "Friendship longevity"]
+    },
+    {
+      "id": "p3_memory_history_tech",
+      "topic": "Memory, History & Technology",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Lessons from history", "Visual vs textual retention", "Cloud memory dependence"]
+    },
+    {
+      "id": "p3_gift_giving_culture",
+      "topic": "Gifts & Cultural Traditions",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Red envelopes vs physical items", "Reciprocal social pressure", "Cultural taboos"]
+    },
+    {
+      "id": "p3_reading_literature_movies",
+      "topic": "Literature & Cinematic Adaptations",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 3,
+      "difficulty": "Medium",
+      "coreFocus": ["Self-help literature", "Nuance of prose vs film", "Survivorship bias"]
+    },
+    {
+      "id": "p3_health_wellness_stress",
+      "topic": "Health, Aging & Stress",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 2,
+      "difficulty": "Medium",
+      "coreFocus": ["Generational health awareness", "Psychosomatic impacts of chronic stress"]
+    },
+    {
+      "id": "p3_nature_urban_environment",
+      "topic": "Nature, Cities & Ecology",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 3,
+      "difficulty": "Medium",
+      "coreFocus": ["Urban heat island mitigation", "Ecological stewardship", "Commercial overdevelopment"]
+    },
+    {
+      "id": "p3_parties_social_celebrations",
+      "topic": "Social Events & Celebrations",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 4,
+      "difficulty": "Easy",
+      "coreFocus": ["Milestone celebrations", "Restaurant vs home hospitality", "Cultural festivals"]
+    },
+    {
+      "id": "p3_historic_buildings_urban_renewal",
+      "topic": "Architecture & Heritage Conservation",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 3,
+      "difficulty": "Hard",
+      "coreFocus": ["Adaptive reuse", "Architectural identity", "Apartments vs standalone houses"]
+    },
+    {
+      "id": "p3_cinema_culture_creativity",
+      "topic": "Cinematography & Cultural Transmission",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Theatrical vs streaming immersion", "Cultivating imagination", "Soft power export"]
+    },
+    {
+      "id": "p3_learning_skills_discipline",
+      "topic": "Skill Acquisition & Lifelong Learning",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Adult vs child learning mechanics", "Autodidactic pacing", "Sustaining discipline"]
+    },
+    {
+      "id": "p3_history_education_heritage",
+      "topic": "History Education & Societal Wisdom",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Early history education", "Grassroots social history", "Chronological understanding"]
+    },
+    {
+      "id": "p3_family_harmony_arts",
+      "topic": "Family Dynamics & Cultural Arts",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 7,
+      "difficulty": "Hard",
+      "coreFocus": ["Multigenerational households", "Hands-on crafting", "Artistic impact on society"]
+    },
+    {
+      "id": "p3_communication_conversation_skills",
+      "topic": "Communication & Attentive Listening",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 3,
+      "difficulty": "Easy",
+      "coreFocus": ["Youth dialogue topics", "Fallouts of poor listening", "Non-verbal listening cues"]
+    },
+    {
+      "id": "p3_photography_ethics_tourism",
+      "topic": "Photography, Privacy & Travel Habits",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 5,
+      "difficulty": "Medium",
+      "coreFocus": ["Online persona curation", "Privacy infringement in public", "Sacred site photography"]
+    },
+    {
+      "id": "p3_early_childhood_education_skills",
+      "topic": "Early Childhood Education & Specialization",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Preschool emotional regulation", "Peer modeling", "Niche professional specialization"]
+    },
+    {
+      "id": "p3_financial_literacy_charity",
+      "topic": "Financial Literacy & Philanthropy",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Youth financial curricula", "Delayed gratification", "Time vs monetary charity"]
+    },
+    {
+      "id": "p3_organization_management_skills",
+      "topic": "Organization & Workplace Management",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Cognitive clarity from tidiness", "Habit formation", "Managerial competence"]
+    },
+    {
+      "id": "p3_job_interviews_recruitment",
+      "topic": "Recruitment & Media Interviews",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Media PR scrutiny", "Interview preparation", "Cultural fit vs resume stats"]
+    },
+    {
+      "id": "p3_happiness_emotions_teachers",
+      "topic": "Happiness, Emotions & School Guidance",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Student surveillance vs autonomy", "Teacher empathy", "Eudaimonic happiness"]
+    },
+    {
+      "id": "p3_decision_making_autonomy",
+      "topic": "Decision-making & Life Choices",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 7,
+      "difficulty": "Hard",
+      "coreFocus": ["Adolescent agency", "Decision fatigue", "Life-defining choices in 20s"]
+    },
+    {
+      "id": "p3_corporate_responsibility_success",
+      "topic": "Corporate Ethics & Measuring Success",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Corporate social responsibility (CSR)", "Startup survival rates", "Redefining success"]
+    },
+    {
+      "id": "p3_popularity_influence_teaching",
+      "topic": "Popularity, Influence & Good Teachers",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Social validation cravings", "Strict educators vs popularity", "Viral digital fame"]
+    },
+    {
+      "id": "p3_urbanization_rural_safety",
+      "topic": "Urbanization & Regional Living",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Rural tranquility vs urban career hubs", "Elderly healthcare access", "Public safety CCTV"]
+    },
+    {
+      "id": "p3_retail_ecommerce_economy",
+      "topic": "Retail Trends & Economic Drivers",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["All-in-one mall popularity", "E-commerce vs tactile retail", "Consumption driving GDP"]
+    },
+    {
+      "id": "p3_overcrowding_urban_planning",
+      "topic": "Urban Density & Green Transport",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Hanoi/Saigon density", "Vertical greening codes", "Urban decentralization"]
+    },
+    {
+      "id": "p3_work_life_balance_rules",
+      "topic": "Work-Life Balance & Societal Rules",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Digital boundary enforcement", "Hustle culture burnout", "Contempt for red tape"]
+    },
+    {
+      "id": "p3_intergenerational_gap_elderly",
+      "topic": "Generational Dynamics & Aging Society",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Intergenerational knowledge sharing", "Geriatric healthcare improvements", "Tech disruptions"]
+    },
+    {
+      "id": "p3_travel_abroad_perspective",
+      "topic": "Global Travel & Experiential Knowledge",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Vietnamese outbound tourism", "Solo backpacking vs package tours", "Sensory experiential learning"]
+    },
+    {
+      "id": "p3_noise_pollution_public_spaces",
+      "topic": "Noise Pollution & Civic Consideration",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Children's healthy noise vs public decorum", "Acoustic pollution", "Public mindfulness"]
+    },
+    {
+      "id": "p3_routine_career_changes",
+      "topic": "Daily Routine & Career Promotions",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 5,
+      "difficulty": "Medium",
+      "coreFocus": ["Routine neuroplasticity", "Strategic job switches", "Pressures of corporate promotions"]
+    },
+    {
+      "id": "p3_opinions_school_rules",
+      "topic": "Opinions, Rules & Youth Rebellion",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 8,
+      "difficulty": "Hard",
+      "coreFocus": ["Adolescent peer conformity", "Campus uniform regulations", "Rational rule explanations"]
+    },
+    {
+      "id": "p3_ambition_corporate_superstars",
+      "topic": "Ambition, Corporate Culture & Celebrity Fandom",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Healthy ambition vs greed", "Parasocial idol worship", "Teamwork alignment"]
+    },
+    {
+      "id": "p3_digital_messaging_etiquette",
+      "topic": "Digital Communication & Messaging Habits",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Message triage", "Ghosting psychology", "Asynchronous messaging vs phone anxiety"]
+    },
+    {
+      "id": "p3_animals_pets_ethics",
+      "topic": "Animals, Pets & Educational Value",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Pets in high-rises", "Surrogate companionship", "Anthropomorphic moral tales"]
+    },
+    {
+      "id": "p3_advertising_power_celebrity",
+      "topic": "Marketing, Celebrity Influence & Economy",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Celebrity halo effect", "Algorithmic micro-targeting", "Storytelling vs sales pitches"]
+    },
+    {
+      "id": "p3_artificial_intelligence_future",
+      "topic": "Artificial Intelligence & Education",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Prompt literacy", "Critical thinking atrophy", "Oral examinations as counter-plagiarism"]
+    },
+    {
+      "id": "p3_foreign_languages_technology",
+      "topic": "Language Acquisition & Translation Tech",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 11,
+      "difficulty": "Hard",
+      "coreFocus": ["AI translator limits on nuance", "Adult affective filter", "Total language immersion"]
+    },
+    {
+      "id": "p3_food_culture_festivals",
+      "topic": "Culinary Heritage & Dining Habits",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 8,
+      "difficulty": "Medium",
+      "coreFocus": ["Festival culinary symbolism", "Phubbing at family dinners", "Home cooking decline"]
+    },
+    {
+      "id": "p3_sports_events_online_viewing",
+      "topic": "Spectator Sports & Online Broadcasting",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 4,
+      "difficulty": "Easy",
+      "coreFocus": ["Vicarious adrenaline rush", "Online streaming multi-angles", "Stadium safety for kids"]
+    },
+    {
+      "id": "p3_medical_profession_biology",
+      "topic": "Healthcare Careers & Biology Education",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 2,
+      "difficulty": "Medium",
+      "coreFocus": ["Medical residency demands", "Experiential biology vs rote memorization"]
+    },
+    {
+      "id": "p3_teamwork_leadership_school",
+      "topic": "Teamwork, Leadership & Solo Work",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Free-rider dynamics", "Exemplary humble leadership", "Group project assignments"]
+    },
+    {
+      "id": "p3_entrepreneurship_corporate_failure",
+      "topic": "Entrepreneurship & Business Survival",
+      "pillar": "Economy, Business & Workplace",
+      "questionCount": 5,
+      "difficulty": "Hard",
+      "coreFocus": ["State startup incubation", "Cash flow mismanagement", "Customer-centric flexibility"]
+    },
+    {
+      "id": "p3_home_gardening_organic_food",
+      "topic": "Urban Agriculture & Organic Gardening",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 5,
+      "difficulty": "Easy",
+      "coreFocus": ["Pesticide-free food security", "Therapeutic soil contact", "Apartment space limits"]
+    },
+    {
+      "id": "p3_video_learning_vs_reading",
+      "topic": "Digital Media & Knowledge Consumption",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Visual procedural tutorials", "Deep literary focus", "Generational video preferences"]
+    },
+    {
+      "id": "p3_tall_buildings_urban_architecture",
+      "topic": "Skyline Architecture & Urban Identity",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 3,
+      "difficulty": "Medium",
+      "coreFocus": ["Vertical urbanization", "Land scarcity pressures", "Local climate-adaptive architecture"]
+    },
+    {
+      "id": "p3_education_boredom_solutions",
+      "topic": "Educational Engagement & Youth Boredom",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 4,
+      "difficulty": "Medium",
+      "coreFocus": ["Standardized testing tedium", "Adolescent agency", "Gamified flipped classrooms"]
+    },
+    {
+      "id": "p3_planning_habits_technology",
+      "topic": "Planning, Parental Influence & Tech Tools",
+      "pillar": "Technology, Media & Modern Life",
+      "questionCount": 4,
+      "difficulty": "Easy",
+      "coreFocus": ["Schedule adaptability", "Helicopter parenting anxiety", "Cloud calendar automation"]
+    },
+    {
+      "id": "p3_law_compliance_ethics",
+      "topic": "Legal Compliance & Civic Morality",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 10,
+      "difficulty": "Hard",
+      "coreFocus": ["Rule of law", "Punitive deterrence purposes", "AI surveillance enforcement"]
+    },
+    {
+      "id": "p3_childhood_friendship_social_media",
+      "topic": "Childhood Friendship & Digital Communication",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Erosion of childhood bonds", "In-person warmth vs messaging", "Older vs younger companions"]
+    },
+    {
+      "id": "p3_traffic_management_solutions",
+      "topic": "Urban Transit & Traffic Solutions",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Induced demand on expressways", "Mass rapid transit priority", "Congestion pricing"]
+    },
+    {
+      "id": "p3_leisure_technology_holidays",
+      "topic": "Leisure Trends & Holiday Fatigue",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Digital encroachment on leisure", "Vacation paradox", "Occupational decompression"]
+    },
+    {
+      "id": "p3_event_preparation_organization",
+      "topic": "Event Organization & Preparation",
+      "pillar": "Society, Ethics & Human Relations",
+      "questionCount": 6,
+      "difficulty": "Medium",
+      "coreFocus": ["Stage fright from unreadiness", "Rigid coordination vs spontaneity", "Chore checklists"]
+    },
+    {
+      "id": "p3_water_resources_river_tourism",
+      "topic": "Waterways, Ecology & River Tourism",
+      "pillar": "Environment, Urban Planning & Infrastructure",
+      "questionCount": 6,
+      "difficulty": "Hard",
+      "coreFocus": ["Waterway eco-tourism", "Agricultural irrigation lifelines", "Bulk barge transport limits"]
+    },
+    {
+      "id": "p3_corporate_ethics_gap_year",
+      "topic": "Corporate Philanthropy & Gap Years",
+      "pillar": "Education, Psychology & Personal Growth",
+      "questionCount": 5,
+      "difficulty": "Hard",
+      "coreFocus": ["Strategic enterprise bailouts", "Customer lifetime retention", "Gap year self-discovery"]
+    }
+  ]
+}
