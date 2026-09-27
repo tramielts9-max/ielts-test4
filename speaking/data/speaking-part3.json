@@ -1,0 +1,21 @@
+[
+  {
+    "id": "p3_time_management",
+    "topic": "Time Management & Society",
+    "title": "[Part 3] Discussion on Time Management & Technology",
+    "questions": [
+      "Is it necessary for children to learn time management?",
+      "What can schools do to help students learn time management?",
+      "What can people do to save time?",
+      "Does technology help people save time? How and why?",
+      "Do you think parents should be responsible for teaching children to save time?",
+      "Do people who can manage time well become successful more easily?"
+    ],
+    "fullPromptText": "1. Is it necessary for children to learn time management?\n2. What can schools do to help students learn time management?\n3. What can people do to save time?\n4. Does technology help people save time? How and why?\n5. Do you think parents should be responsible for teaching children to save time?\n6. Do people who can manage time well become successful more easily?",
+    "guide": {
+      "keyVocab": ["Cultivate discipline (rèn luyện kỷ luật)", "Double-edged sword (con dao hai lưỡi)", "Prioritization (sự sắp xếp ưu tiên)", "Intrinsic motivation (động lực tự thân)"],
+      "suggestedIdeas": "Part 3 yêu cầu góc nhìn xã hội, không chỉ kể trải nghiệm cá nhân. Nhìn nhận công nghệ vừa giúp tiết kiệm thời gian vừa gây xao nhãng.",
+      "sampleOutline": "- Q1-Q2: Vital foundation; schools should introduce project deadlines with milestone checks.\n- Q3-Q4: Automation vs distraction (double-edged sword).\n- Q5-Q6: High correlation between disciplined scheduling and long-term career triumphs."
+    }
+  }
+]
