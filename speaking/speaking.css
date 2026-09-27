@@ -1,3 +1,4 @@
+/* Base Layout & Theme */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f4ef;
@@ -10,8 +11,8 @@ body {
   max-width: 1050px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 32px;
-  border-radius: 12px;
+  padding: 30px;
+  border-radius: 14px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid #e2e8f0;
 }
@@ -22,7 +23,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .s-title {
@@ -38,19 +39,26 @@ body {
   margin-top: 4px;
 }
 
-/* Tabs Part 1, 2, 3 */
+.home-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Part Tabs */
 .part-tabs {
   display: flex;
   gap: 8px;
   margin-bottom: 20px;
   border-bottom: 2px solid #e2e8f0;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
 
 .part-tab-btn {
   flex: 1;
   padding: 12px;
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 700;
   border: 1.5px solid #cbd5e0;
   border-radius: 8px;
@@ -66,38 +74,216 @@ body {
   border-color: #047857;
 }
 
-.input-group {
+/* Radio Mode Select */
+.mode-selection {
+  display: flex;
+  gap: 20px;
   margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14.5px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Dropdown Grid */
+.dropdown-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input-group {
+  margin-bottom: 14px;
 }
 
 .input-group label {
   display: block;
   font-weight: 700;
   margin-bottom: 6px;
-  font-size: 14px;
-  color: #1e293b;
+  font-size: 13.5px;
+  color: #334155;
 }
 
 select, input[type="text"], textarea {
   width: 100%;
-  padding: 11px 12px;
+  padding: 10px 12px;
   border: 1.5px solid #cbd5e0;
-  border-radius: 6px;
-  font-size: 14.5px;
+  border-radius: 7px;
+  font-size: 14px;
   box-sizing: border-box;
   outline: none;
+  background: #ffffff;
 }
 
 select:focus, input[type="text"]:focus, textarea:focus {
   border-color: #047857;
+  box-shadow: 0 0 0 3px rgba(4, 120, 87, 0.1);
 }
 
-textarea {
-  resize: vertical;
+/* Prompt Card Area */
+.prompt-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.prompt-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.prompt-badge-title {
+  font-weight: 800;
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.part-tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.prompt-box {
+  background: #f8fafc;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px 8px 8px 4px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+
+.prompt-heading {
+  font-size: 12px;
+  font-weight: 800;
+  color: #475569;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.prompt-text {
+  font-size: 15px;
+  color: #1e293b;
+  line-height: 1.6;
+  white-space: pre-line;
+  font-weight: 500;
+}
+
+.custom-prompt-input {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* Guide & Timer bar */
+.guide-actions-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-guide-toggle {
+  background: #e0e7ff;
+  color: #4338ca;
+  font-weight: 700;
+  font-size: 13px;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-guide-toggle:hover {
+  background: #c7d2fe;
+}
+
+.self-reliance-badge {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.self-reliance-badge.clean {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.self-reliance-badge.assisted {
+  background: #fff1f2;
+  color: #be123c;
+  border: 1px solid #fecdd3;
+  animation: pulse-warn 1s infinite alternate;
+}
+
+@keyframes pulse-warn {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.02); }
+}
+
+/* Guide Content Accordion */
+.guide-content-box {
+  margin-top: 14px;
+  padding: 16px;
+  background: #fcfcfd;
+  border: 1.5px dashed #cbd5e0;
+  border-radius: 8px;
+}
+
+.guide-section {
+  margin-bottom: 12px;
+  font-size: 13.5px;
   line-height: 1.6;
 }
 
-/* Khu vực thu âm */
+.guide-section strong {
+  color: #047857;
+}
+
+.guide-vocab-list {
+  margin: 6px 0 0 18px;
+  padding: 0;
+}
+
+.guide-vocab-list li {
+  margin-bottom: 4px;
+  color: #334155;
+}
+
+.guide-outline {
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  white-space: pre-line;
+  margin-top: 6px;
+}
+
+/* Recording Box */
 .record-box {
   background: #ecfdf5;
   border: 2px dashed #059669;
@@ -112,7 +298,7 @@ textarea {
   color: white;
   border: none;
   padding: 12px 24px;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: bold;
   border-radius: 30px;
   cursor: pointer;
@@ -129,23 +315,27 @@ textarea {
 
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7); }
-  70% { box-shadow: 0 0 0 15px rgba(5, 150, 105, 0); }
+  70% { box-shadow: 0 0 0 14px rgba(5, 150, 105, 0); }
   100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
 }
 
-.audio-player-container {
-  margin-top: 15px;
-  display: none;
+.rec-tip {
+  font-size: 13px;
+  color: #475569;
+  margin: 8px 0 0 0;
+}
+
+.audio-container {
+  margin-top: 12px;
 }
 
 audio {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   height: 40px;
-  margin-top: 8px;
 }
 
-/* Nút Submit & Print */
+/* Action Buttons */
 .btn-container {
   display: flex;
   gap: 12px;
@@ -155,12 +345,12 @@ audio {
 
 .btn-action {
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
   padding: 13px;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 700;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -186,13 +376,13 @@ audio {
 
 #status-bar {
   text-align: center;
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 700;
   margin-top: 16px;
   color: #047857;
 }
 
-/* Bảng màu chú thích & Result */
+/* Feedback Box Styling */
 .color-legend {
   display: flex;
   flex-wrap: wrap;
@@ -243,7 +433,7 @@ audio {
   border-left: 6px solid #047857;
   padding: 12px 16px;
   border-radius: 6px;
-  font-size: 16.5px;
+  font-size: 16px;
   color: #047857;
   margin-top: 20px;
 }
@@ -279,7 +469,7 @@ span.teacher-note {
   padding: 2px 7px;
   border-radius: 4px;
   font-style: italic;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 table {
@@ -320,7 +510,7 @@ th {
 
 blockquote {
   background: #f8fafc;
-  border-left: 4px solid #cbd5e0;
+  border-left: 4px solid #047857;
   padding: 12px 16px;
   margin: 15px 0;
   border-radius: 0 6px 6px 0;
@@ -329,6 +519,6 @@ blockquote {
 @media print {
   body { background: white; padding: 0; }
   .s-container { box-shadow: none; border: none; max-width: 100%; padding: 0; }
-  .part-tabs, .input-group, .record-box, .btn-container, #status-bar, .s-header-nav { display: none !important; }
+  .part-tabs, .mode-selection, .dropdown-grid, .record-box, .btn-container, #status-bar, .s-header-nav, .guide-actions-bar { display: none !important; }
   #result-box { display: block !important; border: none; padding: 0; }
 }
