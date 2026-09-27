@@ -11,15 +11,21 @@
     ],
     "fullPromptText": "1. Do you often feel bored?\n2. When would you feel bored?\n3. What do you do when you feel bored?\n4. Do you think childhood is boring or adulthood is boring?",
     "guide": {
-      "keyVocab": ["Monotonous routine (nếp sống nhàm chán)", "Kill time (giết thời gian)", "Ennui (cảm giác chán chường)", "Preoccupied with (bận rộn với)"],
-      "suggestedIdeas": "Part 1 trả lời theo cấu trúc A-R-E-A (Answer - Reason - Example). Nhớ nói một mạch cả 4 câu liên tục.",
-      "sampleOutline": "- Q1: Seldom, I always keep myself busy.\n- Q2: During long commutes or dull meetings.\n- Q3: Listen to podcasts or browse social media.\n- Q4: Adulthood, because of repetitive responsibilities and stress."
+      "keyVocab": [
+        "Monotonous routine (nhịp sống đơn điệu lặp lại)",
+        "Kill time / Whittle away time (giết thời gian)",
+        "Ennui (cảm giác chán chường mơ hồ)",
+        "Preoccupied with responsibilities (bận rộn bù đầu với trách nhiệm)",
+        "Spark imagination (kích hoạt trí tưởng tượng)"
+      ],
+      "suggestedIdeas": "Part 1 nói liên tục 4 câu theo cấu trúc AREA. Nhấn mạnh việc người lớn dễ chán hơn vì deadline và áp lực lặp lại, trong khi trẻ con luôn tò mò với mọi thứ xung quanh.",
+      "sampleOutline": "- Q1: Rarely, as my schedule is packed with work and hobbies.\n- Q2: During lengthy commutes or repetitive office tasks.\n- Q3: Listen to podcasts, sketch, or browse tech forums.\n- Q4: Adulthood is far more boring due to unceasing mundane chores."
     }
   },
   {
-    "id": "p1_tech",
+    "id": "p1_computers_tablets",
     "topic": "Computers/tablets",
-    "title": "[Part 1] Computers and Tablets - Full Question Set",
+    "title": "[Part 1] Computers & Tablets - Full Question Set",
     "questions": [
       "Would you like to use a computer or tablet?",
       "In what conditions would you use a computer or tablet?",
@@ -29,9 +35,1057 @@
     ],
     "fullPromptText": "1. Would you like to use a computer or tablet?\n2. In what conditions would you use a computer or tablet?\n3. When was the first time you used a computer or tablet?\n4. What would your life be like without computers or tablets?\n5. In what conditions would it be difficult for you to use a computer or tablet?",
     "guide": {
-      "keyVocab": ["Indispensable tool (vật bất ly thân/không thể thiếu)", "Multitasking (đa nhiệm)", "Digital detox (cai thiết bị số)", "Technological glitch (lỗi công nghệ)"],
-      "suggestedIdeas": "Nhấn mạnh sự phụ thuộc của cuộc sống hiện đại và trải nghiệm lần đầu dùng máy tính khi còn nhỏ.",
-      "sampleOutline": "- Q1 & Q2: Absolutely, essential for work, study, and recreation.\n- Q3: Around primary school for educational games.\n- Q4: Unimaginable, severely hampered productivity.\n- Q5: In bright outdoor sunlight or places without electricity/internet."
+      "keyVocab": [
+        "Indispensable tool (vật bất ly thân/không thể thiếu)",
+        "Multitasking capabilities (khả năng xử lý đa nhiệm)",
+        "Technological glitch (lỗi trục trặc kỹ thuật)",
+        "Digital blackout (tình trạng mất kết nối số hoàn toàn)",
+        "Glare from sunlight (chói mắt do ánh nắng mặt trời)"
+      ],
+      "suggestedIdeas": "Nhấn mạnh máy tính phục vụ đa nhiệm năng suất cao, trong khi máy tính bảng hợp tiêu thụ nội dung (đọc sách, xem video). Nêu hoàn cảnh khó dùng như ngoài trời chói nắng hoặc mất mạng.",
+      "sampleOutline": "- Q1 & Q2: Both, laptop for demanding workflow and tablet for lightweight bedtime reading.\n- Q3: Around primary school in IT introductory classes.\n- Q4: Life would come to a grinding halt.\n- Q5: Direct sunlight exposure or humid outdoor environments."
+    }
+  },
+  {
+    "id": "p1_collecting_things",
+    "topic": "Collecting things",
+    "title": "[Part 1] Collecting things - Full Question Set",
+    "questions": [
+      "Do you collect things?",
+      "Are there any things you have kept from your childhood?",
+      "Would you keep old things for a long time? Why?",
+      "Where do you usually keep things you need?"
+    ],
+    "fullPromptText": "1. Do you collect things?\n2. Are there any things you have kept from your childhood?\n3. Would you keep old things for a long time? Why?\n4. Where do you usually keep things you need?",
+    "guide": {
+      "keyVocab": [
+        "Sentimental value (giá trị tình cảm/kỷ niệm)",
+        "Hoarder (người có thói quen tích trữ đồ cũ)",
+        "Keepsake / Memento (vật kỷ niệm)",
+        "Minimalist lifestyle (lối sống tối giản)",
+        "Designated storage (nơi cất giữ quy định)"
+      ],
+      "suggestedIdeas": "Nêu rõ lập trường: là người thích sưu tập đồ kỷ niệm (bưu thiếp, sách, mô hình) hay chuộng lối sống tối giản bỏ bớt đồ thừa.",
+      "sampleOutline": "- Q1: Not an obsessive collector, but I treasure vintage bookmarks.\n- Q2: A wooden handcrafted toy car gifted by my grandfather.\n- Q3: Yes, old items serve as tangible reminders of past milestones.\n- Q4: In compartmentalized organizers on my study desk."
+    }
+  },
+  {
+    "id": "p1_lost_and_found",
+    "topic": "Lost and found",
+    "title": "[Part 1] Lost and found - Full Question Set",
+    "questions": [
+      "What will you do if you find something lost by others?",
+      "Do you report to the police when finding something lost by others? Why?",
+      "Have you ever lost things?",
+      "Will you post on social media if you lose your item?",
+      "Have you ever lost your keys?"
+    ],
+    "fullPromptText": "1. What will you do if you find something lost by others?\n2. Do you report to the police when finding something lost by others? Why?\n3. Have you ever lost things?\n4. Will you post on social media if you lose your item?\n5. Have you ever lost your keys?",
+    "guide": {
+      "keyVocab": [
+        "Hand it over to authorities (bàn giao cho cơ quan có thẩm quyền)",
+        "Absent-minded (đãng trí, hay quên)",
+        "Crowdsource assistance (tận dụng cộng đồng mạng trợ giúp)",
+        "Spare set of keys (chùm chìa khóa dự phòng)",
+        "Civic duty (nghĩa vụ công dân)"
+      ],
+      "suggestedIdeas": "Xử lý tình huống văn minh: nếu đồ vật có giá trị lớn (ví, điện thoại) thì báo công an, đồ nhỏ ở quán xá thì gửi tiếp tân.",
+      "sampleOutline": "- Q1 & Q2: Hand over to staff or local police station immediately.\n- Q3: Frequently misplace minor items like umbrellas.\n- Q4: Yes, local community groups have proven surprisingly effective.\n- Q5: Once, locked outside for hours until a locksmith arrived."
+    }
+  },
+  {
+    "id": "p1_street_market",
+    "topic": "Street market",
+    "title": "[Part 1] Street market - Full Question Set",
+    "questions": [
+      "What do people usually buy on the street market?",
+      "Do you prefer to go shopping in the shopping mall or on the street market?",
+      "When was the last time you went to a street market?",
+      "Are there many street markets in Vietnam?"
+    ],
+    "fullPromptText": "1. What do people usually buy on the street market?\n2. Do you prefer to go shopping in the shopping mall or on the street market?\n3. When was the last time you went to a street market?\n4. Are there many street markets in Vietnam?",
+    "guide": {
+      "keyVocab": [
+        "Bargain hunt (săn hàng giá rẻ/mặc cả)",
+        "Bustling atmosphere (bầu không khí nhộn nhịp)",
+        "Fresh produce (nông sản tươi sống)",
+        "Fixed prices (giá niêm yết cố định)",
+        "Street vendor culture (văn hóa hàng rong vỉa hè)"
+      ],
+      "suggestedIdeas": "So sánh sự tiện lợi, máy lạnh và hàng chuẩn của trung tâm thương mại với sự tươi ngon, giá mềm và nét văn hóa đặc trưng của chợ truyền thống Việt Nam.",
+      "sampleOutline": "- Q1: Fresh herbs, seafood, and budget street apparel.\n- Q2: Malls for electronics/fashion, street markets for weekend culinary treats.\n- Q3: Last Sunday morning to grab some fresh dragonfruit.\n- Q4: Ubiquitous; an integral facet of daily Vietnamese life."
+    }
+  },
+  {
+    "id": "p1_opportunities",
+    "topic": "Opportunities",
+    "title": "[Part 1] Opportunities - Full Question Set",
+    "questions": [
+      "Did you have any opportunities to take part in new activities as a child?",
+      "Should people try as many different things as they can?"
+    ],
+    "fullPromptText": "1. Did you have any opportunities to take part in new activities as a child?\n2. Should people try as many different things as they can?",
+    "guide": {
+      "keyVocab": [
+        "Broaden one's horizon (mở rộng tầm nhìn)",
+        "Step outside the comfort zone (bước ra khỏi vùng an toàn)",
+        "Well-rounded development (sự phát triển toàn diện)",
+        "Jack of all trades (người biết mỗi thứ một tí nhưng không chuyên sâu)",
+        "Inquisitive mindset (tư duy ham học hỏi khám phá)"
+      ],
+      "suggestedIdeas": "Nhấn mạnh lợi ích của việc thử nhiều thứ lúc trẻ để tìm ra đam mê thật sự, nhưng cần tránh dàn trải thiếu chuyên môn khi trưởng thành.",
+      "sampleOutline": "- Q1: Yes, parents encouraged swimming lessons and extracurricular drawing classes.\n- Q2: Absolutely, early exploration uncovers hidden talents, though mastery demands subsequent focus."
+    }
+  },
+  {
+    "id": "p1_secondary_school",
+    "topic": "Secondary school",
+    "title": "[Part 1] Secondary school - Full Question Set",
+    "questions": [
+      "Do you remember your first day at secondary school?",
+      "Were there any subjects that you found difficult at secondary school?",
+      "What was your favourite subject at secondary school?",
+      "Is there anything you miss about your secondary school?"
+    ],
+    "fullPromptText": "1. Do you remember your first day at secondary school?\n2. Were there any subjects that you found difficult at secondary school?\n3. What was your favourite subject at secondary school?\n4. Is there anything you miss about your secondary school?",
+    "guide": {
+      "keyVocab": [
+        "Overwhelming transition (sự chuyển cấp đầy bỡ ngỡ)",
+        "Abstract concepts (các khái niệm trừu tượng)",
+        "Carefree camaraderie (tình bạn bè vô tư lự)",
+        "Academic rigor (sự khắt khe trong học thuật)",
+        "Fond reminiscence (hoài niệm đẹp)"
+      ],
+      "suggestedIdeas": "Kể cảm giác bỡ ngỡ khi chuyển từ tiểu học lên cấp hai (nhiều môn học, nhiều giáo viên bộ môn). Môn khó thường là Toán hình hay Hóa học.",
+      "sampleOutline": "- Q1: Vividly, felt intimidated by the sprawling campus and multiple subject teachers.\n- Q2: Geometry was my Achilles' heel due to spatial reasoning requirements.\n- Q3: Literature, as I loved dissecting poems.\n- Q4: The nostalgic recess chats and stress-free friendships."
+    }
+  },
+  {
+    "id": "p1_paper",
+    "topic": "Paper",
+    "title": "[Part 1] Paper - Full Question Set",
+    "questions": [
+      "Have you made any crafts with paper?",
+      "Do you still write physical letters?",
+      "Do people still keep handwritten letters today?",
+      "Do you carry paper and pens with you when you go out?",
+      "What did you like to do with paper as a child?"
+    ],
+    "fullPromptText": "1. Have you made any crafts with paper?\n2. Do you still write physical letters?\n3. Do people still keep handwritten letters today?\n4. Do you carry paper and pens with you when you go out?\n5. What did you like to do with paper as a child?",
+    "guide": {
+      "keyVocab": [
+        "Origami art (nghệ thuật gấp giấy Origami)",
+        "Handwritten correspondence (thư từ viết tay)",
+        "Digital note-taking apps (ứng dụng ghi chú điện tử)",
+        "Tactile sensation (cảm giác xúc giác khi chạm vào giấy)",
+        "Heirloom / Sentimental keepsake (vật lưu niệm vô giá)"
+      ],
+      "suggestedIdeas": "Sự suy giảm của giấy bút trước công nghệ, nhưng giá trị cảm xúc của lá thư tay thì tin nhắn điện tử không bao giờ thay thế được.",
+      "sampleOutline": "- Q1: Yes, folded hundreds of paper cranes for charity fairs.\n- Q2: Rarely for day-to-day chats, only for birthday cards.\n- Q3: Yes, preserved in keepsake boxes for emotional warmth.\n- Q4: Rely entirely on smartphone memos now.\n- Q5: Folding paper planes and competitive racing with classmates."
+    }
+  },
+  {
+    "id": "p1_fruit_and_vegetables",
+    "topic": "Fruit and vegetables",
+    "title": "[Part 1] Fruit and vegetables - Full Question Set",
+    "questions": [
+      "How often do you eat fruit and vegetables?",
+      "Where do you usually buy fruit and vegetables?",
+      "What kind of fruits and vegetables do you dislike?",
+      "Were there any kinds of fruits and vegetables you disliked as a child?"
+    ],
+    "fullPromptText": "1. How often do you eat fruit and vegetables?\n2. Where do you usually buy fruit and vegetables?\n3. What kind of fruits and vegetables do you dislike?\n4. Were there any kinds of fruits and vegetables you disliked as a child?",
+    "guide": {
+      "keyVocab": [
+        "Dietary fiber & vitamins (chất xơ và vitamin)",
+        "Acquired taste (hương vị phải quen dần mới thích)",
+        "Picky eater (người kén ăn)",
+        "Organic wet market (chợ đồ tươi hữu cơ)",
+        "Bitter aftertaste (vị đắng đọng lại ở hậu vị)"
+      ],
+      "suggestedIdeas": "Nhấn mạnh chế độ ăn lành mạnh hằng ngày. Kể một món kén ăn hồi nhỏ như mướp đắng (bitter melon) hoặc rau mùi (coriander).",
+      "sampleOutline": "- Q1: Daily basis, indispensable component of every meal.\n- Q2: Local green grocers for morning freshness.\n- Q3 & Q4: Bitter gourd used to disgust me as a kid; still despise raw onions."
+    }
+  },
+  {
+    "id": "p1_politeness",
+    "topic": "Politeness",
+    "title": "[Part 1] Politeness - Full Question Set",
+    "questions": [
+      "How did you learn to be polite as a child?",
+      "Do you think being polite is very important?"
+    ],
+    "fullPromptText": "1. How did you learn to be polite as a child?\n2. Do you think being polite is very important?",
+    "guide": {
+      "keyVocab": [
+        "Social lubricant (chất xúc tác kết nối xã hội mềm mại)",
+        "Role modeling (học qua việc noi gương cha mẹ)",
+        "Basic etiquette (phép lịch sự xã giao tối thiểu)",
+        "Mutual respect (sự tôn trọng lẫn nhau)",
+        "Manners reflect upbringing (cách cư xử phản ánh gia giáo)"
+      ],
+      "suggestedIdeas": "Lịch sự giúp giảm xung đột và tạo ấn tượng tốt ban đầu. Trẻ em học nhanh nhất qua cách cha mẹ nói 'cảm ơn', 'xin lỗi'.",
+      "sampleOutline": "- Q1: Through parental role modeling and school civic education lessons.\n- Q2: Crucial social lubricant; paves the way for seamless professional interactions."
+    }
+  },
+  {
+    "id": "p1_tiredness",
+    "topic": "Tiredness",
+    "title": "[Part 1] Tiredness - Full Question Set",
+    "questions": [
+      "Do you often feel tired?",
+      "When would you feel tired?",
+      "What do you do when you feel tired?"
+    ],
+    "fullPromptText": "1. Do you often feel tired?\n2. When would you feel tired?\n3. What do you do when you feel tired?",
+    "guide": {
+      "keyVocab": [
+        "Burnout (tình trạng kiệt quệ do áp lực)",
+        "Power nap (giấc ngủ ngắn nạp năng lượng)",
+        "Recharge mental batteries (nạp lại năng lượng tinh thần)",
+        "Sedentary exhaustion (mệt mỏi do ngồi một chỗ quá lâu)",
+        "Workaholic lifestyle (lối sống tham công tiếc việc)"
+      ],
+      "suggestedIdeas": "Phân biệt mệt mỏi thể xác và kiệt sức tinh thần do nhìn màn hình vi tính lâu. Cách giải tỏa: ngủ ngắn, thể thao nhẹ, uống trà thảo mộc.",
+      "sampleOutline": "- Q1: Occasionally, whenever project deadlines pile up.\n- Q2: Mid-afternoon slumps around 3 PM or Friday evenings.\n- Q3: Take a brisk walk outdoors or take a 15-minute power nap."
+    }
+  },
+  {
+    "id": "p1_rubbish_and_recycling",
+    "topic": "Rubbish and recycling",
+    "title": "[Part 1] Rubbish & Recycling - Full Question Set",
+    "questions": [
+      "What do you do when you see rubbish on the street?",
+      "How do you recycle things like paper and plastic?"
+    ],
+    "fullPromptText": "1. What do you do when you see rubbish on the street?\n2. How do you recycle things like paper and plastic?",
+    "guide": {
+      "keyVocab": [
+        "Littering (xả rác bừa bãi)",
+        "Segregate waste at source (phân loại rác tại nguồn)",
+        "Biodegradable materials (vật liệu tự phân hủy sinh học)",
+        "Environmental stewardship (tinh thần trách nhiệm với môi trường)",
+        "Single-use plastics (đồ nhựa dùng một lần)"
+      ],
+      "suggestedIdeas": "Hành động thực tế: nhặt bỏ vào thùng rác công cộng gần nhất, phân loại rác hữu cơ và tái chế ngay tại nhà trước khi đem vứt.",
+      "sampleOutline": "- Q1: Pick it up and dispose of it in the nearest recycling bin if convenient.\n- Q2: Flatten cardboard boxes and separate plastic bottles for municipal recycling trucks."
+    }
+  },
+  {
+    "id": "p1_travelling",
+    "topic": "Travelling",
+    "title": "[Part 1] Travelling - Full Question Set",
+    "questions": [
+      "Do you prefer to sit by the window when travelling?",
+      "Did you have a long journey with your family as a child?"
+    ],
+    "fullPromptText": "1. Do you prefer to sit by the window when travelling?\n2. Did you have a long journey with your family as a child?",
+    "guide": {
+      "keyVocab": [
+        "Panoramic scenic views (tầm nhìn bao quát phong cảnh)",
+        "Cross-country road trip (chuyến du lịch xuyên quốc gia)",
+        "Travel sickness (say tàu xe)",
+        "Unobstructed sightline (tầm nhìn thoáng không bị cản trở)",
+        "Unforgettable bonding experience (trải nghiệm gắn kết khó quên)"
+      ],
+      "suggestedIdeas": "Lý do thích ngồi cạnh cửa sổ (ngắm mây trời, chụp ảnh, tựa đầu ngủ). Chuyến đi xa thời thơ ấu như đi tàu hỏa về quê hoặc xuyên Việt.",
+      "sampleOutline": "- Q1: Window seat, without a doubt; gazing at cloud formations calms my mind.\n- Q2: A 3-day train journey from Hanoi to Da Nang when I was eight."
+    }
+  },
+  {
+    "id": "p1_advertisement",
+    "topic": "Advertisement",
+    "title": "[Part 1] Advertisement - Full Question Set",
+    "questions": [
+      "Do you often see advertisements when you are on your phone or computer?",
+      "Is there an advertisement that made an impression on you when you were a child?",
+      "Do you see a lot of advertising on trains or other transport?",
+      "Do you like advertisements?",
+      "What kind of advertising do you like?"
+    ],
+    "fullPromptText": "1. Do you often see advertisements when you are on your phone or computer?\n2. Is there an advertisement that made an impression on you when you were a child?\n3. Do you see a lot of advertising on trains or other transport?\n4. Do you like advertisements?\n5. What kind of advertising do you like?",
+    "guide": {
+      "keyVocab": [
+        "Invasive pop-up ads (quảng cáo nhảy ra màn hình gây phiền nhiễu)",
+        "Catchy jingles (giai điệu quảng cáo bắt tai dễ nhớ)",
+        "Subliminal marketing (tiếp thị tiềm thức)",
+        "Storytelling narrative (lối kể chuyện truyền cảm hứng)",
+        "Ad-blocker extension (tiện ích chặn quảng cáo)"
+      ],
+      "suggestedIdeas": "Bày tỏ sự khó chịu với quảng cáo rác trên mạng, nhưng đánh giá cao các clip TVC sáng tạo, giàu tính nhân văn (như quảng cáo Tết).",
+      "sampleOutline": "- Q1: Bombarded constantly across social feeds.\n- Q2: Classic Vinamilk singing cow commercial.\n- Q3: Bus shelters and train cabins are plastered with promotional banners.\n- Q4: Dislike intrusive ones, appreciate creative short films.\n- Q5: Emotional storytelling commercials highlighting humanitarian themes."
+    }
+  },
+  {
+    "id": "p1_friends",
+    "topic": "Friends",
+    "title": "[Part 1] Friends - Full Question Set",
+    "questions": [
+      "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+      "Why are some places suitable for meeting while others are not?",
+      "Do you prefer to spend time with one friend or with a group of friends?",
+      "Would you invite friends to your home?",
+      "How important are friends to you?",
+      "Do you often go out with your friends?",
+      "Where do you often meet each other?",
+      "What do you usually do with your friends?",
+      "Do you have a friend you have known for a long time?"
+    ],
+    "fullPromptText": "1. Is there a difference between where you meet friends now and where you used to meet them in the past?\n2. Why are some places suitable for meeting while others are not?\n3. Do you prefer to spend time with one friend or with a group of friends?\n4. Would you invite friends to your home?\n5. How important are friends to you?\n6. Do you often go out with your friends?\n7. Where do you often meet each other?\n8. What do you usually do with your friends?\n9. Do you have a friend you have known for a long time?",
+    "guide": {
+      "keyVocab": [
+        "Soul confidant (người bạn tri kỷ thấu hiểu)",
+        "Intimate setting (không gian ấm cúng thân mật)",
+        "Deep, soul-baring conversation (cuộc trò chuyện sâu sắc chân thành)",
+        "Drift apart (dần xa cách theo thời gian)",
+        "Stand the test of time (vượt qua thử thách của thời gian)"
+      ],
+      "suggestedIdeas": "Bộ câu hỏi dài về tình bạn: hãy trả lời cô đọng, chuyển ý mượt mà bằng các liên từ (Regarding the venue..., As for my preference..., When it comes to longevity...).",
+      "sampleOutline": "- Q1-Q2: From school playgrounds to serene cafes with decent acoustic privacy.\n- Q3-Q4: One-on-one for sincere talks; only invite closest pals home.\n- Q5-Q8: Indispensable emotional pillars; meet bi-weekly for board games and coffee.\n- Q9: Childhood best friend of nearly 15 years."
+    }
+  },
+  {
+    "id": "p1_shoes",
+    "topic": "Shoes",
+    "title": "[Part 1] Shoes - Full Question Set",
+    "questions": [
+      "Do you like buying shoes? How often?",
+      "Have you ever bought shoes online?",
+      "How much money do you usually spend on shoes?",
+      "Which do you prefer, fashionable shoes or comfortable shoes?"
+    ],
+    "fullPromptText": "1. Do you like buying shoes? How often?\n2. Have you ever bought shoes online?\n3. How much money do you usually spend on shoes?\n4. Which do you prefer, fashionable shoes or comfortable shoes?",
+    "guide": {
+      "keyVocab": [
+        "Ergonomic support (thiết kế nâng đỡ bàn chân chuẩn công thái học)",
+        "Sneakerhead (tín đồ mê giày thể thao)",
+        "Blisters and foot fatigue (phồng rộp và mỏi bàn chân)",
+        "Prioritize comfort over aesthetic appeal (ưu tiên sự êm ái hơn thẩm mỹ)",
+        "Size discrepancy (sự chênh lệch về kích cỡ khi mua mạng)"
+      ],
+      "suggestedIdeas": "Khẳng định tiêu chí ưu tiên độ thoải mái cho việc đi lại hàng ngày. Cảnh báo rủi ro giày sai cỡ khi đặt mua online.",
+      "sampleOutline": "- Q1: Once or twice a year only when current pairs wear out.\n- Q2: Yes, but had to return due to narrow toe-boxes.\n- Q3: Around 1 to 2 million VND for durable sneakers.\n- Q4: Comfort is paramount; painful shoes ruin the entire day."
+    }
+  },
+  {
+    "id": "p1_name",
+    "topic": "Name",
+    "title": "[Part 1] Name - Full Question Set",
+    "questions": [
+      "Is it easy for you to remember people's names?",
+      "How do you remember people's names?",
+      "How do you feel when people can't remember your name?",
+      "Do you often forget people's names?"
+    ],
+    "fullPromptText": "1. Is it easy for you to remember people's names?\n2. How do you remember people's names?\n3. How do you feel when people can't remember your name?\n4. Do you often forget people's names?",
+    "guide": {
+      "keyVocab": [
+        "Terrible with names (rất dở trong việc nhớ tên)",
+        "Mnemonic device (kỹ thuật ghi nhớ liên tưởng)",
+        "Take it in stride (xem nhẹ, không để bụng)",
+        "Facial recognition (khả năng nhận diện gương mặt)",
+        "Social faux pas (sự vụng về lúng túng trong xã giao)"
+      ],
+      "suggestedIdeas": "Thừa nhận sự đãng trí là bình thường. Mẹo nhớ tên: nhắc lại tên người đó 2 lần trong cuộc nói chuyện đầu tiên hoặc liên tưởng hình ảnh.",
+      "sampleOutline": "- Q1 & Q4: Quite challenging; great with faces, terrible with names.\n- Q2: Mentally repeat their name during introductions and link to a distinct feature.\n- Q3: Completely understandable, never take offense."
+    }
+  },
+  {
+    "id": "p1_watch",
+    "topic": "Watch",
+    "title": "[Part 1] Watch - Full Question Set",
+    "questions": [
+      "Do you wear a watch?",
+      "Have you ever got a watch as a gift?",
+      "Why do some people wear expensive watches?",
+      "Do you think it is important to wear a watch? Why?"
+    ],
+    "fullPromptText": "1. Do you wear a watch?\n2. Have you ever got a watch as a gift?\n3. Why do some people wear expensive watches?\n4. Do you think it is important to wear a watch? Why?",
+    "guide": {
+      "keyVocab": [
+        "Status symbol (biểu tượng địa vị xã hội)",
+        "Smartwatch fitness tracker (đồng hồ thông minh theo dõi sức khỏe)",
+        "Punctuality and professionalism (tác phong đúng giờ và chuyên nghiệp)",
+        "Horology masterpiece (kiệt tác chế tác đồng hồ)",
+        "Fashion statement (phụ kiện khẳng định phong cách)"
+      ],
+      "suggestedIdeas": "Đồng hồ ngày nay không chỉ để xem giờ (vì đã có điện thoại) mà còn là phụ kiện thời trang, máy theo dõi nhịp tim hoặc biểu tượng thành đạt.",
+      "sampleOutline": "- Q1: Yes, a smartwatch on a daily basis.\n- Q2: Received a classic analog piece from parents on high school graduation.\n- Q3: Signal wealth, sophistication, and social standing.\n- Q4: Yes, helps check time subtly without being distracted by phone screens."
+    }
+  },
+  {
+    "id": "p1_cars",
+    "topic": "Cars",
+    "title": "[Part 1] Cars - Full Question Set",
+    "questions": [
+      "Do you think car colours are important?",
+      "Did you enjoy traveling by car when you were a kid?",
+      "What types of cars do you like?",
+      "Do you prefer to be a driver or a passenger?",
+      "What do you usually do when there is a traffic jam?"
+    ],
+    "fullPromptText": "1. Do you think car colours are important?\n2. Did you enjoy traveling by car when you were a kid?\n3. What types of cars do you like?\n4. Do you prefer to be a driver or a passenger?\n5. What do you usually do when there is a traffic jam?",
+    "guide": {
+      "keyVocab": [
+        "Vehicle aesthetics & resale value (thẩm mỹ và giá trị bán lại của xe)",
+        "Electric vehicles / EV (xe điện thân thiện môi trường)",
+        "Motion sickness (say xe)",
+        "Sit back and unwind (thư thả ngồi ngắm cảnh)",
+        "Bumper-to-bumper traffic (xe cộ nối đuôi ùn tắc nghẹt thở)"
+      ],
+      "suggestedIdeas": "Màu xe liên quan đến an toàn (màu sáng dễ nhận biết ban đêm) và phong thủy. Khi kẹt xe thì nghe podcast hoặc nhạc nhẹ để tránh ức chế.",
+      "sampleOutline": "- Q1: Essential for visibility and reflecting the owner's personality.\n- Q2: Hated it due to severe motion sickness.\n- Q3: Sleek electric vehicles with autonomous driving features.\n- Q4: Passenger, allows guilt-free resting.\n- Q5: Put on soothing acoustic tracks or audiobooks."
+    }
+  },
+  {
+    "id": "p1_websites",
+    "topic": "Websites",
+    "title": "[Part 1] Websites - Full Question Set",
+    "questions": [
+      "What kinds of websites do you often visit?",
+      "What is your favourite website?",
+      "Are there any changes to the websites you often visit?",
+      "What kinds of websites are popular in your country?"
+    ],
+    "fullPromptText": "1. What kinds of websites do you often visit?\n2. What is your favourite website?\n3. Are there any changes to the websites you often visit?\n4. What kinds of websites are popular in your country?",
+    "guide": {
+      "keyVocab": [
+        "User-friendly interface (giao diện thân thiện trực quan)",
+        "E-commerce platform (sàn thương mại điện tử)",
+        "Algorithmic personalization (cá nhân hóa dựa trên thuật toán)",
+        "Information repository (kho tàng thông tin tri thức)",
+        "Cybersecurity measures (các biện pháp an ninh mạng)"
+      ],
+      "suggestedIdeas": "Nêu các trang phục vụ công việc (Google Scholar, GitHub, Notion) và giải trí (YouTube, Reddit). Ở VN thì Shopee, VnExpress, Facebook chiếm ưu thế.",
+      "sampleOutline": "- Q1: Academic databases, tech news portals, and streaming sites.\n- Q2: YouTube for limitless educational tutorials.\n- Q3: Cleaner layouts, more AI-powered recommendation feeds.\n- Q4: Social networks and online shopping hubs."
+    }
+  },
+  {
+    "id": "p1_mirrors",
+    "topic": "Mirrors",
+    "title": "[Part 1] Mirrors - Full Question Set",
+    "questions": [
+      "Do you like looking at yourself in the mirror? How often?",
+      "Have you ever bought mirrors?",
+      "Do you usually take a mirror with you?",
+      "Would you use mirrors to decorate your room?"
+    ],
+    "fullPromptText": "1. Do you like looking at yourself in the mirror? How often?\n2. Have you ever bought mirrors?\n3. Do you usually take a mirror with you?\n4. Would you use mirrors to decorate your room?",
+    "guide": {
+      "keyVocab": [
+        "Groom one's appearance (chỉnh chu ngoại hình)",
+        "Self-conscious (tự ti hoặc quá để ý bản thân)",
+        "Create an illusion of spaciousness (tạo cảm giác không gian rộng hơn)",
+        "Full-length standing mirror (gương đứng toàn thân)",
+        "Reflective surface (bề mặt phản chiếu)"
+      ],
+      "suggestedIdeas": "Gương chỉ dùng để kiểm tra trang phục trước khi ra đường. Trong nội thất, gương giúp phòng nhỏ đón ánh sáng tự nhiên và trông rộng rãi hơn.",
+      "sampleOutline": "- Q1: Only briefly before leaving home to ensure decent grooming.\n- Q2: Bought a full-length mirror for my bedroom closet.\n- Q3: No, front-facing phone cameras make pocket mirrors redundant.\n- Q4: Absolutely, strategically placed mirrors amplify natural room light."
+    }
+  },
+  {
+    "id": "p1_public_gardens_and_parks",
+    "topic": "Public gardens and parks",
+    "title": "[Part 1] Public gardens and parks - Full Question Set",
+    "questions": [
+      "Did you like going to parks as a child?",
+      "Do you still like going to parks now?",
+      "Would you like to see more parks in your city?",
+      "Are there any parks you want to go to in the future?",
+      "Would you prefer to play in a personal garden or public garden?",
+      "How are the parks today different from those you visited as a kid?",
+      "What do you like to do when visiting a park?",
+      "Would you like to play in a public garden or park?"
+    ],
+    "fullPromptText": "1. Did you like going to parks as a child?\n2. Do you still like going to parks now?\n3. Would you like to see more parks in your city?\n4. Are there any parks you want to go to in the future?\n5. Would you prefer to play in a personal garden or public garden?\n6. How are the parks today different from those you visited as a kid?\n7. What do you like to do when visiting a park?\n8. Would you like to play in a public garden or park?",
+    "guide": {
+      "keyVocab": [
+        "Green oasis / Urban sanctuary (ốc đảo xanh giữa lòng thành phố)",
+        "Concrete jungle (khu rừng bê tông / thành phố ngột ngạt)",
+        "Outdoor recreational facilities (tiện ích thể thao giải trí ngoài trời)",
+        "Escape the hustle and bustle (trốn khỏi ồn ào náo nhiệt)",
+        "Breathe fresh air (hít thở không khí trong lành)"
+      ],
+      "suggestedIdeas": "Bộ câu hỏi sâu về không gian xanh. Nêu rõ vai trò của công viên đối với sức khỏe tinh thần và sự thiếu hụt công viên tại các đô thị lớn.",
+      "sampleOutline": "- Q1-Q3: Loved it for playing tag; crave more green spaces to counteract concrete urbanization.\n- Q4: Central Park in New York is on my bucket list.\n- Q5-Q6: Public parks offer vibrant social energy and modern jogging tracks.\n- Q7-Q8: Jogging, stretching, or reading under shady canopies."
+    }
+  },
+  {
+    "id": "p1_shopping",
+    "topic": "Shopping",
+    "title": "[Part 1] Shopping - Full Question Set",
+    "questions": [
+      "How often do you go shopping?",
+      "Do you prefer online shopping or in-store shopping?",
+      "Have you ever returned anything you bought online?",
+      "Do you like shopping?"
+    ],
+    "fullPromptText": "1. How often do you go shopping?\n2. Do you prefer online shopping or in-store shopping?\n3. Have you ever returned anything you bought online?\n4. Do you like shopping?",
+    "guide": {
+      "keyVocab": [
+        "Retail therapy (mua sắm để xả stress)",
+        "Impulse purchase (mua sắm bốc đồng theo cảm xúc)",
+        "Seamless doorstep delivery (giao hàng tận cửa tiện lợi)",
+        "Inspect product quality firsthand (tận tay kiểm tra chất lượng đồ)",
+        "Return policy (chính sách đổi trả hàng)"
+      ],
+      "suggestedIdeas": "Cân bằng giữa tiện ích săn sale trên app và cảm giác thích thú khi đi thử đồ trực tiếp cùng bạn bè.",
+      "sampleOutline": "- Q1: A few times a month for groceries and necessities.\n- Q2: E-commerce for heavy commodities, physical stores for clothes.\n- Q3: Returned a defective bluetooth keyboard without fuss.\n- Q4: Enjoyable in moderation, stressful if crowded."
+    }
+  },
+  {
+    "id": "p1_tidiness",
+    "topic": "Tidiness",
+    "title": "[Part 1] Tidiness - Full Question Set",
+    "questions": [
+      "Do you like to keep things tidy?",
+      "Did you use to keep your room tidy as a child?"
+    ],
+    "fullPromptText": "1. Do you like to keep things tidy?\n2. Did you use to keep your room tidy as a child?",
+    "guide": {
+      "keyVocab": [
+        "Declutter (dọn dẹp bỏ đồ đạc bừa bộn)",
+        "Cluttered desk equals a cluttered mind (bàn bừa bộn thì đầu óc rối bời)",
+        "Neat freak (người cuồng sự sạch sẽ ngăn nắp)",
+        "Organized chaos (sự bừa bộn có trật tự riêng)",
+        "Instill cleanliness habits (rèn luyện thói quen ngăn nắp)"
+      ],
+      "suggestedIdeas": "Ngăn nắp giúp tăng khả năng tập trung khi làm việc. Hồi nhỏ thường bị bố mẹ nhắc nhở vì vứt đồ chơi lung tung.",
+      "sampleOutline": "- Q1: Absolutely, a tidy workstation boosts my cognitive clarity.\n- Q2: Far from it, my childhood room was an utter mess of comic books and lego bricks."
+    }
+  },
+  {
+    "id": "p1_music",
+    "topic": "Music",
+    "title": "[Part 1] Music - Full Question Set",
+    "questions": [
+      "Do you prefer sad or happy music?",
+      "Does happy music make you feel more excited?"
+    ],
+    "fullPromptText": "1. Do you prefer sad or happy music?\n2. Does happy music make you feel more excited?",
+    "guide": {
+      "keyVocab": [
+        "Cathartic release (sự giải tỏa cảm xúc mãnh liệt)",
+        "Upbeat tempo (tiết tấu rộn ràng sôi động)",
+        "Resonate with emotional state (đồng điệu với tâm trạng)",
+        "Instant mood lifter (liều thuốc kéo tâm trạng lên ngay tức thì)",
+        "Melancholic ballad (bản nhạc ballad trầm buồn)"
+      ],
+      "suggestedIdeas": "Nhạc vui khi tập thể dục hoặc khởi động ngày mới, nhạc ballad êm dịu khi cần tĩnh tâm suy ngẫm.",
+      "sampleOutline": "- Q1: Depends on my vibe; melancholic melodies for reflection, lively pop for workouts.\n- Q2: Without a doubt, high-tempo beats instantly trigger dopamine and enthusiasm."
+    }
+  },
+  {
+    "id": "p1_teachers",
+    "topic": "Teachers",
+    "title": "[Part 1] Teachers - Full Question Set",
+    "questions": [
+      "Do you have a favorite teacher?",
+      "In what way has your favourite teacher helped you?",
+      "Are you still in touch with your primary school teachers?",
+      "Do you have a teacher from your past that you still remember?",
+      "Do you want to be a teacher in the future?"
+    ],
+    "fullPromptText": "1. Do you have a favorite teacher?\n2. In what way has your favourite teacher helped you?\n3. Are you still in touch with your primary school teachers?\n4. Do you have a teacher from your past that you still remember?\n5. Do you want to be a teacher in the future?",
+    "guide": {
+      "keyVocab": [
+        "Inspirational mentor (người thầy truyền cảm hứng)",
+        "Ignite a passion for learning (thắp lên ngọn lửa đam mê học hỏi)",
+        "Demanding noble profession (nghề cao quý nhiều áp lực)",
+        "Patience and empathy (sự kiên nhẫn và lòng thấu cảm)",
+        "Lose contact over time (mất liên lạc dần qua năm tháng)"
+      ],
+      "suggestedIdeas": "Kỷ niệm về người thầy dạy văn/tiếng Anh đã khích lệ sự tự tin của bản thân khi điểm kém. Nghề giáo cao quý nhưng bản thân thiếu kiên nhẫn để theo đuổi.",
+      "sampleOutline": "- Q1 & Q2: High school English teacher who instilled confidence in public speaking.\n- Q3: Sadly lost touch after graduating from primary education.\n- Q4: Chemistry teacher who used thrilling visual experiments.\n- Q5: No, I lack the immense patience required for teaching."
+    }
+  },
+  {
+    "id": "p1_social_media",
+    "topic": "Social media",
+    "title": "[Part 1] Social media - Full Question Set",
+    "questions": [
+      "Have you ever posted anything on social media?",
+      "When did you start using social media?",
+      "Do you think you spend too much time on social media?",
+      "Do your friends use social media?",
+      "What do people often do on social media?"
+    ],
+    "fullPromptText": "1. Have you ever posted anything on social media?\n2. When did you start using social media?\n3. Do you think you spend too much time on social media?\n4. Do your friends use social media?\n5. What do people often do on social media?",
+    "guide": {
+      "keyVocab": [
+        "Mindless doom-scrolling (lướt mạng vô định tiêu tốn thời gian)",
+        "Curate personal profile (chăm chút trang cá nhân)",
+        "Digital footprint (dấu chân kỹ thuật số)",
+        "FOMO - Fear of missing out (hội chứng sợ bỏ lỡ thông tin)",
+        "Connect across geographical boundaries (kết nối xuyên biên giới)"
+      ],
+      "suggestedIdeas": "Mặt tích cực (giữ liên lạc, cập nhật tin tức) đối trọng với thói quen lướt vô bổ làm giảm hiệu suất làm việc.",
+      "sampleOutline": "- Q1: Occasionally share travel snapshots and book reviews.\n- Q2: Created Facebook account during early secondary school.\n- Q3: Guilty as charged; often get sucked into short video feeds.\n- Q4: Universal among my peers.\n- Q5: Messaging, content consumption, and showcasing lifestyle updates."
+    }
+  },
+  {
+    "id": "p1_clothing",
+    "topic": "Clothing",
+    "title": "[Part 1] Clothing - Full Question Set",
+    "questions": [
+      "What kind of clothes do you like to wear?",
+      "Do you prefer to wear comfortable and casual clothes or smart clothes?",
+      "Do you like wearing T-shirts?",
+      "Do you spend a lot of time choosing clothes?"
+    ],
+    "fullPromptText": "1. What kind of clothes do you like to wear?\n2. Do you prefer to wear comfortable and casual clothes or smart clothes?\n3. Do you like wearing T-shirts?\n4. Do you spend a lot of time choosing clothes?",
+    "guide": {
+      "keyVocab": [
+        "Casual chic / Minimalist attire (phong cách giản dị lịch lãm)",
+        "Breathable cotton fabrics (chất liệu cotton thoáng khí)",
+        "Decision fatigue (sự mệt mỏi vì phải ra quyết định lựa chọn)",
+        "Dress code (quy định trang phục)",
+        "Versatile wardrobe (tủ đồ đa năng dễ phối)"
+      ],
+      "suggestedIdeas": "Thích áo phông quần jeans tiện dụng, chỉ mặc vest hoặc sơ mi khi dự hội thảo trang trọng. Duy trì tủ đồ capsule wardrobe để không tốn thời gian chọn.",
+      "sampleOutline": "- Q1 & Q2: Comfortable casual wear like loose linen shirts and chinos.\n- Q3: Plain cotton T-shirts are my daily staple.\n- Q4: Barely five minutes, prefer capsule wardrobe simplicity."
+    }
+  },
+  {
+    "id": "p1_films_cinemas",
+    "topic": "Films/cinemas",
+    "title": "[Part 1] Films/cinemas - Full Question Set",
+    "questions": [
+      "How often do you watch films?",
+      "Do you prefer to watch films at home or in the cinema?",
+      "What films do you like?",
+      "Did you often watch films when you were a child?",
+      "Did you ever go to the cinema alone as a child?",
+      "Do you often go to the cinema with your friends?",
+      "Do you think going to the cinema is a good way to spend time with friends?"
+    ],
+    "fullPromptText": "1. How often do you watch films?\n2. Do you prefer to watch films at home or in the cinema?\n3. What films do you like?\n4. Did you often watch films when you were a child?\n5. Did you ever go to the cinema alone as a child?\n6. Do you often go to the cinema with your friends?\n7. Do you think going to the cinema is a good way to spend time with friends?",
+    "guide": {
+      "keyVocab": [
+        "Immersive audiovisual experience (trải nghiệm âm thanh hình ảnh chân thực)",
+        "Blockbuster movie (bom tấn điện ảnh)",
+        "Streaming convenience (sự tiện lợi của các nền tảng xem phim trực tuyến)",
+        "Cinematic ambiance (không khí rạp chiếu phim)",
+        "Communal leisure activity (hoạt động giải trí tập thể)"
+      ],
+      "suggestedIdeas": "So sánh màn hình lớn, âm thanh vòm của rạp chiếu phim với sự thoải mái, tự do tạm dừng khi xem tại nhà trên Netflix.",
+      "sampleOutline": "- Q1: Once or twice on lazy weekends.\n- Q2: Big screen for visual masterpieces, couch streaming for casual comedies.\n- Q3: Psychological thrillers and sci-fi epics.\n- Q4 & Q5: Mostly Disney cartoons on TV; never went alone to cinemas.\n- Q6 & Q7: Great outing idea followed by dinner discussions."
+    }
+  },
+  {
+    "id": "p1_dream_and_ambition",
+    "topic": "Dream and ambition",
+    "title": "[Part 1] Dream and ambition - Full Question Set",
+    "questions": [
+      "What was your childhood dream?",
+      "Are you the kind of person who sticks to dreams?",
+      "What is your dream job?",
+      "Do you think you are an ambitious person?"
+    ],
+    "fullPromptText": "1. What was your childhood dream?\n2. Are you the kind of person who sticks to dreams?\n3. What is your dream job?\n4. Do you think you are an ambitious person?",
+    "guide": {
+      "keyVocab": [
+        "Tenacious pursuit (sự kiên trì theo đuổi mục tiêu)",
+        "Pragmatic approach (cách tiếp cận thực tế)",
+        "Career aspirations (khát vọng nghề nghiệp)",
+        "Driven and goal-oriented (người có chí hướng và định hướng rõ ràng)",
+        "Childish fantasy (ước mơ viển vông thời thơ ấu)"
+      ],
+      "suggestedIdeas": "Kể ước mơ ngây ngô lúc bé (phi hành gia, phi công) so với định hướng thực tế hiện tại. Khẳng định tham vọng lành mạnh tạo động lực phấn đấu.",
+      "sampleOutline": "- Q1: Yearned to become an astronaut discovering alien worlds.\n- Q2: Flexible rather than stubborn; adjust ambitions according to reality.\n- Q3: Creative director in an international tech firm.\n- Q4: Ambitious yet grounded; continuously pushing personal limits."
+    }
+  },
+  {
+    "id": "p1_the_city_you_live_in",
+    "topic": "The city you live in",
+    "title": "[Part 1] The city you live in - Full Question Set",
+    "questions": [
+      "Would you recommend your city to others?",
+      "What's the weather like where you live?",
+      "Are there people of different ages living in this city?",
+      "Are the people friendly in the city?",
+      "Is the city friendly to children and old people?",
+      "Do you often see your neighbors?",
+      "What city do you live in?",
+      "Do you like this city? Why?",
+      "How long have you lived in this city?",
+      "Are there big changes in this city?",
+      "Is this city your permanent residence?"
+    ],
+    "fullPromptText": "1. What city do you live in?\n2. Do you like this city? Why?\n3. How long have you lived in this city?\n4. What's the weather like where you live?\n5. Would you recommend your city to others?\n6. Are there big changes in this city?\n7. Are the people friendly in the city?\n8. Is the city friendly to children and old people?\n9. Do you often see your neighbors?\n10. Is this city your permanent residence?",
+    "guide": {
+      "keyVocab": [
+        "Metropolitan dynamism (sự năng động của thành phố lớn)",
+        "Humid subtropical climate (khí hậu cận nhiệt đới ẩm)",
+        "Urban infrastructure development (phát triển cơ sở hạ tầng đô thị)",
+        "Tight-knit neighborhood (khu dân cư gắn bó đoàn kết)",
+        "Vibrant street life (đời sống đường phố sôi động)"
+      ],
+      "suggestedIdeas": "Chuỗi câu hỏi toàn diện về thành phố (Hà Nội, TP.HCM, Đà Nẵng). Đánh giá sự sôi động và đồ ăn ngon, nhưng chỉ ra kẹt xe và thiếu sân chơi công cộng cho người già/trẻ nhỏ.",
+      "sampleOutline": "- Q1-Q3: Hanoi / Saigon; vibrant energy, rich street gastronomy; lived here for a decade.\n- Q4-Q6: Distinct seasonal changes; rapid boom in high-rises and metro transit.\n- Q7-Q9: Warm welcoming locals; urban isolation sometimes limits neighbor chats.\n- Q10: Intend to stay long-term due to career prospects."
+    }
+  },
+  {
+    "id": "p1_outer_space_and_stars",
+    "topic": "Outer space and stars",
+    "title": "[Part 1] Outer space and stars - Full Question Set",
+    "questions": [
+      "Have you ever learnt about outer space and stars?",
+      "Do you like science fiction movies? Why?",
+      "Do you want to know more about outer space?",
+      "Do you want to go into outer space in the future?"
+    ],
+    "fullPromptText": "1. Have you ever learnt about outer space and stars?\n2. Do you like science fiction movies? Why?\n3. Do you want to know more about outer space?\n4. Do you want to go into outer space in the future?",
+    "guide": {
+      "keyVocab": [
+        "Celestial bodies (các thiên thể trong vũ trụ)",
+        "Astrophysics & astronomy (vật lý thiên văn và thiên văn học)",
+        "Mind-bending concepts (những khái niệm gây choáng ngợp)",
+        "Space tourism (du lịch không gian)",
+        "Insignificant speck (hạt bụi nhỏ bé giữa vũ trụ vô tận)"
+      ],
+      "suggestedIdeas": "Bày tỏ sự tò mò về vũ trụ bao la. Thích phim khoa học viễn tưởng (như Interstellar) vì kích thích trí tưởng tượng.",
+      "sampleOutline": "- Q1: Basic solar system models taught during secondary physics.\n- Q2: Passionate about sci-fi films due to awe-inspiring world-building.\n- Q3: Keen to understand dark matter and exoplanets.\n- Q4: Thrilling thought, though space tourism remains prohibitively exorbitant."
+    }
+  },
+  {
+    "id": "p1_art",
+    "topic": "Art",
+    "title": "[Part 1] Art - Full Question Set",
+    "questions": [
+      "Do you like art?",
+      "Do you like visiting art galleries?",
+      "Do you want to be an artist?",
+      "Do you like modern art or traditional art?"
+    ],
+    "fullPromptText": "1. Do you like art?\n2. Do you like visiting art galleries?\n3. Do you want to be an artist?\n4. Do you like modern art or traditional art?",
+    "guide": {
+      "keyVocab": [
+        "Visual aesthetic (thẩm mỹ thị giác)",
+        "Thought-provoking installations (các tác phẩm sắp đặt gợi nhiều suy ngẫm)",
+        "Creative outlet (kênh giải tỏa sự sáng tạo)",
+        "Abstract expressionism (chủ nghĩa biểu hiện trừu tượng)",
+        "Meticulous brushwork (nét cọ tỉ mỉ của nghệ thuật truyền thống)"
+      ],
+      "suggestedIdeas": "Thưởng thức nghệ thuật như cách thư giãn tâm hồn. So sánh sự phá cách của nghệ thuật đương đại và sự tinh xảo của hội họa truyền thống.",
+      "sampleOutline": "- Q1: Appreciate visual arts as an observer.\n- Q2: Visit local galleries on quiet weekend afternoons.\n- Q3: Never, lack innate artistic talent.\n- Q4: Modern contemporary art for its daring conceptual messages."
+    }
+  },
+  {
+    "id": "p1_singing",
+    "topic": "Singing",
+    "title": "[Part 1] Singing - Full Question Set",
+    "questions": [
+      "Do you like singing? Why?",
+      "Have you ever learnt how to sing?",
+      "Who do you want to sing for?",
+      "Do you think singing can bring happiness to people?"
+    ],
+    "fullPromptText": "1. Do you like singing? Why?\n2. Have you ever learnt how to sing?\n3. Who do you want to sing for?\n4. Do you think singing can bring happiness to people?",
+    "guide": {
+      "keyVocab": [
+        "Tone-deaf (hát lệch tông, không có cảm thụ âm nhạc)",
+        "Karaoke culture (văn hóa hát karaoke)",
+        "Vocal chords release endorphins (dây thanh quản kích thích tiết hoóc-môn hạnh phúc)",
+        "Sing off-key (hát lạc nhịp)",
+        "Uplifting therapeutic effect (tác dụng trị liệu tinh thần tích cực)"
+      ],
+      "suggestedIdeas": "Kể về văn hóa Karaoke ở Việt Nam. Dù hát hay hay dở thì ca hát vẫn là liều thuốc giảm stress tự nhiên tuyệt vời.",
+      "sampleOutline": "- Q1: Love singing casually in the shower or during karaoke sessions.\n- Q2: Never received formal vocal coaching.\n- Q3: Close friends during casual get-togethers.\n- Q4: Definitely, singing triggers feel-good hormones and unifies people."
+    }
+  },
+  {
+    "id": "p1_evening_time",
+    "topic": "Evening time",
+    "title": "[Part 1] Evening time - Full Question Set",
+    "questions": [
+      "What do you hate doing in the evening?",
+      "Do you like the morning or evening?",
+      "What do you usually do in the evening?",
+      "What did you do in the evening when you were little? Why?",
+      "Are there any differences between what you do in the evening now and what you did in the past?",
+      "Do you spend your evenings doing the same things on both weekends and weekdays? Why?"
+    ],
+    "fullPromptText": "1. What do you hate doing in the evening?\n2. Do you like the morning or evening?\n3. What do you usually do in the evening?\n4. What did you do in the evening when you were little? Why?\n5. Are there any differences between what you do in the evening now and what you did in the past?\n6. Do you spend your evenings doing the same things on both weekends and weekdays? Why?",
+    "guide": {
+      "keyVocab": [
+        "Night owl versus early bird (người cú đêm đối lập với người dậy sớm)",
+        "Unwind after work (thư giãn xả hơi sau giờ làm)",
+        "Overtime work and unanswered emails (tăng ca và email chưa trả lời)",
+        "Bedtime story ritual (thói quen kể chuyện đêm trước khi ngủ)",
+        "Distinct demarcation (ranh giới phân định rõ ràng giữa ngày thường và cuối tuần)"
+      ],
+      "suggestedIdeas": "Buổi tối là thời gian cá nhân quý giá. Ghét việc phải trả lời tin nhắn công việc hay giải quyết việc tồn đọng lúc tối muộn.",
+      "sampleOutline": "- Q1: Resent checking pending work emails.\n- Q2: Night owl; evenings provide undisturbed tranquility.\n- Q3: Cook home meals, read, or watch documentaries.\n- Q4 & Q5: Used to watch cartoons and sleep early; now nights are dominated by screens.\n- Q6: Weekdays are restful, weekend evenings involve social outings."
+    }
+  },
+  {
+    "id": "p1_old_buildings",
+    "topic": "Old buildings",
+    "title": "[Part 1] Old buildings - Full Question Set",
+    "questions": [
+      "Have you ever seen old buildings in the city?",
+      "Do you think we should preserve old buildings in cities?",
+      "Do you prefer living in an old building or a modern house?",
+      "Are there any old buildings you want to see in the future? Why?"
+    ],
+    "fullPromptText": "1. Have you ever seen old buildings in the city?\n2. Do you think we should preserve old buildings in cities?\n3. Do you prefer living in an old building or a modern house?\n4. Are there any old buildings you want to see in the future? Why?",
+    "guide": {
+      "keyVocab": [
+        "Architectural heritage (di sản kiến trúc)",
+        "French colonial architecture (kiến trúc thuộc địa Pháp)",
+        "Historical preservation (bảo tồn di tích lịch sử)",
+        "Modern amenities and insulation (tiện nghi hiện đại và cách âm/cách nhiệt)",
+        "Cultural identity (bản sắc văn hóa đặc trưng)"
+      ],
+      "suggestedIdeas": "Các tòa nhà cổ chứa đựng linh hồn và lịch sử thành phố. Tuy nhiên nếu chọn nơi ở thì nhà hiện đại với đầy đủ tiện nghi sẽ tiện lợi hơn.",
+      "sampleOutline": "- Q1: Yes, French colonial villas scattered around downtown.\n- Q2: Absolutely crucial; they serve as living embodiments of history.\n- Q3: Modern apartments for superior plumbing, safety, and insulation.\n- Q4: Historical cathedrals in Europe like Notre-Dame."
+    }
+  },
+  {
+    "id": "p1_sports_programs",
+    "topic": "Sports programs",
+    "title": "[Part 1] Sports programs - Full Question Set",
+    "questions": [
+      "Do you like watching sports programs on TV?",
+      "Do you like to watch live sports games?",
+      "Who do you like to watch sports games with?",
+      "What kinds of games do you expect to watch in the future?",
+      "Do you prefer to watch sports games alone or with a group of friends?",
+      "Have you ever watched a sports game in a stadium?"
+    ],
+    "fullPromptText": "1. Do you like watching sports programs on TV?\n2. Do you like to watch live sports games?\n3. Who do you like to watch sports games with?\n4. What kinds of games do you expect to watch in the future?\n5. Do you prefer to watch sports games alone or with a group of friends?\n6. Have you ever watched a sports game in a stadium?",
+    "guide": {
+      "keyVocab": [
+        "Electrifying stadium atmosphere (bầu không khí bùng nổ nghẹt thở trên sân vận động)",
+        "Spectator sports (các môn thể thao thu hút đông đảo người xem)",
+        "Cheer for national team (cổ vũ cho đội tuyển quốc gia)",
+        "Slow-motion replay (chiếu lại pha bóng bằng kỹ thuật quay chậm)",
+        "Camaraderie and collective excitement (tình anh em và sự phấn khích tập thể)"
+      ],
+      "suggestedIdeas": "Kể về bóng đá (môn thể thao vua tại VN). Xem cùng bạn bè tại quán cafe hoặc sân vận động mang lại cảm xúc vỡ òa không gì sánh được.",
+      "sampleOutline": "- Q1 & Q2: Keen follower of international football tournaments.\n- Q3 & Q5: Prefer viewing with friends; shouting together intensifies the fun.\n- Q4: Upcoming World Cup matches.\n- Q6: Watched a national league derby live at My Dinh stadium."
+    }
+  },
+  {
+    "id": "p1_science",
+    "topic": "Science",
+    "title": "[Part 1] Science - Full Question Set",
+    "questions": [
+      "Do you like science?",
+      "When did you start to learn about science?",
+      "Which science subject is interesting to you?",
+      "What kinds of interesting things have you done with science?",
+      "Do you like watching science TV programs?",
+      "Do Vietnamese people often visit science museums?"
+    ],
+    "fullPromptText": "1. Do you like science?\n2. When did you start to learn about science?\n3. Which science subject is interesting to you?\n4. What kinds of interesting things have you done with science?\n5. Do you like watching science TV programs?\n6. Do Vietnamese people often visit science museums?",
+    "guide": {
+      "keyVocab": [
+        "Scientific inquiry (tinh thần tra cứu khoa học)",
+        "Empirical evidence (bằng chứng thực nghiệm)",
+        "Breakthrough discoveries (những phát hiện đột phá)",
+        "Interactive exhibits (các khu trưng bày trải nghiệm tương tác)",
+        "Popularize science education (phổ cập giáo dục khoa học cho đại chúng)"
+      ],
+      "suggestedIdeas": "Khoa học giải thích cách thế giới vận hành. Môn yêu thích có thể là Sinh học hoặc Vật lý. Bảo tàng khoa học ở VN còn ít so với các nước phương Tây.",
+      "sampleOutline": "- Q1 & Q2: Fascinated since primary school experiments with magnets.\n- Q3: Biology, especially genetics and human physiology.\n- Q4: Built small water filtration setups for school science fairs.\n- Q5: Avid fan of National Geographic and Discovery documentaries.\n- Q6: Not very prevalent yet due to a lack of interactive science complexes."
+    }
+  },
+  {
+    "id": "p1_headphones",
+    "topic": "Headphones",
+    "title": "[Part 1] Headphones - Full Question Set",
+    "questions": [
+      "Do you use headphones?",
+      "What type of headphones do you use?",
+      "When would you use headphones?",
+      "In what conditions would you not use headphones?"
+    ],
+    "fullPromptText": "1. Do you use headphones?\n2. What type of headphones do you use?\n3. When would you use headphones?\n4. In what conditions would you not use headphones?",
+    "guide": {
+      "keyVocab": [
+        "Active noise cancellation / ANC (chống ồn chủ động)",
+        "Acoustic bubble (không gian âm thanh biệt lập)",
+        "Situational awareness (khả năng nhận biết môi trường xung quanh)",
+        "Wireless earbuds (tai nghe không dây nhét tai)",
+        "Auditory damage (tổn hại thính lực do nghe âm lượng lớn)"
+      ],
+      "suggestedIdeas": "Tai nghe chống ồn giúp tập trung tại quán cafe hoặc văn phòng. Tuyệt đối không đeo khi đang lái xe hoặc đi bộ băng qua đường để đảm bảo an toàn.",
+      "sampleOutline": "- Q1 & Q2: Daily user of wireless earbuds with active noise cancellation.\n- Q3: On public transit and during intensive study sessions.\n- Q4: When navigating heavy street traffic to maintain situational awareness."
+    }
+  },
+  {
+    "id": "p1_jokes_comedies",
+    "topic": "Jokes & Comedies",
+    "title": "[Part 1] Jokes & Comedies - Full Question Set",
+    "questions": [
+      "Are you good at telling jokes?",
+      "Do your friends like to tell jokes?",
+      "Do you like to watch comedies?",
+      "Have you ever watched a live show?"
+    ],
+    "fullPromptText": "1. Are you good at telling jokes?\n2. Do your friends like to tell jokes?\n3. Do you like to watch comedies?\n4. Have you ever watched a live show?",
+    "guide": {
+      "keyVocab": [
+        "Sense of humor (khiếu hài hước)",
+        "Crack someone up (làm ai đó cười nghiêng ngả)",
+        "Dry wit / Punchline (sự hóm hỉnh thâm thúy / câu chốt hạ gây cười)",
+        "Stand-up comedy (hài độc thoại)",
+        "Comedic timing (sự canh thời điểm nhả miếng hài duyên dáng)"
+      ],
+      "suggestedIdeas": "Kể chuyện hài cần duyên và thời điểm chuẩn. Phim hài là cách thư giãn tuyệt vời sau những giờ học tập căng thẳng.",
+      "sampleOutline": "- Q1: Mediocre joke teller; often mess up the punchline.\n- Q2: Have a witty friend who consistently cracks the entire group up.\n- Q3: Love lighthearted sitcoms like Friends.\n- Q4: Attended a local stand-up comedy club last year."
+    }
+  },
+  {
+    "id": "p1_history",
+    "topic": "History",
+    "title": "[Part 1] History - Full Question Set",
+    "questions": [
+      "Did you like history when you were young?",
+      "When was the last time you read about history?",
+      "Do you like history?",
+      "Have you ever been to historical museums?"
+    ],
+    "fullPromptText": "1. Did you like history when you were young?\n2. When was the last time you read about history?\n3. Do you like history?\n4. Have you ever been to historical museums?",
+    "guide": {
+      "keyVocab": [
+        "Historical milestones (các mốc son lịch sử)",
+        "Dry memorization (học vẹt máy móc các con số ngày tháng)",
+        "Fascinating historical anecdotes (những giai thoại lịch sử ly kỳ)",
+        "War relics and artifacts (chứng tích và hiện vật chiến tranh)",
+        "Learn lessons from the past (rút ra bài học từ quá khứ)"
+      ],
+      "suggestedIdeas": "Hồi nhỏ sợ lịch sử vì phải học thuộc ngày tháng máy móc. Lớn lên lại thích vì hiểu được gốc rễ văn hóa và bài học quản trị xã hội.",
+      "sampleOutline": "- Q1: Disliked it in school due to rote date memorization.\n- Q2: Read an article regarding the Renaissance era a week ago.\n- Q3: Fascinated by ancient political shifts and military tactics.\n- Q4: Visited the War Remnants Museum in Saigon."
+    }
+  },
+  {
+    "id": "p1_morning_routines",
+    "topic": "Morning routines",
+    "title": "[Part 1] Morning routines - Full Question Set",
+    "questions": [
+      "Do you like to get up early in the morning?",
+      "What is your morning routine?",
+      "Is breakfast important?",
+      "What do you do right after getting up in the morning?"
+    ],
+    "fullPromptText": "1. Do you like to get up early in the morning?\n2. What is your morning routine?\n3. Is breakfast important?\n4. What do you do right after getting up in the morning?",
+    "guide": {
+      "keyVocab": [
+        "Productive tone for the day (tạo đà năng suất cho cả ngày)",
+        "Hydrate and stretch (uống nước bù khoáng và giãn cơ)",
+        "Kick-start metabolism (kích hoạt quá trình trao đổi chất)",
+        "Avoid grogginess (tránh cảm giác uể oải ngái ngủ)",
+        "Morning serenity (khoảng lặng yên bình của buổi sớm)"
+      ],
+      "suggestedIdeas": "Một thói quen buổi sáng khoa học (uống cốc nước ấm, tập giãn cơ, ăn sáng đủ chất) giúp cả ngày tràn đầy năng lượng.",
+      "sampleOutline": "- Q1: Strive to wake up by 6:30 AM to savor quiet morning hours.\n- Q2: Hydrate, 10-minute stretch, brew fresh coffee, and review today's task list.\n- Q3: Indispensable to fuel cognitive functioning.\n- Q4: Drink a large glass of warm water right out of bed."
+    }
+  },
+  {
+    "id": "p1_work_or_studies",
+    "topic": "Work or studies",
+    "title": "[Part 1] Work or studies - Full Question Set",
+    "questions": [
+      "What subjects are you studying?",
+      "Do you like your subject?",
+      "Why did you choose to study that subject?",
+      "Do you think that your subject is popular in your country?",
+      "Do you have any plans for your studies in the next five years?",
+      "What are the benefits of being your age?",
+      "Do you want to change your major?",
+      "Do you prefer to study in the mornings or in the afternoons?",
+      "How much time do you spend on your studies each week?",
+      "What technology do you use when you study?",
+      "What changes would you like to see in your school?"
+    ],
+    "fullPromptText": "1. What subjects are you studying?\n2. Do you like your subject? Why did you choose it?\n3. Do you think that your subject is popular in your country?\n4. Do you have any plans for your studies in the next five years?\n5. What are the benefits of being your age?\n6. Do you want to change your major?\n7. Do you prefer to study in the mornings or in the afternoons?\n8. How much time do you spend on your studies each week?\n9. What technology do you use when you study?\n10. What changes would you like to see in your school?",
+    "guide": {
+      "keyVocab": [
+        "In high demand (nhu cầu tuyển dụng rất cao)",
+        "Practical career prospects (triển vọng nghề nghiệp thực tế)",
+        "Youthful agility and curiosity (sự nhanh nhạy và trí tò mò của tuổi trẻ)",
+        "Digital tools streamline research (công cụ số tối ưu hóa việc nghiên cứu)",
+        "Modernize syllabus (hiện đại hóa giáo trình giảng dạy)"
+      ],
+      "suggestedIdeas": "Bộ câu hỏi cốt lõi cho học sinh/sinh viên. Nêu rõ chuyên ngành đang học, lý do chọn, thói quen tự học và mong muốn trường học có nhiều dự án thực tế hơn.",
+      "sampleOutline": "- Q1-Q3: Business Administration / Computer Science; high market demand and personal interest.\n- Q4-Q6: Plan to pursue a Master's degree; youth grants energy to experiment without fear of failure.\n- Q7-Q8: Morning person; devote around 25 hours weekly.\n- Q9-Q10: Cloud storage and AI research tools; desire more collaborative lab spaces."
+    }
+  },
+  {
+    "id": "p1_home_and_accommodation",
+    "topic": "Home & Accommodation",
+    "title": "[Part 1] Home & Accommodation - Full Question Set",
+    "questions": [
+      "Who do you live with?",
+      "Do you live in an apartment or a house?",
+      "What part of your home do you like the most?",
+      "What’s the difference between where you are living now and where you have lived in the past?",
+      "What kind of house or apartment do you want to live in in the future?",
+      "What room does your family spend most of the time in?",
+      "What do you usually do in your apartment?",
+      "What kinds of accommodation do you live in?",
+      "Do you plan to live there for a long time?",
+      "Can you describe the place where you live?",
+      "Do you prefer living in a house or an apartment?",
+      "Please describe the room you live in.",
+      "What’s your favorite room in your apartment or house?",
+      "What makes you feel pleasant in your home?",
+      "How long have you lived there?",
+      "Do you think it is important to live in a comfortable environment?"
+    ],
+    "fullPromptText": "1. Who do you live with?\n2. Do you live in an apartment or a house?\n3. What part of your home do you like the most?\n4. What’s the difference between where you are living now and where you lived in the past?\n5. What kind of home do you want to live in in the future?\n6. What room does your family spend most of the time in?\n7. What do you usually do in your home?\n8. Do you plan to live there for a long time?\n9. Do you prefer living in a house or an apartment?\n10. What makes you feel pleasant in your home?",
+    "guide": {
+      "keyVocab": [
+        "Cozy sanctuary (chốn về ấm cúng bình yên)",
+        "High-rise modern apartment (căn hộ chung cư cao tầng hiện đại)",
+        "Ample natural light (ngập tràn ánh sáng tự nhiên)",
+        "Communal living space (không gian sinh hoạt chung của gia đình)",
+        "Ergonomic living environment (môi trường sống thoải mái tiện ích)"
+      ],
+      "suggestedIdeas": "Bộ câu hỏi kinh điển về nhà ở. Hãy chọn 1 không gian yêu thích nhất (phòng ngủ, ban công) và nhấn mạnh việc có ánh sáng và thông thoáng giúp thư thái sau ngày làm việc.",
+      "sampleOutline": "- Q1-Q3: Live with family in a high-rise flat; favorite spot is the sunlit balcony.\n- Q4-Q5: Past house was narrower; aspire to own a smart eco-friendly suburban house.\n- Q6-Q7: Living room for family chats; my room is for deep focus and reading.\n- Q8-Q10: Comfortable home is foundational for mental sanity and productivity."
+    }
+  },
+  {
+    "id": "p1_hometown_and_area",
+    "topic": "Hometown & The area you live in",
+    "title": "[Part 1] Hometown & Your Living Area - Full Question Set",
+    "questions": [
+      "Have you learned anything about the history of your hometown?",
+      "Did you learn about the culture of your hometown in your childhood?",
+      "Is that a big city or a small place?",
+      "Do you like your hometown?",
+      "What do you like (most) about your hometown?",
+      "Is there anything you dislike about it?",
+      "How long have you been living there?",
+      "Do you like living there?",
+      "Please describe your hometown a little.",
+      "What’s your hometown famous for?",
+      "Did you learn about the history of your hometown at school?",
+      "Are there many young people in your hometown?",
+      "Is your hometown a good place for young people to pursue their careers?",
+      "Do you live in a noisy or a quiet area?",
+      "Are the people in your neighborhood nice and friendly?",
+      "Do you like the area that you live in?",
+      "Where do you like to go in that area?",
+      "Do you know any famous people in your area?",
+      "What are some changes in the area recently?",
+      "Do you know any of your neighbours?"
+    ],
+    "fullPromptText": "1. What is your hometown and is it a big city or small place?\n2. What do you like most about your hometown, and is there anything you dislike?\n3. What is your hometown famous for?\n4. Is your hometown a good place for young people to pursue careers?\n5. Do you live in a noisy or quiet neighborhood?\n6. Are your neighbors friendly and do you know them well?\n7. What are some major changes in your area recently?",
+    "guide": {
+      "keyVocab": [
+        "Rich cultural heritage (bản sắc văn hóa bề thế)",
+        "Gastronomic paradise (thiên đường ẩm thực)",
+        "Brain drain to major metropolises (chảy máu chất xám về các đô thị lớn)",
+        "Tranquil residential quarter (khu dân cư yên tĩnh)",
+        "Rapid infrastructural transformation (sự thay đổi cơ sở hạ tầng nhanh chóng)"
+      ],
+      "suggestedIdeas": "Bộ câu hỏi tổng hợp về quê hương và khu phố đang sống. Giới thiệu món đặc sản, phong cảnh, cơ hội việc làm của giới trẻ và các công trình mới được xây gần đây.",
+      "sampleOutline": "- Q1-Q3: Coastal city / bustling capital; renowned for fresh seafood and historical relics; despise traffic gridlocks.\n- Q4: Moderate; young talents often migrate to bigger commercial hubs for jobs.\n- Q5-Q7: Quiet alleyway; tight-knit neighbors who exchange homemade dishes; newly opened shopping complexes nearby."
     }
   }
 ]
