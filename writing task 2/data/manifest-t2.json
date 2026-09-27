@@ -1,86 +1,966 @@
 [
-{
+  {
     "id": "01.01",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.01] Kinh tế vs Môi trường: Phát triển có luôn tàn phá tự nhiên?",
+    "title": "[01.01] Opinion - [Mẫu] Tăng trưởng kinh tế có luôn hủy hoại tự nhiên?",
     "file": "data/opinion-t2/01-opinion-economic-environment-t2.json"
   },
   {
     "id": "01.02",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.02] Trẻ xem TV & chơi game: Có làm suy giảm trí tuệ?",
+    "title": "[01.02] Opinion - [09.12] Trẻ xem TV & chơi game có làm suy giảm trí tuệ?",
     "file": "data/opinion-t2/02-opinion-children-screen-time-t2.json"
   },
   {
     "id": "01.03",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.03] Gia đình hay Xã hội có tầm ảnh hưởng lớn hơn lên trẻ?",
+    "title": "[01.03] Opinion - [10.12] Gia đình hay Xã hội có tầm ảnh hưởng lớn hơn lên trẻ?",
     "file": "data/opinion-t2/03-opinion-family-vs-society-influence-t2.json"
   },
   {
     "id": "01.04",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.04] Đại học miễn phí: Chính phủ có nên miễn 100% học phí?",
+    "title": "[01.04] Opinion - [11.12] Chính phủ có nên miễn 100% học phí đại học?",
     "file": "data/opinion-t2/04-opinion-free-university-education-t2.json"
   },
   {
     "id": "01.05",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.05] Quảng cáo: Chỉ nhằm bán thứ người ta không cần?",
+    "title": "[01.05] Opinion - [27.12] Quảng cáo chỉ nhằm bán thứ người ta không cần?",
     "file": "data/opinion-t2/05-opinion-advertising-purpose-t2.json"
   },
   {
     "id": "01.06",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.06] Thiết bị thông minh: Tác hại có vượt trội lợi ích?",
+    "title": "[01.06] Opinion - [13.12] Thiết bị thông minh mang lại tác hại nhiều hơn lợi ích?",
     "file": "data/opinion-t2/06-opinion-mobile-technology-t2.json"
   },
   {
     "id": "01.07",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.07] Thể thao mạo hiểm: Có nên cấm vì quá nguy hiểm?",
+    "title": "[01.07] Opinion - [12.12] Có nên cấm các môn thể thao mạo hiểm?",
     "file": "data/opinion-t2/07-opinion-ban-extreme-sports-t2.json"
   },
   {
     "id": "01.08",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.08] Bắt buộc học đến 18 tuổi: Nên hay không?",
+    "title": "[01.08] Opinion - [04.12] Có nên bắt buộc học sinh đi học đến năm 18 tuổi?",
     "file": "data/opinion-t2/08-opinion-compulsory-school-until-18-t2.json"
   },
   {
     "id": "01.09",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.09] Doanh nghiệp lớn tài trợ thể thao: Tích cực hay tiêu cực?",
+    "title": "[01.09] Opinion - [24.11] Doanh nghiệp lớn tài trợ thể thao có gây hại?",
     "file": "data/opinion-t2/09-opinion-sports-sponsorship-t2.json"
   },
   {
     "id": "01.10",
     "type": "Opinion (Agree/Disagree)",
-    "title": "[01.10] Thi bằng lái xe đạp: Có cần thiết cho đường công cộng?",
+    "title": "[01.10] Opinion - [22.11] Người đi xe đạp có cần thi sát hạch để đi đường công cộng?",
     "file": "data/opinion-t2/10-opinion-cyclist-test-roads-t2.json"
   },
   {
+    "id": "01.11",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.11] Opinion - [15.11] Nên chi tiền cho đào tạo nghề hơn là học đại học?",
+    "file": "data/opinion-t2/11-opinion-vocational-vs-university-t2.json"
+  },
+  {
+    "id": "01.12",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.12] Opinion - [12.11] Tổ chức quốc tế nên quản lý môi trường thay vì từng nước?",
+    "file": "data/opinion-t2/12-opinion-global-environmental-org-t2.json"
+  },
+  {
+    "id": "01.13",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.13] Opinion - [11.11] Phát triển kinh tế tất yếu gây hủy hoại môi trường?",
+    "file": "data/opinion-t2/13-opinion-pollution-unavoidable-t2.json"
+  },
+  {
+    "id": "01.14",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.14] Opinion - [08.11] Ăn uống lành mạnh và tập thể dục có thật sự cần thiết?",
+    "file": "data/opinion-t2/14-opinion-diet-and-exercise-t2.json"
+  },
+  {
+    "id": "01.15",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.15] Opinion - [05.11] Nên chi tiền cho trẻ em tập thể thao thay vì thi Olympic?",
+    "file": "data/opinion-t2/15-opinion-olympics-vs-grassroots-sports-t2.json"
+  },
+  {
+    "id": "01.16",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.16] Opinion - [02.11] Tiền thám hiểm vũ trụ có đang bị lãng phí?",
+    "file": "data/opinion-t2/16-opinion-space-exploration-spending-t2.json"
+  },
+  {
+    "id": "01.17",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.17] Opinion - [28.10] Có nên cấm điện thoại ở nơi công cộng?",
+    "file": "data/opinion-t2/17-opinion-ban-phones-public-places-t2.json"
+  },
+  {
+    "id": "01.18",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.18] Opinion - [16.10] Không có sự nghiệp thành công thì cuộc đời vô nghĩa?",
+    "file": "data/opinion-t2/18-opinion-career-success-meaning-life-t2.json"
+  },
+  {
+    "id": "01.19",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.19] Opinion - [11.10] Cha mẹ nên hạn chế xem TV và bắt trẻ đọc sách thay thế?",
+    "file": "data/opinion-t2/19-opinion-limit-screen-read-books-t2.json"
+  },
+  {
+    "id": "01.20",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.20] Opinion - [10.10] Lớp học truyền thống giữa thầy và trò sẽ biến mất vào 2050?",
+    "file": "data/opinion-t2/20-opinion-traditional-classrooms-2050-t2.json"
+  },
+  {
+    "id": "01.21",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.21] Opinion - [07.10] Đất trống trong đô thị nên trồng cây thay vì xây nhà?",
+    "file": "data/opinion-t2/21-opinion-urban-trees-vs-housing-t2.json"
+  },
+  {
+    "id": "01.22",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.22] Opinion - [05.10] Học đại học là quyền cơ bản và cần miễn phí vô điều kiện?",
+    "file": "data/opinion-t2/22-opinion-higher-ed-basic-right-t2.json"
+  },
+  {
+    "id": "01.23",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.23] Opinion - [04.10] Nhà nước nên chi trả 100% học phí cho mọi sinh viên?",
+    "file": "data/opinion-t2/23-opinion-government-pay-course-fees-t2.json"
+  },
+  {
+    "id": "01.24",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.24] Opinion - [15.09] Nhà ở là quyền cơ bản, chính phủ phải cấp nhà miễn phí?",
+    "file": "data/opinion-t2/24-opinion-free-housing-poor-citizens-t2.json"
+  },
+  {
+    "id": "01.25",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.25] Opinion - [13.09] Quảng cáo không hề có sức ảnh hưởng đến quyết định mua sắm?",
+    "file": "data/opinion-t2/25-opinion-advertising-no-influence-t2.json"
+  },
+  {
+    "id": "01.26",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.26] Opinion - [30.08] Trường học chỉ để tạo ra người lao động thay vì cá nhân toàn diện?",
+    "file": "data/opinion-t2/26-opinion-school-purpose-workers-t2.json"
+  },
+  {
+    "id": "01.27",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.27] Opinion - [23.08] Thà thất nghiệp còn hơn làm việc mình không thích?",
+    "file": "data/opinion-t2/27-opinion-unemployed-vs-disliked-job-t2.json"
+  },
+  {
+    "id": "01.28",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.28] Opinion - [19.08] Tội phạm vị thành niên phạm tội nghiêm trọng nên bị phạt như người lớn?",
+    "file": "data/opinion-t2/28-opinion-juvenile-crimes-adult-punishment-t2.json"
+  },
+  {
+    "id": "01.29",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.29] Opinion - [18.08] Các quốc gia nên tự túc lương thực và hạn chế tối đa nhập khẩu?",
+    "file": "data/opinion-t2/29-opinion-food-self-sufficiency-t2.json"
+  },
+  {
+    "id": "01.30",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.30] Opinion - [14.08] Tăng tuổi lái xe tối thiểu là cách tốt nhất cải thiện an toàn?",
+    "file": "data/opinion-t2/30-opinion-raise-driving-age-t2.json"
+  },
+  {
+    "id": "01.31",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.31] Opinion - [11.08] Hầu hết vấn đề khẩn cấp chỉ giải quyết được qua hợp tác quốc tế?",
+    "file": "data/opinion-t2/31-opinion-international-cooperation-urgent-issues-t2.json"
+  },
+  {
+    "id": "01.32",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.32] Opinion - [02.08] Cha mẹ nên bị phạt nếu con cái vi phạm pháp luật?",
+    "file": "data/opinion-t2/32-opinion-punish-parents-for-children-crimes-t2.json"
+  },
+  {
+    "id": "01.33",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.33] Opinion - [30.07] Khi đến trường, thầy cô ảnh hưởng lớn hơn cha mẹ?",
+    "file": "data/opinion-t2/33-opinion-teachers-vs-parents-influence-t2.json"
+  },
+  {
+    "id": "01.34",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.34] Opinion - [29.07] Dùng điện thoại và máy tính khiến con người mất khả năng giao tiếp trực tiếp?",
+    "file": "data/opinion-t2/34-opinion-loss-face-to-face-communication-t2.json"
+  },
+  {
+    "id": "01.35",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.35] Opinion - [23.07] Chỉ có hành động của chính phủ mới giải quyết được khủng hoảng nhà ở?",
+    "file": "data/opinion-t2/35-opinion-only-government-solves-housing-crisis-t2.json"
+  },
+  {
+    "id": "01.36",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.36] Opinion - [20.07] Cá nhân không làm được gì cho môi trường, chỉ chính phủ và tập đoàn lớn?",
+    "file": "data/opinion-t2/36-opinion-individual-vs-corporate-environment-t2.json"
+  },
+  {
+    "id": "01.37",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.37] Opinion - [16.07] Xu hướng bắt chước lẫn nhau thể hiện rõ qua thời trang và tiêu dùng?",
+    "file": "data/opinion-t2/37-opinion-human-tendency-copy-fashion-t2.json"
+  },
+  {
+    "id": "01.38",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.38] Opinion - [14.07] Báo chí truyền thông nên đăng tải nhiều tin tức tích cực hơn?",
+    "file": "data/opinion-t2/38-opinion-media-report-good-news-t2.json"
+  },
+  {
+    "id": "01.39",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.39] Opinion - [13.07] Nên hạn chế các chuyến bay không cần thiết thay vì cấm ô tô?",
+    "file": "data/opinion-t2/39-opinion-discourage-flights-over-cars-t2.json"
+  },
+  {
+    "id": "01.40",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.40] Opinion - [05.07] Chi tiền phòng bệnh lối sống quan trọng hơn chi tiền chữa bệnh?",
+    "file": "data/opinion-t2/40-opinion-preventive-vs-curative-healthcare-t2.json"
+  },
+  {
+    "id": "01.41",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.41] Opinion - [03.06] Việc giết động vật lấy thịt hay làm đồ da là không còn cần thiết?",
+    "file": "data/opinion-t2/41-opinion-animals-food-products-obsolete-t2.json"
+  },
+  {
+    "id": "01.42",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.42] Opinion - [03.06] Bảo tàng chỉ nên trưng bày lịch sử dân tộc thay vì thế giới?",
+    "file": "data/opinion-t2/42-opinion-museums-national-vs-international-history-t2.json"
+  },
+  {
+    "id": "01.43",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.43] Opinion - [08.06] Không nên ép học sinh học ngoại ngữ nếu không có năng khiếu?",
+    "file": "data/opinion-t2/43-opinion-mandatory-foreign-languages-aptitude-t2.json"
+  },
+  {
+    "id": "01.44",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.44] Opinion - [11.06] Nên đầu tư tiền cho các môn khoa học nhiều hơn các môn khác?",
+    "file": "data/opinion-t2/44-opinion-invest-science-over-other-subjects-t2.json"
+  },
+  {
+    "id": "01.45",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.45] Opinion - [14.06] Mối quan hệ tốt giữa các quốc gia ngày nay quan trọng hơn bao giờ hết?",
+    "file": "data/opinion-t2/45-opinion-good-international-relations-importance-t2.json"
+  },
+  {
+    "id": "01.46",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.46] Opinion - [26.06] Giá trị lớn nhất của việc giàu có là cơ hội giúp đỡ người khác?",
+    "file": "data/opinion-t2/46-opinion-rich-opportunity-to-help-others-t2.json"
+  },
+  {
+    "id": "01.47",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.47] Opinion - [03.05] Không khả thi và vô ích khi phổ cập đại học cho toàn dân?",
+    "file": "data/opinion-t2/47-opinion-universal-higher-education-unfeasible-t2.json"
+  },
+  {
+    "id": "01.48",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.48] Opinion - [04.05] Sinh viên nên học đa dạng môn học thay vì chỉ một môn chuyên sâu?",
+    "file": "data/opinion-t2/48-opinion-study-range-of-subjects-at-university-t2.json"
+  },
+  {
+    "id": "01.49",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.49] Opinion - [06.05] Người trẻ tuổi làm lãnh đạo và giám đốc sẽ tốt hơn người lớn tuổi?",
+    "file": "data/opinion-t2/49-opinion-young-leaders-better-than-older-t2.json"
+  },
+  {
+    "id": "01.50",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.50] Opinion - [06.05] Bảo tàng thực tế sẽ biến mất vì mọi người xem tranh qua máy tính?",
+    "file": "data/opinion-t2/50-opinion-digital-museums-replace-physical-t2.json"
+  },
+  {
+    "id": "01.51",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.51] Opinion - [08.05] Kỹ năng xã hội quan trọng ngang ngửa bằng cấp chuyên môn khi tuyển dụng?",
+    "file": "data/opinion-t2/51-opinion-social-skills-vs-qualifications-hiring-t2.json"
+  },
+  {
+    "id": "01.52",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.52] Opinion - [17.05] Phụ nữ làm lãnh đạo trong doanh nghiệp và chính phủ tốt hơn nam giới?",
+    "file": "data/opinion-t2/52-opinion-women-make-better-leaders-than-men-t2.json"
+  },
+  {
+    "id": "01.53",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.53] Opinion - [17.05] Thói quen mua sắm phụ thuộc vào độ tuổi nhiều hơn các yếu tố khác?",
+    "file": "data/opinion-t2/53-opinion-shopping-habits-depend-on-age-group-t2.json"
+  },
+  {
+    "id": "01.54",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.54] Opinion - [25.05] Cách tốt nhất để có gia đình hạnh phúc là bắt cha mẹ học nuôi dạy con?",
+    "file": "data/opinion-t2/54-opinion-mandatory-parenting-courses-t2.json"
+  },
+  {
+    "id": "01.55",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.55] Opinion - [03.04] Trí thông minh là phẩm chất quan trọng nhất của người lãnh đạo?",
+    "file": "data/opinion-t2/55-opinion-intelligence-most-important-leadership-t2.json"
+  },
+  {
+    "id": "01.56",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.56] Opinion - [06.04] Bác sĩ và giáo viên nên được trả lương cao hơn ngôi sao giải trí?",
+    "file": "data/opinion-t2/56-opinion-doctors-teachers-paid-more-celebrities-t2.json"
+  },
+  {
+    "id": "01.57",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.57] Opinion - [07.04] Có nên cấm các cửa hàng bán đồ ăn thức uống gây hại sức khỏe?",
+    "file": "data/opinion-t2/57-opinion-ban-unhealthy-food-beverage-shops-t2.json"
+  },
+  {
+    "id": "01.58",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.58] Opinion - [13.04] Phỏng vấn không phải là cách đáng tin cậy để tuyển dụng nhân viên?",
+    "file": "data/opinion-t2/58-opinion-interviews-unreliable-recruitment-method-t2.json"
+  },
+  {
+    "id": "01.59",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.59] Opinion - [14.04] Giờ làm việc kéo dài mang lại kinh tế nhưng hủy hoại xã hội?",
+    "file": "data/opinion-t2/59-opinion-long-working-hours-social-consequences-t2.json"
+  },
+  {
+    "id": "01.60",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.60] Opinion - [28.04] Lối sống truyền thống của thế hệ trước không còn hữu ích cho giới trẻ?",
+    "file": "data/opinion-t2/60-opinion-traditional-ideas-useless-modern-youth-t2.json"
+  },
+  {
+    "id": "01.61",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.61] Opinion - [29.04] Giáo dục tốt hơn là giải pháp hiệu quả hơn việc tống tù tội phạm?",
+    "file": "data/opinion-t2/61-opinion-education-better-than-prison-reducing-crime-t2.json"
+  },
+  {
+    "id": "01.62",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.62] Opinion - [30.04] Không thể nào trở thành một 'khách du lịch có trách nhiệm'?",
+    "file": "data/opinion-t2/62-opinion-responsible-tourism-impossible-t2.json"
+  },
+  {
+    "id": "01.63",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.63] Opinion - [23.03] Internet là phát minh vĩ đại và quan trọng nhất lịch sử nhân loại?",
+    "file": "data/opinion-t2/63-opinion-internet-most-important-invention-t2.json"
+  },
+  {
+    "id": "01.64",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.64] Opinion - [25.02] Trò chơi điện tử trên thiết bị cầm tay gây hại cho cá nhân và xã hội?",
+    "file": "data/opinion-t2/64-opinion-portable-video-games-harmful-society-t2.json"
+  },
+  {
+    "id": "01.65",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.65] Opinion - [11.01] Sinh viên phải chịu 100% học phí vì đại học chỉ có lợi cho cá nhân họ?",
+    "file": "data/opinion-t2/65-opinion-students-pay-all-tuition-individual-benefit-t2.json"
+  },
+
+  {
     "id": "02.01",
     "type": "Discuss Both Views",
-    "title": "[02.01] Mạng xã hội: Xói mòn quan hệ đời thực hay kết nối toàn cầu?",
-    "file": "data/discussion-t2/02-discussion-social-media-t2.json"
+    "title": "[02.01] Discussion - [Mẫu] Mạng xã hội: Làm hỏng quan hệ hay kết nối toàn cầu?",
+    "file": "data/discussion-t2/01-discussion-social-media-connections-t2.json"
   },
+  {
+    "id": "02.02",
+    "type": "Discuss Both Views",
+    "title": "[02.02] Discussion - [24.12] Nước ngọt: Quyền tự do dùng hay Chính phủ phải kiểm soát nghiêm?",
+    "file": "data/discussion-t2/02-discussion-freshwater-control-vs-free-use-t2.json"
+  },
+  {
+    "id": "02.03",
+    "type": "Discuss Both Views",
+    "title": "[02.03] Discussion - [10.12] Bảo tàng: Nơi giải trí vui chơi hay trung tâm giáo dục tri thức?",
+    "file": "data/discussion-t2/03-discussion-museums-entertainment-vs-education-t2.json"
+  },
+  {
+    "id": "02.04",
+    "type": "Discuss Both Views",
+    "title": "[02.04] Discussion - [06.11] Các chuỗi cửa hàng và sản phẩm giống nhau: Tích cực hay Tiêu cực?",
+    "file": "data/discussion-t2/04-discussion-standardized-shops-products-t2.json"
+  },
+  {
+    "id": "02.05",
+    "type": "Discuss Both Views",
+    "title": "[02.05] Discussion - [30.11] Học đại học hay đi làm tích lũy kinh nghiệm sớm để thành công?",
+    "file": "data/discussion-t2/05-discussion-university-degree-vs-work-experience-t2.json"
+  },
+  {
+    "id": "02.06",
+    "type": "Discuss Both Views",
+    "title": "[02.06] Discussion - [23.11] Trợ cấp rau củ quả hay Đánh thuế nặng đồ ăn nhanh?",
+    "file": "data/discussion-t2/06-discussion-subsidize-vegetables-vs-tax-junk-food-t2.json"
+  },
+  {
+    "id": "02.07",
+    "type": "Discuss Both Views",
+    "title": "[02.07] Discussion - [19.11] Thể thao: Giữ vai trò then chốt trong xã hội hay chỉ là giải trí?",
+    "file": "data/discussion-t2/07-discussion-sport-social-role-vs-mere-leisure-t2.json"
+  },
+  {
+    "id": "02.08",
+    "type": "Discuss Both Views",
+    "title": "[02.08] Discussion - [16.11] Nội dung trên TV hay Thời lượng xem tác động đến hành vi trẻ em?",
+    "file": "data/discussion-t2/08-discussion-tv-content-vs-time-spent-children-t2.json"
+  },
+  {
+    "id": "02.09",
+    "type": "Discuss Both Views",
+    "title": "[02.09] Discussion - [29.10] Giao thương quốc tế: Lợi ích kinh tế hay Mất bản sắc dân tộc?",
+    "file": "data/discussion-t2/09-discussion-globalization-economic-vs-national-identity-t2.json"
+  },
+  {
+    "id": "02.10",
+    "type": "Discuss Both Views",
+    "title": "[02.10] Discussion - [26.10] Đô thị nằm ngang (Horizontal) hay Đô thị tầng đứng (Vertical)?",
+    "file": "data/discussion-t2/10-discussion-horizontal-vs-vertical-cities-t2.json"
+  },
+  {
+    "id": "02.11",
+    "type": "Discuss Both Views",
+    "title": "[02.11] Discussion - [19.10] Trách nhiệm đưa đón trẻ đến trường: Chính phủ hay Phụ huynh?",
+    "file": "data/discussion-t2/11-discussion-school-transport-parents-vs-government-t2.json"
+  },
+  {
+    "id": "02.12",
+    "type": "Discuss Both Views",
+    "title": "[02.12] Discussion - [19.10] Học ngoại ngữ: Sĩ số lớp nhỏ có tạo nên sự khác biệt?",
+    "file": "data/discussion-t2/12-discussion-language-class-size-importance-t2.json"
+  },
+  {
+    "id": "02.13",
+    "type": "Discuss Both Views",
+    "title": "[02.13] Discussion - [06.10] Nghệ thuật: Ai cũng có thể sáng tác hay chỉ người có năng khiếu?",
+    "file": "data/discussion-t2/13-discussion-artistic-talent-innate-vs-learned-t2.json"
+  },
+  {
+    "id": "02.14",
+    "type": "Discuss Both Views",
+    "title": "[02.14] Discussion - [20.09] Dạy phân loại rác & tái chế: Trách nhiệm của Trường học hay Gia đình?",
+    "file": "data/discussion-t2/14-discussion-teach-waste-recycling-home-vs-school-t2.json"
+  },
+  {
+    "id": "02.15",
+    "type": "Discuss Both Views",
+    "title": "[02.15] Discussion - [17.09] Tổ chức từ thiện: Chỉ giúp người trong nước hay viện trợ toàn cầu?",
+    "file": "data/discussion-t2/15-discussion-charity-aid-domestic-vs-international-t2.json"
+  },
+  {
+    "id": "02.16",
+    "type": "Discuss Both Views",
+    "title": "[02.16] Discussion - [16.09] Thành công trong cuộc sống: Chăm chỉ kiên trì hay Tiền tài ngoại hình?",
+    "file": "data/discussion-t2/16-discussion-success-hard-work-vs-money-appearance-t2.json"
+  },
+  {
+    "id": "02.17",
+    "type": "Discuss Both Views",
+    "title": "[02.17] Discussion - [06.09] Nhà nước có nên tài trợ tiền cho nghệ sĩ (nhạc sĩ, nhà thơ, họa sĩ)?",
+    "file": "data/discussion-t2/17-discussion-government-funding-artists-vs-private-sources-t2.json"
+  },
+  {
+    "id": "02.18",
+    "type": "Discuss Both Views",
+    "title": "[02.18] Discussion - [20.08] Mở thư viện miễn phí: Cần thiết hay lãng phí tiền vì đã có Internet?",
+    "file": "data/discussion-t2/18-discussion-public-libraries-vs-internet-access-t2.json"
+  },
+  {
+    "id": "02.19",
+    "type": "Discuss Both Views",
+    "title": "[02.19] Discussion - [27.07] Bảo tồn động vật hoang dã: Bảo vệ tất cả hay chỉ một số loài có ích?",
+    "file": "data/discussion-t2/19-discussion-protect-all-wild-animals-vs-few-t2.json"
+  },
+  {
+    "id": "02.20",
+    "type": "Discuss Both Views",
+    "title": "[02.20] Discussion - [24.07] Tấm bằng đại học: Còn là con đường tốt nhất để thành công?",
+    "file": "data/discussion-t2/20-discussion-university-degree-path-to-success-still-valid-t2.json"
+  },
+  {
+    "id": "02.21",
+    "type": "Discuss Both Views",
+    "title": "[02.21] Discussion - [18.07] Xây trung tâm thể thao cho VĐV chuyên nghiệp hay công viên đại chúng?",
+    "file": "data/discussion-t2/21-discussion-elite-athlete-facilities-vs-public-community-sports-t2.json"
+  },
+  {
+    "id": "02.22",
+    "type": "Discuss Both Views",
+    "title": "[02.22] Discussion - [04.07] Nên có một hệ thống luật chung cho toàn cầu hay mỗi nước tự định đoạt?",
+    "file": "data/discussion-t2/22-discussion-single-global-legal-system-vs-national-laws-t2.json"
+  },
+  {
+    "id": "02.23",
+    "type": "Discuss Both Views",
+    "title": "[02.23] Discussion - [01.06] Phân lớp theo học lực hay để học sinh mọi trình độ học chung?",
+    "file": "data/discussion-t2/23-discussion-streaming-academic-ability-vs-mixed-classes-t2.json"
+  },
+  {
+    "id": "02.24",
+    "type": "Discuss Both Views",
+    "title": "[02.24] Discussion - [04.06] Yếu tố ảnh hưởng lớn nhất đến trẻ: Gia đình hay Bạn bè & Mạng xã hội?",
+    "file": "data/discussion-t2/24-discussion-family-vs-external-factors-child-development-t2.json"
+  },
+  {
+    "id": "02.25",
+    "type": "Discuss Both Views",
+    "title": "[02.25] Discussion - [05.06] Sách giấy truyền thống: Đã lỗi thời trong kỷ nguyên số?",
+    "file": "data/discussion-t2/25-discussion-printed-books-vs-digital-ebooks-storage-t2.json"
+  },
+  {
+    "id": "02.26",
+    "type": "Discuss Both Views",
+    "title": "[02.26] Discussion - [14.05] Sức khỏe cá nhân: Trách nhiệm mỗi người hay Chính phủ phải can thiệp?",
+    "file": "data/discussion-t2/26-discussion-diet-health-personal-vs-government-responsibility-t2.json"
+  },
+  {
+    "id": "02.27",
+    "type": "Discuss Both Views",
+    "title": "[02.27] Discussion - [07.04] Tổ chức sự kiện thể thao quốc tế: Cơ hội quảng bá hay Gánh nặng nợ nần?",
+    "file": "data/discussion-t2/27-discussion-hosting-international-sporting-events-pros-cons-t2.json"
+  },
+  {
+    "id": "02.28",
+    "type": "Discuss Both Views",
+    "title": "[02.28] Discussion - [06.03] Nghiên cứu khoa học: Tập trung chữa bệnh hiểm nghèo hay khám phá lĩnh vực khác?",
+    "file": "data/discussion-t2/28-discussion-scientific-research-global-health-vs-other-fields-t2.json"
+  },
+  {
+    "id": "02.29",
+    "type": "Discuss Both Views",
+    "title": "[02.29] Discussion - [22.03] Doanh nghiệp tài trợ thể thao: Hỗ trợ tích cực hay Làm méo mó tinh thần thi đấu?",
+    "file": "data/discussion-t2/29-discussion-commercial-sports-sponsorship-good-or-bad-t2.json"
+  },
+  {
+    "id": "02.30",
+    "type": "Discuss Both Views",
+    "title": "[02.30] Discussion - [08.02] Giảm thiểu bao bì nhựa: Trách nhiệm Siêu thị hay Quyết định Người tiêu dùng?",
+    "file": "data/discussion-t2/30-discussion-reducing-packaging-supermarkets-vs-consumers-t2.json"
+  },
+  {
+    "id": "02.31",
+    "type": "Discuss Both Views",
+    "title": "[02.31] Discussion - [15.02] Thể thao đồng đội (Bóng đá) hay Thể thao cá nhân (Bơi lội) tốt hơn?",
+    "file": "data/discussion-t2/31-discussion-team-sports-vs-individual-sports-benefits-t2.json"
+  },
+  {
+    "id": "02.32",
+    "type": "Discuss Both Views",
+    "title": "[02.32] Discussion - [22.02] Giảm tội phạm: Tăng án phạt tù hay tìm kiếm giải pháp cải tạo thay thế?",
+    "file": "data/discussion-t2/32-discussion-longer-prison-sentences-vs-alternative-reforms-t2.json"
+  },
+  {
+    "id": "02.33",
+    "type": "Discuss Both Views",
+    "title": "[02.33] Discussion - [24.02] Khí thải từ giao thông vận tải: Trách nhiệm Nhà nước hay Lối sống Cá nhân?",
+    "file": "data/discussion-t2/33-discussion-transport-pollution-government-vs-individual-duty-t2.json"
+  },
+  {
+    "id": "02.34",
+    "type": "Discuss Both Views",
+    "title": "[02.34] Discussion - [02.01] Đưa tin tức quốc tế thành môn học ở trường: Cần thiết hay Lãng phí giờ học?",
+    "file": "data/discussion-t2/34-discussion-international-news-school-subject-or-waste-t2.json"
+  },
+  {
+    "id": "02.35",
+    "type": "Discuss Both Views",
+    "title": "[02.35] Discussion - [10.01] Phụ nữ trong quân đội & cảnh sát: Bình đẳng tuyệt đối hay Không phù hợp thể lực?",
+    "file": "data/discussion-t2/35-discussion-women-in-police-military-roles-equality-t2.json"
+  },
+  {
+    "id": "02.36",
+    "type": "Discuss Both Views",
+    "title": "[02.36] Discussion - [14.01] Bác sĩ & giáo viên trẻ: Có nên bắt buộc về vùng nông thôn công tác vài năm?",
+    "file": "data/discussion-t2/36-discussion-mandatory-rural-service-doctors-teachers-t2.json"
+  },
+
   {
     "id": "03.01",
     "type": "Advantage & Disadvantage",
-    "title": "[03.01] Du lịch đại trà: Lợi ích kinh tế có vượt trội tổn hại môi trường?",
-    "file": "data/advantage-disadvantage-t2/03-adv-disadv-tourism-t2.json"
+    "title": "[03.01] Outweigh - [Mẫu] Du lịch đại trà: Lợi ích kinh tế có vượt trội tổn hại môi trường?",
+    "file": "data/advantage-disadvantage-t2/01-adv-disadv-tourism-income-problems-t2.json"
   },
+  {
+    "id": "03.02",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.02] Pos/Neg - [01.12] Giới trẻ thần tượng ngôi sao truyền thông & thể thao dù họ là tấm gương xấu?",
+    "file": "data/advantage-disadvantage-t2/02-pos-neg-admiring-media-sports-celebrities-t2.json"
+  },
+  {
+    "id": "03.03",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.03] Pos/Neg - [25.12] Chuyển đổi từ nhiên liệu hóa thạch sang năng lượng tái tạo?",
+    "file": "data/advantage-disadvantage-t2/03-adv-disadv-shift-to-renewable-energy-t2.json"
+  },
+  {
+    "id": "03.04",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.04] Pos/Neg - [27.10] Người dân đô thị chọn sống một mình hoặc gia đình hạt nhân thay vì đại gia đình?",
+    "file": "data/advantage-disadvantage-t2/04-adv-disadv-living-alone-nuclear-families-t2.json"
+  },
+  {
+    "id": "03.05",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.05] Outweigh - [18.10] Các công ty công nghệ lớn nắm giữ thông tin cá nhân: Lợi có hơn hại?",
+    "file": "data/advantage-disadvantage-t2/05-outweigh-tech-companies-holding-personal-data-t2.json"
+  },
+  {
+    "id": "03.06",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.06] Outweigh - [17.10] Y tế tư nhân hoạt động vì lợi nhuận: Ưu điểm có vượt trội nhược điểm?",
+    "file": "data/advantage-disadvantage-t2/06-outweigh-private-healthcare-profit-driven-t2.json"
+  },
+  {
+    "id": "03.07",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.07] Outweigh - [15.10] Quy hoạch đô thị tách biệt trường học, văn phòng và khu dân cư?",
+    "file": "data/advantage-disadvantage-t2/07-outweigh-urban-zoning-separating-functions-t2.json"
+  },
+  {
+    "id": "03.08",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.08] Pos/Neg - [14.10] Trẻ em luyện tập thể thao theo hướng chuyên nghiệp hóa từ sớm?",
+    "file": "data/advantage-disadvantage-t2/08-pos-neg-children-serious-sports-training-t2.json"
+  },
+  {
+    "id": "03.09",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.09] Pos/Neg - [14.09] Quảng cáo ngày càng xuất hiện ngập tràn trong đời sống hàng ngày?",
+    "file": "data/advantage-disadvantage-t2/09-pos-neg-ubiquitous-advertising-in-daily-life-t2.json"
+  },
+  {
+    "id": "03.10",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.10] Outweigh - [24.08] Sáng tạo một ngôn ngữ mới cho giao tiếp quốc tế: Lợi hay hại hơn?",
+    "file": "data/advantage-disadvantage-t2/10-outweigh-inventing-new-international-language-t2.json"
+  },
+  {
+    "id": "03.11",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.11] Pos/Neg - [04.08] Đọc tin tức thế giới qua mạng thay vì đọc báo giấy hoặc xem thời sự?",
+    "file": "data/advantage-disadvantage-t2/11-pos-neg-online-news-replacing-newspapers-tv-t2.json"
+  },
+  {
+    "id": "03.12",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.12] Outweigh - [26.07] Chuyển công viên công cộng thành vườn trồng rau quả cho người dân?",
+    "file": "data/advantage-disadvantage-t2/12-outweigh-converting-parks-into-community-gardens-t2.json"
+  },
+  {
+    "id": "03.13",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.13] Pos/Neg - [11.07] Trẻ em ngày nay được trao nhiều quyền tự do hơn thế hệ trước?",
+    "file": "data/advantage-disadvantage-t2/13-adv-disadv-children-granted-more-freedom-t2.json"
+  },
+  {
+    "id": "03.14",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.14] Pos/Neg - [01.06] Thể thao trở thành ngành kinh doanh kiếm tiền của các tập đoàn?",
+    "file": "data/advantage-disadvantage-t2/14-pos-neg-sports-becoming-commercial-business-t2.json"
+  },
+  {
+    "id": "03.15",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.15] Pos/Neg - [02.06] Người dân thành phố phải sống trong các căn hộ không có sân vườn?",
+    "file": "data/advantage-disadvantage-t2/15-adv-disadv-living-in-homes-with-no-outdoor-areas-t2.json"
+  },
+  {
+    "id": "03.16",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.16] Outweigh - [01.05] Công nghệ thay đổi hoàn toàn cách trẻ em sử dụng thời gian rảnh rỗi?",
+    "file": "data/advantage-disadvantage-t2/16-outweigh-technology-altering-children-free-time-t2.json"
+  },
+  {
+    "id": "03.17",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.17] Pos/Neg - [16.05] Thu phí ùn tắc giao thông vào giờ cao điểm: Tích cực hay tiêu cực?",
+    "file": "data/advantage-disadvantage-t2/17-pos-neg-congestion-tax-rush-hours-t2.json"
+  },
+  {
+    "id": "03.18",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.18] Outweigh - [13.05] Xu hướng sinh con đầu lòng muộn ở các quốc gia phát triển?",
+    "file": "data/advantage-disadvantage-t2/18-outweigh-delayed-childbearing-late-parenthood-t2.json"
+  },
+  {
+    "id": "03.19",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.19] Pos/Neg - [05.04] Cuộc cạnh tranh khốc liệt để giành suất vào đại học ngày càng tăng?",
+    "file": "data/advantage-disadvantage-t2/19-pos-neg-intense-competition-university-places-t2.json"
+  },
+  {
+    "id": "03.20",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.20] Direct - [12.04] Trải nghiệm Gap Year: Đi làm hoặc du lịch 1 năm trước khi học đại học?",
+    "file": "data/advantage-disadvantage-t2/20-direct-adv-disadv-taking-gap-year-students-t2.json"
+  },
+  {
+    "id": "03.21",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.21] Pos/Neg - [24.04] Báo chí định hình sâu sắc quan điểm và niềm tin của cộng đồng?",
+    "file": "data/advantage-disadvantage-t2/21-pos-neg-newspapers-shaping-public-opinions-t2.json"
+  },
+  {
+    "id": "03.22",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.22] Outweigh - [27.04] Lưu trữ tri thức nhân loại trên mạng Internet thay vì trong sách vở?",
+    "file": "data/advantage-disadvantage-t2/22-outweigh-storing-knowledge-on-internet-vs-books-t2.json"
+  },
+  {
+    "id": "03.23",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.23] Pos/Neg - [02.03] Đại học thay thế giảng dạy trực tiếp bằng các khóa học trực tuyến?",
+    "file": "data/advantage-disadvantage-t2/23-pos-neg-universities-replacing-classes-with-online-courses-t2.json"
+  },
+  {
+    "id": "03.24",
+    "type": "Advantage & Disadvantage",
+    "title": "[03.24] Outweigh - [15.03] Giới trẻ rời quê lên thành phố lớn tìm kiếm cơ hội học tập và việc làm?",
+    "file": "data/advantage-disadvantage-t2/24-outweigh-rural-to-urban-youth-migration-t2.json"
+  },
+
   {
     "id": "04.01",
     "type": "Cause & Effect / Solution",
-    "title": "[04.01] Tội phạm gia tăng dù luật nghiêm khắc hơn: Nguyên nhân & Hệ quả",
-    "file": "data/cause-solution-t2/04-cause-effect-crime-rate-t2.json"
+    "title": "[04.01] Cause/Effect - [Mẫu] Tội phạm gia tăng dù pháp luật nghiêm khắc: Nguyên nhân & Hệ quả",
+    "file": "data/cause-solution-t2/01-cause-effect-crime-despite-harsh-laws-t2.json"
   },
+  {
+    "id": "04.02",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.02] Cause/Solution - [28.07] Tù nhân tái phạm tội sau khi được thả: Nguyên nhân & Giải pháp",
+    "file": "data/cause-solution-t2/02-cause-solution-prisoner-recidivism-rates-t2.json"
+  },
+  {
+    "id": "04.03",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.03] Cause/Solution - [07.07] Nhu cầu lương thực toàn cầu tăng vọt: Nguyên nhân & Biện pháp",
+    "file": "data/cause-solution-t2/03-cause-solution-global-food-demand-supply-t2.json"
+  },
+  {
+    "id": "04.04",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.04] Cause/Solution - [06.07] Sinh viên thấy học đại học khó hơn thời phổ thông: Lý do & Giải pháp",
+    "file": "data/cause-solution-t2/04-cause-solution-academic-difficulties-higher-education-t2.json"
+  },
+  {
+    "id": "04.05",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.05] Problem/Solution - [02.06] Thách thức mà giới trẻ gặp phải khi sống ở đô thị lớn và Cách tháo gỡ",
+    "file": "data/cause-solution-t2/05-problem-solution-youth-problems-living-in-cities-t2.json"
+  },
+  {
+    "id": "04.06",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.06] Cause/Solution - [15.06] Khó khăn khi chăm sóc người già trong gia đình: Lý do & Biện pháp",
+    "file": "data/cause-solution-t2/06-cause-solution-caring-for-elderly-relatives-busy-lives-t2.json"
+  },
+  {
+    "id": "04.07",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.07] Problem/Solution - [21.06] Khó khăn để đạt được cân bằng công việc - cuộc sống & Giải pháp",
+    "file": "data/cause-solution-t2/07-problem-solution-achieving-work-life-balance-t2.json"
+  },
+  {
+    "id": "04.08",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.08] Cause/Effect - [03.05] Xu hướng sống xa gia đình của người lao động: Nguyên nhân & Tác động",
+    "file": "data/cause-solution-t2/08-cause-effect-living-away-from-family-members-t2.json"
+  },
+  {
+    "id": "04.09",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.09] Cause/Solution - [08.05] Trẻ vị thành niên phạm tội ngày càng nhiều: Nguyên nhân & Hình phạt",
+    "file": "data/cause-solution-t2/09-cause-solution-juvenile-delinquency-punishment-methods-t2.json"
+  },
+  {
+    "id": "04.10",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.10] Direct Effects - [12.05] Gia tăng dân số trẻ dưới 15 tuổi: Hệ quả hiện tại và Tương lai",
+    "file": "data/cause-solution-t2/10-effects-surge-in-child-population-under-15-t2.json"
+  },
+  {
+    "id": "04.11",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.11] Cause/Effect - [12.05] Xu hướng sinh con muộn: Lý do & Ảnh hưởng đến gia đình, xã hội",
+    "file": "data/cause-solution-t2/11-cause-effect-delayed-parenthood-society-family-t2.json"
+  },
+  {
+    "id": "04.12",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.12] Cause/Solution - [04.04] Động thực vật tuyệt chủng do con người: Nguyên nhân & Biện pháp",
+    "file": "data/cause-solution-t2/12-cause-solution-species-extinction-human-activity-t2.json"
+  },
+  {
+    "id": "04.13",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.13] Cause/Solution - [09.04] Suy giảm số lượng động thực vật hoang dã: Lý do & Cách khắc phục",
+    "file": "data/cause-solution-t2/13-cause-solution-declining-wild-flora-fauna-populations-t2.json"
+  },
+  {
+    "id": "04.14",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.14] Cause/Solution - [14.04] Giới trẻ hiểu ngôi sao pop hơn nhân vật lịch sử nước nhà: Tại sao & Giải pháp",
+    "file": "data/cause-solution-t2/14-cause-solution-youth-know-celebrities-over-history-t2.json"
+  },
+  {
+    "id": "04.15",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.15] Cause/Solution - [17.03] Trẻ em mất tập trung chú ý khi học ở trường: Nguyên nhân & Giải pháp",
+    "file": "data/cause-solution-t2/15-cause-solution-children-lack-of-focus-in-schools-t2.json"
+  },
+  {
+    "id": "04.16",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.16] Cause/Effect - [13.02] Con người ngày càng ít dành thời gian ở nhà: Nguyên nhân & Hệ quả",
+    "file": "data/cause-solution-t2/16-cause-effect-people-spending-less-time-at-home-t2.json"
+  },
+  {
+    "id": "04.17",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.17] Cause/Solution - [11.01] Rác thải bao bì thực phẩm gia đình ngày càng tăng: Lý do & Biện pháp",
+    "file": "data/cause-solution-t2/17-cause-solution-escalating-household-packaging-waste-t2.json"
+  },
+  {
+    "id": "04.18",
+    "type": "Cause & Effect / Solution",
+    "title": "[04.18] Cause/Solution - [25.01] Giới trẻ ngày càng ít tương tác với người lớn tuổi: Lý do & Cách cải thiện",
+    "file": "data/cause-solution-t2/18-cause-solution-declining-interaction-young-and-elderly-t2.json"
+  },
+
   {
     "id": "05.01",
     "type": "Two-part Questions",
-    "title": "[05.01] Kẹt xe đô thị: Vì sao chuộng xe riêng & Chính phủ nên làm gì?",
-    "file": "data/two-part-t2/05-two-part-traffic-congestion-t2.json"
+    "title": "[05.01] Two-part - [Mẫu] Kẹt xe đô thị: Vì sao chuộng xe riêng & Chính phủ nên làm gì?",
+    "file": "data/two-part-t2/01-two-part-traffic-congestion-private-cars-t2.json"
+  },
+  {
+    "id": "05.02",
+    "type": "Two-part Questions",
+    "title": "[05.02] Two-part - [30.12] Chăm chỉ lao động: Vì sao có người chăm hơn & Chăm chỉ có luôn tốt?",
+    "file": "data/two-part-t2/02-two-part-working-harder-reasons-and-evaluation-t2.json"
+  },
+  {
+    "id": "05.03",
+    "type": "Two-part Questions",
+    "title": "[05.03] Two-part - [29.12] Nhảy việc và đổi hướng nghề nghiệp: Nguyên nhân & Lợi có hơn hại?",
+    "file": "data/two-part-t2/03-two-part-career-path-changes-reasons-outweigh-t2.json"
+  },
+  {
+    "id": "05.04",
+    "type": "Two-part Questions",
+    "title": "[05.04] Two-part - [15.12] Thay đổi nơi ở qua từng giai đoạn cuộc đời: Vì sao & Lợi hay hại?",
+    "file": "data/two-part-t2/04-two-part-relocating-different-life-stages-t2.json"
+  },
+  {
+    "id": "05.05",
+    "type": "Two-part Questions",
+    "title": "[05.05] Two-part - [07.12] Nghệ thuật mang lại điều gì cho cuộc sống mà khoa học không thể?",
+    "file": "data/two-part-t2/05-two-part-arts-value-vs-science-technology-t2.json"
+  },
+  {
+    "id": "05.06",
+    "type": "Two-part Questions",
+    "title": "[05.06] Two-part - [10.11] Mua thực phẩm ngoại nhập thay vì nội địa: Nguyên nhân & Khuyến khích ra sao?",
+    "file": "data/two-part-t2/06-two-part-imported-vs-local-food-consumption-t2.json"
+  },
+  {
+    "id": "05.07",
+    "type": "Two-part Questions",
+    "title": "[05.07] Two-part - [07.11] Thiết bị công nghệ hỗ trợ người già thế nào & Làm sao để khuyến khích họ dùng?",
+    "file": "data/two-part-t2/07-two-part-elderly-people-adopting-modern-technology-t2.json"
+  },
+  {
+    "id": "05.08",
+    "type": "Two-part Questions",
+    "title": "[05.08] Two-part - [02.10] Người lớn mù chữ gặp bất lợi gì & Chính phủ cần hỗ trợ ra sao?",
+    "file": "data/two-part-t2/08-two-part-adult-illiteracy-disadvantages-state-aid-t2.json"
+  },
+  {
+    "id": "05.09",
+    "type": "Two-part Questions",
+    "title": "[05.09] Two-part - [25.08] Đo lường thành công quốc gia: Yếu tố nào ngoài kinh tế & Yếu tố nào quan trọng nhất?",
+    "file": "data/two-part-t2/09-two-part-measuring-national-success-beyond-economy-t2.json"
+  },
+  {
+    "id": "05.10",
+    "type": "Two-part Questions",
+    "title": "[05.10] Two-part - [21.07] Các phương thức doanh nghiệp dùng để tăng doanh số & Đâu là cách hiệu quả nhất?",
+    "file": "data/two-part-t2/10-two-part-business-sales-boosting-methods-efficiency-t2.json"
+  },
+  {
+    "id": "05.11",
+    "type": "Two-part Questions",
+    "title": "[05.11] Two-part - [17.07] Có tham vọng: Tầm quan trọng đối với thành công & Tính cách này tốt hay xấu?",
+    "file": "data/two-part-t2/11-two-part-personal-ambition-importance-positive-or-negative-t2.json"
+  },
+  {
+    "id": "05.12",
+    "type": "Two-part Questions",
+    "title": "[05.12] Two-part - [24.06] Chọn ô tô thay xe đạp vs Chọn xe đạp thay ô tô: Nguyên nhân & Xu hướng nào tốt hơn?",
+    "file": "data/two-part-t2/12-two-part-cars-vs-bicycles-urban-preference-comparison-t2.json"
+  },
+  {
+    "id": "05.13",
+    "type": "Two-part Questions",
+    "title": "[05.13] Two-part - [03.05] Tỷ lệ đi xe đạp giảm sút dù có lợi sức khỏe: Nguyên nhân & Cách khuyến khích?",
+    "file": "data/two-part-t2/13-two-part-declining-bicycle-usage-solutions-t2.json"
+  },
+  {
+    "id": "05.14",
+    "type": "Two-part Questions",
+    "title": "[05.14] Two-part - [10.05] Nữ chọn ngành nghệ thuật, Nam chọn ngành khoa học: Vì sao & Có nên thay đổi?",
+    "file": "data/two-part-t2/14-two-part-gender-academic-subject-preferences-t2.json"
+  },
+  {
+    "id": "05.15",
+    "type": "Two-part Questions",
+    "title": "[05.15] Two-part - [03.04] Luật giới hạn giờ làm việc của nhân viên: Vì sao ban hành & Tốt hay xấu?",
+    "file": "data/two-part-t2/15-two-part-capping-employee-working-hours-legislation-t2.json"
+  },
+  {
+    "id": "05.16",
+    "type": "Two-part Questions",
+    "title": "[05.16] Two-part - [07.04] Người tiêu dùng ít bị quảng cáo thao túng hơn trước: Nguyên nhân & Tích cực hay tiêu cực?",
+    "file": "data/two-part-t2/16-two-part-consumers-less-influenced-by-advertising-t2.json"
+  },
+  {
+    "id": "05.17",
+    "type": "Two-part Questions",
+    "title": "[05.17] Two-part - [08.03] Xã hội hoàn hảo: Yếu tố then chốt tạo nên là gì & Làm sao để hiện thực hóa?",
+    "file": "data/two-part-t2/17-two-part-creating-ideal-society-factors-and-realization-t2.json"
   }
 ]
