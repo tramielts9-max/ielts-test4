@@ -1,9 +1,63 @@
 [
-  {
+{
     "id": "01.01",
     "type": "Opinion (Agree/Disagree)",
     "title": "[01.01] Kinh tế vs Môi trường: Phát triển có luôn tàn phá tự nhiên?",
     "file": "data/opinion-t2/01-opinion-economic-environment-t2.json"
+  },
+  {
+    "id": "01.02",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.02] Trẻ xem TV & chơi game: Có làm suy giảm trí tuệ?",
+    "file": "data/opinion-t2/02-opinion-children-screen-time-t2.json"
+  },
+  {
+    "id": "01.03",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.03] Gia đình hay Xã hội có tầm ảnh hưởng lớn hơn lên trẻ?",
+    "file": "data/opinion-t2/03-opinion-family-vs-society-influence-t2.json"
+  },
+  {
+    "id": "01.04",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.04] Đại học miễn phí: Chính phủ có nên miễn 100% học phí?",
+    "file": "data/opinion-t2/04-opinion-free-university-education-t2.json"
+  },
+  {
+    "id": "01.05",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.05] Quảng cáo: Chỉ nhằm bán thứ người ta không cần?",
+    "file": "data/opinion-t2/05-opinion-advertising-purpose-t2.json"
+  },
+  {
+    "id": "01.06",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.06] Thiết bị thông minh: Tác hại có vượt trội lợi ích?",
+    "file": "data/opinion-t2/06-opinion-mobile-technology-t2.json"
+  },
+  {
+    "id": "01.07",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.07] Thể thao mạo hiểm: Có nên cấm vì quá nguy hiểm?",
+    "file": "data/opinion-t2/07-opinion-ban-extreme-sports-t2.json"
+  },
+  {
+    "id": "01.08",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.08] Bắt buộc học đến 18 tuổi: Nên hay không?",
+    "file": "data/opinion-t2/08-opinion-compulsory-school-until-18-t2.json"
+  },
+  {
+    "id": "01.09",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.09] Doanh nghiệp lớn tài trợ thể thao: Tích cực hay tiêu cực?",
+    "file": "data/opinion-t2/09-opinion-sports-sponsorship-t2.json"
+  },
+  {
+    "id": "01.10",
+    "type": "Opinion (Agree/Disagree)",
+    "title": "[01.10] Thi bằng lái xe đạp: Có cần thiết cho đường công cộng?",
+    "file": "data/opinion-t2/10-opinion-cyclist-test-roads-t2.json"
   },
   {
     "id": "02.01",
