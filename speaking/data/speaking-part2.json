@@ -1,0 +1,19 @@
+[
+  {
+    "id": "p2_time_management",
+    "topic": "Time Management",
+    "title": "[Part 2] Describe a way/change that helps you save a lot of time",
+    "questions": [
+      "What it is",
+      "How you implement it",
+      "How difficult it is",
+      "And explain how you feel about the way/change"
+    ],
+    "fullPromptText": "Describe a way/change that helps you save a lot of time.\nYou should say:\n- What it is\n- How you implement it\n- How difficult it is\nAnd explain how you feel about the way/change.",
+    "guide": {
+      "keyVocab": ["Time audit (rà soát thời gian)", "Pomodoro technique (phương pháp quả cà chua)", "Procrastination (sự trì hoãn)", "Streamline workflow (tối ưu hóa quy trình làm việc)"],
+      "suggestedIdeas": "Mô tả một phương pháp cụ thể như lập To-do list buổi sáng, tắt thông báo điện thoại hoặc áp dụng Time-blocking.",
+      "sampleOutline": "- Introduction: Adopting the Pomodoro Technique & notification blocker.\n- Implementation: 25-min sprint, 5-min rest.\n- Difficulty: Fighting the urge to check social media during initial days.\n- Feelings: Liberating, remarkably enhanced personal efficiency."
+    }
+  }
+]
