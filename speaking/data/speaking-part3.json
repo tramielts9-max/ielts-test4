@@ -1,7 +1,7 @@
 [
   {
     "id": "p3_time_management",
-    "topic": "Time Management & Society",
+    "topic": "Time Management & Success",
     "title": "[Part 3] Discussion on Time Management & Technology",
     "questions": [
       "Is it necessary for children to learn time management?",
@@ -13,9 +13,1355 @@
     ],
     "fullPromptText": "1. Is it necessary for children to learn time management?\n2. What can schools do to help students learn time management?\n3. What can people do to save time?\n4. Does technology help people save time? How and why?\n5. Do you think parents should be responsible for teaching children to save time?\n6. Do people who can manage time well become successful more easily?",
     "guide": {
-      "keyVocab": ["Cultivate discipline (rèn luyện kỷ luật)", "Double-edged sword (con dao hai lưỡi)", "Prioritization (sự sắp xếp ưu tiên)", "Intrinsic motivation (động lực tự thân)"],
-      "suggestedIdeas": "Part 3 yêu cầu góc nhìn xã hội, không chỉ kể trải nghiệm cá nhân. Nhìn nhận công nghệ vừa giúp tiết kiệm thời gian vừa gây xao nhãng.",
-      "sampleOutline": "- Q1-Q2: Vital foundation; schools should introduce project deadlines with milestone checks.\n- Q3-Q4: Automation vs distraction (double-edged sword).\n- Q5-Q6: High correlation between disciplined scheduling and long-term career triumphs."
+      "keyVocab": [
+        "Cultivate discipline (rèn luyện tính kỷ luật)",
+        "Double-edged sword (con dao hai lưỡi)",
+        "Ruthless prioritization (sự sắp xếp ưu tiên dứt khoát)",
+        "Digital automation (tự động hóa bằng công cụ số)",
+        "Correlation with career triumphs (mối tương quan với thành công nghề nghiệp)"
+      ],
+      "suggestedIdeas": "Part 3 yêu cầu tư duy xã hội đa chiều: công nghệ vừa giúp tự động hóa tiết kiệm thì giờ, vừa là cạm bẫy gây xao nhãng cực lớn. Quản lý thời gian là kỹ năng nền tảng quyết định thành bại dài hạn.",
+      "sampleOutline": "- Q1 & Q2: Vital habit; schools should introduce project milestone deadlines rather than spoon-feeding.\n- Q3: Batching similar tasks, meal prepping, and eliminating unnecessary meetings.\n- Q4: Double-edged sword; speeds up information access but feeds constant micro-distractions.\n- Q5: Absolutely, parents must model punctuality instead of just lecturing.\n- Q6: Strong correlation, as execution efficiency distinguishes dreamers from achievers."
+    }
+  },
+  {
+    "id": "p3_losing_things",
+    "topic": "Possessions & Human Psychology",
+    "title": "[Part 3] Discussion on Losing Possessions & Public Honesty",
+    "questions": [
+      "What kinds of things do people usually lose?",
+      "What will people do when losing things?",
+      "Is it effective to offer rewards to find lost things?",
+      "What kinds of people may lose things often?",
+      "What can we do to reduce the possibility of losing things?",
+      "What do people often feel after losing things?"
+    ],
+    "fullPromptText": "1. What kinds of things do people usually lose?\n2. What will people do when losing things?\n3. Is it effective to offer rewards to find lost things?\n4. What kinds of people may lose things often?\n5. What can we do to reduce the possibility of losing things?\n6. What do people often feel after losing things?",
+    "guide": {
+      "keyVocab": [
+        "Absent-mindedness (sự đãng trí, mất tập trung)",
+        "Financial incentive (động lực khuyến khích bằng tiền bạc)",
+        "Cognitive overload (tình trạng quá tải nhận thức)",
+        "Smart tracking tags (thiết bị định vị theo dõi thông minh)",
+        "Sense of disorientation (cảm giác hụt hẫng mất phương hướng)"
+      ],
+      "suggestedIdeas": "Người ta thường mất những đồ vật nhỏ (chìa khóa, tai nghe, ví). Tiền thưởng tạo động lực cho người nhặt liên hệ, nhưng sự cảnh giác và thói quen để đồ đúng chỗ mới là giải pháp cốt lõi.",
+      "sampleOutline": "- Q1 & Q4: Small daily portables like keys and wireless earbuds; absent-minded and sleep-deprived individuals lose things most.\n- Q2: Frantic retracing of steps and alerting local staff or social media forums.\n- Q3: Yes, monetary incentives stimulate finder honesty for high-value items.\n- Q5: Designate fixed drop zones at home and attach Bluetooth tracking tags.\n- Q6: Intense helplessness, guilt, and lingering frustration."
+    }
+  },
+  {
+    "id": "p3_first_impressions_friendship",
+    "topic": "Social Psychology & Making Friends",
+    "title": "[Part 3] Discussion on First Impressions & Friendship Dynamics",
+    "questions": [
+      "What can we do to leave a good impression on people we meet for the first time?",
+      "What should we not talk about when we meet a person for the first time?",
+      "How do people make friends in Vietnam?",
+      "On what occasions do people like to make friends?",
+      "Is it important to have the same hobbies and interests when making friends?",
+      "What qualities make true friends?"
+    ],
+    "fullPromptText": "1. What can we do to leave a good impression on people we meet for the first time?\n2. What should we not talk about when we meet a person for the first time?\n3. How do people make friends in Vietnam?\n4. On what occasions do people like to make friends?\n5. Is it important to have the same hobbies and interests when making friends?\n6. What qualities make true friends?",
+    "guide": {
+      "keyVocab": [
+        "Active listening and open body language (lắng nghe tích cực và ngôn ngữ cơ thể cởi mở)",
+        "Taboo and sensitive topics (các chủ đề nhạy cảm cấm kỵ)",
+        "Shared camaraderie (tình cảm gắn kết xuất phát từ trải nghiệm chung)",
+        "Unconditional loyalty (sự trung thành vô điều kiện)",
+        "Superficial acquaintances (những mối quan hệ xã giao hời hợt)"
+      ],
+      "suggestedIdeas": "Ấn tượng ban đầu nằm ở sự chân thành và ngôn ngữ cơ thể. Tránh nói chuyện tiền tài, tôn giáo lúc mới gặp. Bạn bè tri kỷ dựa vào giá trị sống cốt lõi hơn là sở thích bề nổi.",
+      "sampleOutline": "- Q1 & Q2: Maintain warm eye contact, smile, and avoid intrusive queries about salary, politics, or relationship status.\n- Q3 & Q4: Through university clubs, shared workplaces, coffee gatherings, or communal volunteer trips.\n- Q5: Helpful icebreaker initially, but shared moral values sustain longevity.\n- Q6: Unflinching integrity, empathy, and being present during adversity."
+    }
+  },
+  {
+    "id": "p3_memory_history_tech",
+    "topic": "Memory, History & Technology",
+    "title": "[Part 3] Discussion on Human Memory, History & Tech Tools",
+    "questions": [
+      "What do people need to remember in their daily lives?",
+      "What can we learn from history?",
+      "Why do some people have a better memory than others?",
+      "Do people like things of memorial significance?",
+      "Which can help people remember things better, words or photos?",
+      "Can technology help people remember things better? How?"
+    ],
+    "fullPromptText": "1. What do people need to remember in their daily lives?\n2. What can we learn from history?\n3. Why do some people have a better memory than others?\n4. Do people like things of memorial significance?\n5. Which can help people remember things better, words or photos?\n6. Can technology help people remember things better? How?",
+    "guide": {
+      "keyVocab": [
+        "Cognitive retention capacity (năng lực lưu giữ thông tin của não bộ)",
+        "Avoid historical pitfalls (tránh đi vào vết xe đổ của lịch sử)",
+        "Visual stimuli (kích thích thị giác)",
+        "External cognitive crutch (điểm tựa hỗ trợ trí nhớ từ bên ngoài)",
+        "Sentimental heirlooms (vật gia truyền giàu giá trị kỷ niệm)"
+      ],
+      "suggestedIdeas": "Lịch sử cho bài học để tránh sai lầm trong quản trị xã hội. Hình ảnh kích thích thị giác mạnh hơn chữ viết, và smartphone đóng vai trò như bộ nhớ ngoài của con người hiện đại.",
+      "sampleOutline": "- Q1: Critical obligations: passwords, medical routines, appointments, and familial birthdays.\n- Q2: Governance wisdom, resilience under crises, avoiding destructive wars.\n- Q3: Genetics, lifestyle, cardiovascular fitness, and mnemonic training.\n- Q4: Yes, physical mementos anchor fleeting sentimental moments.\n- Q5: Photos evoke instant emotional recall; text provides contextual precision.\n- Q6: Cloud calendars and note apps offload cognitive strain effectively."
+    }
+  },
+  {
+    "id": "p3_gift_giving_culture",
+    "topic": "Gifts & Cultural Traditions",
+    "title": "[Part 3] Discussion on Gift Giving Traditions & Consumerism",
+    "questions": [
+      "When do people normally send gifts to others?",
+      "Is it hard to choose a gift?",
+      "Will people feel happy when receiving an expensive gift?",
+      "Which do people give on traditional festivals, red envelopes or other kinds of gifts?",
+      "What do people usually consider when buying gifts?",
+      "Are there any unlucky things that people should not buy as gifts in your country?"
+    ],
+    "fullPromptText": "1. When do people normally send gifts to others?\n2. Is it hard to choose a gift?\n3. Will people feel happy when receiving an expensive gift?\n4. Which do people give on traditional festivals, red envelopes or other kinds of gifts?\n5. What do people usually consider when buying gifts?\n6. Are there any unlucky things that people should not buy as gifts in your country?",
+    "guide": {
+      "keyVocab": [
+        "Thoughtfulness over monetary value (sự chu đáo vượt lên trên giá trị tiền bạc)",
+        "Reciprocal social obligation (nghĩa vụ đáp lễ trong xã hội)",
+        "Red envelopes / Lucky money (phong bao lì xì may mắn)",
+        "Cultural superstitions (các quan niệm kiêng kỵ mang tính phong tục)",
+        "Practical utility (công năng sử dụng thực tế)"
+      ],
+      "suggestedIdeas": "Quà cáp thể hiện sự trân trọng. Quà đắt tiền đôi khi gây áp lực phải đền đáp. Ở Việt Nam, Tết chuộng lì xì và giỏ quà Tết; kiêng tặng khăn tay, đồng hồ hoặc vật sắc nhọn vì quan niệm xui xẻo.",
+      "sampleOutline": "- Q1: Birthdays, Tet festival, weddings, housewarming parties.\n- Q2: Challenging, requires balancing personal taste, utility, and budget.\n- Q3: Appreciated initially, but can trigger discomfort regarding reciprocal obligations.\n- Q4: Red envelopes dominate Tet for flexibility, while gift hampers suit corporate partners.\n- Q5: Usefulness, longevity, and emotional resonance.\n- Q6: Sharp knives, black clothing, or handkerchiefs (symbolizing severed ties or sorrow)."
+    }
+  },
+  {
+    "id": "p3_reading_literature_movies",
+    "topic": "Literature & Cinematic Adaptations",
+    "title": "[Part 3] Discussion on Reading Habits & Book Adaptations",
+    "questions": [
+      "What kinds of books are popular in Vietnam?",
+      "Do you think people should read the original book before watching the movie?",
+      "Are success books useful to everyone?"
+    ],
+    "fullPromptText": "1. What kinds of books are popular in Vietnam?\n2. Do you think people should read the original book before watching the movie?\n3. Are success books useful to everyone?",
+    "guide": {
+      "keyVocab": [
+        "Self-help and personal growth literature (sách self-help và phát triển bản thân)",
+        "Cinematic adaptation (tác phẩm điện ảnh chuyển thể)",
+        "Nuanced prose and inner monologues (văn phong tinh tế và độc thoại nội tâm)",
+        "Survivorship bias (thiên kiến kẻ sống sót)",
+        "Passive visual consumption (việc tiếp nhận hình ảnh một cách thụ động)"
+      ],
+      "suggestedIdeas": "Sách kỹ năng kinh doanh rất được ưa chuộng ở VN. Sách gốc luôn giàu chiều sâu nội tâm hơn phim chuyển thể. Sách làm giàu/self-help hữu ích nếu có hành động, nhưng dễ mắc bẫy thiên kiến.",
+      "sampleOutline": "- Q1: Self-help, entrepreneurial guides, and translated contemporary fiction.\n- Q2: Highly recommended; prose stimulates imagination and unpacks complex psychology beyond film time limits.\n- Q3: Not universally useful; often exhibit survivorship bias without concrete customized roadmaps."
+    }
+  },
+  {
+    "id": "p3_health_wellness_stress",
+    "topic": "Health, Aging & Stress",
+    "title": "[Part 3] Discussion on Generational Health & Stress Impacts",
+    "questions": [
+      "Which group pays more attention to health, young people or old people?",
+      "What effect does stress have on health?"
+    ],
+    "fullPromptText": "1. Which group pays more attention to health, young people or old people?\n2. What effect does stress have on health?",
+    "guide": {
+      "keyVocab": [
+        "Preventive vs reactive healthcare (chăm sóc sức khỏe phòng ngừa và đối phó)",
+        "Chronic cardiovascular conditions (các bệnh lý tim mạch mãn tính)",
+        "Elevated cortisol levels (nồng độ hormone căng thẳng cortisol tăng vọt)",
+        "Psychosomatic illnesses (bệnh lý thể xác bắt nguồn từ căng thẳng tâm lý)",
+        "Youthful invincibility illusion (ảo tưởng về sức khỏe vô địch của tuổi trẻ)"
+      ],
+      "suggestedIdeas": "Người già quan tâm sức khỏe sát sao hơn do bệnh lý thoái hóa. Căng thẳng kéo dài làm suy giảm hệ miễn dịch, gây mất ngủ và rối loạn tim mạch.",
+      "sampleOutline": "- Q1: Elderly prioritize health proactively due to bodily decline, whereas youths take stamina for granted until symptoms strike.\n- Q2: Chronic stress elevates blood pressure, wrecks sleep architecture, and suppresses immune defense."
+    }
+  },
+  {
+    "id": "p3_nature_urban_environment",
+    "topic": "Nature, Cities & Ecology",
+    "title": "[Part 3] Discussion on Urban Greenery & Environmental Stewardship",
+    "questions": [
+      "Are there any natural attractions that are great to visit?",
+      "Do you think it is necessary to include natural spaces in a city?",
+      "Do you think people who live in natural places are more likely to protect it?"
+    ],
+    "fullPromptText": "1. Are there any natural attractions that are great to visit?\n2. Do you think it is necessary to include natural spaces in a city?\n3. Do you think people who live in natural places are more likely to protect it?",
+    "guide": {
+      "keyVocab": [
+        "Green urban lungs (lá phổi xanh của đô thị)",
+        "Mitigate urban heat island effect (giảm thiểu hiệu ứng đảo nhiệt đô thị)",
+        "Symbiotic relationship with nature (mối quan hệ cộng sinh hài hòa với tự nhiên)",
+        "Ecological awareness (nhận thức về bảo vệ hệ sinh thái)",
+        "Commercial over-exploitation (sự khai thác thương mại quá mức)"
+      ],
+      "suggestedIdeas": "Không gian xanh nội đô giúp điều hòa nhiệt độ và thanh lọc bụi mịn. Dân bản địa có ý thức giữ rừng hơn, trừ khi bị áp lực kinh tế du lịch thúc ép.",
+      "sampleOutline": "- Q1: National parks, limestone caves (Phong Nha), and coastal reserves.\n- Q2: Absolutely crucial to counter concrete heat sinks and soothe citizen mental health.\n- Q3: Generally yes, their livelihood hinges on ecological balance, though outside commercial developers often disrupt this."
+    }
+  },
+  {
+    "id": "p3_parties_social_celebrations",
+    "topic": "Social Events & Celebrations",
+    "title": "[Part 3] Discussion on Celebrations & Venue Preferences",
+    "questions": [
+      "When do people like to hold a party?",
+      "Do most people prefer to hold a party in a public place or a private place?",
+      "Do most people prefer to hold a party in a restaurant or in a pub?",
+      "What special events are celebrated in your country?"
+    ],
+    "fullPromptText": "1. When do people like to hold a party?\n2. Do most people prefer to hold a party in a public place or a private place?\n3. Do most people prefer to hold a party in a restaurant or in a pub?\n4. What special events are celebrated in your country?",
+    "guide": {
+      "keyVocab": [
+        "Milestone commemorations (kỷ niệm những cột mốc quan trọng)",
+        "Logistical convenience (sự thuận tiện trong khâu hậu cần dọn dẹp)",
+        "Intimate residential gathering (buổi tụ tập gia đình ấm cúng kín đáo)",
+        "Gastronomic emphasis (sự chú trọng vào đồ ăn ngon)",
+        "National pride and cultural cohesion (lòng tự hào dân tộc và sự gắn kết văn hóa)"
+      ],
+      "suggestedIdeas": "Mọi người tổ chức tiệc khi mừng thăng chức, sinh nhật hoặc cưới hỏi. Nhà hàng phù hợp cho bữa ăn trịnh trọng với gia đình, còn quán pub sôi động cho giới trẻ.",
+      "sampleOutline": "- Q1: Significant milestones, year-end celebrations, and major public holidays.\n- Q2: Shift towards public venues (restaurants) to bypass tedious cooking and cleanup chores.\n- Q3: Families favor formal restaurants for conversations; youngsters lean toward lively acoustic pubs.\n- Q4: Tet Lunar New Year, Mid-Autumn Festival, National Independence Day."
+    }
+  },
+  {
+    "id": "p3_historic_buildings_urban_renewal",
+    "topic": "Architecture & Heritage Conservation",
+    "title": "[Part 3] Discussion on Heritage Preservation vs Modernization",
+    "questions": [
+      "Do you think old buildings are valuable?",
+      "Do you think all old buildings should be demolished?",
+      "Is it better to live in an apartment than in a house?"
+    ],
+    "fullPromptText": "1. Do you think old buildings are valuable?\n2. Do you think all old buildings should be demolished?\n3. Is it better to live in an apartment than in a house?",
+    "guide": {
+      "keyVocab": [
+        "Tangible cultural heritage (di sản văn hóa vật thể)",
+        "Architectural identity (bản sắc kiến trúc độc đáo)",
+        "Structural deterioration (sự xuống cấp về mặt kết cấu xây dựng)",
+        "Adaptive reuse (tái sử dụng công năng linh hoạt)",
+        "Modern urban amenities and security (tiện nghi và hệ thống an ninh hiện đại)"
+      ],
+      "suggestedIdeas": "Không nên đập bỏ mọi công trình cũ; cần trùng tu các tòa nhà có giá trị lịch sử (adaptive reuse thành bảo tàng, quán cafe) trong khi thay thế các khu nhà ổ chuột xuống cấp nguy hiểm.",
+      "sampleOutline": "- Q1: Enormously valuable as physical conduits of cultural roots and historical memory.\n- Q2: Demolition is reckless; retrofit and renovate structurally sound landmarks, replace unsafe slums.\n- Q3: Apartments offer integrated amenities, elevator access, and tighter security, though houses afford greater autonomy."
+    }
+  },
+  {
+    "id": "p3_cinema_culture_creativity",
+    "topic": "Cinematography & Cultural Transmission",
+    "title": "[Part 3] Discussion on Cinema, Creativity & Cross-cultural Media",
+    "questions": [
+      "What kinds of movies are the most popular in China / Asia?",
+      "What are the differences between watching movies at home and in a cinema?",
+      "Are movies more likely to help people become more creative than books?",
+      "Can movies help people better understand the cultural background of a country?"
+    ],
+    "fullPromptText": "1. What kinds of movies are the most popular in Asian countries?\n2. What are the differences between watching movies at home and in a cinema?\n3. Are movies more likely to help people become more creative than books?\n4. Can movies help people better understand the cultural background of a country?",
+    "guide": {
+      "keyVocab": [
+        "Visual and acoustic grandeur (sự hoành tráng về mặt hình ảnh và âm thanh)",
+        "Imaginative cognitive stimulation (sự kích thích trí tưởng tượng của não bộ)",
+        "Cross-cultural ambassador (đại sứ văn hóa xuyên quốc gia)",
+        "Commercial escapism (sự trốn tránh thực tế mang tính giải trí thương mại)",
+        "Nuanced cultural subtleties (những nét tinh tế ngầm định của văn hóa)"
+      ],
+      "suggestedIdeas": "Phim chiếu rạp đem lại sự sống động thị giác, nhưng sách giúp nuôi dưỡng trí tưởng tượng sâu sắc hơn. Phim ảnh là công cụ quyền lực mềm để quảng bá văn hóa ẩm thực, lối sống.",
+      "sampleOutline": "- Q1: Heartwarming family dramas, superhero spectacles, and romance comedies.\n- Q2: Cinemas provide communal focus and sonic immersion; streaming offers pause-and-resume comfort.\n- Q3: Books excel at fueling abstract imagination; movies deliver immediate aesthetic inspiration.\n- Q4: Powerfully so; visualizes societal nuances, vernacular slang, and architectural aesthetics."
+    }
+  },
+  {
+    "id": "p3_learning_skills_discipline",
+    "topic": "Skill Acquisition & Lifelong Learning",
+    "title": "[Part 3] Discussion on Skill Acquisition & Self-discipline",
+    "questions": [
+      "Why should children learn new skills?",
+      "Where can children learn new skills?",
+      "How can parents and teachers teach children new skills?",
+      "How do adults learn a new skill?",
+      "What are the differences between learning from a teacher and learning by oneself?",
+      "Why is self-discipline important when learning a new skill?"
+    ],
+    "fullPromptText": "1. Why should children learn new skills?\n2. Where can children learn new skills?\n3. How can parents and teachers teach children new skills?\n4. How do adults learn a new skill?\n5. What are the differences between learning from a teacher and learning by oneself?\n6. Why is self-discipline important when learning a new skill?",
+    "guide": {
+      "keyVocab": [
+        "Neural plasticity (độ dẻo dai linh hoạt của não bộ trẻ nhỏ)",
+        "Structured curriculum vs autodidactic exploration (chương trình bài bản đối lập với việc tự mày mò)",
+        "Immediate error correction (sự uốn nắn sửa lỗi kịp thời)",
+        "Overcome the initial learning curve (vượt qua độ dốc của khúc quanh học tập ban đầu)",
+        "Grit and perseverance (sự bền bỉ và ý chí kiên định)"
+      ],
+      "suggestedIdeas": "Trẻ nhỏ học qua trường lớp và bắt chước cha mẹ, người lớn tự học qua khóa học online và thực tế công việc. Giáo viên định hướng chuẩn, nhưng tự giác mới giúp duy trì việc tập luyện.",
+      "sampleOutline": "- Q1 & Q2: Enhances cognitive agility and adaptability; acquired at schools, community centers, and home kitchens.\n- Q3 & Q4: Adults learn through goal-oriented digital tutorials and professional necessity.\n- Q5: Teachers provide immediate feedback and structure; autodidacts enjoy freedom of pace.\n- Q6: Essential; talent withers without disciplined daily repetition through the plateau stage."
+    }
+  },
+  {
+    "id": "p3_history_education_heritage",
+    "topic": "History Education & Societal Wisdom",
+    "title": "[Part 3] Discussion on History Education & Ancient Wisdom",
+    "questions": [
+      "Do you think children should begin learning history from an early age?",
+      "At what age do you think people should begin to learn history?",
+      "How do children learn history before they attend school?",
+      "Is it important to learn how people in the past lived their lives?",
+      "Do you think people should learn ancient history before learning modern history?",
+      "Besides big historical events, what else is important when learning history?"
+    ],
+    "fullPromptText": "1. Do you think children should begin learning history from an early age?\n2. At what age do you think people should begin to learn history?\n3. How do children learn history before they attend school?\n4. Is it important to learn how people in the past lived their lives?\n5. Do you think people should learn ancient history before learning modern history?\n6. Besides big historical events, what else is important when learning history?",
+    "guide": {
+      "keyVocab": [
+        "Folkloric storytelling (kể chuyện qua truyện dân gian, thần thoại)",
+        "National consciousness (ý thức hệ dân tộc)",
+        "Societal evolution (sự tiến hóa của cấu trúc xã hội)",
+        "Chronological foundation (nền tảng niên đại theo thứ tự thời gian)",
+        "Grassroots socio-economic dynamics (động lực kinh tế xã hội ở tầng lớp bình dân)"
+      ],
+      "suggestedIdeas": "Trẻ nhỏ tiếp cận lịch sử qua truyện cổ tích và truyền thuyết. Lịch sử không chỉ là chiến tranh và vua chúa, mà còn là đời sống thường nhật, khoa học và văn hóa của thường dân.",
+      "sampleOutline": "- Q1-Q3: Around 6-7 years old through heroic fairy tales and animated fables before reading textbooks.\n- Q4: Teaches empathy and contextualizes modern civil liberties.\n- Q5: Ancient history establishes foundational patterns, making modern conflicts intelligible.\n- Q6: Everyday agricultural tools, architectural evolution, and arts of ordinary citizens."
+    }
+  },
+  {
+    "id": "p3_family_harmony_arts",
+    "topic": "Family Dynamics & Cultural Arts",
+    "title": "[Part 3] Discussion on Big Families, Arts & Community Well-being",
+    "questions": [
+      "How do people get along in a big family?",
+      "Do you think art classes are important for children?",
+      "Why do some children enjoy making things by hand?",
+      "Do children these days still like doing arts and crafts?",
+      "What impact can artistic buildings have on society?",
+      "Is it good to have creative people in a team?",
+      "Does art, like music or theater, have an impact on society?"
+    ],
+    "fullPromptText": "1. How do people get along in a big family?\n2. Do you think art classes are important for children?\n3. Why do some children enjoy making things by hand?\n4. Do children these days still like doing arts and crafts?\n5. What impact can artistic buildings have on society?\n6. Is it good to have creative people in a team?\n7. Does art, like music or theater, have an impact on society?",
+    "guide": {
+      "keyVocab": [
+        "Mutual compromise and boundary respect (sự nhân nhượng lẫn nhau và tôn trọng ranh giới)",
+        "Kinesthetic tactile stimulation (kích thích xúc giác qua vận động tinh)",
+        "Civic pride and architectural landmarks (niềm tự hào dân sự và công trình kiến trúc biểu tượng)",
+        "Disruptive out-of-the-box thinking (lối tư duy đột phá khác biệt)",
+        "Mirror societal values (phản ánh chân thực các giá trị và nhức nhối xã hội)"
+      ],
+      "suggestedIdeas": "Sống trong đại gia đình cần sự thấu hiểu và nhường nhịn. Mỹ thuật và làm đồ thủ công giúp trẻ bớt dán mắt vào màn hình số và kích thích tư duy thẩm mỹ.",
+      "sampleOutline": "- Q1: Mutual compromise, clear boundaries, and communal meals.\n- Q2-Q4: Art sparks creativity and emotional expression; screen addictions currently threaten traditional crafting habits.\n- Q5: Iconic buildings foster civic identity and stimulate tourism.\n- Q6: Creative thinkers challenge stale orthodoxies and devise breakthrough solutions.\n- Q7: Art serves as a social mirror, rallying empathy and provoking policy debates."
+    }
+  },
+  {
+    "id": "p3_communication_conversation_skills",
+    "topic": "Communication & Attentive Listening",
+    "title": "[Part 3] Discussion on Modern Conversations & Active Listening",
+    "questions": [
+      "What kind of topics do young people like to talk about today?",
+      "What would happen if the listener didn’t listen carefully?",
+      "How can we tell if a listener is listening carefully?"
+    ],
+    "fullPromptText": "1. What kind of topics do young people like to talk about today?\n2. What would happen if the listener didn’t listen carefully?\n3. How can we tell if a listener is listening carefully?",
+    "guide": {
+      "keyVocab": [
+        "Pop culture trends and digital gaming (xu hướng văn hóa đại chúng và game số)",
+        "Miscommunication and strained rapport (giao tiếp sai lệch và làm rạn nứt mối quan hệ)",
+        "Non-verbal affirmations (những biểu hiện khẳng định bằng phi ngôn ngữ như gật đầu)",
+        "Paraphrase and ask probing questions (diễn giải lại và đặt câu hỏi đào sâu)",
+        "Fidgeting and wandering gaze (bồn chồn và ánh mắt lơ đãng nhìn chỗ khác)"
+      ],
+      "suggestedIdeas": "Giới trẻ quan tâm đến xu hướng mạng xã hội, thời trang, cơ hội nghề nghiệp. Lắng nghe hời hợt gây hiểu lầm; dấu hiệu của người biết lắng nghe là ánh mắt tập trung và câu hỏi gợi mở.",
+      "sampleOutline": "- Q1: Career trajectories, viral social media trends, travel escapes, and technological breakthroughs.\n- Q2: Costly operational blunders at work, feeling undervalued in personal relationships.\n- Q3: Sustained eye contact, responsive nodding, and thoughtful follow-up questions."
+    }
+  },
+  {
+    "id": "p3_photography_ethics_tourism",
+    "topic": "Photography, Privacy & Travel Habits",
+    "title": "[Part 3] Discussion on Photography Culture & Public Privacy",
+    "questions": [
+      "Why are some people keen on taking photos?",
+      "What kind of photos do people often take?",
+      "Do you think it’s ok to take photos everywhere?",
+      "Why do tourists like taking photos while they are travelling?",
+      "Some people don't mind others walking into their shot when they're taking photos. What do you think?"
+    ],
+    "fullPromptText": "1. Why are some people keen on taking photos?\n2. What kind of photos do people often take?\n3. Do you think it’s ok to take photos everywhere?\n4. Why do tourists like taking photos while they are travelling?\n5. Some people don't mind others walking into their shot when they're taking photos. What do you think?",
+    "guide": {
+      "keyVocab": [
+        "Freeze fleeting moments (đóng băng những khoảnh khắc vụt qua)",
+        "Curate personal digital persona (chăm chút xây dựng hình tượng trực tuyến)",
+        "Infringe on privacy rights (xâm phạm quyền riêng tư cá nhân)",
+        "Sacred and culturally sensitive sites (những địa điểm tâm linh tôn nghiêm)",
+        "Public shared space awareness (ý thức về không gian công cộng chung)"
+      ],
+      "suggestedIdeas": "Chụp ảnh để lưu giữ kỷ niệm và chia sẻ lên mạng xã hội. Tuy nhiên cần tôn trọng sự riêng tư và kiêng chụp tại các đền chùa, khu vực quân sự.",
+      "sampleOutline": "- Q1 & Q2: Preserve memories against aging and craft aesthetic online feeds (food, portraits, landscapes).\n- Q3: Strictly no; sacred religious sanctums and sensitive facilities must remain camera-free.\n- Q4: Visual proof of escapades and keepsakes to relive after returning home.\n- Q5: Public places belong to all; unreasonable photo perfectionism shouldn't obstruct pedestrians."
+    }
+  },
+  {
+    "id": "p3_early_childhood_education_skills",
+    "topic": "Early Childhood Education & Specialization",
+    "title": "[Part 3] Discussion on Childhood Development & Specialization",
+    "questions": [
+      "What skills should children learn before they go to school?",
+      "What are the differences between learning in a group and learning by yourself?",
+      "What are the differences between the way adults learn and the way children learn?",
+      "Do you think it is easier for children to learn new skills than for adults?",
+      "Can a child learn skills from another child?",
+      "Is it important for everyone to have a specialized skill?"
+    ],
+    "fullPromptText": "1. What skills should children learn before they go to school?\n2. What are the differences between learning in a group and learning by yourself?\n3. What are the differences between the way adults learn and the way children learn?\n4. Do you think it is easier for children to learn new skills than for adults?\n5. Can a child learn skills from another child?\n6. Is it important for everyone to have a specialized skill?",
+    "guide": {
+      "keyVocab": [
+        "Basic emotional regulation (khả năng kiểm soát cảm xúc cơ bản)",
+        "Peer-to-peer modeling (học hỏi noi gương từ bạn bè cùng trang lứa)",
+        "Goal-oriented adult learning (cách học tập hướng mục tiêu thực dụng của người lớn)",
+        "Linguistic and cognitive sponge (khả năng tiếp thu kiến thức như miếng bọt biển của trẻ em)",
+        "Niche competitive advantage (lợi thế cạnh tranh chuyên sâu trong thị trường lao động)"
+      ],
+      "suggestedIdeas": "Trước khi đến trường, trẻ cần học tính tự lập (tự xúc ăn, dọn đồ) và giao tiếp xã hội. Trẻ học nhanh hơn nhờ sự cởi mở, không sợ sai như người lớn.",
+      "sampleOutline": "- Q1: Basic emotional control, table manners, and collaborative sharing.\n- Q2: Groups stimulate debates and accountability; solo learning maximizes personal pacing.\n- Q3 & Q4: Children absorb unconsciously through play; adults require logical frameworks and clear ROI.\n- Q5: Readily, children mimic playground peers faster than adults.\n- Q6: Essential; specialized mastery commands high remuneration and career job security."
+    }
+  },
+  {
+    "id": "p3_financial_literacy_charity",
+    "topic": "Financial Literacy & Philanthropy",
+    "title": "[Part 3] Discussion on Financial Education & Charitable Giving",
+    "questions": [
+      "Should schools teach children how to manage money from a young age?",
+      "Should parents teach their children to spend money freely or to save money?",
+      "Do you think it is easier to teach teenagers how to manage money when they are around 16 or 17 years old?",
+      "Is it easier to spend money or save money?",
+      "What kind of things do people usually save money for?",
+      "Should people spend time on charity, or just money?"
+    ],
+    "fullPromptText": "1. Should schools teach children how to manage money from a young age?\n2. Should parents teach their children to spend money freely or to save money?\n3. Do you think it is easier to teach teenagers how to manage money when they are around 16 or 17 years old?\n4. Is it easier to spend money or save money?\n5. What kind of things do people usually save money for?\n6. Should people spend time on charity, or just money?",
+    "guide": {
+      "keyVocab": [
+        "Financial literacy (kiến thức quản lý tài chính cá nhân)",
+        "Delayed gratification (sự trì hoãn sung sướng tức thời)",
+        "Impulse spending (chi tiêu bốc đồng)",
+        "Emergency rainy-day fund (quỹ dự phòng cho những lúc rủi ro biến cố)",
+        "Hands-on grassroots volunteering (hoạt động tình nguyện thực tế tại cơ sở)"
+      ],
+      "suggestedIdeas": "Giáo dục tài chính cần đưa vào trường học sớm để tránh nợ nần khi lớn. Chi tiêu thì dễ vì các app mua sắm kích thích, còn tiết kiệm cần kỷ luật thép. Làm từ thiện cần cả tiền lẫn công sức.",
+      "sampleOutline": "- Q1 & Q2: Absolutely crucial; schools prevent debt traps, parents should teach delayed gratification.\n- Q3: Yes, 16-17 year-olds possess abstract reasoning and experience small cash earnings.\n- Q4: Spending is effortless due to digital frictionless checkouts; saving demands rigorous self-denial.\n- Q5: Real estate down payments, retirement nests, and medical contingencies.\n- Q6: Both; money funds supplies, but physical volunteering provides human warmth."
+    }
+  },
+  {
+    "id": "p3_organization_management_skills",
+    "topic": "Organization & Workplace Management",
+    "title": "[Part 3] Discussion on Organizational Skills & Leadership",
+    "questions": [
+      "Why is it important for people to be organized?",
+      "Do you think children should learn to be organized from a young age?",
+      "Are organized people more likely to be successful at work or in their studies?",
+      "What can people do to become more organized?",
+      "Should parents teach their children to be organized?",
+      "Do you think it is important for managers to be well organized?"
+    ],
+    "fullPromptText": "1. Why is it important for people to be organized?\n2. Do you think children should learn to be organized from a young age?\n3. Are organized people more likely to be successful at work or in their studies?\n4. What can people do to become more organized?\n5. Should parents teach their children to be organized?\n6. Do you think it is important for managers to be well organized?",
+    "guide": {
+      "keyVocab": [
+        "Minimize cognitive clutter (giảm thiểu sự hỗn loạn trong tâm trí)",
+        "Optimize operational productivity (tối ưu hóa năng suất vận hành)",
+        "Streamlined workflow (quy trình làm việc trơn tru gọn gàng)",
+        "Instill systematic routines (rèn luyện nề nếp sinh hoạt có hệ thống)",
+        "Chaotic leadership breeds organizational dysfunction (lãnh đạo luộm thuộm sẽ kéo theo bộ máy rệu rã)"
+      ],
+      "suggestedIdeas": "Sự ngăn nắp giúp tiết kiệm thời gian tìm đồ và giải phóng đầu óc. Người quản lý bắt buộc phải ngăn nắp để phân bổ công việc chuẩn xác cho nhân viên.",
+      "sampleOutline": "- Q1 & Q3: Prevents panic, cuts wasted retrieval time; highly correlated with meeting project milestones.\n- Q2 & Q5: Yes, tidying toy chests early builds accountability for future school desks.\n- Q4: Adopt calendar apps, declutter workstations daily, adhere to the 2-minute rule.\n- Q6: Non-negotiable; disorganized managers cause bottlenecks, missed client deadlines, and team morale burnout."
+    }
+  },
+  {
+    "id": "p3_job_interviews_recruitment",
+    "topic": "Recruitment & Media Interviews",
+    "title": "[Part 3] Discussion on Media Interviews & Job Recruitment",
+    "questions": [
+      "What kinds of people are frequently interviewed?",
+      "What kinds of things do famous people often say in an interview?",
+      "What can we do to get a job interview?",
+      "What should people do to prepare for a job interview?",
+      "Why do we need to attend interviews when applying for jobs?",
+      "What should people wear to a job interview?"
+    ],
+    "fullPromptText": "1. What kinds of people are frequently interviewed?\n2. What kinds of things do famous people often say in an interview?\n3. What can we do to get a job interview?\n4. What should people do to prepare for a job interview?\n5. Why do we need to attend interviews when applying for jobs?\n6. What should people wear to a job interview?",
+    "guide": {
+      "keyVocab": [
+        "Public scrutiny and media visibility (sự soi xét của công chúng và độ phủ sóng truyền thông)",
+        "Tailor a compelling resume (tinh chỉnh bản CV ứng tuyển ấn tượng)",
+        "Cultural fit and interpersonal dynamics (sự phù hợp về văn hóa và kỹ năng giao tiếp ứng xử)",
+        "Rehearse behavioral questions (luyện tập trả lời các câu hỏi tình huống hành vi)",
+        "Professional sartorial standards (chuẩn mực trang phục công sở chuyên nghiệp)"
+      ],
+      "suggestedIdeas": "Người nổi tiếng thường trả lời thận trọng trước báo giới. Phỏng vấn xin việc giúp nhà tuyển dụng đánh giá kỹ năng mềm và độ phù hợp văn hóa mà bằng cấp không thể hiện hết.",
+      "sampleOutline": "- Q1 & Q2: Politicians, tech CEOs, cultural icons; they usually share career milestones and carefully vetted public relations talking points.\n- Q3: Polish LinkedIn presence, craft customized resumes, leverage industry referrals.\n- Q4: Research company values, anticipate STAR-method questions, prepare thoughtful queries.\n- Q5: CVs measure technical competence; live interviews evaluate culture fit and communication ethics.\n- Q6: Professional business attire tailored to the company's dress code."
+    }
+  },
+  {
+    "id": "p3_happiness_emotions_teachers",
+    "topic": "Happiness, Emotions & School Guidance",
+    "title": "[Part 3] Discussion on Emotional Well-being & Teacher Empathy",
+    "questions": [
+      "Should teachers know what children are doing all the time?",
+      "Do you think teachers are able to spot the unhappy children?",
+      "How can the arts spread positive emotions in society?",
+      "When do you think people are happiest?"
+    ],
+    "fullPromptText": "1. Should teachers know what children are doing all the time?\n2. Do you think teachers are able to spot the unhappy children?\n3. How can the arts spread positive emotions in society?\n4. When do you think people are happiest?",
+    "guide": {
+      "keyVocab": [
+        "Smothering micromanagement (sự kiểm soát thái quá làm ngột ngạt trẻ)",
+        "Emotional withdrawal and subtle behavioral cues (sự khép kín cảm xúc và các dấu hiệu hành vi tinh tế)",
+        "Cathartic communal uplifting (sự gắn kết nâng đỡ tâm hồn qua nghệ thuật)",
+        "Sense of purpose and genuine belonging (cảm giác có mục đích sống và thuộc về một cộng đồng)",
+        "Eudaimonic happiness (hạnh phúc sâu sắc bắt nguồn từ sự trưởng thành và cống hiến)"
+      ],
+      "suggestedIdeas": "Thầy cô không nên kiểm soát 100% quyền riêng tư của trẻ nhưng cần tinh tế nhận ra học sinh đang buồn để hỗ trợ tâm lý. Nghệ thuật chữa lành vết thương tâm hồn.",
+      "sampleOutline": "- Q1: No, excessive surveillance suffocates autonomy and healthy peer interactions.\n- Q2: Observant teachers notice sudden academic drops and isolation, though overcrowded classes make this difficult.\n- Q3: Public concerts and exhibitions evoke empathy and relieve collective societal tension.\n- Q4: When pursuing meaningful passions in harmony with cherished companions, not just chasing material riches."
+    }
+  },
+  {
+    "id": "p3_decision_making_autonomy",
+    "topic": "Decision-making & Life Choices",
+    "title": "[Part 3] Discussion on Decision Making & Advertising Influence",
+    "questions": [
+      "When do most children begin to make their own decisions?",
+      "How can we tell the difference between an important and an easy decision?",
+      "Do you think it is a good idea to make a small decision every day?",
+      "What little decisions do people make every day?",
+      "What if people in a group have different opinions on a decision?",
+      "Do you think most of people’s decisions are made in their 20s?",
+      "Which is better, to make a decision quickly or slowly?"
+    ],
+    "fullPromptText": "1. When do most children begin to make their own decisions?\n2. How can we tell the difference between an important and an easy decision?\n3. What little decisions do people make every day, and is routine good?\n4. What if people in a group have different opinions on a decision?\n5. Do you think most of people’s life-defining decisions are made in their 20s?\n6. Which is better, to make a decision quickly or slowly?",
+    "guide": {
+      "keyVocab": [
+        "Autonomy and personal agency (quyền tự chủ và khả năng tự quyết)",
+        "Decision fatigue (sự mệt mỏi suy kiệt vì phải ra quyết định liên tục)",
+        "Long-term ramifications (những hệ quả sâu xa lâu dài)",
+        "Consensus-building dialogue (đối thoại nhằm xây dựng sự đồng thuận)",
+        "Calculated and measured contemplation (sự cân nhắc suy tính thận trọng có tính toán)"
+      ],
+      "suggestedIdeas": "Quyết định quan trọng (nghề nghiệp, bạn đời) có ảnh hưởng dài hạn. Tuổi 20 là giai đoạn định hình tương lai. Ra quyết định cần cân bằng giữa phản xạ nhanh và sự tính toán kỹ lưỡng.",
+      "sampleOutline": "- Q1: Around early adolescence (10-12 years old) over clothing, study schedules, and friendships.\n- Q2: Easy decisions are reversible; major decisions fundamentally alter future paths.\n- Q3: Outfits, meals, commuting routes; automating small choices fends off mental exhaustion.\n- Q4: Democratic voting backed by constructive discourse.\n- Q5: Largely yes: career foundation, marital status, and financial habits crystallize during this decade.\n- Q6: Depends; crises require prompt decisiveness, life crossroads warrant measured deliberation."
+    }
+  },
+  {
+    "id": "p3_corporate_responsibility_success",
+    "topic": "Corporate Ethics & Measuring Success",
+    "title": "[Part 3] Discussion on Corporate Responsibility, Startups & Success",
+    "questions": [
+      "Other than making money, what is more important for a company?",
+      "Is it easy to start up a company?",
+      "In which sectors are companies more likely to succeed today?",
+      "Is it difficult to do business in today’s world?",
+      "How can companies help protect the environment?",
+      "Does money equal success?"
+    ],
+    "fullPromptText": "1. Other than making money, what is more important for a company?\n2. Is it easy to start up a company?\n3. In which sectors are companies more likely to succeed today?\n4. Is it difficult to do business in today’s world?\n5. How can companies help protect the environment?\n6. Does money equal success?",
+    "guide": {
+      "keyVocab": [
+        "Corporate social responsibility / CSR (trách nhiệm xã hội của doanh nghiệp)",
+        "Cut-throat competition (sự cạnh tranh khốc liệt một mất một còn)",
+        "Green manufacturing practices (quy trình sản xuất xanh bền vững)",
+        "Holistic metric of accomplishment (thước đo thành công toàn diện)",
+        "High startup mortality rate (tỷ lệ phá sản giải thể cao của các công ty khởi nghiệp)"
+      ],
+      "suggestedIdeas": "Doanh nghiệp hiện đại không chỉ kiếm lời mà phải bảo vệ môi trường và đãi ngộ nhân viên tốt. Khởi nghiệp công nghệ và kinh tế xanh nhiều cơ hội nhưng thương trường rất khắc nghiệt.",
+      "sampleOutline": "- Q1: Ethical integrity, staff welfare, environmental footprints, and consumer trust.\n- Q2: Registering is easy; sustaining cash flow through fierce market competition is grueling.\n- Q3: Green renewable energy, artificial intelligence, healthcare, and digital logistics.\n- Q4: Yes, disrupted supply chains, volatile consumer whims, and rapid tech obsolescence.\n- Q5: Adopt renewable energy, cut single-use packaging, publish transparent audit reports.\n- Q6: No, financial wealth without spiritual peace or positive societal legacy is hollow."
+    }
+  },
+  {
+    "id": "p3_popularity_influence_teaching",
+    "topic": "Popularity, Influence & Good Teachers",
+    "title": "[Part 3] Discussion on Popularity in School & Teacher Qualities",
+    "questions": [
+      "Why are some students popular in school?",
+      "Is it important for a teacher to be popular?",
+      "Do you think good teachers are always popular among students?",
+      "What are the qualities of being a good teacher?",
+      "Is it easier to become popular nowadays?",
+      "Why do people want to be popular?"
+    ],
+    "fullPromptText": "1. Why are some students popular in school?\n2. Is it important for a teacher to be popular?\n3. Do you think good teachers are always popular among students?\n4. What are the qualities of being a good teacher?\n5. Is it easier to become popular nowadays?\n6. Why do people want to be popular?",
+    "guide": {
+      "keyVocab": [
+        "Charismatic extroversion (sự hướng ngoại cuốn hút đầy năng lượng)",
+        "Pedagogical competence (năng lực và phương pháp sư phạm vững vàng)",
+        "Strict taskmasters (những người thầy nghiêm khắc kỷ luật)",
+        "Ephemeral social media fame (danh tiếng ảo phù du trên mạng xã hội)",
+        "Innate craving for social validation (nhu cầu bẩm sinh muốn được xã hội công nhận)"
+      ],
+      "suggestedIdeas": "Học sinh nổi tiếng nhờ thể thao hoặc tính cách cởi mở. Thầy giáo giỏi đôi khi nghiêm khắc nên không được lòng học sinh lười, nhưng về sau sẽ được kính trọng.",
+      "sampleOutline": "- Q1: Athletic prowess, trendiness, social charisma, or natural good looks.\n- Q2: Being approachable aids student engagement, but popularity shouldn't compromise academic standards.\n- Q3: Not always; strict educators demanding high effort are often underappreciated initially.\n- Q4: Deep empathy, subject mastery, patience, and ability to spark intellectual curiosity.\n- Q5: Yes, viral algorithms can manufacture overnight internet celebrities.\n- Q6: Driven by evolutionary desires for social validation and commercial monetization."
+    }
+  },
+  {
+    "id": "p3_urbanization_rural_safety",
+    "topic": "Urbanization & Regional Living",
+    "title": "[Part 3] Discussion on Urban vs Rural Dynamics & Citizen Safety",
+    "questions": [
+      "What's the difference between the city and the countryside?",
+      "Some people say large cities are suitable for old people. What do you think?",
+      "Do you think it is possible that all of the population move to cities?",
+      "Do you think people in the countryside are friendlier than people in the city?",
+      "Are there any changes in your city?",
+      "What should the government do to improve citizens’ safety?"
+    ],
+    "fullPromptText": "1. What's the difference between the city and the countryside?\n2. Some people say large cities are suitable for old people. What do you think?\n3. Do you think it is possible that all of the population move to cities?\n4. Do you think people in the countryside are friendlier than people in the city?\n5. Are there any changes in your city?\n6. What should the government do to improve citizens’ safety?",
+    "guide": {
+      "keyVocab": [
+        "Frenetic pace vs serene pastoral life (nhịp sống hối hả đối lập với cuộc sống thôn quê êm ả)",
+        "Advanced healthcare infrastructure (cơ sở hạ tầng y tế hiện đại chuyên sâu)",
+        "Agricultural backbone (xương sống của nền nông nghiệp)",
+        "Urban alienation and indifference (sự xa lánh và thờ ơ vô cảm nơi đô thị)",
+        "Surveillance and community policing (hệ thống camera giám sát và tuần tra trật tự)"
+      ],
+      "suggestedIdeas": "Thành phố hiện đại và y tế tốt cho người già khi ốm đau, nhưng nông thôn thoáng đãng hơn. Không thể đưa toàn bộ dân vào đô thị vì xã hội cần nông dân giữ an ninh lương thực.",
+      "sampleOutline": "- Q1: Cities offer lucrative career hubs and nightlife; the countryside provides pristine air and tight communal bonds.\n- Q2: Cities provide immediate emergency healthcare, though noise and pollution plague elderly joints.\n- Q3: Impossible; catastrophic collapse of food cultivation and extreme urban housing squalor would ensue.\n- Q4: Generally yes; slower pace fosters genuine neighborly warmth over transactional city coldness.\n- Q5: Rapid construction of express flyovers and sprawling satellite suburbs.\n- Q6: Install smart streetlights, enhance CCTV coverage, and strictly penalize reckless driving."
+    }
+  },
+  {
+    "id": "p3_retail_ecommerce_economy",
+    "topic": "Retail Trends & Economic Drivers",
+    "title": "[Part 3] Discussion on Shopping Malls, E-commerce & Economic Growth",
+    "questions": [
+      "Why are shopping malls so popular in Vietnam?",
+      "What are the advantages and disadvantages of shopping in small shops?",
+      "Why do some people not like shopping in small shops?",
+      "What are the differences between online shopping and in-store shopping?",
+      "What are the advantages and disadvantages of shopping online?",
+      "Can consumption drive economic growth?"
+    ],
+    "fullPromptText": "1. Why are shopping malls so popular in Vietnam?\n2. What are the advantages and disadvantages of shopping in small shops?\n3. Why do some people not like shopping in small shops?\n4. What are the differences between online shopping and in-store shopping?\n5. What are the advantages and disadvantages of shopping online?\n6. Can consumption drive economic growth?",
+    "guide": {
+      "keyVocab": [
+        "All-in-one entertainment complex (khu phức hợp vui chơi giải trí tất cả trong một)",
+        "Air-conditioned haven (thiên đường tránh nóng mát lạnh có điều hòa)",
+        "Tactile evaluation (việc tận tay chạm và đánh giá chất lượng sản phẩm)",
+        "Counterfeit products (hàng giả, hàng nhái kém chất lượng)",
+        "Key driver of GDP expansion (động lực then chốt thúc đẩy tăng trưởng GDP)"
+      ],
+      "suggestedIdeas": "TTTM ở VN là nơi tránh nóng và tích hợp ăn uống, mua sắm, rạp phim. Mua online rẻ và tiện nhưng dễ mua phải hàng dỏm. Tiêu dùng kích thích sản xuất nhưng tiêu dùng quá đà gây nợ xấu.",
+      "sampleOutline": "- Q1: Air-conditioned respite from tropical heat, providing cinema, dining, and brand shopping under one roof.\n- Q2 & Q3: Small shops offer intimate local charm but suffer from limited stock and erratic return policies.\n- Q4: In-store allows immediate fit verification; online offers sweeping price comparisons.\n- Q5: Online convenience vs product quality discrepancies and delivery delays.\n- Q6: Definitely; consumer spending injects revenue into businesses, spurring job creation and tax yields."
+    }
+  },
+  {
+    "id": "p3_overcrowding_urban_planning",
+    "topic": "Urban Density & Green Transport",
+    "title": "[Part 3] Discussion on Overpopulation, Green Spaces & Urban Trends",
+    "questions": [
+      "Which cities are overcrowded in your country?",
+      "Will there be more or less green space in cities in the future?",
+      "Will people use bikes more or less in cities in the future?",
+      "Why do people go to crowded places?",
+      "Do you think there are some people who enjoy crowded places?",
+      "Do you think it is a good trend to have more big cities?"
+    ],
+    "fullPromptText": "1. Which cities are overcrowded in your country?\n2. Will there be more or less green space in cities in the future?\n3. Will people use bikes more or less in cities in the future?\n4. Why do people go to crowded places?\n5. Do you think there are some people who enjoy crowded places?\n6. Do you think it is a good trend to have more big cities?",
+    "guide": {
+      "keyVocab": [
+        "Metropolitan congestion (tình trạng quá tải tắc nghẽn tại các siêu đô thị)",
+        "Vertical green architecture (kiến trúc phủ xanh theo chiều thẳng đứng)",
+        "Dedicated cycling corridors (hành lang làn đường dành riêng cho xe đạp)",
+        "Craving for vibrant communal energy (sự khao khát nguồn năng lượng tập thể sôi động)",
+        "Decentralization strategy (chiến lược giãn dân và phân tán đô thị)"
+      ],
+      "suggestedIdeas": "Hà Nội và TP.HCM chịu tải quá lớn. Tương lai đô thị sẽ phủ xanh trên các tòa nhà cao tầng. Megacities quá lớn gây ô nhiễm, giải pháp tốt nhất là phát triển các đô thị vệ tinh.",
+      "sampleOutline": "- Q1: Hanoi and Ho Chi Minh City; population density strains public transport and housing.\n- Q2: Likely more, through mandatory vertical greenery and rooftop gardens in smart planning codes.\n- Q3: More, provided municipalities construct segregated, sheltered cycling lanes.\n- Q4 & Q5: Drawn by festive thrills; extroverts thrive in pulsating collective environments.\n- Q6: Risky trend; unchecked urban sprawling breeds slums; decentralization into regional hubs is far healthier."
+    }
+  },
+  {
+    "id": "p3_work_life_balance_rules",
+    "topic": "Work-Life Balance & Societal Rules",
+    "title": "[Part 3] Discussion on Burnout, Work-Life Balance & Rules",
+    "questions": [
+      "How do you balance life and work?",
+      "Will you continue doing something when you are aware that it’s a waste of time?",
+      "What kinds of things make people feel pressured?",
+      "Why do some people refuse to abide by rules?"
+    ],
+    "fullPromptText": "1. How do you balance life and work?\n2. Will you continue doing something when you are aware that it’s a waste of time?\n3. What kinds of things make people feel pressured?\n4. Why do some people refuse to abide by rules?",
+    "guide": {
+      "keyVocab": [
+        "Rigid work-life boundaries (những ranh giới dứt khoát giữa công việc và đời sống)",
+        "Guilt-driven escapism (sự trốn tránh thực tế đi kèm cảm giác tội lỗi)",
+        "Hyper-competitive hustle culture (văn hóa ganh đua làm việc kiệt sức độc hại)",
+        "Contempt for authority and red tape (sự bất mãn với quyền lực và thủ tục rườm rà)",
+        "Burnout epidemic (đại dịch kiệt quệ về thể chất và tinh thần)"
+      ],
+      "suggestedIdeas": "Cần tắt chuông email sau 7h tối để bảo vệ sức khỏe tâm thần. Áp lực bắt nguồn từ so sánh xã hội và deadline. Người ta vi phạm luật do thiếu chế tài nghiêm hoặc luật bất hợp lý.",
+      "sampleOutline": "- Q1: Enforce strict digital disconnection after 7 PM and guard weekends for recovery.\n- Q2: Occasionally fall into doom-scrolling traps as stress denial, though consciously fighting it.\n- Q3: Unrealistic workplace KPIs, financial inflation, and toxic social media status comparisons.\n- Q4: Perceived unfairness of the regulations, lack of strict deterrence, or rebellious individualist ego."
+    }
+  },
+  {
+    "id": "p3_intergenerational_gap_elderly",
+    "topic": "Generational Dynamics & Aging Society",
+    "title": "[Part 3] Discussion on Generational Gaps & Quality of Life",
+    "questions": [
+      "What can young and old people learn from each other?",
+      "Has old people's life quality improved when compared to the past?",
+      "Why is there a generation gap between the young and the old?",
+      "What do old people usually do in their daily life?"
+    ],
+    "fullPromptText": "1. What can young and old people learn from each other?\n2. Has old people's life quality improved when compared to the past?\n3. Why is there a generation gap between the young and the old?\n4. What do old people usually do in their daily life?",
+    "guide": {
+      "keyVocab": [
+        "Intergenerational exchange (sự trao đổi chia sẻ qua lại giữa các thế hệ)",
+        "Digital literacy vs emotional resilience (sự am hiểu công nghệ đối lập với bản lĩnh cảm xúc)",
+        "Enhanced geriatric healthcare (chăm sóc y tế tuổi già được cải thiện vượt bậc)",
+        "Technological acceleration (tốc độ phát triển chóng mặt của công nghệ)",
+        "Active aging (lối sống năng động tích cực khi về già)"
+      ],
+      "suggestedIdeas": "Người trẻ dạy công nghệ cho người già, người già truyền lại sự điềm tĩnh và kinh nghiệm sống. Tuổi thọ và y tế tốt hơn xưa giúp người già tham gia khiêu vũ dưỡng sinh, du lịch.",
+      "sampleOutline": "- Q1: Youths offer digital navigation and progressive perspectives; seniors impart patience and emotional stoicism.\n- Q2: Substantially improved thanks to modern pharmaceuticals, pension schemes, and specialized eldercare.\n- Q3: Driven by rapid technological disruption and divergent cultural values on independence.\n- Q4: Morning park calisthenics, grandchild babysitting, chess matches, and community gardening."
+    }
+  },
+  {
+    "id": "p3_travel_abroad_perspective",
+    "topic": "Global Travel & Experiential Knowledge",
+    "title": "[Part 3] Discussion on International Travel & Cultural Learning",
+    "questions": [
+      "Do Vietnamese people like travelling abroad?",
+      "Who prefers travelling abroad? The young or the old?",
+      "How much time do you think people should spend on a trip abroad?",
+      "Which is better for knowing more about a country? Travelling or reading books about it?"
+    ],
+    "fullPromptText": "1. Do Vietnamese people like travelling abroad?\n2. Who prefers travelling abroad? The young or the old?\n3. How much time do you think people should spend on a trip abroad?\n4. Which is better for knowing more about a country? Travelling or reading books about it?",
+    "guide": {
+      "keyVocab": [
+        "Rising middle-class disposable income (thu nhập khả dụng ngày càng tăng của tầng lớp trung lưu)",
+        "Experiential travel vs guided sightseeing (du lịch trải nghiệm đối lập với đi tour cưỡi ngựa xem hoa)",
+        "Immersive cultural osmosis (sự thẩm thấu văn hóa một cách tự nhiên chân thực)",
+        "Sensory engagement (sự kích hoạt đầy đủ các giác quan)",
+        "Theoretical comprehension (sự hiểu biết mang tính lý thuyết qua sách vở)"
+      ],
+      "suggestedIdeas": "Người Việt ngày càng đi du lịch nước ngoài nhiều nhờ kinh tế phát triển. Giới trẻ thích đi bụi tự túc, người già thích đi tour an toàn. Đi thực tế vượt trội sách vở vì được nếm mùi vị và giao tiếp người thật.",
+      "sampleOutline": "- Q1: Enthusiastically so, fueled by budget airlines and rising household affluence.\n- Q2: Youths crave adventurous backpacking; older cohorts prefer packaged, secure sightseeing tours.\n- Q3: Around 10 to 14 days strikes the sweet spot between cultural immersion and budget limits.\n- Q4: Traveling; books provide historical context, but live smells, sounds, and interactions create genuine empathy."
+    }
+  },
+  {
+    "id": "p3_noise_pollution_public_spaces",
+    "topic": "Noise Pollution & Civic Consideration",
+    "title": "[Part 3] Discussion on Noise Pollution & Public Etiquette",
+    "questions": [
+      "Do you think it is good for children to make noise?",
+      "Should children not be allowed to make noise under any circumstances?",
+      "What kinds of noises are there in our life?",
+      "Which area is exposed to noise more, the city or the countryside?",
+      "How would people usually respond to noises in your country?",
+      "How can people consider others' feelings when chatting in public?"
+    ],
+    "fullPromptText": "1. Do you think it is good for children to make noise?\n2. Should children not be allowed to make noise under any circumstances?\n3. What kinds of noises are there in our life?\n4. Which area is exposed to noise more, the city or the countryside?\n5. How would people usually respond to noises in your country?\n6. How can people consider others' feelings when chatting in public?",
+    "guide": {
+      "keyVocab": [
+        "Healthy developmental expression (sự thể hiện phát triển lành mạnh của trẻ nhỏ)",
+        "Chronic urban noise pollution (ô nhiễm tiếng ồn đô thị mãn tính)",
+        "Acoustic threshold (ngưỡng chịu đựng âm thanh)",
+        "Public mindfulness and decorum (sự ý tứ và phép lịch sự nơi công cộng)",
+        "Modulate vocal volume (điều tiết âm lượng giọng nói cho phù hợp)"
+      ],
+      "suggestedIdeas": "Trẻ em nô đùa là tự nhiên nhưng cần giữ trật tự tại bệnh viện, máy bay, thư viện. Đô thị chịu tiếng ồn giao thông và công trình. Khi ở nơi công cộng cần hạ giọng và dùng tai nghe.",
+      "sampleOutline": "- Q1 & Q2: Normal for play, but strict decorum must be enforced in libraries, hospitals, and transit cabins.\n- Q3: Construction drilling, vehicular horns, outdoor karaoke, and industrial humming.\n- Q4: Cities endure relentless industrial decibels; rural noise is seasonal and organic.\n- Q5: Often tolerate silently until pushed to confrontation; rarely call noise enforcement authorities.\n- Q6: Lower vocal volume, avoid speakerphones, and step outside for emotional phone arguments."
+    }
+  },
+  {
+    "id": "p3_routine_career_changes",
+    "topic": "Daily Routine & Career Promotions",
+    "title": "[Part 3] Discussion on Daily Routines, Career Pivots & Promotions",
+    "questions": [
+      "Do you think it is good to change one’s daily routine?",
+      "Do you think it is good to change jobs?",
+      "Is it good for people to get a job promotion?",
+      "Do people often make plans around their regular routines?",
+      "Who tend to change their daily routine more, young people or old people?"
+    ],
+    "fullPromptText": "1. Do you think it is good to change one’s daily routine?\n2. Do you think it is good to change jobs?\n3. Is it good for people to get a job promotion?\n4. Do people often make plans around their regular routines?\n5. Who tend to change their daily routine more, young people or old people?",
+    "guide": {
+      "keyVocab": [
+        "Prevent cognitive stagnation (ngăn ngừa sự trì trệ của não bộ)",
+        "Career diversification (sự đa dạng hóa kinh nghiệm sự nghiệp)",
+        "Corporate ladder advancement (sự thăng tiến trên nấc thang doanh nghiệp)",
+        "Heightened stress and accountability (trách nhiệm và áp lực công việc gia tăng)",
+        "Flexibility and adaptability (tính linh hoạt và khả năng thích ứng cao)"
+      ],
+      "suggestedIdeas": "Đổi thói quen tạo làn gió mới cho tư duy. Nhảy việc hợp lý giúp tăng lương và kỹ năng, nhưng nhảy quá nhiều thể hiện thiếu kiên định. Thăng chức đi kèm áp lực trách nhiệm nặng nề hơn.",
+      "sampleOutline": "- Q1: Beneficial; breaking stale routines stimulates neuroplasticity and reignites creativity.\n- Q2: Positive when career growth stalls, though erratic job-hopping signals unreliability.\n- Q3: Prestigious and financially rewarding, but demands grueling managerial stress.\n- Q4: Yes, dependable routines anchor productivity, enabling effective project scheduling.\n- Q5: Youths adapt fluidly to shifting internships and lifestyles; seniors guard established habits."
+    }
+  },
+  {
+    "id": "p3_opinions_school_rules",
+    "topic": "Opinions, Rules & Youth Rebellion",
+    "title": "[Part 3] Discussion on Developing Opinions & School Regulations",
+    "questions": [
+      "When do most children begin to have their own opinions?",
+      "Whose opinions are more important to children, their parents' or teachers'?",
+      "Do children communicate more with teachers or with parents?",
+      "Who do young people like to share opinions with?",
+      "What kinds of rules do schools in Vietnam have?",
+      "Do you think school rules are important?",
+      "Are children unhappy with the school rules?",
+      "How can parents and teachers help children understand and follow rules?"
+    ],
+    "fullPromptText": "1. When do most children begin to have their own opinions?\n2. Whose opinions are more important to children, their parents' or teachers'?\n3. Who do young people like to share opinions with, peers or elders?\n4. What kinds of rules do schools in Vietnam have, and are they important?\n5. Are children unhappy with strict school rules?\n6. How can parents and teachers help children willingly follow rules?",
+    "guide": {
+      "keyVocab": [
+        "Incipient independence (sự độc lập chớm nở)",
+        "Peer validation over parental authority (coi trọng sự công nhận của bạn bè hơn cha mẹ)",
+        "Uniformity and campus decorum (sự đồng bộ và nề nếp kỷ cương học đường)",
+        "Draconian regulations (các quy định hà khắc, gò bó)",
+        "Explain the underlying rationale (giải thích rõ lý do và bản chất đằng sau quy tắc)"
+      ],
+      "suggestedIdeas": "Tuổi dậy thì trẻ bắt đầu có chính kiến và tin bạn hơn tin bố mẹ. Quy chế trường học (đồng phục, giờ giấc) rèn kỷ luật, nhưng cấm đoán quá mức khiến học sinh ức chế phản kháng.",
+      "sampleOutline": "- Q1-Q3: Puberty triggers distinct ideological separation; peers become primary confidants due to non-judgmental empathy.\n- Q4: Uniform codes, punctuality, phone bans, and anti-bullying pledges; vital for civic socialization.\n- Q5: Often resent dress codes and device bans as stifling individualism.\n- Q6: Transparently explain safety and focus rationales instead of enforcing blind obedience."
+    }
+  },
+  {
+    "id": "p3_ambition_corporate_superstars",
+    "topic": "Ambition, Corporate Culture & Celebrity Fandom",
+    "title": "[Part 3] Discussion on Ambition, Fandom & Workplace Teamwork",
+    "questions": [
+      "Why should children have ambitions?",
+      "What do you think of people going after high positions?",
+      "Why are some young people keen on being fans of superstars?",
+      "Is it good for a person to be ambitious?",
+      "Do you think it is necessary to be ambitious when working in a team in a company?",
+      "Should parents support their children in pursuing their ambitions?"
+    ],
+    "fullPromptText": "1. Why should children have ambitions?\n2. What do you think of people going after high positions?\n3. Why are some young people keen on being fans of superstars?\n4. Is it good for a person to be ambitious?\n5. Do you think it is necessary to be ambitious when working in a team in a company?\n6. Should parents support their children in pursuing their ambitions?",
+    "guide": {
+      "keyVocab": [
+        "North star of purpose (ngôi sao bắc đẩu định hướng lý tưởng sống)",
+        "Ruthless Machiavellian ambition (tham vọng bất chấp thủ đoạn)",
+        "Parasocial relationships (mối quan hệ thần tượng một chiều trên mạng)",
+        "Healthy professional aspirations (khát vọng nghề nghiệp lành mạnh)",
+        "Align personal ambitions with team goals (gắn kết tham vọng cá nhân với lợi ích chung của tập thể)"
+      ],
+      "suggestedIdeas": "Tham vọng tạo động lực tiến lên nhưng tham vọng mù quáng sẽ phá hỏng tinh thần đồng đội. Hâm mộ thần tượng giúp thỏa mãn cảm xúc nhưng dễ biến thành ảo tưởng nếu quá cuồng nhiệt.",
+      "sampleOutline": "- Q1: Ambition sparks discipline and resilience against early setbacks.\n- Q2: Natural pursuit of influence, admirable if driven by competence rather than Machiavellian politics.\n- Q3: Superstars embody glamorous success, offering escapism and communal identity.\n- Q4: Healthy ambition pushes human innovation; unbridled greed destroys ethics.\n- Q5: Ambition must align with collective synergy; lone-wolf competitiveness fractures morale.\n- Q6: Unconditionally with moral guidance, even when aspirations diverge from traditional norms."
+    }
+  },
+  {
+    "id": "p3_digital_messaging_etiquette",
+    "topic": "Digital Communication & Messaging Habits",
+    "title": "[Part 3] Discussion on Messaging Delay, Ghosting & Phone Calls",
+    "questions": [
+      "In what situations do people spend a long time responding to others’ messages?",
+      "In what situations do people not respond to messages at all?",
+      "What would you do if you did not receive a reply after sending out a message?",
+      "Why do some people prefer sending a message instead of making a call?",
+      "How do you show your respect in your messages?",
+      "Why do some people feel angry when others don’t reply to their message?"
+    ],
+    "fullPromptText": "1. In what situations do people spend a long time responding to others’ messages?\n2. In what situations do people not respond to messages at all?\n3. What would you do if you did not receive a reply after sending out a message?\n4. Why do some people prefer sending a message instead of making a call?\n5. How do you show your respect in your messages?\n6. Why do some people feel angry when others don’t reply to their message?",
+    "guide": {
+      "keyVocab": [
+        "Cognitive overload and message triage (quá tải thông tin và sự lọc tin nhắn theo mức ưu tiên)",
+        "Ghosting and avoidance behavior (hành vi phớt lờ và trốn tránh phản hồi)",
+        "Asynchronous communication convenience (sự tiện lợi của giao tiếp bất đồng bộ không cần tức thì)",
+        "Intrusive spontaneous calls (những cuộc gọi bất ngờ gây phiền toái cắt ngang việc đang làm)",
+        "Perceived social slight (cảm giác bị coi thường và xúc phạm trong xã giao)"
+      ],
+      "suggestedIdeas": "Nhắn tin được chuộng vì có thời gian suy nghĩ câu chữ và không làm phiền người khác. Chậm trả lời do bận việc hoặc bị trôi tin nhắn. Tức giận khi bị phớt lờ xuất phát từ tâm lý thiếu tôn trọng.",
+      "sampleOutline": "- Q1 & Q2: Intense work crunches or awkward conflicts causing deliberate avoidance.\n- Q3: Allow a 24-hour grace period before issuing a polite follow-up nudge.\n- Q4: Texting offers asynchronous convenience and shields against phone call social anxiety.\n- Q5: Proper salutations, immaculate grammar, and punctuality in closing remarks.\n- Q6: Interpreted as personal rejection and contempt for their time."
+    }
+  },
+  {
+    "id": "p3_animals_pets_ethics",
+    "topic": "Animals, Pets & Educational Value",
+    "title": "[Part 3] Discussion on Pets in Cities & Animal Storytelling",
+    "questions": [
+      "Should schools teach children about animals?",
+      "Some people think pets should not be kept in cities. What do you think?",
+      "Many people regard pets as members of their family. What do you think?",
+      "Do many people keep pets in your country?",
+      "What are the advantages of keeping a pet?",
+      "Why do people always tell children stories with animals?"
+    ],
+    "fullPromptText": "1. Should schools teach children about animals?\n2. Some people think pets should not be kept in cities. What do you think?\n3. Many people regard pets as members of their family. What do you think?",
+    "guide": {
+      "keyVocab": [
+        "Foster empathy and ecological literacy (nuôi dưỡng lòng trắc ẩn và kiến thức sinh thái)",
+        "Confined apartment living (không gian sống căn hộ chật chội gò bó)",
+        "Surrogate emotional companionship (sự gắn kết tình cảm bầu bạn thay thế con người)",
+        "Unconditional affection (tình yêu thương gắn bó vô điều kiện)",
+        "Anthropomorphic storytelling (lối kể chuyện nhân cách hóa loài vật)"
+      ],
+      "suggestedIdeas": "Nuôi thú cưng giúp giảm cô đơn và rèn trách nhiệm, nhưng nuôi chó lớn trong căn hộ chật hẹp cần cân nhắc phúc lợi động vật. Truyện ngụ ngôn động vật giúp trẻ tiếp thu bài học đạo đức tự nhiên hơn.",
+      "sampleOutline": "- Q1: Critical for nurturing biological empathy and combating animal cruelty.\n- Q2: Small pets thrive; large active breeds suffer without sprawling yards and cause barking complaints.\n- Q3: Wholesome psychological anchor providing unconditional comfort in atomized cities.\n- Q4: Booming trend among urban Vietnamese youths and lonely retirees.\n- Q5: Teaches daily discipline, combats loneliness, lowers cortisol stress.\n- Q6: Animals embody pure archetypes (brave lion, cunning fox), simplifying moral lessons for young minds."
+    }
+  },
+  {
+    "id": "p3_advertising_power_celebrity",
+    "topic": "Marketing, Celebrity Influence & Economy",
+    "title": "[Part 3] Discussion on Advertising Effectiveness & Celebrity Power",
+    "questions": [
+      "What are the advantages and disadvantages of advertisements?",
+      "Why are many advertisements endorsed by celebrities? How useful are they?",
+      "What is the most important factor in an advertisement?",
+      "Why are some advertisements boring?",
+      "Is advertising important for a company? Why?",
+      "Which is more effective, online advertising or offline advertising?"
+    ],
+    "fullPromptText": "1. What are the advantages and disadvantages of advertisements?\n2. Why are many advertisements endorsed by celebrities? How useful are they?\n3. What is the most important factor in an advertisement?\n4. Why are some advertisements boring?\n5. Is advertising important for a company? Why?\n6. Which is more effective, online advertising or offline advertising?",
+    "guide": {
+      "keyVocab": [
+        "Informs consumer choices vs deceptive marketing (cung cấp thông tin mua sắm đối lập với tiếp thị lừa dối)",
+        "Borrow celebrity credibility and halo effect (mượn uy tín và hiệu ứng hào quang của người nổi tiếng)",
+        "Emotional resonance and relatable storytelling (sự đồng điệu cảm xúc và lối kể chuyện gần gũi)",
+        "Algorithmic micro-targeting (tiếp thị trúng đích dựa trên thuật toán phân tích người dùng)",
+        "Commercial visibility (mức độ nhận diện thương hiệu trên thị trường)"
+      ],
+      "suggestedIdeas": "Quảng cáo giúp nhận diện thương hiệu nhưng quảng cáo sai sự thật gây bức xúc. Người nổi tiếng tạo niềm tin tức thì. Quảng cáo số đo lường chuẩn xác hơn biển quảng cáo ngoài trời.",
+      "sampleOutline": "- Q1: Informs market choices; drawbacks include intrusive visual clutter and rampant consumerism.\n- Q2: Leverages parasocial trust and instant glamour, boosting sales though risking brand reputation if the star falters.\n- Q3: Authentic narrative that solves a real pain point rather than loud sales pitches.\n- Q4: Cliché scripts, robotic voiceovers, and disconnect from consumer realities.\n- Q5: Essential lifeline; superior products perish in obscurity without brand visibility.\n- Q6: Online advertising wins on targeted algorithms and measurable ROI, though offline billboards grant immense prestige."
+    }
+  },
+  {
+    "id": "p3_artificial_intelligence_future",
+    "topic": "Artificial Intelligence & Education",
+    "title": "[Part 3] Discussion on Artificial Intelligence, Ethics & Reliance",
+    "questions": [
+      "What are the advantages and disadvantages of AI?",
+      "Do you think people today should learn about AI technology?",
+      "Should children learn to use AI?",
+      "How can AI help in our lives?",
+      "Do you think students are overly reliant on AI?",
+      "What can teachers do to stop students from relying too much on AI?"
+    ],
+    "fullPromptText": "1. What are the advantages and disadvantages of AI?\n2. Do you think people today should learn about AI technology?\n3. Should children learn to use AI?\n4. How can AI help in our lives?\n5. Do you think students are overly reliant on AI?\n6. What can teachers do to stop students from relying too much on AI?",
+    "guide": {
+      "keyVocab": [
+        "Automate repetitive cognitive tasks (tự động hóa các tác vụ trí óc lặp đi lặp lại)",
+        "Atrophy of critical thinking faculties (sự teo mòn thoái hóa năng lực tư duy phản biện)",
+        "AI literacy and prompt engineering (sự hiểu biết về AI và kỹ năng ra lệnh cho AI)",
+        "Plagiarism and intellectual laziness (đạo văn và thói ỷ lại lười biếng về trí tuệ)",
+        "In-class oral defense and pen-and-paper examinations (vấn đáp trực tiếp và các bài thi viết tay truyền thống)"
+      ],
+      "suggestedIdeas": "AI nâng cao hiệu suất làm việc vượt trội nhưng học sinh lạm dụng sẽ mất năng lực tư duy độc lập. Giáo viên cần chuyển sang chấm thi vấn đáp và yêu cầu phân tích phản biện sâu.",
+      "sampleOutline": "- Q1 & Q4: Unprecedented productivity and personalized medicine; risks include job displacement and misinformation.\n- Q2 & Q3: Indispensable modern literacy; children must learn prompt engineering as a tool, not a homework crutch.\n- Q5: Alarming trend; students blindly copy essays, causing analytical skills to atrophy.\n- Q6: Shift toward in-class debates, handwritten exams, and evaluating students on iterative research logic."
+    }
+  },
+  {
+    "id": "p3_foreign_languages_technology",
+    "topic": "Language Acquisition & Translation Tech",
+    "title": "[Part 3] Discussion on Language Learning, AI Translators & Cognition",
+    "questions": [
+      "Are there many people who can speak foreign languages in your country?",
+      "Does speaking other languages help at work?",
+      "Do people learn any languages other than English?",
+      "Why is it easier for children to learn new things than for adults?",
+      "How do people learn new things?",
+      "What are the advantages and disadvantages of learning a language?",
+      "Some people think that technology has made it unnecessary to learn languages. What do you think?",
+      "What difficulties do people face when learning a language?",
+      "Do you think language learning is important? Why?",
+      "Which is better, to study a language alone or to study it in a group? Why?",
+      "What’s the best way to learn a language?"
+    ],
+    "fullPromptText": "1. Does speaking foreign languages boost career advancement in your country?\n2. What languages besides English are becoming popular?\n3. Can AI translation devices make learning foreign languages obsolete?\n4. What cognitive hurdles do adult language learners face?\n5. Is collaborative group learning superior to solo self-study?\n6. What constitutes the ultimate method for achieving true linguistic fluency?",
+    "guide": {
+      "keyVocab": [
+        "Lucrative global employment avenues (những con đường việc làm toàn cầu với thu nhập hấp dẫn)",
+        "Machine translation lacks cultural nuance (dịch máy thiếu chiều sâu văn hóa và cảm xúc tinh tế)",
+        "Affective filter and self-consciousness (rào cản tâm lý sợ sai và sự ngượng ngùng e ngại)",
+        "Total linguistic immersion (sự đắm chìm hoàn toàn vào môi trường ngôn ngữ thực tế)",
+        "Cognitive protection against dementia (hàng rào bảo vệ não bộ chống lại sự sa sút trí tuệ)"
+      ],
+      "suggestedIdeas": "Máy móc có thể dịch từ ngữ nhưng không thay thế được sự kết nối cảm xúc và sự thấu hiểu văn hóa giữa con người. Phương pháp hiệu quả nhất là nhúng mình vào môi trường thực tế.",
+      "sampleOutline": "- Q1 & Q2: Unlocks multinational leadership promotions; Mandarin, Japanese, and Korean surged alongside English.\n- Q3: Technology translates mechanical words, but cannot replicate emotional empathy, humor, or negotiation trust.\n- Q4: High affective filter (fear of embarrassing mistakes) and lack of daily immersion time.\n- Q5: Groups practice dialogue reflexes; solitary study drills grammar mechanics and focused vocabulary retention.\n- Q6: Total immersion: consuming native media, thinking in target language, and speaking fearlessly with native speakers daily."
+    }
+  },
+  {
+    "id": "p3_food_culture_festivals",
+    "topic": "Culinary Heritage & Dining Habits",
+    "title": "[Part 3] Discussion on Festival Foods, Family Dining & Fast Food",
+    "questions": [
+      "Why are there special foods on special occasions or events?",
+      "What are the differences between everyday food and festival food?",
+      "Are there any differences between the food people eat today and the food people ate in the past?",
+      "In your country, do people nowadays cook at home as frequently as people did in the past?",
+      "What do you think of people using their mobile phones during a meal?",
+      "What are the differences between special food in Vietnam and other countries?",
+      "Why are some people willing to spend a lot of money on meals on special days?",
+      "Do you think it’s good to communicate when eating with your family?"
+    ],
+    "fullPromptText": "1. Why are special foods central to cultural festivals?\n2. How do modern dietary habits differ from traditional diets of the past?\n3. Why has home cooking declined in contemporary urban households?\n4. What are your views on smartphone usage at the family dinner table?\n5. Why do people willingly splurge exorbitant sums on celebration feasts?\n6. How does dinner-table conversation strengthen familial bonds?",
+    "guide": {
+      "keyVocab": [
+        "Cultural identity and ancestral heritage (bản sắc văn hóa và di sản tổ tiên)",
+        "Labor-intensive culinary preparation (quy trình chế biến nấu nướng công phu tốn nhiều công sức)",
+        "Proliferation of ultra-processed food (sự bùng nổ của thực phẩm siêu chế biến nhiều dầu mỡ)",
+        "Phubbing / Phone-snubbing (hành vi cắm mặt vào điện thoại phớt lờ người bên cạnh)",
+        "Communal bonding ritual (nghi thức gắn kết tình cảm tập thể gia đình)"
+      ],
+      "suggestedIdeas": "Món ăn lễ hội gói ghém lịch sử và ước vọng no ấm. Đời sống bận rộn khiến cơm nhà bị thay thế bởi đồ ăn nhanh. Dùng điện thoại trong bữa ăn làm nguội lạnh tình cảm gia đình.",
+      "sampleOutline": "- Q1 & Q2: Festival foods symbolize prosperity, seasonal harvests, and ancestral respect through laborious heirloom recipes.\n- Q3: Past diets were plant-based and fresh; modern diets suffer from hyper-processed convenience foods.\n- Q4: Long work commutes and ride-hailing food apps have marginalized daily home cooking.\n- Q5: Destructive habit; phubbing dismantles genuine interpersonal intimacy and respect.\n- Q6: Celebration splurging commemorates milestones; table talk builds emotional security and intergenerational understanding."
+    }
+  },
+  {
+    "id": "p3_sports_events_online_viewing",
+    "topic": "Spectator Sports & Online Broadcasting",
+    "title": "[Part 3] Discussion on Sports Culture, Stadiums & Digital Streaming",
+    "questions": [
+      "Why do some people like to watch sports events?",
+      "Where do people normally watch sports events?",
+      "What are the advantages of watching sports events online?",
+      "What sports matches are suitable for children to attend?"
+    ],
+    "fullPromptText": "1. Why do sports events hold such immense universal spectator appeal?\n2. Where do people normally watch sports events in your community?\n3. What advantages does digital live streaming possess over physical attendance?\n4. What factors determine whether a sports match is suitable for young children?",
+    "guide": {
+      "keyVocab": [
+        "Vicarious adrenaline rush (cảm giác hưng phấn mãnh liệt được trải nghiệm gián tiếp)",
+        "Communal ecstasy and collective solidarity (sự hân hoan tột cùng và tình đoàn kết tập thể)",
+        "Crystal-clear multi-angle streaming (hình ảnh truyền hình trực tiếp sắc nét đa góc quay)",
+        "Hooliganism and vulgar chanting (nạn quá khích và những lời thóa mạ thô tục trên sân vận động)",
+        "Inspire healthy physical aspirations (truyền cảm hứng rèn luyện thể chất lành mạnh)"
+      ],
+      "suggestedIdeas": "Xem thể thao giúp giải tỏa cảm xúc dồn nén. Xem trực tuyến tiện lợi, góc quay sắc nét và có chiếu lại. Trẻ em nên tham gia các trận bóng rổ, cầu lông gia đình lành mạnh tránh xô lấn.",
+      "sampleOutline": "- Q1: Dramatic unpredictability, tribal camaraderie cheering for regional teams, and vicarious athletic joy.\n- Q2: Bustling street cafes with projector screens or packed national stadiums.\n- Q3: High-definition multi-camera angles, instant replays, expert commentary, and avoiding rowdy traffic.\n- Q4: Family-friendly environments with civilized crowds and minimal alcohol-fueled hostility (e.g. basketball or badminton)."
+    }
+  },
+  {
+    "id": "p3_medical_profession_biology",
+    "topic": "Healthcare Careers & Biology Education",
+    "title": "[Part 3] Discussion on Medical Vocation, Pressure & Science Education",
+    "questions": [
+      "Do you think being a doctor is easy or difficult?",
+      "Do you think learning biology is interesting for children?"
+    ],
+    "fullPromptText": "1. Why is pursuing a career in medicine considered one of the most grueling paths?\n2. How can biology be taught effectively to capture children's natural curiosity?",
+    "guide": {
+      "keyVocab": [
+        "High-stakes life-and-death responsibility (trách nhiệm sinh tử ngàn cân treo sợi tóc)",
+        "Exhausting shifts and emotional burnout (những ca trực kiệt sức và tình trạng chai sạn cảm xúc)",
+        "Microscopic marvels (những điều kỳ diệu dưới kính hiển vi)",
+        "Experiential lab experiments (các buổi thí nghiệm thực hành trực quan)",
+        "Noble sense of fulfillment (cảm giác viên mãn cao quý khi cứu giúp con người)"
+      ],
+      "suggestedIdeas": "Nghề y cực kỳ gian nan vì đòi hỏi học tập suốt đời và chịu áp lực sinh tử của bệnh nhân. Môn sinh học sẽ hấp dẫn nếu học qua kính hiển vi và thiên nhiên thực tế thay vì học vẹt.",
+      "sampleOutline": "- Q1: Immensely demanding; requires a decade of rigorous schooling, sleep-depriving night shifts, and bearing the psychological burden of human mortality.\n- Q2: Captivating when freed from dry rote memorization; observing plant cells through microscopes and botanical field trips sparks wonder."
+    }
+  },
+  {
+    "id": "p3_teamwork_leadership_school",
+    "topic": "Teamwork, Leadership & Solo Work",
+    "title": "[Part 3] Discussion on Team Dynamics, Leadership & Education",
+    "questions": [
+      "Why do some people prefer to work by themselves?",
+      "What should a leader do to make team members want to follow him or her?",
+      "Should students learn to do group work?",
+      "What group tasks are there in schools?"
+    ],
+    "fullPromptText": "1. Why do certain individuals gravitate toward solo work over collaboration?\n2. What core leadership attributes inspire genuine team loyalty?\n3. Is collaborative group learning essential in early education?\n4. What typical group assignments are prevalent in modern schools?",
+    "guide": {
+      "keyVocab": [
+        "Autonomous control over workflow (toàn quyền tự quyết kiểm soát quy trình làm việc)",
+        "Free-rider problem (vấn nạn kẻ ăn không ngồi rồi trong bài tập nhóm)",
+        "Lead by personal example (lãnh đạo bằng việc làm gương chuẩn mực)",
+        "Interpersonal diplomacy and consensus (sự khéo léo trong đối nhân xử thế và xây dựng đồng thuận)",
+        "Synergistic problem-solving (sự cộng hưởng giải quyết các vấn đề phức tạp)"
+      ],
+      "suggestedIdeas": "Làm việc một mình giúp tự do sáng tạo và tránh ức chế với người lười biếng. Người lãnh đạo xuất sắc là người biết lắng nghe, minh bạch và làm gương. Bài tập nhóm chuẩn bị cho môi trường công sở.",
+      "sampleOutline": "- Q1: Desire for total creative control, uninterrupted deep focus, and frustration with free-riders.\n- Q2: Demonstrate integrity, lead by humble example, communicate transparent vision, and shield team members from blame.\n- Q3: Vital; workplace success hinges on diplomacy, emotional intelligence, and cross-functional synergy.\n- Q4: Science fair experiments, business pitch presentations, theatrical plays, and community charity campaigns."
+    }
+  },
+  {
+    "id": "p3_entrepreneurship_corporate_failure",
+    "topic": "Entrepreneurship & Business Survival",
+    "title": "[Part 3] Discussion on Startups, State Subsidies & Business Success",
+    "questions": [
+      "Why do some people start their own business?",
+      "Should governments provide financial support to start-ups?",
+      "Do most people prefer shopping at big stores or small stores?",
+      "What makes a business successful?",
+      "What makes a business fail?"
+    ],
+    "fullPromptText": "1. What psychological and financial factors drive people toward entrepreneurship?\n2. Should state governments subsidize early-stage commercial ventures?\n3. How do consumer preferences diverge between retail giants and neighborhood boutiques?\n4. What fundamental ingredients underpin long-term corporate viability?\n5. What are the chief catalysts behind commercial bankruptcy and failure?",
+    "guide": {
+      "keyVocab": [
+        "Entrepreneurial hunger for autonomy (khát khao tự chủ làm chủ vận mệnh)",
+        "Incubate innovative high-tech startups (ươm mầm các công ty khởi nghiệp công nghệ cao)",
+        "Cash flow mismanagement (quản lý dòng tiền yếu kém dẫn đến đứt gãy vốn)",
+        "Customer-centric adaptability (khả năng thích ứng lấy khách hàng làm trung tâm)",
+        "Market obsolescence (tình trạng bị thị trường đào thải do lạc hậu)"
+      ],
+      "suggestedIdeas": "Khởi nghiệp để tìm tự do và làm giàu. Nhà nước nên hỗ trợ vườn ươm khởi nghiệp công nghệ. Doanh nghiệp thất bại do cạn kiệt dòng tiền và không chịu lắng nghe thị trường.",
+      "sampleOutline": "- Q1: Thirst for autonomy, uncapped financial ceiling, and yearning to bring novel ideas to fruition.\n- Q2: Yes for high-risk technological and green innovations; stimulates macroeconomic employment and tax revenue.\n- Q3: Big chains offer rock-bottom prices and broad inventories; small shops provide curated warmth and bespoke service.\n- Q4: Robust unit economics, exceptional customer satisfaction, and continuous innovation.\n- Q5: Misreading consumer demand, catastrophic cash-flow crunches, and arrogance refusing to pivot."
+    }
+  },
+  {
+    "id": "p3_home_gardening_organic_food",
+    "topic": "Urban Agriculture & Organic Gardening",
+    "title": "[Part 3] Discussion on Home Gardening & Food Security",
+    "questions": [
+      "What are the advantages of growing vegetables or flowers at home?",
+      "Do many people grow vegetables or flowers at home in your country?",
+      "Is it easy to grow plants at home?",
+      "Why do some people like to grow plants?",
+      "Why do some people prefer to grow their own fruits and vegetables instead of buying them from the market?"
+    ],
+    "fullPromptText": "1. What health and psychological benefits accompany domestic gardening?\n2. To what extent is home horticulture practiced in your country?\n3. What challenges make maintaining a home garden arduous for urbanites?\n4. Why do consumers increasingly prefer cultivating homegrown produce over store-bought alternatives?",
+    "guide": {
+      "keyVocab": [
+        "Organic farm-to-table freshness (độ tươi ngon hữu cơ từ vườn thẳng đến bàn ăn)",
+        "Pesticide-free homegrown vegetables (rau củ tự trồng sạch hoàn toàn không có thuốc trừ sâu)",
+        "Therapeutic connection to the soil (sự gắn kết trị liệu tâm hồn khi chạm vào đất mẹ)",
+        "Urban space constraints (sự chật hẹp hạn chế về diện tích không gian đô thị)",
+        "Food security and chemical contamination anxiety (mối lo ngại về an toàn thực phẩm và dư lượng hóa chất)"
+      ],
+      "suggestedIdeas": "Trồng rau tại nhà xua tan nỗi sợ thực phẩm bẩn ngậm thuốc bảo vệ thực vật. Làm vườn là liều thuốc chữa lành căng thẳng, dù việc thiếu đất và ánh sáng ở chung cư là thách thức lớn.",
+      "sampleOutline": "- Q1: Guarantees pesticide-free nutrition, saves grocery bills, and acts as grounding psychological therapy.\n- Q2: Highly prevalent; urbanites convert balconies and rooftops into miniature hydroponic farms.\n- Q3: Arduous; requires pest control diligence, proper sunlight angles, and reliable irrigation amidst busy work hours.\n- Q4: Rising consumer anxiety over toxic chemical preservation in mass commercial wet markets."
+    }
+  },
+  {
+    "id": "p3_video_learning_vs_reading",
+    "topic": "Digital Media & Knowledge Consumption",
+    "title": "[Part 3] Discussion on Video Content vs Books & Digital Literacy",
+    "questions": [
+      "What kind of videos do people in your country like to watch?",
+      "Which is more helpful, watching videos or reading books?",
+      "What skills can people learn from watching videos?",
+      "Are there any differences between the videos that young people and old people like to watch?"
+    ],
+    "fullPromptText": "1. What video genres dominate public viewership in your country?\n2. How does pedagogical video learning compare with traditional literary reading?\n3. What practical competencies can be acquired effectively through online tutorials?\n4. How do video consumption preferences diverge between youth and senior demographics?",
+    "guide": {
+      "keyVocab": [
+        "Short-form viral content (nội dung video ngắn gây sốt trên mạng xã hội)",
+        "Visual demonstration clarity (sự rõ ràng trực quan của việc làm mẫu thực hành)",
+        "Abstract intellectual rigor (sự sâu sắc trừu tượng đòi hỏi tư duy cao của sách)",
+        "Autodidactic skill acquisition (sự tự học trau dồi kỹ năng qua mạng)",
+        "Algorithmic generational divergence (sự phân hóa thế hệ do thuật toán phân phối nội dung)"
+      ],
+      "suggestedIdeas": "Video xuất sắc cho các kỹ năng cần quan sát trực quan (nấu ăn, sửa chữa, tập gym), nhưng sách vượt trội về việc phát triển tư duy trừu tượng sâu. Giới trẻ thích video ngắn, người già thích phim tài liệu.",
+      "sampleOutline": "- Q1: Culinary vlogs, comedy sketches, music videos, and snackable TikTok reels.\n- Q2: Videos excel at procedural, visual tasks; books nurture prolonged deep focus and analytical rigor.\n- Q3: Culinary arts, coding mechanics, graphic design, and home DIY repairs.\n- Q4: Youths chase fast-paced comedic edits; seniors favor lengthy historical documentaries and health lectures."
+    }
+  },
+  {
+    "id": "p3_tall_buildings_urban_architecture",
+    "topic": "Skyline Architecture & Urban Identity",
+    "title": "[Part 3] Discussion on Skyscrapers, Spatial Planning & City Density",
+    "questions": [
+      "Are there many tall buildings in your country?",
+      "What are the differences between those tall buildings in your country?",
+      "Why are different places laid out and designed differently?"
+    ],
+    "fullPromptText": "1. What drives the rapid proliferation of high-rise towers in your nation's metropolises?\n2. What architectural disparities exist among modern skyscrapers across your country?\n3. Why are urban master-plans and architectural aesthetics customized to different localities?",
+    "guide": {
+      "keyVocab": [
+        "Vertical urbanization (sự đô thị hóa mở rộng không gian theo chiều thẳng đứng)",
+        "Land scarcity pressures (áp lực từ sự khan hiếm quỹ đất đô thị)",
+        "Climate-responsive design (thiết kế kiến trúc thích ứng với khí hậu bản địa)",
+        "Cultural vernacular (ngôn ngữ kiến trúc bản địa đặc trưng)",
+        "Architectural homogeny (sự đơn điệu rập khuôn nhàm chán của kiến trúc)"
+      ],
+      "suggestedIdeas": "Nhà chọc trời giải quyết bài toán thiếu đất cho dân số tăng nhanh. Thiết kế tòa nhà phải thích ứng với khí hậu (chống bão ở miền Trung, thông gió tốt ở miền Nam) và bản sắc văn hóa địa phương.",
+      "sampleOutline": "- Q1: Yes, explosive high-rise growth driven by exorbitant land costs and influxes of rural migrants.\n- Q2: Contemporary steel-and-glass commercial giants versus utilitarian residential apartment blocks.\n- Q3: Shaped by local geography (flood zones, seismic risks), climatic variations, and regional cultural ethos."
+    }
+  },
+  {
+    "id": "p3_education_boredom_solutions",
+    "topic": "Educational Engagement & Youth Boredom",
+    "title": "[Part 3] Discussion on Student Boredom, Aging Wisdom & Pedagogy",
+    "questions": [
+      "Why do most children think education is boring?",
+      "Why aren’t young people willing to listen to the experiences of older people?",
+      "What can people do when they feel bored?",
+      "Why are some teachers’ classes boring? Are there any solutions?"
+    ],
+    "fullPromptText": "1. Why do modern curricula frequently induce boredom among young learners?\n2. Why do adolescents instinctively disregard the counsel of older generations?\n3. What constructive pastimes can alleviate bouts of chronic boredom?\n4. What systemic factors make classroom teaching tedious, and what pedagogical solutions exist?",
+    "guide": {
+      "keyVocab": [
+        "Rote memorization vs interactive pedagogy (học vẹt máy móc đối lập với phương pháp tương tác)",
+        "Adolescent rebellion and yearning for agency (sự nổi loạn của tuổi dậy thì và khát khao khẳng định mình)",
+        "Dopamine desensitization from screens (sự chai lỳ thụ thể dopamine do lạm dụng màn hình số)",
+        "Gamified learning environments (môi trường học tập được trò chơi hóa kích thích hứng thú)",
+        "Monotonous chalk-and-talk lectures (lối dạy đọc chép khô khan trên bảng truyền thống)"
+      ],
+      "suggestedIdeas": "Giáo dục nhàm chán do học vẹt và thiếu ứng dụng đời sống. Giới trẻ không thích nghe người lớn vì cảm thấy bị phán xét và cho rằng người già lỗi thời. Giáo viên cần ứng dụng trò chơi và tình huống thực tế.",
+      "sampleOutline": "- Q1: Rigid standardized testing, passive listening desks, and disconnect from digital real-world applications.\n- Q2: Youths prioritize peer validation, crave personal experimentation, and perceive elder advice as dated preaching.\n- Q3: Engage in tactile hobbies (sketching, sports, playing instruments) rather than toxic doom-scrolling.\n- Q4: Caused by monotonous lecturing; solutions include flipped classrooms, interactive debates, and digital gamification."
+    }
+  },
+  {
+    "id": "p3_planning_habits_technology",
+    "topic": "Planning, Parental Influence & Tech Tools",
+    "title": "[Part 3] Discussion on Planning Adaptability, Parenting & Digital Planners",
+    "questions": [
+      "Do people often change their plans?",
+      "Would you tell others if you change your plan?",
+      "Why do you think parents still make plans for their children nowadays?",
+      "How does technology help people make plans?"
+    ],
+    "fullPromptText": "1. Under what circumstances do individuals frequently alter their established plans?\n2. What social etiquette dictates informing collaborators when personal schedules shift?\n3. Why do contemporary parents persist in micromanaging their children's life trajectories?\n4. How have modern software applications revolutionized personal and professional planning?",
+    "guide": {
+      "keyVocab": [
+        "Fluid adaptability amidst volatility (sự thích ứng linh hoạt trước những biến số bất ngờ)",
+        "Professional courtesy and punctuality (phép lịch sự xã giao và tác phong đúng giờ)",
+        "Helicopter parenting and anxiety (lối nuôi dạy con bao bọc kiểm soát quá đà xuất phát từ lo âu)",
+        "Automated calendar syncing (tự động đồng bộ hóa lịch trình trên đa nền tảng)",
+        "Contingency planning (lập kế hoạch dự phòng cho mọi tình huống)"
+      ],
+      "suggestedIdeas": "Kế hoạch phải linh hoạt trước thời tiết và công việc đột xuất. Thay đổi phải báo trước để tôn trọng người khác. Cha mẹ bao bọc do sợ con cái vấp ngã. Ứng dụng điện thoại giúp tối ưu hóa lịch trình.",
+      "sampleOutline": "- Q1: Unforeseen work crises, weather upheavals, health emergencies, or sudden logistical friction.\n- Q2: Non-negotiable courtesy; gives partners sufficient notice to readjust their own timetables.\n- Q3: Driven by fear of economic precarity, wanting to shield offspring from repeating past hardships.\n- Q4: Cloud-synced calendar tools, task managers, and AI assistants optimize routes and prompt notifications seamlessly."
+    }
+  },
+  {
+    "id": "p3_law_compliance_ethics",
+    "topic": "Legal Compliance & Civic Morality",
+    "title": "[Part 3] Discussion on Rule of Law, Civic Behavior & Universal Norms",
+    "questions": [
+      "What rules should students follow at school?",
+      "Do people in your country usually obey the law?",
+      "What kinds of behavior are considered as good behavior?",
+      "Do you think children can learn about the law outside of school?",
+      "What are the benefits for people to obey rules?",
+      "How can parents teach children to obey rules?",
+      "What are the rules people should obey at work?",
+      "What is the purpose of punishment?",
+      "How does technology affect the law?",
+      "What environmental laws does your country already have?"
+    ],
+    "fullPromptText": "1. What foundational regulations maintain discipline in academic institutions?\n2. What is the prevailing public attitude toward legal compliance in your society?\n3. What defines morally commendable civic behavior in communal spaces?\n4. Why is general obedience to societal legislation vital for collective harmony?\n5. What is the primary philosophical justification for punitive sanctions?\n6. How is emerging digital technology reshaping legislative enforcement and surveillance?",
+    "guide": {
+      "keyVocab": [
+        "Rule of law vs civic lawlessness (tinh thần thượng tôn pháp luật đối lập với tình trạng vô pháp)",
+        "Deterrence against criminal recidivism (tính răn đe ngăn chặn sự tái phạm tội)",
+        "Civic mindfulness and altruism (sự ý tứ văn minh và tinh thần vị tha vì cộng đồng)",
+        "Algorithmic surveillance and digital evidence (sự giám sát qua thuật toán và bằng chứng số)",
+        "Preserve societal cohesion (duy trì trật tự và sự gắn kết xã hội)"
+      ],
+      "suggestedIdeas": "Tuân thủ luật pháp giúp xã hội vận hành trật tự và an toàn. Trừng phạt nhằm mục đích răn đe và cảm hóa người phạm lỗi. Công nghệ (camera AI, dữ liệu số) giúp phát hiện và xử lý vi phạm minh bạch hơn.",
+      "sampleOutline": "- Q1: Respectful conduct, academic honesty, non-violence, and adherence to attendance.\n- Q2: Generally high compliance on major criminal laws, though minor traffic infractions remain common.\n- Q3: Yielding seats to elderly, queuing patiently, respecting public acoustics, and sorting waste.\n- Q4: Safeguards public safety, protects private property, and maintains orderly social trust.\n- Q5: Punishments serve as general deterrence, societal retribution, and rehabilitation pathways.\n- Q6: AI surveillance cameras and digital databases enable impartial, automated enforcement."
+    }
+  },
+  {
+    "id": "p3_childhood_friendship_social_media",
+    "topic": "Childhood Friendship & Digital Communication",
+    "title": "[Part 3] Discussion on Childhood Ties, Aging Friendship & Digital Chat",
+    "questions": [
+      "Do you still keep in touch with your friends from childhood? Why or why not?",
+      "How important is childhood friendship to children?",
+      "What do you think of communicating via social media?",
+      "Do you think online communication through social media will replace face-to-face communication?",
+      "What's the difference between having younger friends and older friends?",
+      "Has technology changed people's friendships? How?"
+    ],
+    "fullPromptText": "1. Why do childhood friendships often erode as individuals transition into adulthood?\n2. What developmental significance do early childhood peers hold?\n3. Can online messaging fully substitute physical face-to-face social communion?\n4. How do interpersonal dynamics vary when interacting with older versus younger companions?\n5. In what ways has telecommunication reshaped modern friendship structures?",
+    "guide": {
+      "keyVocab": [
+        "Drift apart due to divergent life paths (dần xa cách do những ngã rẽ cuộc đời khác nhau)",
+        "Unblemished emotional foundation (nền tảng tình cảm trong sáng không vụ lợi)",
+        "Lack of visceral physical presence (sự thiếu vắng hiện diện cơ thể chân thật bằng xương bằng thịt)",
+        "Mentorship vs infectious youthful vigor (sự chỉ dẫn từng trải đối lập với nguồn năng lượng trẻ trung)",
+        "Superficial digital hyper-connectivity (sự siêu kết nối số nhưng hời hợt trên bề mặt)"
+      ],
+      "suggestedIdeas": "Bạn bè thời thơ ấu trong sáng nhưng lớn lên dễ xa nhau do khác mục tiêu sống. Chat online tiện nhưng không thể thay thế những cái ôm và ánh mắt ngoài đời. Bạn bè lớn tuổi cho sự thông thái, bạn trẻ cho sự năng động.",
+      "sampleOutline": "- Q1: Many drift apart as geographic relocation and divergent careers fracture common interests.\n- Q2: Invaluable; teaches conflict negotiation, empathy, and leaves untainted memories.\n- Q3: Convenient for logistics, but devoid of visceral eye contact, shared laughs, and authentic human warmth.\n- Q4: Older friends offer sagacious mentorship; younger peers inject contagious enthusiasm and fresh trends.\n- Q5: Enables effortless cross-border ties, yet dilutes friendship depth into superficial reaction clicks."
+    }
+  },
+  {
+    "id": "p3_traffic_management_solutions",
+    "topic": "Urban Transit & Traffic Solutions",
+    "title": "[Part 3] Discussion on Traffic Congestion, Public Transit & Urban Mobility",
+    "questions": [
+      "Do you like to use public transport?",
+      "Would you rather be in a car or a bus in a traffic jam?",
+      "How can we solve the traffic jam problem?",
+      "Do you think developing public transport can solve traffic jam problems?",
+      "Do you think the high ways will help reduce traffic jams?",
+      "What are good ways to manage traffic?"
+    ],
+    "fullPromptText": "1. What factors encourage or deter citizens from utilizing public transit networks?\n2. What psychological differences exist between being stalled in a personal car versus a public bus?\n3. What multi-pronged urban strategies can effectively alleviate chronic traffic congestion?\n4. Does continuously expanding highway infrastructure resolve bottlenecks, or does it induce demand?",
+    "guide": {
+      "keyVocab": [
+        "Mass rapid transit infrastructure (hệ thống vận chuyển hành khách công cộng khối lượng lớn)",
+        "Induced traffic demand (hiện tượng nhu cầu giao thông phát sinh khi mở rộng đường)",
+        "Congestion pricing schemes (chính sách thu phí chống ùn tắc nội đô)",
+        "Stifling spatial confinement (sự tù túng gò bó không gian khi kẹt xe)",
+        "Decentralized commercial zones (các khu thương mại vệ tinh phi tập trung hóa)"
+      ],
+      "suggestedIdeas": "Xây thêm đường cao tốc chỉ làm phát sinh thêm xe cộ (induced demand). Lối thoát duy nhất là phát triển metro và xe buýt điện sạch sẽ, kết hợp thu phí xe cá nhân vào trung tâm.",
+      "sampleOutline": "- Q1: Encouraged by low cost and carbon reduction; deterred by overcrowding and rigid routes.\n- Q2: Personal cars afford private music and air-con control; buses free you from driving fatigue.\n- Q3: Develop efficient metro railways, implement congestion tolls, and stagger corporate office hours.\n- Q4: Highways offer temporary relief, but paradoxically trigger induced demand; robust public transit is the true sustainable cure."
+    }
+  },
+  {
+    "id": "p3_leisure_technology_holidays",
+    "topic": "Leisure Trends & Holiday Fatigue",
+    "title": "[Part 3] Discussion on Leisure Habits, Digital Distraction & Vacation Paradox",
+    "questions": [
+      "Do people like to spend their leisure time out in your country?",
+      "How do people spend their leisure time in your country?",
+      "How does technology affect the way people spend their leisure time?",
+      "Do you think only old people have time for leisure?",
+      "Why do people like to have days off?",
+      "Going out to have holidays is tiring. Why do people still want to do it?"
+    ],
+    "fullPromptText": "1. What cultural preferences define outdoor leisure activities in your country?\n2. In what ways has ubiquitous digital entertainment altered domestic relaxation?\n3. How does the perception of free leisure time diverge across generations?\n4. Why do individuals willingly endure the physical exhaustion of crowded vacations?",
+    "guide": {
+      "keyVocab": [
+        "Outdoor recreational pursuits (các hoạt động giải trí theo đuổi ngoài trời)",
+        "Digital encroachment on leisure (sự xâm lấn của công nghệ số vào thời gian nghỉ ngơi)",
+        "Burnout decompression (sự xả hơi giải tỏa sau những ngày làm việc kiệt sức)",
+        "Vacation paradox (nghịch lý đi nghỉ mát hành xác nhưng vẫn mê)",
+        "Novel sensory stimulation (kích thích giác quan mới lạ qua những vùng đất mới)"
+      ],
+      "suggestedIdeas": "Thời gian rảnh nay bị mạng xã hội chi phối nhiều. Đi du lịch ngày lễ dù đông đúc, mệt mỏi nhưng ai cũng muốn đi vì khao khát thoát khỏi không gian làm việc ngột ngạt quen thuộc.",
+      "sampleOutline": "- Q1 & Q2: Street-side cafe chats, lakeside strolling, and weekend park picnics.\n- Q3: Tech provides instant entertainment but blurs downtime with intrusive work notifications.\n- Q4: Youngsters have leisure but squander it on doom-scrolling; seniors enjoy unhurried calendar freedom.\n- Q5: Critical mental reboot to prevent clinical occupational burnout.\n- Q6: Vacation paradox: physical exhaustion is happily traded for novel scenery, culinary treats, and psychological renewal."
+    }
+  },
+  {
+    "id": "p3_event_preparation_organization",
+    "topic": "Event Organization & Preparation",
+    "title": "[Part 3] Discussion on Event Planning, Organization & Spontaneity",
+    "questions": [
+      "How would you feel when you were not well prepared for something?",
+      "Do you prefer to prepare and organize an activity or just take part in an activity?",
+      "How can parents help children to be organized?",
+      "On what occasions do people need to be organized?",
+      "Does everything need to be well prepared?",
+      "Do people need others’ help when organizing things?"
+    ],
+    "fullPromptText": "1. What psychological turmoil accompanies being thrust into an unprepared situation?\n2. What personality distinctions separate master organizers from passive attendees?\n3. How can parental guidance foster organizational discipline in young children?\n4. Under what circumstances does meticulous preparation become essential versus spontaneous flexibility?",
+    "guide": {
+      "keyVocab": [
+        "Paralyzing anxiety and stage fright (cơn lo âu tê liệt và sự sợ hãi sân khấu)",
+        "Logistical orchestrator vs passive participant (người tổng đạo diễn hậu cần đối lập với người tham dự bị động)",
+        "Color-coded milestone scheduling (sắp xếp cột mốc thời gian bằng mã màu trực quan)",
+        "Balancing rigor with spontaneity (cân bằng giữa sự chuẩn bị kỹ lưỡng và tính ngẫu hứng linh hoạt)",
+        "Synergistic delegation of responsibilities (ủy quyền phân công trách nhiệm nhịp nhàng)"
+      ],
+      "suggestedIdeas": "Không chuẩn bị kỹ gây hoảng loạn. Người thích tổ chức có tố chất lãnh đạo. Kế hoạch quan trọng (hôn lễ, hội nghị) cần chuẩn bị 100%, nhưng dã ngoại nên giữ chút ngẫu hứng.",
+      "sampleOutline": "- Q1: Heart-pounding dread, acute self-doubt, and frantic improvisation.\n- Q2: Organizers relish control and foresight; attendees prefer stress-free immersion.\n- Q3: Introduce daily chore checklists and model systematic bedroom categorization.\n- Q4: Weddings, academic conferences, and international expeditions demand rigid planning; leisurely friend hangouts flourish with spontaneity."
+    }
+  },
+  {
+    "id": "p3_water_resources_river_tourism",
+    "topic": "Waterways, Ecology & River Tourism",
+    "title": "[Part 3] Discussion on Water Resources, River Tourism & Transport",
+    "questions": [
+      "What are the popular water sports in your country?",
+      "Are rivers and lakes important to a country?",
+      "How can rivers and lakes benefit local people?",
+      "Do you think rivers and lakes attract tourists?",
+      "How do rivers and lakes affect local tourism?",
+      "Are rivers and lakes good for transport? Why?"
+    ],
+    "fullPromptText": "1. What aquatic recreational activities are gaining popularity in your nation?\n2. In what respects do riverine systems constitute the ecological and economic backbone of a country?\n3. How do natural waterways catalyze regional tourism and economic prosperity?\n4. What advantages and logistical constraints characterize river waterborne transport?",
+    "guide": {
+      "keyVocab": [
+        "Aquatic recreation and water sports (các môn thể thao và giải trí dưới nước)",
+        "Ecological balance and freshwater reservoirs (cân bằng sinh thái và các hồ chứa nước ngọt)",
+        "Waterway eco-tourism and river cruises (du lịch sinh thái đường sông và du thuyền ngắm cảnh)",
+        "Cost-effective bulk cargo transit (vận chuyển hàng hóa khối lượng lớn với chi phí tiết kiệm)",
+        "Vulnerability to seasonal droughts and silting (dễ bị ảnh hưởng bởi hạn hán theo mùa và bồi lắng phù sa)"
+      ],
+      "suggestedIdeas": "Sông hồ là nguồn cung nước ngọt và tưới tiêu nông nghiệp sống còn. Du thuyền đường sông (sông Sài Gòn, sông Hàn) hút khách du lịch. Đường thủy chở hàng nặng giá rẻ nhưng tốc độ chậm.",
+      "sampleOutline": "- Q1: Stand-up paddleboarding (SUP), kayaking, and jet-skiing across coastal bays.\n- Q2: Invaluable; supplies drinking reservoirs, supports aquaculture, and irrigates food staples.\n- Q3: Floating markets, scenic river dinner cruises, and waterfront promenade revitalization attract high-spending tourists.\n- Q4: Highly economical for heavy non-perishable freight (sand, grain), but vulnerable to shallow droughts and slow transit speeds."
+    }
+  },
+  {
+    "id": "p3_corporate_ethics_gap_year",
+    "topic": "Corporate Philanthropy & Gap Years",
+    "title": "[Part 3] Discussion on Corporate Donations, Gap Years & Global Travel",
+    "questions": [
+      "Do you think governments should provide financial support to companies?",
+      "Do you think companies should donate money to help society?",
+      "Do you think customer satisfaction is important for a company?",
+      "Why do you think some people choose not to travel abroad?",
+      "Do you think a gap period in life is important?"
+    ],
+    "fullPromptText": "1. Under what macroeconomic conditions should sovereign governments bail out private enterprises?\n2. Should corporate philanthropy be legally mandated or purely voluntary?\n3. Why is consumer satisfaction the primary predictor of long-term business survival?\n4. What cultural, financial, or psychological hurdles deter citizens from international travel?\n5. Does taking a structured gap year afford tangible advantages for young adults?",
+    "guide": {
+      "keyVocab": [
+        "State bailouts for strategic industries (các gói cứu trợ tài chính của nhà nước cho ngành trọng yếu)",
+        "Corporate philanthropy and greenwashing (hoạt động từ thiện doanh nghiệp và chiêu trò đánh bóng tên tuổi)",
+        "Customer lifetime retention value (giá trị vòng đời gắn bó của khách hàng)",
+        "Xenophobia and foreign travel anxiety (nỗi sợ sự khác biệt văn hóa và lo lắng khi ra nước ngoài)",
+        "Introspective self-discovery during a gap year (sự nhìn nhận thấu hiểu bản thân sâu sắc trong năm gap year)"
+      ],
+      "suggestedIdeas": "Chính phủ chỉ nên giải cứu các doanh nghiệp chiến lược để bảo vệ việc làm. Doanh nghiệp làm từ thiện vừa có ích vừa nâng uy tín. Năm Gap Year giúp giới trẻ tìm ra hướng đi đúng đắn trước khi lao vào công việc.",
+      "sampleOutline": "- Q1: Only justified for strategically critical sectors (aviation, energy, chip fabrication) to avert mass unemployment.\n- Q2: Encouraged via corporate tax incentives, though forced donations risk superficial PR greenwashing.\n- Q3: Paramount; retaining loyal patrons is vastly cheaper than continually acquiring skeptical new customers.\n- Q4: Exorbitant visa expenses, foreign language anxiety, and content with domestic travel offerings.\n- Q5: Tremendously transformative; allows youths to escape academic pressure, acquire hands-on life skills, and clarify their true career calling."
     }
   }
 ]
