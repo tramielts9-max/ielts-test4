@@ -1,0 +1,591 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "part": 2,
+  "title": "IELTS Speaking Part 2 Long Turn (Cue Cards) Manifest (Q3/2026)",
+  "dataSource": "speaking-part2.json",
+  "targetExamQuarter": "2026-Q3",
+  "totalTopics": 36,
+  "config": {
+    "speakingMode": "individual_long_turn",
+    "preparationTimeSeconds": 60,
+    "targetSpeakingDurationSeconds": 120,
+    "selfRelianceThresholdSeconds": 20,
+    "answeringStrategy": "Past Narrative + Sensory Details + Cause & Effect + Reflective Feelings"
+  },
+  "categories": [
+    {
+      "name": "People & Role Models",
+      "topicIds": [
+        "p2_person_met_once",
+        "p2_helped_health_fitness",
+        "p2_person_taught_new_skill",
+        "p2_person_loves_history",
+        "p2_person_good_at_handicrafts",
+        "p2_person_likes_taking_photos",
+        "p2_person_very_organized",
+        "p2_happy_person_know",
+        "p2_famous_person_local_area",
+        "p2_person_did_difficult_successful",
+        "p2_popular_person",
+        "p2_older_person_admire",
+        "p2_person_good_at_languages",
+        "p2_career_in_medical_field",
+        "p2_person_successful_business",
+        "p2_person_loves_growing_plants",
+        "p2_friend_from_childhood",
+        "p2_person_successful_company"
+      ]
+    },
+    {
+      "name": "Events & Personal Experiences",
+      "topicIds": [
+        "p2_time_saving_change",
+        "p2_lost_something_in_public",
+        "p2_special_event_party",
+        "p2_enjoyable_evening_friends",
+        "p2_uninteresting_conversation_listened",
+        "p2_skill_learned_in_childhood",
+        "p2_saved_money_special_purchase",
+        "p2_watched_interview_famous_person",
+        "p2_changed_important_decision",
+        "p2_decision_happy_with_result",
+        "p2_good_service_shop_store",
+        "p2_change_made_recently",
+        "p2_changed_important_opinion",
+        "p2_message_email_no_reply",
+        "p2_stuck_in_traffic_jam",
+        "p2_special_day_out_little_money",
+        "p2_organized_happy_event",
+        "p2_thing_did_to_learn_language",
+        "p2_time_got_up_early",
+        "p2_plan_had_to_change",
+        "p2_worked_in_a_group"
+      ]
+    },
+    {
+      "name": "Places & Buildings",
+      "topicIds": [
+        "p2_near_natural_place",
+        "p2_public_building_enjoy",
+        "p2_natural_place_enjoy_visiting",
+        "p2_city_visited_want_again",
+        "p2_crowded_place_went_to",
+        "p2_short_trip_dislike",
+        "p2_noisy_place_been_to",
+        "p2_travel_recommend_others",
+        "p2_tall_building_like_dislike",
+        "p2_boring_place_been_to",
+        "p2_home_like_visit_not_live",
+        "p2_important_river_lake_country",
+        "p2_place_visit_free_time"
+      ]
+    },
+    {
+      "name": "Objects, Media & Society",
+      "topicIds": [
+        "p2_gift_for_friend",
+        "p2_book_made_happy",
+        "p2_least_favourite_movie",
+        "p2_activity_waste_of_time",
+        "p2_law_environmental_protection",
+        "p2_long_term_goal_ambition",
+        "p2_story_book_animals",
+        "p2_advertisement_famous_person",
+        "p2_challenging_tech_problem",
+        "p2_special_food_occasions",
+        "p2_live_sports_event_watched",
+        "p2_interesting_video",
+        "p2_new_law_introduce",
+        "p2_special_cake_received",
+        "p2_local_news_people_interested",
+        "p2_environmental_law_country_introduce"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "p2_time_saving_change",
+      "topic": "Time Management",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Time-blocking", "Digital distraction management", "Personal productivity"]
+    },
+    {
+      "id": "p2_lost_something_in_public",
+      "topic": "Experiences",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Lost possessions", "Crisis panic", "Civic honesty of finders"]
+    },
+    {
+      "id": "p2_person_met_once",
+      "topic": "People",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["First impressions", "Charismatic worldview", "Serendipitous encounters"]
+    },
+    {
+      "id": "p2_course_impressed",
+      "topic": "Education",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Practical skills", "Inspiring instructor", "Interactive workshop format"]
+    },
+    {
+      "id": "p2_gift_for_friend",
+      "topic": "Gifts & Relationships",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Personalized gifts", "Friendship milestones", "Practical utility"]
+    },
+    {
+      "id": "p2_book_made_happy",
+      "topic": "Books & Leisure",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Uplifting memoirs / Fables", "Philosophical takeaways", "Stress relief"]
+    },
+    {
+      "id": "p2_helped_health_fitness",
+      "topic": "Health & People",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Accountability partner", "Overcoming sedentary habits", "Dietary discipline"]
+    },
+    {
+      "id": "p2_near_natural_place",
+      "topic": "Nature & Places",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Pristine landscapes", "Digital detox", "Mental rejuvenation"]
+    },
+    {
+      "id": "p2_special_event_party",
+      "topic": "Events & Parties",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Milestone celebrations", "Logistics", "Family warmth and nostalgia"]
+    },
+    {
+      "id": "p2_public_building_enjoy",
+      "topic": "Architecture & Places",
+      "category": "Places & Buildings",
+      "difficulty": "Medium",
+      "coreFocus": ["Libraries / Museums", "Architectural aesthetics", "Public utility"]
+    },
+    {
+      "id": "p2_least_favourite_movie",
+      "topic": "Entertainment",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Overhyped films", "Plot holes", "Disappointing acting"]
+    },
+    {
+      "id": "p2_person_taught_new_skill",
+      "topic": "People & Learning",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Patience in teaching", "Practical demonstrations", "Gratitude"]
+    },
+    {
+      "id": "p2_person_loves_history",
+      "topic": "People & History",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Historical memoirs", "Storytelling ability", "Lessons from antiquity"]
+    },
+    {
+      "id": "p2_enjoyable_evening_friends",
+      "topic": "Leisure & Friends",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Rooftop gatherings", "Authentic banter", "Strengthening bonds"]
+    },
+    {
+      "id": "p2_person_good_at_handicrafts",
+      "topic": "People & Crafts",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Artisan precision", "Ceramics / Leather crafting", "Dexterity"]
+    },
+    {
+      "id": "p2_uninteresting_conversation_listened",
+      "topic": "Social Interactions",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Hard",
+      "coreFocus": ["Feigned politeness", "Social tact", "Enduring mundane monologues"]
+    },
+    {
+      "id": "p2_person_likes_taking_photos",
+      "topic": "People & Photography",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Visual composition", "Capturing fleeting moments", "Street photography"]
+    },
+    {
+      "id": "p2_skill_learned_in_childhood",
+      "topic": "Skills & Childhood",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Swimming / Cycling", "Overcoming fear", "Parental encouragement"]
+    },
+    {
+      "id": "p2_saved_money_special_purchase",
+      "topic": "Finance & Purchases",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Delayed gratification", "Frugality", "Valuing hard-earned money"]
+    },
+    {
+      "id": "p2_natural_place_enjoy_visiting",
+      "topic": "Nature & Urban Life",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Urban lakes / Botanical gardens", "Tranquil green oasis", "Mental serenity"]
+    },
+    {
+      "id": "p2_person_very_organized",
+      "topic": "People & Habits",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Methodical planning", "Notion / Trello workflows", "Coping with busy routines"]
+    },
+    {
+      "id": "p2_watched_interview_famous_person",
+      "topic": "Media & Celebrities",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Podcast talkshows", "Candid vulnerability", "Resilience against adversity"]
+    },
+    {
+      "id": "p2_happy_person_know",
+      "topic": "People & Personality",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Infectious positivity", "Mindfulness and gratitude", "Simplicity in living"]
+    },
+    {
+      "id": "p2_changed_important_decision",
+      "topic": "Experiences & Decisions",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Hard",
+      "coreFocus": ["University major change", "Following true calling", "Overcoming peer pressure"]
+    },
+    {
+      "id": "p2_famous_person_local_area",
+      "topic": "People & Society",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Local philanthropists", "Community pillars", "Grassroots charitable work"]
+    },
+    {
+      "id": "p2_decision_happy_with_result",
+      "topic": "Experiences & Success",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Independent living", "Weighing pros and cons", "Self-reliance development"]
+    },
+    {
+      "id": "p2_person_did_difficult_successful",
+      "topic": "People & Achievement",
+      "category": "People & Role Models",
+      "difficulty": "Hard",
+      "coreFocus": ["Startup triumphs", "Overcoming severe setbacks", "Unwavering grit"]
+    },
+    {
+      "id": "p2_popular_person",
+      "topic": "People & Society",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Charismatic leadership", "Empowering peers", "Approachable demeanor"]
+    },
+    {
+      "id": "p2_city_visited_want_again",
+      "topic": "Travel & Places",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Coastal charms", "Street cuisine paradise", "Hospitable atmosphere"]
+    },
+    {
+      "id": "p2_good_service_shop_store",
+      "topic": "Customer Service",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Attentive clerks", "Going the extra mile", "Cultivating brand loyalty"]
+    },
+    {
+      "id": "p2_crowded_place_went_to",
+      "topic": "Places & Experiences",
+      "category": "Places & Buildings",
+      "difficulty": "Medium",
+      "coreFocus": ["Festival crowds", "Sensory overload", "Electrifying communal excitement"]
+    },
+    {
+      "id": "p2_activity_waste_of_time",
+      "topic": "Habits & Time",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Doom-scrolling algorithms", "Dopamine traps", "Sleep disruption"]
+    },
+    {
+      "id": "p2_older_person_admire",
+      "topic": "People & Role Models",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Fount of wisdom", "Weathering historical storms", "Moral inspiration"]
+    },
+    {
+      "id": "p2_short_trip_dislike",
+      "topic": "Travel & Commute",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Daily rush-hour commute", "Bumper-to-bumper traffic", "Urban exhaust fumes"]
+    },
+    {
+      "id": "p2_noisy_place_been_to",
+      "topic": "Places & Environment",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Wholesale wet markets", "Sensory overload", "Hustle and bustle of trade"]
+    },
+    {
+      "id": "p2_change_made_recently",
+      "topic": "Lifestyle & Habits",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Home-cooking habit", "Cutting processed food", "Physical wellness improvements"]
+    },
+    {
+      "id": "p2_changed_important_opinion",
+      "topic": "Psychology & Perspectives",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Hard",
+      "coreFocus": ["Challenging prior assumptions", "Intellectual humility", "Valuing non-linear career paths"]
+    },
+    {
+      "id": "p2_law_environmental_protection",
+      "topic": "Society & Environment",
+      "category": "Objects, Media & Society",
+      "difficulty": "Hard",
+      "coreFocus": ["Waste segregation legislation", "Deterrent fines", "Ecological preservation"]
+    },
+    {
+      "id": "p2_long_term_goal_ambition",
+      "topic": "Ambition & Future",
+      "category": "Objects, Media & Society",
+      "difficulty": "Medium",
+      "coreFocus": ["Overseas master's scholarships", "Milestone roadmap", "Career breakthrough"]
+    },
+    {
+      "id": "p2_message_email_no_reply",
+      "topic": "Communication & Technology",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Ghosting / Inbox backlog", "Anxious anticipation", "Email etiquette"]
+    },
+    {
+      "id": "p2_story_book_animals",
+      "topic": "Literature & Animals",
+      "category": "Objects, Media & Society",
+      "difficulty": "Medium",
+      "coreFocus": ["Anthropomorphic characters", "Dế Mèn phiêu lưu ký", "Allegorical life lessons"]
+    },
+    {
+      "id": "p2_advertisement_famous_person",
+      "topic": "Media & Marketing",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Celebrity brand ambassadors", "Cinematic commercials", "Skepticism of marketing hype"]
+    },
+    {
+      "id": "p2_travel_recommend_others",
+      "topic": "Travel & Tourism",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Ha Giang motorbike loop", "Majestic mountain passes", "Ethnic minority hospitality"]
+    },
+    {
+      "id": "p2_challenging_tech_problem",
+      "topic": "Technology & Problem Solving",
+      "category": "Objects, Media & Society",
+      "difficulty": "Medium",
+      "coreFocus": ["System crashes before deadlines", "Bootable recovery drives", "Technical troubleshooting"]
+    },
+    {
+      "id": "p2_person_good_at_languages",
+      "topic": "People & Education",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Polyglots", "Language immersion techniques", "Discipline in daily vocabulary retention"]
+    },
+    {
+      "id": "p2_special_food_occasions",
+      "topic": "Food & Culture",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Square sticky rice cake (Bánh Chưng)", "Tet holiday customs", "Ancestral veneration"]
+    },
+    {
+      "id": "p2_live_sports_event_watched",
+      "topic": "Sports & Entertainment",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["My Dinh football final", "Stadium roar", "Collective patriotic excitement"]
+    },
+    {
+      "id": "p2_career_in_medical_field",
+      "topic": "People & Careers",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Pediatric medicine", "Hippocratic ideals", "Sacrifice during grueling studies"]
+    },
+    {
+      "id": "p2_worked_in_a_group",
+      "topic": "Teamwork & Academics",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Clashing personalities", "KPI task allocation", "Synergy in student competitions"]
+    },
+    {
+      "id": "p2_person_successful_business",
+      "topic": "People & Business",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Minimalist local brands", "Niche e-commerce", "Entrepreneurial agility"]
+    },
+    {
+      "id": "p2_person_loves_growing_plants",
+      "topic": "People & Hobbies",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Green thumb", "Rooftop hydroponics", "Gardening as therapeutic relief"]
+    },
+    {
+      "id": "p2_interesting_video",
+      "topic": "Media & Technology",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Kurzgesagt science essays", "Cosmic perspectives", "Educational animated storytelling"]
+    },
+    {
+      "id": "p2_tall_building_like_dislike",
+      "topic": "Architecture & Cities",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Landmark 81", "Bamboo-inspired engineering", "City skyline panorama"]
+    },
+    {
+      "id": "p2_boring_place_been_to",
+      "topic": "Places & Experiences",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Dilapidated transit hubs", "Extended travel delays", "Absence of amenities"]
+    },
+    {
+      "id": "p2_plan_had_to_change",
+      "topic": "Experiences & Flexibility",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Camping spoiled by downpours", "Spontaneous indoor hotpot", "Adapting with humor"]
+    },
+    {
+      "id": "p2_new_law_introduce",
+      "topic": "Society & Governance",
+      "category": "Objects, Media & Society",
+      "difficulty": "Hard",
+      "coreFocus": ["Honking regulations", "Urban tranquility", "Civic mindfulness"]
+    },
+    {
+      "id": "p2_friend_from_childhood",
+      "topic": "People & Friendship",
+      "category": "People & Role Models",
+      "difficulty": "Easy",
+      "coreFocus": ["Desk-mate friendship", "Innocent adventures", "Enduring trust through the years"]
+    },
+    {
+      "id": "p2_stuck_in_traffic_jam",
+      "topic": "Transport & Experiences",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Holiday expressway gridlock", "Honking chorus", "Coping with helpless frustration"]
+    },
+    {
+      "id": "p2_special_day_out_little_money",
+      "topic": "Leisure & Budget",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["Botanical park picnics", "Homemade sandwiches", "Priceless bonding over costly outings"]
+    },
+    {
+      "id": "p2_organized_happy_event",
+      "topic": "Events & Leadership",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Surprise 50th birthday", "Secret video tributes", "Flawless logistical coordination"]
+    },
+    {
+      "id": "p2_special_cake_received",
+      "topic": "Gifts & Celebrations",
+      "category": "Objects, Media & Society",
+      "difficulty": "Easy",
+      "coreFocus": ["Handmade birthday cakes", "Inside-joke decorations", "Warmth in dorm life"]
+    },
+    {
+      "id": "p2_thing_did_to_learn_language",
+      "topic": "Learning & Languages",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Medium",
+      "coreFocus": ["Sitcom shadowing drills", "Breaking through fluency plateaus", "Natural rhythm acquisition"]
+    },
+    {
+      "id": "p2_time_got_up_early",
+      "topic": "Daily Routine & Experiences",
+      "category": "Events & Personal Experiences",
+      "difficulty": "Easy",
+      "coreFocus": ["4:00 AM airport rush", "Catching the sunrise", "Dew-kissed peacefulness"]
+    },
+    {
+      "id": "p2_local_news_people_interested",
+      "topic": "Media & Society",
+      "category": "Objects, Media & Society",
+      "difficulty": "Medium",
+      "coreFocus": ["Metro line launch", "Easing chronic congestion", "Modernizing urban transport"]
+    },
+    {
+      "id": "p2_environmental_law_country_introduce",
+      "topic": "Environment & Law",
+      "category": "Objects, Media & Society",
+      "difficulty": "Hard",
+      "coreFocus": ["Banning plastic bags", "Curbing microplastics", "Protecting landfill capacity"]
+    },
+    {
+      "id": "p2_home_like_visit_not_live",
+      "topic": "Housing & Architecture",
+      "category": "Places & Buildings",
+      "difficulty": "Medium",
+      "coreFocus": ["Traditional timber courtyard homes", "Rural charm vs Modern amenities", "Remote work challenges"]
+    },
+    {
+      "id": "p2_important_river_lake_country",
+      "topic": "Geography & Nature",
+      "category": "Places & Buildings",
+      "difficulty": "Medium",
+      "coreFocus": ["Red River / Mekong", "Agricultural irrigation", "Cultural and historical cradle"]
+    },
+    {
+      "id": "p2_person_successful_company",
+      "topic": "People & Corporate Life",
+      "category": "People & Role Models",
+      "difficulty": "Medium",
+      "coreFocus": ["Tech multinationals", "Product architecture", "Employee-first organizational cultures"]
+    },
+    {
+      "id": "p2_place_visit_free_time",
+      "topic": "Leisure & Lifestyle",
+      "category": "Places & Buildings",
+      "difficulty": "Easy",
+      "coreFocus": ["Heritage alleyway bookstores", "Acoustic tranquility", "Unplugged reflective reading"]
+    }
+  ]
+}
