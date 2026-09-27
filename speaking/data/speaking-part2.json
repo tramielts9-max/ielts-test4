@@ -1,6 +1,6 @@
 [
   {
-    "id": "p2_time_management",
+    "id": "p2_time_saving_change",
     "topic": "Time Management",
     "title": "[Part 2] Describe a way/change that helps you save a lot of time",
     "questions": [
@@ -11,9 +11,1583 @@
     ],
     "fullPromptText": "Describe a way/change that helps you save a lot of time.\nYou should say:\n- What it is\n- How you implement it\n- How difficult it is\nAnd explain how you feel about the way/change.",
     "guide": {
-      "keyVocab": ["Time audit (rà soát thời gian)", "Pomodoro technique (phương pháp quả cà chua)", "Procrastination (sự trì hoãn)", "Streamline workflow (tối ưu hóa quy trình làm việc)"],
-      "suggestedIdeas": "Mô tả một phương pháp cụ thể như lập To-do list buổi sáng, tắt thông báo điện thoại hoặc áp dụng Time-blocking.",
-      "sampleOutline": "- Introduction: Adopting the Pomodoro Technique & notification blocker.\n- Implementation: 25-min sprint, 5-min rest.\n- Difficulty: Fighting the urge to check social media during initial days.\n- Feelings: Liberating, remarkably enhanced personal efficiency."
+      "keyVocab": [
+        "Time audit (rà soát thời gian)",
+        "Pomodoro technique (phương pháp tập trung quả cà chua)",
+        "Procrastination (thói quen trì hoãn)",
+        "Streamline workflow (tối ưu hóa quy trình làm việc)",
+        "Guilt-free downtime (thời gian nghỉ ngơi thư thái không áy náy)"
+      ],
+      "suggestedIdeas": "Kể về việc áp dụng Time-blocking, dùng app chặn mạng xã hội trong giờ làm hoặc chuẩn bị đồ từ tối hôm trước.",
+      "sampleOutline": "- What: Adopting digital time-blocking and turning off phone notifications during work hours.\n- How: Allocate rigid 45-minute focus sprints followed by 10-minute breaks.\n- Difficulty: Tremendous FOMO (fear of missing out) and habit of mindless scrolling at first.\n- Feelings: Truly liberating, remarkably heightened productivity and peace of mind."
+    }
+  },
+  {
+    "id": "p2_lost_something_in_public",
+    "topic": "Experiences",
+    "title": "[Part 2] Describe an occasion that you lost something in public",
+    "questions": [
+      "What you lost",
+      "When and where you lost it",
+      "What you did to find it",
+      "And explain how you felt about it"
+    ],
+    "fullPromptText": "Describe an occasion that you lost something in public.\nYou should say:\n- What you lost\n- When and where you lost it\n- What you did to find it\nAnd explain how you felt about it.",
+    "guide": {
+      "keyVocab": [
+        "Misplace a prized possession (thất lạc một món đồ quý giá)",
+        "Sheer panic set in (cơn hoảng loạn tột cùng ập đến)",
+        "Retrace my steps (đi ngược lại từng bước để tìm)",
+        "Good Samaritan (người tốt bụng qua đường sẵn lòng giúp đỡ)",
+        "Heave a sigh of relief (thở phào nhẹ nhõm)"
+      ],
+      "suggestedIdeas": "Kể việc để quên ví tiền, điện thoại thông minh hoặc chùm chìa khóa tại quán cà phê hay trên xe buýt công cộng.",
+      "sampleOutline": "- What: My smartphone containing vital banking apps and unbacked-up family photos.\n- When & Where: Six months ago in a bustling downtown coffee shop.\n- Actions: Retraced steps in frenzy, borrowed friend's phone to call, approached the counter staff.\n- Feelings: Heart-stopping terror followed by immense gratitude when the barista handed it back."
+    }
+  },
+  {
+    "id": "p2_person_met_once",
+    "topic": "People",
+    "title": "[Part 2] Describe a person you only met once recently and want to know more about",
+    "questions": [
+      "Who he/she is",
+      "When you met him/her",
+      "Why you want to know more about him/her",
+      "And explain how you feel about him/her"
+    ],
+    "fullPromptText": "Describe a person you only met once recently and want to know more about.\nYou should say:\n- Who he/she is\n- When you met him/her\n- Why you want to know more about him/her\nAnd explain how you feel about him/her.",
+    "guide": {
+      "keyVocab": [
+        "Charismatic presence (thần thái cuốn hút)",
+        "Cross paths serendipitously (tình cờ chạm mặt tao ngộ)",
+        "Eloquent orator (người nói chuyện lưu loát truyền cảm)",
+        "Fascinating worldview (thế giới quan thú vị)",
+        "Leave an indelible impression (để lại ấn tượng sâu đậm khó phai)"
+      ],
+      "suggestedIdeas": "Một diễn giả tại hội thảo, một du khách ba lô trò chuyện trên chuyến tàu, hoặc một người bạn của người quen tại bữa tiệc.",
+      "sampleOutline": "- Who: A freelance documentary photographer named Liam.\n- When: Met during an environmental photo exhibition two weeks ago.\n- Why: Intrigued by his thrilling expeditions across remote Southeast Asian tribes.\n- Feelings: Deeply inspired by his courage to break away from conventional corporate life."
+    }
+  },
+  {
+    "id": "p2_course_impressed",
+    "topic": "Education",
+    "title": "[Part 2] Describe a course that impressed you a lot",
+    "questions": [
+      "What the course was about",
+      "Where you took the course",
+      "What you did during the course",
+      "And explain why it impressed you a lot"
+    ],
+    "fullPromptText": "Describe a course that impressed you a lot.\nYou should say:\n- What the course was about\n- Where you took the course\n- What you did during the course\nAnd explain why it impressed you a lot.",
+    "guide": {
+      "keyVocab": [
+        "Eye-opening curriculum (giáo trình mở mang tầm mắt)",
+        "Hands-on practical workshops (các buổi thực hành thực tế)",
+        "Passionate instructor (giảng viên đầy nhiệt huyết)",
+        "Critical thinking skills (kỹ năng tư duy phản biện)",
+        "Transformative learning experience (trải nghiệm học tập mang tính bước ngoặt)"
+      ],
+      "suggestedIdeas": "Một khóa học kỹ năng mềm (thuyết trình, tư duy phản biện), khóa học lập trình cơ bản hoặc một lớp nhiếp ảnh/thiết kế đồ họa.",
+      "sampleOutline": "- What: A 6-week intensive course on 'Data Storytelling & Infographic Design'.\n- Where: An accredited online platform (Coursera / university academy).\n- Activities: Dissected real-world case studies, designed visual charts, received live critiques.\n- Why Impressed: Shifted my perspective from dry numbers to compelling visual narratives."
+    }
+  },
+  {
+    "id": "p2_gift_for_friend",
+    "topic": "Gifts & Relationships",
+    "title": "[Part 2] Describe a gift you would like to buy for your friend",
+    "questions": [
+      "How you knew your friend",
+      "How long you have known him/her",
+      "How you would choose a gift for him/her",
+      "And explain why you would choose that gift for him/her"
+    ],
+    "fullPromptText": "Describe a gift you would like to buy for your friend.\nYou should say:\n- How you knew your friend\n- How long you have known him/her\n- How you would choose a gift for him/her\nAnd explain why you would choose that gift for him/her.",
+    "guide": {
+      "keyVocab": [
+        "Thoughtful gesture (cử chỉ chu đáo)",
+        "Cater to someone's passions (đáp ứng đúng sở thích đam mê)",
+        "Ergonomic mechanical keyboard (bàn phím cơ công thái học)",
+        "Token of appreciation (món quà biểu thị sự trân trọng)",
+        "Inseparable bond (mối quan hệ gắn bó khăng khít)"
+      ],
+      "suggestedIdeas": "Chọn món quà thiết thực và mang tính cá nhân hóa (tai nghe chống ồn, máy đọc sách Kindle, hoặc bàn phím cơ xịn).",
+      "sampleOutline": "- Friend: Minh, my high school desk-mate known for over 7 years.\n- How chosen: Discovered his current keyboard suffers from sticky keys while coding late at night.\n- What: A high-end custom mechanical keyboard with silent tactile switches.\n- Why: Practical, protects his wrists, and constantly reminds him of our camaraderie."
+    }
+  },
+  {
+    "id": "p2_book_made_happy",
+    "topic": "Books & Leisure",
+    "title": "[Part 2] Describe a book you read that made you happy",
+    "questions": [
+      "What kind of book it was",
+      "What it was about",
+      "Why you read it",
+      "And explain why it made you happy"
+    ],
+    "fullPromptText": "Describe a book you read that made you happy.\nYou should say:\n- What kind of book it was\n- What it was about\n- Why you read it\nAnd explain why it made you happy.",
+    "guide": {
+      "keyVocab": [
+        "Uplifting memoir (hồi ký ấm áp nâng đỡ tâm hồn)",
+        "Page-turner (cuốn sách lôi cuốn đọc không dứt ra được)",
+        "Whimsical humor (sự hóm hỉnh nhẹ nhàng duyên dáng)",
+        "Therapeutic solace (sự vỗ về an ủi mang tính trị liệu)",
+        "Renewed appreciation for life (cảm giác trân trọng cuộc sống trở lại)"
+      ],
+      "suggestedIdeas": "Cuốn 'Hoàng tử bé' (The Little Prince), 'Cây chuối non đi giày xanh' của Nguyễn Nhật Ánh hoặc 'Tuesdays with Morrie'.",
+      "sampleOutline": "- What: 'The Little Prince' by Antoine de Saint-Exupéry (illustrated fable).\n- Content: A young prince exploring planets, discovering true love and friendship with a rose and fox.\n- Reason: Recommended by a confidant during a stressful exam season.\n- Why happy: Reminded me of childhood purity and the truth that 'what is essential is invisible to the eye'."
+    }
+  },
+  {
+    "id": "p2_helped_health_fitness",
+    "topic": "Health & People",
+    "title": "[Part 2] Describe a person whose health and fitness you have helped to improve",
+    "questions": [
+      "Who this person was",
+      "Why you helped him/her",
+      "How you helped him/her",
+      "And explain whether it was easy or difficult"
+    ],
+    "fullPromptText": "Describe a person whose health and fitness you have helped to improve.\nYou should say:\n- Who this person was\n- Why you helped him/her\n- How you helped him/her\nAnd explain whether it was easy or difficult.",
+    "guide": {
+      "keyVocab": [
+        "Sedentary lifestyle (lối sống thụ động lười vận động)",
+        "Cardiovascular stamina (sức bền tim mạch)",
+        "Nutritional overhaul (cuộc cách mạng thay đổi chế độ dinh dưỡng)",
+        "Accountability partner (bạn đồng hành đôn đốc kỷ luật)",
+        "Uphill battle (cuộc chiến đầy cam go thử thách)"
+      ],
+      "suggestedIdeas": "Giúp đỡ bố mẹ hoặc bạn cùng phòng giảm cân, tập chạy bộ 5km hoặc ăn kiêng giảm dầu mỡ đường ngọt.",
+      "sampleOutline": "- Who: My younger brother, a couch potato addicted to gaming and junk food.\n- Why: Noticed his rapid weight gain and frequent breathlessness climbing stairs.\n- How: Became his running buddy every morning, planned balanced high-protein meals.\n- Difficulty: An uphill battle initially to pull him out of bed; rewarding once visible gains emerged."
+    }
+  },
+  {
+    "id": "p2_near_natural_place",
+    "topic": "Nature & Places",
+    "title": "[Part 2] Describe somewhere near a natural place that you have been to",
+    "questions": [
+      "Where this place is",
+      "Who you went there with",
+      "Why you went there",
+      "And explain how you feel about the place"
+    ],
+    "fullPromptText": "Describe somewhere near a natural place that you have been to.\nYou should say:\n- Where this place is\n- Who you went there with\n- Why you went there\nAnd explain how you feel about the place.",
+    "guide": {
+      "keyVocab": [
+        "Pristine wilderness (vùng thiên nhiên hoang sơ chưa bị khai phá)",
+        "Breathtaking scenery (phong cảnh đẹp nghẹt thở)",
+        "Escape the concrete jungle (trốn khỏi khu rừng bê tông ngột ngạt)",
+        "Rustling leaves and cascading waterfalls (tiếng lá xào xạc và thác nước róc rách)",
+        "Sense of tranquility (cảm giác thanh tịnh bình yên)"
+      ],
+      "suggestedIdeas": "Một homestay hoặc khu cắm trại ven rừng thông Đà Lạt, Vườn quốc gia Ba Vì, hoặc bờ suối ở Pù Luông.",
+      "sampleOutline": "- Where: A rustic wooden lodge nestled on the fringes of Ba Vi National Park.\n- Who: A close group of university peers.\n- Reason: To decompress after graduating and unplug from digital screens.\n- Feelings: Rejuvenated; waking up to morning mist and birdsong melted all anxiety away."
+    }
+  },
+  {
+    "id": "p2_special_event_party",
+    "topic": "Events & Parties",
+    "title": "[Part 2] Describe a party for a special event that impressed you a lot",
+    "questions": [
+      "When and where it was held",
+      "What the party was held for",
+      "How many people attended it",
+      "And explain why it impressed you a lot"
+    ],
+    "fullPromptText": "Describe a party for a special event that impressed you a lot.\nYou should say:\n- When and where it was held\n- What the party was held for\n- How many people attended it\nAnd explain why it impressed you a lot.",
+    "guide": {
+      "keyVocab": [
+        "Festive ambiance (bầu không khí tưng bừng lễ hội)",
+        "Golden wedding anniversary (kỷ niệm đám cưới vàng 50 năm)",
+        "Heartwarming tribute video (video tri ân ấm lòng xúc động)",
+        "Meticulous preparation (sự chuẩn bị tỉ mỉ chu đáo)",
+        "Cherished milestone (cột mốc đáng trân trọng)"
+      ],
+      "suggestedIdeas": "Lễ kỷ niệm ngày cưới của ông bà, tiệc mừng đỗ đại học bất ngờ của bản thân hoặc tiệc tất niên chia tay một người bạn đi du học.",
+      "sampleOutline": "- When & Where: Last summer at an open-air garden restaurant.\n- Event: My grandparents' 50th Golden Wedding Anniversary.\n- Attendees: Around 60 family members and long-time neighborhood friends.\n- Why Impressed: Nostalgic photo reels and emotional vows from my grandparents; pure familial love."
+    }
+  },
+  {
+    "id": "p2_public_building_enjoy",
+    "topic": "Architecture & Places",
+    "title": "[Part 2] Describe a public building you enjoy visiting (e.g. a library, a shopping mall, etc.)",
+    "questions": [
+      "Where it is",
+      "How you knew it",
+      "What it looks like",
+      "And explain why you enjoy visiting it"
+    ],
+    "fullPromptText": "Describe a public building you enjoy visiting (e.g. a library, a shopping mall, etc.).\nYou should say:\n- Where it is\n- How you knew it\n- What it looks like\nAnd explain why you enjoy visiting it.",
+    "guide": {
+      "keyVocab": [
+        "Architectural marvel (kỳ quan kiến trúc ấn tượng)",
+        "Sprawling atrium (sảnh trung tâm cao rộng thoáng đãng)",
+        "Abundant natural illumination (nguồn ánh sáng tự nhiên dồi dào)",
+        "Acoustic insulation (hệ thống cách âm chuẩn chỉ)",
+        "Hub of communal knowledge (trung tâm tri thức cộng đồng)"
+      ],
+      "suggestedIdeas": "Thư viện Quốc gia (National Library), Bảo tàng Lịch sử, hoặc một TTTM thiết kế xanh độc đáo.",
+      "sampleOutline": "- Where: The National Library located in the historic quarter of the city.\n- How knew: Discovered during high school while researching for an essay contest.\n- Looks: French colonial facade blended with modern glass extensions and courtyards.\n- Why enjoy: Absolute silence, smell of vintage books, ideal for deep focus."
+    }
+  },
+  {
+    "id": "p2_least_favourite_movie",
+    "topic": "Entertainment",
+    "title": "[Part 2] Describe your least favourite movie",
+    "questions": [
+      "When you watched it",
+      "Where you watched it",
+      "What it was about",
+      "And explain why it’s your least favourite movie"
+    ],
+    "fullPromptText": "Describe your least favourite movie.\nYou should say:\n- When you watched it\n- Where you watched it\n- What it was about\nAnd explain why it’s your least favourite movie.",
+    "guide": {
+      "keyVocab": [
+        "Overhyped blockbuster (bom tấn bị thổi phồng quá mức)",
+        "Plot holes galore (đầy rẫy lỗ hổng kịch bản phi lý)",
+        "Cringe-worthy dialogue (lời thoại sến súa gượng gạo)",
+        "Subpar CGI effects (kỹ xảo đồ họa sơ sài rẻ tiền)",
+        "Total waste of time and money (sự lãng phí tiền bạc và thời gian)"
+      ],
+      "suggestedIdeas": "Một bộ phim viễn tưởng hoặc hành động được quảng bá rầm rộ nhưng nội dung rỗng tuếch, diễn xuất đơ cứng.",
+      "sampleOutline": "- When & Where: Last December at an IMAX theater with high expectations.\n- Content: A generic superhero sequel with chaotic battles and zero plot logic.\n- Why disliked: Wooden acting, glaring continuity flaws, completely squandered the budget."
+    }
+  },
+  {
+    "id": "p2_person_taught_new_skill",
+    "topic": "People & Learning",
+    "title": "[Part 2] Describe a person who taught you a new skill",
+    "questions": [
+      "Who this person was",
+      "What the skill was",
+      "How you learned it",
+      "And explain how you felt about this person"
+    ],
+    "fullPromptText": "Describe a person who taught you a new skill.\nYou should say:\n- Who this person was\n- What the skill was\n- How you learned it\nAnd explain how you felt about this person.",
+    "guide": {
+      "keyVocab": [
+        "Patient mentor (người chỉ dẫn đầy nhẫn nại)",
+        "Break down complex steps (chia nhỏ các bước phức tạp)",
+        "Hands-on demonstration (làm mẫu trực quan thực tế)",
+        "Instill self-belief (truyền cho niềm tin vào bản thân)",
+        "Profound gratitude (lòng biết ơn sâu sắc)"
+      ],
+      "suggestedIdeas": "Bố dạy đi xe đạp, mẹ dạy nấu ăn, hoặc một người bạn đại học kiên nhẫn hướng dẫn kỹ năng dựng video/lập trình.",
+      "sampleOutline": "- Who: My cousin Huy, a professional software developer.\n- Skill: Basic video editing and color grading on Premiere Pro.\n- How: Structured step-by-step sessions, assigned small fun clips to edit.\n- Feelings: Utmost respect for his unwavering patience; inspired me to keep experimenting."
+    }
+  },
+  {
+    "id": "p2_person_loves_history",
+    "topic": "People & History",
+    "title": "[Part 2] Describe a person who learns history and loves history",
+    "questions": [
+      "Who this person is",
+      "How he/she learns history",
+      "Why he/she loves history",
+      "And explain how you feel about him/her"
+    ],
+    "fullPromptText": "Describe a person who learns history and loves history.\nYou should say:\n- Who this person is\n- How he/she learns history\n- Why he/she loves history\nAnd explain how you feel about him/her.",
+    "guide": {
+      "keyVocab": [
+        "History buff / Aficionado (người cực kỳ đam mê lịch sử)",
+        "Living encyclopedia (cuốn bách khoa toàn thư sống)",
+        "Devour historical chronicles (ngấu nghiến đọc các biên niên sử)",
+        "Unravel the past (giải mã những bí ẩn của quá khứ)",
+        "Enthralling storytelling (khả năng kể chuyện cuốn hút mê say)"
+      ],
+      "suggestedIdeas": "Một người ông, thầy giáo dạy sử cấp 3, hoặc một người bạn thân hay sưu tập sách và đồ cổ chiến tranh.",
+      "sampleOutline": "- Who: My grandfather, a retired military veteran.\n- How: Reads antique history memoirs, visits battlefields, watches wartime archives.\n- Why: Believes understanding the past gives clarity to future societal evolutions.\n- Feelings: Admire his encyclopedic knowledge and captivating ways of retelling folklore."
+    }
+  },
+  {
+    "id": "p2_enjoyable_evening_friends",
+    "topic": "Leisure & Friends",
+    "title": "[Part 2] Describe an enjoyable evening you had with your friends",
+    "questions": [
+      "When and where it was",
+      "What you did",
+      "Who you spent the evening with",
+      "And explain why it was enjoyable"
+    ],
+    "fullPromptText": "Describe an enjoyable evening you had with your friends.\nYou should say:\n- When and where it was\n- What you did\n- Who you spent the evening with\nAnd explain why it was enjoyable.",
+    "guide": {
+      "keyVocab": [
+        "Rooftop BBQ gathering (buổi tiệc nướng BBQ trên sân thượng)",
+        "Bust a gut laughing (cười đến thắt cả ruột)",
+        "Soul-stirring conversations (những cuộc chuyện trò lay động tâm can)",
+        "Unwind without inhibitions (thư giãn hết mình không cần giữ kẽ)",
+        "Cherished memory (kỷ niệm khắc ghi sâu đậm)"
+      ],
+      "suggestedIdeas": "Một đêm nướng thịt trên sân thượng nhà bạn, cùng nhau chơi ma sói/board game và tâm sự chuyện tương lai đến khuya.",
+      "sampleOutline": "- When & Where: Last New Year's Eve on my friend's cozy rooftop.\n- Who: Trio of high school closest buddies.\n- What: Grilled marinated beef skewers, played acoustic guitar, reminisced about school days.\n- Why enjoyable: Genuine warmth, hilarious banter, and feeling completely understood."
+    }
+  },
+  {
+    "id": "p2_person_good_at_handicrafts",
+    "topic": "People & Crafts",
+    "title": "[Part 2] Describe a person who is good at making things by hand",
+    "questions": [
+      "Who this person is",
+      "What he/she makes",
+      "What materials or technologies he/she uses",
+      "And why you think this person is good at making things by hand"
+    ],
+    "fullPromptText": "Describe a person who is good at making things by hand.\nYou should say:\n- Who this person is\n- What he/she makes\n- What materials or technologies he/she uses\nAnd why you think this person is good at making things by hand.",
+    "guide": {
+      "keyVocab": [
+        "Artisan craftsmanship (tay nghề thủ công của nghệ nhân)",
+        "Intricate precision (sự chuẩn xác tỉ mỉ đến từng chi tiết nhỏ)",
+        "Upcycled materials (vật liệu tái chế sáng tạo)",
+        "Dexterous hands (đôi bàn tay khéo léo tài hoa)",
+        "Bespoke creations (những sản phẩm thủ công độc bản đặt may/làm riêng)"
+      ],
+      "suggestedIdeas": "Người mẹ khéo tay đan len, hoặc người bạn làm đồ da handmade (ví, thắt lưng) hoặc làm gốm sứ.",
+      "sampleOutline": "- Who: My aunt Mai, a self-taught ceramic and leather crafter.\n- What: Hand-stitched leather wallets and bespoke ceramic tea cups.\n- Materials: Genuine veg-tan leather, clay, non-toxic glazes, precise beveling knives.\n- Why good: Meticulous attention to detail, remarkable patience, and distinct aesthetic sense."
+    }
+  },
+  {
+    "id": "p2_uninteresting_conversation_listened",
+    "topic": "Social Interactions",
+    "title": "[Part 2] Describe a time when someone talked about something you were not interested in but you kept listening",
+    "questions": [
+      "Who the person was",
+      "What he/she talked about",
+      "Why you kept listening",
+      "And explain how you felt about the experience"
+    ],
+    "fullPromptText": "Describe a time when someone talked about something you were not interested in but you kept listening.\nYou should say:\n- Who the person was\n- What he/she talked about\n- Why you kept listening\nAnd explain how you felt about the experience.",
+    "guide": {
+      "keyVocab": [
+        "Monopolize the conversation (độc chiếm cuộc trò chuyện)",
+        "Cryptocurrency trading (giao dịch tiền mã hóa số)",
+        "Feigned politeness (sự lịch sự giả vờ để giữ hòa khí)",
+        "Nod in courteous agreement (gật đầu tán thành một cách lịch thiệp)",
+        "Test of social patience (thử thách lòng kiên nhẫn xã giao)"
+      ],
+      "suggestedIdeas": "Một đồng nghiệp hoặc họ hàng nói say sưa về chủ đề bạn không hề quan tâm (tiền ảo, câu cá, cơ chế xe hơi) trong một bữa tiệc.",
+      "sampleOutline": "- Who: An enthusiastic uncle during a family reunion dinner.\n- Topic: Intricate mechanics of vintage automobile carburetors and engine repairs.\n- Why kept listening: Out of deep respect for an elder; didn't want to deflate his sheer excitement.\n- Feelings: Mentally drained, but proud of maintaining etiquette and empathy."
+    }
+  },
+  {
+    "id": "p2_person_likes_taking_photos",
+    "topic": "People & Photography",
+    "title": "[Part 2] Describe a person you know who really likes taking photos",
+    "questions": [
+      "Who the person is",
+      "When and how you got to know him/her",
+      "Where he/she takes photos",
+      "And explain how you feel about him/her"
+    ],
+    "fullPromptText": "Describe a person you know who really likes taking photos.\nYou should say:\n- Who the person is\n- When and how you got to know him/her\n- Where he/she takes photos\nAnd explain how you feel about him/her.",
+    "guide": {
+      "keyVocab": [
+        "Shutterbug / Photography enthusiast (người mê chụp ảnh cuồng nhiệt)",
+        "Keen eye for composition (con mắt tinh tường về bố cục hình ảnh)",
+        "Capture fleeting moments (bắt trọn những khoảnh khắc vụt qua)",
+        "Golden hour lighting (ánh sáng vàng giờ vàng hoàng hôn/bình minh)",
+        "Preserve visual archives (lưu giữ kho tư liệu hình ảnh)"
+      ],
+      "suggestedIdeas": "Một cô bạn thân luôn chụp ảnh sống ảo mỗi khi đi cafe, hoặc một người anh đam mê nhiếp ảnh đường phố (street photography).",
+      "sampleOutline": "- Who: My best friend Lan, an avid smartphone & film camera hobbyist.\n- Known: Met in university photography club 3 years ago.\n- Where: Anywhere from mundane street alleys to panoramic mountain summits.\n- Feelings: Impressed by her talent to turn ordinary everyday scenes into cinematic frames."
+    }
+  },
+  {
+    "id": "p2_skill_learned_in_childhood",
+    "topic": "Skills & Childhood",
+    "title": "[Part 2] Describe a new skill you learned when you were a child",
+    "questions": [
+      "What the skill was",
+      "Who taught you this skill",
+      "How you learned it",
+      "And explain how you felt about learning the skill"
+    ],
+    "fullPromptText": "Describe a new skill you learned when you were a child.\nYou should say:\n- What the skill was\n- Who taught you this skill\n- How you learned it\nAnd explain how you felt about learning the skill.",
+    "guide": {
+      "keyVocab": [
+        "Essential survival skill (kỹ năng sinh tồn thiết yếu)",
+        "Overcome hydrophobia (vượt qua nỗi sợ nước)",
+        "Step-by-step guidance (hướng dẫn từng bước một)",
+        "Rite of passage (cột mốc đánh dấu sự trưởng thành)",
+        "Exhilarating sense of triumph (cảm giác đắc thắng vui sướng tột cùng)"
+      ],
+      "suggestedIdeas": "Kỹ năng bơi lội (swimming), đi xe đạp 2 bánh (cycling), hoặc chơi cờ vua (chess).",
+      "sampleOutline": "- Skill: Swimming (breaststroke and freestyle).\n- Teacher: My father at the local municipal pool during summer break.\n- How: Practiced breath-holding with kickboards, then stroking techniques.\n- Feelings: Terrified initially, but immensely proud once floating effortlessly."
+    }
+  },
+  {
+    "id": "p2_saved_money_special_purchase",
+    "topic": "Finance & Purchases",
+    "title": "[Part 2] Describe a time when you saved money to buy something special",
+    "questions": [
+      "What the special thing was",
+      "Why you wanted to buy it",
+      "How you saved money for it",
+      "And explain how you felt after buying it"
+    ],
+    "fullPromptText": "Describe a time when you saved money to buy something special.\nYou should say:\n- What the special thing was\n- Why you wanted to buy it\n- How you saved money for it\nAnd explain how you felt after buying it.",
+    "guide": {
+      "keyVocab": [
+        "Frugal spending habits (thói quen chi tiêu tằn tiện tiết kiệm)",
+        "Delayed gratification (sự trì hoãn sung sướng tức thời)",
+        "Pinch pennies (chắt bóp từng đồng từng cắc)",
+        "Hard-earned reward (phần thưởng xứng đáng do mồ hôi công sức làm ra)",
+        "Sense of financial independence (cảm giác tự chủ về tài chính)"
+      ],
+      "suggestedIdeas": "Tiết kiệm tiền làm thêm hoặc nhịn ăn sáng để mua laptop phục vụ học tập, máy ảnh cơ hoặc một chuyến du lịch tự túc.",
+      "sampleOutline": "- What: A high-performance laptop for my university engineering major.\n- Why: My ancient desktop kept crashing during complex rendering tasks.\n- How: Worked part-time as a tutor, cut down on milk teas, saved strictly for 6 months.\n- Feelings: Immensely satisfying holding the box; appreciated the true value of hard-earned cash."
+    }
+  },
+  {
+    "id": "p2_natural_place_enjoy_visiting",
+    "topic": "Nature & Urban Life",
+    "title": "[Part 2] Describe a natural place in your city that you enjoy visiting",
+    "questions": [
+      "Where it is",
+      "What it is like",
+      "How often you go there",
+      "Who you often go there with",
+      "And explain why you enjoy visiting there"
+    ],
+    "fullPromptText": "Describe a natural place in your city that you enjoy visiting.\nYou should say:\n- Where it is\n- What it is like\n- How often you go there and who with\nAnd explain why you enjoy visiting there.",
+    "guide": {
+      "keyVocab": [
+        "Urban breathing space (khoảng thở trong lòng đô thị)",
+        "Lush botanical canopy (tán cây thực vật xanh mướt)",
+        "Reflective lake surface (mặt hồ phẳng lặng phản chiếu ánh nắng)",
+        "Recharge mental batteries (nạp lại năng lượng tinh thần)",
+        "Oasis amidst chaotic traffic (ốc đảo xanh bình yên giữa dòng xe cộ hỗn độn)"
+      ],
+      "suggestedIdeas": "Hồ Tây (West Lake - Hà Nội), Công viên Bách Thảo, Thảo Cầm Viên hoặc Công viên Gia Định (TP.HCM).",
+      "sampleOutline": "- Where: West Lake (Hồ Tây) in Hanoi.\n- What it is like: Expansive freshwater lake bordered by willow trees and tranquil pathways.\n- Frequency & Companion: Every other weekend, cycling alone or jogging with my roommate.\n- Why enjoy: Cooling breeze, serene sunsets, instantly washes away weekday stress."
+    }
+  },
+  {
+    "id": "p2_person_very_organized",
+    "topic": "People & Habits",
+    "title": "[Part 2] Describe a person you know who is very organized",
+    "questions": [
+      "Who this person is",
+      "What this person usually does to stay organized",
+      "In what situations you have noticed this quality",
+      "And explain why you think being organized is important to him/her"
+    ],
+    "fullPromptText": "Describe a person you know who is very organized.\nYou should say:\n- Who this person is\n- What this person usually does to stay organized\n- In what situations you have noticed this quality\nAnd explain why you think being organized is important to him/her.",
+    "guide": {
+      "keyVocab": [
+        "Methodical planner (người lên kế hoạch bài bản có phương pháp)",
+        "Color-coded planner / Notion dashboard (sổ tay phân mã màu / bảng Notion)",
+        "Impeccable time management (kỹ năng quản lý thời gian hoàn hảo không tì vết)",
+        "Keep chaos at bay (ngăn ngừa sự hỗn loạn rối ren)",
+        "Epitome of efficiency (hình mẫu tiêu biểu của sự hiệu quả)"
+      ],
+      "suggestedIdeas": "Một người bạn lớp trưởng, đồng nghiệp quản lý dự án, hoặc người mẹ chu toàn việc nhà và tài chính gia đình.",
+      "sampleOutline": "- Who: My university project group leader, Thu.\n- How she stays organized: Utilizes Trello boards, sets calendar reminders with color-coded tags.\n- Situation: Coordinated our final capstone project with 5 members without missing a single milestone.\n- Why important: Balances multiple part-time jobs and studies; organization is her key to sanity."
+    }
+  },
+  {
+    "id": "p2_watched_interview_famous_person",
+    "topic": "Media & Celebrities",
+    "title": "[Part 2] Describe a time you watched a famous person being interviewed",
+    "questions": [
+      "Who the famous person was",
+      "What the interview was about",
+      "When and where you watched the interview",
+      "And explain how you felt about the interview"
+    ],
+    "fullPromptText": "Describe a time you watched a famous person being interviewed.\nYou should say:\n- Who the famous person was\n- What the interview was about\n- When and where you watched the interview\nAnd explain how you felt about the interview.",
+    "guide": {
+      "keyVocab": [
+        "Thought-provoking talk show (chương trình tọa đàm sâu sắc khơi gợi suy nghĩ)",
+        "Candid and humble demeanor (thái độ bộc trực khiêm tốn)",
+        "Vulnerability and resilience (sự trải lòng yếu đuối và nghị lực kiên cường)",
+        "Overcome career adversity (vượt qua những thăng trầm nghịch cảnh nghề nghiệp)",
+        "Glean invaluable insights (thu lượm được những góc nhìn vô giá)"
+      ],
+      "suggestedIdeas": "Cuộc phỏng vấn Bill Gates, Cristiano Ronaldo, Keanu Reeves hoặc một đạo diễn/nghệ sĩ Việt Nam trên podcast Have A Sip / Vietcetera.",
+      "sampleOutline": "- Who: Tech entrepreneur Elon Musk / Coach Park Hang-seo.\n- Content: Discussed their grueling routines, coping with brutal public scrutiny, and long-term vision.\n- When & Where: Watched on YouTube late evening on my laptop.\n- Feelings: Deeply moved by their sheer grit and grounded philosophy despite immense fame."
+    }
+  },
+  {
+    "id": "p2_happy_person_know",
+    "topic": "People & Personality",
+    "title": "[Part 2] Describe a happy person you know",
+    "questions": [
+      "Who this person is",
+      "What he/she is like",
+      "How he/she shows happiness",
+      "And explain why you think he/she is a happy person"
+    ],
+    "fullPromptText": "Describe a happy person you know.\nYou should say:\n- Who this person is\n- What he/she is like\n- How he/she shows happiness\nAnd explain why you think he/she is a happy person.",
+    "guide": {
+      "keyVocab": [
+        "Infectious optimism (tinh thần lạc quan có sức lan tỏa mạnh mẽ)",
+        "Sunny disposition (tính cách vui tươi rạng rỡ như ánh mặt trời)",
+        "Radiate positive vibes (tỏa ra nguồn năng lượng tích cực)",
+        "Contentment with simplicity (biết bằng lòng với những điều giản đơn)",
+        "Silver lining in adversity (luôn nhìn thấy tia hy vọng trong hoàn cảnh khó khăn)"
+      ],
+      "suggestedIdeas": "Một người bạn thân luôn nở nụ cười, một người dì hoặc một người hàng xóm lớn tuổi sống vui vẻ yêu đời.",
+      "sampleOutline": "- Who: Uncle Dung, a retired biology teacher.\n- What he is like: Always greets everyone with a beaming smile, never utters harsh complaints.\n- How shows: Humming melodies while tending his bonsai garden, cracking lighthearted jokes.\n- Why happy: Practices mindfulness and gratitude; unaffected by materialistic rat races."
+    }
+  },
+  {
+    "id": "p2_changed_important_decision",
+    "topic": "Experiences & Decisions",
+    "title": "[Part 2] Describe a time when you changed an important decision of yours",
+    "questions": [
+      "When you changed the decision",
+      "What the original decision was",
+      "Why you changed it",
+      "And explain how you felt about the experience"
+    ],
+    "fullPromptText": "Describe a time when you changed an important decision of yours.\nYou should say:\n- When you changed the decision\n- What the original decision was\n- Why you changed it\nAnd explain how you felt about the experience.",
+    "guide": {
+      "keyVocab": [
+        "Pivotal turning point (bước ngoặt mang tính then chốt)",
+        "Change of heart (sự thay đổi suy nghĩ/quyết định)",
+        "Follow one's true calling (đi theo tiếng gọi đam mê thực sự)",
+        "Bow down to peer pressure (nhượng bộ trước áp lực đồng trang lứa)",
+        "Blessing in disguise (trong cái rủi có cái may)"
+      ],
+      "suggestedIdeas": "Đổi nguyện vọng ngành học đại học từ Kinh tế sang Thiết kế/CNTT, hoặc hủy một chuyến đi xa để ở nhà chăm sóc người thân.",
+      "sampleOutline": "- When: Summer right before university registration.\n- Original decision: Major in Finance solely due to high starting salary expectations.\n- Why changed: Realized my absolute lack of passion for numbers; switched to Graphic Design.\n- Feelings: Nervous about parental backlash, but ultimately liberated and energized."
+    }
+  },
+  {
+    "id": "p2_famous_person_local_area",
+    "topic": "People & Society",
+    "title": "[Part 2] Describe a famous person in your local area",
+    "questions": [
+      "Who this person is",
+      "What he/she has done",
+      "Why he/she is popular",
+      "And explain how you feel about this person"
+    ],
+    "fullPromptText": "Describe a famous person in your local area.\nYou should say:\n- Who this person is\n- What he/she has done\n- Why he/she is popular\nAnd explain how you feel about this person.",
+    "guide": {
+      "keyVocab": [
+        "Local luminary / Philanthropist (nhân vật nổi tiếng địa phương / nhà hảo tâm)",
+        "Community pillar (trụ cột của cộng đồng)",
+        "Grassroots charity projects (các dự án từ thiện xuất phát từ cơ sở)",
+        "Household name (cái tên quen thuộc với mọi nhà)",
+        "Beacon of hope (ngọn hải đăng hy vọng)"
+      ],
+      "suggestedIdeas": "Một bác sĩ về hưu mở phòng khám từ thiện miễn phí cho người nghèo, hoặc một vận động viên trẻ đạt huy chương vàng quê bạn.",
+      "sampleOutline": "- Who: Dr. Nghia, a retired cardiologist living in my neighborhood.\n- What he did: Runs a free weekend clinic for underprivileged laborers and orphans.\n- Why popular: Selfless dedication, warm bedside manner, funded medications from his pension.\n- Feelings: Deep admiration; he exemplifies what genuine community contribution means."
+    }
+  },
+  {
+    "id": "p2_decision_happy_with_result",
+    "topic": "Experiences & Success",
+    "title": "[Part 2] Describe a time you made an important decision and were happy with the result",
+    "questions": [
+      "What the decision was",
+      "Why you made the decision",
+      "How easy it was for you to make the decision",
+      "And explain why you were happy with the result"
+    ],
+    "fullPromptText": "Describe a time you made an important decision and were happy with the result.\nYou should say:\n- What the decision was\n- Why you made the decision\n- How easy it was for you to make the decision\nAnd explain why you were happy with the result.",
+    "guide": {
+      "keyVocab": [
+        "Take a leap of faith (dũng cảm mạo hiểm bước vào thử thách mới)",
+        "Step outside comfortable confines (bước ra khỏi ranh giới an toàn quen thuộc)",
+        "Weigh the pros and cons (cân nhắc kỹ lưỡng các mặt lợi hại)",
+        "Reap rewarding dividends (gặt hái những quả ngọt xứng đáng)",
+        "Sense of accomplishment (cảm giác thành tựu mãn nguyện)"
+      ],
+      "suggestedIdeas": "Quyết định chuyển ra ở riêng tự lập, nhận một công việc thực tập thử thách, hoặc bắt đầu học IELTS nghiêm túc.",
+      "sampleOutline": "- Decision: Moving out to live independently in an apartment near university.\n- Why: To foster self-reliance, learn budgeting, and save 2 hours of daily commuting.\n- How easy: Agonizing dilemma due to fear of loneliness and household chores.\n- Why happy: Gained immense discipline, improved cooking skills, and became mature."
+    }
+  },
+  {
+    "id": "p2_person_did_difficult_successful",
+    "topic": "People & Achievement",
+    "title": "[Part 2] Describe a person you know who did something difficult and was successful",
+    "questions": [
+      "Who this person is",
+      "What difficult thing this person did",
+      "Why this person was successful",
+      "And explain how you feel about this person"
+    ],
+    "fullPromptText": "Describe a person you know who did something difficult and was successful.\nYou should say:\n- Who this person is\n- What difficult thing this person did\n- Why this person was successful\nAnd explain how you feel about this person.",
+    "guide": {
+      "keyVocab": [
+        "Overcome insurmountable odds (vượt qua những nghịch cảnh tưởng chừng không thể)",
+        "Steely determination (sự kiên định đanh thép như sắt đá)",
+        "Persevere through setbacks (bền bỉ kiên trì vượt qua mọi thất bại vấp ngã)",
+        "Unwavering grit (bản lĩnh bền bỉ không nao núng)",
+        "Inspirational role model (tấm gương truyền cảm hứng sáng ngời)"
+      ],
+      "suggestedIdeas": "Một người bạn phục hồi sau chấn thương nặng để thi đỗ marathon, hoặc một người khởi nghiệp vượt qua khủng hoảng tài chính.",
+      "sampleOutline": "- Who: My cousin Nam.\n- Difficult thing: Founded an organic coffee startup amidst pandemic lockdowns with zero outside funding.\n- Why successful: Unrelenting work ethic, pivoted smartly to online subscription boxes.\n- Feelings: Immense pride and inspiration; proves resilience trumps luck."
+    }
+  },
+  {
+    "id": "p2_popular_person",
+    "topic": "People & Society",
+    "title": "[Part 2] Describe a popular person",
+    "questions": [
+      "Who this person is",
+      "What kind of person he or she is",
+      "When you see him/her normally",
+      "And explain why you think this person is popular"
+    ],
+    "fullPromptText": "Describe a popular person.\nYou should say:\n- Who this person is\n- What kind of person he or she is\n- When you see him/her normally\nAnd explain why you think this person is popular.",
+    "guide": {
+      "keyVocab": [
+        "Natural crowd-puller (người có sức hút bẩm sinh lôi cuốn đám đông)",
+        "Approachable and charismatic (dễ gần và tràn đầy sức hút)",
+        "Active listener (người biết lắng nghe chân thành)",
+        "Social butterfly (người hoạt bát giao thiệp rộng trong mọi hội nhóm)",
+        "Magnetic personality (tính cách cuốn hút như nam châm)"
+      ],
+      "suggestedIdeas": "Một bạn sinh viên năng nổ trưởng ban đối ngoại của CLB, hoặc một thầy giáo dạy giỏi được toàn trường quý mến.",
+      "sampleOutline": "- Who: Quang, the president of our university debate society.\n- Kind of person: Highly articulate, witty, yet deeply empathetic and approachable.\n- When see: At weekly campus debate sessions and student council events.\n- Why popular: Remembers everyone's names, never puts on airs, empowers others."
+    }
+  },
+  {
+    "id": "p2_city_visited_want_again",
+    "topic": "Travel & Places",
+    "title": "[Part 2] Describe a city that you have been to and would like to visit again",
+    "questions": [
+      "When you visited it",
+      "What you did there",
+      "What it was like",
+      "And explain why you would like to visit it again"
+    ],
+    "fullPromptText": "Describe a city that you have been to and would like to visit again.\nYou should say:\n- When you visited it\n- What you did there\n- What it was like\nAnd explain why you would like to visit it again.",
+    "guide": {
+      "keyVocab": [
+        "Coastal jewel (viên ngọc quý miền duyên hải)",
+        "Gastronomic paradise (thiên đường của các tín đồ ẩm thực)",
+        "Languid pace of life (nhịp sống khoan thai êm đềm)",
+        "Hospitable locals (người dân địa phương hiếu khách nồng hậu)",
+        "Yearn for a return trip (khắc khoải mong mỏi một chuyến trở lại)"
+      ],
+      "suggestedIdeas": "Đà Nẵng (bãi biển đẹp, hiện đại, đồ ăn rẻ), Đà Lạt (khí hậu se lạnh, lãng mạn) hoặc Hội An.",
+      "sampleOutline": "- City: Da Nang, visited two summers ago.\n- Activities: Cycled along My Khe beach, sampled iconic Quang noodles, explored Marble Mountains.\n- What it was like: Clean air, orderly urban planning, breathtaking fusion of ocean and mountains.\n- Why visit again: Want to experience the laid-back coastal rhythm and explore hidden seafood eateries."
+    }
+  },
+  {
+    "id": "p2_good_service_shop_store",
+    "topic": "Customer Service",
+    "title": "[Part 2] Describe a time when you received good service in a shop/store",
+    "questions": [
+      "Where the shop is",
+      "When you went to the shop",
+      "What service you received from the staff",
+      "And explain how you felt about the service"
+    ],
+    "fullPromptText": "Describe a time when you received good service in a shop/store.\nYou should say:\n- Where the shop is\n- When you went to the shop\n- What service you received from the staff\nAnd explain how you felt about the service.",
+    "guide": {
+      "keyVocab": [
+        "Exemplary customer service (dịch vụ khách hàng mẫu mực xuất sắc)",
+        "Go the extra mile (sẵn sàng làm vượt mức kỳ vọng để giúp khách)",
+        "Attentive without being pushy (chu đáo tận tình nhưng không chèo kéo khó chịu)",
+        "Customer-centric mindset (tư duy lấy khách hàng làm trọng tâm)",
+        "Leave a lasting positive impression (để lại ấn tượng tốt đẹp dài lâu)"
+      ],
+      "suggestedIdeas": "Mua giày dép hoặc đồ điện tử tại một cửa hàng mà nhân viên kiên nhẫn tìm size, tư vấn thật tâm không ép mua.",
+      "sampleOutline": "- Where: An independent book and stationery boutique in District 1.\n- When: Three months ago while hunting for a niche vintage fountain pen.\n- Service: The clerk patiently showed 5 nib types, cleaned a test pen, and offered custom gift-wrapping for free.\n- Feelings: Valued and respected; became a loyal returning patron."
+    }
+  },
+  {
+    "id": "p2_crowded_place_went_to",
+    "topic": "Places & Experiences",
+    "title": "[Part 2] Describe a crowded place you went to",
+    "questions": [
+      "Where it was",
+      "When you went there",
+      "Who you went there with",
+      "What you did there",
+      "And how you felt about it"
+    ],
+    "fullPromptText": "Describe a crowded place you went to.\nYou should say:\n- Where it was\n- When you went there and who with\n- What you did there\nAnd how you felt about it.",
+    "guide": {
+      "keyVocab": [
+        "Packed like sardines (đông nghẹt như cá mòi xếp hộp)",
+        "Sea of people (biển người mênh mông)",
+        "Claustrophobic sensation (cảm giác ngột ngạt ngột thở vì không gian hẹp)",
+        "Vibrant festive frenzy (sự cuồng nhiệt sôi động của lễ hội)",
+        "Exhausting yet exhilarating (mệt lử người nhưng vô cùng phấn khích)"
+      ],
+      "suggestedIdeas": "Phố đi bộ Hồ Gươm/Nguyễn Huệ đêm Countdown giao thừa, chợ đêm Đà Lạt, hoặc một lễ hội âm nhạc ngoài trời.",
+      "sampleOutline": "- Where: Nguyen Hue Walking Street during New Year Countdown.\n- Who: Went with a group of four university peers.\n- What: Watched live DJ performances and fireworks amidst deafening cheers.\n- Feelings: Overwhelmed by the jostling crowd, yet electrified by the collective communal ecstasy."
+    }
+  },
+  {
+    "id": "p2_activity_waste_of_time",
+    "topic": "Habits & Time",
+    "title": "[Part 2] Describe an activity you do regularly that you think is a waste of time",
+    "questions": [
+      "What it is",
+      "When you usually do it",
+      "Why you do it",
+      "And explain why you think it is a waste of time"
+    ],
+    "fullPromptText": "Describe an activity you do regularly that you think is a waste of time.\nYou should say:\n- What it is\n- When you usually do it\n- Why you do it\nAnd explain why you think it is a waste of time.",
+    "guide": {
+      "keyVocab": [
+        "Mindless doom-scrolling (lướt mạng ngắn vô định tiêu tốn thời gian)",
+        "Dopamine trap (cái bẫy kích thích hormone dopamine ngắn hạn)",
+        "Counterproductive vice (thói xấu phản tác dụng làm giảm năng suất)",
+        "Procrastinate on pressing deadlines (trì hoãn những hạn chót gấp gáp)",
+        "Sense of emptiness afterwards (cảm giác trống rỗng hụt hẫng sau khi làm xong)"
+      ],
+      "suggestedIdeas": "Lướt video ngắn trên TikTok/Reels trước khi ngủ, hoặc chơi một tựa game mobile cày cuốc lặp lại nhàm chán.",
+      "sampleOutline": "- What: Scrolling through endless short video algorithms on TikTok.\n- When: Late night right before bedtime or whenever procrastinating on an essay.\n- Why: Instant gratification and escape from work anxiety.\n- Why waste of time: Zero retention of knowledge, disrupts sleep cycles, leaves me depleted."
+    }
+  },
+  {
+    "id": "p2_older_person_admire",
+    "topic": "People & Role Models",
+    "title": "[Part 2] Describe someone who is older than you that you admire",
+    "questions": [
+      "Who this person is",
+      "How you knew this person",
+      "What kinds of things you like to do together",
+      "And explain how you feel about this person"
+    ],
+    "fullPromptText": "Describe someone who is older than you that you admire.\nYou should say:\n- Who this person is\n- How you knew this person\n- What kinds of things you like to do together\nAnd explain how you feel about this person.",
+    "guide": {
+      "keyVocab": [
+        "Fount of wisdom (kho tàng trí tuệ và sự từng trải)",
+        "Weathered countless storms (đã nếm trải vượt qua vô vàn sóng gió)",
+        "Unfaltering work ethic (đạo đức làm việc kiên định không gì lay chuyển)",
+        "Generational gap dissolved (khoảng cách thế hệ được xóa nhòa)",
+        "Pillar of moral support (điểm tựa tinh thần và đạo đức vững chắc)"
+      ],
+      "suggestedIdeas": "Ông bà, cha mẹ hoặc một vị tiền bối kỳ cựu tại cơ quan thường cho bạn những lời khuyên thông thái.",
+      "sampleOutline": "- Who: My maternal grandmother, now 82 years old.\n- Known: Throughout my life; she largely raised me during early childhood.\n- Activities: Drink herbal tea in the garden, listen to her folk tales and wartime survival memoirs.\n- Feelings: Profound reverence for her boundless resilience, kindness, and stoic grace."
+    }
+  },
+  {
+    "id": "p2_short_trip_dislike",
+    "topic": "Travel & Commute",
+    "title": "[Part 2] Describe a short trip you often take but do not like",
+    "questions": [
+      "Where you go",
+      "When you go there",
+      "Why you go there",
+      "And explain why you do not like the trip"
+    ],
+    "fullPromptText": "Describe a short trip you often take but do not like.\nYou should say:\n- Where you go\n- When you go there\n- Why you go there\nAnd explain why you do not like the trip.",
+    "guide": {
+      "keyVocab": [
+        "Grueling daily commute (chuyến đi lại hàng ngày mệt mỏi hành xác)",
+        "Bumper-to-bumper traffic jams (ùn tắc giao thông xe cộ nối đuôi nghẹt thở)",
+        "Exhaust fumes and cacophony (khói bụi xe cộ và tiếng còi inh ỏi nhức óc)",
+        "Test of sanity (thử thách sự kiên nhẫn và tỉnh táo)",
+        "Dread the journey (khiếp sợ chuyến hành trình)"
+      ],
+      "suggestedIdeas": "Quãng đường đi xe máy từ nhà đến trường/văn phòng vào giờ cao điểm qua các nút giao hay ngập và kẹt xe.",
+      "sampleOutline": "- Where: 10km commute from suburban home to downtown university campus.\n- When: Rush hours, especially Monday mornings 7:30 AM.\n- Why: Obligatory lectures and office check-ins.\n- Why dislike: Sweltering heat, toxic dust, erratic drivers, and constant honking."
+    }
+  },
+  {
+    "id": "p2_noisy_place_been_to",
+    "topic": "Places & Environment",
+    "title": "[Part 2] Describe a noisy place you have been to",
+    "questions": [
+      "Where it is",
+      "When you went there",
+      "What you did there",
+      "And explain why you feel it’s a noisy place"
+    ],
+    "fullPromptText": "Describe a noisy place you have been to.\nYou should say:\n- Where it is\n- When you went there\n- What you did there\nAnd explain why you feel it’s a noisy place.",
+    "guide": {
+      "keyVocab": [
+        "Deafening roar / Cacophony (tiếng ầm ĩ đinh tai nhức óc)",
+        "Sensory overload (tình trạng quá tải giác quan)",
+        "Shout at the top of my lungs (phải hét tướng hết mức mới nghe được nhau)",
+        "Hustle and bustle of commerce (sự huyên náo mua bán tấp nập)",
+        "Yearn for tranquil quietude (khao khát sự tĩnh lặng yên bình)"
+      ],
+      "suggestedIdeas": "Một khu chợ đầu mối bán sỉ sáng sớm, một công trường xây dựng cạnh nhà hoặc một quán bia hơi vỉa hè lúc tan tầm.",
+      "sampleOutline": "- Where: A traditional wholesale wet market in the heart of Chinatown.\n- When: Early morning before Lunar New Year with my mother.\n- What: Bargained for festival flowers and specialty seafood ingredients.\n- Why noisy: Clattering crates, aggressive haggling, megaphone promotions, and motorbike engines."
+    }
+  },
+  {
+    "id": "p2_change_made_recently",
+    "topic": "Lifestyle & Habits",
+    "title": "[Part 2] Describe a change that you made recently",
+    "questions": [
+      "What the change was",
+      "What caused the change",
+      "What you did for the change",
+      "And explain how you feel about the change"
+    ],
+    "fullPromptText": "Describe a change that you made recently.\nYou should say:\n- What the change was\n- What caused the change\n- What you did for the change\nAnd explain how you feel about the change.",
+    "guide": {
+      "keyVocab": [
+        "Positive lifestyle pivot (sự chuyển dịch lối sống tích cực)",
+        "Sedentary desk-bound routine (thói quen ngồi lì bên bàn làm việc)",
+        "Incorporate regular workouts (đưa việc tập luyện vào thời khóa biểu cố định)",
+        "Boost cardiovascular health (tăng cường sức khỏe tim mạch)",
+        "Tangible surge in vitality (sự gia tăng rõ rệt về mức năng lượng và sức sống)"
+      ],
+      "suggestedIdeas": "Bắt đầu tập gym/chạy bộ đều đặn mỗi sáng, tập thói quen nấu cơm nhà mang đi làm, hoặc cai caffeine/đường.",
+      "sampleOutline": "- What: Committing to cook wholesome meals at home instead of ordering takeout.\n- Cause: Frequent digestive trouble and swelling monthly food delivery bills.\n- Actions: Bought meal-prep containers, learned healthy recipes on YouTube, pre-chopped veggies.\n- Feelings: Healthier digestion, saved significant money, newfound culinary hobby."
+    }
+  },
+  {
+    "id": "p2_changed_important_opinion",
+    "topic": "Psychology & Perspectives",
+    "title": "[Part 2] Describe a time when you changed an important opinion of yours",
+    "questions": [
+      "When you changed your opinion",
+      "What the original opinion was",
+      "Why you changed it",
+      "And explain how you felt about the experience"
+    ],
+    "fullPromptText": "Describe a time when you changed an important opinion of yours.\nYou should say:\n- When you changed your opinion\n- What the original opinion was\n- Why you changed it\nAnd explain how you felt about the experience.",
+    "guide": {
+      "keyVocab": [
+        "Preconceived bias / Preconception (định kiến sẵn có từ trước)",
+        "Shift in paradigm (sự chuyển dịch hệ quy chiếu tư duy)",
+        "Shed prejudices (rũ bỏ những định kiến cổ hủ)",
+        "Eye-opening discourse (cuộc đàm luận mở rộng tầm mắt)",
+        "Intellectual humility (sự khiêm nhường trong nhận thức tri thức)"
+      ],
+      "suggestedIdeas": "Từng nghĩ học đại học là con đường duy nhất để thành công, hoặc từng coi nhẹ tầm quan trọng của sức khỏe tinh thần.",
+      "sampleOutline": "- When: During my sophomore year in university.\n- Original opinion: Believed a prestigious degree was the sole prerequisite for career prosperity.\n- Why changed: Met brilliant self-taught programmers and creative freelancers running thriving ventures.\n- Feelings: Humbled; realized adaptive skills and real grit vastly outweigh paper credentials."
+    }
+  },
+  {
+    "id": "p2_law_environmental_protection",
+    "topic": "Society & Environment",
+    "title": "[Part 2] Describe a law on environmental protection",
+    "questions": [
+      "What it is",
+      "How you first learned about it",
+      "Who benefits from it",
+      "And explain how you feel about this law"
+    ],
+    "fullPromptText": "Describe a law on environmental protection.\nYou should say:\n- What it is\n- How you first learned about it\n- Who benefits from it\nAnd explain how you feel about this law.",
+    "guide": {
+      "keyVocab": [
+        "Strict ban on single-use plastics (lệnh cấm nghiêm ngặt đồ nhựa dùng một lần)",
+        "Environmental regulatory framework (khung pháp lý quản lý môi trường)",
+        "Deterrent monetary fines (các khoản phạt tiền mang tính răn đe)",
+        "Preserve biodiversity (bảo tồn đa dạng sinh học)",
+        "Pave the way for sustainable development (mở đường cho sự phát triển bền vững)"
+      ],
+      "suggestedIdeas": "Luật cấm xả rác bừa bãi và phạt nặng hành vi vứt rác nơi công cộng, hoặc quy định phân loại rác tại nguồn ở Việt Nam.",
+      "sampleOutline": "- What: The municipal regulation mandating waste segregation at source and penalizing illegal dumping.\n- Learned: Through televised public service broadcasts and community ward announcements.\n- Beneficiaries: Sanitation workers, local residents enjoying cleaner air, and marine life.\n- Feelings: Fully supportive; overdue regulation that demands strict enforcement to be truly impactful."
+    }
+  },
+  {
+    "id": "p2_long_term_goal_ambition",
+    "topic": "Ambition & Future",
+    "title": "[Part 2] Describe a long-term goal/ambition you would like to achieve",
+    "questions": [
+      "How long you have had this goal/ambition",
+      "What it is",
+      "How you will achieve it",
+      "And explain why you set it"
+    ],
+    "fullPromptText": "Describe a long-term goal/ambition you would like to achieve.\nYou should say:\n- How long you have had this goal/ambition\n- What it is\n- How you will achieve it\nAnd explain why you set it.",
+    "guide": {
+      "keyVocab": [
+        "Aspirations for higher education (khát vọng học tập nâng cao)",
+        "Secure a scholarship abroad (giành được học bổng du học toàn phần)",
+        "Diligent execution (sự thực thi chăm chỉ có kế hoạch)",
+        "Stepstone for career breakthrough (bước đệm đột phá cho sự nghiệp)",
+        "Fulfill lifelong dream (hiện thực hóa giấc mơ cả đời)"
+      ],
+      "suggestedIdeas": "Giành học bổng Thạc sĩ tại Châu Âu, thành lập một doanh nghiệp nhỏ về ẩm thực/giáo dục, hoặc mua nhà riêng trước tuổi 30.",
+      "sampleOutline": "- Goal: Win a prestigious Master's scholarship in Artificial Intelligence in Europe.\n- Duration: Held this ambition for over two years since starting my thesis.\n- Action plan: Achieve IELTS 8.0, publish peer-reviewed papers, gain industrial internship experience.\n- Why: To access cutting-edge research facilities and solve real healthcare logistics problems."
+    }
+  },
+  {
+    "id": "p2_message_email_no_reply",
+    "topic": "Communication & Technology",
+    "title": "[Part 2] Describe a time when you sent a message or an email to someone but received no reply for a long time",
+    "questions": [
+      "Who you sent it to",
+      "What the message/email was about",
+      "Whether you finally received the reply",
+      "And explain how you felt about the experience"
+    ],
+    "fullPromptText": "Describe a time when you sent a message or an email to someone but received no reply for a long time.\nYou should say:\n- Who you sent it to\n- What the message/email was about\n- Whether you finally received the reply\nAnd explain how you felt about the experience.",
+    "guide": {
+      "keyVocab": [
+        "Ghosted / Left on read (bị phớt lờ, đã xem nhưng không thèm trả lời)",
+        "Time-sensitive collaboration (công việc phối hợp gấp gáp về thời gian)",
+        "Anxious anticipation (sự thấp thỏm lo âu chờ đợi)",
+        "Pardonable oversight (sơ suất có thể tha thứ do công việc bận)",
+        "Professional email etiquette (phép lịch sự xã giao khi gửi thư điện tử)"
+      ],
+      "suggestedIdeas": "Gửi email xin việc/thực tập, gửi thư nhờ giáo sư viết thư giới thiệu hoặc nhắn tin chốt deadline dự án với đối tác.",
+      "sampleOutline": "- Recipient: My university professor requesting an academic letter of recommendation.\n- Content: Outlined my master's application deadline and attached my CV.\n- Reply: Waited agonizingly for two weeks; he finally replied apologizing for spam folder misplacement.\n- Feelings: Anxious and on edge initially; learned to send polite follow-up nudges."
+    }
+  },
+  {
+    "id": "p2_story_book_animals",
+    "topic": "Literature & Animals",
+    "title": "[Part 2] Describe a story/book with animals in it",
+    "questions": [
+      "What animals are in it",
+      "What the story/book is about",
+      "Why you read the story/book",
+      "And explain what you think of this story/book"
+    ],
+    "fullPromptText": "Describe a story/book with animals in it.\nYou should say:\n- What animals are in it\n- What the story/book is about\n- Why you read the story/book\nAnd explain what you think of this story/book.",
+    "guide": {
+      "keyVocab": [
+        "Anthropomorphic characters (nhân vật nhân hóa mang tính cách con người)",
+        "Allegorical satire (tác phẩm châm biếm mang tính ngụ ngôn ẩn dụ)",
+        "Dế Mèn Phiêu Lưu Ký (Diary of a Cricket - Tô Hoài)",
+        "Moral lessons of camaraderie and humility (bài học đạo đức về tình bạn và đức khiêm tốn)",
+        "Timeless literary masterpiece (kiệt tác văn học trường tồn với thời gian)"
+      ],
+      "suggestedIdeas": "Dế Mèn phiêu lưu ký của Tô Hoài, hoặc Animal Farm (Trại súc vật) của George Orwell.",
+      "sampleOutline": "- Animals: Crickets, grasshoppers, mantises, and birds.\n- Book: 'Diary of a Cricket' by Vietnamese author To Hoai.\n- Plot: A proud young cricket's thrilling journey across nature, learning humility after reckless mistakes.\n- Reason & Opinion: Read during elementary school; a masterclass in vivid natural descriptions and life philosophy."
+    }
+  },
+  {
+    "id": "p2_advertisement_famous_person",
+    "topic": "Media & Marketing",
+    "title": "[Part 2] Describe an advertisement with a famous person in it",
+    "questions": [
+      "Who the person is",
+      "Where you can see it",
+      "What the advertisement is about",
+      "And explain how you feel about the advertisement"
+    ],
+    "fullPromptText": "Describe an advertisement with a famous person in it.\nYou should say:\n- Who the person is\n- Where you can see it\n- What the advertisement is about\nAnd explain how you feel about the advertisement.",
+    "guide": {
+      "keyVocab": [
+        "Celebrity endorsement (sự bảo chứng thương hiệu của người nổi tiếng)",
+        "Brand ambassador (đại sứ thương hiệu)",
+        "Catchy soundtrack and visuals (âm nhạc bắt tai và hình ảnh mãn nhãn)",
+        "Persuasive marketing campaign (chiến dịch tiếp thị có sức thuyết phục cao)",
+        "Commercial appeal (sức hút thương mại)"
+      ],
+      "suggestedIdeas": "Sơn Tùng M-TP quảng cáo điện thoại Oppo, hoặc cầu thủ bóng đá Quang Hải quảng cáo đồ uống thể thao/sữa.",
+      "sampleOutline": "- Celebrity: Pop star Son Tung M-TP.\n- Where: Billboards in downtown traffic hubs and pre-roll ads on YouTube.\n- Product: A sleek camera smartphone targeting young trendsetters.\n- Feelings: Impressed by the stylish cinematography, though cynical about real camera specs."
+    }
+  },
+  {
+    "id": "p2_travel_recommend_others",
+    "topic": "Travel & Tourism",
+    "title": "[Part 2] Describe a place you have travelled to that you would like to recommend to others",
+    "questions": [
+      "What it is",
+      "Where it is",
+      "What you saw and did there",
+      "And explain why you would like to recommend it to others"
+    ],
+    "fullPromptText": "Describe a place you have travelled to that you would like to recommend to others.\nYou should say:\n- What it is\n- Where it is\n- What you saw and did there\nAnd explain why you would like to recommend it to others.",
+    "guide": {
+      "keyVocab": [
+        "Off-the-beaten-path destination (địa điểm độc đáo ít người biết tới)",
+        "Terraced rice paddies (những thửa ruộng bậc thang kỳ vĩ)",
+        "Ethnic minority hospitality (lòng hiếu khách của đồng bào dân tộc thiểu số)",
+        "Soul-recharging retreat (chuyến nghỉ dưỡng nạp lại năng lượng tâm hồn)",
+        "Picturesque landscapes (phong cảnh đẹp như trong tranh vẽ)"
+      ],
+      "suggestedIdeas": "Hà Giang (đèo Mã Pí Lèng, sông Nho Quế), Sapa, Ninh Bình (Tràng An) hoặc đảo Phú Quý.",
+      "sampleOutline": "- Place: Ha Giang loop in northern mountainous Vietnam.\n- Where: The northernmost province bordering China.\n- Activities: Motorbike riding through Ma Pi Leng pass, boat rafting on Nho Que river.\n- Why recommend: Jaw-dropping majestic limestone karsts and authentic ethnic minority culture."
+    }
+  },
+  {
+    "id": "p2_challenging_tech_problem",
+    "topic": "Technology & Problem Solving",
+    "title": "[Part 2] Describe a challenging technological problem you faced",
+    "questions": [
+      "What the problem was",
+      "When and where you faced it",
+      "How challenging it was",
+      "And explain how you solved it"
+    ],
+    "fullPromptText": "Describe a challenging technological problem you faced.\nYou should say:\n- What the problem was\n- When and where you faced it\n- How challenging it was\nAnd explain how you solved it.",
+    "guide": {
+      "keyVocab": [
+        "Blue screen of death / System crash (màn hình xanh chết chóc / sập hệ thống)",
+        "Corrupted hard drive (ổ cứng bị hỏng dữ liệu)",
+        "Hardware malfunction (trục trặc phần cứng)",
+        "Troubleshoot via tech forums (dò lỗi và sửa chữa qua các diễn đàn công nghệ)",
+        "Data recovery process (quy trình khôi phục dữ liệu quan trọng)"
+      ],
+      "suggestedIdeas": "Laptop bị nhiễm mã độc/hỏng ổ cứng trước giờ nộp bài tập lớn, hoặc mạng Wi-Fi cơ quan bị tê liệt lúc họp trực tuyến.",
+      "sampleOutline": "- Problem: Laptop crashed and entered a boot-loop the night before my thesis submission.\n- When & Where: 11 PM in my dorm room.\n- Challenge: Zero access to files, looming 8 AM deadline, sheer panic.\n- Solution: Created a bootable Linux USB on my roommate's PC, recovered data, and submitted on time."
+    }
+  },
+  {
+    "id": "p2_person_good_at_languages",
+    "topic": "People & Education",
+    "title": "[Part 2] Describe a person who is good at learning and speaking new languages",
+    "questions": [
+      "How you got to know him/her",
+      "How he/she learns a new language",
+      "What languages he/she can speak",
+      "And explain how you feel about him/her"
+    ],
+    "fullPromptText": "Describe a person who is good at learning and speaking new languages.\nYou should say:\n- How you got to know him/her\n- How he/she learns a new language\n- What languages he/she can speak\nAnd explain how you feel about him/her.",
+    "guide": {
+      "keyVocab": [
+        "Polyglot (người thông thạo nhiều thứ tiếng)",
+        "Linguistic prowess (năng khiếu và tài năng ngôn ngữ vượt trội)",
+        "Immersion learning technique (phương pháp học ngôn ngữ bằng cách nhúng hoàn toàn vào môi trường)",
+        "Native-like fluency and accent (độ trôi chảy và phát âm chuẩn như người bản xứ)",
+        "Voracious language learner (người học ngoại ngữ say mê không biết mệt)"
+      ],
+      "suggestedIdeas": "Một người bạn học ngoại giao nói lưu loát tiếng Anh, tiếng Trung và tiếng Pháp nhờ xem phim và nói chuyện với người bản địa.",
+      "sampleOutline": "- Who: My classmate Ha from foreign language high school.\n- Languages: Fluent in Vietnamese, English, Mandarin, and conversational Japanese.\n- Methods: Total immersion (changes phone system language, shadow podcasts, speaks daily with native speakers).\n- Feelings: In awe of her cognitive agility and disciplined daily retention."
+    }
+  },
+  {
+    "id": "p2_special_food_occasions",
+    "topic": "Food & Culture",
+    "title": "[Part 2] Describe a food that people eat on special occasions/events",
+    "questions": [
+      "What it is",
+      "What the special event/occasion is",
+      "How it is cooked/made",
+      "And explain why people eat it on that special occasion/event"
+    ],
+    "fullPromptText": "Describe a food that people eat on special occasions/events.\nYou should say:\n- What it is\n- What the special event/occasion is\n- How it is cooked/made\nAnd explain why people eat it on that special occasion/event.",
+    "guide": {
+      "keyVocab": [
+        "Iconic traditional delicacy (món ăn truyền thống mang tính biểu tượng)",
+        "Banh Chung / Square glutinous rice cake (Bánh Chưng ngày Tết)",
+        "Wrap with dong leaves (gói tỉ mỉ bằng lá dong)",
+        "Boil over an open wood fire (luộc sôi sùng sục trên bếp củi đỏ lửa)",
+        "Symbolize earth, prosperity and ancestral gratitude (tượng trưng cho đất mẹ, sự ấm no và lòng tri ân tổ tiên)"
+      ],
+      "suggestedIdeas": "Bánh Chưng/Bánh Tét dịp Tết Nguyên Đán, hoặc Bánh Trung Thu (Mooncake) dịp rằm tháng Tám.",
+      "sampleOutline": "- Food: Banh Chung (square sticky rice cake).\n- Occasion: Lunar New Year (Tet Holiday).\n- Cooking: Glutinous rice, mung beans, and seasoned pork belly wrapped in dong leaves and boiled for 12 hours.\n- Symbolism: Represents the Earth, family solidarity, and gratitude to ancestors."
+    }
+  },
+  {
+    "id": "p2_live_sports_event_watched",
+    "topic": "Sports & Entertainment",
+    "title": "[Part 2] Describe a live sports event you watched and liked",
+    "questions": [
+      "What it was",
+      "When and where you watched it",
+      "Who you watched it with",
+      "And explain why you liked it"
+    ],
+    "fullPromptText": "Describe a live sports event you watched and liked.\nYou should say:\n- What it was\n- When and where you watched it and who with\n- What happened during the game\nAnd explain why you liked it.",
+    "guide": {
+      "keyVocab": [
+        "Nail-biting showdown (trận đấu nghẹt thở căng thẳng đến phút chót)",
+        "Electrifying stadium roar (tiếng gầm vang dội phấn khích của sân vận động)",
+        "Score a dramatic stoppage-time winner (ghi bàn thắng quyết định đầy kịch tính ở phút bù giờ)",
+        "Patriotic fervor (tinh thần tự hào dân tộc nồng nhiệt)",
+        "Unparalleled atmosphere (bầu không khí cuồng nhiệt có một không hai)"
+      ],
+      "suggestedIdeas": "Trận chung kết bóng đá AFF Cup của đội tuyển Việt Nam tại sân vận động Mỹ Đình hoặc một trận bóng rổ VBA.",
+      "sampleOutline": "- Event: SEA Games Men's Football Final between Vietnam and Thailand.\n- Where: My Dinh National Stadium with 40,000 spectators.\n- Companion: Watched with my father and close cousins.\n- Why liked: The sheer unity of red jerseys, deafening horns, and ecstatic celebration of the championship."
+    }
+  },
+  {
+    "id": "p2_career_in_medical_field",
+    "topic": "People & Careers",
+    "title": "[Part 2] Describe a person you know who would like to choose a career in the medical field",
+    "questions": [
+      "When you knew him/her",
+      "When he/she started to think about that",
+      "What he/she would like to do",
+      "And explain why he/she would like to choose this career"
+    ],
+    "fullPromptText": "Describe a person you know who would like to choose a career in the medical field (e.g. a doctor, a nurse).\nYou should say:\n- Who this person is and when you knew him/her\n- When he/she started to think about that\n- What he/she would like to do\nAnd explain why he/she would like to choose this career.",
+    "guide": {
+      "keyVocab": [
+        "Noble vocation (thiên chức nghề nghiệp cao quý)",
+        "Hippocratic oath (lời thề Hippocrates của người thầy thuốc)",
+        "Grueling medical residency (những năm tháng nội trú y khoa đầy gian khổ)",
+        "Compassionate bedside manner (thái độ ân cần tận tụy bên giường bệnh)",
+        "Save lives and alleviate suffering (cứu giúp sinh mạng và xoa dịu nỗi đau bệnh tật)"
+      ],
+      "suggestedIdeas": "Một người bạn thân đang ôn thi vào Đại học Y Dược để trở thành bác sĩ nhi khoa hoặc bác sĩ phẫu thuật.",
+      "sampleOutline": "- Who: My high school peer, Linh.\n- When began: Decided in 10th grade after witnessing frontline healthcare workers during the pandemic.\n- Aspiration: A pediatrician specializing in infant critical care.\n- Why: Boundless compassion for children, willing to endure a decade of grueling study to save lives."
+    }
+  },
+  {
+    "id": "p2_worked_in_a_group",
+    "topic": "Teamwork & Academics",
+    "title": "[Part 2] Describe a time when you worked in a group",
+    "questions": [
+      "What you did",
+      "Who you worked with",
+      "What problems you faced",
+      "And explain why you worked in the group"
+    ],
+    "fullPromptText": "Describe a time when you worked in a group.\nYou should say:\n- What you did\n- Who you worked with\n- What problems you faced\nAnd explain why you worked in the group.",
+    "guide": {
+      "keyVocab": [
+        "Collaborative synergy (sự cộng hưởng sức mạnh tập thể)",
+        "Clashing perspectives (những quan điểm trái chiều xung đột gay gắt)",
+        "Delegate tasks equitably (phân chia công việc công bằng hợp lý)",
+        "Meet rigid project milestones (hoàn thành đúng các cột mốc dự án gắt gao)",
+        "Foster mutual respect (xây dựng sự tôn trọng lẫn nhau)"
+      ],
+      "suggestedIdeas": "Làm bài tập nhóm thuyết trình kinh tế, làm dự án nghiên cứu khoa học hoặc tổ chức một gian hàng hội chợ sinh viên.",
+      "sampleOutline": "- What: Developed a business marketing plan for an eco-friendly cup brand.\n- Who: A team of four university classmates.\n- Problem: Free-rider issue and disagreements regarding target demographic budgets.\n- Resolution & Outcome: Implemented clear KPI task allocations and delivered an 'A' grade pitch."
+    }
+  },
+  {
+    "id": "p2_person_successful_business",
+    "topic": "People & Business",
+    "title": "[Part 2] Describe a person you know who has a successful business",
+    "questions": [
+      "Who this person is",
+      "How you got to know him/her",
+      "Why and how he/she started the business",
+      "What business he/she does",
+      "And explain why you think the business is successful"
+    ],
+    "fullPromptText": "Describe a person you know who has a successful business.\nYou should say:\n- Who this person is and how you know him/her\n- Why and how he/she started the business\n- What business he/she does\nAnd explain why you think the business is successful.",
+    "guide": {
+      "keyVocab": [
+        "Visionary entrepreneur (doanh nhân có tầm nhìn chiến lược)",
+        "Tap into a niche market (khai thác thành công thị trường ngách)",
+        "Bootstrapped startup (khởi nghiệp bằng chính nguồn vốn tự thân)",
+        "Customer loyalty and repeat sales (sự trung thành của khách hàng và tỷ lệ mua lại cao)",
+        "Business acumen (sự nhạy bén trong kinh doanh)"
+      ],
+      "suggestedIdeas": "Một người chú mở chuỗi tiệm bánh thủ công, hoặc người bạn lập thương hiệu thời trang local brand thành công rực rỡ.",
+      "sampleOutline": "- Who: My cousin Tuan.\n- Business: Founded a local minimalist apparel brand catering to young office workers.\n- Origin: Frustrated by either cheap fast-fashion or overpriced luxury brands.\n- Why successful: High-quality fabrics, exceptional social media marketing, and stellar return policies."
+    }
+  },
+  {
+    "id": "p2_person_loves_growing_plants",
+    "topic": "People & Hobbies",
+    "title": "[Part 2] Describe a person who loves to grow plants (e.g. vegetables, flowers) at home or in the garden",
+    "questions": [
+      "Who this person is",
+      "What plants he/she grows",
+      "How he/she grows the plants",
+      "And explain why he/she loves growing plants"
+    ],
+    "fullPromptText": "Describe a person who loves to grow plants (e.g. vegetables, flowers) at home or in the garden.\nYou should say:\n- Who this person is\n- What plants he/she grows\n- How he/she grows the plants\nAnd explain why he/she loves growing plants.",
+    "guide": {
+      "keyVocab": [
+        "Green thumb (tài làm vườn bẩm sinh, trồng cây gì cũng tươi tốt)",
+        "Rooftop hydroponic garden (vườn thủy canh xanh mướt trên sân thượng)",
+        "Nurture saplings with care (chăm chút từng mầm cây với sự nâng niu)",
+        "Therapeutic connection with nature (sự gắn kết trị liệu tâm hồn với thiên nhiên)",
+        "Organic harvest (thu hoạch nông sản hữu cơ sạch nhà trồng)"
+      ],
+      "suggestedIdeas": "Người mẹ hoặc ông bà tận dụng sân thượng làm vườn rau sạch thủy canh (xà lách, cà chua, thảo mộc) và hoa hồng.",
+      "sampleOutline": "- Who: My mother.\n- Plants: Heirloom tomatoes, mint, basil, and a dozen hybrid rose bushes.\n- How: Crafted an automated drip-irrigation system on our rooftop using compost fertilizer.\n- Why loves it: Finds solace in tending greens after stressful work days; enjoys supplying organic herbs for family meals."
+    }
+  },
+  {
+    "id": "p2_interesting_video",
+    "topic": "Media & Technology",
+    "title": "[Part 2] Describe an interesting video",
+    "questions": [
+      "When and where you watched it",
+      "What it is about",
+      "Why you watched it",
+      "And explain how you feel about it"
+    ],
+    "fullPromptText": "Describe an interesting video.\nYou should say:\n- When and where you watched it\n- What it is about\n- Why you watched it\nAnd explain how you feel about it.",
+    "guide": {
+      "keyVocab": [
+        "Thought-provoking TED Talk (bài diễn thuyết TED Talk đầy tính gợi mở)",
+        "Captivating visual storytelling (lối kể chuyện bằng hình ảnh lôi cuốn)",
+        "Mind-boggling scientific theories (những lý thuyết khoa học kỳ thú gây kinh ngạc)",
+        "Break down abstract complexity (đơn giản hóa những khái niệm trừu tượng)",
+        "Leave a lasting impression (để lại ấn tượng sâu đậm khó quên)"
+      ],
+      "suggestedIdeas": "Một video khoa học hoạt họa của Kurzgesagt trên YouTube (về lỗ đen vũ trụ, hệ miễn dịch), hoặc một video diễn thuyết truyền cảm hứng.",
+      "sampleOutline": "- Video: Kurzgesagt's animated essay on 'The Fermi Paradox & Alien Life'.\n- When & Where: Last month on YouTube via my iPad.\n- Why watched: Popped up on my recommendation feed; captivated by the colorful thumbnail.\n- Feelings: Fascinated by cosmic scale; completely changed how I view human existence."
+    }
+  },
+  {
+    "id": "p2_tall_building_like_dislike",
+    "topic": "Architecture & Cities",
+    "title": "[Part 2] Describe a tall building you like or dislike",
+    "questions": [
+      "What it is used for",
+      "Where it is",
+      "What it looks like",
+      "And explain why you like/dislike it"
+    ],
+    "fullPromptText": "Describe a tall building you like or dislike.\nYou should say:\n- What it is used for\n- Where it is\n- What it looks like\nAnd explain why you like/dislike it.",
+    "guide": {
+      "keyVocab": [
+        "Soaring skyscraper (tòa nhà chọc trời cao vút)",
+        "Architectural landmark (công trình kiến trúc biểu tượng)",
+        "Observation skydeck (đài quan sát trên cao ngắm toàn cảnh thành phố)",
+        "Sleek glass facade (mặt tiền bằng kính bóng bẩy hiện đại)",
+        "Symbolize economic dynamism (tượng trưng cho sự năng động phát triển kinh tế)"
+      ],
+      "suggestedIdeas": "Tòa nhà Landmark 81 (TP.HCM), Keangnam Landmark 72 hoặc Lotte Center (Hà Nội).",
+      "sampleOutline": "- Building: Landmark 81 in Ho Chi Minh City.\n- Used for: Commercial shopping mall, luxury hotel suites, and observation deck.\n- Appearance: Resembles a bundle of bamboo stalks piercing into the clouds.\n- Why like: Magnificent symbol of Vietnamese modern engineering; breathtaking night views from the skydeck."
+    }
+  },
+  {
+    "id": "p2_boring_place_been_to",
+    "topic": "Places & Experiences",
+    "title": "[Part 2] Describe a boring place",
+    "questions": [
+      "Where it is",
+      "Who you went there with",
+      "What you did there",
+      "And explain why you think it is a boring place"
+    ],
+    "fullPromptText": "Describe a boring place.\nYou should say:\n- Where it is\n- Who you went there with\n- What you did there\nAnd explain why you think it is a boring place.",
+    "guide": {
+      "keyVocab": [
+        "Tedious and soul-crushing (nhạt nhẽo và chán ngắt đến rã rời)",
+        "Deserted waiting hall (phòng chờ vắng ngắt lạnh lẽo)",
+        "Lack of stimulation or entertainment (thiếu thốn các hoạt động giải trí kích thích)",
+        "Time dragged on like an eternity (thời gian trôi chậm chạp như cả thế kỷ)",
+        "Counting down the seconds (đếm từng giây trôi qua để được rời đi)"
+      ],
+      "suggestedIdeas": "Một phòng chờ ga tàu cũ kỹ bị hoãn chuyến, một buổi hội thảo hành chính khô khan hoặc một khu triển lãm không có tương tác.",
+      "sampleOutline": "- Where: A dilapidated transit bus terminal on the outskirts of town.\n- Companion: Traveled alone during a stormy afternoon.\n- Activities: Sat on a hard plastic bench for 4 hours due to mechanical bus breakdowns.\n- Why boring: No Wi-Fi, flickering fluorescent lights, zero shops, excruciatingly slow passage of time."
+    }
+  },
+  {
+    "id": "p2_plan_had_to_change",
+    "topic": "Experiences & Flexibility",
+    "title": "[Part 2] Describe a plan that you had to change recently",
+    "questions": [
+      "When this happened",
+      "What made you change the plan",
+      "What the new plan was",
+      "And how you felt about the change"
+    ],
+    "fullPromptText": "Describe a plan that you had to change recently.\nYou should say:\n- When this happened\n- What made you change the plan\n- What the new plan was\nAnd how you felt about the change.",
+    "guide": {
+      "keyVocab": [
+        "Unforeseen circumstances (những tình huống bất ngờ không lường trước)",
+        "Torrential downpour (cơn mưa rào trút nước xối xả)",
+        "Spontaneous pivot (sự xoay chuyển kế hoạch ngẫu hứng)",
+        "Dampen the initial enthusiasm (làm giảm đi sự hào hứng ban đầu)",
+        "Make the best of a bad situation (biến hoàn cảnh khó khăn thành trải nghiệm tích cực)"
+      ],
+      "suggestedIdeas": "Kế hoạch đi cắm trại ngoài trời bị hủy do bão, chuyển thành buổi tụ tập nấu nướng và xem phim chiếu rạp tại nhà.",
+      "sampleOutline": "- When: Last month during a planned weekend camping trip.\n- Cause: An unexpected tropical depression hit, bringing heavy downpours.\n- New plan: Gathered at my apartment, cooked a warm seafood hotpot, and binged mystery movies.\n- Feelings: Initially disappointed, but the cozy indoor gathering turned out intimately memorable."
+    }
+  },
+  {
+    "id": "p2_new_law_introduce",
+    "topic": "Society & Governance",
+    "title": "[Part 2] Describe a new law you would like to introduce in your country",
+    "questions": [
+      "What law it is",
+      "What changes this law brings",
+      "Whether this new law will be popular",
+      "How you came up with the new law",
+      "And explain how you feel about this law"
+    ],
+    "fullPromptText": "Describe a new law you would like to introduce in your country.\nYou should say:\n- What law it is\n- What changes this law brings\n- Whether this new law will be popular and how you came up with it\nAnd explain how you feel about this law.",
+    "guide": {
+      "keyVocab": [
+        "Mandatory recycling legislation (đạo luật bắt buộc phân loại và tái chế rác)",
+        "Curb environmental degradation (ngăn chặn sự suy thoái môi trường)",
+        "Hefty monetary sanctions (các chế tài phạt tiền nặng mang tính răn đe)",
+        "Public welfare enhancement (nâng cao phúc lợi và sức khỏe cộng đồng)",
+        "Foster civic accountability (nâng cao tinh thần trách nhiệm của công dân)"
+      ],
+      "suggestedIdeas": "Luật cấm còi xe bừa bãi trong đô thị, luật bắt buộc phân loại rác tại nguồn, hoặc luật hạn chế giờ dùng mạng xã hội cho trẻ vị thành niên.",
+      "sampleOutline": "- What: A law strictly regulating urban acoustic noise and penalizing unnecessary car honking.\n- Changes: Drastically reduce stress levels for city commuters and pedestrians.\n- Popularity: Well-received by urbanites, though resistant taxi drivers might complain initially.\n- Feelings: Essential for cultivating civilized, tranquil city environments."
+    }
+  },
+  {
+    "id": "p2_friend_from_childhood",
+    "topic": "People & Friendship",
+    "title": "[Part 2] Describe a friend from your childhood",
+    "questions": [
+      "Who he/she is",
+      "Where and how you met each other",
+      "What you often did together",
+      "And explain what made you like him/her"
+    ],
+    "fullPromptText": "Describe a friend from your childhood.\nYou should say:\n- Who he/she is\n- Where and how you met each other\n- What you often did together\nAnd explain what made you like him/her.",
+    "guide": {
+      "keyVocab": [
+        "Inseparable childhood buddy (người bạn thanh mai trúc mã thân thiết)",
+        "Carefree adventures (những chuyến phiêu lưu ngây thơ vô lo vô nghĩ)",
+        "Thick as thieves (gắn bó keo sơn ăn ý không rời)",
+        "Stand the test of time (vượt qua mọi thử thách của thời gian)",
+        "Unconditional trust and camaraderie (sự tin tưởng và tình bằng hữu vô điều kiện)"
+      ],
+      "suggestedIdeas": "Người bạn cùng xóm hồi tiểu học, cùng nhau đạp xe, thả diều, chia nhau que kem và giờ vẫn giữ liên lạc dù đi học xa.",
+      "sampleOutline": "- Who: Minh, my next-door neighbor since age seven.\n- Met: In primary school after accidentally sharing the same desk.\n- Activities: Chased dragonflies, built pillow forts, played soccer in the alleyway.\n- Why liked: Deeply honest, humorous, and always stood up for me during playground scuffles."
+    }
+  },
+  {
+    "id": "p2_stuck_in_traffic_jam",
+    "topic": "Transport & Experiences",
+    "title": "[Part 2] Describe a time when you were stuck in a traffic jam for a very long time",
+    "questions": [
+      "When it happened",
+      "Where you were stuck",
+      "What you did while waiting",
+      "And explain how you felt in the traffic jam"
+    ],
+    "fullPromptText": "Describe a time when you were stuck in a traffic jam for a very long time.\nYou should say:\n- When it happened\n- Where you were stuck\n- What you did while waiting\nAnd explain how you felt in the traffic jam.",
+    "guide": {
+      "keyVocab": [
+        "Gridlock / Complete standstill (giao thông tê liệt hoàn toàn không nhúc nhích)",
+        "Honking chorus (dàn đồng ca còi xe inh tai nhức óc)",
+        "Choking exhaust emissions (khói thải ngột ngạt cay xè mắt)",
+        "Test of extreme patience (thử thách tột cùng lòng kiên nhẫn)",
+        "Helpless frustration (sự bực bội bất lực không lối thoát)"
+      ],
+      "suggestedIdeas": "Kẹt xe vào chiều thứ sáu trời mưa bão hoặc dịp người dân ồ ạt về quê nghỉ lễ Tết trên cửa ngõ thành phố.",
+      "sampleOutline": "- When: On the eve of National Holiday last September.\n- Where: The main elevated expressway gateway leaving Hanoi.\n- Activities: Listened to podcast episodes, checked traffic map updates, chatted with nearby drivers.\n- Feelings: Stifling frustration and exhaustion, paralyzed for nearly 3 agonizing hours."
+    }
+  },
+  {
+    "id": "p2_special_day_out_little_money",
+    "topic": "Leisure & Budget",
+    "title": "[Part 2] Describe a special day out that cost you little money/didn’t cost you much",
+    "questions": [
+      "When the day was",
+      "Where you went",
+      "How much you spent",
+      "And explain how you feel about the day"
+    ],
+    "fullPromptText": "Describe a special day out that cost you little money/didn’t cost you much.\nYou should say:\n- When the day was\n- Where you went\n- How much you spent\nAnd explain how you feel about the day.",
+    "guide": {
+      "keyVocab": [
+        "Budget-friendly escapade (chuyến đi chơi vừa túi tiền nhưng tuyệt vời)",
+        "Picnic in the botanical park (buổi dã ngoại ngoài trời trong công viên bách thảo)",
+        "Priceless quality time (khoảng thời gian gắn kết vô giá không thể đong đếm bằng tiền)",
+        "Homemade refreshments (đồ ăn nhẹ tự làm tại nhà mang đi)",
+        "Joy lies in company, not cost (niềm vui đến từ bạn đồng hành chứ không phải chi phí)"
+      ],
+      "suggestedIdeas": "Một buổi dã ngoại tại công viên Yên Sở hoặc bãi cỏ sông Hồng: mang theo chiếu, bánh mì kẹp tự làm và chơi board game cùng nhóm bạn.",
+      "sampleOutline": "- When: A breezy autumn Sunday last year.\n- Where: A lush green public park by the river.\n- Cost: Barely 50,000 VND per person for park entrance and homemade sandwich ingredients.\n- Feelings: Blissfully peaceful; proved that memorable bonding doesn't require exorbitant spending."
+    }
+  },
+  {
+    "id": "p2_organized_happy_event",
+    "topic": "Events & Leadership",
+    "title": "[Part 2] Describe a time when you organized a happy event successfully",
+    "questions": [
+      "What the event was",
+      "How you prepared for it",
+      "Who helped you to organize it",
+      "And explain why you think it was a successful event"
+    ],
+    "fullPromptText": "Describe a time when you organized a happy event successfully.\nYou should say:\n- What the event was\n- How you prepared for it\n- Who helped you to organize it\nAnd explain why you think it was a successful event.",
+    "guide": {
+      "keyVocab": [
+        "Meticulous logistical coordination (sự phối hợp hậu cần tỉ mỉ chu đáo)",
+        "Surprise milestone celebration (buổi tiệc kỷ niệm cột mốc bất ngờ)",
+        "Pull off the plan without a hitch (thực hiện kế hoạch trơn tru không một tì vết)",
+        "Tears of unadulterated joy (những giọt nước mắt hạnh phúc vỡ òa)",
+        "Overwhelming sense of accomplishment (cảm giác tự hào và thành tựu tột bậc)"
+      ],
+      "suggestedIdeas": "Tổ chức tiệc sinh nhật bất ngờ cho mẹ, hoặc chuẩn bị buổi dạ hội chia tay tốt nghiệp của khoa đại học.",
+      "sampleOutline": "- Event: Surprise 50th birthday party for my mother.\n- Preparation: Booked a private dining room, secretly compiled greeting clips from distant relatives.\n- Helpers: My father and younger sister.\n- Why successful: Mother was brought to happy tears, every guest relished the warm atmosphere."
+    }
+  },
+  {
+    "id": "p2_special_cake_received",
+    "topic": "Gifts & Celebrations",
+    "title": "[Part 2] Describe a special cake you received from others",
+    "questions": [
+      "When it happened",
+      "Where it happened",
+      "Who you got the cake from",
+      "And explain why it’s a special cake"
+    ],
+    "fullPromptText": "Describe a special cake you received from others.\nYou should say:\n- When it happened\n- Where it happened\n- Who you got the cake from\nAnd explain why it’s a special cake.",
+    "guide": {
+      "keyVocab": [
+        "Artisanal handcrafted pastry (chiếc bánh ngọt thủ công tinh xảo)",
+        "Customized decoration (trang trí theo phong cách cá nhân hóa)",
+        "Melt-in-your-mouth texture (vị bánh mềm mịn tan ngay trên đầu lưỡi)",
+        "Labor of love (kết tinh của tình yêu thương và sự tận tụy)",
+        "Deeply sentimental keepsake (kỷ niệm mang nặng giá trị tình cảm)"
+      ],
+      "suggestedIdeas": "Chiếc bánh kem sinh nhật do mẹ hoặc nhóm bạn thân tự tay làm với hình vẽ vui nhộn kỷ niệm tình bạn.",
+      "sampleOutline": "- When: On my 20th birthday.\n- Where: At my dorm room during exam week.\n- From whom: My university roommates.\n- Why special: Baked from scratch with limited dorm cookware, decorated with an inside-joke doodle."
+    }
+  },
+  {
+    "id": "p2_thing_did_to_learn_language",
+    "topic": "Learning & Languages",
+    "title": "[Part 2] Describe a thing you did to learn another language",
+    "questions": [
+      "What language you learned",
+      "What you did",
+      "How it helped you learn the language",
+      "And how you felt about it"
+    ],
+    "fullPromptText": "Describe a thing you did to learn another language.\nYou should say:\n- What language you learned\n- What you did\n- How it helped you learn the language\nAnd how you felt about it.",
+    "guide": {
+      "keyVocab": [
+        "Shadowing technique (kỹ thuật nhại giọng shadow theo người bản xứ)",
+        "Total immersion approach (phương pháp đắm chìm hoàn toàn vào ngôn ngữ)",
+        "Acquire colloquial expressions (tiếp thu các cách diễn đạt tự nhiên đời thường)",
+        "Break through the fluency barrier (phá bỏ rào cản về độ trôi chảy)",
+        "Immense confidence booster (liều thuốc tăng cường sự tự tin mạnh mẽ)"
+      ],
+      "suggestedIdeas": "Luyện shadowing qua các bộ phim sitcom tiếng Anh (Friends, Modern Family), hoặc nghe podcast mỗi ngày khi chạy bộ.",
+      "sampleOutline": "- Language: English.\n- Action: Practiced the 'shadowing technique' mimicking actors from the series 'Friends' daily for 30 minutes.\n- How it helped: Substantially sharpened pronunciation, intonation, and reduced hesitation.\n- Feelings: Extremely empowering; transformed speaking from robotic translating to natural reflexes."
+    }
+  },
+  {
+    "id": "p2_time_got_up_early",
+    "topic": "Daily Routine & Experiences",
+    "title": "[Part 2] Describe a time when you got up early",
+    "questions": [
+      "When it was",
+      "What you did",
+      "Why you got up early",
+      "And how you felt about it"
+    ],
+    "fullPromptText": "Describe a time when you got up early.\nYou should say:\n- When it was\n- What you did\n- Why you got up early\nAnd how you felt about it.",
+    "guide": {
+      "keyVocab": [
+        "Dawn crack / At the crack of dawn (thức dậy từ tờ mờ sáng sớm)",
+        "Catch the red-eye flight (bắt chuyến bay sớm cất cánh lúc rạng sáng)",
+        "Dew-kissed serenity (sự tĩnh mịch trong trẻo đọng giọt sương mai)",
+        "Fight off initial grogginess (chiến đấu với cơn ngái ngủ mệt mỏi ban đầu)",
+        "Spectacular dawn horizon (đường chân trời bình minh rực rỡ ngoạn mục)"
+      ],
+      "suggestedIdeas": "Dậy lúc 4h30 sáng để bắt chuyến bay sớm đi du lịch biển, hoặc dậy sớm leo núi ngắm bình minh trên đỉnh Fansipan/Bà Đen.",
+      "sampleOutline": "- When: 4:00 AM on a family beach getaway last summer.\n- Why: To catch a 6:30 AM domestic flight and avoid airport queues.\n- Activities: Splashed cold water, packed luggage, drove through peaceful empty highways.\n- Feelings: Groggy at first, but energized upon witnessing the gorgeous sunrise break over the clouds."
+    }
+  },
+  {
+    "id": "p2_local_news_people_interested",
+    "topic": "Media & Society",
+    "title": "[Part 2] Describe a piece of local news that people are interested in",
+    "questions": [
+      "What it was about",
+      "Where you saw/heard it",
+      "Who was involved",
+      "And explain why people were interested in it"
+    ],
+    "fullPromptText": "Describe a piece of local news that people are interested in.\nYou should say:\n- What it was about\n- Where you saw/heard it\n- Who was involved\nAnd explain why people were interested in it.",
+    "guide": {
+      "keyVocab": [
+        "Infrastructural breakthrough (bước đột phá lớn về cơ sở hạ tầng giao thông)",
+        "Urban transit metro line (tuyến tàu điện ngầm đô thị)",
+        "Alleviate perennial congestion (giải tỏa vấn nạn kẹt xe kinh niên)",
+        "Hot topic of public debate (chủ đề nóng hổi trong dư luận)",
+        "Transform urban commuting habits (thay đổi toàn diện thói quen đi lại của người dân)"
+      ],
+      "suggestedIdeas": "Tin tức khai trương tuyến tàu điện Metro mới tại Hà Nội/TP.HCM hoặc dự án mở rộng công viên cây xanh ven sông.",
+      "sampleOutline": "- News: Official commencement of the urban metro elevated transit line.\n- Source: Local online news portals (VnExpress) and community Facebook forums.\n- Involved: City planners, transport authorities, and daily commuters.\n- Why interested: Promises to drastically cut travel times and modernize the cityscape."
+    }
+  },
+  {
+    "id": "p2_environmental_law_country_introduce",
+    "topic": "Environment & Law",
+    "title": "[Part 2] Describe an environmental law you would like your country to introduce",
+    "questions": [
+      "What law it should be",
+      "Why people should follow the law",
+      "Whether the law will be popular",
+      "And explain how you feel about this law"
+    ],
+    "fullPromptText": "Describe an environmental law you would like your country to introduce.\nYou should say:\n- What law it should be\n- Why people should follow the law\n- Whether the law will be popular\nAnd explain how you feel about this law.",
+    "guide": {
+      "keyVocab": [
+        "Mandatory separation of organic and recyclable waste (bắt buộc phân loại rác hữu cơ và tái chế)",
+        "Subsidize green packaging (trợ cấp cho việc sử dụng bao bì xanh thân thiện môi trường)",
+        "Combating climate emergency (ứng phó với tình trạng khẩn cấp về biến đổi khí hậu)",
+        "Public health safeguards (hàng rào bảo vệ sức khỏe cộng đồng)",
+        "Foster eco-conscious mindset (xây dựng ý thức sống xanh và bảo vệ thiên nhiên)"
+      ],
+      "suggestedIdeas": "Luật phạt nặng các doanh nghiệp xả thải trái phép ra sông ngòi, hoặc cấm triệt để việc phát túi nylon miễn phí tại siêu thị.",
+      "sampleOutline": "- Law: Complete phase-out and prohibition of non-biodegradable single-use plastic bags in retail.\n- Why follow: Mitigate landfill suffocations and microplastic ingestion in food chains.\n- Popularity: Mixed initially due to minor inconvenience, but embraced once eco-habits form.\n- Feelings: Crucial legislative measure to safeguard future generations."
+    }
+  },
+  {
+    "id": "p2_home_like_visit_not_live",
+    "topic": "Housing & Architecture",
+    "title": "[Part 2] Describe a home that you like to visit but do not want to live in",
+    "questions": [
+      "Where it is",
+      "What it is like",
+      "Why you like to visit it",
+      "And explain why you would not like to live there"
+    ],
+    "fullPromptText": "Describe a home that you like to visit but do not want to live in.\nYou should say:\n- Where it is\n- What it is like\n- Why you like to visit it\nAnd explain why you would not like to live there.",
+    "guide": {
+      "keyVocab": [
+        "Rustic traditional timber house (ngôi nhà gỗ truyền thống mộc mạc)",
+        "Peaceful country retreat (chốn nghỉ dưỡng thanh bình nơi thôn quê)",
+        "Lack of modern infrastructure (thiếu thốn cơ sở hạ tầng hiện đại)",
+        "Isolated from healthcare and amenities (xa xôi cách trở với tiện ích và dịch vụ y tế)",
+        "Ideal for weekend getaways, not daily life (lý tưởng cho kỳ nghỉ cuối tuần nhưng không hợp sống lâu dài)"
+      ],
+      "suggestedIdeas": "Ngôi nhà gỗ truyền thống 3 gian của ông bà ở quê, hoặc một căn nhà sàn bằng gỗ giữa rừng núi.",
+      "sampleOutline": "- Where: My grandparents' traditional wooden home in rural Nam Dinh province.\n- What it is like: Expansive brick courtyard, tiled roof, wooden pillars, fruit orchard.\n- Why like to visit: Nostalgic peacefulness, pure air, delicious homegrown fruit.\n- Why not live: Inconvenient medical access, unstable high-speed internet for remote work."
+    }
+  },
+  {
+    "id": "p2_important_river_lake_country",
+    "topic": "Geography & Nature",
+    "title": "[Part 2] Describe an important river/lake in your country",
+    "questions": [
+      "Where it is located",
+      "How big/long it is",
+      "What it looks like",
+      "And explain why it is important"
+    ],
+    "fullPromptText": "Describe an important river/lake in your country.\nYou should say:\n- Where it is located\n- How big/long it is\n- What it looks like\nAnd explain why it is important.",
+    "guide": {
+      "keyVocab": [
+        "Mighty waterway (tuyến đường thủy hùng vĩ)",
+        "The Mekong River / Red River (Sông Mê Kông / Sông Hồng)",
+        "Agricultural lifeline (huyết mạch tưới tiêu nuôi dưỡng nền nông nghiệp)",
+        "Rich alluvium deposits (lượng phù sa màu mỡ bồi đắp)",
+        "Cradle of ancient civilizations (cái nôi của những nền văn minh cổ đại)"
+      ],
+      "suggestedIdeas": "Sông Hồng (gắn với văn minh lúa nước miền Bắc) hoặc Sông Mê Kông / Đồng bằng sông Cửu Long (vựa lúa của cả nước).",
+      "sampleOutline": "- River: The Red River (Sông Hồng) flowing through Hanoi.\n- Scale: Spans over 1,100 km originating from Yunnan to the Gulf of Tonkin.\n- Appearance: Muddy reddish silt waters flanked by lush banana fields and historical bridges.\n- Importance: Provides vital irrigation for agriculture, flood control, and historical heritage."
+    }
+  },
+  {
+    "id": "p2_person_successful_company",
+    "topic": "People & Corporate Life",
+    "title": "[Part 2] Describe a person who works in a successful company",
+    "questions": [
+      "Who he/she is",
+      "What he/she does in the company",
+      "What business the company does",
+      "And explain why you think it is a successful company"
+    ],
+    "fullPromptText": "Describe a person who works in a successful company.\nYou should say:\n- Who he/she is\n- What he/she does in the company\n- What business the company does\nAnd explain why you think it is a successful company.",
+    "guide": {
+      "keyVocab": [
+        "Multinational tech corporation (tập đoàn công nghệ đa quốc gia)",
+        "Senior solutions architect (kiến trúc sư giải pháp cao cấp)",
+        "Cutting-edge innovations (các sáng kiến đổi mới dẫn đầu xu thế)",
+        "Employee-centric corporate culture (văn hóa doanh nghiệp lấy nhân viên làm trọng tâm)",
+        "Market domination (sự thống trị áp đảo trên thị trường)"
+      ],
+      "suggestedIdeas": "Một người anh họ làm việc tại các tập đoàn lớn như Google, Viettel, FPT hoặc Shopee.",
+      "sampleOutline": "- Who: My elder cousin Hoang.\n- Role: Senior Product Manager.\n- Company: FPT Software / Shopee (pioneering digital tech and logistics).\n- Why successful: Relentless investment in cloud R&D, stellar global client base, and flexible hybrid work environment."
+    }
+  },
+  {
+    "id": "p2_place_visit_free_time",
+    "topic": "Leisure & Lifestyle",
+    "title": "[Part 2] Describe a place you would like to visit in your free time",
+    "questions": [
+      "Where it is",
+      "What you will do there",
+      "How long you will stay there",
+      "And explain why you would like to visit it"
+    ],
+    "fullPromptText": "Describe a place you would like to visit in your free time.\nYou should say:\n- Where it is\n- What you will do there\n- How long you will stay there\nAnd explain why you would like to visit it.",
+    "guide": {
+      "keyVocab": [
+        "Serene indie bookstore cafe (quán cà phê sách độc lập yên bình)",
+        "Sun-drenched reading nook (góc đọc sách ngập tràn ánh nắng ấm áp)",
+        "Immerse in literature (đắm chìm trong các trang sách văn học)",
+        "Escape the city frenzy (trốn khỏi sự náo nhiệt xô bồ của thành phố)",
+        "Sanctuary of peace (chốn trú ẩn tĩnh lặng cho tâm hồn)"
+      ],
+      "suggestedIdeas": "Một quán cà phê sách cổ điển nép trong con ngõ nhỏ, hoặc một khu vườn nhà kính ngoại ô thành phố.",
+      "sampleOutline": "- Place: A cozy two-story heritage book café tucked in an ancient alleyway.\n- Activities: Order an iced cold-brew, read fiction novels, and write personal journals.\n- Duration: A quiet 3-hour afternoon session on Sundays.\n- Why visit: Ambient acoustic jazz, faint aroma of roasted coffee, complete digital detox."
     }
   }
 ]
