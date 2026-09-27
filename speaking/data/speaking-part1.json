@@ -1,0 +1,37 @@
+[
+  {
+    "id": "p1_boredom",
+    "topic": "Feeling bored",
+    "title": "[Part 1] Feeling bored - Full Question Set",
+    "questions": [
+      "Do you often feel bored?",
+      "When would you feel bored?",
+      "What do you do when you feel bored?",
+      "Do you think childhood is boring or adulthood is boring?"
+    ],
+    "fullPromptText": "1. Do you often feel bored?\n2. When would you feel bored?\n3. What do you do when you feel bored?\n4. Do you think childhood is boring or adulthood is boring?",
+    "guide": {
+      "keyVocab": ["Monotonous routine (nếp sống nhàm chán)", "Kill time (giết thời gian)", "Ennui (cảm giác chán chường)", "Preoccupied with (bận rộn với)"],
+      "suggestedIdeas": "Part 1 trả lời theo cấu trúc A-R-E-A (Answer - Reason - Example). Nhớ nói một mạch cả 4 câu liên tục.",
+      "sampleOutline": "- Q1: Seldom, I always keep myself busy.\n- Q2: During long commutes or dull meetings.\n- Q3: Listen to podcasts or browse social media.\n- Q4: Adulthood, because of repetitive responsibilities and stress."
+    }
+  },
+  {
+    "id": "p1_tech",
+    "topic": "Computers/tablets",
+    "title": "[Part 1] Computers and Tablets - Full Question Set",
+    "questions": [
+      "Would you like to use a computer or tablet?",
+      "In what conditions would you use a computer or tablet?",
+      "When was the first time you used a computer or tablet?",
+      "What would your life be like without computers or tablets?",
+      "In what conditions would it be difficult for you to use a computer or tablet?"
+    ],
+    "fullPromptText": "1. Would you like to use a computer or tablet?\n2. In what conditions would you use a computer or tablet?\n3. When was the first time you used a computer or tablet?\n4. What would your life be like without computers or tablets?\n5. In what conditions would it be difficult for you to use a computer or tablet?",
+    "guide": {
+      "keyVocab": ["Indispensable tool (vật bất ly thân/không thể thiếu)", "Multitasking (đa nhiệm)", "Digital detox (cai thiết bị số)", "Technological glitch (lỗi công nghệ)"],
+      "suggestedIdeas": "Nhấn mạnh sự phụ thuộc của cuộc sống hiện đại và trải nghiệm lần đầu dùng máy tính khi còn nhỏ.",
+      "sampleOutline": "- Q1 & Q2: Absolutely, essential for work, study, and recreation.\n- Q3: Around primary school for educational games.\n- Q4: Unimaginable, severely hampered productivity.\n- Q5: In bright outdoor sunlight or places without electricity/internet."
+    }
+  }
+]
