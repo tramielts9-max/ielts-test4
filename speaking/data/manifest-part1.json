@@ -1,0 +1,422 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "part": 1,
+  "title": "IELTS Speaking Part 1 Forecast Manifest (Q3/2026)",
+  "dataSource": "speaking-part1.json",
+  "targetExamQuarter": "2026-Q3",
+  "totalTopics": 24,
+  "config": {
+    "speakingMode": "full_set_continuous",
+    "recommendedDurationSeconds": 180,
+    "selfRelianceThresholdSeconds": 20,
+    "answeringStrategy": "A-R-E-A (Answer - Reason - Example / Alternative)"
+  },
+  "topics": [
+    {
+      "id": "p1_boredom",
+      "topic": "Feeling bored",
+      "tag": "Daily Life",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Routine vs Monotony", "Adulthood stress vs Childhood play"]
+    },
+    {
+      "id": "p1_computers_tablets",
+      "topic": "Computers/tablets",
+      "tag": "Technology",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Digital workflow", "Screen limits", "Tech dependency"]
+    },
+    {
+      "id": "p1_collecting_things",
+      "topic": "Collecting things",
+      "tag": "Hobbies",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Sentimental keepsakes", "Minimalism", "Childhood mementos"]
+    },
+    {
+      "id": "p1_lost_and_found",
+      "topic": "Lost and found",
+      "tag": "Experiences",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Civic duty", "Absent-mindedness", "Social media search"]
+    },
+    {
+      "id": "p1_street_market",
+      "topic": "Street market",
+      "tag": "Culture & Shopping",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Medium",
+      "coreFocus": ["Bustling ambiance", "Fresh produce vs Malls", "Vietnamese street culture"]
+    },
+    {
+      "id": "p1_opportunities",
+      "topic": "Opportunities",
+      "tag": "Personal Development",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Hard",
+      "coreFocus": ["Comfort zone expansion", "Specialization vs Generalization"]
+    },
+    {
+      "id": "p1_secondary_school",
+      "topic": "Secondary school",
+      "tag": "Education & Memory",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["School transition", "Challenging subjects", "Nostalgic camaraderie"]
+    },
+    {
+      "id": "p1_paper",
+      "topic": "Paper",
+      "tag": "Objects & Habits",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Papercrafts & Origami", "Handwritten letters vs Digital notes"]
+    },
+    {
+      "id": "p1_fruit_and_vegetables",
+      "topic": "Fruit and vegetables",
+      "tag": "Health & Food",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Dietary habits", "Acquired taste", "Organic wet markets"]
+    },
+    {
+      "id": "p1_politeness",
+      "topic": "Politeness",
+      "tag": "Social Etiquette",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Parental role modeling", "Civic harmony"]
+    },
+    {
+      "id": "p1_tiredness",
+      "topic": "Tiredness",
+      "tag": "Lifestyle & Health",
+      "questionCount": 3,
+      "estimatedSpeakingTime": "1m30s",
+      "difficulty": "Easy",
+      "coreFocus": ["Burnout", "Screen fatigue", "Recharge mechanisms"]
+    },
+    {
+      "id": "p1_rubbish_and_recycling",
+      "topic": "Rubbish and recycling",
+      "tag": "Environment",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Waste classification", "Civic awareness", "Plastic reduction"]
+    },
+    {
+      "id": "p1_travelling",
+      "topic": "Travelling",
+      "tag": "Leisure",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Easy",
+      "coreFocus": ["Window seat perspective", "Family road trip memories"]
+    },
+    {
+      "id": "p1_advertisement",
+      "topic": "Advertisement",
+      "tag": "Media & Marketing",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Intrusive ads", "TV commercials", "Creative narrative marketing"]
+    },
+    {
+      "id": "p1_friends",
+      "topic": "Friends",
+      "tag": "Relationships",
+      "questionCount": 9,
+      "estimatedSpeakingTime": "3m - 3m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Confidants", "Meeting spots", "Long-lasting friendship"]
+    },
+    {
+      "id": "p1_shoes",
+      "topic": "Shoes",
+      "tag": "Fashion & Consumerism",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Comfort vs Fashion", "Online shoe sizing", "Budget considerations"]
+    },
+    {
+      "id": "p1_name",
+      "topic": "Name",
+      "tag": "Psychology & Social",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Medium",
+      "coreFocus": ["Memory mnemonics", "Facial recognition", "Namesake respect"]
+    },
+    {
+      "id": "p1_watch",
+      "topic": "Watch",
+      "tag": "Objects & Lifestyle",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Status symbol", "Smartwatches", "Punctuality value"]
+    },
+    {
+      "id": "p1_cars",
+      "topic": "Cars",
+      "tag": "Transport & Tech",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Aesthetic & Safety", "EV trends", "Coping with traffic jams"]
+    },
+    {
+      "id": "p1_websites",
+      "topic": "Websites",
+      "tag": "Internet & Digital",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Favorite platforms", "Algorithmic feed", "Popular sites in VN"]
+    },
+    {
+      "id": "p1_mirrors",
+      "topic": "Mirrors",
+      "tag": "Interior & Daily Habits",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Grooming habits", "Interior spatial illusion"]
+    },
+    {
+      "id": "p1_public_gardens_and_parks",
+      "topic": "Public gardens and parks",
+      "tag": "Urban Planning",
+      "questionCount": 8,
+      "estimatedSpeakingTime": "3m",
+      "difficulty": "Medium",
+      "coreFocus": ["Green lung of city", "Recreational spaces", "Childhood outdoor games"]
+    },
+    {
+      "id": "p1_shopping",
+      "topic": "Shopping",
+      "tag": "Consumerism",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Online vs In-store", "Product returns", "Retail therapy"]
+    },
+    {
+      "id": "p1_tidiness",
+      "topic": "Tidiness",
+      "tag": "Habits & Personality",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Easy",
+      "coreFocus": ["Cleanliness mindset", "Productivity correlation", "Childhood room habits"]
+    },
+    {
+      "id": "p1_music",
+      "topic": "Music",
+      "tag": "Arts & Emotions",
+      "questionCount": 2,
+      "estimatedSpeakingTime": "1m - 1m30s",
+      "difficulty": "Easy",
+      "coreFocus": ["Cathartic release", "Upbeat mood-lifting tempos"]
+    },
+    {
+      "id": "p1_teachers",
+      "topic": "Teachers",
+      "tag": "Education & Mentorship",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Inspirational figures", "Keeping in touch", "Teaching profession challenges"]
+    },
+    {
+      "id": "p1_social_media",
+      "topic": "Social media",
+      "tag": "Digital Life",
+      "questionCount": 5,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Doom-scrolling", "Digital footprint", "Communication changes"]
+    },
+    {
+      "id": "p1_clothing",
+      "topic": "Clothing",
+      "tag": "Fashion & Lifestyle",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Casual chic", "Decision fatigue", "Dress etiquette"]
+    },
+    {
+      "id": "p1_films_cinemas",
+      "topic": "Films/cinemas",
+      "tag": "Entertainment",
+      "questionCount": 7,
+      "estimatedSpeakingTime": "2m30s - 3m",
+      "difficulty": "Medium",
+      "coreFocus": ["Cinematic visual impact", "Streaming at home", "Movie outings with friends"]
+    },
+    {
+      "id": "p1_dream_and_ambition",
+      "topic": "Dream and ambition",
+      "tag": "Aspiration",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Hard",
+      "coreFocus": ["Pragmatic ambition", "Childhood fantasies", "Perseverance"]
+    },
+    {
+      "id": "p1_the_city_you_live_in",
+      "topic": "The city you live in",
+      "tag": "Urban Life",
+      "questionCount": 10,
+      "estimatedSpeakingTime": "3m - 3m30s",
+      "difficulty": "Hard",
+      "coreFocus": ["Urban infrastructure", "Demographics", "Livability & Weather"]
+    },
+    {
+      "id": "p1_outer_space_and_stars",
+      "topic": "Outer space and stars",
+      "tag": "Science & Universe",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Hard",
+      "coreFocus": ["Astrophysics fascination", "Sci-fi imagination", "Commercial space flight"]
+    },
+    {
+      "id": "p1_art",
+      "topic": "Art",
+      "tag": "Arts & Culture",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Hard",
+      "coreFocus": ["Abstract vs Traditional art", "Art exhibitions", "Aesthetic appreciation"]
+    },
+    {
+      "id": "p1_singing",
+      "topic": "Singing",
+      "tag": "Hobbies & Emotion",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Karaoke culture", "Singing off-key", "Endorphin release"]
+    },
+    {
+      "id": "p1_evening_time",
+      "topic": "Evening time",
+      "tag": "Daily Routine",
+      "questionCount": 6,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Night owls vs Early birds", "Decompressing", "Weekday vs Weekend evenings"]
+    },
+    {
+      "id": "p1_old_buildings",
+      "topic": "Old buildings",
+      "tag": "Architecture & Heritage",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Medium",
+      "coreFocus": ["Colonial architecture", "Heritage preservation vs Urbanization"]
+    },
+    {
+      "id": "p1_sports_programs",
+      "topic": "Sports programs",
+      "tag": "Sports & Media",
+      "questionCount": 6,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Easy",
+      "coreFocus": ["Stadium atmosphere", "Spectator sports", "Cheering with peers"]
+    },
+    {
+      "id": "p1_science",
+      "topic": "Science",
+      "tag": "Science & Education",
+      "questionCount": 6,
+      "estimatedSpeakingTime": "2m - 2m30s",
+      "difficulty": "Hard",
+      "coreFocus": ["Empirical experiments", "Science museums in VN", "STEM subjects"]
+    },
+    {
+      "id": "p1_headphones",
+      "topic": "Headphones",
+      "tag": "Gadgets & Daily Life",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Noise-canceling tech", "Traffic hazard awareness"]
+    },
+    {
+      "id": "p1_jokes_comedies",
+      "topic": "Jokes & Comedies",
+      "tag": "Humor & Social",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Medium",
+      "coreFocus": ["Stand-up comedy", "Sense of humor", "Stress alleviation"]
+    },
+    {
+      "id": "p1_history",
+      "topic": "History",
+      "tag": "History & Heritage",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Medium",
+      "coreFocus": ["Historical museums", "Rote memorization vs True understanding"]
+    },
+    {
+      "id": "p1_morning_routines",
+      "topic": "Morning routines",
+      "tag": "Daily Routine & Health",
+      "questionCount": 4,
+      "estimatedSpeakingTime": "1m30s - 2m",
+      "difficulty": "Easy",
+      "coreFocus": ["Hydration", "Setting daily momentum", "Nutritious breakfast"]
+    },
+    {
+      "id": "p1_work_or_studies",
+      "topic": "Work or studies",
+      "tag": "Career & Academics",
+      "questionCount": 11,
+      "estimatedSpeakingTime": "3m - 4m",
+      "difficulty": "Hard",
+      "coreFocus": ["Major selection", "Work-study balance", "5-year career blueprint"]
+    },
+    {
+      "id": "p1_home_and_accommodation",
+      "topic": "Home & Accommodation",
+      "tag": "Living Space",
+      "questionCount": 10,
+      "estimatedSpeakingTime": "3m - 3m30s",
+      "difficulty": "Medium",
+      "coreFocus": ["Apartment vs House", "Natural light", "Favorite room"]
+    },
+    {
+      "id": "p1_hometown_and_area",
+      "topic": "Hometown & The area you live in",
+      "tag": "Geography & Community",
+      "questionCount": 7,
+      "estimatedSpeakingTime": "2m30s - 3m",
+      "difficulty": "Medium",
+      "coreFocus": ["Specialties", "Infrastructural changes", "Youth migration"]
+    }
+  ]
+}
