@@ -1,9 +1,8 @@
 /**
- * PRE-SPEAKING SHADOWING ENGINE (-ps)
- * Kiến trúc 2-Tier Selector, Web Audio Filter & Multi-model Gemini Fallback
+ * PRE-SPEAKING CONTROLLER (-ps)
  */
 
-// 1. MÃ HÓA RUNTIME AUTH KEY: AQ.Ab8RN6LtC3sV50PTB_fOhfl2ACJyQ7KyOrvCnOvyAW8Sthw11w
+// 1. MÃ HÓA RUNTIME KEY: AQ.Ab8RN6LtC3sV50PTB_fOhfl2ACJyQ7KyOrvCnOvyAW8Sthw11w
 const _AUTH_SEEDS = [
   65, 81, 46, 65, 98, 56, 82, 78, 54, 76, 116, 67, 51, 115, 86, 53,
   48, 80, 84, 66, 95, 102, 79, 104, 102, 108, 50, 65, 67, 74, 121,
@@ -15,21 +14,18 @@ function getDecodedKey() {
   return _AUTH_SEEDS.map(c => String.fromCharCode(c)).join('');
 }
 
-// 2. CHUỖI GỌI MODEL AI VỚI FALLBACK TUẦN TỰ
+// 2. DANH SÁCH MODEL AI DỰ PHÒNG THEO YÊU CẦU
 const AI_MODELS = [
-  "gemini-3.5-flash-lite", // Bậc 1 theo yêu cầu
-  "gemini-3.1-flash-lite", // Bậc 2 theo yêu cầu
-  "gemini-2.0-flash-lite", // Bậc 3 dự phòng runtime nếu Google chưa phát hành bản 3.x
+  "gemini-3.5-flash-lite", // Gọi trước tiên
+  "gemini-3.1-flash-lite", // Hết lượt thì gọi tới
+  "gemini-2.0-flash-lite", // Dự phòng nếu Google chưa phát hành bản 3.x
   "gemini-1.5-flash"
 ];
 
-// App States
 let categoriesData = [];
 let currentCategory = null;
 let currentLesson = null;
-
 let ytPlayer = null;
-let isPlayerReady = false;
 
 let mediaRecorder = null;
 let audioStream = null;
@@ -40,50 +36,55 @@ let animationFrameId = null;
 
 let timerInterval = null;
 let secondsRecorded = 0;
-const MIN_PACING_RATIO = 0.3; // Ít nhất 30% thời lượng bài gốc hoặc tối thiểu 15s
+const MIN_REQUIRED_DURATION = 15; // 15 giây nói tối thiểu
 
-// --- DOM READY ---
 window.addEventListener('DOMContentLoaded', async () => {
   await loadCatalogAndLessons();
   initYouTubeAPI();
 });
 
-// --- LOAD DATA TỪ THƯ MỤC DATA ---
+// TỰ ĐỘNG TẢI DỮ LIỆU TỪ FOLDER DATA (CÓ DỰ PHÒNG CHỐNG LỖI 404)
 async function loadCatalogAndLessons() {
   try {
-    // 1. Đọc Manifest
     const manifestRes = await fetch('data/manifest-ps.json');
+    if (!manifestRes.ok) throw new Error("Chưa nạp được manifest-ps.json");
     const manifest = await manifestRes.json();
     const a1Config = manifest.catalogs.find(c => c.id === 'shadow_a1');
 
-    // 2. Đọc file JSON chi tiết bài học
     const lessonsRes = await fetch(a1Config.dataFile);
+    if (!lessonsRes.ok) throw new Error("Chưa nạp được lessons-ps.json");
     categoriesData = await lessonsRes.json();
-
-    // 3. Khởi tạo 2 Dropdowns
-    populateCategoryDropdown();
   } catch (err) {
-    console.error('Lỗi nạp database JSON:', err);
-    alert('Không thể tải file dữ liệu lessons-ps.json. Hãy chắc chắn bạn đang chạy trên HTTP/HTTPS Server.');
+    console.warn("⚠️ Đang dùng kho bài nạp sẵn chống lỗi đường dẫn:", err.message);
+    categoriesData = [
+      {
+        "category": "1. Giao tiếp cơ bản hàng ngày",
+        "lessons": [
+          { "id": "A1.01", "title": "Family and Relationships", "duration": "2:51", "durationSeconds": 171, "videoId": "UHMbJlKzNu8" },
+          { "id": "A1.02", "title": "Travel and Holidays", "duration": "2:26", "durationSeconds": 146, "videoId": "gFkNhGDd8Ws" },
+          { "id": "A1.03", "title": "Education and Learning", "duration": "3:22", "durationSeconds": 202, "videoId": "rnnb508zEHI" },
+          { "id": "A1.04", "title": "Health and Fitness", "duration": "2:17", "durationSeconds": 137, "videoId": "IBx-k6iAOm4" },
+          { "id": "A1.05", "title": "Work and Careers", "duration": "2:32", "durationSeconds": 152, "videoId": "DY3TDYBt9qU" }
+        ]
+      }
+    ];
   }
+
+  populateCategoryDropdown();
 }
 
-// Dropdown Cấp 1: Phân nhóm
 function populateCategoryDropdown() {
   const catSel = document.getElementById('categorySelect');
   catSel.innerHTML = '';
-
   categoriesData.forEach((group, index) => {
     const opt = document.createElement('option');
     opt.value = index;
     opt.innerText = group.category;
     catSel.appendChild(opt);
   });
-
   handleCategoryChange();
 }
 
-// Dropdown Cấp 2: Danh sách bài chi tiết
 window.handleCategoryChange = () => {
   const catSel = document.getElementById('categorySelect');
   const lessonSel = document.getElementById('lessonSelect');
@@ -109,7 +110,6 @@ window.handleLessonChange = () => {
     document.getElementById('displayLessonTitle').innerText = `[${currentLesson.id}] ${currentLesson.title}`;
     document.getElementById('displayLessonDuration').innerText = `Thời lượng: ${currentLesson.duration}`;
     
-    // Tải Video vào Player nếu đã khởi tạo
     if (ytPlayer && ytPlayer.loadVideoById) {
       ytPlayer.loadVideoById(currentLesson.videoId);
     }
@@ -117,12 +117,11 @@ window.handleLessonChange = () => {
   resetUI();
 };
 
-// --- YOUTUBE IFRAME CONTROLLER ---
+// YOUTUBE PLAYER CẤU HÌNH TƯƠNG THÍCH CAO
 function initYouTubeAPI() {
   const tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
-  const firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  document.head.appendChild(tag);
 }
 
 window.onYouTubeIframeAPIReady = () => {
@@ -131,25 +130,21 @@ window.onYouTubeIframeAPIReady = () => {
     origin = 'https://localhost';
   }
 
-  const defaultVideoId = currentLesson ? currentLesson.videoId : "UHMbJlKzNu8";
+  const defaultId = currentLesson ? currentLesson.videoId : "UHMbJlKzNu8";
 
   ytPlayer = new YT.Player('youtube-player', {
-    videoId: defaultVideoId,
+    videoId: defaultId,
     playerVars: {
       playsinline: 1,
       rel: 0,
       modestbranding: 1,
       origin: origin
-    },
-    events: {
-      onReady: () => { isPlayerReady = true; },
-      onError: (e) => { console.error('YouTube Error Code:', e.data); }
     }
   });
 };
 
-// --- WEB AUDIO RECORDING (LỌC TIẾNG ỒN & VỌNG TỪ LOA) ---
-async function startAudioHardware() {
+// WEB AUDIO - TRIỆT TIÊU TIẾNG VỌNG LOA
+async function startAudio() {
   try {
     const constraints = {
       audio: {
@@ -167,7 +162,7 @@ async function startAudioHardware() {
     analyser = audioContext.createAnalyser();
     analyser.fftSize = 64;
     source.connect(analyser);
-    drawVisualizer();
+    drawMeter();
 
     audioChunks = [];
     let mimeType = 'audio/webm';
@@ -181,12 +176,12 @@ async function startAudioHardware() {
     mediaRecorder.start(250);
     return true;
   } catch (err) {
-    alert("Lỗi truy cập Micro: " + err.message + ". Vui lòng cấp quyền Micro trên trình duyệt.");
+    alert("Vui lòng cắm Micro và nhấn 'Cho phép' khi trình duyệt hỏi quyền Micro nhé!");
     return false;
   }
 }
 
-function drawVisualizer() {
+function drawMeter() {
   const canvas = document.getElementById('audioMeter');
   const ctx = canvas.getContext('2d');
   const data = new Uint8Array(analyser.frequencyBinCount);
@@ -205,22 +200,20 @@ function drawVisualizer() {
   render();
 }
 
-// --- RECORDING CONTROLS ---
+// BẬT / DỪNG THU ÂM
 window.toggleShadowRecording = async () => {
   const btnRec = document.getElementById('btnRecord');
   const btnStop = document.getElementById('btnStop');
 
   resetUI();
-  const ready = await startAudioHardware();
-  if (!ready) return;
+  const ok = await startAudio();
+  if (!ok) return;
 
-  // Tự động phát Video
   if (ytPlayer && ytPlayer.playVideo) {
     ytPlayer.seekTo(0, true);
     ytPlayer.playVideo();
   }
 
-  // Đếm giờ
   secondsRecorded = 0;
   timerInterval = setInterval(() => {
     secondsRecorded++;
@@ -258,87 +251,82 @@ window.stopAndSubmitRecording = () => {
   btnStop.disabled = true;
 };
 
-// --- GEMINI MULTI-MODEL FALLBACK CALL ---
-async function blobToBase64(blob) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onloadend = () => resolve(reader.result.split(',')[1]);
-    reader.onerror = reject;
-    reader.readAsDataURL(blob);
-  });
-}
-
+// GỬI CHẤM AI VỚI FALLBACK TUẦN TỰ
 async function evaluateAudioWithGemini(audioBlob, durationSec) {
-  showOverlay("Đang tải dữ liệu âm thanh...");
-  const base64Audio = await blobToBase64(audioBlob);
-  const apiKey = getDecodedKey();
+  showOverlay("Đang nén file ghi âm...");
+  
+  const reader = new FileReader();
+  reader.readAsDataURL(audioBlob);
+  reader.onloadend = async () => {
+    const base64Audio = reader.result.split(',')[1];
+    const apiKey = getDecodedKey();
 
-  const prompt = `
-You are an expert English shadowing coach assessing a student shadowing the lesson: "${currentLesson.title}".
-Analyze the audio and return a STRICT JSON object without markdown formatting:
+    const prompt = `
+You are an English shadowing coach evaluating a student on lesson: "${currentLesson.title}".
+Analyze audio and return pure JSON only (no markdown, no backticks):
 {
-  "transcript": "Exact words student spoken",
+  "transcript": "Exact transcription of spoken English",
   "overall_score": <Integer 0-100 matching lesson accuracy>,
   "fluency_score": <Integer 0-100 flow and continuity>,
   "pronunciation_score": <Integer 0-100 phoneme clarity>,
-  "missed_words": ["array", "of", "words", "missed", "or", "mispronounced"],
-  "feedback": "Short constructive advice in Vietnamese (1 khen, 1 sửa)"
+  "missed_words": ["words", "missed", "or", "unclear"],
+  "feedback": "Short advice in Vietnamese (1 khen, 1 sua)"
 }
 `;
 
-  let lastError = null;
+    let lastError = null;
 
-  for (let i = 0; i < AI_MODELS.length; i++) {
-    const model = AI_MODELS[i];
-    try {
-      showOverlay(`Đang phân tích qua AI Model: ${model}... (Tầng ${i + 1}/${AI_MODELS.length})`);
+    for (let i = 0; i < AI_MODELS.length; i++) {
+      const model = AI_MODELS[i];
+      try {
+        showOverlay(`Đang chấm điểm qua: ${model}... (Tầng ${i + 1}/${AI_MODELS.length})`);
 
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{
-            parts: [
-              { inline_data: { mime_type: audioBlob.type || 'audio/webm', data: base64Audio } },
-              { text: prompt }
-            ]
-          }],
-          generationConfig: { response_mime_type: "application/json", temperature: 0.1 }
-        })
-      });
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{
+              parts: [
+                { inline_data: { mime_type: audioBlob.type || 'audio/webm', data: base64Audio } },
+                { text: prompt }
+              ]
+            }],
+            generationConfig: { response_mime_type: "application/json", temperature: 0.1 }
+          })
+        });
 
-      if (!res.ok) {
-        const errJson = await res.json();
-        throw new Error(errJson.error?.message || `HTTP ${res.status}`);
+        if (!res.ok) {
+          const errJson = await res.json();
+          throw new Error(errJson.error?.message || `Lỗi HTTP ${res.status}`);
+        }
+
+        const json = await res.json();
+        const rawText = json.candidates[0].content.parts[0].text;
+        const parsed = JSON.parse(rawText);
+
+        hideOverlay();
+        renderGradingResult(parsed, durationSec);
+        return;
+
+      } catch (err) {
+        console.warn(`Fallback từ ${model}:`, err.message);
+        lastError = err;
       }
-
-      const json = await res.json();
-      const rawText = json.candidates[0].content.parts[0].text;
-      const parsedData = JSON.parse(rawText);
-
-      hideOverlay();
-      renderGradingResult(parsedData, durationSec);
-      return;
-
-    } catch (err) {
-      console.warn(`Fallback từ ${model} sang model tiếp theo:`, err);
-      lastError = err;
     }
-  }
 
-  hideOverlay();
-  alert("Lỗi chấm điểm: " + lastError.message);
+    hideOverlay();
+    alert("Lỗi chấm điểm: " + lastError.message);
+  };
 }
 
-// --- VALIDATION LAYER (3 LỚP NGHIÊM NGẶT) ---
+// BẢNG KẾT QUẢ VÀ DUYỆT BÀI
 function renderGradingResult(data, durationSec) {
   document.getElementById('resOverall').innerText = data.overall_score;
   document.getElementById('resFluency').innerText = data.fluency_score;
   document.getElementById('resPronun').innerText = data.pronunciation_score;
-  document.getElementById('resTranscript').innerText = data.transcript || "(Không phát hiện giọng nói rõ ràng)";
+  document.getElementById('resTranscript').innerText = data.transcript || "(Không nhận diện được giọng nói)";
   document.getElementById('resFeedback').innerText = data.feedback || "";
 
-  // Render từ vựng lỗi
   const missedBox = document.getElementById('resMissedWords');
   missedBox.innerHTML = '';
   if (data.missed_words && data.missed_words.length > 0) {
@@ -349,35 +337,29 @@ function renderGradingResult(data, durationSec) {
       missedBox.appendChild(sp);
     });
   } else {
-    missedBox.innerHTML = '<span class="text-emerald-400 text-xs">🎉 Bạn nói trôi chảy không bị vấp từ nào!</span>';
+    missedBox.innerHTML = '<span class="text-emerald-400 text-xs">🎉 Bạn phát âm rất rõ và không bị sót từ!</span>';
   }
 
-  // Tiêu chí 1: Thời lượng nói
-  const requiredSeconds = Math.min(15, Math.floor((currentLesson.durationSeconds || 60) * MIN_PACING_RATIO));
-  const isPacingPassed = durationSec >= requiredSeconds;
-
-  // Tiêu chí 2: Match Score AI
+  const isDurationPassed = durationSec >= MIN_REQUIRED_DURATION;
   const isScorePassed = data.overall_score >= 60;
 
-  document.getElementById('valPacingText').innerHTML = `<b class="${isPacingPassed ? 'text-emerald-400' : 'text-rose-400'}">${durationSec}s</b> / ${requiredSeconds}s`;
+  document.getElementById('valPacingText').innerHTML = `<b class="${isDurationPassed ? 'text-emerald-400' : 'text-rose-400'}">${durationSec}s</b> / ${MIN_REQUIRED_DURATION}s`;
   document.getElementById('valScoreText').innerHTML = `<b class="${isScorePassed ? 'text-emerald-400' : 'text-rose-400'}">${data.overall_score}%</b> (≥60%)`;
 
   const badge = document.getElementById('validationBadge');
   const completeBtn = document.getElementById('btnComplete');
 
-  // Tiêu chí 3: Strict Workflow
-  if (isPacingPassed && isScorePassed) {
-    badge.className = "text-xs font-bold px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 border border-emerald-700";
+  if (isDurationPassed && isScorePassed) {
+    badge.className = "text-xs font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-700";
     badge.innerText = "✓ ĐẠT YÊU CẦU";
     completeBtn.disabled = false;
   } else {
-    badge.className = "text-xs font-bold px-2.5 py-1 rounded bg-rose-950 text-rose-300 border border-rose-700";
-    badge.innerText = "✕ CHƯA ĐẠT (LÀM LẠI)";
+    badge.className = "text-xs font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-300 border border-rose-700";
+    badge.innerText = "✕ CHƯA ĐẠT";
     completeBtn.disabled = true;
   }
 
-  // Tối ưu Storage: Giải phóng bộ đệm Audio
-  audioChunks = [];
+  audioChunks = []; // Dọn rác bộ nhớ
 }
 
 function resetUI() {
@@ -385,28 +367,16 @@ function resetUI() {
   document.getElementById('resOverall').innerText = "--";
   document.getElementById('resFluency').innerText = "--";
   document.getElementById('resPronun').innerText = "--";
-  document.getElementById('resTranscript').innerText = "(Chưa có bản ký âm)";
+  document.getElementById('resTranscript').innerText = "(Chưa có bản ghi)";
   document.getElementById('resMissedWords').innerHTML = '<span class="text-slate-500 italic">Không có dữ liệu</span>';
-  document.getElementById('resFeedback').innerText = "Hãy nhấn 'Bắt đầu Shadowing' và nói đuổi theo video.";
-  document.getElementById('validationBadge').className = "text-xs font-bold px-2.5 py-1 rounded bg-slate-800 text-slate-400 border border-slate-700";
-  document.getElementById('validationBadge').innerText = "Chờ kiểm duyệt";
+  document.getElementById('resFeedback').innerText = "Bấm 'Bắt đầu Shadow' và nói đuổi theo video để AI chấm điểm nhé.";
+  document.getElementById('validationBadge').className = "text-xs font-bold px-2 py-0.5 rounded bg-slate-700 text-slate-400";
+  document.getElementById('validationBadge').innerText = "Chờ nộp bài";
   document.getElementById('btnComplete').disabled = true;
 }
 
 window.completeLessonSubmission = () => {
-  // Payload tối ưu: Tuyệt đối KHÔNG chứa file âm thanh
-  const submissionData = {
-    lessonId: currentLesson.id,
-    lessonTitle: currentLesson.title,
-    durationSeconds: secondsRecorded,
-    overallScore: parseInt(document.getElementById('resOverall').innerText),
-    fluencyScore: parseInt(document.getElementById('resFluency').innerText),
-    pronunciationScore: parseInt(document.getElementById('resPronun').innerText),
-    completedAt: new Date().toISOString()
-  };
-
-  console.log("💾 Lưu trữ hoàn tất (Payload nhẹ ~1KB):", submissionData);
-  alert("🎉 Chúc mừng em đã hoàn thành bài Shadowing đạt chuẩn!");
+  alert("🎉 Chúc mừng em đã hoàn thành bài tập nói Shadowing A1 đạt tiêu chuẩn!");
 };
 
 function showOverlay(txt) {
