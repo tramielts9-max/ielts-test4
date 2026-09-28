@@ -272,7 +272,7 @@ window.stopAndSubmitRecording = async () => {
   await evaluateTranscriptWithGemini(transcript, secondsRecorded);
 };
 
-// ================== GỬI CHẤM TEXT SIÊU TỐC VỚI GEMINI ==================
+// ================== GỬI CHẤM TEXT VỚI AUTO-RETRY CHỐNG NGHẼN 503 ==================
 async function evaluateTranscriptWithGemini(transcriptText, durationSec) {
   showOverlay("Đang gửi bản ký âm cho AI phân tích...");
   const apiKey = getDecodedKey();
@@ -300,52 +300,64 @@ HÃY ĐỐI CHIẾU VÀ ĐÁNH GIÁ NGỮ ÂM THEO NGUYÊN TẮC:
 
   for (let i = 0; i < AI_MODELS.length; i++) {
     const model = AI_MODELS[i];
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000); // Tự ngắt sau 6 giây
+    
+    // Thử tối đa 2 lần cho mỗi model nếu dính lỗi quá tải 503
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 8000);
 
-    try {
-      showOverlay(`Đang chấm qua model: ${model}... (Bậc ${i + 1}/${AI_MODELS.length})`);
+      try {
+        const attemptLabel = attempt > 1 ? ` (Thử lại lần 2 do server tải cao...)` : "";
+        showOverlay(`Đang chấm qua model: ${model}...${attemptLabel}`);
 
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{
-            role: "user",
-            parts: [{ text: promptText }]
-          }],
-          generationConfig: { temperature: 0.1 }
-        }),
-        signal: controller.signal
-      });
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{
+              role: "user",
+              parts: [{ text: promptText }]
+            }],
+            generationConfig: { temperature: 0.1 }
+          }),
+          signal: controller.signal
+        });
 
-      clearTimeout(timeoutId);
+        clearTimeout(timeoutId);
 
-      if (!res.ok) {
-        const errJson = await res.json();
-        throw new Error(errJson.error?.message || `HTTP ${res.status}`);
+        // NẾU BỊ QUÁ TẢI 503: Nghỉ 1.5 giây rồi thử lại chính model đó
+        if (res.status === 503 && attempt === 1) {
+          console.warn(`[Server bận 503] Model ${model} đang nghẽn tải, chờ 1.5s rồi thử lại...`);
+          await new Promise(r => setTimeout(r, 1500));
+          continue; // Lặp lại lần 2
+        }
+
+        if (!res.ok) {
+          const errJson = await res.json();
+          throw new Error(errJson.error?.message || `HTTP ${res.status}`);
+        }
+
+        const json = await res.json();
+        let rawText = json.candidates[0].content.parts[0].text.trim();
+
+        if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
+        else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
+
+        const parsed = JSON.parse(rawText);
+        hideOverlay();
+        renderGradingResult(parsed, durationSec);
+        return; // Thành công thì thoát luôn
+
+      } catch (err) {
+        clearTimeout(timeoutId);
+        console.warn(`Model ${model} lần thử ${attempt} gặp sự cố:`, err.message);
+        lastError = err;
       }
-
-      const json = await res.json();
-      let rawText = json.candidates[0].content.parts[0].text.trim();
-
-      if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
-      else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
-
-      const parsed = JSON.parse(rawText);
-      hideOverlay();
-      renderGradingResult(parsed, durationSec);
-      return; // Chấm thành công thì kết thúc luôn
-
-    } catch (err) {
-      clearTimeout(timeoutId);
-      console.warn(`Model ${model} chuyển tiếp:`, err.message);
-      lastError = err;
     }
   }
 
   hideOverlay();
-  alert("Lỗi chấm điểm: " + lastError.message);
+  alert("Máy chủ AI hiện đang chịu tải quá cao (503). Em hãy đợi khoảng 5-10 giây rồi bấm 'Dừng & Chấm bài' lại nhé!");
 }
 
 // BẢNG KẾT QUẢ VÀ TIÊU CHUẨN ĐẠT
