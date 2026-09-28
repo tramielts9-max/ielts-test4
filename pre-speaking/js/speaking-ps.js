@@ -1,9 +1,10 @@
 /**
  * PRE-SPEAKING CONTROLLER (-ps)
- * Dùng chuẩn xác Auth Seeds từ speaking.js đang chạy tốt của bạn
+ * Tích hợp Web Speech API (Realtime STT) + Chấm điểm Text qua Gemini
+ * Thứ tự Model: gemini-3.5-flash-lite -> gemini-3.1-flash-lite -> fallback
  */
 
-// 1. MÃ HÓA RUNTIME AUTH KEY (LẤY TỪ BẢN GỐC SPEAKING.JS ĐANG CHẠY MƯỢT CỦA BẠN)
+// 1. MÃ HÓA RUNTIME AUTH KEY GỐC TỪ SPEAKING.JS
 const _AUTH_SEEDS = [
   65, 81, 46, 65, 98, 56, 82, 78, 54, 75, 116, 80, 107, 51, 45, 50,
   75, 103, 117, 114, 119, 117, 116, 65, 115, 55, 95, 118, 82, 66,
@@ -15,11 +16,11 @@ function getDecodedKey() {
   return _AUTH_SEEDS.map(c => String.fromCharCode(c)).join('');
 }
 
-// 2. CHUỖI MODEL AI FALLBACK
+// 2. CHUỖI GỌI MODEL AI THEO YÊU CẦU
 const AI_MODELS = [
-  "gemini-3.5-flash-lite",
-  "gemini-3.1-flash-lite",
-  "gemini-2.0-flash-lite",
+  "gemini-3.5-flash-lite", // Ưu tiên 1
+  "gemini-3.1-flash-lite", // Ưu tiên 2
+  "gemini-2.0-flash-lite", // Dự phòng
   "gemini-1.5-flash"
 ];
 
@@ -28,23 +29,24 @@ let currentCategory = null;
 let currentLesson = null;
 let ytPlayer = null;
 
-let mediaRecorder = null;
+// Speech & Recording States
+let recognition = null;
 let audioStream = null;
-let audioChunks = [];
 let audioContext = null;
 let analyser = null;
 let animationFrameId = null;
 
 let timerInterval = null;
 let secondsRecorded = 0;
-const MIN_REQUIRED_DURATION = 15; // 15 giây
+const MIN_REQUIRED_DURATION = 15; // 15 giây tối thiểu
 
 window.addEventListener('DOMContentLoaded', async () => {
   await loadCatalogAndLessons();
   initYouTubeAPI();
+  initSpeechRecognition();
 });
 
-// NẠP DỮ LIỆU BÀI HỌC
+// TỰ ĐỘNG TẢI DỮ LIỆU BÀI HỌC
 async function loadCatalogAndLessons() {
   try {
     const manifestRes = await fetch('data/manifest-ps.json');
@@ -56,7 +58,6 @@ async function loadCatalogAndLessons() {
     if (!lessonsRes.ok) throw new Error("Chưa có lessons");
     categoriesData = await lessonsRes.json();
   } catch (err) {
-    // Fallback an toàn nếu chưa kịp up folder data
     categoriesData = [
       {
         "category": "1. Giao tiếp đời sống hàng ngày",
@@ -135,70 +136,92 @@ window.onYouTubeIframeAPIReady = () => {
   });
 };
 
-// WEB AUDIO PIPELINE
-async function startAudio() {
-  try {
-    const constraints = {
-      audio: {
-        echoCancellation: true,
-        noiseSuppression: true,
-        autoGainControl: true
-      }
-    };
+// ================== WEB SPEECH API REALTIME (STT) ==================
+function initSpeechRecognition() {
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!window.SpeechRecognition) {
+    console.warn("Trình duyệt không hỗ trợ Web Speech API.");
+    return;
+  }
 
-    audioStream = await navigator.mediaDevices.getUserMedia(constraints);
+  recognition = new window.SpeechRecognition();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.onresult = (event) => {
+    let interim = '';
+    let final = '';
+    for (let i = 0; i < event.results.length; ++i) {
+      if (event.results[i].isFinal) {
+        final += event.results[i][0].transcript + ' ';
+      } else {
+        interim += event.results[i][0].transcript;
+      }
+    }
+    const txtArea = document.getElementById('speechTranscript');
+    txtArea.value = (final + interim).trim();
+  };
+
+  recognition.onerror = (e) => {
+    console.warn("Web Speech Warning/Error:", e.error);
+  };
+}
+
+// AUDIO METER
+async function startAudioMeter() {
+  try {
+    audioStream = await navigator.mediaDevices.getUserMedia({
+      audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+    });
     audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const source = audioContext.createMediaStreamSource(audioStream);
     analyser = audioContext.createAnalyser();
     analyser.fftSize = 64;
     source.connect(analyser);
-    drawMeter();
 
-    audioChunks = [];
-    let mimeType = 'audio/webm';
-    if (!MediaRecorder.isTypeSupported(mimeType)) mimeType = 'audio/mp4';
+    const canvas = document.getElementById('audioMeter');
+    const ctx = canvas.getContext('2d');
+    const data = new Uint8Array(analyser.frequencyBinCount);
 
-    mediaRecorder = new MediaRecorder(audioStream, { mimeType });
-    mediaRecorder.ondataavailable = (e) => {
-      if (e.data.size > 0) audioChunks.push(e.data);
-    };
+    function render() {
+      animationFrameId = requestAnimationFrame(render);
+      analyser.getByteFrequencyData(data);
+      let sum = 0;
+      for (let i = 0; i < data.length; i++) sum += data[i];
+      let avg = sum / data.length;
 
-    mediaRecorder.start(250);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = avg > 80 ? '#22c55e' : (avg > 30 ? '#7c3aed' : '#475569');
+      ctx.fillRect(0, 0, (avg / 255) * canvas.width, canvas.height);
+    }
+    render();
     return true;
   } catch (err) {
-    alert("Vui lòng cấp quyền Micro trên trình duyệt để luyện nói!");
+    alert("Vui lòng cắm Micro và cấp quyền Micro trên trình duyệt để luyện nói!");
     return false;
   }
-}
-
-function drawMeter() {
-  const canvas = document.getElementById('audioMeter');
-  const ctx = canvas.getContext('2d');
-  const data = new Uint8Array(analyser.frequencyBinCount);
-
-  function render() {
-    animationFrameId = requestAnimationFrame(render);
-    analyser.getByteFrequencyData(data);
-    let sum = 0;
-    for (let i = 0; i < data.length; i++) sum += data[i];
-    let avg = sum / data.length;
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = avg > 80 ? '#22c55e' : (avg > 30 ? '#7c3aed' : '#475569');
-    ctx.fillRect(0, 0, (avg / 255) * canvas.width, canvas.height);
-  }
-  render();
 }
 
 // BẬT / DỪNG THU ÂM
 window.toggleShadowRecording = async () => {
   const btnRec = document.getElementById('btnRecord');
   const btnStop = document.getElementById('btnStop');
+  const badge = document.getElementById('sttStatusBadge');
 
   resetUI();
-  const ok = await startAudio();
+  const ok = await startAudioMeter();
   if (!ok) return;
 
+  // Bật ký âm Web Speech API
+  if (recognition) {
+    document.getElementById('speechTranscript').value = '';
+    try { recognition.start(); } catch (e) {}
+    badge.innerText = "🔴 Đang nghe & ký âm...";
+    badge.className = "text-[11px] font-semibold text-rose-300 bg-rose-950 px-2 py-0.5 rounded border border-rose-800 animate-pulse";
+  }
+
+  // Tự động phát YouTube
   if (ytPlayer && ytPlayer.playVideo) {
     ytPlayer.seekTo(0, true);
     ytPlayer.playVideo();
@@ -217,111 +240,119 @@ window.toggleShadowRecording = async () => {
   btnStop.disabled = false;
 };
 
-window.stopAndSubmitRecording = () => {
+window.stopAndSubmitRecording = async () => {
   const btnRec = document.getElementById('btnRecord');
   const btnStop = document.getElementById('btnStop');
+  const badge = document.getElementById('sttStatusBadge');
 
   if (ytPlayer && ytPlayer.pauseVideo) ytPlayer.pauseVideo();
   clearInterval(timerInterval);
   if (animationFrameId) cancelAnimationFrame(animationFrameId);
 
-  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
-    mediaRecorder.onstop = async () => {
-      if (audioStream) audioStream.getTracks().forEach(t => t.stop());
-      if (audioContext && audioContext.state !== 'closed') audioContext.close();
-
-      const blob = new Blob(audioChunks, { type: mediaRecorder.mimeType });
-      await evaluateAudioWithGemini(blob, secondsRecorded);
-    };
-    mediaRecorder.stop();
+  // Dừng Web Speech API & Micro
+  if (recognition) {
+    try { recognition.stop(); } catch (e) {}
+    badge.innerText = "✅ Đã ký âm xong";
+    badge.className = "text-[11px] font-semibold text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800";
   }
+  if (audioStream) audioStream.getTracks().forEach(t => t.stop());
+  if (audioContext && audioContext.state !== 'closed') audioContext.close();
 
   btnRec.disabled = false;
   btnRec.classList.remove('recording');
   btnStop.disabled = true;
+
+  // Lấy bản ký âm để gửi AI chấm
+  const transcript = document.getElementById('speechTranscript').value.trim();
+  if (!transcript) {
+    alert("⚠️ Chưa ghi nhận được giọng nói nào. Em hãy nói to rõ hơn vào micro nhé!");
+    return;
+  }
+
+  await evaluateTranscriptWithGemini(transcript, secondsRecorded);
 };
 
-// GỬI CHẤM AI VỚI AUTH KEY CHUẨN
-async function evaluateAudioWithGemini(audioBlob, durationSec) {
-  showOverlay("Đang xử lý file ghi âm...");
-  
-  const reader = new FileReader();
-  reader.readAsDataURL(audioBlob);
-  reader.onloadend = async () => {
-    const base64Audio = reader.result.split(',')[1];
-    const apiKey = getDecodedKey(); // Gọi Key chuẩn từ seeds gốc
+// ================== GỬI CHẤM TEXT SIÊU TỐC VỚI GEMINI ==================
+async function evaluateTranscriptWithGemini(transcriptText, durationSec) {
+  showOverlay("Đang gửi bản ký âm cho AI phân tích...");
+  const apiKey = getDecodedKey();
 
-    const promptText = `
-Bạn là giáo viên phát âm tiếng Anh chấm bài Shadowing của học sinh cho bài: "${currentLesson.title}".
-Hãy nghe đoạn âm thanh và trả về DUY NHẤT một chuỗi JSON thuần (không dùng markdown, không dùng backtick \`\`\`json):
+  const promptText = `
+Bạn là Giám khảo chấm Shadowing tiếng Anh trình độ A1.
+Chủ đề bài học học sinh đã nhại theo video: "${currentLesson.title}".
+Đây là bản ký âm thực tế giọng nói của học sinh (được thu bằng công nghệ Speech-to-Text):
+"${transcriptText}"
+
+HÃY ĐỐI CHIẾU VÀ ĐÁNH GIÁ NGỮ ÂM THEO NGUYÊN TẮC:
+- Những từ bị Web Speech API nhận diện nhầm, sai âm, hoặc bị nuốt âm đuôi (-s, -ed, âm cuối).
+- Đánh giá phát âm (pronunciation_score) và độ trôi chảy (fluency_score).
+- Trả về DUY NHẤT một chuỗi JSON thuần (không dùng markdown, không dùng backtick \`\`\`json):
 {
-  "transcript": "chép lại chính xác những gì học sinh nói bằng tiếng Anh",
-  "overall_score": 75,
-  "fluency_score": 80,
-  "pronunciation_score": 70,
-  "missed_words": ["từ", "bị", "phát", "âm", "sai"],
-  "feedback": "Nhận xét ngắn gọn bằng tiếng Việt động viên học sinh (1 khen, 1 sửa)"
+  "overall_score": <Số nguyên 0-100>,
+  "fluency_score": <Số nguyên 0-100>,
+  "pronunciation_score": <Số nguyên 0-100>,
+  "missed_words": ["danh", "sach", "cac", "tu", "phat", "am", "chua", "chuan"],
+  "feedback": "Nhận xét ngắn gọn bằng tiếng Việt (1 lời khen và 1 lời khuyên sửa phát âm)"
 }
 `;
 
-    let lastError = null;
+  let lastError = null;
 
-    for (let i = 0; i < AI_MODELS.length; i++) {
-      const model = AI_MODELS[i];
-      try {
-        showOverlay(`Đang chấm qua model: ${model}...`);
+  for (let i = 0; i < AI_MODELS.length; i++) {
+    const model = AI_MODELS[i];
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 6000); // Tự ngắt sau 6 giây
 
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{
-              role: "user",
-              parts: [
-                { inline_data: { mime_type: audioBlob.type || 'audio/webm', data: base64Audio } },
-                { text: promptText }
-              ]
-            }],
-            generationConfig: {
-              temperature: 0.2
-            }
-          })
-        });
+    try {
+      showOverlay(`Đang chấm qua model: ${model}... (Bậc ${i + 1}/${AI_MODELS.length})`);
 
-        if (!res.ok) {
-          const errJson = await res.json();
-          throw new Error(errJson.error?.message || `HTTP ${res.status}`);
-        }
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{
+            role: "user",
+            parts: [{ text: promptText }]
+          }],
+          generationConfig: { temperature: 0.1 }
+        }),
+        signal: controller.signal
+      });
 
-        const json = await res.json();
-        let rawText = json.candidates[0].content.parts[0].text.trim();
-        
-        // Làm sạch nếu AI vô tình bọc trong ```json
-        if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
-        else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
+      clearTimeout(timeoutId);
 
-        const parsed = JSON.parse(rawText);
-        hideOverlay();
-        renderGradingResult(parsed, durationSec);
-        return;
-
-      } catch (err) {
-        console.warn(`Model ${model} bị lỗi:`, err.message);
-        lastError = err;
+      if (!res.ok) {
+        const errJson = await res.json();
+        throw new Error(errJson.error?.message || `HTTP ${res.status}`);
       }
-    }
 
-    hideOverlay();
-    alert("Lỗi chấm điểm: " + lastError.message);
-  };
+      const json = await res.json();
+      let rawText = json.candidates[0].content.parts[0].text.trim();
+
+      if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
+      else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
+
+      const parsed = JSON.parse(rawText);
+      hideOverlay();
+      renderGradingResult(parsed, durationSec);
+      return; // Chấm thành công thì kết thúc luôn
+
+    } catch (err) {
+      clearTimeout(timeoutId);
+      console.warn(`Model ${model} chuyển tiếp:`, err.message);
+      lastError = err;
+    }
+  }
+
+  hideOverlay();
+  alert("Lỗi chấm điểm: " + lastError.message);
 }
 
-// HIỂN THỊ KẾT QUẢ VÀ DUYỆT BÀI
+// BẢNG KẾT QUẢ VÀ TIÊU CHUẨN ĐẠT
 function renderGradingResult(data, durationSec) {
   document.getElementById('resOverall').innerText = data.overall_score || 0;
   document.getElementById('resFluency').innerText = data.fluency_score || 0;
   document.getElementById('resPronun').innerText = data.pronunciation_score || 0;
-  document.getElementById('resTranscript').innerText = data.transcript || "(Không bắt được giọng nói rõ ràng)";
   document.getElementById('resFeedback').innerText = data.feedback || "";
 
   const missedBox = document.getElementById('resMissedWords');
@@ -334,7 +365,7 @@ function renderGradingResult(data, durationSec) {
       missedBox.appendChild(sp);
     });
   } else {
-    missedBox.innerHTML = '<span class="text-emerald-400 text-xs">🎉 Phát âm rất tốt, không bị sót từ!</span>';
+    missedBox.innerHTML = '<span class="text-emerald-400 text-xs">🎉 Phát âm rất chuẩn xác, không bị nuốt từ!</span>';
   }
 
   const isDurationPassed = durationSec >= MIN_REQUIRED_DURATION;
@@ -355,8 +386,6 @@ function renderGradingResult(data, durationSec) {
     badge.innerText = "✕ CHƯA ĐẠT";
     completeBtn.disabled = true;
   }
-
-  audioChunks = [];
 }
 
 function resetUI() {
@@ -364,9 +393,8 @@ function resetUI() {
   document.getElementById('resOverall').innerText = "--";
   document.getElementById('resFluency').innerText = "--";
   document.getElementById('resPronun').innerText = "--";
-  document.getElementById('resTranscript').innerText = "(Chưa có bản ghi)";
   document.getElementById('resMissedWords').innerHTML = '<span class="text-slate-500 italic">Không có dữ liệu</span>';
-  document.getElementById('resFeedback').innerText = "Bấm 'Bắt đầu Shadow' và nói đuổi theo video để AI chấm điểm nhé.";
+  document.getElementById('resFeedback').innerText = "Bấm 'Bắt đầu Shadow & Nói' để nhận đánh giá tức thì.";
   document.getElementById('validationBadge').className = "text-xs font-bold px-2.5 py-1 rounded bg-slate-700 text-slate-400";
   document.getElementById('validationBadge').innerText = "Chờ nộp bài";
   document.getElementById('btnComplete').disabled = true;
