@@ -1,0 +1,12 @@
+{
+  "module": "PRE_SPEAKING",
+  "version": "1.0.0",
+  "catalogs": [
+    {
+      "id": "shadow_a1",
+      "name": "Level A1: Shadow Speaking Foundation",
+      "folder": "data/shadow_a1",
+      "dataFile": "data/shadow_a1/lessons-ps.json"
+    }
+  ]
+}
