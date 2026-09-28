@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Speaking: Shadowing Foundation (A1)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style-ps.css">
+</head>
+<body>
+
+<div class="ps-container space-y-4">
+  
+  <!-- Navigation Header -->
+  <div class="flex justify-between items-center bg-slate-800/80 p-4 rounded-xl border border-slate-700">
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold transition-all">
+        &larr; Về Cổng Luyện Thi
+      </a>
+      <h1 class="text-lg font-bold text-violet-400">🗣️ 9. PRE-SPEAKING (SHADOWING NÓI ĐUỔI A1)</h1>
+    </div>
+    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-violet-950 text-violet-300 border border-violet-700">
+      AI Scoring Engine Enabled
+    </span>
+  </div>
+
+  <!-- Headphone Warning -->
+  <div class="bg-amber-950/40 border border-amber-500/50 rounded-xl p-3 flex items-center gap-3 text-amber-300 text-xs">
+    <i class="fa-solid fa-headphones text-lg flex-shrink-0 animate-pulse"></i>
+    <span><b>Yêu cầu đeo tai nghe:</b> Bạn cần đeo tai nghe để mic thu âm chuẩn giọng của bạn, không bị vọng tiếng từ video YouTube.</span>
+  </div>
+
+  <!-- DROPDOWN 2 CẤP (CHUẨN FORM NHƯ TRONG ẢNH) -->
+  <div class="selector-2tier-bar">
+    <div>
+      <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">Chủ đề bài học (Category):</label>
+      <select id="categorySelect" class="ps-select" onchange="window.handleCategoryChange()"></select>
+    </div>
+    <div>
+      <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">Chi tiết bài luyện Shadowing (Prompt / Video):</label>
+      <select id="lessonSelect" class="ps-select" onchange="window.handleLessonChange()"></select>
+    </div>
+  </div>
+
+  <!-- MAIN WORKSPACE -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+    
+    <!-- LEFT: YOUTUBE PLAYER & RECORDER -->
+    <div class="lg:col-span-7 space-y-3">
+      <div class="bg-slate-800 p-3 rounded-xl border border-slate-700 flex justify-between items-center">
+        <div>
+          <b id="displayLessonTitle" class="text-sm text-sky-300 font-bold block">Đang nạp bài học...</b>
+          <span id="displayLessonDuration" class="text-xs text-slate-400">Thời lượng: --:--</span>
+        </div>
+      </div>
+
+      <!-- YouTube Embed Iframe -->
+      <div class="video-container">
+        <div id="youtube-player"></div>
+      </div>
+
+      <!-- Controls & Meter -->
+      <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <button id="btnRecord" onclick="window.toggleShadowRecording()" class="btn-record">
+            <i class="fa-solid fa-circle"></i> Bắt đầu Shadow
+          </button>
+          <button id="btnStop" disabled onclick="window.stopAndSubmitRecording()" class="btn-stop">
+            <i class="fa-solid fa-stop"></i> Dừng & Chấm điểm
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="text-right">
+            <div id="timerDisplay" class="font-mono text-xl font-black text-sky-400">00:00</div>
+            <div class="text-[10px] text-slate-400 uppercase">Thời lượng nói</div>
+          </div>
+          <canvas id="audioMeter" width="60" height="26" class="bg-slate-950 rounded border border-slate-700"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: AI SCORE & VALIDATION STATUS -->
+    <div class="lg:col-span-5 space-y-3">
+      
+      <!-- Validation Status -->
+      <div class="bg-slate-800 p-3.5 rounded-xl border border-slate-700 space-y-2.5">
+        <div class="flex justify-between items-center">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Kiểm duyệt kết quả</span>
+          <span id="validationBadge" class="text-xs font-bold px-2.5 py-1 rounded bg-slate-700 text-slate-400">Chờ nộp bài</span>
+        </div>
+
+        <div class="space-y-1.5 text-xs">
+          <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-700">
+            <span class="text-slate-300">⏱️ Thời lượng nói tối thiểu:</span>
+            <span id="valPacingText" class="font-bold text-slate-400">0s / 15s</span>
+          </div>
+          <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-700">
+            <span class="text-slate-300">🎯 Điểm khớp phát âm (≥60%):</span>
+            <span id="valScoreText" class="font-bold text-slate-400">--%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Metric Cards -->
+      <div class="bg-slate-800 p-3.5 rounded-xl border border-slate-700 space-y-3">
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Đánh giá AI (Gemini Multimodal)</h3>
+
+        <div class="grid grid-cols-3 gap-2 text-center">
+          <div class="bg-slate-900 p-2 rounded-lg border border-slate-700">
+            <span class="text-[11px] text-slate-400">Overall</span>
+            <div id="resOverall" class="text-2xl font-black text-violet-400">--</div>
+          </div>
+          <div class="bg-slate-900 p-2 rounded-lg border border-slate-700">
+            <span class="text-[11px] text-slate-400">Fluency</span>
+            <div id="resFluency" class="text-2xl font-black text-sky-400">--</div>
+          </div>
+          <div class="bg-slate-900 p-2 rounded-lg border border-slate-700">
+            <span class="text-[11px] text-slate-400">Phát âm</span>
+            <div id="resPronun" class="text-2xl font-black text-emerald-400">--</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Transcript thu được:</span>
+          <div id="resTranscript" class="text-xs text-slate-300 bg-slate-950 p-2.5 rounded-lg border border-slate-700 max-h-20 overflow-y-auto italic">
+            (Chưa có bản ghi)
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Từ cần sửa âm:</span>
+          <div id="resMissedWords" class="flex flex-wrap gap-1 p-2 bg-slate-950 rounded-lg border border-slate-700 min-h-[30px]">
+            <span class="text-slate-500 italic text-xs">Không có dữ liệu</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Nhận xét của Giáo viên AI:</span>
+          <div id="resFeedback" class="text-xs text-sky-200 bg-sky-950/40 p-2.5 rounded-lg border border-sky-900">
+            Hãy bắt đầu Shadowing để nhận nhận xét.
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Completion Button -->
+      <button id="btnComplete" disabled onclick="window.completeLessonSubmission()" class="btn-complete">
+        <i class="fa-solid fa-check-circle mr-1"></i> Xác nhận hoàn thành bài
+      </button>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" style="display: none;" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-4">
+  <div class="animate-spin rounded-full h-12 w-12 border-4 border-violet-500 border-t-transparent mb-3"></div>
+  <p id="loadingText" class="text-violet-300 font-bold text-sm tracking-wide"></p>
+</div>
+
+<script src="js/speaking-ps.js"></script>
+</body>
+</html>
