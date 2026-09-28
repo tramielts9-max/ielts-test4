@@ -12,7 +12,7 @@
 
 <div class="max-w-6xl mx-auto space-y-4">
   
-  <!-- Thanh Header -->
+  <!-- Header -->
   <div class="flex justify-between items-center bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-md">
     <div class="flex items-center gap-3">
       <a href="../index.html" class="px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-white rounded-lg text-xs font-bold transition-all">
@@ -21,7 +21,7 @@
       <h1 class="text-lg font-bold text-violet-400">🗣️ 9. PRE-SPEAKING (SHADOWING NÓI ĐUỔI A1)</h1>
     </div>
     <span class="text-xs font-bold px-2.5 py-1 rounded bg-violet-950 text-violet-300 border border-violet-700">
-      AI Scoring Auto-Active
+      ⚡ AI Speech-to-Text Realtime
     </span>
   </div>
 
@@ -31,7 +31,7 @@
     <span><b>Yêu cầu đeo tai nghe:</b> Học sinh cần đeo tai nghe để mic thu âm giọng nói chuẩn xác nhất, không bị lẫn tiếng phát ra từ video YouTube.</span>
   </div>
 
-  <!-- BỘ CHỌN 2 CẤP (DROPDOWN NHƯ HÌNH MẪU) -->
+  <!-- BỘ CHỌN 2 CẤP -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-800 p-4 rounded-xl border border-slate-700">
     <div>
       <label class="block text-xs font-bold text-slate-400 uppercase mb-1">1. Chọn Nhóm Chủ Đề (Category):</label>
@@ -43,10 +43,10 @@
     </div>
   </div>
 
-  <!-- KHU VỰC THỰC HÀNH -->
+  <!-- MAIN WORKSPACE -->
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
     
-    <!-- CỘT TRÁI: VIDEO YOUTUBE & THU ÂM (7 CỘT) -->
+    <!-- CỘT TRÁI: VIDEO & Ô KÝ ÂM LIVE (7 CỘT) -->
     <div class="lg:col-span-7 space-y-3">
       <div class="bg-slate-800 p-3 rounded-xl border border-slate-700 flex justify-between items-center">
         <div>
@@ -55,23 +55,22 @@
         </div>
       </div>
 
-      <!-- Khung nhúng YouTube -->
+      <!-- YouTube Embed -->
       <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
         <div id="youtube-player" class="absolute inset-0 w-full h-full"></div>
       </div>
 
-      <!-- Thanh điều khiển thu âm -->
+      <!-- Điều khiển thu âm -->
       <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-between gap-3">
         <div class="flex items-center gap-2">
           <button id="btnRecord" onclick="window.toggleShadowRecording()" class="px-5 py-2.5 bg-red-600 hover:bg-red-500 text-white font-bold rounded-lg shadow-lg shadow-red-600/30 flex items-center gap-2 text-sm transition-all">
-            <i class="fa-solid fa-circle"></i> Bắt đầu Shadow
+            <i class="fa-solid fa-circle"></i> Bắt đầu Shadow & Nói
           </button>
           <button id="btnStop" disabled onclick="window.stopAndSubmitRecording()" class="px-4 py-2.5 bg-slate-700 hover:bg-slate-600 text-slate-300 font-bold rounded-lg text-sm disabled:opacity-40 disabled:cursor-not-allowed transition-all">
-            <i class="fa-solid fa-stop"></i> Dừng & Nộp bài
+            <i class="fa-solid fa-stop"></i> Dừng & Chấm bài
           </button>
         </div>
 
-        <!-- Đồng hồ & Cột sóng Micro -->
         <div class="flex items-center gap-3">
           <div class="text-right">
             <div id="timerDisplay" class="font-mono text-xl font-black text-sky-400">00:00</div>
@@ -80,25 +79,42 @@
           <canvas id="audioMeter" width="60" height="26" class="bg-slate-950 rounded border border-slate-700"></canvas>
         </div>
       </div>
+
+      <!-- BẢN KÝ ÂM REAL-TIME THỜI GIAN THỰC (GIỐNG HỆT SPEAKING.JS) -->
+      <div class="bg-slate-800 p-3.5 rounded-xl border border-slate-700 space-y-2">
+        <div class="flex justify-between items-center">
+          <label for="speechTranscript" class="text-xs font-bold text-slate-300 flex items-center gap-2">
+            <span>📝 Bản ký âm câu trả lời (Speech-to-Text tức thì - có thể sửa tự do):</span>
+          </label>
+          <span id="sttStatusBadge" class="text-[11px] font-semibold text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800">
+            🎙️ Chờ ghi âm...
+          </span>
+        </div>
+        <textarea 
+          id="speechTranscript" 
+          rows="4" 
+          class="w-full bg-slate-950 border border-slate-700 rounded-lg p-3 text-xs sm:text-sm text-sky-200 focus:outline-none focus:border-violet-500 font-mono leading-relaxed resize-y" 
+          placeholder="Bấm nút đỏ 'Bắt đầu Shadow & Nói', bài nói tiếng Anh của bạn sẽ tự động ký âm trực tiếp thành chữ vào ô này theo thời gian thực..."></textarea>
+      </div>
     </div>
 
-    <!-- CỘT PHẢI: KẾT QUẢ ĐÁNH GIÁ CỦA AI (5 CỘT) -->
+    <!-- CỘT PHẢI: KẾT QUẢ ĐÁNH GIÁ (5 CỘT) -->
     <div class="lg:col-span-5 space-y-3">
       
       <!-- Bảng kiểm duyệt -->
       <div class="bg-slate-800 p-3.5 rounded-xl border border-slate-700 space-y-2.5">
         <div class="flex justify-between items-center">
-          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Tiêu chuẩn vượt qua</span>
-          <span id="validationBadge" class="text-xs font-bold px-2 py-0.5 rounded bg-slate-700 text-slate-400">Chờ nộp bài</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Tiêu chuẩn hoàn thành</span>
+          <span id="validationBadge" class="text-xs font-bold px-2.5 py-1 rounded bg-slate-700 text-slate-400">Chờ nộp bài</span>
         </div>
 
         <div class="space-y-1.5 text-xs">
           <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-700">
-            <span class="text-slate-300">⏱️ Thời lượng nói tối thiểu:</span>
+            <span class="text-slate-300">⏱️ Thời lượng tối thiểu:</span>
             <span id="valPacingText" class="font-bold text-slate-400">0s / 15s</span>
           </div>
           <div class="flex justify-between p-2 rounded bg-slate-900 border border-slate-700">
-            <span class="text-slate-300">🎯 Điểm phát âm & khớp (≥60%):</span>
+            <span class="text-slate-300">🎯 Điểm khớp phát âm (≥60%):</span>
             <span id="valScoreText" class="font-bold text-slate-400">--%</span>
           </div>
         </div>
@@ -106,7 +122,7 @@
 
       <!-- Bảng điểm AI -->
       <div class="bg-slate-800 p-3.5 rounded-xl border border-slate-700 space-y-3">
-        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Điểm số từ Giáo viên AI</h3>
+        <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400">Kết quả đánh giá AI</h3>
 
         <div class="grid grid-cols-3 gap-2 text-center">
           <div class="bg-slate-900 p-2 rounded-lg border border-slate-700">
@@ -124,28 +140,21 @@
         </div>
 
         <div>
-          <span class="text-xs font-semibold text-slate-400 block mb-1">Transcript bạn đã nói:</span>
-          <div id="resTranscript" class="text-xs text-slate-300 bg-slate-950 p-2.5 rounded-lg border border-slate-700 max-h-20 overflow-y-auto italic">
-            (Chưa có bản ghi)
-          </div>
-        </div>
-
-        <div>
-          <span class="text-xs font-semibold text-slate-400 block mb-1">Từ cần lưu ý phát âm:</span>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Từ nhận diện sai / Bị nuốt âm:</span>
           <div id="resMissedWords" class="flex flex-wrap gap-1 p-2 bg-slate-950 rounded-lg border border-slate-700 min-h-[30px]">
             <span class="text-slate-500 italic text-xs">Không có dữ liệu</span>
           </div>
         </div>
 
         <div>
-          <span class="text-xs font-semibold text-slate-400 block mb-1">Lời dặn của AI:</span>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Nhận xét chi tiết của AI:</span>
           <div id="resFeedback" class="text-xs text-sky-200 bg-sky-950/40 p-2.5 rounded-lg border border-sky-900">
-            Bấm "Bắt đầu Shadow" và nói đuổi theo video để AI chấm điểm nhé.
+            Hãy bắt đầu Shadowing để nhận đánh giá tức thì.
           </div>
         </div>
       </div>
 
-      <!-- Nút hoàn thành -->
+      <!-- Nút xác nhận -->
       <button id="btnComplete" disabled onclick="window.completeLessonSubmission()" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg disabled:opacity-30 disabled:cursor-not-allowed transition-all uppercase tracking-wide text-xs flex items-center justify-center gap-2">
         <i class="fa-solid fa-circle-check"></i> Xác nhận hoàn thành bài
       </button>
@@ -155,7 +164,7 @@
   </div>
 </div>
 
-<!-- Màn hình chờ chấm bài -->
+<!-- Loading Overlay -->
 <div id="loadingOverlay" style="display: none;" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 flex flex-col items-center justify-center p-4">
   <div class="animate-spin rounded-full h-12 w-12 border-4 border-violet-500 border-t-transparent mb-3"></div>
   <p id="loadingText" class="text-violet-300 font-bold text-sm tracking-wide text-center">Đang kết nối Gemini AI...</p>
