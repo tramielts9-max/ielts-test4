@@ -8,92 +8,74 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/reading.css">
   <style>
-    /* =======================================================
-       GIAO DIỆN CHUẨN CHO TỪNG DẠNG BÀI THI IELTS READING
-       ======================================================= */
-    
-    /* 1. Khung đề Matching (List of Headings / Features / Researchers) */
-    .matching-box {
-      background: var(--bg-subcard, #f8fafc);
-      border: 2px solid #0284c7;
+    /* Bù trừ chiều cao để không bị thanh đáy che nội dung */
+    .container {
+      height: calc(100vh - 185px) !important;
+      margin-bottom: 55px;
+    }
+
+    /* 1. KHUNG GỢI Ý MỚM DẪN DẮT (SOCRATIC) THU GỌN - BUNG RA */
+    .socratic-card {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
       border-radius: 8px;
-      padding: 16px 20px;
-      margin: 15px 0 22px 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      margin: 10px 0 14px 0;
+      overflow: hidden;
+      transition: all 0.25s ease;
     }
-    .matching-box-title {
-      font-weight: 800;
-      color: #0369a1;
-      margin-bottom: 12px;
-      font-size: 14.5px;
-      text-transform: uppercase;
+    .socratic-header-bar {
+      padding: 9px 14px;
+      background: #f1f5f9;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      border-bottom: 1.5px solid #e0f2fe;
-      padding-bottom: 6px;
+      cursor: pointer;
+      user-select: none;
     }
-    .matching-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      font-size: 14px;
+    .socratic-header-bar:hover {
+      background: #e2e8f0;
     }
-    .matching-item {
-      padding: 8px 12px;
-      background: var(--bg-card, #ffffff);
-      border: 1px solid var(--border-color, #e2e8f0);
-      border-radius: 6px;
-      line-height: 1.5;
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-    }
-    .matching-item-key {
-      font-weight: 800;
-      color: #0284c7;
+    .socratic-badge {
+      font-size: 11.5px;
+      font-weight: 700;
       background: #e0f2fe;
-      padding: 2px 8px;
-      border-radius: 4px;
-      min-width: 24px;
-      text-align: center;
-      flex-shrink: 0;
+      color: #0369a1;
+      padding: 3px 8px;
+      border-radius: 12px;
     }
-    .matching-item-text {
-      color: var(--text-main, #1e293b);
-      flex: 1;
+    .socratic-toggle-btn {
+      background: #8B1518;
+      color: #ffffff;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
     }
-
-    /* Khung xem trước nội dung khi học sinh chọn trong Select */
-    .matching-selected-preview {
-      display: none;
-      margin-top: 8px;
-      padding: 6px 12px;
-      background: #f0fdf4;
-      border-left: 3px solid #16a34a;
-      border-radius: 4px;
-      font-size: 13px;
-      color: #166534;
-      line-height: 1.4;
+    .socratic-body {
+      padding: 14px;
+      background: #ffffff;
+      border-top: 1px solid #cbd5e1;
     }
 
-    /* 2. Trắc nghiệm Multiple Choice (A, B, C, D) có ĐẦY ĐỦ ĐỀ */
+    /* 2. KHUNG TRẮC NGHIỆM & PHƯƠNG ÁN */
     .mcq-options-list {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin: 14px 0;
+      gap: 9px;
+      margin: 12px 0;
     }
     .mcq-option-item {
       display: flex;
       align-items: flex-start;
-      gap: 12px;
+      gap: 10px;
       padding: 10px 14px;
       border: 1.5px solid var(--border-color, #cbd5e1);
       border-radius: 8px;
       background: var(--bg-card, #ffffff);
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       user-select: none;
     }
     .mcq-option-item:hover {
@@ -103,15 +85,6 @@
     .mcq-option-item.selected {
       border-color: #0284c7;
       background: #e0f2fe;
-      box-shadow: 0 0 0 1px #0284c7;
-    }
-    .mcq-option-item input[type="radio"],
-    .mcq-option-item input[type="checkbox"] {
-      margin-top: 4px;
-      cursor: pointer;
-      accent-color: #0284c7;
-      width: 16px;
-      height: 16px;
     }
     .mcq-badge {
       font-weight: 800;
@@ -128,14 +101,8 @@
       background: #0284c7;
       color: #ffffff;
     }
-    .mcq-text {
-      color: var(--text-main, #1e293b);
-      font-size: 14px;
-      line-height: 1.5;
-      flex: 1;
-    }
 
-    /* 3. True / False / Not Given & Yes / No / Not Given */
+    /* 3. NÚT CHỌN TRUE / FALSE / NOT GIVEN */
     .choice-group {
       display: flex;
       flex-wrap: wrap;
@@ -147,8 +114,8 @@
       align-items: center;
       gap: 8px;
       padding: 8px 16px;
-      background: var(--bg-card, #ffffff);
-      border: 1.5px solid var(--border-color, #cbd5e1);
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 700;
@@ -165,37 +132,143 @@
       background: #0284c7;
       color: #ffffff;
     }
-    .choice-btn-label.active span {
-      color: #ffffff;
+
+    /* 4. KHUNG ĐỀ MATCHING */
+    .matching-box {
+      background: var(--bg-subcard, #f8fafc);
+      border: 2px solid #0284c7;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 15px 0 20px 0;
     }
-    .choice-btn-label input[type="radio"] {
-      accent-color: #0284c7;
+    .matching-item {
+      padding: 6px 10px;
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: 5px;
+      margin-bottom: 6px;
+      font-size: 13.5px;
+    }
+
+    /* 5. THANH ĐIỀU HƯỚNG DƯỚI ĐÁY (BOTTOM BAR CHUẨN LISTENING) */
+    .bottom-nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 54px;
+      background: #ffffff;
+      border-top: 1.5px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.06);
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+    .btn-nav-arrow {
+      background: #1e293b;
+      color: #ffffff;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-nav-arrow:hover { background: #334155; }
+    
+    .q-badges-scroll {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      overflow-x: auto;
+      padding: 4px 8px;
+    }
+    .q-badge-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      border: 1.5px solid #cbd5e1;
+      background: #ffffff; /* Trắng khi chưa làm */
+      color: #1e293b;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.15s;
+    }
+    .q-badge-btn.status-answered {
+      background: #64748b !important; /* Xám khi đã làm */
+      color: #ffffff !important;
+      border-color: #64748b !important;
+    }
+    .q-badge-btn.status-correct {
+      background: #16a34a !important; /* Xanh khi đúng */
+      color: #ffffff !important;
+      border-color: #16a34a !important;
+    }
+    .q-badge-btn.status-incorrect {
+      background: #ef4444 !important; /* Đỏ khi sai */
+      color: #ffffff !important;
+      border-color: #ef4444 !important;
+    }
+
+    .btn-sheet-toggle {
+      background: #0284c7;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .btn-submit-bar {
+      background: #16a34a;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 700;
       cursor: pointer;
     }
 
-    /* 4. Gap Fill / Summary: Ô Socratic nằm NGAY TRÊN ô điền */
-    .gap-fill-card {
-      background: var(--bg-card, #ffffff);
-      border: 1px solid var(--border-color, #e2e8f0);
-      border-radius: 8px;
-      padding: 16px;
-      margin-top: 14px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-    }
-    .gap-fill-answer-bar {
-      margin-top: 12px;
-      padding: 12px 16px;
-      background: var(--bg-subcard, #f8fafc);
-      border-radius: 6px;
-      border: 1.5px solid #cbd5e1;
-      display: flex;
+    /* 6. MODAL BẢNG ANSWER SHEET & KẾT QUẢ */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(3px);
+      display: none;
       align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 9999;
+      padding: 15px;
     }
-    .gap-fill-answer-bar:focus-within {
-      border-color: #0284c7;
-      background: #f0f9ff;
+    .modal-content-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 620px;
+      max-height: 85vh;
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      overflow-y: auto;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+    }
+    .modal-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #64748b;
     }
   </style>
 </head>
@@ -244,7 +317,32 @@
   </div>
 </div>
 
-<!-- SCRIPT ĐIỀU KHIỂN FONT SIZE, THEME, SOCRATIC & CÁC DẠNG BÀI -->
+<!-- THANH ĐIỀU HƯỚNG DƯỚI ĐÁY -->
+<div class="bottom-nav-bar" id="readingBottomBar">
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <button type="button" class="btn-nav-arrow" id="btnPrevQ" title="Câu trước">←</button>
+    <button type="button" class="btn-nav-arrow" id="btnNextQ" title="Câu sau">→</button>
+  </div>
+
+  <div class="q-badges-scroll" id="qBadgesContainer">
+    <!-- Nút số câu [1] [2]... được sinh tự động tại đây -->
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 10px;">
+    <button type="button" class="btn-sheet-toggle" id="btnOpenSheet" title="Xem bảng đáp án">📋 Bảng đáp án</button>
+    <button type="button" class="btn-submit-bar" id="btnBottomSubmit" onclick="window.checkAnswers()">Nộp bài ✈</button>
+  </div>
+</div>
+
+<!-- MODAL REVIEW ANSWER SHEET & KẾT QUẢ -->
+<div class="modal-backdrop" id="readingModalBackdrop">
+  <div class="modal-content-card">
+    <button type="button" class="modal-close-btn" id="btnCloseModal">✕</button>
+    <div id="modalDynamicBody"></div>
+  </div>
+</div>
+
+<!-- SCRIPT HỆ THỐNG XỬ LÝ TOÀN DIỆN CHO READING -->
 <script>
   (function() {
     var curSize = 15;
@@ -275,15 +373,18 @@
     };
 
     setFont(curSize);
-    try {
-      if (localStorage.getItem('ielts_theme') === 'dark') {
-        document.body.classList.add('dark-theme');
-        var btn = document.getElementById('btnThemeToggle');
-        if (btn) btn.innerText = '☀️ Sáng';
-      }
-    } catch(e) {}
 
-    // BỘ MÁY ĐIỀU KHIỂN BẬC THANG SOCRATIC
+    // THU GỌN / BUNG RA KHUNG GỢI Ý SOCRATIC
+    window.toggleSocratic = function(qId) {
+      const bodyEl = document.getElementById(qId + '_soc_body');
+      const btnEl = document.getElementById(qId + '_soc_toggle_btn');
+      if (!bodyEl) return;
+      const isHidden = bodyEl.style.display === 'none';
+      bodyEl.style.display = isHidden ? 'block' : 'none';
+      if (btnEl) btnEl.innerText = isHidden ? '▲ Thu gọn lại' : '▼ Mở gợi ý';
+    };
+
+    // TIẾP TỤC NẤC TIẾP THEO TRONG BẬC THANG SOCRATIC
     window.nextSocraticStep = function(qId, step, finalAnswer) {
       var ans = document.getElementById(qId + '_ans_' + step);
       if (ans) ans.style.display = 'block';
@@ -318,21 +419,24 @@
       }
     };
 
-    // ĐỒNG BỘ ĐÁP ÁN TOÀN DIỆN CHO MỌI ELEMENT CỦA CÂU HỎI
-    window.syncUserAnswer = function(qId, val, fullLabel) {
-      // 1. Đồng bộ ô input văn bản (kể cả ô chính và ô mirror của gap fill)
+    // ĐỒNG BỘ ĐÁP ÁN & CẬP NHẬT MÀU NÚT TRÊN THANH ĐIỀU HƯỚNG
+    window.syncUserAnswer = function(qId, val) {
+      if (val === undefined || val === null) return;
+      var cleanVal = String(val).trim();
+
+      // 1. Đồng bộ input text
       var textInputs = document.querySelectorAll(`input[id="${qId}_input"], input[id="${qId}_input_mirror"]`);
       textInputs.forEach(el => {
-        if (el && el.value !== val) {
-          el.value = val;
+        if (el && el.value !== cleanVal) {
+          el.value = cleanVal;
           el.dispatchEvent(new Event('input', { bubbles: true }));
         }
       });
 
-      // 2. Đồng bộ radio buttons / checkboxes
+      // 2. Đồng bộ radio buttons
       var radios = document.querySelectorAll(`input[name="${qId}"]`);
       radios.forEach(rb => {
-        var isMatch = rb.value.trim().toUpperCase() === String(val).trim().toUpperCase();
+        var isMatch = rb.value.trim().toUpperCase() === cleanVal.toUpperCase();
         if (rb.type === 'radio') rb.checked = isMatch;
         var parentLabel = rb.closest('.choice-btn-label') || rb.closest('.mcq-option-item');
         if (parentLabel) {
@@ -341,75 +445,42 @@
         }
       });
 
-      // 3. Đồng bộ Select Dropdown
+      // 3. Đồng bộ Select
       var sel = document.getElementById(qId + '_select');
-      if (sel && sel.value !== val) {
-        sel.value = val;
-      }
+      if (sel && sel.value !== cleanVal) sel.value = cleanVal;
 
-      // 4. Cập nhật preview cho dạng Matching nếu có
-      var previewBox = document.getElementById(qId + '_selected_preview');
-      if (previewBox) {
-        if (val) {
-          let labelText = fullLabel;
-          if (!labelText && sel && sel.selectedIndex >= 0) {
-            labelText = sel.options[sel.selectedIndex].text;
-          }
-          previewBox.innerHTML = `Đã chọn: <b>${labelText || val}</b>`;
-          previewBox.style.display = 'block';
+      // 4. CẬP NHẬT MÀU NÚT TRÊN BOTTOM BAR: ĐÃ ĐIỀN -> XÁM, RỖNG -> TRẮNG
+      var badgeBtn = document.getElementById(`badge_${qId}`);
+      if (badgeBtn) {
+        if (cleanVal !== "") {
+          badgeBtn.classList.add('status-answered');
         } else {
-          previewBox.style.display = 'none';
+          badgeBtn.classList.remove('status-answered');
         }
       }
     };
   })();
 
-  // =========================================================================
-  // BỘ PHÂN TÍCH VÀ CHUẨN HÓA DANH SÁCH LỰA CHỌN (KHÔNG BAO GIỜ THIẾU ĐỀ)
-  // =========================================================================
   function parseOptionsList(rawOptions) {
     if (!rawOptions) return [];
-
-    // Trường hợp 1: Dạng mảng
     if (Array.isArray(rawOptions)) {
       return rawOptions.map((opt, idx) => {
         const defaultKey = String.fromCharCode(65 + idx);
         if (typeof opt === 'string') {
-          // Bóc tách nếu chuỗi có dạng "A. Text", "A - Text", "(A) Text"
           const m = opt.match(/^([A-Za-z0-9ivxlcdm]+)[\.\:\-\)\s]\s*(.*)$/i);
-          if (m) {
-            return { key: m[1].toUpperCase(), text: m[2] ? m[2].trim() : opt.trim() };
-          }
+          if (m) return { key: m[1].toUpperCase(), text: m[2] ? m[2].trim() : opt.trim() };
           return { key: defaultKey, text: opt.trim() };
-        } else if (typeof opt === 'object' && opt !== null) {
-          const k = opt.key || opt.id || opt.letter || opt.val || defaultKey;
-          const t = opt.text || opt.title || opt.content || opt.name || opt.value || '';
-          return { key: String(k).trim().toUpperCase(), text: String(t).trim() };
         }
         return { key: defaultKey, text: String(opt) };
       });
     }
-
-    // Trường hợp 2: Dạng Object { "A": "Nội dung...", "B": "Nội dung..." }
-    if (typeof rawOptions === 'object' && rawOptions !== null) {
-      return Object.keys(rawOptions).map(key => {
-        const val = rawOptions[key];
-        const text = (typeof val === 'object' && val !== null) 
-          ? (val.text || val.title || val.name || JSON.stringify(val))
-          : String(val);
-        return { key: key.trim(), text: text.trim() };
-      });
-    }
-
     return [];
   }
 
-  // =========================================================================
-  // DỰNG GIAO DIỆN TỰ ĐỘNG CHUẨN XÁC THEO TỪNG DẠNG BÀI IELTS
-  // =========================================================================
+  // DỰNG GIAO DIỆN READING VỚI THỨ TỰ CHUẨN:
+  // ĐỀ BÀI -> GỢI Ý MỚM SOCRATIC (TRÊN) -> Ô ĐIỀN ĐÁP ÁN -> MẠCH SUY NGHĨ (DƯỚI)
   window.buildReadingHtml = function(data) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
-
     let html = '';
 
     data.groups.forEach(group => {
@@ -418,28 +489,21 @@
         html += `<p style="color:var(--text-muted); font-size:13.5px; margin-bottom:12px; line-height:1.5;">${group.instructions}</p>`;
       }
 
-      // Nhận diện dạng bài
       const gType = (group.type || '').toLowerCase();
       const gMeta = (group.title + ' ' + (group.instructions || '')).toLowerCase();
-      const isTFNG = gType.includes('tfng') || gType.includes('true') || gMeta.includes('true/false/not given') || gMeta.includes('true, false, not given');
-      const isYNNG = gType.includes('ynng') || gType.includes('yes') || gMeta.includes('yes/no/not given') || gMeta.includes('yes, no, not given');
-      const matchingRaw = group.options || group.headings || group.features || group.people || group.box || null;
+      const isTFNG = gType.includes('tfng') || gMeta.includes('true/false/not given');
+      const isYNNG = gType.includes('ynng') || gMeta.includes('yes/no/not given');
 
-      // 1. HIỂN THỊ KHUNG ĐỀ MATCHING (LIST OF HEADINGS / OPTIONS / PEOPLE / WORDS)
-      const parsedMatchingOptions = parseOptionsList(matchingRaw);
-      if (parsedMatchingOptions.length > 0) {
-        html += renderMatchingBoxHtml(parsedMatchingOptions, group.optionsTitle || "📋 KHUNG ĐỀ / DANH SÁCH LỰA CHỌN");
-      }
-
-      // 2. DẠNG SUMMARY / GAP FILL: SOCRATIC PHẢI NẰM NGAY TRÊN Ô ĐIỀN ĐÁP ÁN
+      // 1. DẠNG BÀI ĐIỀN TỪ (NOTES / SUMMARY)
       if (group.template) {
-        if (group.summaryTitle) html += `<h3 style="margin-top:12px; margin-bottom:8px;">${group.summaryTitle}</h3>`;
+        if (group.noteTitle || group.summaryTitle) {
+          html += `<h3 style="margin-top:12px; margin-bottom:8px;">${group.noteTitle || group.summaryTitle}</h3>`;
+        }
 
-        // Đoạn văn tóm tắt ở trên
         let summaryText = group.template;
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
-          const width = q?.inputWidth || "130px";
+          const width = q?.inputWidth || "120px";
           summaryText = summaryText.replace(
             new RegExp(`{{${qId}}}`, 'g'),
             `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`
@@ -447,31 +511,33 @@
         });
 
         html += `
-          <div class="question" style="background:var(--bg-subcard, #f8fafc); border-left:4px solid #0284c7; padding:16px; border-radius:6px; line-height:1.85; font-size:14.5px;">
+          <div class="question" style="background:var(--bg-subcard, #f8fafc); border-left:4px solid #0284c7; padding:16px; border-radius:6px; line-height:1.85; font-size:14.5px; margin-bottom:20px;">
             ${summaryText}
           </div>
         `;
 
-        // Từng câu hỏi Gap Fill: Socratic NGAY TRÊN ô điền của chính câu đó
+        // Từng câu hỏi nhỏ bên dưới: Socratic NẰM TRÊN ô điền, Mạch suy nghĩ NẰM DƯỚI
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
           if (!q) return;
 
           html += `
-            <div class="gap-fill-card" id="${qId}">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                <b style="color:var(--primary-blue); font-size:15px;">📍 Câu ${q.num || qId.replace('q','')}:</b>
-                <span style="font-size:12px; color:var(--text-muted); background:var(--bg-subcard); padding:2px 8px; border-radius:4px;">Gap Fill</span>
-              </div>
+            <div class="question" id="${qId}" style="margin-bottom:20px; padding:16px;">
+              <b style="color:var(--primary-blue); font-size:15px;">📍 Câu ${q.num || qId}:</b>
 
-              <!-- NẤC SOCRATIC ĐẶT NGAY TRÊN Ô ĐIỀN ĐÁP ÁN -->
+              <!-- GỢI Ý MỚM DẪN DẮT (SOCRATIC) NẰM NGAY TRÊN Ô ĐIỀN -->
               ${renderSocraticHtml(qId, q)}
 
-              <!-- Ô NHẬP ĐÁP ÁN NẰM NGAY LIỀN KỀ DƯỚI SOCRATIC -->
-              <div class="gap-fill-answer-bar">
-                <label for="${qId}_input_mirror" style="font-size:14px;">✍️ <b>Đáp án cho Câu ${q.num || qId}:</b></label>
-                <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Điền từ cần tìm..." style="width:220px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
-                <span style="font-size:12px; color:var(--text-muted);">(Tự động đồng bộ với ô trống trên đoạn tóm tắt)</span>
+              <!-- Ô ĐIỀN ĐÁP ÁN -->
+              <div style="margin: 12px 0; padding:10px 14px; background:var(--bg-card); border:1.5px solid #cbd5e1; border-radius:6px; display:flex; align-items:center; gap:10px;">
+                <label for="${qId}_input_mirror" style="font-weight:700; font-size:14px;">✍️ Điền đáp án câu ${q.num || qId}:</label>
+                <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Gõ từ cần điền..." style="width:200px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
+              </div>
+
+              <!-- MẠCH SUY NGHĨ CỦA EM NẰM NGAY DƯỚI Ô ĐIỀN -->
+              <div class="thought-box" style="margin-top:10px;">
+                <label>💭 Mạch suy nghĩ của em:</label>
+                <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
               </div>
 
               <div class="result"></div>
@@ -480,99 +546,109 @@
           `;
         });
       }
-      // 3. CÁC DẠNG CÂU HỎI RỜI (MCQ ĐẦY ĐỦ ĐỀ, MATCHING, TFNG, YNNG)
+      // 2. DẠNG CÂU HỎI RỜI (MCQ, MATCHING, TFNG, YNNG)
       else {
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
           if (!q) return;
 
           html += `
-            <div class="question" id="${qId}" style="margin-bottom:18px;">
-              <p style="font-size:15px; line-height:1.55; margin-bottom:12px;"><b>${q.num}.</b> ${q.text}</p>
+            <div class="question" id="${qId}" style="margin-bottom:20px; padding:16px;">
+              <p style="font-size:15px; line-height:1.55; margin-bottom:10px;"><b>${q.num}.</b> ${q.text}</p>
+
+              <!-- GỢI Ý MỚM DẪN DẮT (SOCRATIC) NẰM TRÊN -->
+              ${renderSocraticHtml(qId, q)}
+
+              <!-- Ô ĐIỀN / LỰA CHỌN ĐÁP ÁN -->
           `;
 
           const qOptions = parseOptionsList(q.options);
 
-          // A. True / False / Not Given
           if (isTFNG || q.type === 'tfng') {
             html += renderChoicePillsHtml(qId, ['TRUE', 'FALSE', 'NOT GIVEN']);
-          }
-          // B. Yes / No / Not Given
-          else if (isYNNG || q.type === 'ynng') {
+          } else if (isYNNG || q.type === 'ynng') {
             html += renderChoicePillsHtml(qId, ['YES', 'NO', 'NOT GIVEN']);
-          }
-          // C. Multiple Choice (Có đầy đủ phương án A, B, C, D kèm nội dung đề)
-          else if (qOptions.length > 0) {
+          } else if (qOptions.length > 0) {
             html += renderMultipleChoiceHtml(qId, qOptions, q.multiple || false);
-          }
-          // D. Matching có khung đề chung
-          else if (parsedMatchingOptions.length > 0) {
-            html += renderMatchingSelectHtml(qId, parsedMatchingOptions, q.inputWidth || '100%');
-          }
-          // E. Nhập đáp án văn bản thông thường
-          else {
+          } else {
             html += `
-              <div style="margin: 10px 0;">
-                <input type="text" class="fill-input" id="${qId}_input" placeholder="Nhập đáp án..." style="width:${q.inputWidth || '180px'}; font-weight:600;" oninput="window.syncUserAnswer('${qId}', this.value)">
+              <div style="margin: 12px 0;">
+                <input type="text" class="fill-input" id="${qId}_input" placeholder="Nhập đáp án..." style="width:200px; font-weight:600;" oninput="window.syncUserAnswer('${qId}', this.value)">
               </div>
             `;
           }
 
-          // Kèm Socratic, Lời giải và Box suy nghĩ
+          // MẠCH SUY NGHĨ NẰM NGAY DƯỚI Ô ĐÁP ÁN
           html += `
-              <div class="result"></div>
-              ${renderSocraticHtml(qId, q)}
-              ${renderExplanationHtml(qId, q)}
-              <div class="thought-box" style="margin-top:10px;">
-                <label>💡 Mạch suy nghĩ của em:</label>
+              <div class="thought-box" style="margin-top:12px;">
+                <label>💭 Mạch suy nghĩ của em:</label>
                 <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
               </div>
+
+              <div class="result"></div>
+              ${renderExplanationHtml(qId, q)}
             </div>
           `;
         });
       }
     });
 
-    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">Nộp Bài / Xem Kết Quả</button>`;
+    html += `<button type="button" class="btn-submit" onclick="window.checkAnswers()" style="margin-top:25px; width:100%; padding:14px; font-size:16px;">CHẤM BÀI VÀ XEM KẾT QUẢ</button>`;
     return html;
   };
 
-  // RENDER KHUNG ĐỀ MATCHING (LIST OF OPTIONS / HEADINGS)
-  function renderMatchingBoxHtml(options, boxTitle) {
-    const listHtml = options.map(item => `
-      <div class="matching-item">
-        <span class="matching-item-key">${item.key}</span>
-        <span class="matching-item-text">${item.text}</span>
-      </div>
-    `).join('');
+  // KHUNG GỢI Ý MỚM SOCRATIC: MẶC ĐỊNH THU GỌN, BẤM MỚI BUNG
+  function renderSocraticHtml(qId, q) {
+    if (!q.socratic || !q.socratic.steps || q.socratic.steps.length === 0) return '';
+    const total = q.socratic.steps.length;
+    const ans = q.finalAnswer || '';
 
-    return `
-      <div class="matching-box">
-        <div class="matching-box-title">${boxTitle}</div>
-        <div class="matching-list">${listHtml}</div>
-      </div>
+    let sHtml = `
+      <div class="socratic-card" id="${qId}_soc_card">
+        <div class="socratic-header-bar" onclick="window.toggleSocratic('${qId}')">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <b style="color:var(--primary-blue); font-size:13.5px;">🪜 GỢI Ý MỚM DẪN DẮT (SOCRATIC)</b>
+            <span class="socratic-badge" id="${qId}_badge" data-total="${total}">Nấc 1/${total}</span>
+          </div>
+          <button type="button" class="socratic-toggle-btn" id="${qId}_soc_toggle_btn">▼ Mở gợi ý</button>
+        </div>
+
+        <div class="socratic-body" id="${qId}_soc_body" style="display: none;">
     `;
-  }
 
-  // RENDER MENU SELECT CHO DẠNG MATCHING (HIỂN THỊ ĐỦ A - NỘI DUNG VÀ PREVIEW)
-  function renderMatchingSelectHtml(qId, options, width) {
-    let opts = '<option value="">-- Bấm vào đây để chọn đáp án --</option>';
-    options.forEach(item => {
-      opts += `<option value="${item.key}">${item.key} — ${item.text}</option>`;
+    q.socratic.steps.forEach((step, idx) => {
+      const stepNum = idx + 1;
+      const isFirst = stepNum === 1;
+
+      sHtml += `
+        <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed #cbd5e1; padding-top:10px;' : ''}">
+          <p style="margin:0 0 6px 0; font-size:13.5px; font-weight:700; color:var(--text-main);">
+            🤖 Nấc ${stepNum}: ${step.title}<br>
+            <span style="font-weight:normal; color:var(--text-muted);">${step.question}</span>
+          </p>
+          <div style="display:flex; gap:6px;">
+            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập câu trả lời của em..." style="flex:1; padding:7px 10px; border:1px solid #cbd5e1; border-radius:4px; font-size:13px;" onkeydown="if(event.key==='Enter') window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">
+            <button type="button" id="${qId}_btn_${stepNum}" style="background:var(--primary-blue); color:white; border:none; padding:7px 15px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
+          </div>
+          <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:13px; line-height:1.5;">
+            <div style="color:#166534; font-weight:700;">🎯 LỜI GIẢI HƯỚNG DẪN:</div>
+            <div style="color:#1e293b;">${step.guide}</div>
+            ${step.bridge ? `<div style="margin-top:4px; font-style:italic; color:#475569;">🌉 <i>${step.bridge}</i></div>` : ''}
+          </div>
+        </div>
+      `;
     });
 
-    return `
-      <div style="margin: 12px 0;">
-        <select id="${qId}_select" class="fill-input" style="width:${width}; max-width:100%; padding:9px 12px; cursor:pointer; font-weight:600;" onchange="window.syncUserAnswer('${qId}', this.value, this.options[this.selectedIndex].text)">
-          ${opts}
-        </select>
-        <div id="${qId}_selected_preview" class="matching-selected-preview"></div>
-        <input type="hidden" id="${qId}_input">
+    sHtml += `
+          <div style="text-align: right; margin-top: 10px;">
+            <button type="button" onclick="window.toggleSocratic('${qId}')" style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1; padding:5px 12px; border-radius:4px; font-size:12px; cursor:pointer; font-weight:600;">▲ Thu gọn lại</button>
+          </div>
+        </div>
       </div>
     `;
+    return sHtml;
   }
 
-  // RENDER MULTIPLE CHOICE (ĐẦY ĐỦ ĐỀ CỦA TỪNG PHƯƠNG ÁN A, B, C, D)
   function renderMultipleChoiceHtml(qId, options, isMultiple) {
     let html = `<div class="mcq-options-list">`;
     const inputType = isMultiple ? 'checkbox' : 'radio';
@@ -582,16 +658,14 @@
         <label class="mcq-option-item" onclick="window.syncUserAnswer('${qId}', '${opt.key}')">
           <input type="${inputType}" name="${qId}" value="${opt.key}">
           <span class="mcq-badge">${opt.key}</span>
-          <span class="mcq-text">${opt.text}</span>
+          <span style="font-size:14px; line-height:1.45;">${opt.text}</span>
         </label>
       `;
     });
-
     html += `<input type="hidden" id="${qId}_input"></div>`;
     return html;
   }
 
-  // RENDER TRUE / FALSE / NOT GIVEN HOẶC YES / NO / NOT GIVEN
   function renderChoicePillsHtml(qId, choices) {
     let html = `<div class="choice-group">`;
     choices.forEach(ch => {
@@ -606,48 +680,6 @@
     return html;
   }
 
-  // RENDER SOCRATIC LADDER
-  function renderSocraticHtml(qId, q) {
-    if (!q.socratic || !q.socratic.steps || q.socratic.steps.length === 0) return '';
-    const total = q.socratic.steps.length;
-    const ans = q.finalAnswer || '';
-
-    let sHtml = `
-      <div class="socratic-container" style="background:var(--bg-subcard, #f8fafc); border:1.5px solid #cbd5e1; border-radius:8px; padding:14px; margin-top:10px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-          <b style="color:#0284c7; font-size:13.5px;">🪜 BẬC THANG DẪN DẮT (SOCRATIC)</b>
-          <span id="${qId}_badge" data-total="${total}" style="background:#0284c7; color:white; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:12px;">Nấc 1/${total}</span>
-        </div>
-    `;
-
-    q.socratic.steps.forEach((step, idx) => {
-      const stepNum = idx + 1;
-      const isFirst = stepNum === 1;
-
-      sHtml += `
-        <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed #cbd5e1; padding-top:10px;' : ''}">
-          <p style="margin:0 0 6px 0; font-size:13.5px; font-weight:700; color:var(--text-main);">
-            Nấc ${stepNum}: ${step.title}<br>
-            <span style="font-weight:normal; color:var(--text-muted);">${step.question}</span>
-          </p>
-          <div style="display:flex; gap:6px;">
-            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập suy nghĩ hoặc câu trả lời..." style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:4px; font-size:13px; background:var(--bg-card, #fff); color:var(--text-main);">
-            <button type="button" id="${qId}_btn_${stepNum}" style="background:#0284c7; color:white; border:none; padding:6px 14px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
-          </div>
-          <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:13px; line-height:1.5;">
-            <div style="color:#166534; font-weight:700;">💡 HƯỚNG DẪN:</div>
-            <div style="color:#1e293b;">${step.guide}</div>
-            ${step.bridge ? `<div style="margin-top:4px; font-style:italic; color:#475569;">🌉 <i>${step.bridge}</i></div>` : ''}
-          </div>
-        </div>
-      `;
-    });
-
-    sHtml += `</div>`;
-    return sHtml;
-  }
-
- // RENDER LỜI GIẢI CHI TIẾT KÈM KHUNG TRỢ GIẢNG AI STREAMING
   function renderExplanationHtml(qId, q) {
     let expSteps = (q.explanation && q.explanation.steps) 
       ? q.explanation.steps.map(s => `<p style="margin:4px 0;">${s}</p>`).join('') 
@@ -660,13 +692,12 @@
         ${expSteps}
         ${hlBtn}
         
-        <!-- KHUNG HỎI ĐÁP TRỢ GIẢNG AI STREAMING TRỰC TIẾP -->
         <div class="ai-assistant-box" style="margin-top: 14px; padding: 12px; background: var(--bg-card); border: 1.5px solid #cbd5e1; border-radius: 8px;">
           <div style="font-weight: 700; font-size: 13.5px; color: var(--primary-blue); margin-bottom: 6px;">
             🤖 Hỏi Trợ Giảng AI về câu này (Stream Real-time):
           </div>
           <div style="display: flex; gap: 8px;">
-            <input type="text" id="ai_ask_${qId}" placeholder="Hỏi tại sao sai, giải nghĩa từ, tìm vị trí bài đọc..." 
+            <input type="text" id="ai_ask_${qId}" placeholder="Hỏi tại sao đúng/sai, dịch nghĩa từ..." 
                    style="flex: 1; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13.5px;"
                    onkeydown="if(event.key==='Enter') window.askGeminiAI('${qId}')">
             <button type="button" id="ai_btn_${qId}" class="ai-btn" onclick="window.askGeminiAI('${qId}')" style="cursor:pointer; white-space:nowrap;">
@@ -680,7 +711,7 @@
   }
 </script>
 
-<!-- SCRIPT TẢI DỮ LIỆU ĐỀ THI & KHỞI CHẠY APP -->
+<!-- SCRIPT KHỞI TẠO BÀI THI & TỰ ĐỘNG SINH THANH ĐIỀU HƯỚNG ĐÁY -->
 <script type="module">
   const params = new URLSearchParams(window.location.search);
   let testId = params.get('test');
@@ -703,77 +734,195 @@
       ];
 
       let data = null;
-      let loadError = null;
-
       for (const url of urlsToTry) {
         try {
           const res = await fetch(`${url}?t=${Date.now()}`, { cache: 'no-store' });
           if (res.ok) {
-            const rawText = await res.text();
-            try {
-              data = JSON.parse(rawText);
-              break;
-            } catch (jsonErr) {
-              try {
-                const autoFixedText = rawText
-                  .replace(/\\'/g, "'")
-                  .replace(/\\([^"\\/bfnrtu])/g, '$1');
-                data = JSON.parse(autoFixedText);
-                break;
-              } catch (retryErr) {
-                loadError = "Lỗi cú pháp JSON: " + jsonErr.message;
-                break;
-              }
-            }
+            data = await res.json();
+            break;
           }
-        } catch (e) {
-          loadError = e.message;
-        }
+        } catch (e) {}
       }
 
       if (!data) {
         document.getElementById('mainContainer').innerHTML = `
-          <div style="padding: 30px; max-width: 700px; margin: 0 auto; text-align: center;">
-            <h3 style="color: #dc2626;">❌ Không thể nạp đề thi</h3>
-            <p style="color: #b91c1c; font-weight: bold;">${loadError || "Không tìm thấy file: " + fileName + ".json"}</p>
-            <p style="color: var(--text-muted); font-size: 13px;">Vui lòng kiểm tra đường dẫn hoặc cú pháp JSON của file.</p>
-            <a href="index.html" class="nav-link" style="display:inline-block; margin-top: 10px;">Quay về trang chủ</a>
+          <div style="padding: 30px; text-align: center; width: 100%;">
+            <h3 style="color: #dc2626;">❌ Không tìm thấy file: <code>${fileName}.json</code></h3>
+            <p style="color: var(--text-muted);">Hãy kiểm tra lại đường dẫn file trên GitHub.</p>
           </div>
         `;
         return;
       }
 
-    document.title = data.title;
+      document.title = data.title;
       document.getElementById('testTitleHeader').innerText = data.title;
-
-      // ================= BẮT ĐẦU ĐOẠN CHÈN THÊM =================
-      try {
-        const { renderTagsHtml } = await import('./js/taxonomy-registry.js');
-        const matchCam = fileName.match(/cam(\d+)-test(\d+)-p(\d+)/i);
-        if (matchCam) {
-          const autoId = `READ_CAM${matchCam[1]}_T${matchCam[2]}_P${matchCam[3]}`;
-          const tagDiv = document.createElement('div');
-          tagDiv.innerHTML = renderTagsHtml(autoId);
-          document.getElementById('testTitleHeader').appendChild(tagDiv);
-        }
-      } catch (err) {
-        console.warn("Chưa tải được tag:", err);
-      }
-      // ================= KẾT THÚC ĐOẠN CHÈN THÊM =================
-
       document.getElementById('passageBox').innerHTML = data.passageHtml || "";
 
-      // DỰNG GIAO DIỆN CÂU HỎI
+      // Dựng danh sách câu hỏi
       if (data.questions && window.buildReadingHtml) {
         document.getElementById('questionBox').innerHTML = window.buildReadingHtml(data);
-      } else {
-        document.getElementById('questionBox').innerHTML = data.questionHtml || "";
       }
 
-      window.TEST_DATA = { title: data.title, answers: data.answers };
+      window.TEST_DATA = { 
+        title: data.title, 
+        answers: data.answers || (data.questions ? Object.fromEntries(Object.entries(data.questions).map(([k, v]) => [k, v.finalAnswer])) : {})
+      };
 
+      // TẢI VÀ SINH CÁC NÚT SỐ CÂU DƯỚI THANH BOTTOM BAR
+      const qKeys = Object.keys(window.TEST_DATA.answers || {});
+      const badgesContainer = document.getElementById('qBadgesContainer');
+      let currentActiveIndex = 0;
+
+      if (badgesContainer && qKeys.length > 0) {
+        badgesContainer.innerHTML = qKeys.map((k, idx) => {
+          const num = k.replace(/^[a-zA-Z]+/, '');
+          return `<button type="button" class="q-badge-btn" id="badge_${k}" data-idx="${idx}">${num}</button>`;
+        }).join('');
+
+        function scrollToQ(idx) {
+          if (idx < 0 || idx >= qKeys.length) return;
+          currentActiveIndex = idx;
+          const targetId = qKeys[idx];
+          const el = document.getElementById(targetId) || document.getElementById(`${targetId}_input`);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            const inputEl = document.getElementById(`${targetId}_input`) || document.getElementById(`${targetId}_input_mirror`);
+            if (inputEl) setTimeout(() => inputEl.focus(), 250);
+          }
+        }
+
+        qKeys.forEach((k, idx) => {
+          document.getElementById(`badge_${k}`)?.addEventListener('click', () => scrollToQ(idx));
+        });
+
+        document.getElementById('btnPrevQ')?.addEventListener('click', () => scrollToQ(currentActiveIndex - 1));
+        document.getElementById('btnNextQ')?.addEventListener('click', () => scrollToQ(currentActiveIndex + 1));
+      }
+
+      // XỬ LÝ BẬT MODAL ANSWER SHEET
+      const modalBackdrop = document.getElementById('readingModalBackdrop');
+      const modalBody = document.getElementById('modalDynamicBody');
+      document.getElementById('btnOpenSheet')?.addEventListener('click', () => {
+        let rowsHtml = '';
+        qKeys.forEach(k => {
+          const num = k.replace(/^[a-zA-Z]+/, '');
+          const textInp = document.getElementById(`${k}_input`) || document.getElementById(`${k}_input_mirror`);
+          const radio = document.querySelector(`input[name="${k}"]:checked`);
+          const sel = document.getElementById(`${k}_select`);
+          const val = textInp ? textInp.value.trim() : (radio ? radio.value : (sel ? sel.value : ''));
+
+          rowsHtml += `
+            <tr style="border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 9px 12px; font-weight:700; width:50px; text-align:center;">${num}</td>
+              <td style="padding: 9px 12px; color: ${val ? '#0f172a' : '#94a3b8'}; font-weight:600;">
+                ${val || '<i style="color:#cbd5e1;">(Chưa trả lời)</i>'}
+              </td>
+            </tr>
+          `;
+        });
+
+        modalBody.innerHTML = `
+          <h3 style="margin-top:0; font-size:16px; color:#0f172a;">📋 Review Answer Sheet</h3>
+          <div style="max-height: 55vh; overflow-y: auto; border: 1.5px solid #e2e8f0; border-radius: 8px;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+              <thead>
+                <tr style="background:#f8fafc; border-bottom:1.5px solid #e2e8f0;">
+                  <th style="padding: 9px; width:50px;">#</th>
+                  <th style="padding: 9px; text-align:left;">Đáp án của em</th>
+                </tr>
+              </thead>
+              <tbody>${rowsHtml}</tbody>
+            </table>
+          </div>
+        `;
+        modalBackdrop.style.display = 'flex';
+      });
+
+      document.getElementById('btnCloseModal')?.addEventListener('click', () => {
+        modalBackdrop.style.display = 'none';
+      });
+      modalBackdrop?.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) modalBackdrop.style.display = 'none';
+      });
+
+      // TẢI LOGIC APP
       await import('./js/app.js');
+
+      // SAU KHI NỘP BÀI: CẬP NHẬT MÀU NÚT XANH/ĐỎ VÀ HIỆN BẢNG ĐIỂM
+      const originalCheckAnswers = window.checkAnswers;
+      window.checkAnswers = async function() {
+        if (typeof originalCheckAnswers === 'function') await originalCheckAnswers();
+
+        let correctCount = 0;
+        let tableRows = '';
+
+        qKeys.forEach(k => {
+          const num = k.replace(/^[a-zA-Z]+/, '');
+          const expected = window.TEST_DATA.answers[k];
+          const textInp = document.getElementById(`${k}_input`) || document.getElementById(`${k}_input_mirror`);
+          const radio = document.querySelector(`input[name="${k}"]:checked`);
+          const sel = document.getElementById(`${k}_select`);
+          const val = textInp ? textInp.value.trim() : (radio ? radio.value : (sel ? sel.value : ''));
+
+          let isCorrect = false;
+          if (radio) {
+            isCorrect = (val.toUpperCase() === String(expected).trim().toUpperCase());
+          } else {
+            const cleanVal = val.toLowerCase().replace(/\s+/g, ' ');
+            if (Array.isArray(expected)) {
+              isCorrect = expected.map(a => a.toLowerCase().trim()).includes(cleanVal);
+            } else {
+              isCorrect = (cleanVal === String(expected).toLowerCase().trim());
+            }
+          }
+
+          if (isCorrect) correctCount++;
+
+          const badge = document.getElementById(`badge_${k}`);
+          if (badge) {
+            badge.classList.remove('status-answered');
+            badge.classList.toggle('status-correct', isCorrect);
+            badge.classList.toggle('status-incorrect', !isCorrect);
+          }
+
+          const expStr = Array.isArray(expected) ? expected.join(' / ') : expected;
+          tableRows += `
+            <tr style="background: ${isCorrect ? '#f0fdf4' : '#fef2f2'}; border-bottom: 1px solid #f1f5f9;">
+              <td style="padding: 9px; text-align: center; font-weight: 700;">${num}</td>
+              <td style="padding: 9px; font-weight: 600; color: ${isCorrect ? '#166534' : '#991b1b'};">${val || '—'}</td>
+              <td style="padding: 9px; font-weight: 700; color: #166534;">${expStr}</td>
+            </tr>
+          `;
+        });
+
+        const total = qKeys.length;
+        const timeSpent = document.getElementById('timerDisplay')?.innerText || '00:00';
+
+        // BẬT POPUP KẾT QUẢ ĐỐI CHIẾU
+        modalBody.innerHTML = `
+          <div style="text-align: center; margin-bottom: 16px;">
+            <h2 style="color: #8B1518; font-size: 24px; margin: 0 0 6px 0; border: none; padding: 0;">🎉 KẾT QUẢ BÀI LÀM</h2>
+            <div style="font-size: 20px; font-weight: 800; color: #1e293b;">${correctCount} / ${total} câu đúng</div>
+            <div style="font-size: 13.5px; color: #64748b; margin-top: 4px;">⏱️ Thời gian hoàn thành: <b>${timeSpent}</b></div>
+          </div>
+
+          <div style="max-height: 52vh; overflow-y: auto; border: 1.5px solid #e2e8f0; border-radius: 8px;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 13.5px;">
+              <thead>
+                <tr style="background: #f8fafc; border-bottom: 1.5px solid #e2e8f0;">
+                  <th style="padding: 9px; text-align: center;">#</th>
+                  <th style="padding: 9px; text-align: left;">Đáp án của em</th>
+                  <th style="padding: 9px; text-align: left;">Đáp án chuẩn</th>
+                </tr>
+              </thead>
+              <tbody>${tableRows}</tbody>
+            </table>
+          </div>
+        `;
+        modalBackdrop.style.display = 'flex';
+      };
     }
+
     loadTest();
   }
 </script>
