@@ -1,0 +1,506 @@
+{
+  "title": "IELTS Academic 20 - Test 2 - Passage 1: Manatees",
+  "answers": {
+    "q1": "tail",
+    "q2": "flippers",
+    "q3": "hairs",
+    "q4": "seagrasses",
+    "q5": "lips",
+    "q6": "buoyancy",
+    "q7": "TRUE",
+    "q8": "NOT GIVEN",
+    "q9": "FALSE",
+    "q10": "NOT GIVEN",
+    "q11": "TRUE",
+    "q12": "NOT GIVEN",
+    "q13": "TRUE"
+  },
+  "passageHtml": "<h2>READING PASSAGE 1</h2><h3>Manatees</h3><p>Manatees, also known as sea cows, are aquatic mammals that belong to a group of animals called Sirenia. This group also contains dugongs. Dugongs and manatees look quite alike – they are similar in size, colour and shape, and both have flexible flippers for forelimbs. However, <span class=\"hl\" id=\"hl-q1\" data-q=\"[Q1]\">the manatee has a broad, rounded <span class=\"kw\">tail</span>, whereas the dugong's is fluked, like that of a whale</span>. There are three species of manatees: the West Indian manatee (Trichechus manatus), the African manatee (Trichechus senegalensis) and the Amazonian manatee (Trichechus inunguis).</p><p>Unlike most mammals, manatees have only six bones in their neck – most others, including humans and giraffes, have seven. This short neck allows a manatee to move its head up and down, but not side to side. <span class=\"hl\" id=\"hl-q2\" data-q=\"[Q2]\">To see something on its left or its right, a manatee must turn its entire body, steering with its <span class=\"kw\">flippers</span></span>. Manatees have pectoral flippers but no back limbs, only a tail for propulsion. They do have pelvic bones, however – a leftover from their evolution from a four-legged to a fully aquatic animal. Manatees share some visual similarities to elephants. Like elephants, manatees have thick, wrinkled skin. <span class=\"hl\" id=\"hl-q3\" data-q=\"[Q3]\">They also have some <span class=\"kw\">hairs</span> covering their bodies which help them sense vibrations in the water around them</span>.</p><p><span class=\"hl\" id=\"hl-q4\" data-q=\"[Q4]\"><span class=\"kw\">Seagrasses</span> and other marine plants make up most of a manatee's diet</span>. Manatees spend about eight hours each day grazing and uprooting plants. They eat up to 15% of their weight in food each day. African manatees are omnivorous – studies have shown that molluscs and fish make up a small part of their diets. West Indian and Amazonian manatees are both herbivores.</p><p>Manatees' teeth are all molars – flat, rounded teeth for grinding food. Due to manatees' abrasive aquatic plant diet, these teeth get worn down and they eventually fall out, so they continually grow new teeth that get pushed forward to replace the ones they lose. <span class=\"hl\" id=\"hl-q5\" data-q=\"[Q5]\">Instead of having incisors to grasp their food, manatees have <span class=\"kw\">lips</span> which function like a pair of hands to help tear food away from the seafloor</span>. Manatees are fully aquatic, but as mammals, they need to come up to the surface to breathe. When awake, they typically surface every two to four minutes, but they can hold their breath for much longer. Adult manatees sleep underwater for 10-12 hours a day, but they come up for air every 15-20 minutes. Active manatees need to breathe more frequently. <span class=\"hl\" id=\"hl-q6\" data-q=\"[Q6]\">It's thought that manatees use their muscular diaphragm and breathing to adjust their <span class=\"kw\">buoyancy</span></span>. They may use diaphragm contractions to compress and store gas in folds in their large intestine to help them float.</p><p><span class=\"hl\" id=\"hl-q7\" data-q=\"[Q7]\">The West Indian manatee reaches about 3.5 metres long and weighs on average around 500 kilogrammes. It moves between fresh water and salt water, taking advantage of coastal mangroves and coral reefs, rivers, lakes and inland lagoons</span>. There are two subspecies of West Indian manatee: the Antillean manatee is found in waters from the Bahamas to Brazil, whereas the Florida manatee is found in US waters, although some individuals have been recorded in the Bahamas. In winter, the Florida manatee is typically restricted to Florida. <span class=\"hl\" id=\"hl-q8\" data-q=\"[Q8]\">When the ambient water temperature drops below 20°C, it takes refuge in naturally and artificially warmed water, such as at the warm-water outfalls from powerplants</span>.</p><p><span class=\"hl\" id=\"hl-q9\" data-q=\"[Q9]\">The African manatee is also about 3.5 metres long and found in the sea along the west coast of Africa, from Mauritania down to Angola. The species also makes use of rivers, with the mammals seen in landlocked countries such as Mali and Niger</span>.</p><p>The Amazonian manatee is the smallest species, though it is still a big animal. It grows to about 2.5 metres long and 350 kilogrammes. Amazonian manatees favour calm, shallow waters that are above 23°C. This species is found in fresh water in the Amazon Basin in Brazil, as well as in Colombia, Ecuador and Peru.</p><p>All three manatee species are endangered or at a heightened risk of extinction. The African manatee and Amazonian manatee are both listed as Vulnerable by the International Union for Conservation of Nature (IUCN). <span class=\"hl\" id=\"hl-q10\" data-q=\"[Q10]\">It is estimated that 140,000 Amazonian manatees were killed between 1935 and 1954 for their meat, fat and skin, with the latter used to make leather</span>. In more recent years, African manatee decline has been tied to incidental capture in fishing nets and hunting. Manatee hunting is now illegal in every country the African species is found in.</p><p>The two subspecies of West Indian manatee are listed as Endangered by the IUCN. <span class=\"hl\" id=\"hl-q11\" data-q=\"[Q11]\">Both are also expected to undergo a decline of 20% over the next 40 years</span>. <span class=\"hl\" id=\"hl-q12\" data-q=\"[Q12]\">A review of almost 1,800 cases of entanglement in fishing nets and of plastic consumption among marine mammals in US waters from 2009 to 2020 found that at least 700 cases involved manatees</span>. <span class=\"hl\" id=\"hl-q13\" data-q=\"[Q13]\">The chief cause of death in Florida manatees is boat strikes. However, laws in certain parts of Florida now limit boat speeds during winter, allowing slow-moving manatees more time to respond</span>.</p>",
+  "groups": [
+    {
+      "id": "g1",
+      "type": "notes",
+      "title": "Questions 1-6",
+      "instructions": "<i>Complete the notes below. Choose <b>ONE WORD AND/OR A NUMBER</b> from the passage for each answer. Write your answers in boxes 1-6 on your answer sheet.</i>",
+      "noteTitle": "Manatees",
+      "questionIds": ["q1", "q2", "q3", "q4", "q5", "q6"],
+      "template": "<p><b>Appearance</b></p><ul><li style=\"margin-bottom: 12px;\">look similar to dugongs, but with a differently shaped <b>1.</b> {{q1}}</li></ul><p><b>Movement</b></p><ul><li style=\"margin-bottom: 12px;\">have fewer neck bones than most mammals</li><li style=\"margin-bottom: 12px;\">need to use their <b>2.</b> {{q2}} to help to turn their bodies around in order to look sideways</li><li style=\"margin-bottom: 12px;\">sense vibrations in the water by means of <b>3.</b> {{q3}} on their skin</li></ul><p><b>Feeding</b></p><ul><li style=\"margin-bottom: 12px;\">eat mainly aquatic vegetation, such as <b>4.</b> {{q4}}</li><li style=\"margin-bottom: 12px;\">grasp and pull up plants with their <b>5.</b> {{q5}}</li></ul><p><b>Breathing</b></p><ul><li style=\"margin-bottom: 12px;\">come to the surface for air every 2-4 minutes when awake and every 15-20 while sleeping</li><li style=\"margin-bottom: 12px;\">may regulate the <b>6.</b> {{q6}} of their bodies by using muscles of diaphragm to store air internally</li></ul>"
+    },
+    {
+      "id": "g2",
+      "type": "tfng",
+      "title": "Questions 7-13",
+      "instructions": "<i>Do the following statements agree with the information given in Reading Passage 1? In boxes 7-13 on your answer sheet, write:</i><br><b>TRUE</b> if the statement agrees with the information<br><b>FALSE</b> if the statement contradicts the information<br><b>NOT GIVEN</b> if there is no information on this",
+      "questionIds": ["q7", "q8", "q9", "q10", "q11", "q12", "q13"]
+    }
+  ],
+  "questions": {
+    "q1": {
+      "num": 1,
+      "finalAnswer": "tail",
+      "inputWidth": "100px",
+      "highlightId": "hl-q1",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 1 nói lợn biển (manatees) nhìn khá giống cá cúi (dugongs), nhưng có một bộ phận có hình dáng khác nhau ('a differently shaped ______'). Chỗ trống cần từ loại gì?",
+            "guide": "Sau tính từ 'shaped' cần một danh từ chỉ một bộ phận trên cơ thể của lợn biển.",
+            "bridge": "Mình cùng tìm câu so sánh giữa manatee và dugong ở đoạn 1 nhé."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Trong đoạn 1, câu nào chỉ ra điểm khác nhau về hình dáng giữa hai loài vật này?",
+            "guide": "Đoạn 1 có câu: 'However, the manatee has a broad, rounded tail, whereas the dugong's is fluked, like that of a whale.' (Lợn biển có cái đuôi tròn và rộng, trong khi đuôi cá cúi thì chia hai thùy như đuôi cá voi).",
+            "bridge": "Bộ phận có hình dáng khác nhau giữa hai loài đã lộ diện."
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Bộ phận cơ thể nào được nhắc đến ở đây?",
+            "guide": "Đó chính là cái đuôi ('tail').",
+            "bridge": "Chốt đáp án câu 1: tail."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Bộ phận cơ thể có hình dáng khác biệt giữa manatee và dugong.",
+          "<b>Đoạn 1 (dòng 3-4):</b> <i>'However, the manatee has a broad, rounded tail, whereas the dugong's is fluked...'</i>",
+          "<b>Từ cần điền:</b> <b>tail</b>."
+        ]
+      }
+    },
+    "q2": {
+      "num": 2,
+      "finalAnswer": "flippers",
+      "inputWidth": "110px",
+      "highlightId": "hl-q2",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 2 nói lợn biển phải dùng bộ phận nào ('need to use their ______') để xoay cả người khi muốn nhìn sang hai bên?",
+            "guide": "Sau từ 'their' cần một danh từ chỉ bộ phận cơ thể giúp lợn biển điều khiển hướng bơi và xoay người.",
+            "bridge": "Hãy tìm đoạn 2 nói về việc nhìn sang hai bên ('look sideways')."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Đoạn 2 miêu tả hành động xoay người để nhìn sang trái, sang phải như thế nào?",
+            "guide": "Đoạn 2 viết: 'To see something on its left or its right, a manatee must turn its entire body, steering with its flippers.' (Để nhìn bên trái hoặc bên phải, nó phải xoay cả người, điều hướng bằng đôi vây).",
+            "bridge": "Bộ phận dùng để xoay người đã xuất hiện."
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Từ chỉ bộ phận đó trong bài là gì?",
+            "guide": "Đó là từ 'flippers' (đôi vây bơi).",
+            "bridge": "Chốt đáp án câu 2: flippers."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Bộ phận lợn biển dùng để điều khiển và xoay người khi muốn nhìn sang hai bên.",
+          "<b>Đoạn 2 (dòng 2-4):</b> <i>'To see something on its left or its right, a manatee must turn its entire body, steering with its flippers.'</i>",
+          "<b>Từ cần điền:</b> <b>flippers</b>."
+        ]
+      }
+    },
+    "q3": {
+      "num": 3,
+      "finalAnswer": "hairs",
+      "inputWidth": "100px",
+      "highlightId": "hl-q3",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 3 nói lợn biển cảm nhận dao động trong nước nhờ có cái gì trên da ('by means of ______ on their skin')? Cần từ loại gì ở đây?",
+            "guide": "Sau giới từ 'of' cần một danh từ chỉ thứ gì đó mọc trên lớp da của lợn biển.",
+            "bridge": "Hãy đọc phần cuối của đoạn 2 nói về lớp da và sự rung động."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Đoạn 2 nhắc đến thứ gì trên cơ thể giúp chúng cảm nhận chuyển động trong nước?",
+            "guide": "Đoạn 2 viết: 'They also have some hairs covering their bodies which help them sense vibrations in the water around them.'",
+            "bridge": "'sense vibrations' chính là cảm nhận các dao động trong nước.",
+            "answer": "hairs"
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Từ chính xác trong bài là gì?",
+            "guide": "Đáp án là 'hairs' (những sợi lông).",
+            "bridge": "Chốt đáp án câu 3: hairs."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Thứ trên da giúp lợn biển cảm nhận dao động của dòng nước.",
+          "<b>Đoạn 2 (câu cuối):</b> <i>'They also have some hairs covering their bodies which help them sense vibrations in the water around them.'</i>",
+          "<b>Từ cần điền:</b> <b>hairs</b>."
+        ]
+      }
+    },
+    "q4": {
+      "num": 4,
+      "finalAnswer": "seagrasses",
+      "inputWidth": "130px",
+      "highlightId": "hl-q4",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 4 nằm ở phần Thức ăn (Feeding): Lợn biển ăn thực vật thủy sinh, ví dụ như loài cây nào ('such as ______')?",
+            "guide": "Chỗ trống cần tên một loài thực vật dưới nước mà lợn biển hay ăn.",
+            "bridge": "Hãy chuyển sang đầu đoạn 3 nói về chế độ ăn của lợn biển nhé."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Câu đầu tiên của đoạn 3 giới thiệu món ăn chính của chúng là gì?",
+            "guide": "Đoạn 3 viết: 'Seagrasses and other marine plants make up most of a manatee's diet.' (Cỏ biển và các thực vật biển khác chiếm phần lớn khẩu phần ăn của lợn biển).",
+            "bridge": "Loài thực vật thủy sinh chính là cỏ biển."
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Từ nguyên văn trong bài là gì?",
+            "guide": "Đáp án là 'seagrasses' (các loài cỏ biển).",
+            "bridge": "Chốt đáp án câu 4: seagrasses."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Tên loài thực vật dưới nước là thức ăn chính của lợn biển.",
+          "<b>Đoạn 3 (dòng 1):</b> <i>'Seagrasses and other marine plants make up most of a manatee's diet.'</i>",
+          "<b>Khớp từ:</b> <i>aquatic vegetation</i> = <i>marine plants</i>; ví dụ điển hình là <i>seagrasses</i>.",
+          "<b>Từ cần điền:</b> <b>seagrasses</b>."
+        ]
+      }
+    },
+    "q5": {
+      "num": 5,
+      "finalAnswer": "lips",
+      "inputWidth": "90px",
+      "highlightId": "hl-q5",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 5 nói lợn biển dùng bộ phận nào để bứt và nhổ cây lên ('grasp and pull up plants with their ______')?",
+            "guide": "Sau từ 'their' cần một danh từ chỉ bộ phận miệng/mặt dùng để giữ và bứt thức ăn.",
+            "bridge": "Hãy tìm đoạn 4 nói về cách lợn biển lấy thức ăn thay vì dùng răng cửa."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Đoạn 4 nói thay vì có răng cửa để gắp thức ăn, lợn biển có bộ phận nào làm việc như đôi bàn tay?",
+            "guide": "Đoạn 4 viết: 'Instead of having incisors to grasp their food, manatees have lips which function like a pair of hands to help tear food away from the seafloor.'",
+            "bridge": "'grasp their food' và 'tear food away' chính là dùng để bứt cây.",
+            "answer": "lips"
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Bộ phận đó là gì?",
+            "guide": "Đáp án là 'lips' (đôi môi).",
+            "bridge": "Chốt đáp án câu 5: lips."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Bộ phận lợn biển dùng để giữ và bứt thức ăn dưới đáy biển.",
+          "<b>Đoạn 4 (dòng 4-5):</b> <i>'Instead of having incisors to grasp their food, manatees have lips which function like a pair of hands to help tear food away...'</i>",
+          "<b>Từ cần điền:</b> <b>lips</b>."
+        ]
+      }
+    },
+    "q6": {
+      "num": 6,
+      "finalAnswer": "buoyancy",
+      "inputWidth": "110px",
+      "highlightId": "hl-q6",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Câu 6 nằm ở mục Thở (Breathing): Lợn biển có thể điều chỉnh cái gì của cơ thể ('regulate the ______ of their bodies') bằng cơ hoành để nén và giữ khí quyển bên trong?",
+            "guide": "Sau 'regulate the' cần một danh từ chỉ một đặc tính vật lý (ví dụ: độ nổi, thăng bằng) của cơ thể dưới nước.",
+            "bridge": "Hãy tìm đoạn 4-5 chỗ nói về cơ hoành ('diaphragm') và việc nổi trên mặt nước."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Ở cuối phần nói về hô hấp, người ta giải thích lợn biển dùng cơ hoành và hơi thở để chỉnh cái gì?",
+            "guide": "Bài viết: 'It's thought that manatees use their muscular diaphragm and breathing to adjust their buoyancy. They may use diaphragm contractions... to help them float.'",
+            "bridge": "'adjust' tương đương với 'regulate' (điều chỉnh); 'float' nói về khả năng nổi.",
+            "answer": "buoyancy"
+          },
+          {
+            "title": "Chọn từ cần điền",
+            "question": "Từ danh từ chỉ độ nổi trong bài là gì?",
+            "guide": "Đáp án là 'buoyancy' (độ nổi).",
+            "bridge": "Hoàn thành phần điền từ! Đáp án câu 6: buoyancy."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nội dung cần tìm:</b> Đặc tính cơ thể mà lợn biển điều chỉnh nhờ cơ hoành.",
+          "<b>Đoạn 4-5:</b> <i>'It's thought that manatees use their muscular diaphragm and breathing to adjust their buoyancy.'</i>",
+          "<b>Từ đồng nghĩa:</b> <i>regulate</i> = <i>adjust</i>.",
+          "<b>Từ cần điền:</b> <b>buoyancy</b>."
+        ]
+      }
+    },
+    "q7": {
+      "num": 7,
+      "text": "West Indian manatees can be found in a variety of different aquatic habitats.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q7",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 7 khẳng định điều gì? Loài lợn biển Tây Ấn (West Indian manatees) có thể được tìm thấy ở nhiều môi trường sống dưới nước khác nhau ('a variety of different aquatic habitats').",
+            "guide": "Em cần tìm đoạn viết về loài West Indian manatee và xem môi trường sống của nó có phong phú không.",
+            "bridge": "Cùng đọc đoạn 6 nơi bắt đầu nhắc đến loài này nhé."
+          },
+          {
+            "title": "Đối chiếu với bài đọc",
+            "question": "Đoạn 6 liệt kê những nơi nào mà loài lợn biển Tây Ấn này sinh sống?",
+            "guide": "Đoạn 6 viết: 'It moves between fresh water and salt water, taking advantage of coastal mangroves and coral reefs, rivers, lakes and inland lagoons.' (Nó bơi qua lại giữa nước ngọt và nước mặn, sống ở rừng ngập mặn ven biển, rạn san hô, sông, hồ và các đầm phá).",
+            "bridge": "Từ nước ngọt, nước mặn đến sông, hồ, rạn san hô, đầm phá... đều là các môi trường khác nhau."
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Thông tin bài đọc có trùng khớp hoàn toàn với nhận định 'nhiều môi trường sống khác nhau' không?",
+            "guide": "Rất trùng khớp. Do đó đáp án là TRUE.",
+            "bridge": "Chốt câu 7: TRUE."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Lợn biển Tây Ấn có thể sống ở nhiều môi trường nước khác nhau.",
+          "<b>Đoạn 6:</b> <i>'It moves between fresh water and salt water, taking advantage of coastal mangroves and coral reefs, rivers, lakes and inland lagoons.'</i>",
+          "<b>Đối chiếu:</b> Sống ở cả nước mặn, nước ngọt, sông, hồ, rạn san hô, đầm phá... chính là <i>'a variety of different aquatic habitats'</i>.",
+          "<b>Kết luận:</b> Chọn <b>TRUE</b>."
+        ]
+      }
+    },
+    "q8": {
+      "num": 8,
+      "text": "The Florida manatee lives in warmer waters than the Antillean manatee.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q8",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Phân tích phép so sánh trong câu hỏi",
+            "question": "Câu 8 đưa ra sự so sánh nào? Loài lợn biển Florida sống ở vùng nước ấm hơn ('warmer waters than') so với loài lợn biển Antillean.",
+            "guide": "Em cần kiểm tra xem bài đọc có đặt hai loài này lên bàn cân để so sánh xem loài nào sống ở nước ấm hơn hay không.",
+            "bridge": "Hãy xem tiếp đoạn 6 chỗ giới thiệu hai phân loài này."
+          },
+          {
+            "title": "Tìm thông tin về hai phân loài",
+            "question": "Đoạn 6 nói gì về Antillean manatee và Florida manatee?",
+            "guide": "Bài chỉ nói Antillean manatee sống từ Bahamas đến Brazil, còn Florida manatee sống ở vùng biển Mỹ và khi nhiệt độ dưới 20°C thì nó tìm nơi ấm hơn trú ngụ.",
+            "bridge": "Bài có nói con nào sống ở nước ấm hơn con nào không?"
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Bài có nhắc cả hai tên loài, nhưng hoàn toàn KHÔNG so sánh nhiệt độ nước nơi sống của loài nào ấm hơn. Vậy đáp án là gì?",
+            "guide": "Thiếu thông tin so sánh nên đáp án là NOT GIVEN.",
+            "bridge": "Chốt câu 8: NOT GIVEN."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Lợn biển Florida sống ở vùng nước ấm hơn lợn biển Antillean.",
+          "<b>Đoạn 6:</b> Bài đọc giới thiệu vị trí địa lý của cả hai phân loài (Antillean ở từ Bahamas tới Brazil; Florida ở vùng biển Mỹ, mùa đông tìm nước ấm khi dưới 20°C).",
+          "<b>Đối chiếu:</b> Không có bất kỳ câu nào so sánh nhiệt độ vùng nước giữa hai loài này xem loài nào ấm hơn.",
+          "<b>Kết luận:</b> Chọn <b>NOT GIVEN</b>."
+        ]
+      }
+    },
+    "q9": {
+      "num": 9,
+      "text": "The African manatee's range is limited to coastal waters between the West African countries of Mauritania and Angola.",
+      "finalAnswer": "FALSE",
+      "highlightId": "hl-q9",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Để ý từ hạn định",
+            "question": "Câu 9 nói phạm vi sống của lợn biển châu Phi CHỈ GIỚI HẠN ở vùng nước ven biển ('is limited to coastal waters') từ Mauritania đến Angola. Chú ý từ 'limited to'.",
+            "guide": "Hãy tìm xem loài này có chỉ sống ở vùng ven biển hay còn bơi đi đâu khác không.",
+            "bridge": "Đọc đoạn 7 về loài African manatee nhé."
+          },
+          {
+            "title": "Đối chiếu với bài đọc",
+            "question": "Đoạn 7 nói ngoài vùng biển ven bờ, lợn biển châu Phi còn xuất hiện ở đâu nữa?",
+            "guide": "Đoạn 7 viết: 'The species also makes use of rivers, with the mammals seen in landlocked countries such as Mali and Niger.' (Chúng cũng sống ở các con sông, và thậm chí được nhìn thấy ở các quốc gia không giáp biển như Mali và Niger).",
+            "bridge": "Chúng sống cả ở trong sông ngòi sâu trong đất liền, không hề bị giới hạn ở ven biển."
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Câu hỏi bảo 'chỉ giới hạn ở vùng biển ven bờ', bài đọc lại bảo 'vào sâu cả trong sông ở các nước không giáp biển'. Hai ý này trái ngược nhau hoàn toàn đúng không?",
+            "guide": "Đúng vậy, thông tin bị phủ định hoàn toàn nên chọn FALSE.",
+            "bridge": "Chốt câu 9: FALSE."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Phạm vi của lợn biển châu Phi chỉ giới hạn ở vùng biển ven bờ giữa Mauritania và Angola.",
+          "<b>Đoạn 7:</b> <i>'The species also makes use of rivers, with the mammals seen in landlocked countries such as Mali and Niger.'</i>",
+          "<b>Đối chiếu:</b> Nhận định nói <i>'limited to coastal waters'</i> (chỉ ở biển ven bờ), nhưng bài đọc chỉ rõ chúng còn vào sông ở các nước nội địa không giáp biển (<i>landlocked countries</i>). Hai thông tin đá nhau 100%.",
+          "<b>Kết luận:</b> Chọn <b>FALSE</b>."
+        ]
+      }
+    },
+    "q10": {
+      "num": 10,
+      "text": "The extent of the loss of Amazonian manatees in the mid-twentieth century was only revealed many years later.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q10",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Tìm từ khóa nhận định",
+            "question": "Câu 10 nói mức độ thiệt hại của loài lợn biển Amazon giữa thế kỷ 20 chỉ được phát hiện/tiết lộ nhiều năm sau đó ('only revealed many years later').",
+            "guide": "Em cần tìm đoạn viết về việc lợn biển Amazon bị giết hại vào giữa thế kỷ 20 (giai đoạn 1935–1954).",
+            "bridge": "Cùng xem đoạn 9 có số liệu về việc này."
+          },
+          {
+            "title": "Đọc đoạn 9",
+            "question": "Đoạn 9 nói khoảng 140.000 con bị giết từ 1935 đến 1954 để lấy thịt, mỡ và da. Bài có nhắc đến việc con số này được phát hiện vào lúc nào không?",
+            "guide": "Bài chỉ ước tính con số 140.000 con bị giết, hoàn toàn không nói số liệu này được phát hiện ngay lúc đó hay nhiều năm sau mới lộ ra.",
+            "bridge": "Không có thông tin về thời điểm con số thiệt hại được tiết lộ."
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Không có thông tin để khẳng định hay bác bỏ vế 'only revealed many years later', vậy ta chọn gì?",
+            "guide": "Đáp án là NOT GIVEN.",
+            "bridge": "Chốt câu 10: NOT GIVEN."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Mức độ thiệt hại của lợn biển Amazon vào giữa thế kỷ 20 chỉ được hé lộ nhiều năm sau đó.",
+          "<b>Đoạn 9:</b> <i>'It is estimated that 140,000 Amazonian manatees were killed between 1935 and 1954 for their meat, fat and skin...'</i>",
+          "<b>Đối chiếu:</b> Bài đọc chỉ đưa ra số lượng ước tính bị giết, không hề đề cập đến việc thông tin này được phát hiện vào thời điểm nào (ngay lúc đó hay mãi về sau mới biết).",
+          "<b>Kết luận:</b> Chọn <b>NOT GIVEN</b>."
+        ]
+      }
+    },
+    "q11": {
+      "num": 11,
+      "text": "It is predicted that West Indian manatee populations will fall in the coming decades.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q11",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 11 nói gì? Người ta dự đoán số lượng lợn biển Tây Ấn sẽ sụt giảm trong các thập kỷ tới ('will fall in the coming decades').",
+            "guide": "Em cần tìm dự đoán về tương lai của loài West Indian manatee.",
+            "bridge": "Hãy đọc đoạn 10 chỗ nói về nguy cơ suy giảm số lượng."
+          },
+          {
+            "title": "Đối chiếu với bài đọc",
+            "question": "Đoạn 10 viết hai phân loài của lợn biển Tây Ấn được dự báo sẽ như thế nào trong 40 năm tới?",
+            "guide": "Đoạn 10 viết: 'Both are also expected to undergo a decline of 20% over the next 40 years.' (Cả hai phân loài được dự kiến sẽ giảm 20% trong vòng 40 năm tới).",
+            "bridge": "'expected to undergo a decline' chính là 'predicted that populations will fall'; 'over the next 40 years' chính là 'in the coming decades'."
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Ý kiến dự đoán giảm số lượng trong tương lai trùng khớp hoàn toàn. Vậy đáp án là gì?",
+            "guide": "Đáp án là TRUE.",
+            "bridge": "Chốt câu 11: TRUE."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Dự đoán số lượng lợn biển Tây Ấn sẽ giảm trong các thập kỷ tới.",
+          "<b>Đoạn 10 (dòng 2):</b> <i>'Both are also expected to undergo a decline of 20% over the next 40 years.'</i>",
+          "<b>Từ đồng nghĩa:</b> <i>predicted will fall</i> = <i>expected to undergo a decline</i>; <i>in the coming decades</i> = <i>over the next 40 years</i>.",
+          "<b>Kết luận:</b> Chọn <b>TRUE</b>."
+        ]
+      }
+    },
+    "q12": {
+      "num": 12,
+      "text": "The risk to manatees from entanglement and plastic consumption increased significantly in the period 2009-2020.",
+      "finalAnswer": "NOT GIVEN",
+      "highlightId": "hl-q12",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Phân tích từ khóa câu hỏi",
+            "question": "Câu 12 nói nguy cơ mắc vào lưới đánh cá và nuốt phải rác thải nhựa 'đã tăng lên đáng kể' ('increased significantly') trong giai đoạn 2009-2020.",
+            "guide": "Em cần tìm xem bài đọc có nói mức độ nguy hiểm này tăng lên hay không trong giai đoạn đó.",
+            "bridge": "Hãy tìm mốc thời gian 2009-2020 ở đoạn 10."
+          },
+          {
+            "title": "Đọc kỹ dẫn chứng trong bài",
+            "question": "Đoạn 10 nói gì về giai đoạn 2009-2020?",
+            "guide": "Bài nói: một cuộc khảo sát gần 1.800 vụ mắc lưới và nuốt nhựa từ 2009 đến 2020 cho thấy có ít nhất 700 vụ liên quan đến lợn biển.",
+            "bridge": "Bài có nói nguy cơ này có 'tăng lên đáng kể' so với trước đó không?"
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Bài đọc chỉ thống kê tổng số vụ việc trong 11 năm đó, không hề nói xu hướng này tăng hay giảm. Vậy đáp án là gì?",
+            "guide": "Thiếu thông tin về xu hướng tăng giảm nên chọn NOT GIVEN.",
+            "bridge": "Chốt câu 12: NOT GIVEN."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Nguy cơ mắc lưới và ăn phải nhựa tăng lên rõ rệt trong giai đoạn 2009-2020.",
+          "<b>Đoạn 10:</b> <i>'A review of almost 1,800 cases of entanglement in fishing nets and of plastic consumption among marine mammals in US waters from 2009 to 2020 found that at least 700 cases involved manatees.'</i>",
+          "<b>Đối chiếu:</b> Bài chỉ nêu tổng số vụ việc được ghi nhận trong khoảng thời gian này, không có dữ liệu nào cho thấy con số này tăng lên (<i>increased significantly</i>) hay giảm đi.",
+          "<b>Kết luận:</b> Chọn <b>NOT GIVEN</b>."
+        ]
+      }
+    },
+    "q13": {
+      "num": 13,
+      "text": "There is some legislation in place which aims to reduce the likelihood of boat strikes on manatees in Florida.",
+      "finalAnswer": "TRUE",
+      "highlightId": "hl-q13",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 13 khẳng định: Đã có luật ('legislation') được ban hành nhằm giảm nguy cơ thuyền bè đâm va vào lợn biển ở Florida.",
+            "guide": "Em cần tìm đoạn cuối nói về tai nạn đụng tàu thuyền ('boat strikes') và các quy định pháp luật.",
+            "bridge": "Đọc câu cuối cùng của đoạn 10 nhé."
+          },
+          {
+            "title": "Đối chiếu với bài đọc",
+            "question": "Câu cuối đoạn 10 nói bang Florida đã làm gì để bảo vệ lợn biển khỏi bị thuyền tông?",
+            "guide": "Bài viết: 'The chief cause of death in Florida manatees is boat strikes. However, laws in certain parts of Florida now limit boat speeds during winter, allowing slow-moving manatees more time to respond.' (luật ở một số vùng của Florida hiện giới hạn tốc độ tàu thuyền vào mùa đông, giúp lợn biển có thêm thời gian tránh).",
+            "bridge": "'laws' chính là 'legislation'; 'limit boat speeds' nhằm giảm thiểu nguy cơ tai nạn đâm va."
+          },
+          {
+            "title": "Đưa ra kết luận",
+            "question": "Luật hạn chế tốc độ tàu thuyền để giảm tai nạn đâm trúng lợn biển là hoàn toàn có thật trong bài. Vậy đáp án là gì?",
+            "guide": "Đáp án là TRUE.",
+            "bridge": "Hoàn thành toàn bộ Passage 1! Chốt câu 13: TRUE."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Nhận định:</b> Đã có luật pháp nhằm giảm thiểu nguy cơ tàu thuyền đâm trúng lợn biển ở Florida.",
+          "<b>Đoạn 10 (câu cuối):</b> <i>'The chief cause of death in Florida manatees is boat strikes. However, laws in certain parts of Florida now limit boat speeds during winter, allowing slow-moving manatees more time to respond.'</i>",
+          "<b>Từ đồng nghĩa:</b> <i>legislation</i> = <i>laws</i>; mục đích giảm nguy cơ đâm va = <i>limit boat speeds... allowing slow-moving manatees more time to respond</i>.",
+          "<b>Kết luận:</b> Chọn <b>TRUE</b>."
+        ]
+      }
+    }
+  }
+}
