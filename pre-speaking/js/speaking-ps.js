@@ -1,6 +1,7 @@
 /**
  * PRE-SPEAKING CONTROLLER (-ps)
- * Tích hợp ACTIVE_MODELS thế hệ mới & Cơ chế Fallback Retry (Lite: 3 lần, Thường: 1 lần)
+ * Hỗ trợ chọn đa cấp độ từ A1 đến C1 qua manifest-ps.json
+ * Tích hợp Active Models + Retry 503/429 + Realtime STT
  */
 
 // 1. MÃ HÓA RUNTIME AUTH KEY GỐC TỪ SPEAKING.JS
@@ -15,7 +16,7 @@ function getDecodedKey() {
   return _AUTH_SEEDS.map(c => String.fromCharCode(c)).join('');
 }
 
-// 2. DANH SÁCH ACTIVE MODELS MỚI NHẤT
+// 2. DANH SÁCH ACTIVE MODELS & CƠ CHẾ RETRY
 const ACTIVE_MODELS = [
   'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
@@ -27,6 +28,8 @@ const ACTIVE_MODELS = [
   'gemini-2.5-flash'
 ];
 
+let manifestData = null;
+let currentCatalog = null;
 let categoriesData = [];
 let currentCategory = null;
 let currentLesson = null;
@@ -41,73 +44,124 @@ let animationFrameId = null;
 
 let timerInterval = null;
 let secondsRecorded = 0;
-const MIN_REQUIRED_DURATION = 15; // 15 giây nói tối thiểu
+const MIN_REQUIRED_DURATION = 15; // 15 giây tối thiểu
 
 window.addEventListener('DOMContentLoaded', async () => {
-  await loadCatalogAndLessons();
+  await loadManifestAndInit();
   initYouTubeAPI();
   initSpeechRecognition();
 });
 
-// NẠP DỮ LIỆU BÀI HỌC
-async function loadCatalogAndLessons() {
+// ================== QUẢN LÝ DỮ LIỆU ĐA CẤP ĐỘ (A1 -> C1) ==================
+async function loadManifestAndInit() {
   try {
-    const manifestRes = await fetch('data/manifest-ps.json');
-    if (!manifestRes.ok) throw new Error("Chưa có manifest");
-    const manifest = await manifestRes.json();
-    const a1Config = manifest.catalogs.find(c => c.id === 'shadow_a1');
+    const res = await fetch('data/manifest-ps.json');
+    if (!res.ok) throw new Error("Chưa tìm thấy file data/manifest-ps.json");
+    manifestData = await res.json();
 
-    const lessonsRes = await fetch(a1Config.dataFile);
-    if (!lessonsRes.ok) throw new Error("Chưa có lessons");
-    categoriesData = await lessonsRes.json();
+    populateLevelDropdown();
   } catch (err) {
-    categoriesData = [
-      {
-        "category": "1. Giao tiếp đời sống hàng ngày",
-        "lessons": [
-          { "id": "A1.01", "title": "Family and Relationships", "duration": "2:51", "durationSeconds": 171, "videoId": "UHMbJlKzNu8" },
-          { "id": "A1.02", "title": "Travel and Holidays", "duration": "2:26", "durationSeconds": 146, "videoId": "gFkNhGDd8Ws" },
-          { "id": "A1.03", "title": "Education and Learning", "duration": "3:22", "durationSeconds": 202, "videoId": "rnnb508zEHI" },
-          { "id": "A1.04", "title": "Health and Fitness", "duration": "2:17", "durationSeconds": 137, "videoId": "IBx-k6iAOm4" },
-          { "id": "A1.05", "title": "Work and Careers", "duration": "2:32", "durationSeconds": 152, "videoId": "DY3TDYBt9qU" }
-        ]
-      }
-    ];
+    console.warn("⚠️ Không đọc được manifest-ps.json, dùng fallback dự phòng:", err.message);
+    manifestData = {
+      catalogs: [
+        { id: "shadow_a1", name: "Level A1: Shadow Speaking Foundation", dataFile: "data/shadow_a1/lessons-ps.json" }
+      ]
+    };
+    populateLevelDropdown();
   }
-  populateCategoryDropdown();
 }
 
+// 1. Đổ dữ liệu vào Dropdown Level
+function populateLevelDropdown() {
+  const levelSel = document.getElementById('levelSelect');
+  if (!levelSel) return;
+  levelSel.innerHTML = '';
+
+  manifestData.catalogs.forEach((cat, index) => {
+    const opt = document.createElement('option');
+    opt.value = cat.id;
+    opt.innerText = cat.name;
+    levelSel.appendChild(opt);
+  });
+
+  handleLevelChange();
+}
+
+// 2. Khi đổi Cấp độ -> Tải file JSON tương ứng của cấp độ đó
+window.handleLevelChange = async () => {
+  const levelSel = document.getElementById('levelSelect');
+  const selectedCatId = levelSel.value;
+  currentCatalog = manifestData.catalogs.find(c => c.id === selectedCatId) || manifestData.catalogs[0];
+
+  try {
+    const res = await fetch(currentCatalog.dataFile);
+    if (!res.ok) throw new Error(`Không tải được file ${currentCatalog.dataFile}`);
+    categoriesData = await res.json();
+  } catch (err) {
+    console.error("Lỗi nạp bài học của cấp độ:", err);
+    categoriesData = [];
+  }
+
+  populateCategoryDropdown();
+};
+
+// 3. Đổ dữ liệu vào Dropdown Nhóm chủ đề
 function populateCategoryDropdown() {
   const catSel = document.getElementById('categorySelect');
+  if (!catSel) return;
   catSel.innerHTML = '';
+
+  if (categoriesData.length === 0) {
+    const opt = document.createElement('option');
+    opt.innerText = "(Chưa có dữ liệu bài học)";
+    catSel.appendChild(opt);
+    return;
+  }
+
   categoriesData.forEach((group, index) => {
     const opt = document.createElement('option');
     opt.value = index;
     opt.innerText = group.category;
     catSel.appendChild(opt);
   });
+
   handleCategoryChange();
 }
 
+// 4. Khi đổi Chủ đề -> Đổ danh sách video tương ứng
 window.handleCategoryChange = () => {
   const catSel = document.getElementById('categorySelect');
   const lessonSel = document.getElementById('lessonSelect');
-  const catIndex = parseInt(catSel.value);
+  const catIndex = parseInt(catSel.value) || 0;
   currentCategory = categoriesData[catIndex];
 
+  if (!lessonSel) return;
   lessonSel.innerHTML = '';
+
+  if (!currentCategory || !currentCategory.lessons || currentCategory.lessons.length === 0) {
+    const opt = document.createElement('option');
+    opt.innerText = "(Chưa có video)";
+    lessonSel.appendChild(opt);
+    return;
+  }
+
   currentCategory.lessons.forEach(l => {
     const opt = document.createElement('option');
     opt.value = l.id;
     opt.innerText = `[${l.id}] ${l.title} (${l.duration})`;
     lessonSel.appendChild(opt);
   });
+
   handleLessonChange();
 };
 
+// 5. Khi đổi Bài học -> Nạp video YouTube vào khung phát
 window.handleLessonChange = () => {
-  const lessonId = document.getElementById('lessonSelect').value;
-  currentLesson = currentCategory.lessons.find(l => l.id === lessonId);
+  const lessonSel = document.getElementById('lessonSelect');
+  const lessonId = lessonSel.value;
+  if (!currentCategory) return;
+
+  currentLesson = currentCategory.lessons.find(l => l.id === lessonId) || currentCategory.lessons[0];
 
   if (currentLesson) {
     document.getElementById('displayLessonTitle').innerText = `[${currentLesson.id}] ${currentLesson.title}`;
@@ -120,7 +174,7 @@ window.handleLessonChange = () => {
   resetUI();
 };
 
-// YOUTUBE API
+// ================== YOUTUBE API ==================
 function initYouTubeAPI() {
   const tag = document.createElement('script');
   tag.src = "https://www.youtube.com/iframe_api";
@@ -169,11 +223,11 @@ function initSpeechRecognition() {
   };
 
   recognition.onerror = (e) => {
-    console.warn("Web Speech Warning/Error:", e.error);
+    console.warn("Web Speech Error:", e.error);
   };
 }
 
-// AUDIO VU METER
+// VU METER ÂM THANH
 async function startAudioMeter() {
   try {
     audioStream = await navigator.mediaDevices.getUserMedia({
@@ -203,7 +257,7 @@ async function startAudioMeter() {
     render();
     return true;
   } catch (err) {
-    alert("Vui lòng cắm Micro và cấp quyền Micro trên trình duyệt để luyện nói!");
+    alert("Vui lòng cấp quyền Micro trên trình duyệt để luyện nói!");
     return false;
   }
 }
@@ -298,7 +352,7 @@ async function callGeminiWithFallback(promptText, apiKey) {
           })
         });
 
-        // Nếu quá tải (503) hoặc rate limit (429), throw error để retry/fallback
+        // Quá tải (503) hoặc rate limit (429) -> kích hoạt retry
         if (response.status === 503 || response.status === 429) {
           throw new Error(`Server busy: ${response.status}`);
         }
@@ -310,12 +364,11 @@ async function callGeminiWithFallback(promptText, apiKey) {
 
         const data = await response.json();
         console.log(`✅ Thành công với model: ${model}`);
-        return data; // Trả về kết quả nếu thành công
+        return data;
 
       } catch (error) {
         console.warn(`⚠️ Lỗi ở model ${model} (Lần ${attempts}):`, error.message);
         
-        // Nếu dính 503/429 và còn lượt retry, nghỉ 1.5s rồi thử lại cùng model
         if (attempts < maxAttempts) {
           showOverlay(`Máy chủ ${model} đang bận, tự động thử lại sau 1.5s...`);
           await new Promise(res => setTimeout(res, 1500));
@@ -334,7 +387,7 @@ async function evaluateWithGeminiEngine(transcriptText, durationSec) {
   const apiKey = getDecodedKey();
 
   const promptText = `
-Bạn là Giám khảo chấm Shadowing tiếng Anh trình độ A1.
+Bạn là Giám khảo chấm Shadowing tiếng Anh trình độ ${currentCatalog ? currentCatalog.name : "A1-C1"}.
 Chủ đề bài học học sinh nhại theo video: "${currentLesson.title}".
 Bản ký âm Speech-to-Text từ giọng nói thực tế của học sinh:
 "${transcriptText}"
@@ -421,7 +474,7 @@ function resetUI() {
 }
 
 window.completeLessonSubmission = () => {
-  alert("🎉 Chúc mừng em đã hoàn thành bài tập nói Shadowing A1!");
+  alert("🎉 Chúc mừng em đã hoàn thành bài tập nói Shadowing!");
 };
 
 function showOverlay(txt) {
