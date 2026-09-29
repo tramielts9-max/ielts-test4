@@ -31,18 +31,21 @@
     <span><b>Yêu cầu đeo tai nghe:</b> Học sinh cần đeo tai nghe để mic thu âm giọng nói chuẩn xác nhất, không bị lẫn tiếng phát ra từ video YouTube.</span>
   </div>
 
-  <!-- BỘ CHỌN 2 CẤP -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-800 p-4 rounded-xl border border-slate-700">
+<!-- BỘ CHỌN 3 CẤP LIÊN HOÀN (TỪ A1 ĐẾN C1) -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-3 bg-slate-800 p-4 rounded-xl border border-slate-700">
     <div>
-      <label class="block text-xs font-bold text-slate-400 uppercase mb-1">1. Chọn Nhóm Chủ Đề (Category):</label>
-      <select id="categorySelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-sm text-sky-300 font-bold focus:outline-none focus:border-violet-500" onchange="window.handleCategoryChange()"></select>
+      <label class="block text-xs font-bold text-amber-400 uppercase mb-1">1. Chọn Cấp Độ (Level):</label>
+      <select id="levelSelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-sm text-amber-300 font-bold focus:outline-none focus:border-violet-500 cursor-pointer" onchange="window.handleLevelChange()"></select>
     </div>
     <div>
-      <label class="block text-xs font-bold text-slate-400 uppercase mb-1">2. Chọn Bài Video Luyện Nói (Lesson Video):</label>
-      <select id="lessonSelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-sm text-emerald-300 font-bold focus:outline-none focus:border-violet-500" onchange="window.handleLessonChange()"></select>
+      <label class="block text-xs font-bold text-sky-400 uppercase mb-1">2. Chọn Nhóm Chủ Đề (Category):</label>
+      <select id="categorySelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-sm text-sky-300 font-bold focus:outline-none focus:border-violet-500 cursor-pointer" onchange="window.handleCategoryChange()"></select>
+    </div>
+    <div>
+      <label class="block text-xs font-bold text-emerald-400 uppercase mb-1">3. Chọn Bài Luyện Nói (Lesson Video):</label>
+      <select id="lessonSelect" class="w-full bg-slate-950 border border-slate-700 rounded-lg p-2.5 text-sm text-emerald-300 font-bold focus:outline-none focus:border-violet-500 cursor-pointer" onchange="window.handleLessonChange()"></select>
     </div>
   </div>
-
   <!-- MAIN WORKSPACE -->
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
     
