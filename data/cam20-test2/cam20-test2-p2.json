@@ -1,0 +1,519 @@
+{
+  "title": "IELTS Academic 20 - Test 2 - Passage 2: Procrastination",
+  "answers": {
+    "q14": "B",
+    "q15": "F",
+    "q16": "B",
+    "q17": "laziness",
+    "q18": "anxious",
+    "q19": "threats",
+    "q20": "exams",
+    "q21": "perfectionists",
+    "q22": "guilt",
+    "q23": "A",
+    "q24": "C",
+    "q25": "A",
+    "q26": "E"
+  },
+  "passageHtml": "<h2>READING PASSAGE 2</h2><h3>Procrastination</h3><p><em>A psychologist explains why we put off important tasks and how we can break this habit</em></p><p><strong>A.</strong> Procrastination is the habit of delaying a necessary task, usually by focusing on less urgent, more enjoyable, and easier activities instead. We all do it from time to time. We might be composing a message to a friend who we have to let down, or putting together an important report for college or work; we're doing our best to avoid doing the job at hand, but deep down we know that we should just be getting on with it. Unfortunately, berating ourselves won't stop us procrastinating again. In fact, it's one of the worst things we can do. This matters because, as my research shows, procrastination doesn't just waste time, but is actually linked to other problems, too.</p><p><strong>B.</strong> <span class=\"hl\" id=\"hl-q14\" data-q=\"[Q14]\"><span class=\"hl\" id=\"hl-q17\" data-q=\"[Q17]\">Contrary to popular belief, procrastination is not due to <span class=\"kw\">laziness</span> or poor time management</span></span>. Scientific studies suggest procrastination is, in fact, caused by poor mood management. This makes sense if we consider that people are more likely to put off starting or completing tasks that they are really not keen to do. <span class=\"hl\" id=\"hl-q18\" data-q=\"[Q18]\">If just thinking about the task threatens our sense of self-worth or makes us <span class=\"kw\">anxious</span>, we will be more likely to put it off</span>. <span class=\"hl\" id=\"hl-q16\" data-q=\"[Q16]\">Research involving brain imaging has found that areas of the brain linked to detection of <span class=\"kw\"><span class=\"hl\" id=\"hl-q19\" data-q=\"[Q19]\">threats</span></span> and emotion regulation are actually different in people who chronically procrastinate compared to those who don't procrastinate frequently</span>.</p><p><strong>C.</strong> Tasks that are emotionally loaded or difficult, <span class=\"hl\" id=\"hl-q20\" data-q=\"[Q20]\">such as preparing for <span class=\"kw\">exams</span>, are prime candidates for procrastination</span>. People with low self-esteem are more likely to procrastinate. <span class=\"hl\" id=\"hl-q21\" data-q=\"[Q21]\">Another group of people who tend to procrastinate are <span class=\"kw\">perfectionists</span>, who worry their work will be judged harshly by others</span>. We know that if we don't finish that report or complete those home repairs, then what we did can't be evaluated. When we avoid such tasks, we also avoid the negative emotions associated with them. This is rewarding, and it conditions us to use procrastination to repair our mood. If we engage in more enjoyable tasks instead, we get another mood boost. In the long run, however, procrastination isn't an effective way of managing emotions. The 'mood repair' we experience is temporary. <span class=\"hl\" id=\"hl-q22\" data-q=\"[Q22]\">Afterwards, people tend to be left with a sense of <span class=\"kw\">guilt</span> that not only increases their negative mood, but also reinforces their tendency to procrastinate</span>.</p><p><strong>D.</strong> So why is this such a problem? When most people think of the costs of procrastination, they think of the toll on productivity. For example, studies have shown that procrastination negatively impacts on student performance. But putting off reading textbooks and writing essays may affect other areas of students' lives. In one study of over 3,000 German students over a six-month period, those who study-related misconduct, such as cheating and plagiarism. But the behaviour that procrastination was most closely linked with was using fraudulent excuses to get deadline extensions. Other research shows that employees on average spend almost a quarter of their workday procrastinating, and again this is linked with negative outcomes. <span class=\"hl\" id=\"hl-q23\" data-q=\"[Q23]\"><span class=\"hl\" id=\"hl-q24\" data-q=\"[Q24]\">In fact, in one US survey of over 22,000 employees, participants who said they regularly procrastinated had less annual income and less employment stability</span></span>. For every one-point increase on a measure of chronic procrastination, annual income decreased by US$15,000.</p><p><strong>E.</strong> Procrastination also correlates with serious health and well-being problems. A tendency to procrastinate is linked to poor mental health, including higher levels of depression and anxiety. Across numerous studies, I've found people who regularly procrastinate report a greater number of health issues, such as headaches, flu and colds, and digestive issues. They also experience higher levels of stress and poor sleep quality. They are less likely to practise healthy behaviours, such as eating a healthy diet and regularly exercising, and use destructive coping strategies to manage their stress. In one study of over 700 people, I found people prone to procrastination had a 63% greater risk of poor heart health after accounting for other personality traits and demographics.</p><p><strong>F.</strong> Finding better ways of managing our emotions is one route out of the vicious cycle of procrastination. An important first step is to manage our environment and how we view the task. <span class=\"hl\" id=\"hl-q26\" data-q=\"[Q26]\">There are a number of evidence-based strategies that can help us fend off distractions that can occupy our minds when we should be focusing on the thing we should be getting on with</span>. For example, reminding ourselves about why the task is important and valuable can increase positive feelings towards it. <span class=\"hl\" id=\"hl-q25\" data-q=\"[Q25]\">Forgiving ourselves and feeling compassion when we procrastinate can help break the procrastination cycle. We should admit that we feel bad, but not be overly critical of ourselves</span>. <span class=\"hl\" id=\"hl-q15\" data-q=\"[Q15]\">We should remind ourselves that we're not the first person to procrastinate, nor the last</span>. Doing this can take the edge off the negative feelings we have about ourselves when we procrastinate. This can all make it easier to get back on track.</p>",
+  "groups": [
+    {
+      "id": "g1",
+      "type": "matching_info",
+      "title": "Questions 14-16",
+      "instructions": "<i>Reading Passage 2 has six paragraphs, <b>A-F</b>.<br>Which paragraph contains the following information?<br>Write the correct letter, <b>A-F</b>, in boxes 14-16 on your answer sheet.<br><b>NB</b> You may use any letter more than once.</i>",
+      "questionIds": ["q14", "q15", "q16"]
+    },
+    {
+      "id": "g2",
+      "type": "summary",
+      "title": "Questions 17-22",
+      "instructions": "<i>Complete the summary below.<br>Choose <b>ONE WORD ONLY</b> from the passage for each answer.<br>Write your answers in boxes 17-22 on your answer sheet.</i>",
+      "summaryTitle": "What makes us procrastinate?",
+      "questionIds": ["q17", "q18", "q19", "q20", "q21", "q22"],
+      "template": "<p>Many people think that procrastination is the result of <b>17.</b> {{q17}}. Others believe it to be the result of an inability to organise time efficiently.</p><p>But scientific studies suggest that procrastination is actually due to poor mood management. The tasks we are most likely to put off are those that could damage our self-esteem or cause us to feel <b>18.</b> {{q18}} when we think about them. Research comparing chronic procrastinators with other people even found differences in the brain regions associated with regulating emotions and identifying <b>19.</b> {{q19}}.</p><p>Emotionally loaded and difficult tasks often cause us to procrastinate. Getting ready to take <b>20.</b> {{q20}} might be a typical example of one such task.</p><p>People who are likely to procrastinate tend to be either <b>21.</b> {{q21}} or those with low self-esteem.</p><p>Procrastination is only a short-term measure for managing emotions. It's often followed by a feeling <b>22.</b> {{q22}}, which worsens our mood and leads to procrastination.</p>"
+    },
+    {
+      "id": "g3",
+      "type": "multiselect",
+      "title": "Questions 23 and 24",
+      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 23 and 24 on your answer sheet.<br>Which <b>TWO</b> comparisons between employees who often procrastinate and those who do not are mentioned in the text?</i><br><br><b>A.</b> Their salaries are lower.<br><b>B.</b> The quality of their work is inferior.<br><b>C.</b> They don't keep their jobs for as long.<br><b>D.</b> They don't enjoy their working lives as much.<br><b>E.</b> They have poorer relationships with colleagues.",
+      "questionIds": ["q23", "q24"]
+    },
+    {
+      "id": "g4",
+      "type": "multiselect",
+      "title": "Questions 25 and 26",
+      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 25 and 26 on your answer sheet.<br>Which <b>TWO</b> recommendations for getting out of a cycle of procrastination does the writer give?</i><br><br><b>A.</b> not judging ourselves harshly<br><b>B.</b> setting ourselves manageable aims<br><b>C.</b> rewarding ourselves for tasks achieved<br><b>D.</b> prioritising tasks according to their importance<br><b>E.</b> avoiding things that stop us concentrating on our tasks",
+      "questionIds": ["q25", "q26"]
+    }
+  ],
+  "questions": {
+    "q14": {
+      "num": 14,
+      "text": "mention of false assumptions about why people procrastinate",
+      "finalAnswer": "B",
+      "highlightId": "hl-q14",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 14 hỏi về điều gì? Hãy chú ý cụm từ 'false assumptions' (những suy nghĩ, lầm tưởng sai lệch) về nguyên nhân khiến con người trì hoãn công việc.",
+            "guide": "Em cần tìm đoạn văn nhắc đến việc người ta thường hiểu sai về lý do tại sao mình lại hay trì hoãn.",
+            "bridge": "Mình cùng tìm xem đoạn nào nói về những quan niệm phổ biến nhưng thực ra không đúng nhé."
+          },
+          {
+            "title": "Đọc quét tìm dẫn chứng",
+            "question": "Câu đầu tiên của đoạn B nói gì về quan niệm thông thường của mọi người đối với thói quen trì hoãn?",
+            "guide": "Đoạn B viết: 'Contrary to popular belief, procrastination is not due to laziness or poor time management.' (Trái với niềm tin phổ biến của nhiều người, sự trì hoãn không phải do lười biếng hay do quản lý thời gian kém).",
+            "bridge": "'Trái với niềm tin phổ biến' chính là muốn nói về những hiểu lầm, lầm tưởng từ trước đến nay."
+          },
+          {
+            "title": "Chốt đáp án",
+            "question": "Vậy đoạn văn nào đề cập đến những suy đoán sai lầm về thói quen trì hoãn?",
+            "guide": "Đáp án chính xác là đoạn B.",
+            "bridge": "Rất tốt! Câu 14 là B."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Ý câu hỏi:</b> Đề cập đến những suy đoán/lầm tưởng sai lầm về nguyên nhân trì hoãn.",
+          "<b>Đoạn B (câu đầu):</b> <i>'Contrary to popular belief, procrastination is not due to laziness or poor time management.'</i> (Trái với quan niệm phổ biến, trì hoãn không phải do lười hay kém quản lý thời gian).",
+          "<b>Từ đồng nghĩa:</b> <i>false assumptions</i> = <i>Contrary to popular belief... not due to...</i>",
+          "<b>Kết luận:</b> Chọn <b>B</b>."
+        ]
+      }
+    },
+    "q15": {
+      "num": 15,
+      "text": "reference to the realisation that others also procrastinate",
+      "finalAnswer": "F",
+      "highlightId": "hl-q15",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 15 muốn tìm thông tin gì? Hãy để ý cụm 'realisation that others also procrastinate' (nhận ra rằng những người khác cũng trì hoãn giống mình).",
+            "guide": "Em cần tìm đoạn văn nhắc nhở chúng ta nhớ rằng không phải chỉ có một mình mình mới mắc thói quen này.",
+            "bridge": "Hãy tìm ở đoạn cuối xem tác giả khuyên chúng ta nghĩ gì về bản thân nhé."
+          },
+          {
+            "title": "Đọc quét đoạn F",
+            "question": "Ở gần cuối đoạn F, tác giả khuyên chúng ta nên tự nhắc nhở bản thân điều gì?",
+            "guide": "Tác giả viết: 'We should remind ourselves that we're not the first person to procrastinate, nor the last.' (Chúng ta nên tự nhắc mình rằng ta không phải người đầu tiên, cũng chẳng phải người cuối cùng trì hoãn).",
+            "bridge": "'Không phải người đầu tiên cũng không phải người cuối cùng' nghĩa là có rất nhiều người khác cũng làm thế."
+          },
+          {
+            "title": "Chốt đáp án",
+            "question": "Vậy đoạn nào nhắc đến việc nhận thức rằng người khác cũng hay trì hoãn?",
+            "guide": "Đó chính là đoạn F.",
+            "bridge": "Chính xác! Câu 15 chọn F."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Ý câu hỏi:</b> Nhắc đến việc nhận ra rằng những người khác cũng bị thói trì hoãn giống như mình.",
+          "<b>Đoạn F:</b> <i>'We should remind ourselves that we're not the first person to procrastinate, nor the last.'</i> (Chúng ta không phải người đầu tiên cũng không phải người cuối cùng trì hoãn).",
+          "<b>Từ đồng nghĩa:</b> <i>others also procrastinate</i> = <i>not the first person... nor the last</i>.",
+          "<b>Kết luận:</b> Chọn <b>F</b>."
+        ]
+      }
+    },
+    "q16": {
+      "num": 16,
+      "text": "neurological evidence of a link between procrastination and emotion",
+      "finalAnswer": "B",
+      "highlightId": "hl-q16",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu nội dung câu hỏi",
+            "question": "Câu 16 hỏi về điều gì? Hãy chú ý cụm 'neurological evidence' (bằng chứng về mặt thần kinh, não bộ) liên kết giữa thói trì hoãn và cảm xúc ('emotion').",
+            "guide": "Em cần tìm đoạn văn có nói đến não bộ ('brain', 'brain imaging') và sự điều hòa cảm xúc.",
+            "bridge": "Cùng nhìn lại đoạn B xem có chi tiết này không."
+          },
+          {
+            "title": "Đọc quét đoạn B",
+            "question": "Đoạn B nói nghiên cứu chụp hình não bộ đã phát hiện ra điều gì?",
+            "guide": "Đoạn B viết: 'Research involving brain imaging has found that areas of the brain linked to detection of threats and emotion regulation are actually different in people who chronically procrastinate...' (Nghiên cứu chụp não cho thấy các vùng não liên quan đến nhận biết mối đe dọa và kiểm soát cảm xúc có sự khác biệt ở những người hay trì hoãn).",
+            "bridge": "'brain imaging' chính là bằng chứng về mặt thần kinh ('neurological evidence')."
+          },
+          {
+            "title": "Chốt đáp án",
+            "question": "Vậy đoạn văn nào chứa bằng chứng thần kinh học về mối liên hệ này?",
+            "guide": "Đáp án là đoạn B.",
+            "bridge": "Rất chuẩn! Câu 16 là B (đoạn B dùng 2 lần)."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Ý câu hỏi:</b> Bằng chứng về mặt thần kinh/não bộ cho thấy mối liên hệ giữa trì hoãn và cảm xúc.",
+          "<b>Đoạn B (câu cuối):</b> <i>'Research involving brain imaging has found that areas of the brain linked to detection of threats and emotion regulation are actually different in people who chronically procrastinate...'</i>",
+          "<b>Từ đồng nghĩa:</b> <i>neurological evidence</i> = <i>Research involving brain imaging</i>; <i>emotion</i> = <i>emotion regulation</i>.",
+          "<b>Kết luận:</b> Chọn <b>B</b>."
+        ]
+      }
+    },
+    "q17": {
+      "num": 17,
+      "finalAnswer": "laziness",
+      "inputWidth": "110px",
+      "highlightId": "hl-q17",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ cần điền",
+            "question": "Đọc bài tóm tắt: Nhiều người nghĩ rằng trì hoãn là do cái gì ('the result of ______')? Sau đó câu tiếp theo nói người khác lại nghĩ do không biết quản lý thời gian.",
+            "guide": "Sau 'result of' cần một danh từ chỉ tính xấu hoặc nguyên nhân mà mọi người hay quy chụp cho thói trì hoãn.",
+            "bridge": "Cùng đọc câu đầu đoạn B nhé."
+          },
+          {
+            "title": "Tìm từ trong đoạn B",
+            "question": "Đoạn B nói người ta thường nghĩ sự trì hoãn là do quản lý thời gian kém hoặc do điều gì: 'not due to ______ or poor time management'?",
+            "guide": "Đoạn B viết rõ: 'procrastination is not due to laziness or poor time management'.",
+            "bridge": "'poor time management' ứng với câu sau, vậy từ đi với nó là gì?"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Từ duy nhất chỉ tính xấu đó là gì?",
+            "guide": "Đáp án là 'laziness' (sự lười biếng).",
+            "bridge": "Chốt đáp án câu 17: laziness."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần danh từ chỉ nguyên nhân sau giới từ <i>of</i>.",
+          "<b>Đoạn B (dòng 1):</b> <i>'procrastination is not due to laziness or poor time management.'</i>",
+          "<b>Khớp từ:</b> <i>inability to organise time efficiently</i> = <i>poor time management</i>; từ còn lại là <i>laziness</i>.",
+          "<b>Từ cần điền:</b> <b>laziness</b>."
+        ]
+      }
+    },
+    "q18": {
+      "num": 18,
+      "finalAnswer": "anxious",
+      "inputWidth": "110px",
+      "highlightId": "hl-q18",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ cần điền",
+            "question": "Đọc câu tóm tắt: Những việc ta hay trì hoãn nhất là việc làm tổn hại lòng tự trọng hoặc khiến ta cảm thấy thế nào ('cause us to feel ______') khi nghĩ về nó?",
+            "guide": "Sau động từ nối 'feel' cần một tính từ chỉ cảm xúc tiêu cực, lo lắng bất an.",
+            "bridge": "Hãy tìm câu nói về việc nghĩ đến nhiệm vụ ở đoạn B."
+          },
+          {
+            "title": "Tìm từ trong đoạn B",
+            "question": "Đoạn B nói nếu việc nghĩ đến công việc làm đe dọa lòng tự tôn hoặc khiến ta như thế nào: 'threatens our sense of self-worth or makes us ______'?",
+            "guide": "Đoạn B viết: 'If just thinking about the task threatens our sense of self-worth or makes us anxious, we will be more likely to put it off.'",
+            "bridge": "'threatens our sense of self-worth' chính là 'damage our self-esteem'. Vậy từ chỉ cảm xúc là gì?"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Tính từ chỉ cảm xúc trong bài là gì?",
+            "guide": "Đáp án là 'anxious' (lo lắng, bồn chồn).",
+            "bridge": "Chốt đáp án câu 18: anxious."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần tính từ chỉ cảm xúc sau động từ <i>feel</i>.",
+          "<b>Đoạn B (dòng 4):</b> <i>'threatens our sense of self-worth or makes us anxious...'</i>",
+          "<b>Khớp từ:</b> <i>damage our self-esteem</i> = <i>threatens our sense of self-worth</i>; <i>cause us to feel</i> = <i>makes us</i>; từ cần điền là <i>anxious</i>.",
+          "<b>Từ cần điền:</b> <b>anxious</b>."
+        ]
+      }
+    },
+    "q19": {
+      "num": 19,
+      "finalAnswer": "threats",
+      "inputWidth": "100px",
+      "highlightId": "hl-q19",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ cần điền",
+            "question": "Đọc câu tóm tắt: Chụp não cho thấy sự khác biệt ở vùng não chịu trách nhiệm điều hòa cảm xúc và nhận diện cái gì ('identifying ______')?",
+            "guide": "Sau động từ 'identifying' cần một danh từ số nhiều hoặc danh từ chỉ đối tượng mà não bộ nhận diện, phát hiện.",
+            "bridge": "Cùng nhìn lại câu cuối đoạn B nói về các vùng não."
+          },
+          {
+            "title": "Tìm từ trong đoạn B",
+            "question": "Đoạn B viết vùng não này liên quan đến 'detection of ______ and emotion regulation'?",
+            "guide": "Đoạn B có cụm từ: 'detection of threats and emotion regulation'.",
+            "bridge": "'identifying' chính là 'detection of' (nhận biết/phát hiện). Vậy đối tượng được phát hiện là gì?"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Từ danh từ số nhiều trong bài là gì?",
+            "guide": "Đáp án là 'threats' (các mối đe dọa, hiểm họa).",
+            "bridge": "Chốt đáp án câu 19: threats."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần danh từ sau động từ <i>identifying</i>.",
+          "<b>Đoạn B (câu cuối):</b> <i>'...areas of the brain linked to detection of threats and emotion regulation...'</i>",
+          "<b>Khớp từ:</b> <i>identifying</i> = <i>detection of</i>; <i>regulating emotions</i> = <i>emotion regulation</i>.",
+          "<b>Từ cần điền:</b> <b>threats</b>."
+        ]
+      }
+    },
+    "q20": {
+      "num": 20,
+      "finalAnswer": "exams",
+      "inputWidth": "100px",
+      "highlightId": "hl-q20",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ cần điền",
+            "question": "Đọc câu tóm tắt: Chuẩn bị tham gia cái gì ('Getting ready to take ______') là ví dụ điển hình cho một nhiệm vụ nặng nề dễ bị trì hoãn?",
+            "guide": "Sau cụm 'take' cần một danh từ chỉ bài kiểm tra/kỳ thi.",
+            "bridge": "Hãy sang câu đầu tiên của đoạn C."
+          },
+          {
+            "title": "Tìm từ trong đoạn C",
+            "question": "Đoạn C đưa ra ví dụ về nhiệm vụ khó khăn gây xúc động mạnh là gì: 'such as preparing for ______'?",
+            "guide": "Đoạn C viết: 'Tasks that are emotionally loaded or difficult, such as preparing for exams, are prime candidates for procrastination.'",
+            "bridge": "'Getting ready' chính là 'preparing for'. Đi thi là 'take exams'.",
+            "answer": "exams"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Từ chỉ các kỳ thi trong bài là gì?",
+            "guide": "Đáp án là 'exams'.",
+            "bridge": "Chốt đáp án câu 20: exams."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần danh từ sau cụm <i>take</i>.",
+          "<b>Đoạn C (dòng 1):</b> <i>'Tasks that are emotionally loaded or difficult, such as preparing for exams...'</i>",
+          "<b>Khớp từ:</b> <i>Getting ready to take exams</i> = <i>preparing for exams</i>.",
+          "<b>Từ cần điền:</b> <b>exams</b>."
+        ]
+      }
+    },
+    "q21": {
+      "num": 21,
+      "finalAnswer": "perfectionists",
+      "inputWidth": "140px",
+      "highlightId": "hl-q21",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ cần điền",
+            "question": "Đọc câu tóm tắt: Người dễ trì hoãn thường là người có lòng tự trọng thấp hoặc những người theo chủ nghĩa gì ('either ______ or those with low self-esteem')?",
+            "guide": "Chỗ trống cần một danh từ số nhiều chỉ một nhóm người có tính cách đặc trưng hay trì hoãn.",
+            "bridge": "Hãy đọc tiếp các dòng sau của đoạn C."
+          },
+          {
+            "title": "Tìm từ trong đoạn C",
+            "question": "Đoạn C nhắc đến nhóm người nào sau nhóm 'people with low self-esteem'?",
+            "guide": "Đoạn C viết: 'Another group of people who tend to procrastinate are perfectionists, who worry their work will be judged harshly by others.'",
+            "bridge": "Nhóm người thứ hai chính là những người theo chủ nghĩa hoàn hảo.",
+            "answer": "perfectionists"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Từ chỉ nhóm người này trong bài là gì?",
+            "guide": "Đáp án là 'perfectionists' (những người cầu toàn).",
+            "bridge": "Chốt đáp án câu 21: perfectionists."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần danh từ chỉ nhóm người song song với <i>those with low self-esteem</i>.",
+          "<b>Đoạn C (dòng 2-3):</b> <i>'People with low self-esteem are more likely to procrastinate. Another group of people who tend to procrastinate are perfectionists...'</i>",
+          "<b>Từ cần điền:</b> <b>perfectionists</b>."
+        ]
+      }
+    },
+    "q22": {
+      "num": 22,
+      "finalAnswer": "guilt",
+      "inputWidth": "100px",
+      "highlightId": "hl-q22",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Xác định từ loại và nội dung",
+            "question": "Đọc câu tóm tắt: Trì hoãn chỉ là giải pháp tạm thời, sau đó người ta thường bị bao trùm bởi cảm giác gì ('followed by a feeling, ______') khiến tâm trạng tệ hơn?",
+            "guide": "Chỗ trống cần một danh từ chỉ cảm xúc tiêu cực, cảm giác tội lỗi sau khi trì hoãn.",
+            "bridge": "Hãy đọc câu cuối cùng của đoạn C."
+          },
+          {
+            "title": "Tìm câu chứa thông tin",
+            "question": "Cuối đoạn C nói người ta sẽ bị bỏ lại cùng với cảm xúc gì: 'left with a sense of ______'?",
+            "guide": "Bài viết: 'Afterwards, people tend to be left with a sense of guilt that not only increases their negative mood, but also reinforces their tendency to procrastinate.'",
+            "bridge": "'a sense of guilt' chính là cảm giác tội lỗi, ăn năn.",
+            "answer": "guilt"
+          },
+          {
+            "title": "Chọn từ nguyên văn",
+            "question": "Từ duy nhất chỉ cảm xúc đó trong bài là gì?",
+            "guide": "Đáp án là 'guilt'.",
+            "bridge": "Hoàn thành phần điền từ! Đáp án câu 22: guilt."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Vị trí ngữ pháp:</b> Cần danh từ chỉ cảm giác tiêu cực sau từ <i>feeling</i>.",
+          "<b>Đoạn C (câu cuối):</b> <i>'Afterwards, people tend to be left with a sense of guilt that not only increases their negative mood...'</i>",
+          "<b>Khớp từ:</b> <i>feeling</i> = <i>sense of</i>; từ cần điền là <i>guilt</i>.",
+          "<b>Từ cần điền:</b> <b>guilt</b>."
+        ]
+      }
+    },
+    "q23": {
+      "num": 23,
+      "finalAnswer": "A",
+      "highlightId": "hl-q23",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu yêu cầu câu hỏi 23-24",
+            "question": "Câu 23-24 hỏi: Hai điểm so sánh nào giữa nhân viên hay trì hoãn và nhân viên không trì hoãn được nhắc đến trong bài? Cần tìm đoạn nói về 'employees'.",
+            "guide": "Em hãy quét từ khóa 'employees' ở đoạn D để xem nghiên cứu chỉ ra những thiệt thòi gì của người hay trì hoãn trong công việc.",
+            "bridge": "Đoạn D có nhắc đến một khảo sát với 22.000 nhân viên ở Mỹ."
+          },
+          {
+            "title": "Đọc dẫn chứng về thu nhập",
+            "question": "Khảo sát ở đoạn D cho biết những nhân viên hay trì hoãn có mức thu nhập hàng năm như thế nào ('annual income')?",
+            "guide": "Đoạn D viết: 'participants who said they regularly procrastinated had less annual income...' (những người hay trì hoãn có thu nhập hàng năm thấp hơn).",
+            "bridge": "'less annual income' chính là thu nhập/lương thấp hơn."
+          },
+          {
+            "title": "Khớp với phương án A",
+            "question": "Trong các phương án, phương án nào nói 'Mức lương của họ thấp hơn'?",
+            "guide": "Đó chính là phương án A: 'Their salaries are lower'.",
+            "bridge": "Chọn được đáp án đầu tiên: A."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Ý câu hỏi:</b> Tìm điểm so sánh về người đi làm hay trì hoãn so với người không trì hoãn.",
+          "<b>Đoạn D (dòng 8-9):</b> <i>'participants who said they regularly procrastinated had less annual income...'</i>",
+          "<b>Khớp từ:</b> <i>less annual income</i> = <i>salaries are lower</i>.",
+          "<b>Kết luận:</b> Chọn <b>A</b>."
+        ]
+      }
+    },
+    "q24": {
+      "num": 24,
+      "finalAnswer": "C",
+      "highlightId": "hl-q24",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Đọc tiếp dẫn chứng ở đoạn D",
+            "question": "Ngay bên cạnh cụm 'less annual income', đoạn D còn chỉ ra họ có điều gì kém hơn nữa: 'and less ______'?",
+            "guide": "Đoạn D viết tiếp: 'and less employment stability' (và độ ổn định công việc kém hơn).",
+            "bridge": "'Độ ổn định công việc kém hơn' nghĩa là dễ mất việc hoặc không giữ được việc làm lâu dài."
+          },
+          {
+            "title": "Khớp với phương án C",
+            "question": "Phương án nào mang ý nghĩa 'Họ không giữ được công việc của mình lâu như người khác'?",
+            "guide": "Đó là phương án C: 'They don't keep their jobs for as long'.",
+            "bridge": "Loại trừ các phương án B, D, E vì bài không nói đến chất lượng việc làm, sự thích thú hay mối quan hệ đồng nghiệp."
+          },
+          {
+            "title": "Chốt đáp án thứ hai",
+            "question": "Vậy đáp án còn lại cho nhóm câu hỏi 23-24 là gì?",
+            "guide": "Đáp án là C.",
+            "bridge": "Hoàn thành nhóm câu 23-24: A và C."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Đoạn D (dòng 9):</b> <i>'...had less annual income and less employment stability.'</i>",
+          "<b>Khớp từ:</b> <i>less employment stability</i> = <i>They don't keep their jobs for as long</i> (ít ổn định về công việc, không làm việc ở một nơi được lâu).",
+          "<b>Loại trừ:</b> Các phương án B (chất lượng công việc kém), D (ít yêu đời trong công việc), E (quan hệ đồng nghiệp kém) không được nhắc đến trong đoạn này.",
+          "<b>Kết luận:</b> Chọn <b>C</b>."
+        ]
+      }
+    },
+    "q25": {
+      "num": 25,
+      "finalAnswer": "A",
+      "highlightId": "hl-q25",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Hiểu yêu cầu câu hỏi 25-26",
+            "question": "Câu 25-26 hỏi: Tác giả đưa ra hai lời khuyên nào ('TWO recommendations') để thoát khỏi vòng luẩn quẩn của thói trì hoãn?",
+            "guide": "Em cần đọc đoạn cuối (đoạn F) nơi tác giả đưa ra các chiến lược và lời khuyên cụ thể.",
+            "bridge": "Cùng xem tác giả khuyên chúng ta nên đối xử với bản thân thế nào khi lỡ trì hoãn."
+          },
+          {
+            "title": "Đọc dẫn chứng về lòng vị tha với bản thân",
+            "question": "Trong đoạn F, tác giả khuyên ta nên tha thứ cho mình ('Forgiving ourselves') và không nên làm gì: 'We should admit that we feel bad, but not be ______'?",
+            "guide": "Tác giả viết: 'We should admit that we feel bad, but not be overly critical of ourselves.' (Ta nên thừa nhận mình thấy tệ, nhưng đừng quá khắt khe, chỉ trích bản thân).",
+            "bridge": "'Đừng quá khắt khe với bản thân' đồng nghĩa với việc không phán xét mình quá nặng nề."
+          },
+          {
+            "title": "Khớp với phương án A",
+            "question": "Phương án nào nói 'không phán xét bản thân quá gay gắt'?",
+            "guide": "Đó chính là phương án A: 'not judging ourselves harshly'.",
+            "bridge": "Chọn được đáp án đầu tiên: A."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Ý câu hỏi:</b> Lời khuyên của tác giả để thoát khỏi vòng lặp trì hoãn.",
+          "<b>Đoạn F (dòng 6-7):</b> <i>'Forgiving ourselves and feeling compassion when we procrastinate can help break the procrastination cycle. We should admit that we feel bad, but not be overly critical of ourselves.'</i>",
+          "<b>Khớp từ:</b> <i>not judging ourselves harshly</i> = <i>not be overly critical of ourselves</i>.",
+          "<b>Kết luận:</b> Chọn <b>A</b>."
+        ]
+      }
+    },
+    "q26": {
+      "num": 26,
+      "finalAnswer": "E",
+      "highlightId": "hl-q26",
+      "socratic": {
+        "steps": [
+          {
+            "title": "Đọc dẫn chứng về sự xao nhãng",
+            "question": "Ở đầu đoạn F, tác giả nhắc đến bước quan trọng đầu tiên là quản lý môi trường xung quanh để ngăn chặn điều gì ('help us fend off ______')?",
+            "guide": "Tác giả viết: 'There are a number of evidence-based strategies that can help us fend off distractions that can occupy our minds when we should be focusing on the thing we should be getting on with.'",
+            "bridge": "'fend off distractions' nghĩa là đẩy lùi, tránh xa những thứ gây mất tập trung khi ta cần làm việc."
+          },
+          {
+            "title": "Khớp với phương án E",
+            "question": "Phương án nào tương ứng với việc tránh những thứ làm ta mất tập trung?",
+            "guide": "Đó là phương án E: 'avoiding things that stop us concentrating on our tasks'.",
+            "bridge": "'avoiding things that stop us concentrating' hoàn toàn trùng khớp với 'fend off distractions that occupy our minds when we should be focusing'."
+          },
+          {
+            "title": "Chốt đáp án thứ hai",
+            "question": "Vậy đáp án còn lại cho câu 25-26 là gì?",
+            "guide": "Đáp án là E.",
+            "bridge": "Hoàn thành toàn bộ Passage 2! Đáp án: A và E."
+          }
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "<b>Đoạn F (dòng 3-4):</b> <i>'...strategies that can help us fend off distractions that can occupy our minds when we should be focusing on the thing we should be getting on with.'</i>",
+          "<b>Khớp từ:</b> <i>avoiding things that stop us concentrating on our tasks</i> = <i>fend off distractions... when we should be focusing</i>.",
+          "<b>Loại trừ:</b> Các phương án B (chia nhỏ mục tiêu), C (tự thưởng) không có trong bài; D là bẫy (bài chỉ bảo nhắc nhở tầm quan trọng của việc chứ không bảo sắp xếp thứ tự ưu tiên việc nào trước việc nào sau).",
+          "<b>Kết luận:</b> Chọn <b>E</b>."
+        ]
+      }
+    }
+  }
+}
