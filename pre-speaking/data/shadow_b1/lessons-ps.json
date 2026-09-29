@@ -1,0 +1,53 @@
+[
+  {
+    "category": "1. Xã hội, Công việc & Phát triển bản thân (Level B1)",
+    "lessons": [
+      { "id": "B1.01", "title": "Daily Routines", "duration": "2:04", "durationSeconds": 124, "youtubeUrl": "https://www.youtube.com/watch?v=SgWK1E_cJXY", "videoId": "SgWK1E_cJXY" },
+      { "id": "B1.02", "title": "Weather and Seasons", "duration": "2:17", "durationSeconds": 137, "youtubeUrl": "https://www.youtube.com/watch?v=1oJY4-AYfPU", "videoId": "1oJY4-AYfPU" },
+      { "id": "B1.03", "title": "Home and Living", "duration": "2:22", "durationSeconds": 142, "youtubeUrl": "https://www.youtube.com/watch?v=8N5kaNtgdXo", "videoId": "8N5kaNtgdXo" },
+      { "id": "B1.04", "title": "Entertainment and Media", "duration": "2:44", "durationSeconds": 164, "youtubeUrl": "https://www.youtube.com/watch?v=rioq6Ba4Ynw", "videoId": "rioq6Ba4Ynw" },
+      { "id": "B1.05", "title": "Social Issues", "duration": "2:56", "durationSeconds": 176, "youtubeUrl": "https://www.youtube.com/watch?v=K55zsurGH20", "videoId": "K55zsurGH20" },
+      { "id": "B1.06", "title": "Shopping", "duration": "2:45", "durationSeconds": 165, "youtubeUrl": "https://www.youtube.com/watch?v=7HExO3zhMsc", "videoId": "7HExO3zhMsc" },
+      { "id": "B1.07", "title": "Transport and Directions", "duration": "2:57", "durationSeconds": 177, "youtubeUrl": "https://www.youtube.com/watch?v=dKYv1oovbjM", "videoId": "dKYv1oovbjM" },
+      { "id": "B1.08", "title": "Technology", "duration": "3:11", "durationSeconds": 191, "youtubeUrl": "https://www.youtube.com/watch?v=JQqcoEn6S-Q", "videoId": "JQqcoEn6S-Q" },
+      { "id": "B1.09", "title": "Social Skills", "duration": "3:12", "durationSeconds": 192, "youtubeUrl": "https://www.youtube.com/watch?v=5V7AO-UAb0A", "videoId": "5V7AO-UAb0A" },
+      { "id": "B1.10", "title": "Energy", "duration": "3:06", "durationSeconds": 186, "youtubeUrl": "https://www.youtube.com/watch?v=KgikZvpSe_4", "videoId": "KgikZvpSe_4" },
+      { "id": "B1.11", "title": "Travel and Holidays", "duration": "2:51", "durationSeconds": 171, "youtubeUrl": "https://www.youtube.com/watch?v=OkS7lhpwVMw", "videoId": "OkS7lhpwVMw" },
+      { "id": "B1.12", "title": "Personal Goals and Ambitions", "duration": "2:33", "durationSeconds": 153, "youtubeUrl": "https://www.youtube.com/watch?v=8b8N_KIrzG0", "videoId": "8b8N_KIrzG0" },
+      { "id": "B1.13", "title": "Job Interviews", "duration": "2:35", "durationSeconds": 155, "youtubeUrl": "https://www.youtube.com/watch?v=WQa8hv6NgDA", "videoId": "WQa8hv6NgDA" },
+      { "id": "B1.14", "title": "Self-improvement", "duration": "3:59", "durationSeconds": 239, "youtubeUrl": "https://www.youtube.com/watch?v=n8mo1FEW410", "videoId": "n8mo1FEW410" },
+      { "id": "B1.15", "title": "Career Aspirations", "duration": "3:03", "durationSeconds": 183, "youtubeUrl": "https://www.youtube.com/watch?v=I7NsRNaho9I", "videoId": "I7NsRNaho9I" },
+      { "id": "B1.16", "title": "Setting and Achieving Milestones", "duration": "3:23", "durationSeconds": 203, "youtubeUrl": "https://www.youtube.com/watch?v=aPptI_p61oc", "videoId": "aPptI_p61oc" },
+      { "id": "B1.17", "title": "Long-Term Planning", "duration": "3:35", "durationSeconds": 215, "youtubeUrl": "https://www.youtube.com/watch?v=wsj_cidxZnY", "videoId": "wsj_cidxZnY" },
+      { "id": "B1.18", "title": "Self-Discipline", "duration": "3:23", "durationSeconds": 203, "youtubeUrl": "https://www.youtube.com/watch?v=1HvK35e1Dno", "videoId": "1HvK35e1Dno" },
+      { "id": "B1.19", "title": "Finding Your Passion", "duration": "2:35", "durationSeconds": 155, "youtubeUrl": "https://www.youtube.com/watch?v=Mql2AZa_A7w", "videoId": "Mql2AZa_A7w" },
+      { "id": "B1.20", "title": "Personal Growth", "duration": "2:43", "durationSeconds": 163, "youtubeUrl": "https://www.youtube.com/watch?v=Jy5qTdTqh6w", "videoId": "Jy5qTdTqh6w" }
+    ]
+  },
+  {
+    "category": "2. Cảm xúc, Thói quen & Sức khỏe tinh thần (Level B1)",
+    "lessons": [
+      { "id": "B1.21", "title": "Building Confidence", "duration": "3:20", "durationSeconds": 200, "youtubeUrl": "https://www.youtube.com/watch?v=OGlfP_4SL-g", "videoId": "OGlfP_4SL-g" },
+      { "id": "B1.22", "title": "Pursuing Happiness", "duration": "4:58", "durationSeconds": 298, "youtubeUrl": "https://www.youtube.com/watch?v=W8fwGtWfnaY", "videoId": "W8fwGtWfnaY" },
+      { "id": "B1.23", "title": "Home Cooking vs. Eating Out", "duration": "3:02", "durationSeconds": 182, "youtubeUrl": "https://www.youtube.com/watch?v=w-I9rnLv76o", "videoId": "w-I9rnLv76o" },
+      { "id": "B1.24", "title": "Learn to say 'NO'", "duration": "4:44", "durationSeconds": 284, "youtubeUrl": "https://www.youtube.com/watch?v=gNLT_gK1-Ik", "videoId": "gNLT_gK1-Ik" },
+      { "id": "B1.25", "title": "Set New Goals for the New Year", "duration": "6:44", "durationSeconds": 404, "youtubeUrl": "https://www.youtube.com/watch?v=qetN9uD71m0", "videoId": "qetN9uD71m0" },
+      { "id": "B1.26", "title": "Create Your Own Peace Amid the Busy Life", "duration": "5:18", "durationSeconds": 318, "youtubeUrl": "https://www.youtube.com/watch?v=kHNRUBlJr6k", "videoId": "kHNRUBlJr6k" },
+      { "id": "B1.27", "title": "How to Stay Full of Energy", "duration": "5:24", "durationSeconds": 324, "youtubeUrl": "https://www.youtube.com/watch?v=8n5oqM4wyUY", "videoId": "8n5oqM4wyUY" },
+      { "id": "B1.28", "title": "How to Develop Healthy Eating Habits", "duration": "5:28", "durationSeconds": 328, "youtubeUrl": "https://www.youtube.com/watch?v=VnV8C2XkzmM", "videoId": "VnV8C2XkzmM" },
+      { "id": "B1.29", "title": "How to Build a Strong Morning Routine", "duration": "3:34", "durationSeconds": 214, "youtubeUrl": "https://www.youtube.com/watch?v=9o6wnmI_6bg", "videoId": "9o6wnmI_6bg" },
+      { "id": "B1.30", "title": "How to Stop Negative Self-Talk", "duration": "3:39", "durationSeconds": 219, "youtubeUrl": "https://www.youtube.com/watch?v=jjDQ_K6bL4o", "videoId": "jjDQ_K6bL4o" },
+      { "id": "B1.31", "title": "Why self-care is not selfish?", "duration": "5:28", "durationSeconds": 328, "youtubeUrl": "https://www.youtube.com/watch?v=Na4A52LQmo4", "videoId": "Na4A52LQmo4" },
+      { "id": "B1.32", "title": "How to handle criticism without feeling hurt", "duration": "5:27", "durationSeconds": 327, "youtubeUrl": "https://www.youtube.com/watch?v=AZBY3OE_bJc", "videoId": "AZBY3OE_bJc" },
+      { "id": "B1.33", "title": "Why Self-reflection is the Key to Progress", "duration": "4:16", "durationSeconds": 256, "youtubeUrl": "https://www.youtube.com/watch?v=qz4zV8241KE", "videoId": "qz4zV8241KE" },
+      { "id": "B1.34", "title": "How to Manage Your Emotions in Tough Situations", "duration": "9:41", "durationSeconds": 581, "youtubeUrl": "https://www.youtube.com/watch?v=-OG9TawVSIY", "videoId": "-OG9TawVSIY" },
+      { "id": "B1.35", "title": "Why Chasing Happiness Makes You More Unhappy", "duration": "8:24", "durationSeconds": 504, "youtubeUrl": "https://www.youtube.com/watch?v=hpksUgrQMS8", "videoId": "hpksUgrQMS8" },
+      { "id": "B1.36", "title": "Why Do We Feel Empty Even When Life Is Fine?", "duration": "10:38", "durationSeconds": 638, "youtubeUrl": "https://www.youtube.com/watch?v=Cqg2d0bQvXo", "videoId": "Cqg2d0bQvXo" },
+      { "id": "B1.37", "title": "What does \"HOME\" mean to you?", "duration": "8:54", "durationSeconds": 534, "youtubeUrl": "https://www.youtube.com/watch?v=XWkMmyYscrc", "videoId": "XWkMmyYscrc" },
+      { "id": "B1.38", "title": "The Power of Saying 'NO' to Achieve More", "duration": "10:10", "durationSeconds": 610, "youtubeUrl": "https://www.youtube.com/watch?v=13bz8Hau8ss", "videoId": "13bz8Hau8ss" },
+      { "id": "B1.39", "title": "How to Resolve Inner Conflict", "duration": "8:16", "durationSeconds": 496, "youtubeUrl": "https://www.youtube.com/watch?v=zeeb7mB1V5Y", "videoId": "zeeb7mB1V5Y" },
+      { "id": "B1.40", "title": "Embracing Imperfection and Self-Acceptance", "duration": "10:24", "durationSeconds": 624, "youtubeUrl": "https://www.youtube.com/watch?v=nroJIlXmR1w", "videoId": "nroJIlXmR1w" },
+      { "id": "B1.41", "title": "Overcoming Social Anxiety", "duration": "8:36", "durationSeconds": 516, "youtubeUrl": "https://www.youtube.com/watch?v=4vsfl35KOGQ", "videoId": "4vsfl35KOGQ" }
+    ]
+  }
+]
