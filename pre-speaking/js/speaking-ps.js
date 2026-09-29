@@ -1,7 +1,6 @@
 /**
  * PRE-SPEAKING CONTROLLER (-ps)
- * Tích hợp Web Speech API (Realtime STT) + Chấm điểm Text qua Gemini
- * Thứ tự Model: gemini-3.5-flash-lite -> gemini-3.1-flash-lite -> fallback
+ * Tích hợp ACTIVE_MODELS thế hệ mới & Cơ chế Fallback Retry (Lite: 3 lần, Thường: 1 lần)
  */
 
 // 1. MÃ HÓA RUNTIME AUTH KEY GỐC TỪ SPEAKING.JS
@@ -16,12 +15,16 @@ function getDecodedKey() {
   return _AUTH_SEEDS.map(c => String.fromCharCode(c)).join('');
 }
 
-// 2. CHUỖI GỌI MODEL AI THEO YÊU CẦU
-const AI_MODELS = [
-  "gemini-3.5-flash-lite", // Ưu tiên 1
-  "gemini-3.1-flash-lite", // Ưu tiên 2
-  "gemini-2.0-flash-lite", // Dự phòng
-  "gemini-1.5-flash"
+// 2. DANH SÁCH ACTIVE MODELS MỚI NHẤT
+const ACTIVE_MODELS = [
+  'gemini-3.5-flash-lite',
+  'gemini-3.1-flash-lite',
+  'gemini-2.5-flash-lite',
+  'gemini-3.8-flash',
+  'gemini-3.7-flash',
+  'gemini-3.6-flash',
+  'gemini-3.5-flash',
+  'gemini-2.5-flash'
 ];
 
 let categoriesData = [];
@@ -38,7 +41,7 @@ let animationFrameId = null;
 
 let timerInterval = null;
 let secondsRecorded = 0;
-const MIN_REQUIRED_DURATION = 15; // 15 giây tối thiểu
+const MIN_REQUIRED_DURATION = 15; // 15 giây nói tối thiểu
 
 window.addEventListener('DOMContentLoaded', async () => {
   await loadCatalogAndLessons();
@@ -46,7 +49,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   initSpeechRecognition();
 });
 
-// TỰ ĐỘNG TẢI DỮ LIỆU BÀI HỌC
+// NẠP DỮ LIỆU BÀI HỌC
 async function loadCatalogAndLessons() {
   try {
     const manifestRes = await fetch('data/manifest-ps.json');
@@ -160,7 +163,9 @@ function initSpeechRecognition() {
       }
     }
     const txtArea = document.getElementById('speechTranscript');
-    txtArea.value = (final + interim).trim();
+    if (txtArea) {
+      txtArea.value = (final + interim).trim();
+    }
   };
 
   recognition.onerror = (e) => {
@@ -168,7 +173,7 @@ function initSpeechRecognition() {
   };
 }
 
-// AUDIO METER
+// AUDIO VU METER
 async function startAudioMeter() {
   try {
     audioStream = await navigator.mediaDevices.getUserMedia({
@@ -213,15 +218,16 @@ window.toggleShadowRecording = async () => {
   const ok = await startAudioMeter();
   if (!ok) return;
 
-  // Bật ký âm Web Speech API
   if (recognition) {
-    document.getElementById('speechTranscript').value = '';
+    const txtArea = document.getElementById('speechTranscript');
+    if (txtArea) txtArea.value = '';
     try { recognition.start(); } catch (e) {}
-    badge.innerText = "🔴 Đang nghe & ký âm...";
-    badge.className = "text-[11px] font-semibold text-rose-300 bg-rose-950 px-2 py-0.5 rounded border border-rose-800 animate-pulse";
+    if (badge) {
+      badge.innerText = "🔴 Đang nghe & ký âm...";
+      badge.className = "text-[11px] font-semibold text-rose-300 bg-rose-950 px-2 py-0.5 rounded border border-rose-800 animate-pulse";
+    }
   }
 
-  // Tự động phát YouTube
   if (ytPlayer && ytPlayer.playVideo) {
     ytPlayer.seekTo(0, true);
     ytPlayer.playVideo();
@@ -249,11 +255,12 @@ window.stopAndSubmitRecording = async () => {
   clearInterval(timerInterval);
   if (animationFrameId) cancelAnimationFrame(animationFrameId);
 
-  // Dừng Web Speech API & Micro
   if (recognition) {
     try { recognition.stop(); } catch (e) {}
-    badge.innerText = "✅ Đã ký âm xong";
-    badge.className = "text-[11px] font-semibold text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800";
+    if (badge) {
+      badge.innerText = "✅ Đã ký âm xong";
+      badge.className = "text-[11px] font-semibold text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800";
+    }
   }
   if (audioStream) audioStream.getTracks().forEach(t => t.stop());
   if (audioContext && audioContext.state !== 'closed') audioContext.close();
@@ -262,105 +269,106 @@ window.stopAndSubmitRecording = async () => {
   btnRec.classList.remove('recording');
   btnStop.disabled = true;
 
-  // Lấy bản ký âm để gửi AI chấm
-  const transcript = document.getElementById('speechTranscript').value.trim();
+  const transcript = document.getElementById('speechTranscript') ? document.getElementById('speechTranscript').value.trim() : "";
   if (!transcript) {
-    alert("⚠️ Chưa ghi nhận được giọng nói nào. Em hãy nói to rõ hơn vào micro nhé!");
+    alert("⚠️ Chưa ghi nhận được bài nói nào từ Micro. Em hãy nói to và rõ hơn nhé!");
     return;
   }
 
-  await evaluateTranscriptWithGemini(transcript, secondsRecorded);
+  await evaluateWithGeminiEngine(transcript, secondsRecorded);
 };
 
-// ================== GỬI CHẤM TEXT VỚI AUTO-RETRY CHỐNG NGHẼN 503 ==================
-async function evaluateTranscriptWithGemini(transcriptText, durationSec) {
-  showOverlay("Đang gửi bản ký âm cho AI phân tích...");
+// ================== CƠ CHẾ GỌI GEMINI FALLBACK & RETRY THÔNG MINH ==================
+async function callGeminiWithFallback(promptText, apiKey) {
+  for (const model of ACTIVE_MODELS) {
+    let attempts = 0;
+    const maxAttempts = (model.includes('lite')) ? 3 : 1; // Bản lite retry 3 lần, bản thường gọi 1 lần
+
+    while (attempts < maxAttempts) {
+      try {
+        attempts++;
+        showOverlay(`Đang kết nối ${model} (Lần thử ${attempts}/${maxAttempts})...`);
+        console.log(`[AI Engine] Đang gọi model: ${model} (Lần thử ${attempts}/${maxAttempts})...`);
+
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: promptText }] }]
+          })
+        });
+
+        // Nếu quá tải (503) hoặc rate limit (429), throw error để retry/fallback
+        if (response.status === 503 || response.status === 429) {
+          throw new Error(`Server busy: ${response.status}`);
+        }
+
+        if (!response.ok) {
+          const errData = await response.json();
+          throw new Error(`API Error ${response.status}: ${errData.error?.message || 'Unknown'}`);
+        }
+
+        const data = await response.json();
+        console.log(`✅ Thành công với model: ${model}`);
+        return data; // Trả về kết quả nếu thành công
+
+      } catch (error) {
+        console.warn(`⚠️ Lỗi ở model ${model} (Lần ${attempts}):`, error.message);
+        
+        // Nếu dính 503/429 và còn lượt retry, nghỉ 1.5s rồi thử lại cùng model
+        if (attempts < maxAttempts) {
+          showOverlay(`Máy chủ ${model} đang bận, tự động thử lại sau 1.5s...`);
+          await new Promise(res => setTimeout(res, 1500));
+        }
+      }
+    }
+    console.warn(`❌ Model ${model} thất bại hoàn toàn. Chuyển sang model tiếp theo trong danh sách...`);
+  }
+
+  throw new Error("Tất cả các model Gemini khả dụng đều đang bận. Vui lòng thử lại sau ít phút.");
+}
+
+// ĐIỀU HÀNH CHẤM BÀI
+async function evaluateWithGeminiEngine(transcriptText, durationSec) {
+  showOverlay("Đang chuẩn bị dữ liệu phân tích...");
   const apiKey = getDecodedKey();
 
   const promptText = `
 Bạn là Giám khảo chấm Shadowing tiếng Anh trình độ A1.
-Chủ đề bài học học sinh đã nhại theo video: "${currentLesson.title}".
-Đây là bản ký âm thực tế giọng nói của học sinh (được thu bằng công nghệ Speech-to-Text):
+Chủ đề bài học học sinh nhại theo video: "${currentLesson.title}".
+Bản ký âm Speech-to-Text từ giọng nói thực tế của học sinh:
 "${transcriptText}"
 
-HÃY ĐỐI CHIẾU VÀ ĐÁNH GIÁ NGỮ ÂM THEO NGUYÊN TẮC:
-- Những từ bị Web Speech API nhận diện nhầm, sai âm, hoặc bị nuốt âm đuôi (-s, -ed, âm cuối).
-- Đánh giá phát âm (pronunciation_score) và độ trôi chảy (fluency_score).
-- Trả về DUY NHẤT một chuỗi JSON thuần (không dùng markdown, không dùng backtick \`\`\`json):
+HÃY ĐỐI CHIẾU VÀ ĐÁNH GIÁ:
+- Các từ bị nuốt âm đuôi (-s, -ed, âm cuối), phát âm chưa chuẩn dẫn đến ký âm nhầm.
+- Tính điểm overall_score, fluency_score, pronunciation_score.
+- Trả về DUY NHẤT một chuỗi JSON thuần (không markdown, không backtick \`\`\`json):
 {
-  "overall_score": <Số nguyên 0-100>,
-  "fluency_score": <Số nguyên 0-100>,
-  "pronunciation_score": <Số nguyên 0-100>,
-  "missed_words": ["danh", "sach", "cac", "tu", "phat", "am", "chua", "chuan"],
+  "overall_score": 75,
+  "fluency_score": 80,
+  "pronunciation_score": 70,
+  "missed_words": ["danh", "sach", "tu", "sai"],
   "feedback": "Nhận xét ngắn gọn bằng tiếng Việt (1 lời khen và 1 lời khuyên sửa phát âm)"
 }
 `;
 
-  let lastError = null;
-
-  for (let i = 0; i < AI_MODELS.length; i++) {
-    const model = AI_MODELS[i];
+  try {
+    const rawResponse = await callGeminiWithFallback(promptText, apiKey);
     
-    // Thử tối đa 2 lần cho mỗi model nếu dính lỗi quá tải 503
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 8000);
+    let rawText = rawResponse.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || "{}";
+    if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
+    else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
 
-      try {
-        const attemptLabel = attempt > 1 ? ` (Thử lại lần 2 do server tải cao...)` : "";
-        showOverlay(`Đang chấm qua model: ${model}...${attemptLabel}`);
-
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{
-              role: "user",
-              parts: [{ text: promptText }]
-            }],
-            generationConfig: { temperature: 0.1 }
-          }),
-          signal: controller.signal
-        });
-
-        clearTimeout(timeoutId);
-
-        // NẾU BỊ QUÁ TẢI 503: Nghỉ 1.5 giây rồi thử lại chính model đó
-        if (res.status === 503 && attempt === 1) {
-          console.warn(`[Server bận 503] Model ${model} đang nghẽn tải, chờ 1.5s rồi thử lại...`);
-          await new Promise(r => setTimeout(r, 1500));
-          continue; // Lặp lại lần 2
-        }
-
-        if (!res.ok) {
-          const errJson = await res.json();
-          throw new Error(errJson.error?.message || `HTTP ${res.status}`);
-        }
-
-        const json = await res.json();
-        let rawText = json.candidates[0].content.parts[0].text.trim();
-
-        if (rawText.startsWith("```json")) rawText = rawText.replace(/^```json/, "").replace(/```$/, "").trim();
-        else if (rawText.startsWith("```")) rawText = rawText.replace(/^```/, "").replace(/```$/, "").trim();
-
-        const parsed = JSON.parse(rawText);
-        hideOverlay();
-        renderGradingResult(parsed, durationSec);
-        return; // Thành công thì thoát luôn
-
-      } catch (err) {
-        clearTimeout(timeoutId);
-        console.warn(`Model ${model} lần thử ${attempt} gặp sự cố:`, err.message);
-        lastError = err;
-      }
-    }
+    const parsed = JSON.parse(rawText);
+    hideOverlay();
+    renderGradingResult(parsed, durationSec);
+  } catch (err) {
+    hideOverlay();
+    alert("Lỗi chấm điểm: " + err.message);
   }
-
-  hideOverlay();
-  alert("Máy chủ AI hiện đang chịu tải quá cao (503). Em hãy đợi khoảng 5-10 giây rồi bấm 'Dừng & Chấm bài' lại nhé!");
 }
 
-// BẢNG KẾT QUẢ VÀ TIÊU CHUẨN ĐẠT
+// BẢNG KẾT QUẢ VÀ TIÊU CHUẨN HOÀN THÀNH
 function renderGradingResult(data, durationSec) {
   document.getElementById('resOverall').innerText = data.overall_score || 0;
   document.getElementById('resFluency').innerText = data.fluency_score || 0;
