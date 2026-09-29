@@ -1,6 +1,6 @@
 {
   "module": "PRE_SPEAKING",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "catalogs": [
     {
       "id": "shadow_a1",
@@ -22,9 +22,21 @@
     },
     {
       "id": "shadow_b2",
-      "name": "Level B2: Upper-Intermediate Mastery Shadowing",
+      "name": "Level B2.1: Upper-Intermediate Mastery",
       "folder": "data/shadow_b2",
       "dataFile": "data/shadow_b2/lessons-ps.json"
+    },
+    {
+      "id": "shadow_b2_2",
+      "name": "Level B2.2: Deep Thinking & Complex Concepts",
+      "folder": "data/shadow_b2_2",
+      "dataFile": "data/shadow_b2_2/lessons-ps.json"
+    },
+    {
+      "id": "shadow_c1",
+      "name": "Level C1: Native Accents, Celebrities & Cinema",
+      "folder": "data/shadow_c1",
+      "dataFile": "data/shadow_c1/lessons-ps.json"
     }
   ]
 }
