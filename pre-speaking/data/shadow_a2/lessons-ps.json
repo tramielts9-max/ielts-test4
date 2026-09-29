@@ -1,0 +1,53 @@
+[
+  {
+    "category": "1. Giao tiếp, Kỹ năng & Đời sống (Level A2)",
+    "lessons": [
+      { "id": "A2.01", "title": "Self-introduction", "duration": "2:54", "durationSeconds": 174, "youtubeUrl": "https://www.youtube.com/watch?v=AMn3nvQx01s", "videoId": "AMn3nvQx01s" },
+      { "id": "A2.02", "title": "Family", "duration": "2:24", "durationSeconds": 144, "youtubeUrl": "https://www.youtube.com/watch?v=uyrP01ga3mc", "videoId": "uyrP01ga3mc" },
+      { "id": "A2.03", "title": "Friends", "duration": "2:23", "durationSeconds": 143, "youtubeUrl": "https://www.youtube.com/watch?v=2i7O_U2JmOg", "videoId": "2i7O_U2JmOg" },
+      { "id": "A2.04", "title": "Hobbies", "duration": "2:35", "durationSeconds": 155, "youtubeUrl": "https://www.youtube.com/watch?v=tsN-shZadqo", "videoId": "tsN-shZadqo" },
+      { "id": "A2.05", "title": "Work and Careers", "duration": "2:32", "durationSeconds": 152, "youtubeUrl": "https://www.youtube.com/watch?v=t8UExomWdNQ", "videoId": "t8UExomWdNQ" },
+      { "id": "A2.06", "title": "Travel and Holidays", "duration": "2:46", "durationSeconds": 166, "youtubeUrl": "https://www.youtube.com/watch?v=JXesDsMhyL4", "videoId": "JXesDsMhyL4" },
+      { "id": "A2.07", "title": "Education and Learning", "duration": "2:51", "durationSeconds": 171, "youtubeUrl": "https://www.youtube.com/watch?v=gy10m6vZ_Xs", "videoId": "gy10m6vZ_Xs" },
+      { "id": "A2.08", "title": "Health and Fitness", "duration": "2:55", "durationSeconds": 175, "youtubeUrl": "https://www.youtube.com/watch?v=iHZduRpOD9M", "videoId": "iHZduRpOD9M" },
+      { "id": "A2.09", "title": "Fashion and Style", "duration": "2:37", "durationSeconds": 157, "youtubeUrl": "https://www.youtube.com/watch?v=u-l9cwoOHAI", "videoId": "u-l9cwoOHAI" },
+      { "id": "A2.10", "title": "Movies and TV Shows", "duration": "2:39", "durationSeconds": 159, "youtubeUrl": "https://www.youtube.com/watch?v=xVUWNqKieBM", "videoId": "xVUWNqKieBM" },
+      { "id": "A2.11", "title": "Reading and Books", "duration": "2:26", "durationSeconds": 146, "youtubeUrl": "https://www.youtube.com/watch?v=_IRx_C_6g5Q", "videoId": "_IRx_C_6g5Q" },
+      { "id": "A2.12", "title": "City Life vs. Country Life", "duration": "2:51", "durationSeconds": 171, "youtubeUrl": "https://www.youtube.com/watch?v=JNScvSxEF_s", "videoId": "JNScvSxEF_s" },
+      { "id": "A2.13", "title": "Cooking Techniques", "duration": "2:26", "durationSeconds": 146, "youtubeUrl": "https://www.youtube.com/watch?v=Vri-y1JmW1I", "videoId": "Vri-y1JmW1I" },
+      { "id": "A2.14", "title": "Learning from Mistakes", "duration": "2:32", "durationSeconds": 152, "youtubeUrl": "https://www.youtube.com/watch?v=OnoWhMcEMCg", "videoId": "OnoWhMcEMCg" },
+      { "id": "A2.15", "title": "Survival and Life Skills", "duration": "2:36", "durationSeconds": 156, "youtubeUrl": "https://www.youtube.com/watch?v=XcsGg6O8G_M", "videoId": "XcsGg6O8G_M" },
+      { "id": "A2.16", "title": "Personal Achievements", "duration": "2:19", "durationSeconds": 139, "youtubeUrl": "https://www.youtube.com/watch?v=kKCo0J9lGhQ", "videoId": "kKCo0J9lGhQ" },
+      { "id": "A2.17", "title": "Dreams and Ambitions", "duration": "2:21", "durationSeconds": 141, "youtubeUrl": "https://www.youtube.com/watch?v=mNDsupdM0mI", "videoId": "mNDsupdM0mI" },
+      { "id": "A2.18", "title": "Travel Safety Tips", "duration": "2:34", "durationSeconds": 154, "youtubeUrl": "https://www.youtube.com/watch?v=8Q7KBWg7qMY", "videoId": "8Q7KBWg7qMY" },
+      { "id": "A2.19", "title": "Overcoming Failure", "duration": "4:01", "durationSeconds": 241, "youtubeUrl": "https://www.youtube.com/watch?v=10KFAYtntyw", "videoId": "10KFAYtntyw" },
+      { "id": "A2.20", "title": "Learning from Criticism", "duration": "2:49", "durationSeconds": 169, "youtubeUrl": "https://www.youtube.com/watch?v=ejaPup8auTw", "videoId": "ejaPup8auTw" }
+    ]
+  },
+  {
+    "category": "2. Cảm xúc, Tư duy & Lối sống tích cực (Level A2)",
+    "lessons": [
+      { "id": "A2.21", "title": "Gardening", "duration": "3:40", "durationSeconds": 220, "youtubeUrl": "https://www.youtube.com/watch?v=k_hG6ufZA00", "videoId": "k_hG6ufZA00" },
+      { "id": "A2.22", "title": "What to Do on Lazy Days?", "duration": "3:28", "durationSeconds": 208, "youtubeUrl": "https://www.youtube.com/watch?v=Yq0W-78hAzk", "videoId": "Yq0W-78hAzk" },
+      { "id": "A2.23", "title": "How to Handle Conflicts in Communication", "duration": "5:39", "durationSeconds": 339, "youtubeUrl": "https://www.youtube.com/watch?v=bXJqcrN9d0U", "videoId": "bXJqcrN9d0U" },
+      { "id": "A2.24", "title": "How to Become a Positive Person", "duration": "5:57", "durationSeconds": 357, "youtubeUrl": "https://www.youtube.com/watch?v=RsnONEr1g3U", "videoId": "RsnONEr1g3U" },
+      { "id": "A2.25", "title": "Obesity Warning", "duration": "9:36", "durationSeconds": 576, "youtubeUrl": "https://www.youtube.com/watch?v=_kd1ffEPwKs", "videoId": "_kd1ffEPwKs" },
+      { "id": "A2.26", "title": "How Being Thankful Can Change Your Life", "duration": "3:25", "durationSeconds": 205, "youtubeUrl": "https://www.youtube.com/watch?v=dpZf7aqbtOw", "videoId": "dpZf7aqbtOw" },
+      { "id": "A2.27", "title": "How to Embrace Change Instead of Fearing It?", "duration": "3:47", "durationSeconds": 227, "youtubeUrl": "https://www.youtube.com/watch?v=B3xHAVsWk_c", "videoId": "B3xHAVsWk_c" },
+      { "id": "A2.28", "title": "The Law of Attraction: How Your Thoughts Shape Your Reality", "duration": "5:05", "durationSeconds": 305, "youtubeUrl": "https://www.youtube.com/watch?v=ze7GsgqQBME", "videoId": "ze7GsgqQBME" },
+      { "id": "A2.29", "title": "How to Find Motivation on Lazy Days", "duration": "3:44", "durationSeconds": 224, "youtubeUrl": "https://www.youtube.com/watch?v=vJD1nqdHx64", "videoId": "vJD1nqdHx64" },
+      { "id": "A2.30", "title": "How to Develop a Growth Mindset", "duration": "4:36", "durationSeconds": 276, "youtubeUrl": "https://www.youtube.com/watch?v=fVaYvanGzy4", "videoId": "fVaYvanGzy4" },
+      { "id": "A2.31", "title": "The Benefits of Spending Time Alone", "duration": "5:06", "durationSeconds": 306, "youtubeUrl": "https://www.youtube.com/watch?v=jbOxDJkDP3o", "videoId": "jbOxDJkDP3o" },
+      { "id": "A2.32", "title": "Building Resilience in the Face of Adversity", "duration": "6:39", "durationSeconds": 399, "youtubeUrl": "https://www.youtube.com/watch?v=DP-6BUaft18", "videoId": "DP-6BUaft18" },
+      { "id": "A2.33", "title": "Crying Alone Doesn’t Mean You’re Weak", "duration": "16:49", "durationSeconds": 1009, "youtubeUrl": "https://www.youtube.com/watch?v=oHKXZeuVQlQ", "videoId": "oHKXZeuVQlQ" },
+      { "id": "A2.34", "title": "Why does motivation disappear so quickly", "duration": "14:34", "durationSeconds": 874, "youtubeUrl": "https://www.youtube.com/watch?v=-3tJktqaMcc", "videoId": "-3tJktqaMcc" },
+      { "id": "A2.35", "title": "Why I Like Talking to Strangers?", "duration": "11:24", "durationSeconds": 684, "youtubeUrl": "https://www.youtube.com/watch?v=qq9aloOYEV0", "videoId": "qq9aloOYEV0" },
+      { "id": "A2.36", "title": "How To Overcome Your Fears and Live Boldly", "duration": "8:49", "durationSeconds": 529, "youtubeUrl": "https://www.youtube.com/watch?v=8SyrAJt8e84", "videoId": "8SyrAJt8e84" },
+      { "id": "A2.37", "title": "How Music Affects Your Mood", "duration": "10:38", "durationSeconds": 638, "youtubeUrl": "https://www.youtube.com/watch?v=bBCJf1nS_EM", "videoId": "bBCJf1nS_EM" },
+      { "id": "A2.38", "title": "What Does a Happy Day Look Like?", "duration": "9:29", "durationSeconds": 569, "youtubeUrl": "https://www.youtube.com/watch?v=pk_k5dy5Qec", "videoId": "pk_k5dy5Qec" },
+      { "id": "A2.39", "title": "Enjoying a Cup of Tea Slowly", "duration": "8:59", "durationSeconds": 539, "youtubeUrl": "https://www.youtube.com/watch?v=PdTUEvX-eR8", "videoId": "PdTUEvX-eR8" },
+      { "id": "A2.40", "title": "A Walk Outside Can Change Your Mood", "duration": "8:11", "durationSeconds": 491, "youtubeUrl": "https://www.youtube.com/watch?v=BngJkAuxE0g", "videoId": "BngJkAuxE0g" },
+      { "id": "A2.41", "title": "Learning to Say “I CAN DO IT”", "duration": "9:44", "durationSeconds": 584, "youtubeUrl": "https://www.youtube.com/watch?v=low9KobKQD0", "videoId": "low9KobKQD0" }
+    ]
+  }
+]
