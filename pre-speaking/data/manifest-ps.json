@@ -1,12 +1,30 @@
 {
   "module": "PRE_SPEAKING",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "catalogs": [
     {
       "id": "shadow_a1",
       "name": "Level A1: Shadow Speaking Foundation",
       "folder": "data/shadow_a1",
       "dataFile": "data/shadow_a1/lessons-ps.json"
+    },
+    {
+      "id": "shadow_a2",
+      "name": "Level A2: Pre-Intermediate Shadowing",
+      "folder": "data/shadow_a2",
+      "dataFile": "data/shadow_a2/lessons-ps.json"
+    },
+    {
+      "id": "shadow_b1",
+      "name": "Level B1: Intermediate Fluency Shadowing",
+      "folder": "data/shadow_b1",
+      "dataFile": "data/shadow_b1/lessons-ps.json"
+    },
+    {
+      "id": "shadow_b2",
+      "name": "Level B2: Upper-Intermediate Mastery Shadowing",
+      "folder": "data/shadow_b2",
+      "dataFile": "data/shadow_b2/lessons-ps.json"
     }
   ]
 }
