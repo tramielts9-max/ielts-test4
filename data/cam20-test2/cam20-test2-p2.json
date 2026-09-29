@@ -37,14 +37,14 @@
       "id": "g3",
       "type": "multiselect",
       "title": "Questions 23 and 24",
-      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 23 and 24 on your answer sheet.<br>Which <b>TWO</b> comparisons between employees who often procrastinate and those who do not are mentioned in the text?</i><br><br><b>A.</b> Their salaries are lower.<br><b>B.</b> The quality of their work is inferior.<br><b>C.</b> They don't keep their jobs for as long.<br><b>D.</b> They don't enjoy their working lives as much.<br><b>E.</b> They have poorer relationships with colleagues.",
+      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 23 and 24 on your answer sheet.<br>Which <b>TWO</b> comparisons between employees who often procrastinate and those who do not are mentioned in the text?</i>",
       "questionIds": ["q23", "q24"]
     },
     {
       "id": "g4",
       "type": "multiselect",
       "title": "Questions 25 and 26",
-      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 25 and 26 on your answer sheet.<br>Which <b>TWO</b> recommendations for getting out of a cycle of procrastination does the writer give?</i><br><br><b>A.</b> not judging ourselves harshly<br><b>B.</b> setting ourselves manageable aims<br><b>C.</b> rewarding ourselves for tasks achieved<br><b>D.</b> prioritising tasks according to their importance<br><b>E.</b> avoiding things that stop us concentrating on our tasks",
+      "instructions": "<i>Choose <b>TWO</b> letters, <b>A-E</b>.<br>Write the correct letters in boxes 25 and 26 on your answer sheet.<br>Which <b>TWO</b> recommendations for getting out of a cycle of procrastination does the writer give?</i>",
       "questionIds": ["q25", "q26"]
     }
   ],
@@ -52,6 +52,7 @@
     "q14": {
       "num": 14,
       "text": "mention of false assumptions about why people procrastinate",
+      "options": ["A", "B", "C", "D", "E", "F"],
       "finalAnswer": "B",
       "highlightId": "hl-q14",
       "socratic": {
@@ -88,6 +89,7 @@
     "q15": {
       "num": 15,
       "text": "reference to the realisation that others also procrastinate",
+      "options": ["A", "B", "C", "D", "E", "F"],
       "finalAnswer": "F",
       "highlightId": "hl-q15",
       "socratic": {
@@ -124,6 +126,7 @@
     "q16": {
       "num": 16,
       "text": "neurological evidence of a link between procrastination and emotion",
+      "options": ["A", "B", "C", "D", "E", "F"],
       "finalAnswer": "B",
       "highlightId": "hl-q16",
       "socratic": {
@@ -377,6 +380,14 @@
     },
     "q23": {
       "num": 23,
+      "text": "Which TWO comparisons between employees who often procrastinate and those who do not are mentioned in the text?",
+      "options": [
+        "A. Their salaries are lower.",
+        "B. The quality of their work is inferior.",
+        "C. They don't keep their jobs for as long.",
+        "D. They don't enjoy their working lives as much.",
+        "E. They have poorer relationships with colleagues."
+      ],
       "finalAnswer": "A",
       "highlightId": "hl-q23",
       "socratic": {
@@ -412,6 +423,14 @@
     },
     "q24": {
       "num": 24,
+      "text": "Which TWO comparisons between employees who often procrastinate and those who do not are mentioned in the text?",
+      "options": [
+        "A. Their salaries are lower.",
+        "B. The quality of their work is inferior.",
+        "C. They don't keep their jobs for as long.",
+        "D. They don't enjoy their working lives as much.",
+        "E. They have poorer relationships with colleagues."
+      ],
       "finalAnswer": "C",
       "highlightId": "hl-q24",
       "socratic": {
@@ -447,6 +466,14 @@
     },
     "q25": {
       "num": 25,
+      "text": "Which TWO recommendations for getting out of a cycle of procrastination does the writer give?",
+      "options": [
+        "A. not judging ourselves harshly",
+        "B. setting ourselves manageable aims",
+        "C. rewarding ourselves for tasks achieved",
+        "D. prioritising tasks according to their importance",
+        "E. avoiding things that stop us concentrating on our tasks"
+      ],
       "finalAnswer": "A",
       "highlightId": "hl-q25",
       "socratic": {
@@ -482,6 +509,14 @@
     },
     "q26": {
       "num": 26,
+      "text": "Which TWO recommendations for getting out of a cycle of procrastination does the writer give?",
+      "options": [
+        "A. not judging ourselves harshly",
+        "B. setting ourselves manageable aims",
+        "C. rewarding ourselves for tasks achieved",
+        "D. prioritising tasks according to their importance",
+        "E. avoiding things that stop us concentrating on our tasks"
+      ],
       "finalAnswer": "E",
       "highlightId": "hl-q26",
       "socratic": {
