@@ -16,7 +16,7 @@
     "q39": "D",
     "q40": "C"
   },
-  "passageHtml": "<h2>READING PASSAGE 3</h2><h3>Invasion of the Robot Umpires</h3><p>A few years ago, Fred DeJesus from Brooklyn, New York became the first umpire in a minor league baseball game to use something called the Automated Ball-Strike System (ABS), often referred to as the 'robo-umpire'. <span class=\"hl\" id=\"hl-q27\" data-q=\"[Q27]\">Instead of making any judgments himself about a strike*, DeJesus had decisions fed to him through an earpiece, connected to a modified missile-tracking system</span>. The contraption looked like a large black pizza box with one glowing green eye; it was mounted above the press stand.</p><p><span class=\"hl\" id=\"hl-q33\" data-q=\"[Q33]\">Major League Baseball (MLB), who had commissioned the system, wanted human umpires to announce the calls, just as they would have done in the past</span>. When the first pitch came in, a recorded voice told DeJesus it was a strike. <span class=\"hl\" id=\"hl-q34\" data-q=\"[Q34]\">Previously, calling a strike was a judgment call on the part of the umpire</span>. Even if the batter does not hit the ball, <span class=\"hl\" id=\"hl-q35\" data-q=\"[Q35]\">a pitch that passes through the 'strike zone' (an imaginary zone about seventeen inches wide, stretching from the batter's knees to the middle of his chest) is considered a strike</span>. <span class=\"hl\" id=\"hl-q37\" data-q=\"[Q37]\">During that first game, when DeJesus announced calls, there was no heckling and no shouted disagreement. Nobody said a word</span>.</p><p><span class=\"hl\" id=\"hl-q36\" data-q=\"[Q36]\">For a hundred and fifty years or so, the strike zone has been the game's animating force-countless arguments between a team's manager and the umpire have taken place over its boundaries and whether a ball had crossed through it</span>. The rules of play have evolved in various stages. Today, everyone knows that you may scream your disagreement in an umpire's face, but you must never shout personal abuse at them or touch them. That's a no-no. When the robo-umpires came, however, the arguments stopped.</p><p><span class=\"hl\" id=\"hl-q28\" data-q=\"[Q28]\">During the first robo-umpire season, players complained about some strange calls. In response, MLB decided to tweak the dimensions of the zone</span>, and the following year the consensus was that ABS is profoundly consistent. <span class=\"hl\" id=\"hl-q29\" data-q=\"[Q29]\">MLB says the device is near-perfect, precise to within fractions of an inch. 'It'll reduce controversy in the game, and be good for the game,' says Rob Manfred, who is Commissioner for MLB</span>. <span class=\"hl\" id=\"hl-q38\" data-q=\"[Q38]\">But the question is whether controversy is worth reducing, or whether it is the sign of a human hand. A human, at least, yells back. When I spoke with Frank Viola, a coach for Carolina team, he said that ABS works as designed, but that it was also unforgiving and pedantic, almost legalistic. 'Manfred is a lawyer,' Viola noted. Some pitchers have complained that, compared with a human's, the robot's strike zone seems too precise. Viola was once a major-league player himself. When he was pitching, he explained, umpires rewarded skill. 'Throw it where you aimed, and it would be a strike, even if it was an inch or two outside. There was a dialogue between pitcher and umpire.'</span></p><p>The executive tasked with running the experiment for MLB is Morgan Sword, who's in charge of baseball operations. <span class=\"hl\" id=\"hl-q39\" data-q=\"[Q39]\">According to Sword, ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans, as has been the case with horse racing and boxing</span>. He explains how they began the process by asking fans what version of baseball they found most exciting. <span class=\"hl\" id=\"hl-q30\" data-q=\"[Q30]\">The results showed that everyone wanted more action: more hits, more defense, more baserunning. This type of baseball essentially hasn't existed since the 1960s, when the hundred-mile-an-hour fastball, which is difficult to hit and control, entered the game. It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action</span>.</p><p><span class=\"hl\" id=\"hl-q31\" data-q=\"[Q31]\">Sword's team brainstormed potential fixes. Any rule that existed, they talked about changing-from changing the bats to changing the geometry of the field. But while all of these were ruled out as potential fixes, ABS was seen as a perfect vehicle for change</span>. <span class=\"hl\" id=\"hl-q32\" data-q=\"[Q32]\">According to Sword, once you get the technology right, you can load any strike zone you want into the system. 'It might be a triangle, or a blob, or something shaped like Texas. Over time, as baseball evolves, ABS can allow the zone to change with it.'</span></p><p>'In the past twenty years, sports have moved away from judgment calls. Soccer has Video Assistant Referees (for offside decisions, for example). Tennis has Hawk-Eye (for line calls, for example). For almost a decade, baseball has used instant replay on the base paths. This is widely liked, even if the precision can sometimes cause problems. But these applications deal with something physical: bases, lines, goals. The boundaries of action are precise, delineated like the keys of a piano. This is not the case with ABS and the strike zone. Historically, a certain discretion has been appreciated.'</p><p>I decided to email Alva Noë, a professor at Berkeley University and a baseball fan, for his opinion. 'Hardly a day goes by that I don't wake up and run through the reasons that this [robo-umpires] is such a terrible idea,' he replied. He later told me, 'This is part of a movement to use algorithms to take the hard choices of living out of life.' Perhaps he's right. We watch baseball to kill time, not to maximize it. <span class=\"hl\" id=\"hl-q40\" data-q=\"[Q40]\">Some players I have met take a dissenting stance toward the robots too, believing that accuracy is not the answer. According to Joe Russo, who plays for a New Jersey team, 'With technology, people just want everything to be perfect. That's not reality. I think perfect would be weird. Your teams are always winning, work is always just great, there's always money in your pocket, your car never breaks down. What is there to talk about?'</span></p><p><em>* strike: a strike is when the batter swings at a ball and misses or when the batter does not swing at a ball that passes through the strike zone.</em></p>",
+  "passageHtml": "<h2>READING PASSAGE 3</h2><h3>Invasion of the Robot Umpires</h3><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 1]</span> A few years ago, Fred DeJesus from Brooklyn, New York became the first umpire in a minor league baseball game to use something called the Automated Ball-Strike System (ABS), often referred to as the 'robo-umpire'. <span class=\"hl\" id=\"hl-q27\" data-q=\"[Q27]\">Instead of making any judgments himself about a strike*, DeJesus had decisions fed to him through an earpiece, connected to a modified missile-tracking system</span>. The contraption looked like a large black pizza box with one glowing green eye; it was mounted above the press stand.</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 2]</span> <span class=\"hl\" id=\"hl-q33\" data-q=\"[Q33]\">Major League Baseball (MLB), who had commissioned the system, wanted human umpires to announce the calls, just as they would have done in the past</span>. When the first pitch came in, a recorded voice told DeJesus it was a strike. <span class=\"hl\" id=\"hl-q34\" data-q=\"[Q34]\">Previously, calling a strike was a judgment call on the part of the umpire</span>. Even if the batter does not hit the ball, <span class=\"hl\" id=\"hl-q35\" data-q=\"[Q35]\">a pitch that passes through the 'strike zone' (an imaginary zone about seventeen inches wide, stretching from the batter's knees to the middle of his chest) is considered a strike</span>. <span class=\"hl\" id=\"hl-q37\" data-q=\"[Q37]\">During that first game, when DeJesus announced calls, there was no heckling and no shouted disagreement. Nobody said a word</span>.</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 3]</span> <span class=\"hl\" id=\"hl-q36\" data-q=\"[Q36]\">For a hundred and fifty years or so, the strike zone has been the game's animating force-countless arguments between a team's manager and the umpire have taken place over its boundaries and whether a ball had crossed through it</span>. The rules of play have evolved in various stages. Today, everyone knows that you may scream your disagreement in an umpire's face, but you must never shout personal abuse at them or touch them. That's a no-no. When the robo-umpires came, however, the arguments stopped.</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 4]</span> <span class=\"hl\" id=\"hl-q28\" data-q=\"[Q28]\">During the first robo-umpire season, players complained about some strange calls. In response, MLB decided to tweak the dimensions of the zone</span>, and the following year the consensus was that ABS is profoundly consistent. <span class=\"hl\" id=\"hl-q29\" data-q=\"[Q29]\">MLB says the device is near-perfect, precise to within fractions of an inch. 'It'll reduce controversy in the game, and be good for the game,' says Rob Manfred, who is Commissioner for MLB</span>. But the question is whether controversy is worth reducing, or whether it is the sign of a human hand. A human, at least, yells back.</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 5]</span> <span class=\"hl\" id=\"hl-q38\" data-q=\"[Q38]\">When I spoke with Frank Viola, a coach for Carolina team, he said that ABS works as designed, but that it was also unforgiving and pedantic, almost legalistic. 'Manfred is a lawyer,' Viola noted. Some pitchers have complained that, compared with a human's, the robot's strike zone seems too precise. Viola was once a major-league player himself. When he was pitching, he explained, umpires rewarded skill. 'Throw it where you aimed, and it would be a strike, even if it was an inch or two outside. There was a dialogue between pitcher and umpire.'</span></p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 6]</span> The executive tasked with running the experiment for MLB is Morgan Sword, who's in charge of baseball operations. <span class=\"hl\" id=\"hl-q39\" data-q=\"[Q39]\">According to Sword, ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans, as has been the case with horse racing and boxing</span>. He explains how they began the process by asking fans what version of baseball they found most exciting. <span class=\"hl\" id=\"hl-q30\" data-q=\"[Q30]\">The results showed that everyone wanted more action: more hits, more defense, more baserunning. This type of baseball essentially hasn't existed since the 1960s, when the hundred-mile-an-hour fastball, which is difficult to hit and control, entered the game. It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action</span>.</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 7]</span> <span class=\"hl\" id=\"hl-q31\" data-q=\"[Q31]\">Sword's team brainstormed potential fixes. Any rule that existed, they talked about changing-from changing the bats to changing the geometry of the field. But while all of these were ruled out as potential fixes, ABS was seen as a perfect vehicle for change</span>. <span class=\"hl\" id=\"hl-q32\" data-q=\"[Q32]\">According to Sword, once you get the technology right, you can load any strike zone you want into the system. 'It might be a triangle, or a blob, or something shaped like Texas. Over time, as baseball evolves, ABS can allow the zone to change with it.'</span></p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 8]</span> 'In the past twenty years, sports have moved away from judgment calls. Soccer has Video Assistant Referees (for offside decisions, for example). Tennis has Hawk-Eye (for line calls, for example). For almost a decade, baseball has used instant replay on the base paths. This is widely liked, even if the precision can sometimes cause problems. But these applications deal with something physical: bases, lines, goals. The boundaries of action are precise, delineated like the keys of a piano. This is not the case with ABS and the strike zone. Historically, a certain discretion has been appreciated.'</p><p><span class=\"para-num\" style=\"color: #2563eb; font-weight: bold; margin-right: 6px;\">[Đoạn 9]</span> I decided to email Alva Noë, a professor at Berkeley University and a baseball fan, for his opinion. 'Hardly a day goes by that I don't wake up and run through the reasons that this [robo-umpires] is such a terrible idea,' he replied. He later told me, 'This is part of a movement to use algorithms to take the hard choices of living out of life.' Perhaps he's right. We watch baseball to kill time, not to maximize it. <span class=\"hl\" id=\"hl-q40\" data-q=\"[Q40]\">Some players I have met take a dissenting stance toward the robots too, believing that accuracy is not the answer. According to Joe Russo, who plays for a New Jersey team, 'With technology, people just want everything to be perfect. That's not reality. I think perfect would be weird. Your teams are always winning, work is always just great, there's always money in your pocket, your car never breaks down. What is there to talk about?'</span></p><p><em>* strike: a strike is when the batter swings at a ball and misses or when the batter does not swing at a ball that passes through the strike zone.</em></p>",
   "groups": [
     {
       "id": "g1",
@@ -162,12 +162,12 @@
             "title": "Hiểu nội dung nhận định",
             "question": "Câu 30 nói: Cú ném bóng nhanh 100 dặm/giờ ('hundred-mile-an-hour fastball') đã tạo ra lối chơi kịch tính, hấp dẫn hơn ('more exciting style of play').",
             "guide": "Em cần tìm đoạn nhắc đến cú ném bóng 100 dặm/giờ và xem tác động của nó tới trận đấu là làm trận đấu hay hơn hay nhàm chán đi.",
-            "bridge": "Hãy tìm cụm từ 'hundred-mile-an-hour fastball' ở đoạn 5."
+            "bridge": "Hãy tìm cụm từ 'hundred-mile-an-hour fastball' ở Đoạn 6."
           },
           {
             "title": "Đối chiếu với bài đọc",
-            "question": "Đoạn 5 miêu tả bóng chày từ khi xuất hiện cú ném 100 dặm/giờ vào những năm 1960 như thế nào?",
-            "guide": "Đoạn 5 viết: cú ném này rất khó đánh trúng và khó kiểm soát, 'It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action.' (Nó làm trận đấu trở nên tẻ nhạt, thiếu vắng các pha hành động).",
+            "question": "Đoạn 6 miêu tả bóng chày từ khi xuất hiện cú ném 100 dặm/giờ vào những năm 1960 như thế nào?",
+            "guide": "Đoạn 6 viết: cú ném này rất khó đánh trúng và khó kiểm soát, 'It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action.' (Nó làm trận đấu trở nên tẻ nhạt, thiếu vắng các pha hành động).",
             "bridge": "'lacking much action' (thiếu hành động kịch tính) hoàn toàn trái ngược với 'more exciting'."
           },
           {
@@ -181,7 +181,7 @@
       "explanation": {
         "steps": [
           "<b>Ý nhận định:</b> Cú ném bóng tốc độ 100 dặm/giờ dẫn tới một lối chơi kịch tính, hấp dẫn hơn.",
-          "<b>Đoạn 5:</b> <i>'This type of baseball essentially hasn't existed since the 1960s, when the hundred-mile-an-hour fastball... entered the game. It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action.'</i>",
+          "<b>Đoạn 6:</b> <i>'This type of baseball essentially hasn't existed since the 1960s, when the hundred-mile-an-hour fastball... entered the game. It flattened the game into strikeouts, walks, and home runs-a type of play lacking much action.'</i>",
           "<b>Đối chiếu:</b> Nhận định nói lối chơi hấp dẫn hơn (<i>more exciting</i>) trái ngược hoàn toàn với bài đọc là trận đấu bị tẻ nhạt và thiếu hành động (<i>lacking much action</i>).",
           "<b>Kết luận:</b> Chọn <b>NO</b>."
         ]
@@ -198,12 +198,12 @@
             "title": "Tìm từ khóa nhận định",
             "question": "Câu 31 nói các đề xuất thay đổi gậy bóng chày ('proposals for alterations to the baseball bat') đã dẫn đến một cuộc tranh cãi nảy lửa ('fierce debate') trong đội của Sword.",
             "guide": "Em cần tìm xem khi nhóm của Sword bàn về việc đổi gậy đánh bóng, họ có tranh cãi gay gắt với nhau hay không.",
-            "bridge": "Cùng đọc đoạn 6 chỗ nhóm của Sword họp bàn nhé."
+            "bridge": "Cùng đọc Đoạn 7 chỗ nhóm của Sword họp bàn nhé."
           },
           {
-            "title": "Đọc đoạn 6",
-            "question": "Đoạn 6 kể về việc nhóm của Sword thảo luận như thế nào?",
-            "guide": "Đoạn 6 viết: nhóm của Sword đã cùng nhau động não tìm giải pháp, họ bàn về mọi quy tắc từ đổi gậy bóng chày đến đổi kích thước sân, nhưng sau đó đã loại bỏ tất cả các ý tưởng này.",
+            "title": "Đọc Đoạn 7",
+            "question": "Đoạn 7 kể về việc nhóm của Sword thảo luận như thế nào?",
+            "guide": "Đoạn 7 viết: nhóm của Sword đã cùng nhau động não tìm giải pháp, họ bàn về mọi quy tắc từ đổi gậy bóng chày đến đổi kích thước sân, nhưng sau đó đã loại bỏ tất cả các ý tưởng này.",
             "bridge": "Bài có nói cuộc thảo luận này có diễn ra 'tranh cãi nảy lửa' (fierce debate) không?"
           },
           {
@@ -217,7 +217,7 @@
       "explanation": {
         "steps": [
           "<b>Ý nhận định:</b> Những đề xuất thay đổi gậy bóng chày đã gây ra tranh cãi nảy lửa trong đội của Sword.",
-          "<b>Đoạn 6:</b> <i>'Sword's team brainstormed potential fixes. Any rule that existed, they talked about changing-from changing the bats to changing the geometry of the field. But while all of these were ruled out...'</i>",
+          "<b>Đoạn 7:</b> <i>'Sword's team brainstormed potential fixes. Any rule that existed, they talked about changing-from changing the bats to changing the geometry of the field. But while all of these were ruled out...'</i>",
           "<b>Đối chiếu:</b> Bài chỉ nói họ cùng nhau thảo luận (<i>brainstormed</i>) và loại trừ các ý kiến, không hề nhắc đến việc có xảy ra tranh cãi gay gắt (<i>fierce debate</i>) hay không.",
           "<b>Kết luận:</b> Chọn <b>NOT GIVEN</b>."
         ]
@@ -234,11 +234,11 @@
             "title": "Hiểu nội dung nhận định",
             "question": "Câu 32 nói: Hệ thống ABS giúp cho việc thay đổi hình dạng của vùng strike trở nên khả thi ('feasible').",
             "guide": "Em cần tìm phát ngôn của Sword về khả năng thay đổi hình dáng vùng strike khi sử dụng công nghệ ABS.",
-            "bridge": "Hãy đọc tiếp nửa sau của đoạn 6."
+            "bridge": "Hãy đọc tiếp nửa sau của Đoạn 7."
           },
           {
             "title": "Đối chiếu với bài đọc",
-            "question": "Đoạn 6 trích lời Sword nói gì về việc nạp các hình dạng vùng strike vào hệ thống?",
+            "question": "Đoạn 7 trích lời Sword nói gì về việc nạp các hình dạng vùng strike vào hệ thống?",
             "guide": "Sword nói: một khi công nghệ đã chuẩn, bạn có thể nạp bất kỳ vùng strike nào vào hệ thống, 'It might be a triangle, or a blob, or something shaped like Texas. Over time, as baseball evolves, ABS can allow the zone to change with it.' (Nó có thể là hình tam giác, hình giọt nước, hay hình bang Texas. ABS cho phép vùng này thay đổi theo thời gian).",
             "bridge": "Điều này chứng tỏ việc thay đổi hình dạng vùng strike là hoàn toàn làm được (feasible)."
           },
@@ -253,7 +253,7 @@
       "explanation": {
         "steps": [
           "<b>Ý nhận định:</b> ABS giúp việc thay đổi hình dạng vùng strike trở nên khả thi.",
-          "<b>Đoạn 6:</b> <i>'According to Sword... you can load any strike zone you want into the system. It might be a triangle, or a blob, or something shaped like Texas... ABS can allow the zone to change with it.'</i>",
+          "<b>Đoạn 7:</b> <i>'According to Sword... you can load any strike zone you want into the system. It might be a triangle, or a blob, or something shaped like Texas... ABS can allow the zone to change with it.'</i>",
           "<b>Đối chiếu:</b> Việc có thể cài đặt bất kỳ hình dạng nào (tam giác, giọt nước...) chứng minh việc thay đổi hình dáng là hoàn toàn khả thi (<i>feasible</i>).",
           "<b>Kết luận:</b> Chọn <b>YES</b>."
         ]
@@ -269,7 +269,7 @@
             "title": "Hiểu ý câu tóm tắt",
             "question": "Câu tóm tắt nói: Dù đã có ABS, ban tổ chức MLB vẫn muốn trọng tài người hô to các phán quyết như họ từng làm trong vai trò trước đây của mình ('as they had in their ______'). Cụm từ nào phù hợp?",
             "guide": "Sau tính từ sở hữu 'their' cần một cụm danh từ chỉ vai trò hoặc công việc trước kia của các trọng tài.",
-            "bridge": "Hãy tìm câu đầu đoạn 2 nói về mong muốn của MLB đối với trọng tài người."
+            "bridge": "Hãy tìm câu đầu Đoạn 2 nói về mong muốn của MLB đối với trọng tài người."
           },
           {
             "title": "Đối chiếu bài đọc",
@@ -304,7 +304,7 @@
             "title": "Hiểu ý câu tóm tắt",
             "question": "Câu tóm tắt nói: Trước đây, công việc của trọng tài đòi hỏi một sự đánh giá mang tính gì ('required a ______ about whether a ball was a strike')?",
             "guide": "Cần một cụm từ chỉ sự phán đoán, đánh giá dựa trên cảm tính hoặc góc nhìn cá nhân của con người.",
-            "bridge": "Hãy tìm câu nói về việc phán quyết trước khi có máy ở đoạn 2."
+            "bridge": "Hãy tìm câu nói về việc phán quyết trước khi có máy ở Đoạn 2."
           },
           {
             "title": "Đối chiếu bài đọc",
@@ -339,7 +339,7 @@
             "title": "Hiểu ý câu tóm tắt",
             "question": "Bóng được tính là strike khi người đánh không đánh trúng và bóng bay qua một vùng như thế nào ('crosses through a ______ extending approximately from the batter's knee to his chest')?",
             "guide": "Cần một cụm từ chỉ một khu vực quy ước, tưởng tượng trong không gian từ đầu gối đến ngực của cầu thủ.",
-            "bridge": "Đọc tiếp câu giải thích về 'strike zone' ở đoạn 2 nhé."
+            "bridge": "Đọc tiếp câu giải thích về 'strike zone' ở Đoạn 2 nhé."
           },
           {
             "title": "Đối chiếu bài đọc",
@@ -374,7 +374,7 @@
             "title": "Hiểu ý câu tóm tắt",
             "question": "Câu tóm tắt nói: Trong quá khứ, những sự việc gì ('______ over strike calls') liên quan đến phán quyết strike là không hề hiếm gặp?",
             "guide": "Chỗ trống cần một danh từ số nhiều chỉ các cuộc tranh cãi, bất đồng giữa cầu thủ, huấn luyện viên và trọng tài.",
-            "bridge": "Hãy đọc câu đầu tiên của đoạn 3."
+            "bridge": "Hãy đọc câu đầu tiên của Đoạn 3."
           },
           {
             "title": "Đối chiếu bài đọc",
@@ -409,7 +409,7 @@
             "title": "Hiểu ý câu tóm tắt",
             "question": "Câu tóm tắt nói: Tuy nhiên, trong trận đầu tiên DeJesus dùng ABS, các phán quyết strike lại được đón nhận trong trạng thái như thế nào ('were met with ______')?",
             "guide": "Cần một cụm từ chỉ bầu không khí im lặng, không ai cãi lại một lời.",
-            "bridge": "Hãy đọc câu cuối cùng của đoạn 2."
+            "bridge": "Hãy đọc câu cuối cùng của Đoạn 2."
           },
           {
             "title": "Đối chiếu bài đọc",
@@ -448,20 +448,20 @@
       "socratic": {
         "steps": [
           {
-            "title": "Hiểu câu hỏi trắc nghiệm",
-            "question": "Câu 38 hỏi: Tác giả ngụ ý điều gì về hệ thống ABS ở đoạn 4 (phần thảo luận về sự tranh cãi và tính người)?",
-            "guide": "Em hãy đọc đoạn tác giả bàn luận: liệu việc loại bỏ hoàn toàn tranh cãi có thực sự tốt cho trận đấu không.",
-            "bridge": "Hãy xem huấn luyện viên Frank Viola và tác giả nói gì về cái 'hồn' của trận đấu."
+            "title": "Định vị hiện trường câu hỏi",
+            "question": "Câu 38 hỏi: Tác giả ngụ ý điều gì về hệ thống ABS ở Đoạn 5 (đoạn bắt đầu bằng 'When I spoke with Frank Viola...')?",
+            "guide": "Em hãy đọc kỹ toàn bộ Đoạn 5, xem huấn luyện viên Frank Viola và tác giả nói gì về sự khô khan của robot so với trọng tài người.",
+            "bridge": "Cùng xem Viola nhớ lại những ngày ông còn thi đấu bóng chày nhé."
           },
           {
-            "title": "Đối chiếu ý kiến trong bài",
-            "question": "Tác giả và Viola thấy máy móc quá chính xác thì sẽ làm mất đi điều gì vốn có của bóng chày?",
-            "guide": "Bài viết: tranh cãi chính là ngọn lửa làm nên sự sống động của trận đấu suốt 150 năm. Khi dùng người, trọng tài biết tưởng thưởng cho sự khéo léo và có sự tương tác (dialogue). Nhưng robot thì quá cứng nhắc, máy móc và cạn kiệt cảm xúc.",
-            "bridge": "Điều này có thể làm giảm bớt sức hút tự nhiên của môn thể thao này."
+            "title": "Đối chiếu ý kiến trong Đoạn 5",
+            "question": "Viola thấy khi robot bắt bóng quá cứng nhắc và chuẩn xác tuyệt đối thì sẽ làm mất đi điều gì vốn có của bóng chày?",
+            "guide": "Viola nói: trước đây trọng tài thưởng cho kỹ năng khéo léo của người ném bóng ('rewarded skill') và có sự tương tác, đối thoại giữa người với người ('dialogue between pitcher and umpire'). Còn robot thì vô cảm, quá cứng nhắc và chi li ('unforgiving and pedantic').",
+            "bridge": "Việc máy móc quá chi li, thiếu tương tác người sẽ làm mất đi sự hấp dẫn tự nhiên của trận đấu."
           },
           {
             "title": "Chọn phương án đúng",
-            "question": "Phương án nào diễn đạt ý 'Nó có thể làm giảm đi một phần sức hút của trận đấu'?",
+            "question": "Phương án nào diễn đạt ý 'Nó có thể làm giảm bớt sức hút của môn thể thao này'?",
             "guide": "Đó là B: 'It may reduce some of the appeal of the game'.",
             "bridge": "Chốt câu 38: B."
           }
@@ -469,9 +469,9 @@
       },
       "explanation": {
         "steps": [
-          "<b>Ý câu hỏi:</b> Tác giả gợi ý điều gì về ABS ở đoạn 4?",
-          "<b>Đoạn 4:</b> Đặt ra câu hỏi: <i>'whether controversy is worth reducing, or whether it is the sign of a human hand'</i> và trích lời Viola cho rằng trước đây trọng tài thưởng cho kỹ năng ném bóng khéo léo (<i>'rewarded skill'</i>) và có sự giao tiếp giữa người với người (<i>'dialogue'</i>), trong khi robot thì quá cứng nhắc và khô khan.",
-          "<b>Khớp ý:</b> Việc làm mất đi tính người và các cuộc đối thoại làm giảm sức hấp dẫn của môn bóng chày -> <i>reduce some of the appeal of the game</i>.",
+          "<b>Ý câu hỏi:</b> Tác giả gợi ý điều gì về ABS ở Đoạn 5?",
+          "<b>Đoạn 5:</b> Trích lời Frank Viola cho biết hệ thống ABS quá cứng nhắc, chi li (<i>'unforgiving and pedantic, almost legalistic'</i>). Ngày xưa trọng tài người biết tưởng thưởng cho sự khéo léo của cầu thủ (<i>'rewarded skill'</i>) và có sự giao tiếp giữa người với người (<i>'dialogue'</i>).",
+          "<b>Khớp ý:</b> Việc robot phán quyết quá máy móc và làm mất đi sự tương tác giữa con người sẽ làm giảm sức hút của trận đấu -> <i>reduce some of the appeal of the game</i>.",
           "<b>Kết luận:</b> Chọn <b>B</b>."
         ]
       }
@@ -492,13 +492,13 @@
           {
             "title": "Hiểu câu hỏi trắc nghiệm",
             "question": "Câu 39 hỏi: Ông Morgan Sword cho biết việc đưa ABS vào áp dụng là nhằm mục đích gì?",
-            "guide": "Hãy quét tên riêng 'Morgan Sword' ở đoạn 5 để tìm lý do sâu xa mà ban lãnh đạo đưa ABS vào bóng chày.",
-            "bridge": "Đoạn 5 có giải thích nỗi lo sợ của ban điều hành MLB."
+            "guide": "Hãy quét tên riêng 'Morgan Sword' ở Đoạn 6 để tìm lý do sâu xa mà ban lãnh đạo đưa ABS vào bóng chày.",
+            "bridge": "Đoạn 6 có giải thích nỗi lo sợ của ban điều hành MLB."
           },
           {
             "title": "Tìm câu chứa thông tin",
-            "question": "Đoạn 5 nói các nhà quản lý đưa ABS vào vì lo sợ điều gì?",
-            "guide": "Đoạn 5 viết: 'ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans, as has been the case with horse racing and boxing.' (ABS là một phần trong kế hoạch làm bóng chày hấp dẫn hơn vì các lãnh đạo rất sợ mất đi lượng khán giả trẻ).",
+            "question": "Đoạn 6 nói các nhà quản lý đưa ABS vào vì lo sợ điều gì?",
+            "guide": "Đoạn 6 viết: 'ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans, as has been the case with horse racing and boxing.' (ABS là một phần trong kế hoạch làm bóng chày hấp dẫn hơn vì các lãnh đạo rất sợ mất đi lượng khán giả trẻ).",
             "bridge": "'sợ mất khán giả trẻ' nghĩa là muốn giữ chân người hâm mộ trẻ tuổi."
           },
           {
@@ -512,7 +512,7 @@
       "explanation": {
         "steps": [
           "<b>Ý câu hỏi:</b> Morgan Sword nói việc đưa ABS vào áp dụng nhằm mục đích gì?",
-          "<b>Đoạn 5 (dòng 2-4):</b> <i>'...ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans...'</i>",
+          "<b>Đoạn 6 (dòng 2-4):</b> <i>'...ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans...'</i>",
           "<b>Khớp từ:</b> <i>terrified of losing younger fans</i> = <i>ensure baseball retained a young audience</i> (đảm bảo giữ chân được khán giả trẻ).",
           "<b>Kết luận:</b> Chọn <b>D</b>."
         ]
@@ -533,8 +533,8 @@
         "steps": [
           {
             "title": "Hiểu câu hỏi trắc nghiệm",
-            "question": "Câu 40 hỏi: Tại sao tác giả lại đưa quan điểm của giáo sư Noë và cầu thủ Russo vào đoạn cuối?",
-            "guide": "Em hãy đọc đoạn cuối xem cả Noë và Russo cùng nhấn mạnh điều gì về sự hoàn hảo và niềm vui trong cuộc sống cũng như thể thao.",
+            "question": "Câu 40 hỏi: Tại sao tác giả lại đưa quan điểm của giáo sư Noë và cầu thủ Russo vào đoạn cuối (Đoạn 9)?",
+            "guide": "Em hãy đọc đoạn 9 xem cả Noë và Russo cùng nhấn mạnh điều gì về sự hoàn hảo và niềm vui trong cuộc sống cũng như thể thao.",
             "bridge": "Cùng xem Russo nói gì về sự 'hoàn hảo' và 'chuẩn xác' nhé."
           },
           {
@@ -554,7 +554,7 @@
       "explanation": {
         "steps": [
           "<b>Ý câu hỏi:</b> Vì sao tác giả đưa vào ý kiến của Noë và Russo ở đoạn cuối?",
-          "<b>Đoạn cuối:</b> Noë cho rằng thuật toán đang cướp đi những lựa chọn cam go của cuộc đời. Russo chỉ ra rằng chuẩn xác không phải là giải pháp tốt nhất (<i>'accuracy is not the answer'</i>) vì một trận đấu quá hoàn hảo sẽ trở nên kỳ cục và mất hết điều thú vị để bàn luận.",
+          "<b>Đoạn 9 (cuối bài):</b> Noë cho rằng thuật toán đang cướp đi những lựa chọn cam go của cuộc đời. Russo chỉ ra rằng chuẩn xác không phải là giải pháp tốt nhất (<i>'accuracy is not the answer'</i>) vì một trận đấu quá hoàn hảo sẽ trở nên kỳ cục và mất hết điều thú vị để bàn luận.",
           "<b>Khớp ý:</b> Cả hai đều khẳng định việc máy móc làm đúng từng li từng tí (<i>accuracy</i>) không mang lại niềm vui hay sự hứng khởi thật sự (<i>enjoyment</i>).",
           "<b>Kết luận:</b> Chọn <b>C</b>."
         ]
