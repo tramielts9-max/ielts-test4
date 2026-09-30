@@ -8,105 +8,130 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/reading.css">
   <style>
-    /* Bù chiều cao để thanh điều hướng đáy không che mất câu hỏi cuối */
+    /* Bù chiều cao để thanh điều hướng đáy không che mất nội dung cuối */
     .container {
       height: calc(100vh - 190px) !important;
       margin-bottom: 58px;
     }
 
-    /* 1. KHUNG GỢI Ý MỚM DẪN DẮT (SOCRATIC) THU GỌN - BUNG RA */
+    /* 1. KHỐI ĐỀ TỔNG HỢP (SUMMARY / NOTES) GIỮ NGUYÊN 1 KHỐI DUY NHẤT */
+    .unified-notes-card {
+      background: var(--bg-card, #ffffff);
+      border: 2px solid #0284c7;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 25px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    .unified-notes-card h3 {
+      margin-top: 0;
+      color: #8B1518;
+      font-weight: 800;
+      border-bottom: 1.5px solid #e2e8f0;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+
+    /* 2. KHUNG GỢI Ý MỚM DẪN DẮT (SOCRATIC) NẰM Ở Ô MÀU ĐỎ (TRÊN DÒNG CÂU HỎI) */
     .socratic-card {
       background: #f8fafc;
       border: 1.5px solid #cbd5e1;
       border-radius: 8px;
-      margin: 10px 0 12px 0;
+      margin: 8px 0;
       overflow: hidden;
-      transition: all 0.25s ease;
+      line-height: 1.5;
     }
     .socratic-header-bar {
-      padding: 9px 14px;
-      background: #f1f5f9;
+      padding: 7px 12px;
+      background: #fff1f2;
+      border-left: 3.5px solid #8B1518;
       display: flex;
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
       user-select: none;
     }
-    .socratic-header-bar:hover {
-      background: #e2e8f0;
-    }
+    .socratic-header-bar:hover { background: #fee2e2; }
     .socratic-badge {
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 700;
-      background: #e0f2fe;
-      color: #0369a1;
-      padding: 3px 8px;
-      border-radius: 12px;
+      background: #ffffff;
+      color: #8B1518;
+      padding: 2px 7px;
+      border-radius: 10px;
+      border: 1px solid #fecdd3;
     }
     .socratic-toggle-btn {
       background: #8B1518;
       color: #ffffff;
       border: none;
-      padding: 4px 10px;
-      border-radius: 5px;
-      font-size: 12px;
+      padding: 3px 9px;
+      border-radius: 4px;
+      font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
     }
     .socratic-body {
-      padding: 14px;
+      padding: 12px;
       background: #ffffff;
-      border-top: 1px solid #cbd5e1;
+      border-top: 1px solid #fecdd3;
     }
 
-    /* Vị trí ô điền câu hỏi trong Gap Fill */
-    .gap-fill-question-card {
-      background: var(--bg-card, #ffffff);
-      border: 1.5px solid var(--border-color, #e2e8f0);
-      border-radius: 8px;
-      padding: 16px;
-      margin-top: 16px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-    }
-    .gap-fill-input-bar {
-      margin: 12px 0 10px 0;
-      padding: 10px 14px;
-      background: var(--bg-subcard, #f8fafc);
-      border: 1.5px solid #cbd5e1;
+    /* 3. MẠCH SUY NGHĨ NẰM Ở Ô MÀU XANH (NGAY DƯỚI DÒNG CÂU HỎI) */
+    .inline-thought-box {
+      margin: 6px 0 12px 0;
+      padding: 8px 12px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 3.5px solid #16a34a;
       border-radius: 6px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
+      line-height: 1.4;
+    }
+    .inline-thought-box label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #166534;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .inline-thought-box textarea {
+      width: 100%;
+      height: 38px;
+      min-height: 38px;
+      padding: 6px 10px;
+      font-size: 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      background: #ffffff;
+      color: var(--text-main);
+      resize: vertical;
+      outline: none;
+      box-sizing: border-box;
     }
 
-    /* 2. KHUNG TRẮC NGHIỆM MULTIPLE CHOICE */
+    /* 4. TRẮC NGHIỆM MULTIPLE CHOICE & TRUE/FALSE */
     .mcq-options-list {
       display: flex;
       flex-direction: column;
-      gap: 9px;
-      margin: 12px 0;
+      gap: 8px;
+      margin: 10px 0;
     }
     .mcq-option-item {
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      padding: 10px 14px;
-      border: 1.5px solid var(--border-color, #cbd5e1);
+      padding: 9px 12px;
+      border: 1.5px solid #cbd5e1;
       border-radius: 8px;
-      background: var(--bg-card, #ffffff);
+      background: #ffffff;
       cursor: pointer;
       transition: all 0.15s ease;
       user-select: none;
     }
-    .mcq-option-item:hover {
-      border-color: #0284c7;
-      background: #f0f9ff;
-    }
-    .mcq-option-item.selected {
-      border-color: #0284c7;
-      background: #e0f2fe;
-    }
+    .mcq-option-item:hover { border-color: #0284c7; background: #f0f9ff; }
+    .mcq-option-item.selected { border-color: #0284c7; background: #e0f2fe; }
     .mcq-badge {
       font-weight: 800;
       color: #0369a1;
@@ -118,49 +143,24 @@
       text-align: center;
       flex-shrink: 0;
     }
-    .mcq-option-item.selected .mcq-badge {
-      background: #0284c7;
-      color: #ffffff;
-    }
+    .mcq-option-item.selected .mcq-badge { background: #0284c7; color: #ffffff; }
 
-    /* 3. NÚT CHỌN TRUE / FALSE / NOT GIVEN */
-    .choice-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 12px 0;
-    }
+    .choice-group { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
     .choice-btn-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: #ffffff;
-      border: 1.5px solid #cbd5e1;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 13.5px;
-      transition: all 0.15s ease;
-      user-select: none;
+      display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px;
+      background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 6px;
+      cursor: pointer; font-weight: 700; font-size: 13px; transition: all 0.15s;
     }
-    .choice-btn-label:hover {
-      border-color: #0284c7;
-      background: #f0f9ff;
-    }
-    .choice-btn-label.active {
-      border-color: #0284c7;
-      background: #0284c7;
-      color: #ffffff;
-    }
+    .choice-btn-label:hover { border-color: #0284c7; background: #f0f9ff; }
+    .choice-btn-label.active { border-color: #0284c7; background: #0284c7; color: white; }
 
-    /* 4. THANH ĐIỀU HƯỚNG DƯỚI ĐÁY (BOTTOM BAR CHUẨN LISTENING) */
+    /* 5. THANH ĐIỀU HƯỚNG DƯỚI ĐÁY LIÊN KẾT PASSAGE 1, 2, 3 */
     .bottom-nav-bar {
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 54px;
+      height: 52px;
       background: #ffffff;
       border-top: 1.5px solid #e2e8f0;
       display: flex;
@@ -191,7 +191,7 @@
     .passages-container {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       overflow-x: auto;
       flex: 1;
       padding: 2px 4px;
@@ -214,7 +214,7 @@
       background: #f8fafc;
       color: #64748b;
       cursor: pointer;
-      padding: 6px 12px;
+      padding: 5px 12px;
       font-weight: 600;
       transition: all 0.2s;
     }
@@ -232,7 +232,7 @@
       background: #ffffff; /* Trắng khi chưa làm */
       color: #1e293b;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 12.5px;
       cursor: pointer;
       flex-shrink: 0;
       transition: all 0.15s;
@@ -257,24 +257,26 @@
       background: #0284c7;
       color: white;
       border: none;
-      padding: 8px 12px;
+      padding: 7px 12px;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 700;
       white-space: nowrap;
+      font-size: 13px;
     }
     .btn-submit-bar {
       background: #16a34a;
       color: white;
       border: none;
-      padding: 8px 18px;
+      padding: 7px 16px;
       border-radius: 6px;
       font-weight: 700;
       cursor: pointer;
       white-space: nowrap;
+      font-size: 13px;
     }
 
-    /* 5. MODAL REVIEW ANSWER SHEET & KẾT QUẢ */
+    /* 6. MODAL BẢNG ANSWER SHEET & KẾT QUẢ */
     .modal-backdrop {
       position: fixed;
       inset: 0;
@@ -362,7 +364,7 @@
   </div>
 
   <div class="passages-container" id="passagesNavContainer">
-    <!-- Cụm Tab Passage 1, 2, 3 và danh sách nút số câu sẽ được dựng động tại đây -->
+    <!-- Cụm Tab Passage 1, 2, 3 và danh sách nút số câu sẽ được dựng tự động tại đây -->
   </div>
 
   <div style="display: flex; align-items: center; gap: 8px;">
@@ -421,7 +423,7 @@
       if (btnEl) btnEl.innerText = isHidden ? '▲ Thu gọn lại' : '▼ Mở gợi ý';
     };
 
-    // TIẾP TỤC NẤC TIẾP THEO TRONG BẬC THANG SOCRATIC & TỰ ĐỘNG ĐIỀN ĐÁP ÁN VÀO BÀI
+    // TIẾP TỤC NẤC TIẾP THEO TRONG BẬC THANG SOCRATIC & TỰ ĐỘNG ĐIỀN ĐÁP ÁN VÀO ĐỀ
     window.nextSocraticStep = function(qId, step, finalAnswer) {
       var ans = document.getElementById(qId + '_ans_' + step);
       if (ans) ans.style.display = 'block';
@@ -451,20 +453,20 @@
           badge.style.background = '#16a34a';
           badge.style.color = 'white';
         }
-        // TỰ ĐỘNG ĐỒNG BỘ ĐÁP ÁN CHUẨN VÀO Ô ĐIỀN CỦA ĐỀ
+        // TỰ ĐỘNG ĐIỀN ĐÁP ÁN VÀO Ô ĐIỀN CHÍNH TRÊN ĐỀ
         if (finalAnswer) {
           window.syncUserAnswer(qId, finalAnswer);
         }
       }
     };
 
-    // ĐỒNG BỘ ĐÁP ÁN TOÀN DIỆN CHO CẢ Ô ĐIỀN TRÊN ĐOẠN VĂN VÀ Ô ĐIỀN BÊN DƯỚI
+    // ĐỒNG BỘ ĐÁP ÁN & CẬP NHẬT MÀU NÚT THANH ĐIỀU HƯỚNG
     window.syncUserAnswer = function(qId, val) {
       if (val === undefined || val === null) return;
       var cleanVal = String(val).trim();
 
-      // 1. Đồng bộ ô input văn bản (cả ô trống trên đoạn văn và ô nhập riêng)
-      var textInputs = document.querySelectorAll(`input[id="${qId}_input"], input[id="${qId}_input_mirror"]`);
+      // 1. Đồng bộ ô input text
+      var textInputs = document.querySelectorAll(`input[id="${qId}_input"]`);
       textInputs.forEach(el => {
         if (el && el.value !== cleanVal) {
           el.value = cleanVal;
@@ -472,7 +474,7 @@
         }
       });
 
-      // 2. Đồng bộ radio buttons / pills
+      // 2. Đồng bộ radio buttons
       var radios = document.querySelectorAll(`input[name="${qId}"]`);
       radios.forEach(rb => {
         var isMatch = rb.value.trim().toUpperCase() === cleanVal.toUpperCase();
@@ -484,11 +486,7 @@
         }
       });
 
-      // 3. Đồng bộ thẻ Select
-      var sel = document.getElementById(qId + '_select');
-      if (sel && sel.value !== cleanVal) sel.value = cleanVal;
-
-      // 4. CẬP NHẬT MÀU NÚT TRÊN THANH ĐIỀU HƯỚNG: ĐÃ ĐIỀN -> XÁM, RỖNG -> TRẮNG
+      // 3. CẬP NHẬT MÀU NÚT TRÊN THANH ĐIỀU HƯỚNG: ĐÃ ĐIỀN -> XÁM, RỖNG -> TRẮNG
       var badgeBtn = document.getElementById(`badge_${qId}`);
       if (badgeBtn) {
         if (cleanVal !== "") {
@@ -516,8 +514,10 @@
     return [];
   }
 
-  // DỰNG GIAO DIỆN READING VỚI THỨ TỰ CHUẨN:
-  // ĐỀ BÀI -> GỢI Ý MỚM SOCRATIC (TRÊN) -> Ô ĐIỀN ĐÁP ÁN -> MẠCH SUY NGHĨ (DƯỚI)
+  // =========================================================================
+  // DỰNG GIAO DIỆN READING:
+  // GAP FILL NẰM TRONG 1 KHỐI DUY NHẤT: SOCRATIC (Ô ĐỎ TRÊN) + MẠCH SUY NGHĨ (Ô XANH DƯỚI)
+  // =========================================================================
   window.buildReadingHtml = function(data) {
     if (!data.groups || !data.questions) return data.questionHtml || "";
     let html = '';
@@ -533,60 +533,49 @@
       const isTFNG = gType.includes('tfng') || gMeta.includes('true/false/not given');
       const isYNNG = gType.includes('ynng') || gMeta.includes('yes/no/not given');
 
-      // 1. DẠNG BÀI ĐIỀN TỪ (NOTES / SUMMARY)
+      // 1. DẠNG BÀI ĐIỀN TỪ (NOTES / SUMMARY) -> GIỮ NGUYÊN 1 KHỐI DUY NHẤT
       if (group.template) {
-        if (group.noteTitle || group.summaryTitle) {
-          html += `<h3 style="margin-top:12px; margin-bottom:8px;">${group.noteTitle || group.summaryTitle}</h3>`;
-        }
+        let content = group.template;
 
-        let summaryText = group.template;
+        // Thay thế từng {{qId}} thành:
+        // [SOCRATIC - Ô MÀU ĐỎ TRÊN] + [Ô ĐIỀN ĐÁP ÁN NGAY TRÊN DÒNG] + [MẠCH SUY NGHĨ - Ô MÀU XANH DƯỚI]
         group.questionIds.forEach(qId => {
           const q = data.questions[qId];
           const width = q?.inputWidth || "120px";
-          summaryText = summaryText.replace(
-            new RegExp(`{{${qId}}}`, 'g'),
-            `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`
-          );
+
+          // Khung Socratic (Ô màu đỏ)
+          const socraticPart = renderSocraticHtml(qId, q);
+
+          // Ô điền trực tiếp trên đề
+          const inputPart = `<input type="text" class="fill-input" id="${qId}_input" style="width:${width}; font-weight:700; color:#0284c7; text-align:center;" placeholder="[Câu ${q?.num || qId}]" oninput="window.syncUserAnswer('${qId}', this.value)">`;
+
+          // Mạch suy nghĩ (Ô màu xanh nằm ngay dưới dòng câu hỏi)
+          const thoughtPart = `
+            <div class="inline-thought-box" id="${qId}_thought_box">
+              <label>💭 Mạch suy nghĩ của em (Câu ${q?.num || qId}):</label>
+              <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
+            </div>
+            <div class="result" id="${qId}_result"></div>
+            ${renderExplanationHtml(qId, q)}
+          `;
+
+          // Gộp 3 phần vào đúng vị trí của câu hỏi
+          const fullQuestionSlot = `
+            ${socraticPart}
+            ${inputPart}
+            ${thoughtPart}
+          `;
+
+          content = content.replace(new RegExp(`{{${qId}}}`, 'g'), fullQuestionSlot);
         });
 
+        // Toàn bộ bài tóm tắt nằm trong 1 hộp duy nhất
         html += `
-          <div class="question" style="background:var(--bg-subcard, #f8fafc); border-left:4px solid #0284c7; padding:16px; border-radius:6px; line-height:1.85; font-size:14.5px; margin-bottom:20px;">
-            ${summaryText}
+          <div class="unified-notes-card">
+            ${(group.noteTitle || group.summaryTitle) ? `<h3>${group.noteTitle || group.summaryTitle}</h3>` : ''}
+            <div>${content}</div>
           </div>
         `;
-
-        // Từng câu hỏi: Socratic NẰM TRÊN ô điền, Mạch suy nghĩ NẰM DƯỚI
-        group.questionIds.forEach(qId => {
-          const q = data.questions[qId];
-          if (!q) return;
-
-          html += `
-            <div class="gap-fill-question-card" id="${qId}">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <b style="color:var(--primary-blue); font-size:15px;">📍 Câu ${q.num || qId}:</b>
-              </div>
-
-              <!-- GỢI Ý MỚM DẪN DẮT (SOCRATIC) NẰM NGAY TRÊN Ô ĐIỀN -->
-              ${renderSocraticHtml(qId, q)}
-
-              <!-- Ô ĐIỀN ĐÁP ÁN CHO CÂU NÀY -->
-              <div class="gap-fill-input-bar">
-                <label for="${qId}_input_mirror" style="font-weight:700; font-size:14px;">✍️ Đáp án câu ${q.num || qId}:</label>
-                <input type="text" class="fill-input" id="${qId}_input_mirror" placeholder="Gõ từ cần điền..." style="width:200px; font-weight:700;" oninput="window.syncUserAnswer('${qId}', this.value)">
-                <span style="font-size:12px; color:var(--text-muted);">(Tự động đồng bộ với ô trống trên đoạn văn)</span>
-              </div>
-
-              <!-- MẠCH SUY NGHĨ CỦA EM NẰM NGAY DƯỚI Ô ĐIỀN -->
-              <div class="thought-box" style="margin-top:10px;">
-                <label>💭 Mạch suy nghĩ của em:</label>
-                <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
-              </div>
-
-              <div class="result"></div>
-              ${renderExplanationHtml(qId, q)}
-            </div>
-          `;
-        });
       }
       // 2. DẠNG CÂU HỎI RỜI (MCQ, MATCHING, TFNG, YNNG)
       else {
@@ -620,9 +609,9 @@
             `;
           }
 
-          // MẠCH SUY NGHĨ NẰM NGAY DƯỚI Ô ĐÁP ÁN
+          // MẠCH SUY NGHĨ NẰM DƯỚI Ô ĐÁP ÁN
           html += `
-              <div class="thought-box" style="margin-top:12px;">
+              <div class="inline-thought-box" style="margin-top:12px;">
                 <label>💭 Mạch suy nghĩ của em:</label>
                 <textarea id="${qId}_thought" placeholder="Ghi chú lý do em chọn đáp án này..."></textarea>
               </div>
@@ -639,7 +628,7 @@
     return html;
   };
 
-  // KHUNG GỢI Ý MỚM SOCRATIC: MẶC ĐỊNH THU GỌN, BẤM MỚI BUNG
+  // KHUNG GỢI Ý MỚM SOCRATIC (Ô MÀU ĐỎ): MẶC ĐỊNH THU GỌN, BẤM MỚI BUNG
   function renderSocraticHtml(qId, q) {
     if (!q.socratic || !q.socratic.steps || q.socratic.steps.length === 0) return '';
     const total = q.socratic.steps.length;
@@ -649,7 +638,7 @@
       <div class="socratic-card" id="${qId}_soc_card">
         <div class="socratic-header-bar" onclick="window.toggleSocratic('${qId}')">
           <div style="display:flex; align-items:center; gap:8px;">
-            <b style="color:var(--primary-blue); font-size:13.5px;">🪜 GỢI Ý MỚM DẪN DẮT (SOCRATIC)</b>
+            <b style="color:#8B1518; font-size:13px;">🪜 GỢI Ý MỚM DẪN DẮT (SOCRATIC)</b>
             <span class="socratic-badge" id="${qId}_badge" data-total="${total}">Nấc 1/${total}</span>
           </div>
           <button type="button" class="socratic-toggle-btn" id="${qId}_soc_toggle_btn">▼ Mở gợi ý</button>
@@ -664,15 +653,15 @@
 
       sHtml += `
         <div id="${qId}_step_${stepNum}" style="display:${isFirst ? 'block' : 'none'}; ${!isFirst ? 'margin-top:12px; border-top:1px dashed #cbd5e1; padding-top:10px;' : ''}">
-          <p style="margin:0 0 6px 0; font-size:13.5px; font-weight:700; color:var(--text-main);">
+          <p style="margin:0 0 6px 0; font-size:13px; font-weight:700; color:var(--text-main);">
             🤖 Nấc ${stepNum}: ${step.title}<br>
-            <span style="font-weight:normal; color:var(--text-muted);">${step.question}</span>
+            <span style="font-weight:normal; color:var(--text-muted); font-size:12.5px;">${step.question}</span>
           </p>
           <div style="display:flex; gap:6px;">
-            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập câu trả lời của em..." style="flex:1; padding:7px 10px; border:1px solid #cbd5e1; border-radius:4px; font-size:13px;" onkeydown="if(event.key==='Enter') window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">
-            <button type="button" id="${qId}_btn_${stepNum}" style="background:var(--primary-blue); color:white; border:none; padding:7px 15px; border-radius:4px; font-weight:700; cursor:pointer;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
+            <input type="text" id="${qId}_in_${stepNum}" placeholder="Nhập câu trả lời của em..." style="flex:1; padding:6px 10px; border:1px solid #cbd5e1; border-radius:4px; font-size:12.5px;" onkeydown="if(event.key==='Enter') window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">
+            <button type="button" id="${qId}_btn_${stepNum}" style="background:#8B1518; color:white; border:none; padding:6px 14px; border-radius:4px; font-weight:700; cursor:pointer; font-size:12.5px;" onclick="window.nextSocraticStep('${qId}', ${stepNum}, '${ans}')">Gửi</button>
           </div>
-          <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:13px; line-height:1.5;">
+          <div id="${qId}_ans_${stepNum}" style="display:none; background:#f0fdf4; border-left:4px solid #16a34a; padding:8px 12px; border-radius:4px; margin-top:8px; font-size:12.5px; line-height:1.5;">
             <div style="color:#166534; font-weight:700;">🎯 LỜI GIẢI HƯỚNG DẪN:</div>
             <div style="color:#1e293b;">${step.guide}</div>
             ${step.bridge ? `<div style="margin-top:4px; font-style:italic; color:#475569;">🌉 <i>${step.bridge}</i></div>` : ''}
@@ -683,7 +672,7 @@
 
     sHtml += `
           <div style="text-align: right; margin-top: 10px;">
-            <button type="button" onclick="window.toggleSocratic('${qId}')" style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1; padding:5px 12px; border-radius:4px; font-size:12px; cursor:pointer; font-weight:600;">▲ Thu gọn lại</button>
+            <button type="button" onclick="window.toggleSocratic('${qId}')" style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1; padding:4px 10px; border-radius:4px; font-size:11.5px; cursor:pointer; font-weight:600;">▲ Thu gọn lại</button>
           </div>
         </div>
       </div>
@@ -729,24 +718,24 @@
     let hlBtn = q.highlightId ? `<button type="button" class="btn-header" style="background:#0284c7; margin-top:8px;" onclick="window.highlightText('${q.highlightId}')">📍 Xem dẫn chứng bài đọc</button>` : '';
 
     return `
-      <div class="explanation" style="display:none; margin-top: 14px;">
+      <div class="explanation" style="display:none; margin-top: 10px;">
         <div class="kw-exp">🎯 LỜI GIẢI CHI TIẾT:</div>
         ${expSteps}
         ${hlBtn}
         
-        <div class="ai-assistant-box" style="margin-top: 14px; padding: 12px; background: var(--bg-card); border: 1.5px solid #cbd5e1; border-radius: 8px;">
-          <div style="font-weight: 700; font-size: 13.5px; color: var(--primary-blue); margin-bottom: 6px;">
-            🤖 Hỏi Trợ Giảng AI về câu này (Stream Real-time):
+        <div class="ai-assistant-box" style="margin-top: 12px; padding: 10px; background: var(--bg-card); border: 1px solid #cbd5e1; border-radius: 6px;">
+          <div style="font-weight: 700; font-size: 13px; color: var(--primary-blue); margin-bottom: 6px;">
+            🤖 Hỏi Trợ Giảng AI về câu này:
           </div>
-          <div style="display: flex; gap: 8px;">
+          <div style="display: flex; gap: 6px;">
             <input type="text" id="ai_ask_${qId}" placeholder="Hỏi tại sao đúng/sai, dịch nghĩa từ..." 
-                   style="flex: 1; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13.5px;"
+                   style="flex: 1; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 5px; font-size: 13px;"
                    onkeydown="if(event.key==='Enter') window.askGeminiAI('${qId}')">
-            <button type="button" id="ai_btn_${qId}" class="ai-btn" onclick="window.askGeminiAI('${qId}')" style="cursor:pointer; white-space:nowrap;">
+            <button type="button" id="ai_btn_${qId}" class="ai-btn" onclick="window.askGeminiAI('${qId}')" style="cursor:pointer; white-space:nowrap; padding:6px 12px; font-size:12px;">
               Gửi AI
             </button>
           </div>
-          <div class="ai-response" id="ai_response_${qId}" style="display:none; margin-top:10px; max-height: 400px; overflow-y: auto;"></div>
+          <div class="ai-response" id="ai_response_${qId}" style="display:none; margin-top:8px; max-height: 350px; overflow-y: auto;"></div>
         </div>
       </div>
     `;
@@ -817,7 +806,7 @@
       const passagesContainer = document.getElementById('passagesNavContainer');
       let currentActiveIndex = 0;
 
-      // Nhận diện Passage hiện tại từ tên file (vd: cam21-test2-p1 -> Passage 1)
+      // Nhận diện Passage hiện tại từ tên file (vd: cam20-test1-p1 -> Passage 1)
       let currentPassageNum = 1;
       const matchPassage = fileName.match(/-p(\d+)/i);
       if (matchPassage) {
@@ -842,7 +831,7 @@
               </div>
             `;
           } else {
-            // Passage khác: hiện nút chuyển bài
+            // Passage khác: tạo đường link chuyển bài ngay trên thanh đáy
             const targetUrl = window.location.href.replace(new RegExp(`-p${currentPassageNum}`, 'i'), `-p${p}`);
             passagesHtml += `
               <div class="passage-group-tab inactive-tab" onclick="window.location.href='${targetUrl}'">
@@ -862,7 +851,7 @@
           const el = document.getElementById(targetId) || document.getElementById(`${targetId}_input`);
           if (el) {
             el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            const inputEl = document.getElementById(`${targetId}_input`) || document.getElementById(`${targetId}_input_mirror`);
+            const inputEl = document.getElementById(`${targetId}_input`);
             if (inputEl) setTimeout(() => inputEl.focus(), 250);
           }
         }
@@ -882,10 +871,9 @@
         let rowsHtml = '';
         qKeys.forEach(k => {
           const num = k.replace(/^[a-zA-Z]+/, '');
-          const textInp = document.getElementById(`${k}_input`) || document.getElementById(`${k}_input_mirror`);
+          const textInp = document.getElementById(`${k}_input`);
           const radio = document.querySelector(`input[name="${k}"]:checked`);
-          const sel = document.getElementById(`${k}_select`);
-          const val = textInp ? textInp.value.trim() : (radio ? radio.value : (sel ? sel.value : ''));
+          const val = textInp ? textInp.value.trim() : (radio ? radio.value : '');
 
           rowsHtml += `
             <tr style="border-bottom: 1px solid #f1f5f9;">
@@ -935,10 +923,9 @@
         qKeys.forEach(k => {
           const num = k.replace(/^[a-zA-Z]+/, '');
           const expected = window.TEST_DATA.answers[k];
-          const textInp = document.getElementById(`${k}_input`) || document.getElementById(`${k}_input_mirror`);
+          const textInp = document.getElementById(`${k}_input`);
           const radio = document.querySelector(`input[name="${k}"]:checked`);
-          const sel = document.getElementById(`${k}_select`);
-          const val = textInp ? textInp.value.trim() : (radio ? radio.value : (sel ? sel.value : ''));
+          const val = textInp ? textInp.value.trim() : (radio ? radio.value : '');
 
           let isCorrect = false;
           if (radio) {
